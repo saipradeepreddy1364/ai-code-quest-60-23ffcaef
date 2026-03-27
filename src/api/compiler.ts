@@ -1,23 +1,28 @@
 // src/api/compiler.ts
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://backend-0gai.onrender.com/api';
+// The (import.meta as any) cast is a quick fix if the TS error persists 
+// despite the tsconfig change.
+// Replace your old API_BASE_URL line with this:
+const API_BASE_URL = (import.meta as unknown as { env: { VITE_API_BASE_URL: string } }).env?.VITE_API_BASE_URL || 'https://backend-0gai.onrender.com';
+interface CompilerResponse {
+  output?: string;
+  error?: string;
+  compileError?: string;
+  statusCode?: number;
+  cpuTime?: string;
+  memory?: number;
+}
 
 export async function runCode(code: string, languageId: number, stdin: string = '') {
   try {
     console.log('🚀 Sending to backend:', API_BASE_URL);
-    console.log('Full URL:', `${API_BASE_URL}/compiler/run`);
-    console.log('Language ID:', languageId);
     
     const response = await fetch(`${API_BASE_URL}/compiler/run`, {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({
-        code,
-        languageId,
-        stdin
-      })
+      body: JSON.stringify({ code, languageId, stdin })
     });
 
     if (!response.ok) {
@@ -25,7 +30,7 @@ export async function runCode(code: string, languageId: number, stdin: string = 
       throw new Error(errorData.error || `HTTP ${response.status}`);
     }
 
-    const data = await response.json();
+    const data: CompilerResponse = await response.json();
     console.log('✅ Backend response:', data);
     
     return {
