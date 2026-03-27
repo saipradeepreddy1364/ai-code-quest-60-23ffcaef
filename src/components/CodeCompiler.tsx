@@ -1,3 +1,5 @@
+// src/components/CodeCompiler.tsx
+
 import { useState, useEffect } from "react";
 import { Play, RotateCcw } from "lucide-react";
 import CodeEditor from "./CodeEditor";
@@ -26,14 +28,35 @@ const languageOptions = [
 ];
 
 const defaultCode: Record<Language, string> = {
-  java: `public class Main { public static void main(String[] args) { System.out.println("Hello, World!"); } }`,
+  java: `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`,
   python: `print("Hello, World!")`,
-  cpp: `#include <iostream>\nusing namespace std;\nint main() { cout << "Hello, World!" << endl; return 0; }`,
-  c: `#include <stdio.h>\nint main() { printf("Hello, World!\\n"); return 0; }`,
+  cpp: `#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello, World!" << endl;
+    return 0;
+}`,
+  c: `#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\\n");
+    return 0;
+}`,
   javascript: `console.log("Hello, World!");`,
   typescript: `console.log("Hello, World!");`,
-  go: `package main\nimport "fmt"\nfunc main() { fmt.Println("Hello, World!") }`,
-  rust: `fn main() { println!("Hello, World!"); }`,
+  go: `package main
+import "fmt"
+func main() {
+    fmt.Println("Hello, World!")
+}`,
+  rust: `fn main() {
+    println!("Hello, World!");
+}`,
 };
 
 export default function CodeCompiler() {
@@ -43,13 +66,14 @@ export default function CodeCompiler() {
   const [output, setOutput] = useState("");
   const [isRunning, setIsRunning] = useState(false);
 
-  // CTRL + ENTER shortcut
+  // ⭐ CTRL + ENTER RUN SHORTCUT
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.ctrlKey && e.key === "Enter" && !isRunning) {
         handleRun();
       }
     };
+
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, [code, language, input, isRunning]);
@@ -60,6 +84,7 @@ export default function CodeCompiler() {
     setOutput("");
   };
 
+  // ⭐ PROFESSIONAL RUN FUNCTION
   const handleRun = async () => {
     if (!code.trim()) {
       toast.error("Code cannot be empty");
@@ -73,6 +98,7 @@ export default function CodeCompiler() {
 
     try {
       const result = await runCode(code, languageIds[language], input);
+
       const end = performance.now();
       const execTime = ((end - start) / 1000).toFixed(2);
 
@@ -105,12 +131,14 @@ export default function CodeCompiler() {
 
   return (
     <div className="flex flex-col h-[520px] border border-border rounded-lg overflow-hidden">
-      {/* Top Bar */}
+      {/* ⭐ TOOLBAR */}
       <div className="flex items-center justify-between p-3 border-b border-border bg-surface">
         <div className="flex items-center gap-2">
           <select
             value={language}
-            onChange={(e) => handleLanguageChange(e.target.value as Language)}
+            onChange={(e) =>
+              handleLanguageChange(e.target.value as Language)
+            }
             className="bg-background border border-border rounded-md px-3 py-1.5 text-sm"
           >
             {languageOptions.map((opt) => (
@@ -124,7 +152,8 @@ export default function CodeCompiler() {
             onClick={handleReset}
             className="flex items-center gap-1 px-3 py-1.5 text-sm bg-secondary rounded-md"
           >
-            <RotateCcw className="h-3.5 w-3.5" /> Reset
+            <RotateCcw className="h-3.5 w-3.5" />
+            Reset
           </button>
         </div>
 
@@ -132,26 +161,28 @@ export default function CodeCompiler() {
           onClick={handleRun}
           disabled={isRunning}
           className={`flex items-center gap-1.5 px-4 py-1.5 text-sm rounded-md ${
-            isRunning ? "bg-primary/60 cursor-not-allowed" : "bg-primary hover:opacity-90"
+            isRunning
+              ? "bg-primary/60 cursor-not-allowed"
+              : "bg-primary hover:opacity-90"
           }`}
         >
-          <Play className="h-3.5 w-3.5" /> {isRunning ? "Executing..." : "Run Code"}
+          <Play className="h-3.5 w-3.5" />
+          {isRunning ? "Executing..." : "Run Code"}
         </button>
       </div>
 
-      {/* Code Editor */}
+      {/* ⭐ EDITOR */}
       <div className="flex-1 min-h-0">
         <CodeEditor
           language={language}
           value={code}
           onChange={setCode}
-          readOnly={isRunning} // ✅ disable editing while running
+          readOnly={isRunning}
         />
       </div>
 
-      {/* Input / Output Panel */}
+      {/* ⭐ INPUT OUTPUT PANEL */}
       <div className="h-44 border-t border-border flex">
-        {/* Input */}
         <div className="w-1/2 border-r border-border p-3">
           <label className="text-xs font-semibold mb-2 block">INPUT</label>
           <textarea
@@ -162,7 +193,6 @@ export default function CodeCompiler() {
           />
         </div>
 
-        {/* Output */}
         <div className="w-1/2 p-3">
           <label className="text-xs font-semibold mb-2 block">OUTPUT</label>
           <pre className="w-full h-28 bg-surface border border-border rounded p-2 text-xs font-mono overflow-y-auto whitespace-pre-wrap">
