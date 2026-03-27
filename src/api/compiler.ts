@@ -1,6 +1,6 @@
 // src/api/compiler.ts
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://backend-9si9.onrender.com/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://backend-8dl8.onrender.com/api';
 
 export async function runCode(code: string, languageId: number, stdin: string = '') {
   try {
