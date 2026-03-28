@@ -8,10 +8,11 @@
 const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || 'https://backend-lgvv.onrender.com/api';
 
 interface CompilerResponse {
-  output?: string;
-  error?: string;
-  compileError?: string;
-  statusCode?: number;
+  stdout?: string;
+  stderr?: string;
+  compileOutput?: string;
+  statusId?: number;
+  statusDescription?: string;
   cpuTime?: string;
   memory?: number;
 }
@@ -44,12 +45,12 @@ export async function runCode(code: string, languageId: number, stdin: string = 
     // Spring Boot backends sometimes return status codes inside the body.
     // We map them here to match the frontend expectations.
     return {
-      stdout: data.output || '',
-      stderr: data.error || null,
-      compile_output: data.compileError || null,
+      stdout: data.stdout || '',
+      stderr: data.stderr || null,
+      compile_output: data.compileOutput || null,
       status: { 
-        id: data.statusCode === 200 ? 3 : 4,
-        description: data.statusCode === 200 ? 'Success' : 'Error'
+        id: data.statusDescription === 'Success' ? 3 : 4,
+        description: data.statusDescription || 'Error'
       },
       time: data.cpuTime || '0.00',
       memory: data.memory || 0,
