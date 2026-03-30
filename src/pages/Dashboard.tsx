@@ -290,26 +290,6 @@ export default function Dashboard() {
 
       {/* Main Content */}
       <div className={`transition-all duration-300 ${sidebarOpen ? 'lg:ml-80' : ''}`}>
-        {/* Stats Cards */}
-        <div className="grid grid-cols-4 gap-4 mb-6">
-          <div className="bg-card border border-border rounded-lg p-4">
-            <div className="text-sm text-muted-foreground mb-1">Total Problems</div>
-            <div className="text-2xl font-semibold text-foreground">{totalProblems}</div>
-          </div>
-          <div className="bg-card border border-border rounded-lg p-4">
-            <div className="text-sm text-muted-foreground mb-1">Easy</div>
-            <div className="text-2xl font-semibold text-green-600">{problems.filter(p => p.difficulty === "Easy").length}</div>
-          </div>
-          <div className="bg-card border border-border rounded-lg p-4">
-            <div className="text-sm text-muted-foreground mb-1">Medium</div>
-            <div className="text-2xl font-semibold text-yellow-600">{problems.filter(p => p.difficulty === "Medium").length}</div>
-          </div>
-          <div className="bg-card border border-border rounded-lg p-4">
-            <div className="text-sm text-muted-foreground mb-1">Hard</div>
-            <div className="text-2xl font-semibold text-red-600">{problems.filter(p => p.difficulty === "Hard").length}</div>
-          </div>
-        </div>
-
         {/* Daily Challenge */}
         <div className="bg-card border border-border rounded-lg p-6 mb-6">
           <div className="flex items-center justify-between mb-4">
