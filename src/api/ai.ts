@@ -1,24 +1,18 @@
-const ANTHROPIC_API_KEY = (import.meta as any).env?.VITE_ANTHROPIC_API_KEY;
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 async function callClaude(messages: Array<{ role: string; content: string }>, systemPrompt: string) {
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
+  const response = await fetch(`${BACKEND_URL}/api/ai/chat`, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-api-key": ANTHROPIC_API_KEY,
-      "anthropic-version": "2023-06-01",
-    },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      model: "claude-3-5-sonnet-20241022",
+      model: "claude-haiku-4-5-20251001",
       max_tokens: 1024,
       system: systemPrompt,
       messages,
     }),
   });
 
-  if (!response.ok) {
-    throw new Error(`API error: ${response.status}`);
-  }
+  if (!response.ok) throw new Error(`API error: ${response.status}`);
 
   const data = await response.json();
   return data.content[0].text;
