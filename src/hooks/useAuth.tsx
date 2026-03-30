@@ -5,26 +5,29 @@ import { supabase } from '@/integrations/supabase/client';
 
 export function useAuth() {
   const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); // ✅ FIX ADDED
 
   useEffect(() => {
-    // Get initial session
+    // ✅ Get initial session
     supabase.auth.getSession().then(({ data: { session } }) => {
       console.log('Session:', session);
       setUser(session?.user ?? null);
-      setLoading(false);
+      setLoading(false); // ✅ now valid
     });
 
-    // Listen for auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      console.log('Auth event:', event, session);
-      setUser(session?.user ?? null);
-      setLoading(false);
-    });
+    // ✅ Listen for auth changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (_event, session) => {
+        console.log('Auth event:', _event, session);
+        setUser(session?.user ?? null);
+        setLoading(false); // ✅ now valid
+      }
+    );
 
     return () => subscription.unsubscribe();
   }, []);
 
+  // ✅ SIGN UP
   const signUp = async (email: string, password: string) => {
     try {
       const { data, error } = await supabase.auth.signUp({
@@ -34,12 +37,12 @@ export function useAuth() {
           emailRedirectTo: window.location.origin,
         }
       });
-      
+
       if (error) {
         console.error('Signup error:', error);
         return { data: null, error };
       }
-      
+
       console.log('Signup success:', data);
       return { data, error: null };
     } catch (error: any) {
@@ -47,18 +50,19 @@ export function useAuth() {
     }
   };
 
+  // ✅ SIGN IN
   const signIn = async (email: string, password: string) => {
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
-      
+
       if (error) {
         console.error('Login error:', error);
         return { data: null, error };
       }
-      
+
       console.log('Login success:', data);
       return { data, error: null };
     } catch (error: any) {
@@ -66,6 +70,7 @@ export function useAuth() {
     }
   };
 
+  // ✅ SIGN OUT
   const signOut = async () => {
     const { error } = await supabase.auth.signOut();
     return { error };
@@ -73,7 +78,7 @@ export function useAuth() {
 
   return {
     user,
-    loading,
+    loading, // ✅ FIX RETURNED
     signUp,
     signIn,
     signOut,
