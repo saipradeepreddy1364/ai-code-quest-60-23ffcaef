@@ -105,7 +105,7 @@ export default function Problems() {
             </tr>
           </thead>
           <tbody>
-            {filtered.slice(0, 50).map((p) => (
+            {filtered.map((p) => (
               <tr key={p.id} className="border-b border-border hover:bg-surface-hover transition-colors">
                 <td className="px-4 py-3 text-sm text-muted-foreground font-mono">{p.id}</td>
                 <td className="px-4 py-3">
