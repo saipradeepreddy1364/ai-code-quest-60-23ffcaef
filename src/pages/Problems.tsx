@@ -1,9 +1,16 @@
-import { useState, useMemo } from "react";
-import { Link } from "react-router-dom";
+import { useState, useMemo, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Search, Filter } from "lucide-react";
 import { problems, getCategories, getCompanies } from "@/data/problems";
 
 export default function Problems() {
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+
+  const urlCategory = queryParams.get("category");
+  const urlCompany = queryParams.get("company");
+  const urlPlacement = queryParams.get("placement");
+
   const [search, setSearch] = useState("");
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>("");
   const [selectedCategory, setSelectedCategory] = useState<string>("");
@@ -12,6 +19,17 @@ export default function Problems() {
 
   const categories = getCategories();
   const companyList = getCompanies();
+
+  // ✅ Sync URL → filters
+  useEffect(() => {
+    if (urlCategory) setSelectedCategory(urlCategory);
+    if (urlCompany) setSelectedCompany(urlCompany);
+
+    // Optional: auto open filters when coming from sidebar
+    if (urlCategory || urlCompany) {
+      setShowFilters(true);
+    }
+  }, [urlCategory, urlCompany]);
 
   const filtered = useMemo(() => {
     return problems.filter((p) => {
@@ -60,6 +78,7 @@ export default function Problems() {
             <option value="Medium">Medium</option>
             <option value="Hard">Hard</option>
           </select>
+
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
@@ -70,6 +89,7 @@ export default function Problems() {
               <option key={c} value={c}>{c}</option>
             ))}
           </select>
+
           <select
             value={selectedCompany}
             onChange={(e) => setSelectedCompany(e.target.value)}
@@ -80,8 +100,13 @@ export default function Problems() {
               <option key={c} value={c}>{c}</option>
             ))}
           </select>
+
           <button
-            onClick={() => { setSelectedDifficulty(""); setSelectedCategory(""); setSelectedCompany(""); }}
+            onClick={() => {
+              setSelectedDifficulty("");
+              setSelectedCategory("");
+              setSelectedCompany("");
+            }}
             className="px-3 py-1.5 text-sm text-muted-foreground hover:text-foreground"
           >
             Clear
@@ -89,7 +114,9 @@ export default function Problems() {
         </div>
       )}
 
-      <div className="text-sm text-muted-foreground mb-4">{filtered.length} problems</div>
+      <div className="text-sm text-muted-foreground mb-4">
+        {filtered.length} problems
+      </div>
 
       {/* Problem list */}
       <div className="border border-border rounded-md overflow-hidden">
@@ -104,27 +131,50 @@ export default function Problems() {
               <th className="px-4 py-3"></th>
             </tr>
           </thead>
+
           <tbody>
             {filtered.map((p) => (
-              <tr key={p.id} className="border-b border-border hover:bg-surface-hover transition-colors">
+              <tr
+                key={p.id}
+                className="border-b border-border hover:bg-surface-hover transition-colors"
+              >
                 <td className="px-4 py-3 text-sm text-muted-foreground font-mono">{p.id}</td>
+
                 <td className="px-4 py-3">
-                  <Link to={`/problem/${p.id}`} className="text-sm text-foreground hover:text-primary transition-colors">
+                  <Link
+                    to={`/problem/${p.id}`}
+                    className="text-sm text-foreground hover:text-primary transition-colors"
+                  >
                     {p.title}
                   </Link>
                 </td>
-                <td className="px-4 py-3 text-sm text-muted-foreground">{p.category}</td>
-                <td className="px-4 py-3 text-sm text-muted-foreground">{p.difficulty}</td>
+
+                <td className="px-4 py-3 text-sm text-muted-foreground">
+                  {p.category}
+                </td>
+
+                <td className="px-4 py-3 text-sm text-muted-foreground">
+                  {p.difficulty}
+                </td>
+
                 <td className="px-4 py-3">
                   <div className="flex flex-wrap gap-1">
                     {p.company_tags.slice(0, 2).map((t) => (
-                      <span key={t} className="text-xs px-1.5 py-0.5 bg-secondary rounded text-muted-foreground">{t}</span>
+                      <span
+                        key={t}
+                        className="text-xs px-1.5 py-0.5 bg-secondary rounded text-muted-foreground"
+                      >
+                        {t}
+                      </span>
                     ))}
                     {p.company_tags.length > 2 && (
-                      <span className="text-xs text-muted-foreground">+{p.company_tags.length - 2}</span>
+                      <span className="text-xs text-muted-foreground">
+                        +{p.company_tags.length - 2}
+                      </span>
                     )}
                   </div>
                 </td>
+
                 <td className="px-4 py-3">
                   <Link
                     to={`/problem/${p.id}`}
@@ -137,6 +187,7 @@ export default function Problems() {
             ))}
           </tbody>
         </table>
+
         {filtered.length > 50 && (
           <div className="px-4 py-3 text-sm text-muted-foreground bg-surface text-center">
             Showing 50 of {filtered.length} problems. Use filters to narrow results.
