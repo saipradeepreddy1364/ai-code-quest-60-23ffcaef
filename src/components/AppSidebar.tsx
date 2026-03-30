@@ -1,5 +1,5 @@
 import { problems } from "@/data/problems";
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { 
   X, ChevronDown, ChevronUp, 
@@ -16,25 +16,62 @@ interface AppSidebarProps {
   onClose: () => void;
 }
 
-// Categories data
-const categories = [
-  { name: 'Arrays', count: 42, icon: Database },
-  { name: 'Strings', count: 37, icon: Code },
-  { name: 'Linked Lists', count: 36, icon: Cpu },
-  { name: 'Dynamic Programming', count: 37, icon: Brain },
-  { name: 'Trees', count: 36, icon: Network },
-  { name: 'Graphs', count: 35, icon: Network },
-  { name: 'Binary Search', count: 35, icon: Code },
-  { name: 'Stacks', count: 34, icon: Code },
-  { name: 'Hashing', count: 34, icon: Database },
-  { name: 'Greedy', count: 34, icon: Brain },
-  { name: 'Backtracking', count: 34, icon: Brain },
-  { name: 'Sliding Window', count: 34, icon: Code },
-  { name: 'Heap', count: 34, icon: Database },
-  { name: 'Queues', count: 34, icon: Code },
-];
+// Helper function to get unique categories with counts
+const getCategoryCounts = () => {
+  const counts: Record<string, number> = {};
+  problems.forEach(problem => {
+    const category = problem.category;
+    counts[category] = (counts[category] || 0) + 1;
+  });
+  return counts;
+};
 
-// Placement categories
+// Helper function to get unique companies with counts
+const getCompanyCounts = () => {
+  const counts: Record<string, number> = {};
+  problems.forEach(problem => {
+    problem.company_tags.forEach(company => {
+      counts[company] = (counts[company] || 0) + 1;
+    });
+  });
+  return counts;
+};
+
+// Dynamically generate categories from actual problems
+const generateCategories = () => {
+  const categoryCounts = getCategoryCounts();
+  const iconMap: Record<string, any> = {
+    'Arrays': Database,
+    'Strings': Code,
+    'Linked Lists': Cpu,
+    'Dynamic Programming': Brain,
+    'Trees': Network,
+    'Graphs': Network,
+    'Binary Search': Code,
+    'Stacks': Code,
+    'Hashing': Database,
+    'Greedy': Brain,
+    'Backtracking': Brain,
+    'Sliding Window': Code,
+    'Heap': Database,
+    'Queues': Code,
+    'Two Pointers': Code,
+    'Bit Manipulation': Code,
+    'Patterns': Code,
+    'Numbers': Database,
+    'DSA': Code,
+  };
+  
+  return Object.entries(categoryCounts)
+    .map(([name, count]) => ({
+      name,
+      count,
+      icon: iconMap[name] || Code
+    }))
+    .sort((a, b) => b.count - a.count);
+};
+
+// Placement categories with actual counts from problems
 const placementCategories = [
   { name: 'Aptitude', count: 34, icon: Brain },
   { name: 'Logical Reasoning', count: 34, icon: Brain },
@@ -43,21 +80,6 @@ const placementCategories = [
   { name: 'Operating Systems', count: 34, icon: Cpu },
   { name: 'Computer Networks', count: 34, icon: Network },
   { name: 'OOP', count: 34, icon: Code },
-];
-
-// Company questions
-const companies = [
-  { name: 'Google', count: 120, icon: Building2 },
-  { name: 'Amazon', count: 150, icon: Building2 },
-  { name: 'Microsoft', count: 100, icon: Building2 },
-  { name: 'Facebook', count: 80, icon: Building2 },
-  { name: 'Apple', count: 70, icon: Building2 },
-  { name: 'Netflix', count: 40, icon: Building2 },
-  { name: 'Uber', count: 50, icon: Building2 },
-  { name: 'LinkedIn', count: 45, icon: Building2 },
-  { name: 'TCS', count: 200, icon: Building2 },
-  { name: 'Infosys', count: 180, icon: Building2 },
-  { name: 'Wipro', count: 160, icon: Building2 },
 ];
 
 export default function AppSidebar({ open, onClose }: AppSidebarProps) {
@@ -70,6 +92,37 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
   const [selectedPlacement, setSelectedPlacement] = useState<string | null>(null);
   const [selectedCompany, setSelectedCompany] = useState<string | null>(null);
   const [showPerformance, setShowPerformance] = useState(true);
+
+  // Dynamically generate categories and companies
+  const categories = useMemo(() => generateCategories(), []);
+  const companies = useMemo(() => {
+    const companyCounts = getCompanyCounts();
+    const iconMap: Record<string, any> = {
+      'Google': Building2,
+      'Amazon': Building2,
+      'Microsoft': Building2,
+      'Meta': Building2,
+      'Apple': Building2,
+      'Netflix': Building2,
+      'Uber': Building2,
+      'Flipkart': Building2,
+      'Oracle': Building2,
+      'SAP': Building2,
+      'Adobe': Building2,
+      'Goldman Sachs': Building2,
+      'Morgan Stanley': Building2,
+      'Walmart': Building2,
+      'Intuit': Building2,
+    };
+    
+    return Object.entries(companyCounts)
+      .map(([name, count]) => ({
+        name,
+        count,
+        icon: iconMap[name] || Building2
+      }))
+      .sort((a, b) => b.count - a.count);
+  }, []);
 
   const navItems = [
     { path: '/problems', icon: Layers, label: 'Problems' },
@@ -218,7 +271,7 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
                       <span className="text-sm">{cat.name}</span>
                     </div>
                     <span className="text-xs bg-muted px-2 py-1 rounded-full">
-  {                  getCategoryCount(cat.name)}
+                      {cat.count}
                     </span>
                   </button>
                 ))}
