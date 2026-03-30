@@ -13055,6 +13055,7 @@ export const problems: Problem[] = [
     starter_code: {
       java: "class Solution {\\n    public void number_of_islands() {\\n        // Write your solution here\\n    }\\n}",
     },
+    
   }
 ];
 
@@ -13065,4 +13066,5 @@ export const getDailyChallenge = () => {
   const today = new Date();
   const dayOfYear = Math.floor((today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) / 86400000);
   return problems[dayOfYear % problems.length];
+
 };
