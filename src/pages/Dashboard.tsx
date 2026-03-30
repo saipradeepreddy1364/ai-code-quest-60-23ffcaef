@@ -195,9 +195,6 @@ export default function Dashboard() {
         </div>
         <div className="p-4 space-y-4">
           <div className="space-y-2">
-            <Link to="/" className="flex items-center gap-3 px-3 py-2 text-foreground hover:bg-surface-hover rounded-md transition-colors">
-              <Home className="h-5 w-5" /><span>Home</span>
-            </Link>
             <Link to="/problems" className="flex items-center gap-3 px-3 py-2 text-foreground hover:bg-surface-hover rounded-md transition-colors">
               <BookOpen className="h-5 w-5" /><span>All Problems</span>
             </Link>
