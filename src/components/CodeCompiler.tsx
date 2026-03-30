@@ -6,67 +6,29 @@ import CodeEditor from "./CodeEditor";
 import { runCode, languageIds } from "@/api/compiler";
 import { toast } from "sonner";
 
-type Language =
-  | "java"
-  | "python"
-  | "cpp"
-  | "c"
-  | "javascript"
-  | "typescript"
-  | "go"
-  | "rust";
+// ✅ Only Java
+type Language = "java";
 
-const languageOptions = [
-  { value: "java", label: "Java" },
-  { value: "python", label: "Python" },
-  { value: "cpp", label: "C++" },
-  { value: "c", label: "C" },
-  { value: "javascript", label: "JavaScript" },
-  { value: "typescript", label: "TypeScript" },
-  { value: "go", label: "Go" },
-  { value: "rust", label: "Rust" },
-];
+// ✅ Props
+type CodeCompilerProps = {
+  onCodeChange?: (code: string, lang: string) => void;
+};
 
-const defaultCode: Record<Language, string> = {
-  java: `public class Main {
+// ✅ Default Java Code
+const defaultCode = `public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
-}`,
-  python: `print("Hello, World!")`,
-  cpp: `#include <iostream>
-using namespace std;
+}`;
 
-int main() {
-    cout << "Hello, World!" << endl;
-    return 0;
-}`,
-  c: `#include <stdio.h>
-
-int main() {
-    printf("Hello, World!\\n");
-    return 0;
-}`,
-  javascript: `console.log("Hello, World!");`,
-  typescript: `console.log("Hello, World!");`,
-  go: `package main
-import "fmt"
-func main() {
-    fmt.Println("Hello, World!")
-}`,
-  rust: `fn main() {
-    println!("Hello, World!");
-}`,
-};
-
-export default function CodeCompiler() {
-  const [language, setLanguage] = useState<Language>("java");
-  const [code, setCode] = useState(defaultCode.java);
+export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
+  const language: Language = "java"; // 🔒 Fixed language
+  const [code, setCode] = useState(defaultCode);
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const [isRunning, setIsRunning] = useState(false);
 
-  // ⭐ CTRL + ENTER RUN SHORTCUT
+  // ⭐ CTRL + ENTER RUN
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.ctrlKey && e.key === "Enter" && !isRunning) {
@@ -76,15 +38,9 @@ export default function CodeCompiler() {
 
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [code, language, input, isRunning]);
+  }, [code, input, isRunning]);
 
-  const handleLanguageChange = (lang: Language) => {
-    setLanguage(lang);
-    setCode(defaultCode[lang]);
-    setOutput("");
-  };
-
-  // ⭐ PROFESSIONAL RUN FUNCTION
+  // ⭐ RUN FUNCTION
   const handleRun = async () => {
     if (!code.trim()) {
       toast.error("Code cannot be empty");
@@ -95,7 +51,7 @@ export default function CodeCompiler() {
     setOutput("Executing...");
 
     try {
-      const result = await runCode(code, languageIds[language], input);
+      const result = await runCode(code, languageIds["java"], input);
 
       if (result.stderr) {
         setOutput(`Runtime Error:\n${result.stderr}`);
@@ -115,32 +71,26 @@ export default function CodeCompiler() {
     }
   };
 
+  // ⭐ RESET
   const handleReset = () => {
-    setCode(defaultCode[language]);
+    setCode(defaultCode);
     setInput("");
     setOutput("");
+
+    onCodeChange?.(defaultCode, language);
     toast.success("Code Reset");
   };
 
   return (
     <div className="flex flex-col h-[520px] border border-border rounded-lg overflow-hidden">
+      
       {/* ⭐ TOOLBAR */}
       <div className="flex items-center justify-between p-3 border-b border-border bg-surface">
-        <div className="flex items-center gap-2">
-          <select
-            value={language}
-            onChange={(e) =>
-              handleLanguageChange(e.target.value as Language)
-            }
-            className="bg-background border border-border rounded-md px-3 py-1.5 text-sm"
-          >
-            {languageOptions.map((opt) => (
-              <option key={opt.value} value={opt.value}>
-                {opt.label}
-              </option>
-            ))}
-          </select>
+        
+        {/* ✅ Only label (no dropdown) */}
+        <div className="text-sm font-medium">Java</div>
 
+        <div className="flex items-center gap-2">
           <button
             onClick={handleReset}
             className="flex items-center gap-1 px-3 py-1.5 text-sm bg-secondary rounded-md"
@@ -148,33 +98,36 @@ export default function CodeCompiler() {
             <RotateCcw className="h-3.5 w-3.5" />
             Reset
           </button>
-        </div>
 
-        <button
-          onClick={handleRun}
-          disabled={isRunning}
-          className={`flex items-center gap-1.5 px-4 py-1.5 text-sm rounded-md ${
-            isRunning
-              ? "bg-primary/60 cursor-not-allowed"
-              : "bg-primary hover:opacity-90"
-          }`}
-        >
-          <Play className="h-3.5 w-3.5" />
-          {isRunning ? "Executing..." : "Run Code"}
-        </button>
+          <button
+            onClick={handleRun}
+            disabled={isRunning}
+            className={`flex items-center gap-1.5 px-4 py-1.5 text-sm rounded-md ${
+              isRunning
+                ? "bg-primary/60 cursor-not-allowed"
+                : "bg-primary hover:opacity-90"
+            }`}
+          >
+            <Play className="h-3.5 w-3.5" />
+            {isRunning ? "Executing..." : "Run Code"}
+          </button>
+        </div>
       </div>
 
       {/* ⭐ EDITOR */}
       <div className="flex-1 min-h-0">
         <CodeEditor
-          language={language}
+          language="java"
           value={code}
-          onChange={setCode}
+          onChange={(newCode: string) => {
+            setCode(newCode);
+            onCodeChange?.(newCode, "java");
+          }}
           readOnly={isRunning}
         />
       </div>
 
-      {/* ⭐ INPUT OUTPUT PANEL */}
+      {/* ⭐ INPUT OUTPUT */}
       <div className="h-44 border-t border-border flex">
         <div className="w-1/2 border-r border-border p-3">
           <label className="text-xs font-semibold mb-2 block">INPUT</label>

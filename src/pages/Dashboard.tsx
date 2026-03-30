@@ -2,15 +2,16 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { 
-  Code2, Flame, Trophy, BarChart3, ArrowRight, Bot, Play, Save, 
+  Code2, Flame, Trophy, BarChart3, ArrowRight, Bot,
   User, LogOut, ChevronDown, Menu, X, Home, BookOpen, 
   Building2, GraduationCap, Brain, Cpu, Network, Database,
-  PieChart, TrendingUp, Award, ChevronRight
+  PieChart, TrendingUp, Award, ChevronRight, Save
 } from "lucide-react";
 import { problems, getDailyChallenge } from "@/data/problems";
 import { useAuth } from "../hooks/useAuth";
 import CodeCompiler from "../components/CodeCompiler";
 import AIChatPanel from "../components/AIChatPanel";
+import { toast } from "sonner";
 
 export default function Dashboard() {
   console.log('✅ Dashboard rendering');
@@ -22,6 +23,9 @@ export default function Dashboard() {
   const [isResizing, setIsResizing] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [currentCode, setCurrentCode] = useState("");
+  const [currentLanguage, setCurrentLanguage] = useState("java");
+  const [isSaving, setIsSaving] = useState(false);
   
   // Sidebar dropdown states
   const [dsaOpen, setDsaOpen] = useState(true);
@@ -31,7 +35,6 @@ export default function Dashboard() {
   useEffect(() => {
     console.log('📊 Dashboard mounted successfully');
     console.log('👤 Current user:', user?.email);
-    
     return () => {
       console.log('📊 Dashboard unmounting');
     };
@@ -42,9 +45,7 @@ export default function Dashboard() {
     setIsResizing(true);
   };
 
-  const stopResizing = () => {
-    setIsResizing(false);
-  };
+  const stopResizing = () => setIsResizing(false);
 
   const resize = (e: React.MouseEvent) => {
     if (isResizing) {
@@ -61,6 +62,31 @@ export default function Dashboard() {
     window.location.href = '/login';
   };
 
+  const handleSave = async () => {
+    if (!currentCode.trim()) {
+      toast.error("Nothing to save!");
+      return;
+    }
+    setIsSaving(true);
+    try {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/code/save`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userEmail: user?.email,
+          code: currentCode,
+          language: currentLanguage,
+        })
+      });
+      if (!response.ok) throw new Error("Save failed");
+      toast.success("Code saved successfully!");
+    } catch (e) {
+      toast.error("Failed to save code. Try again.");
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
   // Categories data
   const categories = [
     { name: 'Arrays', count: 42, icon: Database },
@@ -75,7 +101,6 @@ export default function Dashboard() {
     { name: 'Greedy', count: 34, icon: Brain },
   ];
 
-  // Placement categories
   const placementCategories = [
     { name: 'Aptitude', count: 34, icon: Brain },
     { name: 'Logical Reasoning', count: 34, icon: Brain },
@@ -86,7 +111,6 @@ export default function Dashboard() {
     { name: 'OOP', count: 34, icon: Code2 },
   ];
 
-  // Company questions
   const companies = [
     { name: 'Google', count: 120, icon: Building2 },
     { name: 'Amazon', count: 150, icon: Building2 },
@@ -98,7 +122,6 @@ export default function Dashboard() {
     { name: 'Wipro', count: 160, icon: Building2 },
   ];
 
-  // Loading state while user data is being fetched
   if (!user) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
@@ -118,9 +141,8 @@ export default function Dashboard() {
       onMouseUp={stopResizing}
       onMouseLeave={stopResizing}
     >
-      {/* Header with Left Arrow and User Dropdown */}
+      {/* Header */}
       <div className="flex justify-between items-center mb-6 p-4 bg-card border border-border rounded-lg">
-        {/* Left Side - Menu Toggle Button */}
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
           className="flex items-center gap-2 px-3 py-2 bg-surface hover:bg-surface-hover rounded-lg transition-colors"
@@ -130,7 +152,6 @@ export default function Dashboard() {
           <span className="text-sm font-medium text-foreground hidden sm:block">Menu</span>
         </button>
 
-        {/* Right Side - User Dropdown */}
         <div className="relative">
           <button
             onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -139,18 +160,13 @@ export default function Dashboard() {
             <div className="h-8 w-8 bg-white/20 rounded-full flex items-center justify-center">
               <User className="h-4 w-4 text-white" />
             </div>
-            <span className="text-sm font-medium">
-              {user?.email || 'User'}
-            </span>
+            <span className="text-sm font-medium">{user?.email || 'User'}</span>
             <ChevronDown className="h-4 w-4" />
           </button>
 
           {dropdownOpen && (
             <>
-              <div 
-                className="fixed inset-0 z-40" 
-                onClick={() => setDropdownOpen(false)}
-              />
+              <div className="fixed inset-0 z-40" onClick={() => setDropdownOpen(false)} />
               <div className="absolute right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-lg z-50">
                 <div className="p-3 border-b border-border">
                   <p className="text-xs text-muted-foreground">Signed in as</p>
@@ -169,60 +185,41 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Sidebar Menu */}
+      {/* Sidebar — unchanged */}
       <div className={`fixed left-0 top-0 h-full w-80 bg-card border-r border-border transform transition-transform duration-300 ease-in-out z-40 overflow-y-auto ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-4 border-b border-border flex justify-between items-center">
           <h2 className="text-lg font-semibold text-foreground">Navigation</h2>
-          <button
-            onClick={() => setSidebarOpen(false)}
-            className="p-2 hover:bg-surface-hover rounded-md transition-colors"
-          >
+          <button onClick={() => setSidebarOpen(false)} className="p-2 hover:bg-surface-hover rounded-md transition-colors">
             <X className="h-5 w-5 text-foreground" />
           </button>
         </div>
-
         <div className="p-4 space-y-4">
-          {/* Main Navigation */}
           <div className="space-y-2">
             <Link to="/" className="flex items-center gap-3 px-3 py-2 text-foreground hover:bg-surface-hover rounded-md transition-colors">
-              <Home className="h-5 w-5" />
-              <span>Home</span>
+              <Home className="h-5 w-5" /><span>Home</span>
             </Link>
             <Link to="/problems" className="flex items-center gap-3 px-3 py-2 text-foreground hover:bg-surface-hover rounded-md transition-colors">
-              <BookOpen className="h-5 w-5" />
-              <span>All Problems</span>
+              <BookOpen className="h-5 w-5" /><span>All Problems</span>
             </Link>
             <Link to="/analytics" className="flex items-center gap-3 px-3 py-2 text-foreground hover:bg-surface-hover rounded-md transition-colors">
-              <PieChart className="h-5 w-5" />
-              <span>Analytics</span>
+              <PieChart className="h-5 w-5" /><span>Analytics</span>
+            </Link>
+            {/* ✅ Added Saved Codes link */}
+            <Link to="/saved-codes" className="flex items-center gap-3 px-3 py-2 text-foreground hover:bg-surface-hover rounded-md transition-colors">
+              <Save className="h-5 w-5" /><span>Saved Codes</span>
             </Link>
           </div>
 
-          {/* DSA Problems Section */}
           <div className="border border-border rounded-lg">
-            <button
-              onClick={() => setDsaOpen(!dsaOpen)}
-              className="w-full flex items-center justify-between p-3 bg-surface-hover rounded-t-lg"
-            >
-              <div className="flex items-center gap-2">
-                <Brain className="h-4 w-4 text-primary" />
-                <span className="font-medium text-foreground">DSA Problems</span>
-              </div>
+            <button onClick={() => setDsaOpen(!dsaOpen)} className="w-full flex items-center justify-between p-3 bg-surface-hover rounded-t-lg">
+              <div className="flex items-center gap-2"><Brain className="h-4 w-4 text-primary" /><span className="font-medium text-foreground">DSA Problems</span></div>
               {dsaOpen ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
             </button>
-            
             {dsaOpen && (
               <div className="p-2 space-y-1 max-h-60 overflow-y-auto">
                 {categories.map((cat) => (
-                  <Link
-                    key={cat.name}
-                    to={`/problems?category=${encodeURIComponent(cat.name)}`}
-                    className="flex items-center justify-between p-2 rounded-md hover:bg-surface-hover text-foreground"
-                  >
-                    <div className="flex items-center gap-2">
-                      <cat.icon className="h-4 w-4" />
-                      <span className="text-sm">{cat.name}</span>
-                    </div>
+                  <Link key={cat.name} to={`/problems?category=${encodeURIComponent(cat.name)}`} className="flex items-center justify-between p-2 rounded-md hover:bg-surface-hover text-foreground">
+                    <div className="flex items-center gap-2"><cat.icon className="h-4 w-4" /><span className="text-sm">{cat.name}</span></div>
                     <span className="text-xs bg-muted px-2 py-1 rounded-full">{cat.count}</span>
                   </Link>
                 ))}
@@ -230,31 +227,16 @@ export default function Dashboard() {
             )}
           </div>
 
-          {/* Placement Section */}
           <div className="border border-border rounded-lg">
-            <button
-              onClick={() => setPlacementOpen(!placementOpen)}
-              className="w-full flex items-center justify-between p-3 bg-surface-hover rounded-t-lg"
-            >
-              <div className="flex items-center gap-2">
-                <GraduationCap className="h-4 w-4 text-primary" />
-                <span className="font-medium text-foreground">Placement</span>
-              </div>
+            <button onClick={() => setPlacementOpen(!placementOpen)} className="w-full flex items-center justify-between p-3 bg-surface-hover rounded-t-lg">
+              <div className="flex items-center gap-2"><GraduationCap className="h-4 w-4 text-primary" /><span className="font-medium text-foreground">Placement</span></div>
               {placementOpen ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
             </button>
-            
             {placementOpen && (
               <div className="p-2 space-y-1 max-h-60 overflow-y-auto">
                 {placementCategories.map((cat) => (
-                  <Link
-                    key={cat.name}
-                    to={`/problems?placement=${encodeURIComponent(cat.name)}`}
-                    className="flex items-center justify-between p-2 rounded-md hover:bg-surface-hover text-foreground"
-                  >
-                    <div className="flex items-center gap-2">
-                      <cat.icon className="h-4 w-4" />
-                      <span className="text-sm">{cat.name}</span>
-                    </div>
+                  <Link key={cat.name} to={`/problems?placement=${encodeURIComponent(cat.name)}`} className="flex items-center justify-between p-2 rounded-md hover:bg-surface-hover text-foreground">
+                    <div className="flex items-center gap-2"><cat.icon className="h-4 w-4" /><span className="text-sm">{cat.name}</span></div>
                     <span className="text-xs bg-muted px-2 py-1 rounded-full">{cat.count}</span>
                   </Link>
                 ))}
@@ -262,31 +244,16 @@ export default function Dashboard() {
             )}
           </div>
 
-          {/* Company-wise Questions */}
           <div className="border border-border rounded-lg">
-            <button
-              onClick={() => setCompanyOpen(!companyOpen)}
-              className="w-full flex items-center justify-between p-3 bg-surface-hover rounded-t-lg"
-            >
-              <div className="flex items-center gap-2">
-                <Building2 className="h-4 w-4 text-primary" />
-                <span className="font-medium text-foreground">Company-wise</span>
-              </div>
+            <button onClick={() => setCompanyOpen(!companyOpen)} className="w-full flex items-center justify-between p-3 bg-surface-hover rounded-t-lg">
+              <div className="flex items-center gap-2"><Building2 className="h-4 w-4 text-primary" /><span className="font-medium text-foreground">Company-wise</span></div>
               {companyOpen ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
             </button>
-            
             {companyOpen && (
               <div className="p-2 space-y-1 max-h-60 overflow-y-auto">
                 {companies.map((company) => (
-                  <Link
-                    key={company.name}
-                    to={`/problems?company=${encodeURIComponent(company.name)}`}
-                    className="flex items-center justify-between p-2 rounded-md hover:bg-surface-hover text-foreground"
-                  >
-                    <div className="flex items-center gap-2">
-                      <company.icon className="h-4 w-4" />
-                      <span className="text-sm">{company.name}</span>
-                    </div>
+                  <Link key={company.name} to={`/problems?company=${encodeURIComponent(company.name)}`} className="flex items-center justify-between p-2 rounded-md hover:bg-surface-hover text-foreground">
+                    <div className="flex items-center gap-2"><company.icon className="h-4 w-4" /><span className="text-sm">{company.name}</span></div>
                     <span className="text-xs bg-muted px-2 py-1 rounded-full">{company.count}</span>
                   </Link>
                 ))}
@@ -294,7 +261,6 @@ export default function Dashboard() {
             )}
           </div>
 
-          {/* User Analytics */}
           <div className="border border-border rounded-lg p-3">
             <div className="flex items-center gap-2 mb-3">
               <TrendingUp className="h-4 w-4 text-primary" />
@@ -312,8 +278,7 @@ export default function Dashboard() {
               <div className="flex justify-between text-sm">
                 <span className="text-muted-foreground">Current Streak</span>
                 <span className="text-foreground font-medium flex items-center gap-1">
-                  <Award className="h-4 w-4 text-yellow-500" />
-                  0 days
+                  <Award className="h-4 w-4 text-yellow-500" />0 days
                 </span>
               </div>
             </div>
@@ -321,13 +286,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Overlay when sidebar is open on mobile */}
-      {sidebarOpen && (
-        <div 
-          className="fixed inset-0 bg-black/50 z-30"
-          onClick={() => setSidebarOpen(false)}
-        />
-      )}
+      {sidebarOpen && <div className="fixed inset-0 bg-black/50 z-30" onClick={() => setSidebarOpen(false)} />}
 
       {/* Main Content */}
       <div className={`transition-all duration-300 ${sidebarOpen ? 'lg:ml-80' : ''}`}>
@@ -339,35 +298,26 @@ export default function Dashboard() {
           </div>
           <div className="bg-card border border-border rounded-lg p-4">
             <div className="text-sm text-muted-foreground mb-1">Easy</div>
-            <div className="text-2xl font-semibold text-green-600">
-              {problems.filter(p => p.difficulty === "Easy").length}
-            </div>
+            <div className="text-2xl font-semibold text-green-600">{problems.filter(p => p.difficulty === "Easy").length}</div>
           </div>
           <div className="bg-card border border-border rounded-lg p-4">
             <div className="text-sm text-muted-foreground mb-1">Medium</div>
-            <div className="text-2xl font-semibold text-yellow-600">
-              {problems.filter(p => p.difficulty === "Medium").length}
-            </div>
+            <div className="text-2xl font-semibold text-yellow-600">{problems.filter(p => p.difficulty === "Medium").length}</div>
           </div>
           <div className="bg-card border border-border rounded-lg p-4">
             <div className="text-sm text-muted-foreground mb-1">Hard</div>
-            <div className="text-2xl font-semibold text-red-600">
-              {problems.filter(p => p.difficulty === "Hard").length}
-            </div>
+            <div className="text-2xl font-semibold text-red-600">{problems.filter(p => p.difficulty === "Hard").length}</div>
           </div>
         </div>
 
-        {/* Daily Challenge Card */}
+        {/* Daily Challenge */}
         <div className="bg-card border border-border rounded-lg p-6 mb-6">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
               <Flame className="h-5 w-5 text-primary" />
               <h2 className="text-lg font-medium text-foreground">Daily Challenge</h2>
             </div>
-            <Link
-              to={`/problem/${daily.id}`}
-              className="text-sm text-primary hover:underline flex items-center gap-1"
-            >
+            <Link to={`/problem/${daily.id}`} className="text-sm text-primary hover:underline flex items-center gap-1">
               View all <ArrowRight className="h-3 w-3" />
             </Link>
           </div>
@@ -376,64 +326,42 @@ export default function Dashboard() {
               <p className="text-foreground font-medium">{daily.title}</p>
               <p className="text-sm text-muted-foreground">{daily.category} · {daily.difficulty}</p>
             </div>
-            <Link
-              to={`/problem/${daily.id}`}
-              className="flex items-center gap-1.5 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm hover:opacity-90"
-            >
+            <Link to={`/problem/${daily.id}`} className="flex items-center gap-1.5 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm hover:opacity-90">
               Solve <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           </div>
         </div>
 
-        {/* Main Content with Resizable AI Panel */}
+        {/* Compiler + AI Panel */}
         <div className="flex gap-4">
-          {/* Compiler Section - Shrinks when AI panel is open */}
-          <div 
-            className="transition-all duration-300 ease-in-out"
-            style={{ 
-              width: `calc(100% - ${aiPanelWidth + 16}px)` 
-            }}
-          >
-            {/* Code Compiler */}
+          <div className="transition-all duration-300 ease-in-out" style={{ width: `calc(100% - ${aiPanelWidth + 16}px)` }}>
             <div className="bg-card border border-border rounded-lg overflow-hidden">
+              {/* ✅ Header: removed Run button, Save button now works */}
               <div className="p-4 border-b border-border bg-surface flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Code2 className="h-5 w-5 text-primary" />
                   <h2 className="font-medium text-foreground">Code Compiler</h2>
                 </div>
-                <div className="flex items-center gap-2">
-                  <button 
-                    onClick={() => console.log('Run code clicked')}
-                    className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity"
-                  >
-                    <Play className="h-4 w-4" />
-                    Run code
-                  </button>
-                  <button 
-                    onClick={() => console.log('Save code clicked')}
-                    className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-secondary text-secondary-foreground rounded-md hover:bg-surface-hover transition-colors"
-                  >
-                    <Save className="h-4 w-4" />
-                    Save
-                  </button>
-                </div>
+                <button
+                  onClick={handleSave}
+                  disabled={isSaving}
+                  className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-secondary text-secondary-foreground rounded-md hover:bg-surface-hover transition-colors disabled:opacity-50"
+                >
+                  <Save className="h-4 w-4" />
+                  {isSaving ? "Saving..." : "Save"}
+                </button>
               </div>
-              <CodeCompiler />
+              {/* ✅ CodeCompiler now reports code changes up */}
+              <CodeCompiler onCodeChange={(code, lang) => {
+                setCurrentCode(code);
+                setCurrentLanguage(lang);
+              }} />
             </div>
           </div>
 
-          {/* Resizable AI Panel */}
-          <div 
-            className="relative bg-card border border-border rounded-lg overflow-hidden"
-            style={{ width: aiPanelWidth }}
-          >
-            {/* Resize Handle */}
-            <div
-              className="absolute left-0 top-0 w-1 h-full cursor-col-resize hover:bg-primary/50 active:bg-primary transition-colors z-10"
-              onMouseDown={startResizing}
-            />
-            
-            {/* AI Chat Content */}
+          {/* AI Panel — unchanged */}
+          <div className="relative bg-card border border-border rounded-lg overflow-hidden" style={{ width: aiPanelWidth }}>
+            <div className="absolute left-0 top-0 w-1 h-full cursor-col-resize hover:bg-primary/50 active:bg-primary transition-colors z-10" onMouseDown={startResizing} />
             <div className="h-full flex flex-col">
               <div className="p-3 border-b border-border bg-surface flex items-center justify-between">
                 <div className="flex items-center gap-2">
@@ -442,10 +370,7 @@ export default function Dashboard() {
                 </div>
               </div>
               <div className="flex-1 overflow-hidden">
-                <AIChatPanel 
-                  isOpen={true}
-                  onClose={() => {}}
-                />
+                <AIChatPanel isOpen={true} onClose={() => {}} />
               </div>
             </div>
           </div>
