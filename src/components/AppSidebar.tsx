@@ -72,7 +72,6 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
   const [showPerformance, setShowPerformance] = useState(true);
 
   const navItems = [
-    { path: '/', icon: Home, label: 'Home' },
     { path: '/problems', icon: Layers, label: 'Problems' },
     { path: '/dashboard', icon: BarChart3, label: 'Dashboard' },
     { path: '/saved', icon: Save, label: 'Saved Codes' },
