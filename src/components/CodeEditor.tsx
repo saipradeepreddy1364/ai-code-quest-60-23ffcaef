@@ -4,6 +4,7 @@ interface CodeEditorProps {
   language: string;
   value: string;
   onChange: (value: string) => void;
+  readOnly?: boolean;
 }
 
 const languageMap: Record<string, string> = {
@@ -13,7 +14,7 @@ const languageMap: Record<string, string> = {
   c: "c",
 };
 
-export default function CodeEditor({ language, value, onChange }: CodeEditorProps) {
+export default function CodeEditor({ language, value, onChange, readOnly = false }: CodeEditorProps) {
   return (
     <Editor
       height="100%"
@@ -33,6 +34,7 @@ export default function CodeEditor({ language, value, onChange }: CodeEditorProp
         smoothScrolling: true,
         tabSize: 4,
         wordWrap: "on",
+        readOnly: readOnly,
       }}
     />
   );

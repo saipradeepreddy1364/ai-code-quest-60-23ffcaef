@@ -92,30 +92,23 @@ export default function CodeCompiler() {
     }
 
     setIsRunning(true);
-    setOutput("🚀 Executing your code...\n");
-
-    const start = performance.now();
+    setOutput("Executing...");
 
     try {
       const result = await runCode(code, languageIds[language], input);
 
-      const end = performance.now();
-      const execTime = ((end - start) / 1000).toFixed(2);
-
       if (result.stderr) {
-        setOutput(`❌ Runtime Error:\n${result.stderr}`);
+        setOutput(`Runtime Error:\n${result.stderr}`);
         toast.error("Runtime Error");
       } else if (result.compile_output) {
-        setOutput(`🔧 Compilation Error:\n${result.compile_output}`);
+        setOutput(`Compilation Error:\n${result.compile_output}`);
         toast.error("Compilation Failed");
       } else {
-        setOutput(
-          `✅ Output:\n${result.stdout || "No Output"}\n\n⏱ Execution Time: ${execTime}s`
-        );
+        setOutput(result.stdout || "No Output");
         toast.success("Execution Successful");
       }
     } catch (error) {
-      setOutput("❌ Unable to connect to compiler server");
+      setOutput("Unable to connect to compiler server");
       toast.error("Server Error");
     } finally {
       setIsRunning(false);
