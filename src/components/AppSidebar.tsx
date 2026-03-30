@@ -1,4 +1,4 @@
-// src/components/AppSidebar.tsx
+import { problems } from "@/data/problems";
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { 
@@ -217,7 +217,9 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
                       <cat.icon className="h-4 w-4" />
                       <span className="text-sm">{cat.name}</span>
                     </div>
-                    <span className="text-xs bg-muted px-2 py-1 rounded-full">{cat.count}</span>
+                    <span className="text-xs bg-muted px-2 py-1 rounded-full">
+  {                  getCategoryCount(cat.name)}
+                    </span>
                   </button>
                 ))}
               </div>
