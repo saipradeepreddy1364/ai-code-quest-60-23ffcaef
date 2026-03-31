@@ -1,3 +1,4 @@
+// src/components/CodeEditor.tsx
 import Editor from "@monaco-editor/react";
 
 interface CodeEditorProps {
@@ -14,7 +15,12 @@ const languageMap: Record<string, string> = {
   c: "c",
 };
 
-export default function CodeEditor({ language, value, onChange, readOnly = false }: CodeEditorProps) {
+export default function CodeEditor({
+  language,
+  value,
+  onChange,
+  readOnly = false,
+}: CodeEditorProps) {
   return (
     <Editor
       height="100%"
@@ -23,7 +29,7 @@ export default function CodeEditor({ language, value, onChange, readOnly = false
       onChange={(v) => onChange(v || "")}
       theme="vs-dark"
       options={{
-        fontFamily: "'JetBrains Mono', monospace",
+        fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
         fontSize: 14,
         lineHeight: 22,
         minimap: { enabled: false },
@@ -34,7 +40,30 @@ export default function CodeEditor({ language, value, onChange, readOnly = false
         smoothScrolling: true,
         tabSize: 4,
         wordWrap: "on",
-        readOnly: readOnly,
+        readOnly,
+        // better bracket colorisation & guides
+        bracketPairColorization: { enabled: true },
+        guides: { bracketPairs: true },
+        // hide the "Open in..." context-menu entries
+        contextmenu: true,
+        // scroll indicator
+        overviewRulerBorder: false,
+        // line numbers
+        lineNumbers: "on",
+        lineNumbersMinChars: 3,
+        // folding
+        folding: true,
+        // auto-close / surround
+        autoClosingBrackets: "always",
+        autoClosingQuotes: "always",
+        autoSurround: "languageDefined",
+        // suggest / intellisense
+        suggestOnTriggerCharacters: true,
+        quickSuggestions: { other: true, comments: false, strings: false },
+        acceptSuggestionOnEnter: "on",
+        // format on paste / type
+        formatOnPaste: true,
+        formatOnType: true,
       }}
     />
   );

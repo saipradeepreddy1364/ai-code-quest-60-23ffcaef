@@ -1,7 +1,9 @@
+// src/components/CodeCompiler.tsx
 import { useRef, useState, useEffect } from "react";
 import CodeEditor from "./CodeEditor";
 import { runCode, languageIds } from "@/api/compiler";
 import { toast } from "sonner";
+import { Bot, Trophy, Play, Loader2 } from "lucide-react";
 
 // ✅ Bootstrap Icons CDN required in index.html:
 // <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -30,34 +32,37 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
   const [isRunning, setIsRunning] = useState(false);
   const [executionTime, setExecutionTime] = useState<number | null>(null);
 
-  const [bottomHeight, setBottomHeight] = useState(200);
-  const [isResizing, setIsResizing] = useState(false);
+  // ── Best run tracking ───────────────────────────────────────────────────────
+  const [bestTime, setBestTime] = useState<number | null>(null);
+  const [showBestBadge, setShowBestBadge] = useState(false);
 
-  // 🔥 GLOBAL RESIZE FIX
+  // ── Terminal resize ─────────────────────────────────────────────────────────
+  const [bottomHeight, setBottomHeight] = useState(200);
+  const isResizingRef = useRef(false); // use ref so event listeners always see latest value
+
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      if (!isResizing || !containerRef.current) return;
-
+      if (!isResizingRef.current || !containerRef.current) return;
       const rect = containerRef.current.getBoundingClientRect();
       const newHeight = rect.bottom - e.clientY;
-
-      if (newHeight > 120 && newHeight < rect.height * 0.7) {
+      if (newHeight > 100 && newHeight < rect.height * 0.75) {
         setBottomHeight(newHeight);
       }
     };
 
-    const handleMouseUp = () => setIsResizing(false);
+    const handleMouseUp = () => {
+      isResizingRef.current = false;
+    };
 
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("mouseup", handleMouseUp);
-
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("mouseup", handleMouseUp);
     };
-  }, [isResizing]);
+  }, []); // runs once – stable because we use a ref
 
-  // RUN
+  // ── Run ─────────────────────────────────────────────────────────────────────
   const handleRun = async () => {
     if (!code.trim()) return;
 
@@ -69,9 +74,16 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
 
     try {
       const result = await runCode(code, languageIds["java"], input);
+      const elapsed = (performance.now() - start) / 1000;
+      setExecutionTime(elapsed);
 
-      const end = performance.now();
-      setExecutionTime((end - start) / 1000);
+      // Update best run
+      const isNewBest = bestTime === null || elapsed < bestTime;
+      if (isNewBest) {
+        setBestTime(elapsed);
+        setShowBestBadge(true);
+        setTimeout(() => setShowBestBadge(false), 3000); // hide after 3 s
+      }
 
       if (result.stderr || result.compile_output) {
         setError(result.stderr || result.compile_output);
@@ -88,45 +100,57 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
     }
   };
 
-  const handleReset = () => {
-    setCode(defaultCode);
-    setInput("");
-    setOutput("");
-    setError("");
-    setExecutionTime(null);
-    onCodeChange?.(defaultCode, "java");
-  };
-
   return (
-    <div ref={containerRef} className="flex flex-col h-full">
+    <div ref={containerRef} className="flex flex-col h-full select-none">
 
-      {/* 🔝 TOOLBAR */}
-      <div className="flex justify-between items-center p-3 border-b bg-surface">
+      {/* ── TOOLBAR ─────────────────────────────────────────────────────────── */}
+      <div className="flex justify-between items-center px-4 py-2 border-b bg-card shrink-0">
+        <span className="text-sm font-semibold tracking-wide">Java</span>
 
-        <span className="text-sm font-medium">Java</span>
+        <div className="flex items-center gap-3">
 
-        <div className="flex gap-3">
+          {/* Best run badge */}
+          {bestTime !== null && (
+            <div
+              className={`flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium transition-all duration-500 ${
+                showBestBadge
+                  ? "bg-yellow-400/20 text-yellow-400 ring-1 ring-yellow-400/50 scale-110"
+                  : "bg-muted text-muted-foreground"
+              }`}
+              title="Your best run time"
+            >
+              <Trophy className="h-3 w-3" />
+              {bestTime.toFixed(3)}s
+            </div>
+          )}
 
-          {/* 🤖 AI */}
-          <button onClick={onToggleAI} className="text-purple-500 text-lg">
-            <i className="bi bi-robot"></i>
+          {/* AI toggle — single icon only, no duplication */}
+          <button
+            onClick={onToggleAI}
+            title="Toggle AI Assistant"
+            className="flex items-center justify-center w-8 h-8 rounded-md text-purple-500 hover:bg-purple-500/10 transition-colors"
+          >
+            <Bot className="h-5 w-5" />
           </button>
 
-          {/* 🔄 RESET */}
-          <button onClick={handleReset} className="text-yellow-500 text-lg">
-            <i className="bi bi-arrow-clockwise"></i>
-          </button>
-
-          {/* ▶ RUN */}
-          <button onClick={handleRun} className="text-green-500 text-lg">
-            <i className={`bi ${isRunning ? "bi-hourglass-split" : "bi-play-fill"}`}></i>
+          {/* Run */}
+          <button
+            onClick={handleRun}
+            disabled={isRunning}
+            title="Run code"
+            className="flex items-center justify-center w-8 h-8 rounded-md text-green-500 hover:bg-green-500/10 transition-colors disabled:opacity-50"
+          >
+            {isRunning
+              ? <Loader2 className="h-5 w-5 animate-spin" />
+              : <Play className="h-5 w-5" />
+            }
           </button>
 
         </div>
       </div>
 
-      {/* 🧠 EDITOR */}
-      <div className="flex-1">
+      {/* ── EDITOR ──────────────────────────────────────────────────────────── */}
+      <div className="flex-1 overflow-hidden">
         <CodeEditor
           language="java"
           value={code}
@@ -137,44 +161,71 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
         />
       </div>
 
-      {/* 🔻 RESIZER */}
+      {/* ── RESIZE HANDLE ───────────────────────────────────────────────────── */}
       <div
-        className="h-1 bg-border hover:bg-primary cursor-row-resize"
-        onMouseDown={() => setIsResizing(true)}
+        className="h-1.5 bg-border hover:bg-primary/60 cursor-row-resize shrink-0 transition-colors"
+        onMouseDown={(e) => {
+          e.preventDefault();
+          isResizingRef.current = true;
+        }}
       />
 
-      {/* 💻 TERMINAL */}
-      <div style={{ height: bottomHeight }} className="flex flex-col border-t">
+      {/* ── TERMINAL PANEL ──────────────────────────────────────────────────── */}
+      <div
+        style={{ height: bottomHeight }}
+        className="flex flex-col border-t bg-card shrink-0 overflow-hidden"
+      >
+        {/* Tabs */}
+        <div className="flex items-center text-xs border-b shrink-0">
+          <button
+            onClick={() => setActiveTab("terminal")}
+            className={`px-4 py-2 transition-colors ${
+              activeTab === "terminal"
+                ? "border-b-2 border-primary text-primary"
+                : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Terminal
+          </button>
+          <button
+            onClick={() => setActiveTab("errors")}
+            className={`px-4 py-2 transition-colors ${
+              activeTab === "errors"
+                ? "border-b-2 border-red-500 text-red-500"
+                : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Errors
+          </button>
 
-        {/* TABS */}
-        <div className="flex text-xs border-b">
-          <button onClick={() => setActiveTab("terminal")} className="px-3 py-2">Terminal</button>
-          <button onClick={() => setActiveTab("errors")} className="px-3 py-2 text-red-500">Errors</button>
-
-          <div className="ml-auto px-3 py-2 text-green-500">
-            {executionTime && `⏱ ${executionTime.toFixed(3)}s`}
-          </div>
+          {/* Execution time */}
+          {executionTime !== null && (
+            <div className="ml-auto px-3 py-2 text-xs text-green-500">
+              ⏱ {executionTime.toFixed(3)}s
+            </div>
+          )}
         </div>
 
-        {/* CONTENT */}
-        <div className="flex-1 p-2 font-mono text-xs overflow-auto">
+        {/* Content */}
+        <div className="flex-1 p-3 font-mono text-xs overflow-auto">
 
           {activeTab === "terminal" && (
             <>
-              <div className="text-green-400">$ Input</div>
+              <div className="text-green-400 mb-1">$ stdin</div>
               <textarea
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                className="w-full bg-black text-white p-2 mb-2"
+                placeholder="Enter input here…"
+                className="w-full bg-black/60 text-white p-2 mb-3 rounded border border-border resize-none text-xs"
+                rows={3}
               />
-
-              <div className="text-green-400">$ Output</div>
-              <pre>{output}</pre>
+              <div className="text-green-400 mb-1">$ stdout</div>
+              <pre className="text-foreground whitespace-pre-wrap">{output}</pre>
             </>
           )}
 
           {activeTab === "errors" && (
-            <pre className="text-red-500">{error}</pre>
+            <pre className="text-red-400 whitespace-pre-wrap">{error || "No errors."}</pre>
           )}
 
         </div>
