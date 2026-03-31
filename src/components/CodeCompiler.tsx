@@ -10,6 +10,7 @@ type Language = "java";
 
 type CodeCompilerProps = {
   onCodeChange?: (code: string, lang: string) => void;
+  onToggleAI?: () => void;
 };
 
 const defaultCode = `public class Main {
@@ -18,22 +19,20 @@ const defaultCode = `public class Main {
     }
 }`;
 
-export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
-  const language: Language = "java";
-
+export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const [code, setCode] = useState(defaultCode);
-  const [input, setInput] = useState("");
+  const [terminalInput, setTerminalInput] = useState("");
   const [output, setOutput] = useState("");
   const [error, setError] = useState("");
 
-  const [activeTab, setActiveTab] = useState<"terminal" | "errors" | "problems">("terminal");
+  const [activeTab, setActiveTab] = useState<"terminal" | "errors">("terminal");
 
   const [isRunning, setIsRunning] = useState(false);
   const [executionTime, setExecutionTime] = useState<number | null>(null);
 
-  const [bottomHeight, setBottomHeight] = useState(200);
+  const [bottomHeight, setBottomHeight] = useState(180);
   const [isResizing, setIsResizing] = useState(false);
 
   // CTRL + ENTER
@@ -45,9 +44,8 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [code, input, isRunning]);
+  }, [code, terminalInput, isRunning]);
 
-  // RUN
   const handleRun = async () => {
     if (!code.trim()) {
       toast.error("Code cannot be empty");
@@ -62,7 +60,7 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
     const start = performance.now();
 
     try {
-      const result = await runCode(code, languageIds["java"], input);
+      const result = await runCode(code, languageIds["java"], terminalInput);
 
       const end = performance.now();
       setExecutionTime((end - start) / 1000);
@@ -70,51 +68,37 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
       if (result.stderr) {
         setError(result.stderr);
         setActiveTab("errors");
-        toast.error("Runtime Error");
       } else if (result.compile_output) {
         setError(result.compile_output);
         setActiveTab("errors");
-        toast.error("Compilation Failed");
       } else {
         setOutput(result.stdout || "No Output");
         setActiveTab("terminal");
-        toast.success("Execution Successful");
       }
 
     } catch {
-      setError("Unable to connect to compiler server");
+      setError("Server Error");
       setActiveTab("errors");
-      toast.error("Server Error");
     } finally {
       setIsRunning(false);
     }
   };
 
-  // RESET
   const handleReset = () => {
     setCode(defaultCode);
-    setInput("");
+    setTerminalInput("");
     setOutput("");
     setError("");
     setExecutionTime(null);
-
-    onCodeChange?.(defaultCode, language);
-    toast.success("Code Reset");
+    onCodeChange?.(defaultCode, "java");
   };
-
-  // RESIZE
-  const startResize = () => setIsResizing(true);
-  const stopResize = () => setIsResizing(false);
 
   const handleResize = (e: any) => {
     if (isResizing && containerRef.current) {
       const rect = containerRef.current.getBoundingClientRect();
       const newHeight = rect.bottom - e.clientY;
 
-      const min = 120;
-      const max = rect.height * 0.6;
-
-      if (newHeight > min && newHeight < max) {
+      if (newHeight > 120 && newHeight < rect.height * 0.6) {
         setBottomHeight(newHeight);
       }
     }
@@ -123,100 +107,84 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
   return (
     <div
       ref={containerRef}
-      className="flex flex-col h-full border border-border rounded-lg overflow-hidden"
+      className="flex flex-col h-full"
       onMouseMove={handleResize}
-      onMouseUp={stopResize}
+      onMouseUp={() => setIsResizing(false)}
     >
 
       {/* TOOLBAR */}
-      <div className="flex items-center justify-between p-3 border-b border-border bg-surface">
-        <div className="text-sm font-medium">Java</div>
+      <div className="flex justify-between p-3 border-b bg-surface">
+        <div>Java</div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex gap-2">
+
+          {/* AI BUTTON */}
           <button
-            onClick={handleReset}
-            className="flex items-center gap-1 px-3 py-1.5 text-sm bg-secondary rounded-md"
+            onClick={onToggleAI}
+            className="px-3 py-1 bg-purple-600 text-white rounded"
           >
-            <RotateCcw className="h-3.5 w-3.5" />
+            AI
+          </button>
+
+          <button onClick={handleReset} className="px-3 py-1 bg-gray-500 text-white rounded">
             Reset
           </button>
 
-          <button
-            onClick={handleRun}
-            disabled={isRunning}
-            className={`flex items-center gap-1.5 px-4 py-1.5 text-sm rounded-md ${
-              isRunning
-                ? "bg-primary/60 cursor-not-allowed"
-                : "bg-primary hover:opacity-90"
-            }`}
-          >
-            <Play className="h-3.5 w-3.5" />
-            {isRunning ? "Executing..." : "Run Code"}
+          <button onClick={handleRun} className="px-3 py-1 bg-green-600 text-white rounded">
+            {isRunning ? "Running..." : "Run"}
           </button>
+
         </div>
       </div>
 
       {/* EDITOR */}
-      <div className="flex-1 min-h-0">
+      <div className="flex-1">
         <CodeEditor
           language="java"
           value={code}
-          onChange={(newCode: string) => {
-            setCode(newCode);
-            onCodeChange?.(newCode, "java");
+          onChange={(c) => {
+            setCode(c);
+            onCodeChange?.(c, "java");
           }}
-          readOnly={isRunning}
         />
       </div>
 
       {/* RESIZER */}
-      <div
-        className="h-1 cursor-row-resize bg-border hover:bg-primary"
-        onMouseDown={startResize}
-      />
+      <div className="h-1 bg-border cursor-row-resize" onMouseDown={() => setIsResizing(true)} />
 
-      {/* TERMINAL PANEL */}
-      <div
-        style={{ height: bottomHeight }}
-        className="bg-background border-t border-border flex flex-col"
-      >
+      {/* TERMINAL */}
+      <div style={{ height: bottomHeight }} className="border-t flex flex-col">
+
         {/* TABS */}
-        <div className="flex border-b border-border text-xs">
-          {["terminal", "errors", "problems"].map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab as any)}
-              className={`px-4 py-2 ${
-                activeTab === tab ? "bg-surface font-semibold" : ""
-              }`}
-            >
-              {tab.toUpperCase()}
-            </button>
-          ))}
+        <div className="flex text-xs border-b">
+          <button onClick={() => setActiveTab("terminal")} className="px-3 py-2">Terminal</button>
+          <button onClick={() => setActiveTab("errors")} className="px-3 py-2 text-red-500">Errors</button>
 
-          <div className="ml-auto px-4 py-2 text-green-500 text-xs">
-            {executionTime !== null && `⏱ ${executionTime.toFixed(3)}s`}
+          <div className="ml-auto px-3 py-2 text-green-500">
+            {executionTime && `⏱ ${executionTime.toFixed(3)}s`}
           </div>
         </div>
 
         {/* CONTENT */}
-        <div className="flex-1 flex overflow-hidden">
-          
-          {/* INPUT */}
-          <div className="w-1/2 border-r border-border p-3">
-            <textarea
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              className="w-full h-full bg-surface border border-border rounded p-2 text-xs font-mono"
-            />
-          </div>
+        <div className="flex-1 p-2 text-xs font-mono overflow-auto">
 
-          {/* OUTPUT */}
-          <div className="w-1/2 p-3 overflow-auto">
-            {activeTab === "terminal" && <pre>{output}</pre>}
-            {activeTab === "errors" && <pre className="text-red-500">{error}</pre>}
-            {activeTab === "problems" && <p>Problem viewer here</p>}
-          </div>
+          {activeTab === "terminal" && (
+            <>
+              <div className="mb-2 text-green-400">$ Input:</div>
+              <textarea
+                value={terminalInput}
+                onChange={(e) => setTerminalInput(e.target.value)}
+                className="w-full bg-black text-white p-2 mb-2"
+              />
+
+              <div className="text-green-400">$ Output:</div>
+              <pre>{output}</pre>
+            </>
+          )}
+
+          {activeTab === "errors" && (
+            <pre className="text-red-500">{error}</pre>
+          )}
 
         </div>
       </div>
