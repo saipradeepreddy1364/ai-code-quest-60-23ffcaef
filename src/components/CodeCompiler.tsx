@@ -1,12 +1,10 @@
-// src/components/CodeCompiler.tsx
-
 import { useRef, useState, useEffect } from "react";
-import { Play, RotateCcw } from "lucide-react";
 import CodeEditor from "./CodeEditor";
 import { runCode, languageIds } from "@/api/compiler";
 import { toast } from "sonner";
 
-type Language = "java";
+// ✅ Bootstrap Icons CDN required in index.html:
+// <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 type CodeCompilerProps = {
   onCodeChange?: (code: string, lang: string) => void;
@@ -23,7 +21,7 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
   const containerRef = useRef<HTMLDivElement>(null);
 
   const [code, setCode] = useState(defaultCode);
-  const [terminalInput, setTerminalInput] = useState("");
+  const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const [error, setError] = useState("");
 
@@ -32,50 +30,56 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
   const [isRunning, setIsRunning] = useState(false);
   const [executionTime, setExecutionTime] = useState<number | null>(null);
 
-  const [bottomHeight, setBottomHeight] = useState(180);
+  const [bottomHeight, setBottomHeight] = useState(200);
   const [isResizing, setIsResizing] = useState(false);
 
-  // CTRL + ENTER
+  // 🔥 GLOBAL RESIZE FIX
   useEffect(() => {
-    const handler = (e: KeyboardEvent) => {
-      if (e.ctrlKey && e.key === "Enter" && !isRunning) {
-        handleRun();
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isResizing || !containerRef.current) return;
+
+      const rect = containerRef.current.getBoundingClientRect();
+      const newHeight = rect.bottom - e.clientY;
+
+      if (newHeight > 120 && newHeight < rect.height * 0.7) {
+        setBottomHeight(newHeight);
       }
     };
-    window.addEventListener("keydown", handler);
-    return () => window.removeEventListener("keydown", handler);
-  }, [code, terminalInput, isRunning]);
 
+    const handleMouseUp = () => setIsResizing(false);
+
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseup", handleMouseUp);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseup", handleMouseUp);
+    };
+  }, [isResizing]);
+
+  // RUN
   const handleRun = async () => {
-    if (!code.trim()) {
-      toast.error("Code cannot be empty");
-      return;
-    }
+    if (!code.trim()) return;
 
     setIsRunning(true);
     setOutput("");
     setError("");
-    setExecutionTime(null);
 
     const start = performance.now();
 
     try {
-      const result = await runCode(code, languageIds["java"], terminalInput);
+      const result = await runCode(code, languageIds["java"], input);
 
       const end = performance.now();
       setExecutionTime((end - start) / 1000);
 
-      if (result.stderr) {
-        setError(result.stderr);
-        setActiveTab("errors");
-      } else if (result.compile_output) {
-        setError(result.compile_output);
+      if (result.stderr || result.compile_output) {
+        setError(result.stderr || result.compile_output);
         setActiveTab("errors");
       } else {
         setOutput(result.stdout || "No Output");
         setActiveTab("terminal");
       }
-
     } catch {
       setError("Server Error");
       setActiveTab("errors");
@@ -86,74 +90,61 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
 
   const handleReset = () => {
     setCode(defaultCode);
-    setTerminalInput("");
+    setInput("");
     setOutput("");
     setError("");
     setExecutionTime(null);
     onCodeChange?.(defaultCode, "java");
   };
 
-  const handleResize = (e: any) => {
-    if (isResizing && containerRef.current) {
-      const rect = containerRef.current.getBoundingClientRect();
-      const newHeight = rect.bottom - e.clientY;
-
-      if (newHeight > 120 && newHeight < rect.height * 0.6) {
-        setBottomHeight(newHeight);
-      }
-    }
-  };
-
   return (
-    <div
-      ref={containerRef}
-      className="flex flex-col h-full"
-      onMouseMove={handleResize}
-      onMouseUp={() => setIsResizing(false)}
-    >
+    <div ref={containerRef} className="flex flex-col h-full">
 
-      {/* TOOLBAR */}
-      <div className="flex justify-between p-3 border-b bg-surface">
-        <div>Java</div>
+      {/* 🔝 TOOLBAR */}
+      <div className="flex justify-between items-center p-3 border-b bg-surface">
 
-        <div className="flex gap-2">
+        <span className="text-sm font-medium">Java</span>
 
-          {/* AI BUTTON */}
-          <button
-            onClick={onToggleAI}
-            className="px-3 py-1 bg-purple-600 text-white rounded"
-          >
-            AI
+        <div className="flex gap-3">
+
+          {/* 🤖 AI */}
+          <button onClick={onToggleAI} className="text-purple-500 text-lg">
+            <i className="bi bi-robot"></i>
           </button>
 
-          <button onClick={handleReset} className="px-3 py-1 bg-gray-500 text-white rounded">
-            Reset
+          {/* 🔄 RESET */}
+          <button onClick={handleReset} className="text-yellow-500 text-lg">
+            <i className="bi bi-arrow-clockwise"></i>
           </button>
 
-          <button onClick={handleRun} className="px-3 py-1 bg-green-600 text-white rounded">
-            {isRunning ? "Running..." : "Run"}
+          {/* ▶ RUN */}
+          <button onClick={handleRun} className="text-green-500 text-lg">
+            <i className={`bi ${isRunning ? "bi-hourglass-split" : "bi-play-fill"}`}></i>
           </button>
 
         </div>
       </div>
 
-      {/* EDITOR */}
+      {/* 🧠 EDITOR */}
       <div className="flex-1">
         <CodeEditor
           language="java"
           value={code}
-          onChange={(c) => {
-            setCode(c);
-            onCodeChange?.(c, "java");
+          onChange={(val) => {
+            setCode(val);
+            onCodeChange?.(val, "java");
           }}
         />
       </div>
 
-      {/* RESIZER */}
-      <div className="h-1 bg-border cursor-row-resize" onMouseDown={() => setIsResizing(true)} />
+      {/* 🔻 RESIZER */}
+      <div
+        className="h-1 bg-border hover:bg-primary cursor-row-resize"
+        onMouseDown={() => setIsResizing(true)}
+      />
 
-      {/* TERMINAL */}
-      <div style={{ height: bottomHeight }} className="border-t flex flex-col">
+      {/* 💻 TERMINAL */}
+      <div style={{ height: bottomHeight }} className="flex flex-col border-t">
 
         {/* TABS */}
         <div className="flex text-xs border-b">
@@ -166,18 +157,18 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
         </div>
 
         {/* CONTENT */}
-        <div className="flex-1 p-2 text-xs font-mono overflow-auto">
+        <div className="flex-1 p-2 font-mono text-xs overflow-auto">
 
           {activeTab === "terminal" && (
             <>
-              <div className="mb-2 text-green-400">$ Input:</div>
+              <div className="text-green-400">$ Input</div>
               <textarea
-                value={terminalInput}
-                onChange={(e) => setTerminalInput(e.target.value)}
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
                 className="w-full bg-black text-white p-2 mb-2"
               />
 
-              <div className="text-green-400">$ Output:</div>
+              <div className="text-green-400">$ Output</div>
               <pre>{output}</pre>
             </>
           )}
