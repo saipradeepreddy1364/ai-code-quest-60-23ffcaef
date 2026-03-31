@@ -3,14 +3,12 @@ import { useRef, useState, useEffect } from "react";
 import CodeEditor from "./CodeEditor";
 import { runCode, languageIds } from "@/api/compiler";
 import { toast } from "sonner";
-import { Bot, Trophy, Play, Loader2 } from "lucide-react";
-
-// ✅ Bootstrap Icons CDN required in index.html:
-// <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+import { Bot, Trophy, Play, Loader2, Save } from "lucide-react";
 
 type CodeCompilerProps = {
   onCodeChange?: (code: string, lang: string) => void;
   onToggleAI?: () => void;
+  userEmail?: string;
 };
 
 const defaultCode = `public class Main {
@@ -19,27 +17,23 @@ const defaultCode = `public class Main {
     }
 }`;
 
-export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerProps) {
+export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: CodeCompilerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const isResizingRef = useRef(false);
 
   const [code, setCode] = useState(defaultCode);
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const [error, setError] = useState("");
-
   const [activeTab, setActiveTab] = useState<"terminal" | "errors">("terminal");
-
   const [isRunning, setIsRunning] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
   const [executionTime, setExecutionTime] = useState<number | null>(null);
-
-  // ── Best run tracking ───────────────────────────────────────────────────────
   const [bestTime, setBestTime] = useState<number | null>(null);
   const [showBestBadge, setShowBestBadge] = useState(false);
-
-  // ── Terminal resize ─────────────────────────────────────────────────────────
   const [bottomHeight, setBottomHeight] = useState(200);
-  const isResizingRef = useRef(false); // use ref so event listeners always see latest value
 
+  // Terminal resize via ref (stable listener, no stale closure)
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!isResizingRef.current || !containerRef.current) return;
@@ -49,40 +43,31 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
         setBottomHeight(newHeight);
       }
     };
-
-    const handleMouseUp = () => {
-      isResizingRef.current = false;
-    };
-
+    const handleMouseUp = () => { isResizingRef.current = false; };
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("mouseup", handleMouseUp);
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("mouseup", handleMouseUp);
     };
-  }, []); // runs once – stable because we use a ref
+  }, []);
 
-  // ── Run ─────────────────────────────────────────────────────────────────────
   const handleRun = async () => {
     if (!code.trim()) return;
-
     setIsRunning(true);
     setOutput("");
     setError("");
-
     const start = performance.now();
-
     try {
       const result = await runCode(code, languageIds["java"], input);
       const elapsed = (performance.now() - start) / 1000;
       setExecutionTime(elapsed);
 
-      // Update best run
       const isNewBest = bestTime === null || elapsed < bestTime;
       if (isNewBest) {
         setBestTime(elapsed);
         setShowBestBadge(true);
-        setTimeout(() => setShowBestBadge(false), 3000); // hide after 3 s
+        setTimeout(() => setShowBestBadge(false), 3000);
       }
 
       if (result.stderr || result.compile_output) {
@@ -100,15 +85,33 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
     }
   };
 
+  // ✅ Save progress — now lives inside compiler toolbar, not the dashboard header
+  const handleSave = async () => {
+    if (!code.trim()) { toast.error("Nothing to save!"); return; }
+    setIsSaving(true);
+    try {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/code/save`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userEmail, code, language: "java" }),
+      });
+      if (!response.ok) throw new Error("Save failed");
+      toast.success("Code saved successfully!");
+    } catch {
+      toast.error("Failed to save code.");
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
   return (
     <div ref={containerRef} className="flex flex-col h-full select-none">
 
-      {/* ── TOOLBAR ─────────────────────────────────────────────────────────── */}
+      {/* TOOLBAR */}
       <div className="flex justify-between items-center px-4 py-2 border-b bg-card shrink-0">
         <span className="text-sm font-semibold tracking-wide">Java</span>
 
-        <div className="flex items-center gap-3">
-
+        <div className="flex items-center gap-2">
           {/* Best run badge */}
           {bestTime !== null && (
             <div
@@ -124,7 +127,18 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
             </div>
           )}
 
-          {/* AI toggle — single icon only, no duplication */}
+          {/* Save */}
+          <button
+            onClick={handleSave}
+            disabled={isSaving}
+            title="Save code"
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium bg-muted hover:bg-muted/80 transition-colors disabled:opacity-50"
+          >
+            <Save className="h-3.5 w-3.5" />
+            {isSaving ? "Saving…" : "Save"}
+          </button>
+
+          {/* AI toggle */}
           <button
             onClick={onToggleAI}
             title="Toggle AI Assistant"
@@ -140,16 +154,12 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
             title="Run code"
             className="flex items-center justify-center w-8 h-8 rounded-md text-green-500 hover:bg-green-500/10 transition-colors disabled:opacity-50"
           >
-            {isRunning
-              ? <Loader2 className="h-5 w-5 animate-spin" />
-              : <Play className="h-5 w-5" />
-            }
+            {isRunning ? <Loader2 className="h-5 w-5 animate-spin" /> : <Play className="h-5 w-5" />}
           </button>
-
         </div>
       </div>
 
-      {/* ── EDITOR ──────────────────────────────────────────────────────────── */}
+      {/* EDITOR */}
       <div className="flex-1 overflow-hidden">
         <CodeEditor
           language="java"
@@ -161,28 +171,22 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
         />
       </div>
 
-      {/* ── RESIZE HANDLE ───────────────────────────────────────────────────── */}
+      {/* RESIZE HANDLE */}
       <div
         className="h-1.5 bg-border hover:bg-primary/60 cursor-row-resize shrink-0 transition-colors"
-        onMouseDown={(e) => {
-          e.preventDefault();
-          isResizingRef.current = true;
-        }}
+        onMouseDown={(e) => { e.preventDefault(); isResizingRef.current = true; }}
       />
 
-      {/* ── TERMINAL PANEL ──────────────────────────────────────────────────── */}
+      {/* TERMINAL */}
       <div
         style={{ height: bottomHeight }}
         className="flex flex-col border-t bg-card shrink-0 overflow-hidden"
       >
-        {/* Tabs */}
         <div className="flex items-center text-xs border-b shrink-0">
           <button
             onClick={() => setActiveTab("terminal")}
             className={`px-4 py-2 transition-colors ${
-              activeTab === "terminal"
-                ? "border-b-2 border-primary text-primary"
-                : "text-muted-foreground hover:text-foreground"
+              activeTab === "terminal" ? "border-b-2 border-primary text-primary" : "text-muted-foreground hover:text-foreground"
             }`}
           >
             Terminal
@@ -190,15 +194,11 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
           <button
             onClick={() => setActiveTab("errors")}
             className={`px-4 py-2 transition-colors ${
-              activeTab === "errors"
-                ? "border-b-2 border-red-500 text-red-500"
-                : "text-muted-foreground hover:text-foreground"
+              activeTab === "errors" ? "border-b-2 border-red-500 text-red-500" : "text-muted-foreground hover:text-foreground"
             }`}
           >
             Errors
           </button>
-
-          {/* Execution time */}
           {executionTime !== null && (
             <div className="ml-auto px-3 py-2 text-xs text-green-500">
               ⏱ {executionTime.toFixed(3)}s
@@ -206,9 +206,7 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
           )}
         </div>
 
-        {/* Content */}
         <div className="flex-1 p-3 font-mono text-xs overflow-auto">
-
           {activeTab === "terminal" && (
             <>
               <div className="text-green-400 mb-1">$ stdin</div>
@@ -223,11 +221,9 @@ export default function CodeCompiler({ onCodeChange, onToggleAI }: CodeCompilerP
               <pre className="text-foreground whitespace-pre-wrap">{output}</pre>
             </>
           )}
-
           {activeTab === "errors" && (
             <pre className="text-red-400 whitespace-pre-wrap">{error || "No errors."}</pre>
           )}
-
         </div>
       </div>
     </div>
