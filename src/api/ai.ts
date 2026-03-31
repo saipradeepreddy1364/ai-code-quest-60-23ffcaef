@@ -44,4 +44,3 @@ export async function askAI(prompt: string) {
     [{ role: "user", content: prompt }],
     "You are a helpful coding assistant. Help with programming questions, errors, and suggestions."
   );
-}
