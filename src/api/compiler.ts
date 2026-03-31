@@ -80,4 +80,3 @@ export const languageIds = {
   rust: 73,
   ruby: 72,
   php: 68,
-};
