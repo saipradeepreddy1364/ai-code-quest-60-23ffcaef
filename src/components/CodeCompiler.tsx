@@ -1,5 +1,4 @@
-// src/components/CodeCompiler.tsx
-
+import { useRef } from "react";
 import { useState, useEffect } from "react";
 import { Play, RotateCcw } from "lucide-react";
 import CodeEditor from "./CodeEditor";
@@ -24,7 +23,7 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
 
   const [code, setCode] = useState(defaultCode);
   const [input, setInput] = useState("");
-
+  const containerRef = useRef<HTMLDivElement>(null);
   const [output, setOutput] = useState("");
   const [error, setError] = useState("");
 
