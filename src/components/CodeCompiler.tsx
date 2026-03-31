@@ -33,7 +33,7 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
   const [isRunning, setIsRunning] = useState(false);
   const [executionTime, setExecutionTime] = useState<number | null>(null);
 
-  const [bottomHeight, setBottomHeight] = useState(180);
+  const [bottomHeight, setBottomHeight] = useState(window.innerHeight * 0.5);
   const [isResizing, setIsResizing] = useState(false);
 
   // ⭐ CTRL + ENTER
