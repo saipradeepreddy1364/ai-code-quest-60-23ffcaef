@@ -228,3 +228,4 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
       </div>
     </div>
   );
+}
