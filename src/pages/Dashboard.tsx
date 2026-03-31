@@ -26,7 +26,7 @@ export default function Dashboard() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // ✅ NEW: control AI open/close
+  // ✅ AI control
   const [isAiOpen, setIsAiOpen] = useState(false);
 
   const [currentCode, setCurrentCode] = useState("");
@@ -40,9 +40,6 @@ export default function Dashboard() {
   useEffect(() => {
     console.log('📊 Dashboard mounted successfully');
     console.log('👤 Current user:', user?.email);
-    return () => {
-      console.log('📊 Dashboard unmounting');
-    };
   }, [user]);
 
   const startResizing = (e: React.MouseEvent) => {
@@ -62,7 +59,6 @@ export default function Dashboard() {
   };
 
   const handleLogout = async () => {
-    console.log('🚪 Logging out...');
     await signOut();
     window.location.href = '/login';
   };
@@ -85,25 +81,15 @@ export default function Dashboard() {
       });
       if (!response.ok) throw new Error("Save failed");
       toast.success("Code saved successfully!");
-    } catch (e) {
-      toast.error("Failed to save code. Try again.");
+    } catch {
+      toast.error("Failed to save code.");
     } finally {
       setIsSaving(false);
     }
   };
 
-  // ================= UI =================
-
   if (!user) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-background">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
-          <h2 className="text-xl font-semibold text-foreground">Loading Dashboard...</h2>
-          <p className="text-muted-foreground mt-2">Please wait while we set up your workspace</p>
-        </div>
-      </div>
-    );
+    return <div className="h-screen flex items-center justify-center">Loading...</div>;
   }
 
   return (
@@ -114,94 +100,68 @@ export default function Dashboard() {
       onMouseLeave={stopResizing}
     >
 
-      {/* Header */}
+      {/* HEADER (RESTORED USER DROPDOWN) */}
       <div className="flex justify-between items-center mb-3 p-4 bg-card border border-border rounded-lg">
-        <button
-          onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="flex items-center gap-2 px-3 py-2 bg-surface hover:bg-surface-hover rounded-lg transition-colors"
-        >
-          <Menu className="h-5 w-5 text-foreground" />
-          <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${sidebarOpen ? 'rotate-180' : ''}`} />
+
+        <button onClick={() => setSidebarOpen(!sidebarOpen)}>
+          <Menu />
         </button>
 
-        {/* ✅ AI OPEN BUTTON */}
-        <button
-          onClick={() => setIsAiOpen(true)}
-          className="flex items-center gap-2 px-3 py-2 bg-primary text-white rounded-md"
-        >
-          <Bot className="h-4 w-4" />
-          AI
-        </button>
+        {/* 👤 USER DROPDOWN */}
+        <div className="relative">
+          <button
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+            className="flex items-center gap-2 px-3 py-2 bg-primary text-white rounded-md"
+          >
+            <User className="h-4 w-4" />
+            {user?.email}
+            <ChevronDown className="h-4 w-4" />
+          </button>
 
-        <button onClick={handleLogout}>
-          <LogOut />
-        </button>
-      </div>
-
-      {/* Daily Challenge (reduced height) */}
-      <div className="bg-card border border-border rounded-lg p-3 mb-3">
-        <div className="flex items-center justify-between">
-          <div>
-            <p className="text-sm font-medium">{daily.title}</p>
-            <p className="text-xs text-muted-foreground">
-              {daily.category} · {daily.difficulty}
-            </p>
-          </div>
-          <Link to={`/problem/${daily.id}`} className="text-sm text-primary">
-            Solve
-          </Link>
-        </div>
-      </div>
-
-      {/* Main Content */}
-      <div className="flex gap-4 h-[calc(100vh-140px)]">
-
-        {/* Compiler */}
-        <div
-          className="transition-all duration-300 ease-in-out"
-          style={{ width: isAiOpen ? `calc(100% - ${aiPanelWidth}px)` : "100%" }}
-        >
-          <div className="bg-card border border-border rounded-lg overflow-hidden h-full">
-            
-            <div className="p-4 border-b border-border bg-surface flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <Code2 className="h-5 w-5 text-primary" />
-                <h2 className="font-medium text-foreground">Code Compiler</h2>
-              </div>
-              <button
-                onClick={handleSave}
-                disabled={isSaving}
-                className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-secondary rounded-md"
-              >
-                <Save className="h-4 w-4" />
-                {isSaving ? "Saving..." : "Save"}
+          {dropdownOpen && (
+            <div className="absolute right-0 mt-2 w-56 bg-card border rounded shadow">
+              <div className="p-3 text-sm">{user.email}</div>
+              <button onClick={handleLogout} className="w-full text-left px-3 py-2 text-red-500">
+                Logout
               </button>
             </div>
+          )}
+        </div>
+      </div>
 
-            <CodeCompiler onCodeChange={(code, lang) => {
-              setCurrentCode(code);
-              setCurrentLanguage(lang);
-            }} />
+      {/* DAILY */}
+      <div className="bg-card border rounded p-3 mb-3">
+        <p>{daily.title}</p>
+      </div>
+
+      {/* MAIN */}
+      <div className="flex gap-4 h-[calc(100vh-140px)]">
+
+        {/* COMPILER */}
+        <div
+          style={{ width: isAiOpen ? `calc(100% - ${aiPanelWidth}px)` : "100%" }}
+        >
+          <div className="h-full">
+            <CodeCompiler
+              onCodeChange={(code, lang) => {
+                setCurrentCode(code);
+                setCurrentLanguage(lang);
+              }}
+              onToggleAI={() => setIsAiOpen(prev => !prev)}
+            />
           </div>
         </div>
 
-        {/* ✅ AI PANEL (ONLY WHEN OPEN) */}
+        {/* AI PANEL */}
         {isAiOpen && (
-          <div
-            className="relative bg-card border border-border rounded-lg overflow-hidden"
-            style={{ width: aiPanelWidth }}
-          >
-            <div
-              className="absolute left-0 top-0 w-1 h-full cursor-col-resize"
-              onMouseDown={startResizing}
-            />
-
+          <div style={{ width: aiPanelWidth }}>
             <AIChatPanel
               isOpen={isAiOpen}
               onClose={() => setIsAiOpen(false)}
             />
           </div>
         )}
+
       </div>
     </div>
   );
