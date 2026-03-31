@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Problems from './pages/Problems';
 import ProblemView from './pages/ProblemView';
 import SavedCodes from './pages/SavedCodes';
+import TopicsPage from './pages/TopicsPage';         // ← ADD THIS
 import ProtectedRoute from './components/ProtectedRoute';
 import ErrorBoundary from './components/ErrorBoundary';
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route element={<ProtectedRoute />}>
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/topics" element={<TopicsPage />} />  {/* ← ADD THIS */}
             <Route path="/problems" element={<Problems />} />
             <Route path="/problem/:id" element={<ProblemView />} />
             <Route path="/saved" element={<SavedCodes />} />
