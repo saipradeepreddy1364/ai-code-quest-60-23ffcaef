@@ -3,7 +3,7 @@ import { useRef, useState, useEffect } from "react";
 import CodeEditor from "./CodeEditor";
 import { runCode, languageIds } from "@/api/compiler";
 import { toast } from "sonner";
-import { Bot, Trophy, Play, Loader2, Save } from "lucide-react";
+import { Bot, Trophy, Play, Loader2, Save, RotateCcw } from "lucide-react";
 
 type CodeCompilerProps = {
   onCodeChange?: (code: string, lang: string) => void;
@@ -20,6 +20,7 @@ const defaultCode = `public class Main {
 export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: CodeCompilerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const isResizingRef = useRef(false);
+  const abortRef = useRef<AbortController | null>(null);
 
   const [code, setCode] = useState(defaultCode);
   const [input, setInput] = useState("");
@@ -54,9 +55,16 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
 
   const handleRun = async () => {
     if (!code.trim()) return;
+
+    // Cancel any previous in-flight request
+    abortRef.current?.abort();
+    abortRef.current = new AbortController();
+
     setIsRunning(true);
     setOutput("");
     setError("");
+    setExecutionTime(null);
+
     const start = performance.now();
     try {
       const result = await runCode(code, languageIds["java"], input);
@@ -85,7 +93,18 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
     }
   };
 
-  // ✅ Save progress — now lives inside compiler toolbar, not the dashboard header
+  // Refresh — stops execution and resets output/error state
+  const handleRefresh = () => {
+    abortRef.current?.abort();
+    abortRef.current = null;
+    setIsRunning(false);
+    setOutput("");
+    setError("");
+    setExecutionTime(null);
+    setActiveTab("terminal");
+    toast.info("Execution reset. Ready to run again.");
+  };
+
   const handleSave = async () => {
     if (!code.trim()) { toast.error("Nothing to save!"); return; }
     setIsSaving(true);
@@ -147,6 +166,15 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
             <Bot className="h-5 w-5" />
           </button>
 
+          {/* Refresh — clears output and stops any pending run */}
+          <button
+            onClick={handleRefresh}
+            title="Reset output"
+            className="flex items-center justify-center w-8 h-8 rounded-md text-blue-400 hover:bg-blue-400/10 transition-colors"
+          >
+            <RotateCcw className="h-4 w-4" />
+          </button>
+
           {/* Run */}
           <button
             onClick={handleRun}
@@ -177,16 +205,19 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
         onMouseDown={(e) => { e.preventDefault(); isResizingRef.current = true; }}
       />
 
-      {/* TERMINAL */}
+      {/* TERMINAL PANEL */}
       <div
         style={{ height: bottomHeight }}
         className="flex flex-col border-t bg-card shrink-0 overflow-hidden"
       >
+        {/* Tab bar — timer removed */}
         <div className="flex items-center text-xs border-b shrink-0">
           <button
             onClick={() => setActiveTab("terminal")}
             className={`px-4 py-2 transition-colors ${
-              activeTab === "terminal" ? "border-b-2 border-primary text-primary" : "text-muted-foreground hover:text-foreground"
+              activeTab === "terminal"
+                ? "border-b-2 border-primary text-primary"
+                : "text-muted-foreground hover:text-foreground"
             }`}
           >
             Terminal
@@ -194,31 +225,38 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
           <button
             onClick={() => setActiveTab("errors")}
             className={`px-4 py-2 transition-colors ${
-              activeTab === "errors" ? "border-b-2 border-red-500 text-red-500" : "text-muted-foreground hover:text-foreground"
+              activeTab === "errors"
+                ? "border-b-2 border-red-500 text-red-500"
+                : "text-muted-foreground hover:text-foreground"
             }`}
           >
             Errors
           </button>
-          {executionTime !== null && (
-            <div className="ml-auto px-3 py-2 text-xs text-green-500">
-              ⏱ {executionTime.toFixed(3)}s
-            </div>
-          )}
         </div>
 
         <div className="flex-1 p-3 font-mono text-xs overflow-auto">
           {activeTab === "terminal" && (
             <>
-              <div className="text-green-400 mb-1">$ stdin</div>
+              {/* Input section */}
+              <div className="text-green-400 mb-1 font-semibold">Enter Input</div>
               <textarea
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Enter input here…"
+                placeholder="Type your input here…"
                 className="w-full bg-black/60 text-white p-2 mb-3 rounded border border-border resize-none text-xs"
                 rows={3}
               />
-              <div className="text-green-400 mb-1">$ stdout</div>
+
+              {/* Output section */}
+              <div className="text-green-400 mb-1 font-semibold">Output</div>
               <pre className="text-foreground whitespace-pre-wrap">{output}</pre>
+
+              {/* Execution time shown below output */}
+              {executionTime !== null && (
+                <div className="mt-2 text-green-500 text-xs">
+                  ⏱ Time taken: {executionTime.toFixed(3)}s
+                </div>
+              )}
             </>
           )}
           {activeTab === "errors" && (
