@@ -1,11 +1,11 @@
-import { useRef } from "react";
-import { useState, useEffect } from "react";
+// src/components/CodeCompiler.tsx
+
+import { useRef, useState, useEffect } from "react";
 import { Play, RotateCcw } from "lucide-react";
 import CodeEditor from "./CodeEditor";
 import { runCode, languageIds } from "@/api/compiler";
 import { toast } from "sonner";
 
-// ✅ Only Java
 type Language = "java";
 
 type CodeCompilerProps = {
@@ -21,9 +21,10 @@ const defaultCode = `public class Main {
 export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
   const language: Language = "java";
 
+  const containerRef = useRef<HTMLDivElement>(null);
+
   const [code, setCode] = useState(defaultCode);
   const [input, setInput] = useState("");
-  const containerRef = useRef<HTMLDivElement>(null);
   const [output, setOutput] = useState("");
   const [error, setError] = useState("");
 
@@ -32,10 +33,10 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
   const [isRunning, setIsRunning] = useState(false);
   const [executionTime, setExecutionTime] = useState<number | null>(null);
 
-  const [bottomHeight, setBottomHeight] = useState(window.innerHeight * 0.5);
+  const [bottomHeight, setBottomHeight] = useState(200);
   const [isResizing, setIsResizing] = useState(false);
 
-  // ⭐ CTRL + ENTER
+  // CTRL + ENTER
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.ctrlKey && e.key === "Enter" && !isRunning) {
@@ -46,7 +47,7 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
     return () => window.removeEventListener("keydown", handler);
   }, [code, input, isRunning]);
 
-  // ⭐ RUN
+  // RUN
   const handleRun = async () => {
     if (!code.trim()) {
       toast.error("Code cannot be empty");
@@ -80,7 +81,7 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
         toast.success("Execution Successful");
       }
 
-    } catch (err) {
+    } catch {
       setError("Unable to connect to compiler server");
       setActiveTab("errors");
       toast.error("Server Error");
@@ -89,7 +90,7 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
     }
   };
 
-  // ⭐ RESET
+  // RESET
   const handleReset = () => {
     setCode(defaultCode);
     setInput("");
@@ -101,14 +102,19 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
     toast.success("Code Reset");
   };
 
-  // ⭐ RESIZE LOGIC
+  // RESIZE
   const startResize = () => setIsResizing(true);
   const stopResize = () => setIsResizing(false);
 
   const handleResize = (e: any) => {
-    if (isResizing) {
-      const newHeight = window.innerHeight - e.clientY;
-      if (newHeight > 120 && newHeight < 500) {
+    if (isResizing && containerRef.current) {
+      const rect = containerRef.current.getBoundingClientRect();
+      const newHeight = rect.bottom - e.clientY;
+
+      const min = 120;
+      const max = rect.height * 0.6;
+
+      if (newHeight > min && newHeight < max) {
         setBottomHeight(newHeight);
       }
     }
@@ -116,11 +122,13 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
 
   return (
     <div
+      ref={containerRef}
       className="flex flex-col h-full border border-border rounded-lg overflow-hidden"
       onMouseMove={handleResize}
       onMouseUp={stopResize}
     >
-      {/* ⭐ TOOLBAR */}
+
+      {/* TOOLBAR */}
       <div className="flex items-center justify-between p-3 border-b border-border bg-surface">
         <div className="text-sm font-medium">Java</div>
 
@@ -148,7 +156,7 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
         </div>
       </div>
 
-      {/* ⭐ EDITOR */}
+      {/* EDITOR */}
       <div className="flex-1 min-h-0">
         <CodeEditor
           language="java"
@@ -161,13 +169,13 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
         />
       </div>
 
-      {/* ⭐ RESIZER */}
+      {/* RESIZER */}
       <div
-        className="h-2 cursor-row-resize bg-border"
+        className="h-1 cursor-row-resize bg-border hover:bg-primary"
         onMouseDown={startResize}
       />
 
-      {/* ⭐ BOTTOM PANEL */}
+      {/* TERMINAL PANEL */}
       <div
         style={{ height: bottomHeight }}
         className="bg-background border-t border-border flex flex-col"
@@ -186,61 +194,30 @@ export default function CodeCompiler({ onCodeChange }: CodeCompilerProps) {
             </button>
           ))}
 
-          {/* ⏱ TIME */}
           <div className="ml-auto px-4 py-2 text-green-500 text-xs">
             {executionTime !== null && `⏱ ${executionTime.toFixed(3)}s`}
           </div>
         </div>
 
         {/* CONTENT */}
-        <div className="flex-1 overflow-hidden flex">
+        <div className="flex-1 flex overflow-hidden">
           
-          {/* LEFT → INPUT */}
+          {/* INPUT */}
           <div className="w-1/2 border-r border-border p-3">
-            <label className="text-xs font-semibold mb-2 block">INPUT</label>
             <textarea
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              className="w-full h-full bg-surface border border-border rounded p-2 text-xs font-mono resize-none"
-              placeholder="Enter program input..."
+              className="w-full h-full bg-surface border border-border rounded p-2 text-xs font-mono"
             />
           </div>
 
-          {/* RIGHT → OUTPUT / ERRORS / PROBLEM */}
+          {/* OUTPUT */}
           <div className="w-1/2 p-3 overflow-auto">
-            
-            {activeTab === "terminal" && (
-              <>
-                <label className="text-xs font-semibold mb-2 block">OUTPUT</label>
-                <pre className="text-xs font-mono whitespace-pre-wrap">
-                  {output || "Run code to see output"}
-                </pre>
-              </>
-            )}
-
-            {activeTab === "errors" && (
-              <>
-                <label className="text-xs font-semibold mb-2 block text-red-500">
-                  ERRORS
-                </label>
-                <pre className="text-xs font-mono text-red-500 whitespace-pre-wrap">
-                  {error || "No errors"}
-                </pre>
-              </>
-            )}
-
-            {activeTab === "problems" && (
-              <div>
-                <h3 className="text-sm font-semibold mb-2">
-                  Problem Description
-                </h3>
-                <p className="text-xs text-muted-foreground">
-                  You can integrate your problem viewer here.
-                </p>
-              </div>
-            )}
-
+            {activeTab === "terminal" && <pre>{output}</pre>}
+            {activeTab === "errors" && <pre className="text-red-500">{error}</pre>}
+            {activeTab === "problems" && <p>Problem viewer here</p>}
           </div>
+
         </div>
       </div>
     </div>
