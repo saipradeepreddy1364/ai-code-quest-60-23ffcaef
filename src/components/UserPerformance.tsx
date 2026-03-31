@@ -124,3 +124,4 @@ export default function UserPerformance() {
       </div>
     </div>
   );
+}
