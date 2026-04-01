@@ -91,13 +91,6 @@ export default function Dashboard() {
         >
           {sidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
-
-        <div className="flex items-center gap-2 text-sm font-semibold select-none">
-          <Code2 className="h-5 w-5 text-primary" />
-          CodeArena
-        </div>
-
-        {/* User dropdown */}
         <div className="relative">
           <button
             onClick={() => setDropdownOpen((p) => !p)}
