@@ -32,7 +32,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -52,7 +56,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -73,7 +81,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -92,7 +104,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -112,7 +128,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -133,7 +153,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -152,7 +176,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -172,7 +200,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -193,7 +225,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -212,7 +248,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -232,7 +272,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -253,7 +297,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -272,7 +320,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -292,7 +344,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -313,7 +369,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -332,7 +392,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -352,7 +416,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -373,7 +441,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -392,7 +464,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -412,7 +488,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -433,7 +513,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -452,7 +536,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -472,7 +560,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -493,7 +585,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -512,7 +608,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -532,7 +632,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -553,7 +657,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -572,7 +680,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -592,7 +704,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -613,7 +729,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -632,7 +752,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -652,7 +776,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -673,7 +801,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -692,7 +824,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -712,7 +848,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -733,7 +873,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -752,7 +896,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -772,7 +920,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -793,7 +945,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -812,7 +968,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -832,7 +992,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -853,7 +1017,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -872,7 +1040,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -892,7 +1064,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -913,7 +1089,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -932,7 +1112,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -952,7 +1136,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -973,7 +1161,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -992,7 +1184,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1012,7 +1208,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1033,7 +1233,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1052,7 +1256,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1072,7 +1280,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1093,7 +1305,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1112,7 +1328,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1132,7 +1352,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1153,7 +1377,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1172,7 +1400,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1192,7 +1424,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1213,7 +1449,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1232,7 +1472,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1252,7 +1496,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1273,7 +1521,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1292,7 +1544,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1312,7 +1568,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1333,7 +1593,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1352,7 +1616,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1372,7 +1640,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1393,7 +1665,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1412,7 +1688,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1432,7 +1712,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1453,7 +1737,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1472,7 +1760,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1492,7 +1784,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1513,7 +1809,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1532,7 +1832,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1552,7 +1856,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1573,7 +1881,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1592,7 +1904,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1612,7 +1928,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1633,7 +1953,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1652,7 +1976,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1672,7 +2000,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1693,7 +2025,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1712,7 +2048,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1732,7 +2072,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1753,7 +2097,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1772,7 +2120,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1792,7 +2144,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1813,7 +2169,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1832,7 +2192,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1852,7 +2216,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1873,7 +2241,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1892,7 +2264,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1912,7 +2288,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1933,7 +2313,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1952,7 +2336,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1972,7 +2360,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -1993,7 +2385,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2012,7 +2408,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2032,7 +2432,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2053,7 +2457,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2072,7 +2480,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2092,7 +2504,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2113,7 +2529,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2132,7 +2552,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2152,7 +2576,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2173,7 +2601,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2192,7 +2624,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2212,7 +2648,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2233,7 +2673,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2252,7 +2696,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2272,7 +2720,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2293,7 +2745,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2312,7 +2768,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2332,7 +2792,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2353,7 +2817,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2372,7 +2840,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2392,7 +2864,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2413,7 +2889,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2432,7 +2912,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2452,7 +2936,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2473,7 +2961,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2492,7 +2984,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2512,7 +3008,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2533,7 +3033,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2552,7 +3056,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2572,7 +3080,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2593,7 +3105,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2612,7 +3128,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2632,7 +3152,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2653,7 +3177,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2672,7 +3200,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2692,7 +3224,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2713,7 +3249,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2732,7 +3272,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2752,7 +3296,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2773,7 +3321,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2792,7 +3344,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2812,7 +3368,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2833,7 +3393,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2852,7 +3416,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2872,7 +3440,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2893,7 +3465,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2912,7 +3488,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2932,7 +3512,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2953,7 +3537,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2972,7 +3560,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -2992,7 +3584,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3013,7 +3609,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3032,7 +3632,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3052,7 +3656,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3073,7 +3681,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3092,7 +3704,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3112,7 +3728,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3133,7 +3753,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3152,7 +3776,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3172,7 +3800,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3193,7 +3825,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3212,7 +3848,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3232,7 +3872,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3253,7 +3897,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3272,7 +3920,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3292,7 +3944,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3313,7 +3969,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3332,7 +3992,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3352,7 +4016,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3373,7 +4041,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3392,7 +4064,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3412,7 +4088,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3433,7 +4113,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3452,7 +4136,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3472,7 +4160,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3493,7 +4185,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3512,7 +4208,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3532,7 +4232,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3553,7 +4257,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3572,7 +4280,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3592,7 +4304,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3613,7 +4329,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3632,7 +4352,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3652,7 +4376,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3673,7 +4401,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3692,7 +4424,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3712,7 +4448,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3733,7 +4473,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3752,7 +4496,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3772,7 +4520,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3793,7 +4545,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3812,7 +4568,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3832,7 +4592,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3853,7 +4617,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3872,7 +4640,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3892,7 +4664,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3913,7 +4689,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3932,7 +4712,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3952,7 +4736,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3973,7 +4761,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -3992,7 +4784,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4012,7 +4808,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4033,7 +4833,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4052,7 +4856,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4072,7 +4880,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4093,7 +4905,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4112,7 +4928,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4132,7 +4952,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4153,7 +4977,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4172,7 +5000,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4192,7 +5024,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4213,7 +5049,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4232,7 +5072,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4252,7 +5096,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4273,7 +5121,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4292,7 +5144,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4312,7 +5168,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4333,7 +5193,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4352,7 +5216,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4372,7 +5240,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4393,7 +5265,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4412,7 +5288,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4432,7 +5312,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4453,7 +5337,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4472,7 +5360,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4492,7 +5384,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4513,7 +5409,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4532,7 +5432,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4552,7 +5456,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4573,7 +5481,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4592,7 +5504,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4612,7 +5528,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4633,7 +5553,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4652,7 +5576,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4672,7 +5600,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4693,7 +5625,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4712,7 +5648,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4732,7 +5672,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4753,7 +5697,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4772,7 +5720,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4792,7 +5744,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4813,7 +5769,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4832,7 +5792,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4852,7 +5816,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4873,7 +5841,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4892,7 +5864,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4912,7 +5888,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4933,7 +5913,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4952,7 +5936,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4972,7 +5960,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -4993,7 +5985,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5012,7 +6008,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5032,7 +6032,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5053,7 +6057,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5072,7 +6080,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5092,7 +6104,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5113,7 +6129,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5132,7 +6152,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5152,7 +6176,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5173,7 +6201,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5192,7 +6224,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5212,7 +6248,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5233,7 +6273,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5252,7 +6296,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5272,7 +6320,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5293,7 +6345,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5312,7 +6368,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5332,7 +6392,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5353,7 +6417,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5372,7 +6440,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5392,7 +6464,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5413,7 +6489,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5432,7 +6512,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5452,7 +6536,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5473,7 +6561,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5492,7 +6584,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5512,7 +6608,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5533,7 +6633,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5552,7 +6656,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5572,7 +6680,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5593,7 +6705,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5612,7 +6728,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5632,7 +6752,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5653,7 +6777,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5672,7 +6800,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5692,7 +6824,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5713,7 +6849,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5732,7 +6872,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5752,7 +6896,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5773,7 +6921,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5792,7 +6944,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5812,7 +6968,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5833,7 +6993,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5852,7 +7016,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5872,7 +7040,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5893,7 +7065,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5912,7 +7088,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5932,7 +7112,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5953,7 +7137,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5972,7 +7160,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -5992,7 +7184,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6013,7 +7209,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6032,7 +7232,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6052,7 +7256,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6073,7 +7281,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6092,7 +7304,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6112,7 +7328,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6133,7 +7353,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6152,7 +7376,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6172,7 +7400,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6193,7 +7425,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6212,7 +7448,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6232,7 +7472,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6253,7 +7497,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6272,7 +7520,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6292,7 +7544,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6313,7 +7569,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6332,7 +7592,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6352,7 +7616,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6373,7 +7641,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6392,7 +7664,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6412,7 +7688,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6433,7 +7713,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6452,7 +7736,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6472,7 +7760,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6493,7 +7785,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6512,7 +7808,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6532,7 +7832,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6553,7 +7857,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6572,7 +7880,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6592,7 +7904,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6613,7 +7929,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6632,7 +7952,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6652,7 +7976,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6673,7 +8001,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6692,7 +8024,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6712,7 +8048,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6733,7 +8073,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6752,7 +8096,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6772,7 +8120,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6793,7 +8145,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6812,7 +8168,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6832,7 +8192,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6853,7 +8217,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6872,7 +8240,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6892,7 +8264,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6913,7 +8289,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6932,7 +8312,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6952,7 +8336,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6973,7 +8361,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -6992,7 +8384,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7012,7 +8408,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7033,7 +8433,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7052,7 +8456,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7072,7 +8480,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7093,7 +8505,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7112,7 +8528,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7132,7 +8552,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7153,7 +8577,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7172,7 +8600,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7192,7 +8624,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7213,7 +8649,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7232,7 +8672,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7252,7 +8696,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7273,7 +8721,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7292,7 +8744,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7312,7 +8768,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7333,7 +8793,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7352,7 +8816,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7372,7 +8840,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7393,7 +8865,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7412,7 +8888,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7432,7 +8912,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7453,7 +8937,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7472,7 +8960,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7492,7 +8984,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7513,7 +9009,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7532,7 +9032,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7552,7 +9056,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7573,7 +9081,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7592,7 +9104,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7612,7 +9128,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7633,7 +9153,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7652,7 +9176,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7672,7 +9200,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7693,7 +9225,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7712,7 +9248,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7732,7 +9272,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7753,7 +9297,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7772,7 +9320,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7792,7 +9344,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7813,7 +9369,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7832,7 +9392,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7852,7 +9416,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7873,7 +9441,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7892,7 +9464,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7912,7 +9488,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7933,7 +9513,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7952,7 +9536,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7972,7 +9560,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -7993,7 +9585,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8012,7 +9608,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8032,7 +9632,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8053,7 +9657,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8072,7 +9680,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8092,7 +9704,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8113,7 +9729,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8132,7 +9752,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8152,7 +9776,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8173,7 +9801,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8192,7 +9824,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8212,7 +9848,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8233,7 +9873,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8252,7 +9896,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8272,7 +9920,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8293,7 +9945,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8312,7 +9968,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8332,7 +9992,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8353,7 +10017,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8372,7 +10040,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8392,7 +10064,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8413,7 +10089,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8432,7 +10112,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8452,7 +10136,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8473,7 +10161,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8492,7 +10184,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8512,7 +10208,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8533,7 +10233,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8552,7 +10256,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8572,7 +10280,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8593,7 +10305,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8612,7 +10328,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8632,7 +10352,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8653,7 +10377,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8672,7 +10400,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8692,7 +10424,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8713,7 +10449,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8732,7 +10472,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8752,7 +10496,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8773,7 +10521,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8792,7 +10544,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8812,7 +10568,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8833,7 +10593,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8852,7 +10616,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8872,7 +10640,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8893,7 +10665,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8912,7 +10688,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8932,7 +10712,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8953,7 +10737,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8972,7 +10760,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -8992,7 +10784,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9013,7 +10809,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9032,7 +10832,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9052,7 +10856,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9073,7 +10881,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9092,7 +10904,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9112,7 +10928,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9133,7 +10953,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9152,7 +10976,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9172,7 +11000,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9193,7 +11025,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9212,7 +11048,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9232,7 +11072,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9253,7 +11097,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9272,7 +11120,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9292,7 +11144,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9313,7 +11169,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9332,7 +11192,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9352,7 +11216,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9373,7 +11241,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9392,7 +11264,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9412,7 +11288,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9433,7 +11313,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9452,7 +11336,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9472,7 +11360,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9493,7 +11385,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9512,7 +11408,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9532,7 +11432,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9553,7 +11457,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9572,7 +11480,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9592,7 +11504,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9613,7 +11529,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9632,7 +11552,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9652,7 +11576,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9673,7 +11601,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9692,7 +11624,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9712,7 +11648,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9733,7 +11673,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9752,7 +11696,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9772,7 +11720,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9793,7 +11745,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9812,7 +11768,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9832,7 +11792,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9853,7 +11817,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9872,7 +11840,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9892,7 +11864,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9913,7 +11889,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9932,7 +11912,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9952,7 +11936,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9973,7 +11961,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -9992,7 +11984,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10012,7 +12008,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10033,7 +12033,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10052,7 +12056,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10072,7 +12080,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10093,7 +12105,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10112,7 +12128,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10132,7 +12152,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10153,7 +12177,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10172,7 +12200,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10192,7 +12224,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10213,7 +12249,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10232,7 +12272,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10252,7 +12296,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10273,7 +12321,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10292,7 +12344,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10312,7 +12368,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10333,7 +12393,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10352,7 +12416,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10372,7 +12440,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10393,7 +12465,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10412,7 +12488,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10432,7 +12512,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10453,7 +12537,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10472,7 +12560,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10492,7 +12584,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10513,7 +12609,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10532,7 +12632,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10552,7 +12656,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10573,7 +12681,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10592,7 +12704,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10612,7 +12728,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10633,7 +12753,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10652,7 +12776,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10672,7 +12800,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10693,7 +12825,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10712,7 +12848,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10732,7 +12872,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10753,7 +12897,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10772,7 +12920,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10792,7 +12944,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10813,7 +12969,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10832,7 +12992,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10852,7 +13016,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10873,7 +13041,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10892,7 +13064,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10912,7 +13088,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10933,7 +13113,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10952,7 +13136,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10972,7 +13160,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -10993,7 +13185,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11012,7 +13208,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11032,7 +13232,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11053,7 +13257,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11072,7 +13280,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11092,7 +13304,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11113,7 +13329,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11132,7 +13352,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11152,7 +13376,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11173,7 +13401,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11192,7 +13424,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11212,7 +13448,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11233,7 +13473,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11252,7 +13496,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11272,7 +13520,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11293,7 +13545,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11312,7 +13568,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11332,7 +13592,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11353,7 +13617,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11372,7 +13640,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11392,7 +13664,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11413,7 +13689,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11432,7 +13712,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11452,7 +13736,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11473,7 +13761,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11492,7 +13784,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11512,7 +13808,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11533,7 +13833,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11552,7 +13856,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11572,7 +13880,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11593,7 +13905,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11612,7 +13928,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11632,7 +13952,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11653,7 +13977,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11672,7 +14000,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11692,7 +14024,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11713,7 +14049,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11732,7 +14072,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11752,7 +14096,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11773,7 +14121,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11792,7 +14144,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11812,7 +14168,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11833,7 +14193,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11852,7 +14216,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11872,7 +14240,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11893,7 +14265,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11912,7 +14288,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11932,7 +14312,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11953,7 +14337,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11972,7 +14360,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -11992,7 +14384,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12013,7 +14409,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12032,7 +14432,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12052,7 +14456,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12073,7 +14481,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12092,7 +14504,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12112,7 +14528,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12133,7 +14553,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12152,7 +14576,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12172,7 +14600,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12193,7 +14625,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12212,7 +14648,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12232,7 +14672,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12253,7 +14697,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12272,7 +14720,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12292,7 +14744,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12313,7 +14769,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12332,7 +14792,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12352,7 +14816,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12373,7 +14841,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12392,7 +14864,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12412,7 +14888,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12433,7 +14913,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12452,7 +14936,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12472,7 +14960,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12493,7 +14985,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12512,7 +15008,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12532,7 +15032,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12553,7 +15057,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12572,7 +15080,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12592,7 +15104,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12613,7 +15129,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12632,7 +15152,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12652,7 +15176,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12673,7 +15201,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12692,7 +15224,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12712,7 +15248,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12733,7 +15273,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12752,7 +15296,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12772,7 +15320,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12793,7 +15345,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12812,7 +15368,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12832,7 +15392,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12853,7 +15417,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12872,7 +15440,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12892,7 +15464,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12913,7 +15489,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12932,7 +15512,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12952,7 +15536,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12973,7 +15561,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -12992,7 +15584,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13012,7 +15608,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13033,7 +15633,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13052,7 +15656,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13072,7 +15680,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13093,7 +15705,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13112,7 +15728,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13132,7 +15752,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13153,7 +15777,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13172,7 +15800,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13192,7 +15824,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13213,7 +15849,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13232,7 +15872,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13252,7 +15896,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13273,7 +15921,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13292,7 +15944,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13312,7 +15968,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13333,7 +15993,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13352,7 +16016,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13372,7 +16040,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13393,7 +16065,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13412,7 +16088,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13432,7 +16112,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13453,7 +16137,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13472,7 +16160,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13492,7 +16184,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13513,7 +16209,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13532,7 +16232,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13552,7 +16256,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13573,7 +16281,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13592,7 +16304,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13612,7 +16328,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13633,7 +16353,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13652,7 +16376,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13672,7 +16400,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13693,7 +16425,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13712,7 +16448,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13732,7 +16472,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13753,7 +16497,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13772,7 +16520,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13792,7 +16544,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13813,7 +16569,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13832,7 +16592,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13852,7 +16616,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13873,7 +16641,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13892,7 +16664,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13912,7 +16688,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13933,7 +16713,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13952,7 +16736,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13972,7 +16760,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -13993,7 +16785,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14012,7 +16808,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14032,7 +16832,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14053,7 +16857,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14072,7 +16880,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14092,7 +16904,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14113,7 +16929,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14132,7 +16952,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14152,7 +16976,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14173,7 +17001,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14192,7 +17024,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14212,7 +17048,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14233,7 +17073,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14252,7 +17096,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14272,7 +17120,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14293,7 +17145,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14312,7 +17168,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14332,7 +17192,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14353,7 +17217,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14372,7 +17240,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14392,7 +17264,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14413,7 +17289,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14432,7 +17312,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14452,7 +17336,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14473,7 +17361,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14492,7 +17384,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14512,7 +17408,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14533,7 +17433,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14552,7 +17456,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14572,7 +17480,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14593,7 +17505,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14612,7 +17528,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14632,7 +17552,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14653,7 +17577,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14672,7 +17600,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14692,7 +17624,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14713,7 +17649,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14732,7 +17672,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14752,7 +17696,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14773,7 +17721,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14792,7 +17744,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14812,7 +17768,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14833,7 +17793,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14852,7 +17816,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14872,7 +17840,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14893,7 +17865,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14912,7 +17888,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14932,7 +17912,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14953,7 +17937,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14972,7 +17960,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -14992,7 +17984,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15013,7 +18009,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15032,7 +18032,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15052,7 +18056,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15073,7 +18081,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15092,7 +18104,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15112,7 +18128,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15133,7 +18153,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15152,7 +18176,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15172,7 +18200,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15193,7 +18225,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15212,7 +18248,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15232,7 +18272,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15253,7 +18297,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15272,7 +18320,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15292,7 +18344,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15313,7 +18369,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15332,7 +18392,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15352,7 +18416,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15373,7 +18441,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15392,7 +18464,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15412,7 +18488,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15433,7 +18513,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15452,7 +18536,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15472,7 +18560,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15493,7 +18585,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15512,7 +18608,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15532,7 +18632,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15553,7 +18657,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15572,7 +18680,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15592,7 +18704,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15613,7 +18729,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15632,7 +18752,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15652,7 +18776,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15673,7 +18801,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15692,7 +18824,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15712,7 +18848,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15733,7 +18873,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15752,7 +18896,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15772,7 +18920,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15793,7 +18945,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15812,7 +18968,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15832,7 +18992,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15853,7 +19017,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15872,7 +19040,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15892,7 +19064,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15913,7 +19089,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15932,7 +19112,11 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15952,7 +19136,11 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15973,7 +19161,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -15992,7 +19184,11 @@ export const problems: Problem[] = [
     "sample_input": "s = \\\"abcabcbb\\\"",
     "sample_output": "3",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16012,7 +19208,11 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16033,7 +19233,11 @@ export const problems: Problem[] = [
     "sample_input": "n=4",
     "sample_output": "   *\\n  ***\\n *****\\n*******",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16052,7 +19256,11 @@ export const problems: Problem[] = [
     "sample_input": "n=4",
     "sample_output": "*******\\n *****\\n  ***\\n   *",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16072,7 +19280,11 @@ export const problems: Problem[] = [
     "sample_input": "n=3",
     "sample_output": "  *\\n ***\\n*****\\n ***\\n  *",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16093,7 +19305,11 @@ export const problems: Problem[] = [
     "sample_input": "n=4",
     "sample_output": "1\\n2 3\\n4 5 6\\n7 8 9 10",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16112,7 +19328,11 @@ export const problems: Problem[] = [
     "sample_input": "n=5",
     "sample_output": "1\\n1 1\\n1 2 1\\n1 3 3 1\\n1 4 6 4 1",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16132,7 +19352,11 @@ export const problems: Problem[] = [
     "sample_input": "n=7",
     "sample_output": "Prime",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16153,7 +19377,11 @@ export const problems: Problem[] = [
     "sample_input": "n=153",
     "sample_output": "Armstrong",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16172,7 +19400,11 @@ export const problems: Problem[] = [
     "sample_input": "n=121",
     "sample_output": "Palindrome",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16192,7 +19424,11 @@ export const problems: Problem[] = [
     "sample_input": "n=6",
     "sample_output": "0 1 1 2 3 5",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16213,7 +19449,11 @@ export const problems: Problem[] = [
     "sample_input": "n=5",
     "sample_output": "120",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16232,7 +19472,11 @@ export const problems: Problem[] = [
     "sample_input": "nums=[2,7,11,15], target=9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16252,7 +19496,11 @@ export const problems: Problem[] = [
     "sample_input": "1->2->3->4",
     "sample_output": "4->3->2->1",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16273,7 +19521,11 @@ export const problems: Problem[] = [
     "sample_input": "[-2,1,-3,4,-1,2,1,-5,4]",
     "sample_output": "6",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16292,7 +19544,11 @@ export const problems: Problem[] = [
     "sample_input": "[1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   },
   {
@@ -16312,7 +19568,11 @@ export const problems: Problem[] = [
     "sample_input": "grid=[['1','1'],['1','0']]",
     "sample_output": "1",
     "starter_code": {
-      "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`
     }
   }
 ];
