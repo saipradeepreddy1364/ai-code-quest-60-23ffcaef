@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Play, Upload, Save, Bug, Zap, Eye } from "lucide-react";
 import { getProblemById } from "@/data/problems";
@@ -34,6 +34,32 @@ export default function ProblemView() {
     content: "",
     loading: false,
   });
+
+  // ✅ Load saved code when problem opens
+  useEffect(() => {
+    const fetchSavedCode = async () => {
+      if (!user || !problem) return;
+
+      const { data, error } = await supabase
+        .from("saved_codes")
+        .select("code")
+        .eq("user_id", user.id)
+        .eq("problem_id", problem.id)
+        .eq("language", language)
+        .maybeSingle();
+
+      if (error) {
+        console.error("Error loading saved code:", error);
+        return;
+      }
+
+      if (data?.code) {
+        setCode(data.code);
+      }
+    };
+
+    fetchSavedCode();
+  }, [user, problem?.id]);
 
   if (!problem) {
     return <div className="p-6 text-muted-foreground">Problem not found.</div>;
@@ -85,17 +111,19 @@ export default function ProblemView() {
       return;
     }
     try {
-      await supabase.from("saved_codes").upsert(
+      const { error } = await supabase.from("saved_codes").upsert(
         {
           user_id: user.id,
           problem_id: problem.id,
           code,
-          language: "java",
+          language,
         },
         { onConflict: "user_id,problem_id,language" }
       );
+      if (error) throw error;
       toast.success("Code saved!");
-    } catch {
+    } catch (err) {
+      console.error("Save error:", err);
       toast.error("Failed to save");
     }
   };
@@ -214,7 +242,7 @@ export default function ProblemView() {
       <div className="flex-1 flex flex-col min-w-0">
         {/* Toolbar */}
         <div className="flex items-center justify-between px-4 py-2 border-b border-border bg-surface flex-wrap gap-2">
-          
+
           {/* ✅ Removed language dropdown */}
 
           <div className="flex items-center gap-2 flex-wrap">
