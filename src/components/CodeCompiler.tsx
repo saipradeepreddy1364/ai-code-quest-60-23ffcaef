@@ -30,6 +30,7 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
   const [isRunning, setIsRunning] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [executionTime, setExecutionTime] = useState<number | null>(null);
+  const [inputChanged, setInputChanged] = useState(false);
   const [bottomHeight, setBottomHeight] = useState(200);
 
   // Terminal resize via ref (stable listener, no stale closure)
@@ -62,6 +63,7 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
     setOutput("");
     setError("");
     setExecutionTime(null);
+    setInputChanged(false);
 
     const start = performance.now();
     try {
@@ -92,6 +94,7 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
     setOutput("");
     setError("");
     setExecutionTime(null);
+    setInputChanged(false);
     setActiveTab("terminal");
     toast.info("Execution reset. Ready to run again.");
   };
@@ -218,11 +221,23 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
               <div className="text-green-400 mb-1 font-semibold">Enter Input</div>
               <textarea
                 value={input}
-                onChange={(e) => setInput(e.target.value)}
+                onChange={(e) => {
+                  setInput(e.target.value);
+                  if (output || error) setInputChanged(true);
+                }}
                 placeholder="Type your input here…"
-                className="w-full bg-black/60 text-white p-2 mb-3 rounded border border-border resize-none text-xs"
+                className="w-full bg-black/60 text-white p-2 mb-1 rounded border border-border resize-none text-xs"
                 rows={3}
               />
+
+              {/* Warning shown when input changes after a run */}
+              {inputChanged ? (
+                <p className="text-yellow-400 text-xs mb-3">
+                  ⚠ Input changed — click Run again to see updated output.
+                </p>
+              ) : (
+                <div className="mb-3" />
+              )}
 
               {/* Output section */}
               <div className="text-green-400 mb-1 font-semibold">Output</div>
