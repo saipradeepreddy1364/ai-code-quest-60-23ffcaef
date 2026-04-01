@@ -103,7 +103,7 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
     if (!code.trim()) { toast.error("Nothing to save!"); return; }
     setIsSaving(true);
     try {
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/code/save`, {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/codes/save`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userEmail, code, language: "java" }),
