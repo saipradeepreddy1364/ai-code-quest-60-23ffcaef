@@ -3,7 +3,7 @@ import { useRef, useState, useEffect } from "react";
 import CodeEditor from "./CodeEditor";
 import { runCode, languageIds } from "@/api/compiler";
 import { toast } from "sonner";
-import { Bot, Trophy, Play, Loader2, Save, RotateCcw } from "lucide-react";
+import { Bot, Play, Loader2, Save, RotateCcw } from "lucide-react";
 
 type CodeCompilerProps = {
   onCodeChange?: (code: string, lang: string) => void;
@@ -30,8 +30,6 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
   const [isRunning, setIsRunning] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [executionTime, setExecutionTime] = useState<number | null>(null);
-  const [bestTime, setBestTime] = useState<number | null>(null);
-  const [showBestBadge, setShowBestBadge] = useState(false);
   const [bottomHeight, setBottomHeight] = useState(200);
 
   // Terminal resize via ref (stable listener, no stale closure)
@@ -70,13 +68,6 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
       const result = await runCode(code, languageIds["java"], input);
       const elapsed = (performance.now() - start) / 1000;
       setExecutionTime(elapsed);
-
-      const isNewBest = bestTime === null || elapsed < bestTime;
-      if (isNewBest) {
-        setBestTime(elapsed);
-        setShowBestBadge(true);
-        setTimeout(() => setShowBestBadge(false), 3000);
-      }
 
       if (result.stderr || result.compile_output) {
         setError(result.stderr || result.compile_output);
@@ -131,20 +122,6 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
         <span className="text-sm font-semibold tracking-wide">Java</span>
 
         <div className="flex items-center gap-2">
-          {/* Best run badge */}
-          {bestTime !== null && (
-            <div
-              className={`flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium transition-all duration-500 ${
-                showBestBadge
-                  ? "bg-yellow-400/20 text-yellow-400 ring-1 ring-yellow-400/50 scale-110"
-                  : "bg-muted text-muted-foreground"
-              }`}
-              title="Your best run time"
-            >
-              <Trophy className="h-3 w-3" />
-              {bestTime.toFixed(3)}s
-            </div>
-          )}
 
           {/* Save */}
           <button
@@ -210,7 +187,7 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
         style={{ height: bottomHeight }}
         className="flex flex-col border-t bg-card shrink-0 overflow-hidden"
       >
-        {/* Tab bar — timer removed */}
+        {/* Tab bar */}
         <div className="flex items-center text-xs border-b shrink-0">
           <button
             onClick={() => setActiveTab("terminal")}
