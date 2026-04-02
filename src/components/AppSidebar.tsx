@@ -143,31 +143,36 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
     navigate('/login');
   };
 
+  // All categories merged for the grid (DSA + Placement + any extras from data)
+  const allSections = [
+    { label: 'Data Structures & Algorithms', icon: BookOpen, cats: DSA_CATEGORIES },
+    { label: 'Placement Preparation',        icon: GraduationCap, cats: PLACEMENT_CATEGORIES },
+  ];
+
   return (
     <>
+      {/* Backdrop */}
       {open && (
-        <div className="fixed inset-0 bg-black/50 z-40 lg:hidden" onClick={onClose} />
+        <div className="fixed inset-0 bg-black/60 z-40" onClick={onClose} />
       )}
 
-      <aside
-        className={`fixed top-0 left-0 h-full w-96 bg-card border-r border-border transform transition-transform duration-200 ease-in-out z-50 overflow-y-auto ${
+      {/* Full-screen overlay panel (slides in from left) */}
+      <div
+        className={`fixed top-0 left-0 h-full w-full max-w-3xl bg-card border-r border-border z-50 overflow-y-auto transform transition-transform duration-200 ease-in-out ${
           open ? 'translate-x-0' : '-translate-x-full'
-        } lg:translate-x-0`}
+        }`}
       >
-        {/* Header */}
+        {/* ── Header ── */}
         <div className="flex items-center justify-between p-4 border-b border-border sticky top-0 bg-card z-10">
           <Link to="/" className="text-xl font-bold text-foreground" onClick={onClose}>
             CodeQuest
           </Link>
-          <button
-            onClick={onClose}
-            className="p-2 hover:bg-surface-hover rounded-md transition-colors lg:hidden"
-          >
+          <button onClick={onClose} className="p-2 hover:bg-surface-hover rounded-md transition-colors">
             <X className="h-5 w-5 text-foreground" />
           </button>
         </div>
 
-        {/* User Info */}
+        {/* ── User Info ── */}
         <div className="p-4 border-b border-border bg-surface">
           <div className="flex items-center gap-3 mb-3">
             <div className="h-10 w-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-white font-medium">
@@ -187,7 +192,7 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
           </div>
         </div>
 
-        {/* Main Navigation */}
+        {/* ── Main Navigation ── */}
         <nav className="p-4 space-y-1 border-b border-border">
           {navItems.map((item) => {
             const Icon = item.icon;
@@ -210,7 +215,8 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
         </nav>
 
         <div className="p-4 space-y-6">
-          {/* Performance Stats */}
+
+          {/* ── Performance Stats ── */}
           <div className="border border-border rounded-lg">
             <button
               onClick={() => setShowPerformance(!showPerformance)}
@@ -229,45 +235,38 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
             )}
           </div>
 
-          {/* DSA Problems - Grid Layout */}
-          <div className="border border-border rounded-lg">
-            <button
-              onClick={() => setDsaOpen(!dsaOpen)}
-              className="w-full flex items-center justify-between p-3 bg-surface-hover rounded-t-lg"
-            >
-              <div className="flex items-center gap-2">
-                <BookOpen className="h-4 w-4 text-primary" />
-                <span className="font-medium text-foreground">Data Structures & Algorithms</span>
-              </div>
-              {dsaOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-            </button>
-            
-            {dsaOpen && (
-              <div className="p-3">
-                <div className="grid grid-cols-2 gap-2">
-                  {DSA_CATEGORIES.filter(cat => categoryCounts[cat] > 0).map((category) => {
+          {/* ── Category Grid sections (DSA + Placement) ── */}
+          {allSections.map(({ label, icon: SectionIcon, cats }) => {
+            const visible = cats.filter(c => (categoryCounts[c] ?? 0) > 0);
+            if (visible.length === 0) return null;
+            return (
+              <div key={label} className="border border-border rounded-lg">
+                <div className="flex items-center gap-2 p-3 bg-surface-hover rounded-t-lg">
+                  <SectionIcon className="h-4 w-4 text-primary" />
+                  <span className="font-medium text-foreground">{label}</span>
+                  <span className="ml-auto text-xs text-muted-foreground">{visible.length} topics</span>
+                </div>
+                <div className="p-3 grid grid-cols-3 gap-2">
+                  {visible.map((category) => {
                     const { icon: Icon, color, bgColor } = getCategoryStyle(category);
                     const count = categoryCounts[category] || 0;
+                    const isSelected = selectedCategory === category;
                     return (
                       <button
                         key={category}
                         onClick={() => handleCategoryClick(category)}
-                        className={`flex items-center justify-between p-3 rounded-lg transition-all ${
-                          selectedCategory === category
+                        className={`flex flex-col items-center justify-center gap-1 p-2 rounded-lg transition-all text-center ${
+                          isSelected
                             ? 'bg-primary text-primary-foreground'
                             : `${bgColor} hover:opacity-80`
                         }`}
                       >
-                        <div className="flex items-center gap-2">
-                          <Icon className={`h-4 w-4 ${selectedCategory === category ? 'text-primary-foreground' : color}`} />
-                          <span className={`text-xs font-medium ${selectedCategory === category ? 'text-primary-foreground' : 'text-gray-700'}`}>
-                            {category}
-                          </span>
-                        </div>
-                        <span className={`text-xs px-1.5 py-0.5 rounded-full ${
-                          selectedCategory === category 
-                            ? 'bg-white/20 text-white' 
-                            : 'bg-white text-gray-600'
+                        <Icon className={`h-5 w-5 ${isSelected ? 'text-primary-foreground' : color}`} />
+                        <span className={`text-[10px] font-semibold leading-tight ${isSelected ? 'text-primary-foreground' : 'text-gray-700'}`}>
+                          {category}
+                        </span>
+                        <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-medium ${
+                          isSelected ? 'bg-white/20 text-white' : 'bg-white text-gray-600'
                         }`}>
                           {count}
                         </span>
@@ -276,60 +275,10 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
                   })}
                 </div>
               </div>
-            )}
-          </div>
+            );
+          })}
 
-          {/* Placement Preparation - Grid Layout */}
-          <div className="border border-border rounded-lg">
-            <button
-              onClick={() => setPlacementOpen(!placementOpen)}
-              className="w-full flex items-center justify-between p-3 bg-surface-hover rounded-t-lg"
-            >
-              <div className="flex items-center gap-2">
-                <GraduationCap className="h-4 w-4 text-primary" />
-                <span className="font-medium text-foreground">Placement Preparation</span>
-              </div>
-              {placementOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-            </button>
-            
-            {placementOpen && (
-              <div className="p-3">
-                <div className="grid grid-cols-2 gap-2">
-                  {PLACEMENT_CATEGORIES.filter(cat => categoryCounts[cat] > 0).map((category) => {
-                    const { icon: Icon, color, bgColor } = getCategoryStyle(category);
-                    const count = categoryCounts[category] || 0;
-                    return (
-                      <button
-                        key={category}
-                        onClick={() => handleCategoryClick(category)}
-                        className={`flex items-center justify-between p-3 rounded-lg transition-all ${
-                          selectedCategory === category
-                            ? 'bg-primary text-primary-foreground'
-                            : `${bgColor} hover:opacity-80`
-                        }`}
-                      >
-                        <div className="flex items-center gap-2">
-                          <Icon className={`h-4 w-4 ${selectedCategory === category ? 'text-primary-foreground' : color}`} />
-                          <span className={`text-xs font-medium ${selectedCategory === category ? 'text-primary-foreground' : 'text-gray-700'}`}>
-                            {category}
-                          </span>
-                        </div>
-                        <span className={`text-xs px-1.5 py-0.5 rounded-full ${
-                          selectedCategory === category 
-                            ? 'bg-white/20 text-white' 
-                            : 'bg-white text-gray-600'
-                        }`}>
-                          {count}
-                        </span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Company-wise */}
+          {/* ── Company-wise ── */}
           <div className="border border-border rounded-lg">
             <button
               onClick={() => setCompanyOpen(!companyOpen)}
@@ -341,25 +290,25 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
               </div>
               {companyOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
             </button>
-            
             {companyOpen && (
               <div className="p-3">
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-3 gap-2">
                   {companies.map((company) => (
                     <button
                       key={company.name}
                       onClick={() => handleCompanyClick(company.name)}
-                      className={`flex items-center justify-between p-2 rounded-lg transition-all ${
+                      className={`flex flex-col items-center justify-center gap-1 p-2 rounded-lg transition-all text-center ${
                         selectedCompany === company.name
                           ? 'bg-primary text-primary-foreground'
                           : 'bg-gray-100 hover:bg-gray-200'
                       }`}
                     >
-                      <span className="text-xs font-medium truncate">{company.name}</span>
-                      <span className={`text-xs px-1.5 py-0.5 rounded-full ${
-                        selectedCompany === company.name 
-                          ? 'bg-white/20 text-white' 
-                          : 'bg-white text-gray-600'
+                      <Building2 className={`h-4 w-4 ${selectedCompany === company.name ? 'text-primary-foreground' : 'text-gray-500'}`} />
+                      <span className="text-[10px] font-semibold leading-tight text-gray-700 truncate w-full text-center">
+                        {company.name}
+                      </span>
+                      <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-medium ${
+                        selectedCompany === company.name ? 'bg-white/20 text-white' : 'bg-white text-gray-600'
                       }`}>
                         {company.count}
                       </span>
@@ -370,7 +319,7 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
             )}
           </div>
 
-          {/* Free Mock Tests */}
+          {/* ── Free Mock Tests ── */}
           <div className="border border-border rounded-lg">
             <button
               onClick={() => setMockOpen(!mockOpen)}
@@ -382,7 +331,6 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
               </div>
               {mockOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
             </button>
-
             {mockOpen && (
               <div className="p-2 space-y-1">
                 {mockTests.map((test) => (
@@ -400,8 +348,9 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
               </div>
             )}
           </div>
+
         </div>
-      </aside>
+      </div>
     </>
   );
 }
