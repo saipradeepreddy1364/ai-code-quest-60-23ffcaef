@@ -1,6 +1,6 @@
 import { problems } from "@/data/problems";
 import { useState, useMemo } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { 
   X, ChevronDown, ChevronUp, 
   Database, Cpu, Network, Code, Brain, 
@@ -84,6 +84,7 @@ const placementCategories = [
 
 export default function AppSidebar({ open, onClose }: AppSidebarProps) {
   const location = useLocation();
+  const navigate = useNavigate(); // ✅ added
   const { user, signOut } = useAuth();
   const [dsaOpen, setDsaOpen] = useState(true);
   const [placementOpen, setPlacementOpen] = useState(true);
@@ -132,24 +133,28 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
 
   const isActive = (path: string) => location.pathname === path;
 
+  // ✅ All three handlers now use navigate() instead of window.location.href
   const handleCategoryClick = (category: string) => {
     setSelectedCategory(category === selectedCategory ? null : category);
-    window.location.href = `/problems?category=${encodeURIComponent(category)}`;
+    navigate(`/problems?category=${encodeURIComponent(category)}`);
+    onClose();
   };
 
   const handlePlacementClick = (category: string) => {
     setSelectedPlacement(category === selectedPlacement ? null : category);
-    window.location.href = `/problems?placement=${encodeURIComponent(category)}`;
+    navigate(`/problems?placement=${encodeURIComponent(category)}`);
+    onClose();
   };
 
   const handleCompanyClick = (company: string) => {
     setSelectedCompany(company === selectedCompany ? null : company);
-    window.location.href = `/problems?company=${encodeURIComponent(company)}`;
+    navigate(`/problems?company=${encodeURIComponent(company)}`);
+    onClose();
   };
 
   const handleLogout = async () => {
     await signOut();
-    window.location.href = '/login';
+    navigate('/login');
   };
 
   return (
