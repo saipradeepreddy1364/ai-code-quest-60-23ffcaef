@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import {
   User, ChevronDown, Menu, X, Home, BookOpen,
   Building2, GraduationCap, Brain, Cpu, Network, Database,
-  TrendingUp, LogOut, Code2, Binary, Square, Sparkles,
-  Terminal, Grid3x3, Hash, Triangle, Code, Play
+  LogOut, Binary, Square, Sparkles,
+  Terminal, Grid3x3, Hash, Triangle, Code
 } from "lucide-react";
 import { useAuth } from "../hooks/useAuth";
 import CodeCompiler from "../components/CodeCompiler";
@@ -70,14 +70,14 @@ const COMPANIES = [
   "Oracle", "Adobe", "Goldman Sachs",
 ];
 
-// ─── SidebarTopicCard ────────────────────────────────────────────────────────
-interface SidebarTopicCardProps {
+// ─── TopicCard (full-size, matches screenshot) ───────────────────────────────
+interface TopicCardProps {
   category: string;
   count: number;
   onClick: () => void;
 }
 
-function SidebarTopicCard({ category, count, onClick }: SidebarTopicCardProps) {
+function TopicCard({ category, count, onClick }: TopicCardProps) {
   const meta = TOPIC_META[category] ?? { icon: Code, iconColor: "#94a3b8", iconBg: "#1e293b" };
   const Icon = meta.icon;
   const [hovered, setHovered] = useState(false);
@@ -88,73 +88,75 @@ function SidebarTopicCard({ category, count, onClick }: SidebarTopicCardProps) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        background: hovered ? "#22223a" : "#18182b",
+        background: hovered ? "#22223a" : "#1c1c2e",
         border: "1px solid rgba(255,255,255,0.07)",
-        borderRadius: "12px",
-        padding: "12px 12px 10px 12px",
+        borderRadius: "16px",
+        padding: "20px 20px 16px 20px",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
         cursor: "pointer",
-        transition: "background 0.15s ease, transform 0.15s ease",
-        transform: hovered ? "translateY(-1px)" : "translateY(0)",
+        transition: "background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease",
+        transform: hovered ? "translateY(-2px)" : "translateY(0)",
+        boxShadow: hovered ? "0 8px 32px rgba(0,0,0,0.45)" : "none",
       }}
     >
-      {/* Left */}
-      <div style={{ display: "flex", flexDirection: "column", gap: "2px", flex: 1, minWidth: 0 }}>
+      {/* Left: title + count + button */}
+      <div style={{ display: "flex", flexDirection: "column", gap: "3px", flex: 1, minWidth: 0 }}>
         <span
           style={{
             fontWeight: 700,
-            fontSize: "12px",
+            fontSize: "15px",
             color: "#f1f5f9",
             whiteSpace: "nowrap",
             overflow: "hidden",
             textOverflow: "ellipsis",
+            lineHeight: 1.3,
           }}
         >
           {category}
         </span>
-        <span style={{ fontSize: "11px", color: "#64748b", marginBottom: "6px" }}>
-          {count} Problems
+        <span style={{ fontSize: "13px", color: "#64748b", marginBottom: "10px" }}>
+          {count} {count === 1 ? "Problem" : "Problems"}
         </span>
         <button
           onClick={(e) => { e.stopPropagation(); onClick(); }}
           style={{
             display: "inline-flex",
             alignItems: "center",
-            gap: "4px",
-            padding: "3px 10px",
+            gap: "5px",
+            padding: "5px 14px",
             borderRadius: "999px",
             background: "rgba(255,255,255,0.07)",
             border: "1px solid rgba(255,255,255,0.12)",
             color: "#e2e8f0",
-            fontSize: "11px",
+            fontSize: "12px",
             fontWeight: 600,
             cursor: "pointer",
             width: "fit-content",
           }}
         >
-          <span style={{ fontSize: "12px" }}>🤚</span>
+          <span style={{ fontSize: "14px" }}>🤚</span>
           Start
         </button>
       </div>
 
-      {/* Right icon box */}
+      {/* Right: icon box */}
       <div
         style={{
-          width: 44,
-          height: 44,
-          borderRadius: "10px",
+          width: 64,
+          height: 64,
+          borderRadius: "14px",
           background: meta.iconBg,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           flexShrink: 0,
-          marginLeft: "10px",
-          boxShadow: `0 0 14px ${meta.iconColor}33`,
+          marginLeft: "16px",
+          boxShadow: `0 0 20px ${meta.iconColor}33`,
         }}
       >
-        <Icon style={{ width: 22, height: 22, color: meta.iconColor, strokeWidth: 1.5 }} />
+        <Icon style={{ width: 32, height: 32, color: meta.iconColor, strokeWidth: 1.4 }} />
       </div>
     </div>
   );
@@ -168,7 +170,7 @@ export default function Dashboard() {
   const [aiPanelWidth, setAiPanelWidth] = useState(400);
   const [isResizingPanel, setIsResizingPanel] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [isAiOpen, setIsAiOpen] = useState(false);
   const [currentCode, setCurrentCode] = useState("");
   const [currentLanguage, setCurrentLanguage] = useState("java");
@@ -180,7 +182,7 @@ export default function Dashboard() {
   useEffect(() => {
     const onMove = (e: MouseEvent) => {
       if (!isResizingPanel) return;
-      const newWidth = window.innerWidth - e.clientX - (sidebarOpen ? 320 : 0);
+      const newWidth = window.innerWidth - e.clientX;
       if (newWidth >= 300 && newWidth <= 800) setAiPanelWidth(newWidth);
     };
     const onUp = () => setIsResizingPanel(false);
@@ -190,7 +192,7 @@ export default function Dashboard() {
       window.removeEventListener("mousemove", onMove);
       window.removeEventListener("mouseup", onUp);
     };
-  }, [isResizingPanel, sidebarOpen]);
+  }, [isResizingPanel]);
 
   const handleLogout = async () => {
     setDropdownOpen(false);
@@ -199,7 +201,7 @@ export default function Dashboard() {
   };
 
   const goTo = (path: string) => {
-    setSidebarOpen(false);
+    setMenuOpen(false);
     navigate(path);
   };
 
@@ -211,7 +213,6 @@ export default function Dashboard() {
     );
   }
 
-  // Determine which categories to show based on active tab
   const visibleCats =
     activeTab === "dsa"
       ? DSA_CATEGORIES.filter((c) => (categoryCounts[c] ?? 0) > 0)
@@ -223,13 +224,13 @@ export default function Dashboard() {
     <div className="h-screen bg-background flex flex-col overflow-hidden">
 
       {/* ══════════════ HEADER ══════════════ */}
-      <header className="flex justify-between items-center px-4 py-2.5 bg-card border-b border-border shrink-0">
+      <header className="flex justify-between items-center px-4 py-2.5 bg-card border-b border-border shrink-0" style={{ zIndex: 50, position: "relative" }}>
         <button
-          onClick={() => setSidebarOpen((p) => !p)}
+          onClick={() => setMenuOpen((p) => !p)}
           className="p-2 rounded-md hover:bg-muted transition-colors"
-          aria-label="Toggle sidebar"
+          aria-label="Toggle menu"
         >
-          {sidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
 
         <div className="relative">
@@ -262,30 +263,54 @@ export default function Dashboard() {
         </div>
       </header>
 
-      {/* ══════════════ BODY ══════════════ */}
-      <div className="flex flex-1 overflow-hidden">
-
-        {/* ══════════════ SIDEBAR ══════════════ */}
-        {sidebarOpen && (
-          <aside
+      {/* ══════════════ FULL-SCREEN MENU OVERLAY ══════════════ */}
+      {menuOpen && (
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: "#0d0d1a",
+            zIndex: 40,
+            display: "flex",
+            flexDirection: "column",
+            overflow: "hidden",
+          }}
+        >
+          {/* Overlay header — mirrors main header */}
+          <div
             style={{
-              width: "320px",
-              flexShrink: 0,
-              background: "#0d0d1a",
-              borderRight: "1px solid rgba(255,255,255,0.07)",
               display: "flex",
-              flexDirection: "column",
-              overflowY: "auto",
-              zIndex: 40,
+              justifyContent: "space-between",
+              alignItems: "center",
+              padding: "10px 16px",
+              borderBottom: "1px solid rgba(255,255,255,0.07)",
+              flexShrink: 0,
             }}
           >
-            {/* Sidebar header */}
-            <div
+            {/* Close button */}
+            <button
+              onClick={() => setMenuOpen(false)}
               style={{
-                padding: "14px 14px 10px",
-                borderBottom: "1px solid rgba(255,255,255,0.06)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: 36,
+                height: 36,
+                borderRadius: "8px",
+                background: "rgba(255,255,255,0.05)",
+                border: "none",
+                cursor: "pointer",
+                color: "#94a3b8",
               }}
             >
+              <X style={{ width: 18, height: 18 }} />
+            </button>
+
+            {/* Title + subtitle */}
+            <div style={{ textAlign: "center" }}>
               <p
                 style={{
                   fontSize: "11px",
@@ -293,197 +318,178 @@ export default function Dashboard() {
                   letterSpacing: "2.5px",
                   textTransform: "uppercase",
                   color: "#6366f1",
-                  margin: "0 0 2px",
+                  margin: 0,
                 }}
               >
                 Practice Platform
               </p>
               <h2
                 style={{
-                  fontSize: "15px",
+                  fontSize: "16px",
                   fontWeight: 800,
                   color: "#f1f5f9",
-                  margin: "0 0 10px",
+                  margin: 0,
                 }}
               >
                 Turn practice into progress
               </h2>
+            </div>
 
-              {/* Tab pills */}
-              <div style={{ display: "flex", gap: "6px" }}>
-                {(
-                  [
-                    { id: "dsa",       label: "DSA",       icon: Brain },
-                    { id: "placement", label: "Placement", icon: GraduationCap },
-                    { id: "companies", label: "Companies", icon: Building2 },
-                  ] as const
-                ).map(({ id, label, icon: Icon }) => {
-                  const active = activeTab === id;
-                  return (
-                    <button
-                      key={id}
-                      onClick={() => setActiveTab(id)}
+            {/* All Problems shortcut */}
+            <button
+              onClick={() => goTo("/problems")}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "6px",
+                padding: "6px 14px",
+                borderRadius: "8px",
+                background: "rgba(99,102,241,0.15)",
+                border: "1px solid rgba(99,102,241,0.3)",
+                color: "#a5b4fc",
+                fontSize: "13px",
+                fontWeight: 600,
+                cursor: "pointer",
+              }}
+            >
+              <BookOpen style={{ width: 14, height: 14 }} />
+              All Problems
+            </button>
+          </div>
+
+          {/* Tab pills */}
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "10px",
+              padding: "16px 20px 12px",
+              flexShrink: 0,
+            }}
+          >
+            {(
+              [
+                { id: "dsa",       label: "DSA Topics",     icon: Brain },
+                { id: "placement", label: "Placement Prep", icon: GraduationCap },
+                { id: "companies", label: "Companies",      icon: Building2 },
+              ] as const
+            ).map(({ id, label, icon: Icon }) => {
+              const active = activeTab === id;
+              return (
+                <button
+                  key={id}
+                  onClick={() => setActiveTab(id)}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "7px",
+                    padding: "9px 22px",
+                    borderRadius: "999px",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    cursor: "pointer",
+                    border: "none",
+                    transition: "all 0.15s",
+                    background: active
+                      ? "linear-gradient(135deg,#6366f1,#8b5cf6)"
+                      : "rgba(255,255,255,0.05)",
+                    color: active ? "#fff" : "#64748b",
+                    boxShadow: active ? "0 4px 16px rgba(99,102,241,0.4)" : "none",
+                  }}
+                >
+                  <Icon style={{ width: 15, height: 15 }} />
+                  {label}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Scrollable card grid */}
+          <div
+            style={{
+              flex: 1,
+              overflowY: "auto",
+              padding: "4px 24px 32px",
+            }}
+          >
+            {activeTab !== "companies" ? (
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))",
+                  gap: "14px",
+                  maxWidth: "1100px",
+                  margin: "0 auto",
+                }}
+              >
+                {visibleCats.map((cat) => (
+                  <TopicCard
+                    key={cat}
+                    category={cat}
+                    count={categoryCounts[cat] ?? 0}
+                    onClick={() => goTo(`/problems?category=${encodeURIComponent(cat)}`)}
+                  />
+                ))}
+              </div>
+            ) : (
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))",
+                  gap: "14px",
+                  maxWidth: "900px",
+                  margin: "0 auto",
+                }}
+              >
+                {COMPANIES.map((company) => (
+                  <button
+                    key={company}
+                    onClick={() => goTo(`/problems?company=${encodeURIComponent(company)}`)}
+                    style={{
+                      background: "#1c1c2e",
+                      border: "1px solid rgba(255,255,255,0.07)",
+                      borderRadius: "16px",
+                      padding: "20px 14px",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      gap: "10px",
+                      cursor: "pointer",
+                      transition: "background 0.15s",
+                    }}
+                    onMouseEnter={(e) =>
+                      ((e.currentTarget as HTMLButtonElement).style.background = "#22223a")
+                    }
+                    onMouseLeave={(e) =>
+                      ((e.currentTarget as HTMLButtonElement).style.background = "#1c1c2e")
+                    }
+                  >
+                    <div
                       style={{
-                        flex: 1,
+                        width: 48,
+                        height: 48,
+                        borderRadius: "12px",
+                        background: "#1e1b4b",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        gap: "4px",
-                        padding: "5px 0",
-                        borderRadius: "8px",
-                        fontSize: "11px",
-                        fontWeight: 600,
-                        cursor: "pointer",
-                        border: "none",
-                        background: active
-                          ? "linear-gradient(135deg,#6366f1,#8b5cf6)"
-                          : "rgba(255,255,255,0.05)",
-                        color: active ? "#fff" : "#64748b",
-                        boxShadow: active ? "0 2px 12px rgba(99,102,241,0.4)" : "none",
-                        transition: "all 0.15s",
                       }}
                     >
-                      <Icon style={{ width: 12, height: 12 }} />
-                      {label}
-                    </button>
-                  );
-                })}
+                      <Building2 style={{ width: 24, height: 24, color: "#818cf8" }} />
+                    </div>
+                    <span style={{ fontSize: "13px", fontWeight: 700, color: "#e2e8f0", textAlign: "center" }}>
+                      {company}
+                    </span>
+                  </button>
+                ))}
               </div>
-            </div>
+            )}
+          </div>
+        </div>
+      )}
 
-            {/* Card grid */}
-            <div style={{ padding: "12px", flex: 1 }}>
-              {activeTab !== "companies" ? (
-                <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                    gap: "8px",
-                  }}
-                >
-                  {visibleCats.map((cat) => (
-                    <SidebarTopicCard
-                      key={cat}
-                      category={cat}
-                      count={categoryCounts[cat] ?? 0}
-                      onClick={() => goTo(`/problems?category=${encodeURIComponent(cat)}`)}
-                    />
-                  ))}
-                </div>
-              ) : (
-                /* Companies tab — 2-col grid */
-                <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                    gap: "8px",
-                  }}
-                >
-                  {COMPANIES.map((company) => (
-                    <button
-                      key={company}
-                      onClick={() => goTo(`/problems?company=${encodeURIComponent(company)}`)}
-                      style={{
-                        background: "#18182b",
-                        border: "1px solid rgba(255,255,255,0.07)",
-                        borderRadius: "12px",
-                        padding: "12px 10px",
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        gap: "6px",
-                        cursor: "pointer",
-                        transition: "background 0.15s",
-                      }}
-                      onMouseEnter={(e) =>
-                        ((e.currentTarget as HTMLButtonElement).style.background = "#22223a")
-                      }
-                      onMouseLeave={(e) =>
-                        ((e.currentTarget as HTMLButtonElement).style.background = "#18182b")
-                      }
-                    >
-                      <Building2 style={{ width: 20, height: 20, color: "#6366f1" }} />
-                      <span
-                        style={{
-                          fontSize: "11px",
-                          fontWeight: 600,
-                          color: "#e2e8f0",
-                          textAlign: "center",
-                        }}
-                      >
-                        {company}
-                      </span>
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Sidebar footer nav */}
-            <div
-              style={{
-                padding: "10px 14px 14px",
-                borderTop: "1px solid rgba(255,255,255,0.06)",
-                display: "flex",
-                flexDirection: "column",
-                gap: "4px",
-              }}
-            >
-              <button
-                onClick={() => goTo("/dashboard")}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  padding: "8px 10px",
-                  borderRadius: "8px",
-                  background: "transparent",
-                  border: "none",
-                  color: "#94a3b8",
-                  fontSize: "13px",
-                  cursor: "pointer",
-                  textAlign: "left",
-                  width: "100%",
-                }}
-                onMouseEnter={(e) =>
-                  ((e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.05)")
-                }
-                onMouseLeave={(e) =>
-                  ((e.currentTarget as HTMLButtonElement).style.background = "transparent")
-                }
-              >
-                <Home style={{ width: 14, height: 14 }} /> Home
-              </button>
-              <button
-                onClick={() => goTo("/problems")}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  padding: "8px 10px",
-                  borderRadius: "8px",
-                  background: "transparent",
-                  border: "none",
-                  color: "#94a3b8",
-                  fontSize: "13px",
-                  cursor: "pointer",
-                  textAlign: "left",
-                  width: "100%",
-                }}
-                onMouseEnter={(e) =>
-                  ((e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.05)")
-                }
-                onMouseLeave={(e) =>
-                  ((e.currentTarget as HTMLButtonElement).style.background = "transparent")
-                }
-              >
-                <BookOpen style={{ width: 14, height: 14 }} /> All Problems
-              </button>
-            </div>
-          </aside>
-        )}
-
-        {/* ══════════════ COMPILER + AI — unchanged ══════════════ */}
+      {/* ══════════════ BODY — compiler + AI, always mounted ══════════════ */}
+      <div className="flex flex-1 overflow-hidden">
         <div className="flex flex-1 overflow-hidden">
           <div className="flex-1 overflow-hidden">
             <CodeCompiler
@@ -506,8 +512,8 @@ export default function Dashboard() {
             </div>
           )}
         </div>
-
       </div>
+
     </div>
   );
 }
