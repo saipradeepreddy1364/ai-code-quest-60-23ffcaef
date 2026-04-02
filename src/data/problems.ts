@@ -25058,6 +25058,2137 @@ export const problems: Problem[] = [
 }`
     }
   },
+  // ============================================================
+// PASTE THIS BLOCK inside your problems array in problems.ts
+// Add a comma after the last existing problem (id: 1089),
+// then paste everything below until the closing comment.
+// IDs start from 1090.
+// ============================================================
+
+  // ─── OOP (20 questions) ────────────────────────────────────
+  {
+    "id": 1090,
+    "title": "Class and Object Basics",
+    "category": "OOP",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "Wipro"],
+    "description": "Create a class 'Rectangle' with private fields 'length' and 'breadth'. Add a constructor to initialise them, and a method 'area()' that returns the area. In main(), create an object with length=5, breadth=3 and print the area.",
+    "input_format": "No input required. Values are hardcoded.",
+    "output_format": "A single integer: the area of the rectangle.",
+    "constraints": "length, breadth > 0",
+    "sample_input": "",
+    "sample_output": "15",
+    "starter_code": {
+      "java": `public class Main {
+    // Define Rectangle class here
+
+    public static void main(String[] args) {
+        // Create object and print area
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1091,
+    "title": "Inheritance – Animal & Dog",
+    "category": "OOP",
+    "difficulty": "Easy",
+    "company_tags": ["Accenture", "CTS", "HCL"],
+    "description": "Create a base class 'Animal' with a method sound() that prints 'Some sound'. Create a derived class 'Dog' that overrides sound() to print 'Woof'. In main(), create a Dog object and call sound().",
+    "input_format": "No input required.",
+    "output_format": "Woof",
+    "constraints": "Use single inheritance.",
+    "sample_input": "",
+    "sample_output": "Woof",
+    "starter_code": {
+      "java": `public class Main {
+    // Define Animal and Dog classes here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1092,
+    "title": "Polymorphism – Method Overloading",
+    "category": "OOP",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Create a class 'Calculator' with three overloaded methods named 'add': one that adds two ints, one that adds three ints, and one that adds two doubles. In main(), call all three and print the results on separate lines.",
+    "input_format": "No input required. Use: add(2,3), add(1,2,3), add(1.5,2.5).",
+    "output_format": "5\n6\n4.0",
+    "constraints": "Use method overloading, not conditionals.",
+    "sample_input": "",
+    "sample_output": "5\n6\n4.0",
+    "starter_code": {
+      "java": `public class Main {
+    // Define Calculator class with overloaded add() here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1093,
+    "title": "Encapsulation – Bank Account",
+    "category": "OOP",
+    "difficulty": "Easy",
+    "company_tags": ["Goldman Sachs", "Morgan Stanley", "Infosys"],
+    "description": "Create a class 'BankAccount' with a private field 'balance'. Provide a constructor to set the initial balance, a deposit(amount) method, a withdraw(amount) method (reject if insufficient funds), and a getBalance() method. Simulate: start with 1000, deposit 500, withdraw 300, print balance.",
+    "input_format": "No input required.",
+    "output_format": "1200",
+    "constraints": "Balance must never go negative.",
+    "sample_input": "",
+    "sample_output": "1200",
+    "starter_code": {
+      "java": `public class Main {
+    // Define BankAccount class here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1094,
+    "title": "Abstract Class – Shape Area",
+    "category": "OOP",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Microsoft", "Adobe"],
+    "description": "Define an abstract class 'Shape' with an abstract method area(). Create two concrete subclasses: 'Circle' (radius=7) and 'Triangle' (base=6, height=4). In main(), create one object of each and print their areas. Use Math.PI for circle, round to 2 decimal places.",
+    "input_format": "No input required.",
+    "output_format": "153.94\n12.0",
+    "constraints": "Use abstract class, not interface.",
+    "sample_input": "",
+    "sample_output": "153.94\n12.0",
+    "starter_code": {
+      "java": `public class Main {
+    // Define abstract Shape, Circle, Triangle here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1095,
+    "title": "Interface – Flyable and Swimmable",
+    "category": "OOP",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Accenture", "CTS"],
+    "description": "Create two interfaces: 'Flyable' with method fly() and 'Swimmable' with method swim(). Create a class 'Duck' that implements both. fly() should print 'Duck is flying' and swim() should print 'Duck is swimming'. In main(), create a Duck and call both methods.",
+    "input_format": "No input required.",
+    "output_format": "Duck is flying\nDuck is swimming",
+    "constraints": "A class can implement multiple interfaces in Java.",
+    "sample_input": "",
+    "sample_output": "Duck is flying\nDuck is swimming",
+    "starter_code": {
+      "java": `public class Main {
+    // Define interfaces and Duck class here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1096,
+    "title": "Constructor Chaining",
+    "category": "OOP",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "HCL", "Infosys"],
+    "description": "Create a class 'Employee' with fields name, age, and salary. Use constructor chaining: a 1-arg constructor (name only, age defaults to 25, salary defaults to 30000), a 2-arg constructor (name, age, salary defaults to 30000), and a 3-arg constructor. In main(), create one object using each constructor and print all fields.",
+    "input_format": "No input required.",
+    "output_format": "Alice 25 30000\nBob 30 30000\nCharlie 28 50000",
+    "constraints": "Use this() for chaining.",
+    "sample_input": "",
+    "sample_output": "Alice 25 30000\nBob 30 30000\nCharlie 28 50000",
+    "starter_code": {
+      "java": `public class Main {
+    // Define Employee class with chained constructors here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1097,
+    "title": "Static Members – Counter",
+    "category": "OOP",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Cognizant"],
+    "description": "Create a class 'Student' with a static field 'count' that tracks how many Student objects have been created. Increment count in the constructor. Create 4 Student objects in main() and print the count.",
+    "input_format": "No input required.",
+    "output_format": "4",
+    "constraints": "count must be static, not an instance variable.",
+    "sample_input": "",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main {
+    // Define Student class with static count here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1098,
+    "title": "Runtime Polymorphism – Upcasting",
+    "category": "OOP",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Microsoft"],
+    "description": "Create a base class 'Vehicle' with method move() printing 'Vehicle moves'. Subclasses 'Car' and 'Bike' override move() to print 'Car drives' and 'Bike rides' respectively. In main(), create an array of Vehicle references holding a Car and Bike object. Call move() on each using the loop.",
+    "input_format": "No input required.",
+    "output_format": "Car drives\nBike rides",
+    "constraints": "Use runtime polymorphism (upcasting), not instanceof checks.",
+    "sample_input": "",
+    "sample_output": "Car drives\nBike rides",
+    "starter_code": {
+      "java": `public class Main {
+    // Define Vehicle, Car, Bike here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1099,
+    "title": "Exception Handling in OOP",
+    "category": "OOP",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "Wipro", "Accenture"],
+    "description": "Create a class 'Divider' with a method divide(int a, int b) that throws an ArithmeticException with message 'Cannot divide by zero' if b is 0, otherwise returns a/b. In main(), call divide(10, 0) inside a try-catch and print the exception message.",
+    "input_format": "No input required.",
+    "output_format": "Cannot divide by zero",
+    "constraints": "Use try-catch, not if-else to suppress the exception.",
+    "sample_input": "",
+    "sample_output": "Cannot divide by zero",
+    "starter_code": {
+      "java": `public class Main {
+    // Define Divider class here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1100,
+    "title": "Final Keyword – Immutable Class",
+    "category": "OOP",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Create a final class 'Circle' with a final field 'PI = 3.14159' and a field 'radius'. Provide a constructor and a method circumference() returning 2 * PI * radius. In main(), create a Circle with radius 5 and print circumference rounded to 2 decimal places.",
+    "input_format": "No input required.",
+    "output_format": "31.42",
+    "constraints": "Class and PI must be final.",
+    "sample_input": "",
+    "sample_output": "31.42",
+    "starter_code": {
+      "java": `public class Main {
+    // Define final Circle class here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1101,
+    "title": "toString() Override",
+    "category": "OOP",
+    "difficulty": "Easy",
+    "company_tags": ["Cognizant", "Wipro"],
+    "description": "Create a class 'Book' with fields title, author, and price. Override the toString() method to return the format: 'Title: <title>, Author: <author>, Price: <price>'. In main(), create a Book and print the object directly.",
+    "input_format": "No input required. Use: title='Clean Code', author='Robert Martin', price=499.",
+    "output_format": "Title: Clean Code, Author: Robert Martin, Price: 499",
+    "constraints": "Must use toString() override, not a custom print method.",
+    "sample_input": "",
+    "sample_output": "Title: Clean Code, Author: Robert Martin, Price: 499",
+    "starter_code": {
+      "java": `public class Main {
+    // Define Book class with toString() here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1102,
+    "title": "equals() and hashCode()",
+    "category": "OOP",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Google"],
+    "description": "Create a class 'Point' with fields x and y. Override equals() to return true if both x and y are equal, and hashCode() accordingly. In main(), create two Point objects with the same x,y and print whether they are equal using .equals().",
+    "input_format": "No input required. Use Point(3,4) and Point(3,4).",
+    "output_format": "true",
+    "constraints": "Must override both equals() and hashCode().",
+    "sample_input": "",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main {
+    // Define Point class here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1103,
+    "title": "Composition vs Inheritance",
+    "category": "OOP",
+    "difficulty": "Medium",
+    "company_tags": ["Microsoft", "Adobe", "SAP"],
+    "description": "Create a class 'Engine' with a method start() that prints 'Engine started'. Create a class 'Car' that uses composition (has-a Engine) not inheritance. Car's startCar() method calls engine.start() then prints 'Car is running'. In main(), start the car.",
+    "input_format": "No input required.",
+    "output_format": "Engine started\nCar is running",
+    "constraints": "Use composition (field of type Engine), not extends.",
+    "sample_input": "",
+    "sample_output": "Engine started\nCar is running",
+    "starter_code": {
+      "java": `public class Main {
+    // Define Engine and Car (composition) here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1104,
+    "title": "Singleton Design Pattern",
+    "category": "OOP",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Google", "Microsoft"],
+    "description": "Implement the Singleton design pattern for a class 'Config'. It should have a private static instance, a private constructor, and a public static getInstance() method. Add a field appName='MyApp'. In main(), get two instances and verify they are the same object (use == check) and print the appName.",
+    "input_format": "No input required.",
+    "output_format": "true\nMyApp",
+    "constraints": "Constructor must be private. Only one instance must ever exist.",
+    "sample_input": "",
+    "sample_output": "true\nMyApp",
+    "starter_code": {
+      "java": `public class Main {
+    // Define Config singleton here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1105,
+    "title": "Inner Class – Iterator Pattern",
+    "category": "OOP",
+    "difficulty": "Hard",
+    "company_tags": ["Google", "Amazon"],
+    "description": "Create a class 'NumberBox' that stores an array of 5 integers {1,2,3,4,5}. Inside it, create a non-static inner class 'BoxIterator' with a method next() that returns the next element and hasNext() that returns true if elements remain. In main(), iterate and print all elements.",
+    "input_format": "No input required.",
+    "output_format": "1\n2\n3\n4\n5",
+    "constraints": "Must use a non-static inner class.",
+    "sample_input": "",
+    "sample_output": "1\n2\n3\n4\n5",
+    "starter_code": {
+      "java": `public class Main {
+    // Define NumberBox with inner BoxIterator here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1106,
+    "title": "Generics – Typed Box",
+    "category": "OOP",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro", "Infosys"],
+    "description": "Create a generic class 'Box<T>' with a private field value of type T. Provide getValue() and setValue() methods. In main(), create a Box<Integer> storing 42 and a Box<String> storing 'Hello'. Print both values.",
+    "input_format": "No input required.",
+    "output_format": "42\nHello",
+    "constraints": "Must use Java generics (<T>).",
+    "sample_input": "",
+    "sample_output": "42\nHello",
+    "starter_code": {
+      "java": `public class Main {
+    // Define generic Box<T> here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1107,
+    "title": "Comparable Interface – Sort Students",
+    "category": "OOP",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Flipkart"],
+    "description": "Create a class 'Student' implementing Comparable<Student> with fields name and marks. compareTo() should sort by marks in ascending order. In main(), create a list of 3 students, sort with Collections.sort(), and print their names in sorted order.",
+    "input_format": "No input required. Use: Alice-85, Bob-72, Charlie-90.",
+    "output_format": "Bob\nAlice\nCharlie",
+    "constraints": "Must implement Comparable<Student>, not use a custom Comparator.",
+    "sample_input": "",
+    "sample_output": "Bob\nAlice\nCharlie",
+    "starter_code": {
+      "java": `import java.util.*;
+public class Main {
+    // Define Student implementing Comparable here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1108,
+    "title": "Anonymous Class – Runnable",
+    "category": "OOP",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Cognizant", "HCL"],
+    "description": "Create a Runnable using an anonymous class that prints 'Task running'. Pass it to a Thread and start it. Print 'Main thread done' after joining the thread.",
+    "input_format": "No input required.",
+    "output_format": "Task running\nMain thread done",
+    "constraints": "Use an anonymous class (not lambda) to implement Runnable.",
+    "sample_input": "",
+    "sample_output": "Task running\nMain thread done",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        // Create anonymous Runnable and Thread here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1109,
+    "title": "Multi-level Inheritance",
+    "category": "OOP",
+    "difficulty": "Easy",
+    "company_tags": ["Accenture", "Wipro", "CTS"],
+    "description": "Create class 'A' with method hello() printing 'Hello from A'. Class 'B' extends A and overrides hello() printing 'Hello from B'. Class 'C' extends B. In main(), create object of C, call hello(), then use super chain to call A's hello() from B.",
+    "input_format": "No input required.",
+    "output_format": "Hello from B",
+    "constraints": "Three levels: A -> B -> C. C does not override hello().",
+    "sample_input": "",
+    "sample_output": "Hello from B",
+    "starter_code": {
+      "java": `public class Main {
+    // Define A, B, C classes here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+
+  // ─── DBMS (20 questions) ───────────────────────────────────
+  {
+    "id": 1110,
+    "title": "Write a SELECT with WHERE clause",
+    "category": "DBMS",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "Wipro"],
+    "description": "Given a table 'Employees(EmpID, Name, Salary, Department)', write a Java program that prints the SQL query to fetch all employees from the 'HR' department with salary greater than 50000. Then simulate the result by printing two hardcoded matching rows.",
+    "input_format": "No input required.",
+    "output_format": "SELECT * FROM Employees WHERE Department='HR' AND Salary>50000;\n101 Alice 60000 HR\n103 Carol 75000 HR",
+    "constraints": "Print the SQL query first, then the simulated result.",
+    "sample_input": "",
+    "sample_output": "SELECT * FROM Employees WHERE Department='HR' AND Salary>50000;\n101 Alice 60000 HR\n103 Carol 75000 HR",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        // Print SQL query and simulated result
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1111,
+    "title": "INNER JOIN Query",
+    "category": "DBMS",
+    "difficulty": "Easy",
+    "company_tags": ["Amazon", "Accenture", "CTS"],
+    "description": "You have tables 'Orders(OrderID, CustomerID, Amount)' and 'Customers(CustomerID, Name)'. Write a Java program that prints the SQL query to get each customer's name along with their order amount using INNER JOIN. Then simulate 3 result rows.",
+    "input_format": "No input required.",
+    "output_format": "SELECT Customers.Name, Orders.Amount FROM Orders INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;\nAlice 2500\nBob 1800\nCarol 3200",
+    "constraints": "Use INNER JOIN syntax.",
+    "sample_input": "",
+    "sample_output": "SELECT Customers.Name, Orders.Amount FROM Orders INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;\nAlice 2500\nBob 1800\nCarol 3200",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1112,
+    "title": "GROUP BY and HAVING",
+    "category": "DBMS",
+    "difficulty": "Medium",
+    "company_tags": ["Goldman Sachs", "Morgan Stanley", "Oracle"],
+    "description": "Given table 'Sales(SalesID, Region, Amount)', write a Java program that prints the SQL to find all regions where total sales exceed 100000, grouped by region. Then simulate 2 result rows.",
+    "input_format": "No input required.",
+    "output_format": "SELECT Region, SUM(Amount) FROM Sales GROUP BY Region HAVING SUM(Amount)>100000;\nNorth 150000\nSouth 120000",
+    "constraints": "Must use GROUP BY and HAVING, not WHERE.",
+    "sample_input": "",
+    "sample_output": "SELECT Region, SUM(Amount) FROM Sales GROUP BY Region HAVING SUM(Amount)>100000;\nNorth 150000\nSouth 120000",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1113,
+    "title": "Find Second Highest Salary",
+    "category": "DBMS",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "TCS", "Infosys"],
+    "description": "Given table 'Employees(EmpID, Name, Salary)', print the SQL query to find the second highest salary without using LIMIT/TOP, then print the simulated answer.",
+    "input_format": "No input required.",
+    "output_format": "SELECT MAX(Salary) FROM Employees WHERE Salary < (SELECT MAX(Salary) FROM Employees);\n85000",
+    "constraints": "Use a correlated subquery. No LIMIT or OFFSET.",
+    "sample_input": "",
+    "sample_output": "SELECT MAX(Salary) FROM Employees WHERE Salary < (SELECT MAX(Salary) FROM Employees);\n85000",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1114,
+    "title": "Normalization – 1NF Check",
+    "category": "DBMS",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro", "HCL"],
+    "description": "A table 'Student(RollNo, Name, Subjects)' stores subjects as a comma-separated string (e.g., 'Math,Science'). This violates 1NF. Write a Java program that prints the violation reason and then prints the corrected 1NF table design.",
+    "input_format": "No input required.",
+    "output_format": "Violation: Multi-valued attribute in Subjects column.\n1NF Table: Student(RollNo, Name, Subject) - one row per subject.",
+    "constraints": "Explain the violation and the fix.",
+    "sample_input": "",
+    "sample_output": "Violation: Multi-valued attribute in Subjects column.\n1NF Table: Student(RollNo, Name, Subject) - one row per subject.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1115,
+    "title": "Primary Key vs Foreign Key",
+    "category": "DBMS",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture", "Cognizant"],
+    "description": "Print the SQL CREATE TABLE statements for 'Department(DeptID PRIMARY KEY, DeptName)' and 'Employee(EmpID PRIMARY KEY, Name, DeptID FOREIGN KEY referencing Department)'. Then print one INSERT for each table.",
+    "input_format": "No input required.",
+    "output_format": "CREATE TABLE Department(DeptID INT PRIMARY KEY, DeptName VARCHAR(50));\nCREATE TABLE Employee(EmpID INT PRIMARY KEY, Name VARCHAR(50), DeptID INT, FOREIGN KEY(DeptID) REFERENCES Department(DeptID));\nINSERT INTO Department VALUES(1,'Engineering');\nINSERT INTO Employee VALUES(101,'Alice',1);",
+    "constraints": "Must define both PRIMARY KEY and FOREIGN KEY.",
+    "sample_input": "",
+    "sample_output": "CREATE TABLE Department(DeptID INT PRIMARY KEY, DeptName VARCHAR(50));\nCREATE TABLE Employee(EmpID INT PRIMARY KEY, Name VARCHAR(50), DeptID INT, FOREIGN KEY(DeptID) REFERENCES Department(DeptID));\nINSERT INTO Department VALUES(1,'Engineering');\nINSERT INTO Employee VALUES(101,'Alice',1);",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1116,
+    "title": "ACID Properties Explanation",
+    "category": "DBMS",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Goldman Sachs", "Oracle"],
+    "description": "Write a Java program that prints the full form and one-line meaning of each ACID property (Atomicity, Consistency, Isolation, Durability).",
+    "input_format": "No input required.",
+    "output_format": "Atomicity: All operations in a transaction succeed or all are rolled back.\nConsistency: Database remains in a valid state before and after transaction.\nIsolation: Concurrent transactions do not interfere with each other.\nDurability: Committed transactions are permanently saved even after failure.",
+    "constraints": "Print exactly 4 lines, one per property.",
+    "sample_input": "",
+    "sample_output": "Atomicity: All operations in a transaction succeed or all are rolled back.\nConsistency: Database remains in a valid state before and after transaction.\nIsolation: Concurrent transactions do not interfere with each other.\nDurability: Committed transactions are permanently saved even after failure.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1117,
+    "title": "DELETE vs TRUNCATE vs DROP",
+    "category": "DBMS",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "HCL", "Infosys"],
+    "description": "Write a Java program that prints the key difference between DELETE, TRUNCATE, and DROP commands in a table format: Command | Rollback Possible | Removes Structure | Speed.",
+    "input_format": "No input required.",
+    "output_format": "DELETE | Yes | No | Slow\nTRUNCATE | No | No | Fast\nDROP | No | Yes | Fast",
+    "constraints": "Print exactly 3 rows of comparison.",
+    "sample_input": "",
+    "sample_output": "DELETE | Yes | No | Slow\nTRUNCATE | No | No | Fast\nDROP | No | Yes | Fast",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1118,
+    "title": "Index and Query Optimisation",
+    "category": "DBMS",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Oracle", "SAP"],
+    "description": "Print the SQL to create an index on the 'Email' column of an 'Users' table. Then print the query that benefits from this index. Then explain in one line why the index speeds up the query.",
+    "input_format": "No input required.",
+    "output_format": "CREATE INDEX idx_email ON Users(Email);\nSELECT * FROM Users WHERE Email='alice@example.com';\nReason: Index allows B-tree lookup instead of full table scan.",
+    "constraints": "Print exactly 3 lines.",
+    "sample_input": "",
+    "sample_output": "CREATE INDEX idx_email ON Users(Email);\nSELECT * FROM Users WHERE Email='alice@example.com';\nReason: Index allows B-tree lookup instead of full table scan.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1119,
+    "title": "LEFT JOIN vs INNER JOIN",
+    "category": "DBMS",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Accenture", "Cognizant"],
+    "description": "Tables: 'Students(SID, Name)' and 'Results(SID, Marks)'. Some students have no results. Print both the INNER JOIN and LEFT JOIN queries, then simulate what the LEFT JOIN returns including a student with NULL marks.",
+    "input_format": "No input required.",
+    "output_format": "INNER JOIN: SELECT S.Name, R.Marks FROM Students S INNER JOIN Results R ON S.SID=R.SID;\nLEFT JOIN: SELECT S.Name, R.Marks FROM Students S LEFT JOIN Results R ON S.SID=R.SID;\nAlice 85\nBob 90\nCarol null",
+    "constraints": "Print both queries and 3 simulated rows.",
+    "sample_input": "",
+    "sample_output": "INNER JOIN: SELECT S.Name, R.Marks FROM Students S INNER JOIN Results R ON S.SID=R.SID;\nLEFT JOIN: SELECT S.Name, R.Marks FROM Students S LEFT JOIN Results R ON S.SID=R.SID;\nAlice 85\nBob 90\nCarol null",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1120,
+    "title": "Stored Procedure – Salary Hike",
+    "category": "DBMS",
+    "difficulty": "Medium",
+    "company_tags": ["Oracle", "SAP", "Goldman Sachs"],
+    "description": "Print the SQL to create a stored procedure 'GiveSalaryHike' that accepts EmpID and HikePercent and updates the salary of that employee. Then print the CALL statement with EmpID=101, HikePercent=10.",
+    "input_format": "No input required.",
+    "output_format": "CREATE PROCEDURE GiveSalaryHike(IN empId INT, IN hikePercent DECIMAL) BEGIN UPDATE Employees SET Salary=Salary+(Salary*hikePercent/100) WHERE EmpID=empId; END;\nCALL GiveSalaryHike(101, 10);",
+    "constraints": "Print the full procedure and the call on separate lines.",
+    "sample_input": "",
+    "sample_output": "CREATE PROCEDURE GiveSalaryHike(IN empId INT, IN hikePercent DECIMAL) BEGIN UPDATE Employees SET Salary=Salary+(Salary*hikePercent/100) WHERE EmpID=empId; END;\nCALL GiveSalaryHike(101, 10);",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1121,
+    "title": "ER Diagram – Identify Entities",
+    "category": "DBMS",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro", "Infosys"],
+    "description": "Given a Library Management System, print all entities, their key attributes, and one relationship between them.",
+    "input_format": "No input required.",
+    "output_format": "Entities: Book, Member, Librarian, Loan\nBook: BookID(PK), Title, Author, ISBN\nMember: MemberID(PK), Name, Email\nLoan: LoanID(PK), BookID(FK), MemberID(FK), IssueDate, ReturnDate\nRelationship: Member borrows Book through Loan",
+    "constraints": "At least 4 entities. At least one relationship.",
+    "sample_input": "",
+    "sample_output": "Entities: Book, Member, Librarian, Loan\nBook: BookID(PK), Title, Author, ISBN\nMember: MemberID(PK), Name, Email\nLoan: LoanID(PK), BookID(FK), MemberID(FK), IssueDate, ReturnDate\nRelationship: Member borrows Book through Loan",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1122,
+    "title": "View Creation and Usage",
+    "category": "DBMS",
+    "difficulty": "Medium",
+    "company_tags": ["Oracle", "Amazon", "Microsoft"],
+    "description": "Print the SQL to create a view 'HighEarners' showing employees with salary > 80000 from the Employees table. Then print a SELECT query on that view, and one simulated result row.",
+    "input_format": "No input required.",
+    "output_format": "CREATE VIEW HighEarners AS SELECT * FROM Employees WHERE Salary>80000;\nSELECT * FROM HighEarners;\n102 Bob 95000 Engineering",
+    "constraints": "Print CREATE VIEW, SELECT, and one result row.",
+    "sample_input": "",
+    "sample_output": "CREATE VIEW HighEarners AS SELECT * FROM Employees WHERE Salary>80000;\nSELECT * FROM HighEarners;\n102 Bob 95000 Engineering",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1123,
+    "title": "Transaction – COMMIT and ROLLBACK",
+    "category": "DBMS",
+    "difficulty": "Medium",
+    "company_tags": ["Goldman Sachs", "Morgan Stanley", "Oracle"],
+    "description": "Print the SQL for a transaction that transfers 5000 from Account A (AccID=1) to Account B (AccID=2). Use BEGIN, UPDATE, COMMIT. Then print the ROLLBACK version in case of failure.",
+    "input_format": "No input required.",
+    "output_format": "BEGIN;\nUPDATE Accounts SET Balance=Balance-5000 WHERE AccID=1;\nUPDATE Accounts SET Balance=Balance+5000 WHERE AccID=2;\nCOMMIT;\nROLLBACK version: Replace COMMIT with ROLLBACK on error.",
+    "constraints": "Must show both COMMIT and ROLLBACK scenarios.",
+    "sample_input": "",
+    "sample_output": "BEGIN;\nUPDATE Accounts SET Balance=Balance-5000 WHERE AccID=1;\nUPDATE Accounts SET Balance=Balance+5000 WHERE AccID=2;\nCOMMIT;\nROLLBACK version: Replace COMMIT with ROLLBACK on error.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1124,
+    "title": "3NF Normalisation",
+    "category": "DBMS",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Google", "Microsoft"],
+    "description": "Table: StudentCourse(StudentID, StudentName, CourseID, CourseName, InstructorID, InstructorName). Identify all functional dependencies, explain the 2NF and 3NF violations, and print the decomposed 3NF tables.",
+    "input_format": "No input required.",
+    "output_format": "2NF violation: StudentName depends only on StudentID (partial dependency).\n3NF violation: InstructorName depends on InstructorID (transitive dependency).\n3NF Tables: Student(StudentID,StudentName), Course(CourseID,CourseName,InstructorID), Instructor(InstructorID,InstructorName), Enrollment(StudentID,CourseID)",
+    "constraints": "Must name 2NF and 3NF violations separately before giving solution.",
+    "sample_input": "",
+    "sample_output": "2NF violation: StudentName depends only on StudentID (partial dependency).\n3NF violation: InstructorName depends on InstructorID (transitive dependency).\n3NF Tables: Student(StudentID,StudentName), Course(CourseID,CourseName,InstructorID), Instructor(InstructorID,InstructorName), Enrollment(StudentID,CourseID)",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1125,
+    "title": "Deadlock in DBMS",
+    "category": "DBMS",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Oracle", "SAP"],
+    "description": "Print a scenario description of a deadlock between two transactions T1 and T2, then list two common deadlock prevention strategies.",
+    "input_format": "No input required.",
+    "output_format": "T1 holds lock on A, waits for B.\nT2 holds lock on B, waits for A.\nDeadlock: circular wait.\nPrevention 1: Wait-Die scheme - older transaction waits, younger rolls back.\nPrevention 2: Wound-Wait scheme - older transaction wounds (aborts) younger.",
+    "constraints": "Print exactly 5 lines.",
+    "sample_input": "",
+    "sample_output": "T1 holds lock on A, waits for B.\nT2 holds lock on B, waits for A.\nDeadlock: circular wait.\nPrevention 1: Wait-Die scheme - older transaction waits, younger rolls back.\nPrevention 2: Wound-Wait scheme - older transaction wounds (aborts) younger.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1126,
+    "title": "Trigger – Auto Audit Log",
+    "category": "DBMS",
+    "difficulty": "Hard",
+    "company_tags": ["Oracle", "Goldman Sachs", "SAP"],
+    "description": "Print the SQL to create an AFTER UPDATE trigger on the 'Employees' table that inserts a row into 'AuditLog(EmpID, OldSalary, NewSalary, ChangedAt)' whenever a salary is updated.",
+    "input_format": "No input required.",
+    "output_format": "CREATE TRIGGER SalaryAudit AFTER UPDATE ON Employees FOR EACH ROW BEGIN INSERT INTO AuditLog(EmpID,OldSalary,NewSalary,ChangedAt) VALUES(OLD.EmpID,OLD.Salary,NEW.Salary,NOW()); END;",
+    "constraints": "Use OLD and NEW keywords. Single-line output.",
+    "sample_input": "",
+    "sample_output": "CREATE TRIGGER SalaryAudit AFTER UPDATE ON Employees FOR EACH ROW BEGIN INSERT INTO AuditLog(EmpID,OldSalary,NewSalary,ChangedAt) VALUES(OLD.EmpID,OLD.Salary,NEW.Salary,NOW()); END;",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1127,
+    "title": "Candidate Key vs Super Key",
+    "category": "DBMS",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "Wipro"],
+    "description": "Given table 'Employee(EmpID, Email, Phone, Name)', print all super keys, identify candidate keys, and state which one is the primary key and why.",
+    "input_format": "No input required.",
+    "output_format": "Super keys: {EmpID}, {Email}, {Phone}, {EmpID,Email}, {EmpID,Phone}, {Email,Phone}, etc.\nCandidate keys: {EmpID}, {Email}, {Phone}\nPrimary key: EmpID (chosen because it is numeric, shorter, and auto-incrementable)",
+    "constraints": "List at least 5 super keys and all 3 candidate keys.",
+    "sample_input": "",
+    "sample_output": "Super keys: {EmpID}, {Email}, {Phone}, {EmpID,Email}, {EmpID,Phone}, {Email,Phone}, etc.\nCandidate keys: {EmpID}, {Email}, {Phone}\nPrimary key: EmpID (chosen because it is numeric, shorter, and auto-incrementable)",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1128,
+    "title": "NoSQL vs SQL – When to Use",
+    "category": "DBMS",
+    "difficulty": "Easy",
+    "company_tags": ["Amazon", "Google", "Microsoft"],
+    "description": "Print a comparison of SQL and NoSQL across 4 parameters: Schema, Scalability, Transactions, and Best Use Case.",
+    "input_format": "No input required.",
+    "output_format": "Schema: SQL=Fixed, NoSQL=Dynamic\nScalability: SQL=Vertical, NoSQL=Horizontal\nTransactions: SQL=ACID compliant, NoSQL=Eventual consistency\nBest Use Case: SQL=Banking/ERP, NoSQL=Social media/IoT",
+    "constraints": "Exactly 4 comparison lines.",
+    "sample_input": "",
+    "sample_output": "Schema: SQL=Fixed, NoSQL=Dynamic\nScalability: SQL=Vertical, NoSQL=Horizontal\nTransactions: SQL=ACID compliant, NoSQL=Eventual consistency\nBest Use Case: SQL=Banking/ERP, NoSQL=Social media/IoT",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1129,
+    "title": "Aggregate Functions",
+    "category": "DBMS",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro", "Cognizant"],
+    "description": "Given table 'Sales(SaleID, Product, Amount)', print SQL queries using COUNT, SUM, AVG, MIN, MAX on the Amount column. Then print one simulated result per query.",
+    "input_format": "No input required.",
+    "output_format": "SELECT COUNT(Amount) FROM Sales; => 5\nSELECT SUM(Amount) FROM Sales; => 47500\nSELECT AVG(Amount) FROM Sales; => 9500\nSELECT MIN(Amount) FROM Sales; => 3000\nSELECT MAX(Amount) FROM Sales; => 18000",
+    "constraints": "Print all 5 queries with simulated results.",
+    "sample_input": "",
+    "sample_output": "SELECT COUNT(Amount) FROM Sales; => 5\nSELECT SUM(Amount) FROM Sales; => 47500\nSELECT AVG(Amount) FROM Sales; => 9500\nSELECT MIN(Amount) FROM Sales; => 3000\nSELECT MAX(Amount) FROM Sales; => 18000",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+
+  // ─── Operating Systems (20 questions) ─────────────────────
+  {
+    "id": 1130,
+    "title": "Process vs Thread",
+    "category": "Operating Systems",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "Amazon"],
+    "description": "Print the key differences between a Process and a Thread across 4 parameters: Memory, Creation time, Communication, and Crash impact.",
+    "input_format": "No input required.",
+    "output_format": "Memory: Process=Separate, Thread=Shared within process\nCreation time: Process=Slower, Thread=Faster\nCommunication: Process=IPC needed, Thread=Direct shared memory\nCrash impact: Process=Isolated, Thread=Can crash whole process",
+    "constraints": "Exactly 4 comparison lines.",
+    "sample_input": "",
+    "sample_output": "Memory: Process=Separate, Thread=Shared within process\nCreation time: Process=Slower, Thread=Faster\nCommunication: Process=IPC needed, Thread=Direct shared memory\nCrash impact: Process=Isolated, Thread=Can crash whole process",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1131,
+    "title": "FCFS CPU Scheduling",
+    "category": "Operating Systems",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro", "HCL"],
+    "description": "Given 3 processes: P1(burst=4), P2(burst=3), P3(burst=5), all arriving at time 0, simulate FCFS scheduling. Print the order, completion time, waiting time, and turnaround time for each process.",
+    "input_format": "No input required.",
+    "output_format": "Order: P1 P2 P3\nP1: CT=4, WT=0, TAT=4\nP2: CT=7, WT=4, TAT=7\nP3: CT=12, WT=7, TAT=12\nAvg WT: 3.67\nAvg TAT: 7.67",
+    "constraints": "All arrive at time 0. Non-preemptive.",
+    "sample_input": "",
+    "sample_output": "Order: P1 P2 P3\nP1: CT=4, WT=0, TAT=4\nP2: CT=7, WT=4, TAT=7\nP3: CT=12, WT=7, TAT=12\nAvg WT: 3.67\nAvg TAT: 7.67",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1132,
+    "title": "SJF Scheduling – Non-Preemptive",
+    "category": "Operating Systems",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Accenture", "CTS"],
+    "description": "Given processes P1(burst=6), P2(burst=2), P3(burst=8), P4(burst=3), all arriving at time 0, simulate non-preemptive SJF. Print the execution order, waiting time, and average waiting time.",
+    "input_format": "No input required.",
+    "output_format": "Order: P2 P4 P1 P3\nP2: WT=0\nP4: WT=2\nP1: WT=5\nP3: WT=11\nAvg WT: 4.5",
+    "constraints": "Shortest job first. No preemption.",
+    "sample_input": "",
+    "sample_output": "Order: P2 P4 P1 P3\nP2: WT=0\nP4: WT=2\nP1: WT=5\nP3: WT=11\nAvg WT: 4.5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1133,
+    "title": "Round Robin Scheduling",
+    "category": "Operating Systems",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys", "Oracle"],
+    "description": "Given P1(burst=5), P2(burst=3), P3(burst=4) with time quantum=2, simulate Round Robin. Print the Gantt chart and average waiting time.",
+    "input_format": "No input required.",
+    "output_format": "Gantt: P1(0-2) P2(2-4) P3(4-6) P1(6-8) P3(8-9) P1(9-10)\nP1: WT=5\nP2: WT=2\nP3: WT=5\nAvg WT: 4.0",
+    "constraints": "Time quantum=2. Preemptive round robin.",
+    "sample_input": "",
+    "sample_output": "Gantt: P1(0-2) P2(2-4) P3(4-6) P1(6-8) P3(8-9) P1(9-10)\nP1: WT=5\nP2: WT=2\nP3: WT=5\nAvg WT: 4.0",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1134,
+    "title": "Deadlock – Banker's Algorithm",
+    "category": "Operating Systems",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Google", "Microsoft"],
+    "description": "3 processes, 1 resource type. Max=[7,5,9], Allocated=[2,3,2], Available=3. Using Banker's Algorithm, find the safe sequence or declare deadlock.",
+    "input_format": "No input required.",
+    "output_format": "Need=[5,2,7]\nAvailable=3\nP1 needs 2 <= 3: Run P1, Available=5\nP0 needs 5 <= 5: Run P0, Available=7\nP2 needs 7 <= 7: Run P2\nSafe sequence: P1 -> P0 -> P2",
+    "constraints": "Show step-by-step execution of the safety algorithm.",
+    "sample_input": "",
+    "sample_output": "Need=[5,2,7]\nAvailable=3\nP1 needs 2 <= 3: Run P1, Available=5\nP0 needs 5 <= 5: Run P0, Available=7\nP2 needs 7 <= 7: Run P2\nSafe sequence: P1 -> P0 -> P2",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1135,
+    "title": "Page Replacement – FIFO",
+    "category": "Operating Systems",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro", "HCL"],
+    "description": "Reference string: 1,3,0,3,5,6,3. Frames=3. Simulate FIFO page replacement. Print frame state after each reference and total page faults.",
+    "input_format": "No input required.",
+    "output_format": "1: [1] FAULT\n3: [1,3] FAULT\n0: [1,3,0] FAULT\n3: [1,3,0] HIT\n5: [5,3,0] FAULT\n6: [5,6,0] FAULT\n3: [5,6,3] FAULT\nTotal Page Faults: 6",
+    "constraints": "3 frames. FIFO eviction.",
+    "sample_input": "",
+    "sample_output": "1: [1] FAULT\n3: [1,3] FAULT\n0: [1,3,0] FAULT\n3: [1,3,0] HIT\n5: [5,3,0] FAULT\n6: [5,6,0] FAULT\n3: [5,6,3] FAULT\nTotal Page Faults: 6",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1136,
+    "title": "LRU Page Replacement",
+    "category": "Operating Systems",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Microsoft", "Oracle"],
+    "description": "Reference string: 7,0,1,2,0,3,0,4,2,3. Frames=3. Simulate LRU page replacement. Print total page faults.",
+    "input_format": "No input required.",
+    "output_format": "7: [7] FAULT\n0: [7,0] FAULT\n1: [7,0,1] FAULT\n2: [2,0,1] FAULT\n0: [2,0,1] HIT\n3: [2,0,3] FAULT\n0: [2,0,3] HIT\n4: [4,0,3] FAULT\n2: [4,0,2] FAULT\n3: [4,3,2] FAULT\nTotal Page Faults: 8",
+    "constraints": "3 frames. LRU eviction.",
+    "sample_input": "",
+    "sample_output": "7: [7] FAULT\n0: [7,0] FAULT\n1: [7,0,1] FAULT\n2: [2,0,1] FAULT\n0: [2,0,1] HIT\n3: [2,0,3] FAULT\n0: [2,0,3] HIT\n4: [4,0,3] FAULT\n2: [4,0,2] FAULT\n3: [4,3,2] FAULT\nTotal Page Faults: 8",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1137,
+    "title": "Semaphore – Producer Consumer",
+    "category": "Operating Systems",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Google", "Microsoft"],
+    "description": "Write a Java program simulating the Producer-Consumer problem using a semaphore (or synchronized block). Producer adds 3 items, consumer removes them. Print each produce and consume action.",
+    "input_format": "No input required.",
+    "output_format": "Produced: 1\nProduced: 2\nProduced: 3\nConsumed: 1\nConsumed: 2\nConsumed: 3",
+    "constraints": "Use synchronized or Semaphore. Buffer size=3.",
+    "sample_input": "",
+    "sample_output": "Produced: 1\nProduced: 2\nProduced: 3\nConsumed: 1\nConsumed: 2\nConsumed: 3",
+    "starter_code": {
+      "java": `import java.util.concurrent.Semaphore;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        // Implement Producer-Consumer here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1138,
+    "title": "Memory Allocation – First Fit",
+    "category": "Operating Systems",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys", "HCL"],
+    "description": "Memory blocks: [100, 500, 200, 300, 600] KB. Processes requesting: [212, 417, 112, 426] KB. Use First Fit algorithm. Print which block each process is allocated to (1-indexed), or 'Not Allocated'.",
+    "input_format": "No input required.",
+    "output_format": "Process 1 (212KB) -> Block 2 (500KB)\nProcess 2 (417KB) -> Block 5 (600KB)\nProcess 3 (112KB) -> Block 2 (288KB remaining)\nProcess 4 (426KB) -> Not Allocated",
+    "constraints": "First fit: allocate to first block that fits.",
+    "sample_input": "",
+    "sample_output": "Process 1 (212KB) -> Block 2 (500KB)\nProcess 2 (417KB) -> Block 5 (600KB)\nProcess 3 (112KB) -> Block 2 (288KB remaining)\nProcess 4 (426KB) -> Not Allocated",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1139,
+    "title": "Disk Scheduling – SSTF",
+    "category": "Operating Systems",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Oracle", "SAP"],
+    "description": "Disk request queue: [98, 183, 37, 122, 14, 124, 65, 67]. Head starts at 53. Use SSTF (Shortest Seek Time First). Print the order of servicing and total head movement.",
+    "input_format": "No input required.",
+    "output_format": "Order: 65 67 37 14 98 122 124 183\nTotal head movement: 236",
+    "constraints": "Always service the request closest to current head position.",
+    "sample_input": "",
+    "sample_output": "Order: 65 67 37 14 98 122 124 183\nTotal head movement: 236",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1140,
+    "title": "Mutex vs Semaphore",
+    "category": "Operating Systems",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro", "Accenture"],
+    "description": "Print the key differences between Mutex and Semaphore across 4 parameters: Ownership, Count, Use case, and Release by.",
+    "input_format": "No input required.",
+    "output_format": "Ownership: Mutex=Owned by thread, Semaphore=No ownership\nCount: Mutex=Binary(0/1), Semaphore=Any non-negative integer\nUse case: Mutex=Mutual exclusion, Semaphore=Signaling/resource counting\nRelease by: Mutex=Same thread only, Semaphore=Any thread",
+    "constraints": "Exactly 4 comparison lines.",
+    "sample_input": "",
+    "sample_output": "Ownership: Mutex=Owned by thread, Semaphore=No ownership\nCount: Mutex=Binary(0/1), Semaphore=Any non-negative integer\nUse case: Mutex=Mutual exclusion, Semaphore=Signaling/resource counting\nRelease by: Mutex=Same thread only, Semaphore=Any thread",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1141,
+    "title": "Virtual Memory and Paging",
+    "category": "Operating Systems",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Google", "Microsoft"],
+    "description": "Page size = 1KB. Logical address = 5120 bytes. Calculate: page number, offset, physical address if page 5 maps to frame 3.",
+    "input_format": "No input required.",
+    "output_format": "Page size: 1024 bytes\nLogical address: 5120\nPage number: 5\nOffset: 0\nFrame number: 3\nPhysical address: 3072",
+    "constraints": "Show all calculation steps.",
+    "sample_input": "",
+    "sample_output": "Page size: 1024 bytes\nLogical address: 5120\nPage number: 5\nOffset: 0\nFrame number: 3\nPhysical address: 3072",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1142,
+    "title": "Critical Section Problem",
+    "category": "Operating Systems",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Microsoft", "Oracle"],
+    "description": "Write a Java program where two threads increment a shared counter 1000 times each without synchronization, then again with synchronization. Print both final counter values to show the race condition vs correct result.",
+    "input_format": "No input required.",
+    "output_format": "Without sync: <some value less than 2000 usually>\nWith sync: 2000",
+    "constraints": "Use Thread class. Use synchronized keyword for the correct version.",
+    "sample_input": "",
+    "sample_output": "Without sync: 1873\nWith sync: 2000",
+    "starter_code": {
+      "java": `public class Main {
+    static int counter = 0;
+
+    public static void main(String[] args) throws InterruptedException {
+        // Demonstrate race condition and fix here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1143,
+    "title": "System Calls – Types",
+    "category": "Operating Systems",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "Wipro"],
+    "description": "Print the 5 types of system calls with one example each: Process Control, File Management, Device Management, Information Maintenance, Communication.",
+    "input_format": "No input required.",
+    "output_format": "Process Control: fork(), exit()\nFile Management: open(), read(), write()\nDevice Management: ioctl(), read()\nInformation Maintenance: getpid(), alarm()\nCommunication: pipe(), shmget()",
+    "constraints": "One line per type with examples.",
+    "sample_input": "",
+    "sample_output": "Process Control: fork(), exit()\nFile Management: open(), read(), write()\nDevice Management: ioctl(), read()\nInformation Maintenance: getpid(), alarm()\nCommunication: pipe(), shmget()",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1144,
+    "title": "Paging vs Segmentation",
+    "category": "Operating Systems",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Accenture", "CTS"],
+    "description": "Compare Paging and Segmentation across 4 parameters: Division, Size, Fragmentation type, and User visibility.",
+    "input_format": "No input required.",
+    "output_format": "Division: Paging=Fixed-size pages, Segmentation=Variable-size segments\nSize: Paging=Fixed, Segmentation=Variable\nFragmentation: Paging=Internal, Segmentation=External\nUser visibility: Paging=Transparent, Segmentation=Visible to programmer",
+    "constraints": "Exactly 4 lines.",
+    "sample_input": "",
+    "sample_output": "Division: Paging=Fixed-size pages, Segmentation=Variable-size segments\nSize: Paging=Fixed, Segmentation=Variable\nFragmentation: Paging=Internal, Segmentation=External\nUser visibility: Paging=Transparent, Segmentation=Visible to programmer",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1145,
+    "title": "Context Switching",
+    "category": "Operating Systems",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro", "Infosys"],
+    "description": "Print the step-by-step sequence of events that happen during a context switch between Process P1 and Process P2.",
+    "input_format": "No input required.",
+    "output_format": "1. CPU saves P1 state (PC, registers) into P1's PCB\n2. Scheduler selects P2\n3. CPU loads P2 state from P2's PCB\n4. P2 resumes execution from where it left off\n5. P1 state is safely stored for later resumption",
+    "constraints": "At least 5 steps.",
+    "sample_input": "",
+    "sample_output": "1. CPU saves P1 state (PC, registers) into P1's PCB\n2. Scheduler selects P2\n3. CPU loads P2 state from P2's PCB\n4. P2 resumes execution from where it left off\n5. P1 state is safely stored for later resumption",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1146,
+    "title": "Thrashing in OS",
+    "category": "Operating Systems",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Oracle"],
+    "description": "Explain thrashing: what causes it, its effect, and two solutions. Print as structured output.",
+    "input_format": "No input required.",
+    "output_format": "Thrashing: CPU spends more time swapping pages than executing processes.\nCause: Too many processes competing for limited frames.\nEffect: CPU utilisation drops drastically despite high activity.\nSolution 1: Working Set Model - allocate frames based on working set size.\nSolution 2: Page Fault Frequency - reduce multiprogramming when PFF is high.",
+    "constraints": "Print exactly 5 lines.",
+    "sample_input": "",
+    "sample_output": "Thrashing: CPU spends more time swapping pages than executing processes.\nCause: Too many processes competing for limited frames.\nEffect: CPU utilisation drops drastically despite high activity.\nSolution 1: Working Set Model - allocate frames based on working set size.\nSolution 2: Page Fault Frequency - reduce multiprogramming when PFF is high.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1147,
+    "title": "File System – Inode Structure",
+    "category": "Operating Systems",
+    "difficulty": "Medium",
+    "company_tags": ["Google", "Amazon", "Microsoft"],
+    "description": "Print the structure of a Unix inode with at least 8 fields and explain what each field stores.",
+    "input_format": "No input required.",
+    "output_format": "inode fields:\n1. File type (regular, directory, symlink)\n2. Permissions (rwxrwxrwx)\n3. Link count (hard links)\n4. Owner UID and GID\n5. File size in bytes\n6. Timestamps (access, modify, change)\n7. Direct block pointers (12)\n8. Indirect, double-indirect, triple-indirect pointers",
+    "constraints": "At least 8 inode fields.",
+    "sample_input": "",
+    "sample_output": "inode fields:\n1. File type (regular, directory, symlink)\n2. Permissions (rwxrwxrwx)\n3. Link count (hard links)\n4. Owner UID and GID\n5. File size in bytes\n6. Timestamps (access, modify, change)\n7. Direct block pointers (12)\n8. Indirect, double-indirect, triple-indirect pointers",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1148,
+    "title": "Monolithic vs Microkernel",
+    "category": "Operating Systems",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "Cognizant"],
+    "description": "Compare Monolithic and Microkernel architectures across 4 parameters and give one OS example each.",
+    "input_format": "No input required.",
+    "output_format": "Size: Monolithic=Large kernel, Microkernel=Small kernel\nServices in kernel: Monolithic=All (FS, drivers, IPC), Microkernel=Minimal (IPC, scheduling)\nPerformance: Monolithic=Faster (no context switch), Microkernel=Slower (message passing)\nReliability: Monolithic=Less (crash affects all), Microkernel=More (isolated)\nExamples: Monolithic=Linux, Microkernel=Minix/QNX",
+    "constraints": "Exactly 5 lines.",
+    "sample_input": "",
+    "sample_output": "Size: Monolithic=Large kernel, Microkernel=Small kernel\nServices in kernel: Monolithic=All (FS, drivers, IPC), Microkernel=Minimal (IPC, scheduling)\nPerformance: Monolithic=Faster (no context switch), Microkernel=Slower (message passing)\nReliability: Monolithic=Less (crash affects all), Microkernel=More (isolated)\nExamples: Monolithic=Linux, Microkernel=Minix/QNX",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1149,
+    "title": "Starvation and Aging",
+    "category": "Operating Systems",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro", "Accenture"],
+    "description": "Explain starvation in OS scheduling, give a real scenario where it happens, and explain how aging solves it.",
+    "input_format": "No input required.",
+    "output_format": "Starvation: A low-priority process never gets CPU because high-priority processes keep arriving.\nScenario: In priority scheduling, P_low(priority=10) waits while P_high(priority=1) processes keep entering.\nAging fix: Gradually increase the priority of waiting processes over time.\nExample: After waiting 5 units, priority 10 becomes 9, then 8, eventually gets scheduled.",
+    "constraints": "Print exactly 4 lines.",
+    "sample_input": "",
+    "sample_output": "Starvation: A low-priority process never gets CPU because high-priority processes keep arriving.\nScenario: In priority scheduling, P_low(priority=10) waits while P_high(priority=1) processes keep entering.\nAging fix: Gradually increase the priority of waiting processes over time.\nExample: After waiting 5 units, priority 10 becomes 9, then 8, eventually gets scheduled.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+
+  // ─── Computer Networks (20 questions) ─────────────────────
+  {
+    "id": 1150,
+    "title": "OSI Model – 7 Layers",
+    "category": "Computer Networks",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "Wipro"],
+    "description": "Print all 7 layers of the OSI model from Physical to Application, with the primary function and one protocol example for each layer.",
+    "input_format": "No input required.",
+    "output_format": "1. Physical: Bit transmission – Ethernet cable\n2. Data Link: Frame delivery, MAC – Ethernet, PPP\n3. Network: Routing, IP addressing – IP, ICMP\n4. Transport: End-to-end delivery – TCP, UDP\n5. Session: Session management – NetBIOS\n6. Presentation: Data translation/encryption – SSL, JPEG\n7. Application: User interface – HTTP, FTP, DNS",
+    "constraints": "All 7 layers with function and protocol.",
+    "sample_input": "",
+    "sample_output": "1. Physical: Bit transmission – Ethernet cable\n2. Data Link: Frame delivery, MAC – Ethernet, PPP\n3. Network: Routing, IP addressing – IP, ICMP\n4. Transport: End-to-end delivery – TCP, UDP\n5. Session: Session management – NetBIOS\n6. Presentation: Data translation/encryption – SSL, JPEG\n7. Application: User interface – HTTP, FTP, DNS",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1151,
+    "title": "TCP vs UDP",
+    "category": "Computer Networks",
+    "difficulty": "Easy",
+    "company_tags": ["Amazon", "Google", "TCS"],
+    "description": "Compare TCP and UDP across 5 parameters: Connection, Reliability, Speed, Order, and Use case.",
+    "input_format": "No input required.",
+    "output_format": "Connection: TCP=Connection-oriented, UDP=Connectionless\nReliability: TCP=Reliable (ACK), UDP=Unreliable\nSpeed: TCP=Slower, UDP=Faster\nOrder: TCP=In-order delivery, UDP=No ordering\nUse case: TCP=HTTP/Email/FTP, UDP=Video streaming/DNS/Gaming",
+    "constraints": "Exactly 5 comparison lines.",
+    "sample_input": "",
+    "sample_output": "Connection: TCP=Connection-oriented, UDP=Connectionless\nReliability: TCP=Reliable (ACK), UDP=Unreliable\nSpeed: TCP=Slower, UDP=Faster\nOrder: TCP=In-order delivery, UDP=No ordering\nUse case: TCP=HTTP/Email/FTP, UDP=Video streaming/DNS/Gaming",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1152,
+    "title": "IP Subnetting – CIDR",
+    "category": "Computer Networks",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Oracle", "Cisco"],
+    "description": "Given IP 192.168.1.0/26, calculate: subnet mask, number of hosts, first usable IP, last usable IP, and broadcast address.",
+    "input_format": "No input required.",
+    "output_format": "Subnet mask: 255.255.255.192\nSubnet bits: 26\nHost bits: 6\nTotal hosts: 64\nUsable hosts: 62\nFirst usable: 192.168.1.1\nLast usable: 192.168.1.62\nBroadcast: 192.168.1.63",
+    "constraints": "Show all 8 derived values.",
+    "sample_input": "",
+    "sample_output": "Subnet mask: 255.255.255.192\nSubnet bits: 26\nHost bits: 6\nTotal hosts: 64\nUsable hosts: 62\nFirst usable: 192.168.1.1\nLast usable: 192.168.1.62\nBroadcast: 192.168.1.63",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1153,
+    "title": "TCP Three-Way Handshake",
+    "category": "Computer Networks",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Amazon", "Infosys"],
+    "description": "Print the step-by-step TCP three-way handshake process between a client and server with flags used at each step.",
+    "input_format": "No input required.",
+    "output_format": "Step 1: Client -> Server: SYN (seq=x)\nStep 2: Server -> Client: SYN-ACK (seq=y, ack=x+1)\nStep 3: Client -> Server: ACK (ack=y+1)\nConnection Established.",
+    "constraints": "Exactly 4 lines including connection established.",
+    "sample_input": "",
+    "sample_output": "Step 1: Client -> Server: SYN (seq=x)\nStep 2: Server -> Client: SYN-ACK (seq=y, ack=x+1)\nStep 3: Client -> Server: ACK (ack=y+1)\nConnection Established.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1154,
+    "title": "DNS Resolution Process",
+    "category": "Computer Networks",
+    "difficulty": "Easy",
+    "company_tags": ["Google", "Amazon", "Cloudflare"],
+    "description": "Print the step-by-step process of how www.example.com is resolved to an IP address by DNS.",
+    "input_format": "No input required.",
+    "output_format": "1. Browser checks local cache.\n2. OS checks hosts file.\n3. Query sent to Recursive Resolver (ISP).\n4. Resolver queries Root DNS server -> .com TLD server.\n5. TLD server returns authoritative NS for example.com.\n6. Authoritative NS returns IP: 93.184.216.34.\n7. Resolver caches and returns IP to browser.\n8. Browser connects to 93.184.216.34.",
+    "constraints": "At least 8 steps.",
+    "sample_input": "",
+    "sample_output": "1. Browser checks local cache.\n2. OS checks hosts file.\n3. Query sent to Recursive Resolver (ISP).\n4. Resolver queries Root DNS server -> .com TLD server.\n5. TLD server returns authoritative NS for example.com.\n6. Authoritative NS returns IP: 93.184.216.34.\n7. Resolver caches and returns IP to browser.\n8. Browser connects to 93.184.216.34.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1155,
+    "title": "HTTP Methods",
+    "category": "Computer Networks",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "Wipro"],
+    "description": "Print the 5 most common HTTP methods with their purpose and one real-world example each.",
+    "input_format": "No input required.",
+    "output_format": "GET: Retrieve resource – GET /users/1\nPOST: Create resource – POST /users\nPUT: Replace resource – PUT /users/1\nPATCH: Partial update – PATCH /users/1\nDELETE: Remove resource – DELETE /users/1",
+    "constraints": "Exactly 5 lines.",
+    "sample_input": "",
+    "sample_output": "GET: Retrieve resource – GET /users/1\nPOST: Create resource – POST /users\nPUT: Replace resource – PUT /users/1\nPATCH: Partial update – PATCH /users/1\nDELETE: Remove resource – DELETE /users/1",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1156,
+    "title": "IPv4 vs IPv6",
+    "category": "Computer Networks",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Accenture", "Oracle"],
+    "description": "Compare IPv4 and IPv6 across 5 parameters: Address length, Total addresses, Header size, NAT needed, and Example address.",
+    "input_format": "No input required.",
+    "output_format": "Address length: IPv4=32-bit, IPv6=128-bit\nTotal addresses: IPv4=~4.3 billion, IPv6=~340 undecillion\nHeader size: IPv4=20 bytes min, IPv6=40 bytes fixed\nNAT needed: IPv4=Yes, IPv6=No\nExample: IPv4=192.168.1.1, IPv6=2001:0db8::1",
+    "constraints": "Exactly 5 lines.",
+    "sample_input": "",
+    "sample_output": "Address length: IPv4=32-bit, IPv6=128-bit\nTotal addresses: IPv4=~4.3 billion, IPv6=~340 undecillion\nHeader size: IPv4=20 bytes min, IPv6=40 bytes fixed\nNAT needed: IPv4=Yes, IPv6=No\nExample: IPv4=192.168.1.1, IPv6=2001:0db8::1",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1157,
+    "title": "Routing – Dijkstra's Algorithm",
+    "category": "Computer Networks",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Google", "Microsoft"],
+    "description": "Given a network graph with 5 nodes (A,B,C,D,E) and weighted edges: A-B=4, A-C=2, C-B=1, B-D=5, C-D=8, B-E=6, D-E=2. Find shortest path from A to E using Dijkstra's algorithm.",
+    "input_format": "No input required.",
+    "output_format": "Start: A\nA=0, B=3(via C), C=2, D=8(via C-B), E=10(via C-B-D)\nShortest path A->E: A->C->B->D->E\nDistance: 10",
+    "constraints": "Show the relaxation steps and final shortest path.",
+    "sample_input": "",
+    "sample_output": "Start: A\nA=0, B=3(via C), C=2, D=8(via C-B), E=10(via C-B-D)\nShortest path A->E: A->C->B->D->E\nDistance: 10",
+    "starter_code": {
+      "java": `import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        // Implement Dijkstra here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1158,
+    "title": "ARP – Address Resolution Protocol",
+    "category": "Computer Networks",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "Cisco"],
+    "description": "Print the step-by-step process of how ARP resolves an IP address (192.168.1.10) to a MAC address in a LAN.",
+    "input_format": "No input required.",
+    "output_format": "1. Host A wants to send to 192.168.1.10 but doesn't know MAC.\n2. A broadcasts ARP request: Who has 192.168.1.10?\n3. All devices receive; only 192.168.1.10 (Host B) replies.\n4. B sends ARP reply with its MAC: AA:BB:CC:DD:EE:FF.\n5. A caches IP-MAC mapping in ARP table.\n6. A sends data frame directly to MAC AA:BB:CC:DD:EE:FF.",
+    "constraints": "Exactly 6 steps.",
+    "sample_input": "",
+    "sample_output": "1. Host A wants to send to 192.168.1.10 but doesn't know MAC.\n2. A broadcasts ARP request: Who has 192.168.1.10?\n3. All devices receive; only 192.168.1.10 (Host B) replies.\n4. B sends ARP reply with its MAC: AA:BB:CC:DD:EE:FF.\n5. A caches IP-MAC mapping in ARP table.\n6. A sends data frame directly to MAC AA:BB:CC:DD:EE:FF.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1159,
+    "title": "Sliding Window Protocol",
+    "category": "Computer Networks",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Oracle", "TCS"],
+    "description": "Simulate Go-Back-N with window size=3, frames 0-5. Frame 2 is lost. Print the transmission sequence showing which frames are sent, the NAK, and retransmission.",
+    "input_format": "No input required.",
+    "output_format": "Send: 0 1 2\nACK: 0 1\nFrame 2 lost -> NAK 2\nRetransmit from 2: 2 3 4\nACK: 2 3 4\nSend: 5\nACK: 5\nAll frames delivered.",
+    "constraints": "Go-Back-N. Window size=3.",
+    "sample_input": "",
+    "sample_output": "Send: 0 1 2\nACK: 0 1\nFrame 2 lost -> NAK 2\nRetransmit from 2: 2 3 4\nACK: 2 3 4\nSend: 5\nACK: 5\nAll frames delivered.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1160,
+    "title": "HTTPS and SSL/TLS Handshake",
+    "category": "Computer Networks",
+    "difficulty": "Medium",
+    "company_tags": ["Google", "Amazon", "Microsoft"],
+    "description": "Print the simplified TLS 1.3 handshake steps between a browser and a web server establishing an HTTPS connection.",
+    "input_format": "No input required.",
+    "output_format": "1. Client Hello: TLS version, cipher suites, random value.\n2. Server Hello: Chosen cipher, server certificate, random value.\n3. Client verifies certificate with CA.\n4. Key exchange: Client and server derive session key.\n5. Client Finished: Encrypted with session key.\n6. Server Finished: Encrypted with session key.\n7. Secure channel established for HTTP data.",
+    "constraints": "Exactly 7 steps.",
+    "sample_input": "",
+    "sample_output": "1. Client Hello: TLS version, cipher suites, random value.\n2. Server Hello: Chosen cipher, server certificate, random value.\n3. Client verifies certificate with CA.\n4. Key exchange: Client and server derive session key.\n5. Client Finished: Encrypted with session key.\n6. Server Finished: Encrypted with session key.\n7. Secure channel established for HTTP data.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1161,
+    "title": "NAT – Network Address Translation",
+    "category": "Computer Networks",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro", "Cisco"],
+    "description": "Explain how NAT works when a private IP (192.168.1.5) sends a request to a public server (8.8.8.8), step by step.",
+    "input_format": "No input required.",
+    "output_format": "1. Device 192.168.1.5 sends packet to 8.8.8.8.\n2. Router (public IP: 203.0.113.1) intercepts packet.\n3. Router replaces source 192.168.1.5 with 203.0.113.1 in NAT table.\n4. Packet sent to 8.8.8.8 with source 203.0.113.1.\n5. Reply arrives at 203.0.113.1.\n6. Router looks up NAT table, forwards to 192.168.1.5.",
+    "constraints": "Exactly 6 steps.",
+    "sample_input": "",
+    "sample_output": "1. Device 192.168.1.5 sends packet to 8.8.8.8.\n2. Router (public IP: 203.0.113.1) intercepts packet.\n3. Router replaces source 192.168.1.5 with 203.0.113.1 in NAT table.\n4. Packet sent to 8.8.8.8 with source 203.0.113.1.\n5. Reply arrives at 203.0.113.1.\n6. Router looks up NAT table, forwards to 192.168.1.5.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1162,
+    "title": "Error Detection – CRC",
+    "category": "Computer Networks",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Oracle", "TCS"],
+    "description": "Given data bits 1101011011 and divisor 10011, compute the CRC remainder using binary division. Print the appended message and remainder.",
+    "input_format": "No input required.",
+    "output_format": "Data: 1101011011\nDivisor: 10011 (degree 4)\nAppend 4 zeros: 11010110110000\nXOR division steps yield remainder: 1110\nTransmitted: 11010110111110",
+    "constraints": "Show the appended message and final CRC.",
+    "sample_input": "",
+    "sample_output": "Data: 1101011011\nDivisor: 10011 (degree 4)\nAppend 4 zeros: 11010110110000\nXOR division steps yield remainder: 1110\nTransmitted: 11010110111110",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1163,
+    "title": "DHCP Process",
+    "category": "Computer Networks",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "Cisco"],
+    "description": "Print the 4-step DORA process of DHCP IP assignment.",
+    "input_format": "No input required.",
+    "output_format": "1. Discover: Client broadcasts DHCPDISCOVER on 255.255.255.255.\n2. Offer: Server responds with DHCPOFFER (IP: 192.168.1.100, lease 24h).\n3. Request: Client broadcasts DHCPREQUEST to accept the offer.\n4. Acknowledge: Server sends DHCPACK confirming the IP assignment.",
+    "constraints": "Exactly 4 steps using DORA naming.",
+    "sample_input": "",
+    "sample_output": "1. Discover: Client broadcasts DHCPDISCOVER on 255.255.255.255.\n2. Offer: Server responds with DHCPOFFER (IP: 192.168.1.100, lease 24h).\n3. Request: Client broadcasts DHCPREQUEST to accept the offer.\n4. Acknowledge: Server sends DHCPACK confirming the IP assignment.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1164,
+    "title": "Congestion Control – TCP",
+    "category": "Computer Networks",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Google", "Oracle"],
+    "description": "Explain TCP congestion control phases: Slow Start, Congestion Avoidance, Fast Retransmit, and Fast Recovery. Print one line per phase with behaviour.",
+    "input_format": "No input required.",
+    "output_format": "Slow Start: cwnd doubles every RTT from 1 MSS until ssthresh.\nCongestion Avoidance: cwnd increases by 1 MSS per RTT after ssthresh.\nFast Retransmit: Retransmit lost segment on 3 duplicate ACKs without waiting for timeout.\nFast Recovery: Set ssthresh=cwnd/2, cwnd=ssthresh, skip slow start.",
+    "constraints": "Exactly 4 lines.",
+    "sample_input": "",
+    "sample_output": "Slow Start: cwnd doubles every RTT from 1 MSS until ssthresh.\nCongestion Avoidance: cwnd increases by 1 MSS per RTT after ssthresh.\nFast Retransmit: Retransmit lost segment on 3 duplicate ACKs without waiting for timeout.\nFast Recovery: Set ssthresh=cwnd/2, cwnd=ssthresh, skip slow start.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1165,
+    "title": "Hub vs Switch vs Router",
+    "category": "Computer Networks",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro", "Infosys"],
+    "description": "Compare Hub, Switch, and Router across 4 parameters: OSI Layer, Addressing, Collision Domain, and Use case.",
+    "input_format": "No input required.",
+    "output_format": "OSI Layer: Hub=Layer 1, Switch=Layer 2, Router=Layer 3\nAddressing: Hub=None, Switch=MAC, Router=IP\nCollision Domain: Hub=One shared, Switch=Per port, Router=Per interface\nUse case: Hub=Legacy LAN, Switch=LAN segmentation, Router=Inter-network routing",
+    "constraints": "Exactly 4 comparison lines.",
+    "sample_input": "",
+    "sample_output": "OSI Layer: Hub=Layer 1, Switch=Layer 2, Router=Layer 3\nAddressing: Hub=None, Switch=MAC, Router=IP\nCollision Domain: Hub=One shared, Switch=Per port, Router=Per interface\nUse case: Hub=Legacy LAN, Switch=LAN segmentation, Router=Inter-network routing",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1166,
+    "title": "Firewall Types",
+    "category": "Computer Networks",
+    "difficulty": "Easy",
+    "company_tags": ["Amazon", "Oracle", "Cisco"],
+    "description": "Print 4 types of firewalls with how they work and one advantage each.",
+    "input_format": "No input required.",
+    "output_format": "1. Packet Filter: Checks IP/port headers. Fast but no state tracking.\n2. Stateful Inspection: Tracks connection state. Better security.\n3. Application Layer (Proxy): Deep packet inspection. Understands app protocols.\n4. Next-Gen (NGFW): IDS/IPS + DPI + identity awareness. Most comprehensive.",
+    "constraints": "Exactly 4 firewall types.",
+    "sample_input": "",
+    "sample_output": "1. Packet Filter: Checks IP/port headers. Fast but no state tracking.\n2. Stateful Inspection: Tracks connection state. Better security.\n3. Application Layer (Proxy): Deep packet inspection. Understands app protocols.\n4. Next-Gen (NGFW): IDS/IPS + DPI + identity awareness. Most comprehensive.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1167,
+    "title": "RSA Encryption – Key Generation",
+    "category": "Computer Networks",
+    "difficulty": "Hard",
+    "company_tags": ["Google", "Amazon", "Microsoft"],
+    "description": "Using small primes p=3, q=11, demonstrate RSA key generation: compute n, φ(n), choose e, compute d. Then encrypt message M=4 and decrypt.",
+    "input_format": "No input required.",
+    "output_format": "p=3, q=11\nn=33\nφ(n)=20\ne=3 (gcd(3,20)=1)\nd=7 (3*7 mod 20=1)\nPublic key: (3,33), Private key: (7,33)\nEncrypt M=4: C=4^3 mod 33=31\nDecrypt C=31: M=31^7 mod 33=4",
+    "constraints": "Show all steps clearly.",
+    "sample_input": "",
+    "sample_output": "p=3, q=11\nn=33\nφ(n)=20\ne=3 (gcd(3,20)=1)\nd=7 (3*7 mod 20=1)\nPublic key: (3,33), Private key: (7,33)\nEncrypt M=4: C=4^3 mod 33=31\nDecrypt C=31: M=31^7 mod 33=4",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1168,
+    "title": "Network Topologies",
+    "category": "Computer Networks",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "HCL"],
+    "description": "Print 5 network topologies with their advantage and disadvantage.",
+    "input_format": "No input required.",
+    "output_format": "Bus: Simple+cheap | Single cable failure breaks network\nStar: Easy fault isolation | Central hub failure breaks all\nRing: Predictable performance | One node failure breaks ring\nMesh: High redundancy | Expensive cabling\nHybrid: Flexible | Complex to manage",
+    "constraints": "Exactly 5 topologies.",
+    "sample_input": "",
+    "sample_output": "Bus: Simple+cheap | Single cable failure breaks network\nStar: Easy fault isolation | Central hub failure breaks all\nRing: Predictable performance | One node failure breaks ring\nMesh: High redundancy | Expensive cabling\nHybrid: Flexible | Complex to manage",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1169,
+    "title": "SMTP Email Flow",
+    "category": "Computer Networks",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Google", "Microsoft"],
+    "description": "Print the step-by-step flow of sending an email from alice@gmail.com to bob@yahoo.com using SMTP, DNS, and POP3/IMAP.",
+    "input_format": "No input required.",
+    "output_format": "1. Alice's email client sends email to Gmail SMTP server (port 587).\n2. Gmail SMTP queries DNS MX record for yahoo.com -> mail.yahoo.com.\n3. Gmail SMTP connects to Yahoo SMTP (port 25) and transfers email.\n4. Yahoo stores email in Bob's mailbox.\n5. Bob's client connects via IMAP/POP3 to retrieve email.\n6. Bob reads the email.",
+    "constraints": "Exactly 6 steps.",
+    "sample_input": "",
+    "sample_output": "1. Alice's email client sends email to Gmail SMTP server (port 587).\n2. Gmail SMTP queries DNS MX record for yahoo.com -> mail.yahoo.com.\n3. Gmail SMTP connects to Yahoo SMTP (port 25) and transfers email.\n4. Yahoo stores email in Bob's mailbox.\n5. Bob's client connects via IMAP/POP3 to retrieve email.\n6. Bob reads the email.",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+
+  // ─── Technical (20 questions) ──────────────────────────────
+  {
+    "id": 1170,
+    "title": "Time Complexity – Big O Identification",
+    "category": "Technical",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "Amazon"],
+    "description": "Given 5 code snippets (described), identify the time complexity of each: (1) single loop 0 to n, (2) nested loop 0 to n twice, (3) binary search, (4) recursive Fibonacci, (5) merge sort.",
+    "input_format": "No input required.",
+    "output_format": "Single loop: O(n)\nNested loop: O(n^2)\nBinary search: O(log n)\nRecursive Fibonacci: O(2^n)\nMerge sort: O(n log n)",
+    "constraints": "Exactly 5 answers.",
+    "sample_input": "",
+    "sample_output": "Single loop: O(n)\nNested loop: O(n^2)\nBinary search: O(log n)\nRecursive Fibonacci: O(2^n)\nMerge sort: O(n log n)",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1171,
+    "title": "Stack Implementation Using Array",
+    "category": "Technical",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro", "Accenture"],
+    "description": "Implement a stack using an array with push(), pop(), peek(), and isEmpty(). Push 5,10,15. Pop once. Print peek() and isEmpty().",
+    "input_format": "No input required.",
+    "output_format": "Pushed: 5\nPushed: 10\nPushed: 15\nPopped: 15\nPeek: 10\nisEmpty: false",
+    "constraints": "Max size=10. No java.util.Stack allowed.",
+    "sample_input": "",
+    "sample_output": "Pushed: 5\nPushed: 10\nPushed: 15\nPopped: 15\nPeek: 10\nisEmpty: false",
+    "starter_code": {
+      "java": `public class Main {
+    static int[] stack = new int[10];
+    static int top = -1;
+
+    // Implement push, pop, peek, isEmpty here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1172,
+    "title": "Queue Using Two Stacks",
+    "category": "Technical",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Microsoft", "Google"],
+    "description": "Implement a Queue using two stacks. Enqueue 1, 2, 3. Dequeue twice and print the values. Then print front().",
+    "input_format": "No input required.",
+    "output_format": "Enqueued: 1\nEnqueued: 2\nEnqueued: 3\nDequeued: 1\nDequeued: 2\nFront: 3",
+    "constraints": "Use two java.util.Stack objects. O(1) amortized.",
+    "sample_input": "",
+    "sample_output": "Enqueued: 1\nEnqueued: 2\nEnqueued: 3\nDequeued: 1\nDequeued: 2\nFront: 3",
+    "starter_code": {
+      "java": `import java.util.*;
+public class Main {
+    // Implement Queue using two Stacks here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1173,
+    "title": "Binary Search – Iterative",
+    "category": "Technical",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys", "Flipkart"],
+    "description": "Given sorted array [2,5,8,12,16,23,38,56,72,91], search for 23 using iterative binary search. Print each mid checked and the result index.",
+    "input_format": "No input required.",
+    "output_format": "Checking mid=16\nChecking mid=38\nChecking mid=23\nFound at index 5",
+    "constraints": "Iterative, not recursive.",
+    "sample_input": "",
+    "sample_output": "Checking mid=16\nChecking mid=38\nChecking mid=23\nFound at index 5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int[] arr = {2,5,8,12,16,23,38,56,72,91};
+        // Iterative binary search here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1174,
+    "title": "Merge Sort Implementation",
+    "category": "Technical",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Microsoft", "Adobe"],
+    "description": "Implement merge sort on array [38,27,43,3,9,82,10]. Print the array after each merge step and the final sorted array.",
+    "input_format": "No input required.",
+    "output_format": "Merging: [27,38] [3,43] [9,82] [10]\nMerging: [3,27,38,43] [9,10,82]\nFinal: [3,9,10,27,38,43,82]",
+    "constraints": "Implement full merge sort recursively.",
+    "sample_input": "",
+    "sample_output": "Merging: [27,38] [3,43] [9,82] [10]\nMerging: [3,27,38,43] [9,10,82]\nFinal: [3,9,10,27,38,43,82]",
+    "starter_code": {
+      "java": `public class Main {
+    // Implement merge sort here
+
+    public static void main(String[] args) {
+        int[] arr = {38,27,43,3,9,82,10};
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1175,
+    "title": "Linked List – Detect Cycle",
+    "category": "Technical",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Google", "Flipkart"],
+    "description": "Implement Floyd's Cycle Detection algorithm. Create a linked list 1->2->3->4->5 with node 5 pointing back to node 3 (cycle). Detect and print whether a cycle exists.",
+    "input_format": "No input required.",
+    "output_format": "Cycle detected: true\nCycle starts at node: 3",
+    "constraints": "Use slow and fast pointer (Floyd's algorithm). O(1) space.",
+    "sample_input": "",
+    "sample_output": "Cycle detected: true\nCycle starts at node: 3",
+    "starter_code": {
+      "java": `public class Main {
+    static class Node { int val; Node next; Node(int v){val=v;} }
+
+    public static void main(String[] args) {
+        // Build list and detect cycle here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1176,
+    "title": "HashMap – Frequency Count",
+    "category": "Technical",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Amazon", "Flipkart"],
+    "description": "Given array [1,2,2,3,3,3,4,4,4,4], use a HashMap to count the frequency of each element. Print each element with its count in sorted order.",
+    "input_format": "No input required.",
+    "output_format": "1: 1\n2: 2\n3: 3\n4: 4",
+    "constraints": "Use java.util.HashMap. Print in ascending key order.",
+    "sample_input": "",
+    "sample_output": "1: 1\n2: 2\n3: 3\n4: 4",
+    "starter_code": {
+      "java": `import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1,2,2,3,3,3,4,4,4,4};
+        // Frequency count using HashMap
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1177,
+    "title": "Tree – Level Order Traversal",
+    "category": "Technical",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Microsoft", "Google"],
+    "description": "Build a binary tree: root=1, left=2, right=3, 2.left=4, 2.right=5, 3.right=6. Print level-order traversal (BFS).",
+    "input_format": "No input required.",
+    "output_format": "Level 1: 1\nLevel 2: 2 3\nLevel 3: 4 5 6",
+    "constraints": "Use a Queue for BFS. Print level-by-level.",
+    "sample_input": "",
+    "sample_output": "Level 1: 1\nLevel 2: 2 3\nLevel 3: 4 5 6",
+    "starter_code": {
+      "java": `import java.util.*;
+public class Main {
+    static class Node { int val; Node left, right; Node(int v){val=v;} }
+
+    public static void main(String[] args) {
+        // Build tree and BFS here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1178,
+    "title": "Dynamic Programming – 0/1 Knapsack",
+    "category": "Technical",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Google", "Microsoft"],
+    "description": "Items: weights=[1,2,3,5], values=[1,6,10,16], capacity=7. Solve 0/1 Knapsack using DP. Print the DP table and the maximum value.",
+    "input_format": "No input required.",
+    "output_format": "DP table computed.\nMax value: 22\nSelected items: weight=2(value=6) + weight=5(value=16)",
+    "constraints": "Bottom-up DP. Print max value and selected items.",
+    "sample_input": "",
+    "sample_output": "DP table computed.\nMax value: 22\nSelected items: weight=2(value=6) + weight=5(value=16)",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int[] weights = {1,2,3,5};
+        int[] values  = {1,6,10,16};
+        int capacity  = 7;
+        // DP solution here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1179,
+    "title": "Graph – BFS and DFS",
+    "category": "Technical",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Microsoft", "Flipkart"],
+    "description": "Given undirected graph: 0-1, 0-2, 1-3, 2-4. Starting from node 0, print BFS traversal and DFS traversal.",
+    "input_format": "No input required.",
+    "output_format": "BFS: 0 1 2 3 4\nDFS: 0 1 3 2 4",
+    "constraints": "Adjacency list representation. Visited array to avoid revisiting.",
+    "sample_input": "",
+    "sample_output": "BFS: 0 1 2 3 4\nDFS: 0 1 3 2 4",
+    "starter_code": {
+      "java": `import java.util.*;
+public class Main {
+    static List<List<Integer>> graph = new ArrayList<>();
+    static boolean[] visited;
+
+    public static void main(String[] args) {
+        // Build graph and run BFS, DFS
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1180,
+    "title": "Recursion – Tower of Hanoi",
+    "category": "Technical",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys", "Accenture"],
+    "description": "Solve Tower of Hanoi for n=3 disks. Print each move in the format 'Move disk X from A to C'.",
+    "input_format": "No input required.",
+    "output_format": "Move disk 1 from A to C\nMove disk 2 from A to B\nMove disk 1 from C to B\nMove disk 3 from A to C\nMove disk 1 from B to A\nMove disk 2 from B to C\nMove disk 1 from A to C",
+    "constraints": "Recursive solution. Pegs named A, B, C.",
+    "sample_input": "",
+    "sample_output": "Move disk 1 from A to C\nMove disk 2 from A to B\nMove disk 1 from C to B\nMove disk 3 from A to C\nMove disk 1 from B to A\nMove disk 2 from B to C\nMove disk 1 from A to C",
+    "starter_code": {
+      "java": `public class Main {
+    static void hanoi(int n, char from, char to, char aux) {
+        // Implement here
+    }
+    public static void main(String[] args) {
+        hanoi(3, 'A', 'C', 'B');
+    }
+}`
+    }
+  },
+  {
+    "id": 1181,
+    "title": "String – Longest Common Subsequence",
+    "category": "Technical",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Google", "Adobe"],
+    "description": "Find the LCS of strings 'ABCBDAB' and 'BDCAB'. Print the LCS length and the actual LCS string.",
+    "input_format": "No input required.",
+    "output_format": "LCS Length: 4\nLCS: BCAB",
+    "constraints": "DP approach. Print both length and string.",
+    "sample_input": "",
+    "sample_output": "LCS Length: 4\nLCS: BCAB",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        String s1 = "ABCBDAB";
+        String s2 = "BDCAB";
+        // LCS DP here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1182,
+    "title": "Bit Manipulation – Count Set Bits",
+    "category": "Technical",
+    "difficulty": "Easy",
+    "company_tags": ["Amazon", "TCS", "Microsoft"],
+    "description": "Count the number of 1-bits (set bits) in the binary representation of n=29. Print the binary form and count. Use Brian Kernighan's algorithm.",
+    "input_format": "No input required.",
+    "output_format": "n=29\nBinary: 11101\nSet bits: 4",
+    "constraints": "Use Brian Kernighan's algorithm: n = n & (n-1).",
+    "sample_input": "",
+    "sample_output": "n=29\nBinary: 11101\nSet bits: 4",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 29;
+        // Count set bits using Brian Kernighan's here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1183,
+    "title": "Heap – Kth Largest Element",
+    "category": "Technical",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Flipkart", "Adobe"],
+    "description": "Given array [3,2,1,5,6,4], find the 2nd largest element using a min-heap of size k=2. Print the answer.",
+    "input_format": "No input required.",
+    "output_format": "Array: [3,2,1,5,6,4]\nk=2\n2nd largest element: 5",
+    "constraints": "Use PriorityQueue (min-heap). O(n log k).",
+    "sample_input": "",
+    "sample_output": "Array: [3,2,1,5,6,4]\nk=2\n2nd largest element: 5",
+    "starter_code": {
+      "java": `import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {3,2,1,5,6,4};
+        int k = 2;
+        // Min-heap approach here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1184,
+    "title": "Trie – Insert and Search",
+    "category": "Technical",
+    "difficulty": "Hard",
+    "company_tags": ["Google", "Amazon", "Microsoft"],
+    "description": "Implement a Trie. Insert words: 'apple', 'app', 'application'. Then search for 'app' (exists), 'apply' (doesn't exist), and startsWith 'appl' (true).",
+    "input_format": "No input required.",
+    "output_format": "Inserted: apple, app, application\nSearch 'app': true\nSearch 'apply': false\nstartsWith 'appl': true",
+    "constraints": "Implement TrieNode class with children array of size 26.",
+    "sample_input": "",
+    "sample_output": "Inserted: apple, app, application\nSearch 'app': true\nSearch 'apply': false\nstartsWith 'appl': true",
+    "starter_code": {
+      "java": `public class Main {
+    // Implement TrieNode and Trie here
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1185,
+    "title": "Two Pointer – 3Sum",
+    "category": "Technical",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Google", "Adobe"],
+    "description": "Given array [-1,0,1,2,-1,-4], find all unique triplets that sum to zero using two-pointer technique. Print each triplet.",
+    "input_format": "No input required.",
+    "output_format": "Triplets that sum to 0:\n[-1,-1,2]\n[-1,0,1]",
+    "constraints": "Sort first. Use two pointers. No duplicate triplets.",
+    "sample_input": "",
+    "sample_output": "Triplets that sum to 0:\n[-1,-1,2]\n[-1,0,1]",
+    "starter_code": {
+      "java": `import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {-1,0,1,2,-1,-4};
+        // Sort and two-pointer here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1186,
+    "title": "Greedy – Activity Selection",
+    "category": "Technical",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Microsoft", "Flipkart"],
+    "description": "Activities with start and end times: (1,4),(3,5),(0,6),(5,7),(3,8),(5,9),(6,10),(8,11),(8,12),(2,13),(12,14). Select max non-overlapping activities greedily.",
+    "input_format": "No input required.",
+    "output_format": "Sorted by end time.\nSelected: (1,4) (5,7) (8,11) (12,14)\nMax activities: 4",
+    "constraints": "Sort by finish time. Greedy selection.",
+    "sample_input": "",
+    "sample_output": "Sorted by end time.\nSelected: (1,4) (5,7) (8,11) (12,14)\nMax activities: 4",
+    "starter_code": {
+      "java": `import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int[] start = {1,3,0,5,3,5,6,8,8,2,12};
+        int[] end   = {4,5,6,7,8,9,10,11,12,13,14};
+        // Greedy activity selection here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1187,
+    "title": "Sliding Window – Max Sum Subarray",
+    "category": "Technical",
+    "difficulty": "Easy",
+    "company_tags": ["Amazon", "TCS", "Infosys"],
+    "description": "Given array [2,1,5,1,3,2] and k=3, find the maximum sum of any subarray of size k using sliding window. Print each window sum and the maximum.",
+    "input_format": "No input required.",
+    "output_format": "Window [2,1,5]=8\nWindow [1,5,1]=7\nWindow [5,1,3]=9\nWindow [1,3,2]=6\nMax sum: 9",
+    "constraints": "Sliding window technique. O(n) time.",
+    "sample_input": "",
+    "sample_output": "Window [2,1,5]=8\nWindow [1,5,1]=7\nWindow [5,1,3]=9\nWindow [1,3,2]=6\nMax sum: 9",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int[] arr = {2,1,5,1,3,2};
+        int k = 3;
+        // Sliding window here
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1188,
+    "title": "Backtracking – N-Queens",
+    "category": "Technical",
+    "difficulty": "Hard",
+    "company_tags": ["Google", "Amazon", "Microsoft"],
+    "description": "Solve N-Queens for n=4. Print the first valid board configuration using '.' for empty and 'Q' for queen.",
+    "input_format": "No input required.",
+    "output_format": ".Q..\n...Q\nQ...\n..Q.",
+    "constraints": "Backtracking approach. Print only the first valid solution.",
+    "sample_input": "",
+    "sample_output": ".Q..\n...Q\nQ...\n..Q.",
+    "starter_code": {
+      "java": `public class Main {
+    static int N = 4;
+    static char[][] board = new char[N][N];
+
+    // Implement isSafe and solve here
+
+    public static void main(String[] args) {
+        for(char[] row : board) java.util.Arrays.fill(row, '.');
+        solve(0);
+    }
+}`
+    }
+  },
+  {
+    "id": 1189,
+    "title": "Design Pattern – Observer",
+    "category": "Technical",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Google", "Microsoft"],
+    "description": "Implement the Observer design pattern. Create a 'NewsAgency' (Subject) and two observers 'NewsChannel' and 'NewsApp'. When the agency publishes news, both observers get notified and print the news.",
+    "input_format": "No input required.",
+    "output_format": "NewsChannel received: Stock market hits all-time high\nNewsApp received: Stock market hits all-time high",
+    "constraints": "Use Observer/Subject interfaces. Decouple subject from concrete observers.",
+    "sample_input": "",
+    "sample_output": "NewsChannel received: Stock market hits all-time high\nNewsApp received: Stock market hits all-time high",
+    "starter_code": {
+      "java": `import java.util.*;
+public class Main {
+    // Define Observer interface, Subject, NewsAgency, NewsChannel, NewsApp
+
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  }
 ];
 
 export const getCategories = () => [...new Set(problems.map(p => p.category))];
