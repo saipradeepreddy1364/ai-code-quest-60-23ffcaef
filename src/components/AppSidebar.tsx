@@ -5,8 +5,10 @@ import {
   X, ChevronDown, ChevronUp, 
   Database, Cpu, Network, Code, Brain, 
   Building2, GraduationCap, BookOpen,
-  Home, BarChart3, Save, Layers,
-  PieChart, Award, LogOut, FlaskConical
+  BarChart3, Save, Layers,
+  PieChart, LogOut, FlaskConical,
+  Grid3x3, Terminal, Hash, Binary, 
+  Square, Triangle, Circle, Sparkles
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import UserPerformance from './UserPerformance';
@@ -37,130 +39,83 @@ const getCompanyCounts = () => {
   return counts;
 };
 
-// These category names exist in the dataset and belong to the Placement section
-const PLACEMENT_CATEGORY_NAMES = new Set([
-  'Aptitude',
-  'Logical Reasoning',
-  'Technical',
-  'DBMS',
-  'Operating Systems',
-  'Computer Networks',
-  'OOP',
-]);
-
-// Dynamically generate DSA categories (excludes placement ones)
-const generateCategories = () => {
-  const categoryCounts = getCategoryCounts();
-  const iconMap: Record<string, any> = {
-    'Arrays': Database,
-    'Strings': Code,
-    'Linked Lists': Cpu,
-    'Dynamic Programming': Brain,
-    'Trees': Network,
-    'Graphs': Network,
-    'Binary Search': Code,
-    'Stacks': Code,
-    'Hashing': Database,
-    'Greedy': Brain,
-    'Backtracking': Brain,
-    'Sliding Window': Code,
-    'Heap': Database,
-    'Queues': Code,
-    'Two Pointers': Code,
-    'Bit Manipulation': Code,
-    'Patterns': Code,
-    'Numbers': Database,
-    'DSA': Code,
+// Category mapping for icons and colors
+const getCategoryStyle = (category: string) => {
+  const styles: Record<string, { icon: any, color: string, bgColor: string }> = {
+    'Arrays': { icon: Database, color: 'text-blue-600', bgColor: 'bg-blue-100' },
+    'Strings': { icon: Code, color: 'text-green-600', bgColor: 'bg-green-100' },
+    'Linked Lists': { icon: Cpu, color: 'text-purple-600', bgColor: 'bg-purple-100' },
+    'Dynamic Programming': { icon: Brain, color: 'text-red-600', bgColor: 'bg-red-100' },
+    'Trees': { icon: Network, color: 'text-emerald-600', bgColor: 'bg-emerald-100' },
+    'Graphs': { icon: Network, color: 'text-teal-600', bgColor: 'bg-teal-100' },
+    'Binary Search': { icon: Binary, color: 'text-indigo-600', bgColor: 'bg-indigo-100' },
+    'Stacks': { icon: Square, color: 'text-amber-600', bgColor: 'bg-amber-100' },
+    'Hashing': { icon: Hash, color: 'text-rose-600', bgColor: 'bg-rose-100' },
+    'Greedy': { icon: Sparkles, color: 'text-cyan-600', bgColor: 'bg-cyan-100' },
+    'Backtracking': { icon: Terminal, color: 'text-orange-600', bgColor: 'bg-orange-100' },
+    'Sliding Window': { icon: Grid3x3, color: 'text-sky-600', bgColor: 'bg-sky-100' },
+    'Heap': { icon: Database, color: 'text-lime-600', bgColor: 'bg-lime-100' },
+    'Queues': { icon: Square, color: 'text-fuchsia-600', bgColor: 'bg-fuchsia-100' },
+    'Two Pointers': { icon: Grid3x3, color: 'text-violet-600', bgColor: 'bg-violet-100' },
+    'Bit Manipulation': { icon: Binary, color: 'text-gray-600', bgColor: 'bg-gray-100' },
+    'Patterns': { icon: Triangle, color: 'text-pink-600', bgColor: 'bg-pink-100' },
+    'Numbers': { icon: Hash, color: 'text-slate-600', bgColor: 'bg-slate-100' },
+    'DSA': { icon: Code, color: 'text-blue-600', bgColor: 'bg-blue-100' },
+    'Aptitude': { icon: Brain, color: 'text-indigo-600', bgColor: 'bg-indigo-100' },
+    'Logical Reasoning': { icon: Sparkles, color: 'text-purple-600', bgColor: 'bg-purple-100' },
+    'Technical': { icon: Terminal, color: 'text-green-600', bgColor: 'bg-green-100' },
+    'DBMS': { icon: Database, color: 'text-blue-600', bgColor: 'bg-blue-100' },
+    'Operating Systems': { icon: Cpu, color: 'text-red-600', bgColor: 'bg-red-100' },
+    'Computer Networks': { icon: Network, color: 'text-teal-600', bgColor: 'bg-teal-100' },
+    'OOP': { icon: Code, color: 'text-amber-600', bgColor: 'bg-amber-100' },
   };
   
-  return Object.entries(categoryCounts)
-    .filter(([name]) => !PLACEMENT_CATEGORY_NAMES.has(name))
-    .map(([name, count]) => ({
-      name,
-      count,
-      icon: iconMap[name] || Code
-    }))
-    .sort((a, b) => b.count - a.count);
+  return styles[category] || { icon: Code, color: 'text-gray-600', bgColor: 'bg-gray-100' };
 };
 
-// Dynamically generate placement categories from the actual dataset
-const generatePlacementCategories = () => {
-  const categoryCounts = getCategoryCounts();
-  const iconMap: Record<string, any> = {
-    'Aptitude': Brain,
-    'Logical Reasoning': Brain,
-    'Technical': Code,
-    'DBMS': Database,
-    'Operating Systems': Cpu,
-    'Computer Networks': Network,
-    'OOP': Code,
-  };
+// Define section categories
+const DSA_CATEGORIES = [
+  'Arrays', 'Strings', 'Linked Lists', 'Dynamic Programming', 'Trees', 'Graphs',
+  'Binary Search', 'Stacks', 'Hashing', 'Greedy', 'Backtracking', 'Sliding Window',
+  'Heap', 'Queues', 'Two Pointers', 'Bit Manipulation', 'Patterns', 'Numbers'
+];
 
-  return Object.entries(categoryCounts)
-    .filter(([name]) => PLACEMENT_CATEGORY_NAMES.has(name))
-    .map(([name, count]) => ({
-      name,
-      count,
-      icon: iconMap[name] || Code
-    }))
-    .sort((a, b) => b.count - a.count);
-};
+const PLACEMENT_CATEGORIES = [
+  'Aptitude', 'Logical Reasoning', 'Technical', 'DBMS', 'Operating Systems', 
+  'Computer Networks', 'OOP'
+];
 
-// Free mock test links for popular companies
+// Free mock test links
 const mockTests = [
-  { name: 'TCS NQT',      url: 'https://www.indiabix.com/online-test/tcs-placement-papers/' },
-  { name: 'Infosys',      url: 'https://www.indiabix.com/online-test/infosys-placement-papers/' },
-  { name: 'Wipro',        url: 'https://www.indiabix.com/online-test/wipro-placement-papers/' },
-  { name: 'Accenture',    url: 'https://www.indiabix.com/online-test/accenture-placement-papers/' },
-  { name: 'Cognizant',    url: 'https://www.indiabix.com/online-test/cognizant-placement-papers/' },
-  { name: 'Amazon',       url: 'https://www.hackerrank.com/domains/algorithms' },
-  { name: 'Microsoft',    url: 'https://www.hackerrank.com/microsoft-codesprint' },
-  { name: 'Google',       url: 'https://foobar.withgoogle.com/' },
+  { name: 'TCS NQT', url: 'https://www.indiabix.com/online-test/tcs-placement-papers/' },
+  { name: 'Infosys', url: 'https://www.indiabix.com/online-test/infosys-placement-papers/' },
+  { name: 'Wipro', url: 'https://www.indiabix.com/online-test/wipro-placement-papers/' },
+  { name: 'Accenture', url: 'https://www.indiabix.com/online-test/accenture-placement-papers/' },
+  { name: 'Cognizant', url: 'https://www.indiabix.com/online-test/cognizant-placement-papers/' },
+  { name: 'Amazon', url: 'https://www.hackerrank.com/domains/algorithms' },
+  { name: 'Microsoft', url: 'https://www.hackerrank.com/microsoft-codesprint' },
+  { name: 'Google', url: 'https://foobar.withgoogle.com/' },
 ];
 
 export default function AppSidebar({ open, onClose }: AppSidebarProps) {
   const location = useLocation();
-  const navigate = useNavigate(); // ✅ added
+  const navigate = useNavigate();
   const { user, signOut } = useAuth();
   const [dsaOpen, setDsaOpen] = useState(true);
   const [placementOpen, setPlacementOpen] = useState(true);
   const [companyOpen, setCompanyOpen] = useState(true);
   const [mockOpen, setMockOpen] = useState(true);
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedPlacement, setSelectedPlacement] = useState<string | null>(null);
-  const [selectedCompany, setSelectedCompany] = useState<string | null>(null);
   const [showPerformance, setShowPerformance] = useState(true);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedCompany, setSelectedCompany] = useState<string | null>(null);
 
-  // Dynamically generate categories and companies
-  const categories = useMemo(() => generateCategories(), []);
-  const placementCategories = useMemo(() => generatePlacementCategories(), []);
+  const categoryCounts = useMemo(() => getCategoryCounts(), []);
   const companies = useMemo(() => {
     const companyCounts = getCompanyCounts();
-    const iconMap: Record<string, any> = {
-      'Google': Building2,
-      'Amazon': Building2,
-      'Microsoft': Building2,
-      'Meta': Building2,
-      'Apple': Building2,
-      'Netflix': Building2,
-      'Uber': Building2,
-      'Flipkart': Building2,
-      'Oracle': Building2,
-      'SAP': Building2,
-      'Adobe': Building2,
-      'Goldman Sachs': Building2,
-      'Morgan Stanley': Building2,
-      'Walmart': Building2,
-      'Intuit': Building2,
-    };
-    
     return Object.entries(companyCounts)
-      .map(([name, count]) => ({
-        name,
-        count,
-        icon: iconMap[name] || Building2
-      }))
-      .sort((a, b) => b.count - a.count);
+      .map(([name, count]) => ({ name, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 15);
   }, []);
 
   const navItems = [
@@ -171,16 +126,8 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
 
   const isActive = (path: string) => location.pathname === path;
 
-  // ✅ All three handlers now use navigate() instead of window.location.href
   const handleCategoryClick = (category: string) => {
     setSelectedCategory(category === selectedCategory ? null : category);
-    navigate(`/problems?category=${encodeURIComponent(category)}`);
-    onClose();
-  };
-
-  // ✅ Placement navigates using ?category= since placement names ARE real categories in the dataset
-  const handlePlacementClick = (category: string) => {
-    setSelectedPlacement(category === selectedPlacement ? null : category);
     navigate(`/problems?category=${encodeURIComponent(category)}`);
     onClose();
   };
@@ -199,18 +146,16 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
   return (
     <>
       {open && (
-        <div
-          className="fixed inset-0 bg-black/50 z-40 lg:hidden"
-          onClick={onClose}
-        />
+        <div className="fixed inset-0 bg-black/50 z-40 lg:hidden" onClick={onClose} />
       )}
 
       <aside
-        className={`fixed top-0 left-0 h-full w-80 bg-card border-r border-border transform transition-transform duration-200 ease-in-out z-50 overflow-y-auto ${
+        className={`fixed top-0 left-0 h-full w-96 bg-card border-r border-border transform transition-transform duration-200 ease-in-out z-50 overflow-y-auto ${
           open ? 'translate-x-0' : '-translate-x-full'
         } lg:translate-x-0`}
       >
-        <div className="flex items-center justify-between p-4 border-b border-border sticky top-0 bg-card">
+        {/* Header */}
+        <div className="flex items-center justify-between p-4 border-b border-border sticky top-0 bg-card z-10">
           <Link to="/" className="text-xl font-bold text-foreground" onClick={onClose}>
             CodeQuest
           </Link>
@@ -222,7 +167,7 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
           </button>
         </div>
 
-        {/* User Info Section */}
+        {/* User Info */}
         <div className="p-4 border-b border-border bg-surface">
           <div className="flex items-center gap-3 mb-3">
             <div className="h-10 w-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-white font-medium">
@@ -264,8 +209,8 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
           })}
         </nav>
 
-        <div className="p-4 space-y-4">
-          {/* Performance Stats Section */}
+        <div className="p-4 space-y-6">
+          {/* Performance Stats */}
           <div className="border border-border rounded-lg">
             <button
               onClick={() => setShowPerformance(!showPerformance)}
@@ -277,7 +222,6 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
               </div>
               {showPerformance ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
             </button>
-            
             {showPerformance && (
               <div className="p-3">
                 <UserPerformance />
@@ -285,7 +229,7 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
             )}
           </div>
 
-          {/* DSA Problems Section */}
+          {/* DSA Problems - Grid Layout */}
           <div className="border border-border rounded-lg">
             <button
               onClick={() => setDsaOpen(!dsaOpen)}
@@ -293,37 +237,49 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
             >
               <div className="flex items-center gap-2">
                 <BookOpen className="h-4 w-4 text-primary" />
-                <span className="font-medium text-foreground">DSA Problems</span>
+                <span className="font-medium text-foreground">Data Structures & Algorithms</span>
               </div>
               {dsaOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
             </button>
             
             {dsaOpen && (
-              <div className="p-2 space-y-1 max-h-60 overflow-y-auto">
-                {categories.map((cat) => (
-                  <button
-                    key={cat.name}
-                    onClick={() => handleCategoryClick(cat.name)}
-                    className={`w-full flex items-center justify-between p-2 rounded-md transition-colors ${
-                      selectedCategory === cat.name
-                        ? 'bg-primary text-primary-foreground'
-                        : 'hover:bg-surface-hover text-foreground'
-                    }`}
-                  >
-                    <div className="flex items-center gap-2">
-                      <cat.icon className="h-4 w-4" />
-                      <span className="text-sm">{cat.name}</span>
-                    </div>
-                    <span className="text-xs bg-muted px-2 py-1 rounded-full">
-                      {cat.count}
-                    </span>
-                  </button>
-                ))}
+              <div className="p-3">
+                <div className="grid grid-cols-2 gap-2">
+                  {DSA_CATEGORIES.filter(cat => categoryCounts[cat] > 0).map((category) => {
+                    const { icon: Icon, color, bgColor } = getCategoryStyle(category);
+                    const count = categoryCounts[category] || 0;
+                    return (
+                      <button
+                        key={category}
+                        onClick={() => handleCategoryClick(category)}
+                        className={`flex items-center justify-between p-3 rounded-lg transition-all ${
+                          selectedCategory === category
+                            ? 'bg-primary text-primary-foreground'
+                            : `${bgColor} hover:opacity-80`
+                        }`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <Icon className={`h-4 w-4 ${selectedCategory === category ? 'text-primary-foreground' : color}`} />
+                          <span className={`text-xs font-medium ${selectedCategory === category ? 'text-primary-foreground' : 'text-gray-700'}`}>
+                            {category}
+                          </span>
+                        </div>
+                        <span className={`text-xs px-1.5 py-0.5 rounded-full ${
+                          selectedCategory === category 
+                            ? 'bg-white/20 text-white' 
+                            : 'bg-white text-gray-600'
+                        }`}>
+                          {count}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             )}
           </div>
 
-          {/* Placement Section */}
+          {/* Placement Preparation - Grid Layout */}
           <div className="border border-border rounded-lg">
             <button
               onClick={() => setPlacementOpen(!placementOpen)}
@@ -331,35 +287,49 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
             >
               <div className="flex items-center gap-2">
                 <GraduationCap className="h-4 w-4 text-primary" />
-                <span className="font-medium text-foreground">Placement</span>
+                <span className="font-medium text-foreground">Placement Preparation</span>
               </div>
               {placementOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
             </button>
             
             {placementOpen && (
-              <div className="p-2 space-y-1 max-h-60 overflow-y-auto">
-                {placementCategories.map((cat) => (
-                  <button
-                    key={cat.name}
-                    onClick={() => handlePlacementClick(cat.name)}
-                    className={`w-full flex items-center justify-between p-2 rounded-md transition-colors ${
-                      selectedPlacement === cat.name
-                        ? 'bg-primary text-primary-foreground'
-                        : 'hover:bg-surface-hover text-foreground'
-                    }`}
-                  >
-                    <div className="flex items-center gap-2">
-                      <cat.icon className="h-4 w-4" />
-                      <span className="text-sm">{cat.name}</span>
-                    </div>
-                    <span className="text-xs bg-muted px-2 py-1 rounded-full">{cat.count}</span>
-                  </button>
-                ))}
+              <div className="p-3">
+                <div className="grid grid-cols-2 gap-2">
+                  {PLACEMENT_CATEGORIES.filter(cat => categoryCounts[cat] > 0).map((category) => {
+                    const { icon: Icon, color, bgColor } = getCategoryStyle(category);
+                    const count = categoryCounts[category] || 0;
+                    return (
+                      <button
+                        key={category}
+                        onClick={() => handleCategoryClick(category)}
+                        className={`flex items-center justify-between p-3 rounded-lg transition-all ${
+                          selectedCategory === category
+                            ? 'bg-primary text-primary-foreground'
+                            : `${bgColor} hover:opacity-80`
+                        }`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <Icon className={`h-4 w-4 ${selectedCategory === category ? 'text-primary-foreground' : color}`} />
+                          <span className={`text-xs font-medium ${selectedCategory === category ? 'text-primary-foreground' : 'text-gray-700'}`}>
+                            {category}
+                          </span>
+                        </div>
+                        <span className={`text-xs px-1.5 py-0.5 rounded-full ${
+                          selectedCategory === category 
+                            ? 'bg-white/20 text-white' 
+                            : 'bg-white text-gray-600'
+                        }`}>
+                          {count}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             )}
           </div>
 
-          {/* Company-wise Questions */}
+          {/* Company-wise */}
           <div className="border border-border rounded-lg">
             <button
               onClick={() => setCompanyOpen(!companyOpen)}
@@ -373,29 +343,34 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
             </button>
             
             {companyOpen && (
-              <div className="p-2 space-y-1 max-h-60 overflow-y-auto">
-                {companies.map((company) => (
-                  <button
-                    key={company.name}
-                    onClick={() => handleCompanyClick(company.name)}
-                    className={`w-full flex items-center justify-between p-2 rounded-md transition-colors ${
-                      selectedCompany === company.name
-                        ? 'bg-primary text-primary-foreground'
-                        : 'hover:bg-surface-hover text-foreground'
-                    }`}
-                  >
-                    <div className="flex items-center gap-2">
-                      <company.icon className="h-4 w-4" />
-                      <span className="text-sm">{company.name}</span>
-                    </div>
-                    <span className="text-xs bg-muted px-2 py-1 rounded-full">{company.count}</span>
-                  </button>
-                ))}
+              <div className="p-3">
+                <div className="grid grid-cols-2 gap-2">
+                  {companies.map((company) => (
+                    <button
+                      key={company.name}
+                      onClick={() => handleCompanyClick(company.name)}
+                      className={`flex items-center justify-between p-2 rounded-lg transition-all ${
+                        selectedCompany === company.name
+                          ? 'bg-primary text-primary-foreground'
+                          : 'bg-gray-100 hover:bg-gray-200'
+                      }`}
+                    >
+                      <span className="text-xs font-medium truncate">{company.name}</span>
+                      <span className={`text-xs px-1.5 py-0.5 rounded-full ${
+                        selectedCompany === company.name 
+                          ? 'bg-white/20 text-white' 
+                          : 'bg-white text-gray-600'
+                      }`}>
+                        {company.count}
+                      </span>
+                    </button>
+                  ))}
+                </div>
               </div>
             )}
           </div>
 
-          {/* Free Mock Tests Section */}
+          {/* Free Mock Tests */}
           <div className="border border-border rounded-lg">
             <button
               onClick={() => setMockOpen(!mockOpen)}
@@ -409,26 +384,22 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
             </button>
 
             {mockOpen && (
-              <div className="p-2 space-y-1 max-h-60 overflow-y-auto">
+              <div className="p-2 space-y-1">
                 {mockTests.map((test) => (
                   <a
                     key={test.name}
                     href={test.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between w-full px-2 py-2 rounded-md text-sm text-foreground hover:bg-surface-hover transition-colors"
+                    className="flex items-center justify-between w-full px-3 py-2 rounded-md text-sm text-foreground hover:bg-surface-hover transition-colors"
                   >
-                    <div className="flex items-center gap-2">
-                      <FlaskConical className="h-4 w-4 text-primary" />
-                      <span>{test.name}</span>
-                    </div>
+                    <span>{test.name}</span>
                     <span className="text-xs text-muted-foreground">↗</span>
                   </a>
                 ))}
               </div>
             )}
           </div>
-
         </div>
       </aside>
     </>
