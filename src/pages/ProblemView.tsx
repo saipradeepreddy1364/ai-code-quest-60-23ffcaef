@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Play, Upload, Save, Bug, Zap, Eye } from "lucide-react";
+import { Play, Upload, Save, Bug, Zap, Eye, MessageSquare } from "lucide-react";
 import { getProblemById } from "@/data/problems";
 import CodeEditor from "@/components/CodeEditor";
 import AIChatPanel from "@/components/AIChatPanel";
@@ -25,6 +25,7 @@ export default function ProblemView() {
   const [outputType, setOutputType] = useState<"success" | "error" | "">("");  // ✅ track output type
   const [isRunning, setIsRunning] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [chatOpen, setChatOpen] = useState(false);
   const [aiPanel, setAiPanel] = useState<{
     open: boolean;
     title: string;
@@ -289,6 +290,20 @@ export default function ProblemView() {
             <div className="w-px h-6 bg-border" />
 
             <button
+              onClick={() => setChatOpen((v) => !v)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 text-sm rounded transition-colors ${
+                chatOpen
+                  ? "bg-accent text-accent-foreground"
+                  : "bg-muted text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              <MessageSquare className="h-3.5 w-3.5" />
+              AI Chat
+            </button>
+
+            <div className="w-px h-6 bg-border" />
+
+            <button
               onClick={() => handleAI("debug")}
               className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-muted rounded"
             >
@@ -352,13 +367,13 @@ export default function ProblemView() {
       </div>
 
       <AIChatPanel
-        isOpen={aiPanel.open}
-        onClose={() =>
-          setAiPanel((prev) => ({ ...prev, open: false }))
-        }
+        isOpen={chatOpen || aiPanel.open}
+        onClose={() => {
+          setChatOpen(false);
+          setAiPanel((prev) => ({ ...prev, open: false }));
+        }}
         code={code}
         problemTitle={problem.title}
-        
       />
     </div>
   );
