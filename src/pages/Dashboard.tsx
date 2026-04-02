@@ -1,17 +1,18 @@
 // src/pages/Dashboard.tsx
-import { useState, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import {
-  User, ChevronDown, BookOpen,
-  GraduationCap, Brain, Cpu, Network, Database,
-  LogOut, Binary, Square, Sparkles,
-  Terminal, Grid3x3, Hash, Triangle, Code
+  User, ChevronDown, Menu, X, Home, BookOpen,
+  Building2, GraduationCap, Brain, Cpu, Network, Database,
+  TrendingUp, LogOut, Code2, Binary, Square, Sparkles,
+  Terminal, Grid3x3, Hash, Triangle, Code, Play
 } from "lucide-react";
 import { useAuth } from "../hooks/useAuth";
+import CodeCompiler from "../components/CodeCompiler";
+import AIChatPanel from "../components/AIChatPanel";
 import { problems } from "../data/problems";
 
-// ─── helpers ────────────────────────────────────────────────────────────────
-
+// ─── category count helper ───────────────────────────────────────────────────
 const getCategoryCounts = () => {
   const counts: Record<string, number> = {};
   problems.forEach((p) => {
@@ -21,7 +22,6 @@ const getCategoryCounts = () => {
 };
 
 // ─── icon + colour map ───────────────────────────────────────────────────────
-
 const TOPIC_META: Record<
   string,
   { icon: React.ElementType; iconColor: string; iconBg: string }
@@ -65,60 +65,48 @@ const PLACEMENT_CATEGORIES = [
   "Operating Systems", "Computer Networks", "OOP",
 ];
 
-const SECTIONS = [
-  { id: "dsa",       label: "DSA Topics",     icon: Brain,         cats: DSA_CATEGORIES },
-  { id: "placement", label: "Placement Prep", icon: GraduationCap, cats: PLACEMENT_CATEGORIES },
+const COMPANIES = [
+  "Google", "Amazon", "Microsoft", "Meta", "Flipkart",
+  "Oracle", "Adobe", "Goldman Sachs",
 ];
 
-// ─── TopicCard ───────────────────────────────────────────────────────────────
-
-interface TopicCardProps {
+// ─── SidebarTopicCard ────────────────────────────────────────────────────────
+interface SidebarTopicCardProps {
   category: string;
   count: number;
   onClick: () => void;
 }
 
-function TopicCard({ category, count, onClick }: TopicCardProps) {
-  const meta = TOPIC_META[category] ?? {
-    icon: Code,
-    iconColor: "#94a3b8",
-    iconBg: "#1e293b",
-  };
+function SidebarTopicCard({ category, count, onClick }: SidebarTopicCardProps) {
+  const meta = TOPIC_META[category] ?? { icon: Code, iconColor: "#94a3b8", iconBg: "#1e293b" };
   const Icon = meta.icon;
+  const [hovered, setHovered] = useState(false);
 
   return (
     <div
       onClick={onClick}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
       style={{
-        background: "#1c1c2e",
+        background: hovered ? "#22223a" : "#18182b",
         border: "1px solid rgba(255,255,255,0.07)",
-        borderRadius: "16px",
-        padding: "20px 20px 18px 20px",
+        borderRadius: "12px",
+        padding: "12px 12px 10px 12px",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
         cursor: "pointer",
-        transition: "transform 0.15s ease, box-shadow 0.15s ease",
-        position: "relative",
-        overflow: "hidden",
-      }}
-      onMouseEnter={(e) => {
-        (e.currentTarget as HTMLDivElement).style.transform = "translateY(-2px)";
-        (e.currentTarget as HTMLDivElement).style.boxShadow = "0 8px 32px rgba(0,0,0,0.45)";
-      }}
-      onMouseLeave={(e) => {
-        (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)";
-        (e.currentTarget as HTMLDivElement).style.boxShadow = "none";
+        transition: "background 0.15s ease, transform 0.15s ease",
+        transform: hovered ? "translateY(-1px)" : "translateY(0)",
       }}
     >
-      {/* ── Left: title + count + button ── */}
-      <div style={{ display: "flex", flexDirection: "column", gap: "4px", flex: 1, minWidth: 0 }}>
+      {/* Left */}
+      <div style={{ display: "flex", flexDirection: "column", gap: "2px", flex: 1, minWidth: 0 }}>
         <span
           style={{
             fontWeight: 700,
-            fontSize: "16px",
+            fontSize: "12px",
             color: "#f1f5f9",
-            lineHeight: 1.3,
             whiteSpace: "nowrap",
             overflow: "hidden",
             textOverflow: "ellipsis",
@@ -126,81 +114,83 @@ function TopicCard({ category, count, onClick }: TopicCardProps) {
         >
           {category}
         </span>
-
-        <span style={{ fontSize: "13px", color: "#64748b", marginBottom: "12px" }}>
-          {count} {count === 1 ? "Problem" : "Problems"}
+        <span style={{ fontSize: "11px", color: "#64748b", marginBottom: "6px" }}>
+          {count} Problems
         </span>
-
         <button
-          onClick={(e) => {
-            e.stopPropagation();
-            onClick();
-          }}
+          onClick={(e) => { e.stopPropagation(); onClick(); }}
           style={{
             display: "inline-flex",
             alignItems: "center",
-            gap: "6px",
-            padding: "6px 16px",
+            gap: "4px",
+            padding: "3px 10px",
             borderRadius: "999px",
             background: "rgba(255,255,255,0.07)",
             border: "1px solid rgba(255,255,255,0.12)",
             color: "#e2e8f0",
-            fontSize: "13px",
+            fontSize: "11px",
             fontWeight: 600,
             cursor: "pointer",
             width: "fit-content",
-            transition: "background 0.15s",
           }}
-          onMouseEnter={(e) =>
-            ((e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.13)")
-          }
-          onMouseLeave={(e) =>
-            ((e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.07)")
-          }
         >
-          <span style={{ fontSize: "15px" }}>🤚</span>
+          <span style={{ fontSize: "12px" }}>🤚</span>
           Start
         </button>
       </div>
 
-      {/* ── Right: coloured icon box ── */}
+      {/* Right icon box */}
       <div
         style={{
-          width: 72,
-          height: 72,
-          borderRadius: "14px",
+          width: 44,
+          height: 44,
+          borderRadius: "10px",
           background: meta.iconBg,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           flexShrink: 0,
-          marginLeft: "16px",
-          boxShadow: `0 0 24px ${meta.iconColor}33`,
+          marginLeft: "10px",
+          boxShadow: `0 0 14px ${meta.iconColor}33`,
         }}
       >
-        <Icon
-          style={{
-            width: 36,
-            height: 36,
-            color: meta.iconColor,
-            strokeWidth: 1.4,
-          }}
-        />
+        <Icon style={{ width: 22, height: 22, color: meta.iconColor, strokeWidth: 1.5 }} />
       </div>
     </div>
   );
 }
 
-// ─── Dashboard page ───────────────────────────────────────────────────────────
-
+// ─── Dashboard ───────────────────────────────────────────────────────────────
 export default function Dashboard() {
   const { user, signOut } = useAuth();
   const navigate = useNavigate();
 
+  const [aiPanelWidth, setAiPanelWidth] = useState(400);
+  const [isResizingPanel, setIsResizingPanel] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState<string>("dsa");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [isAiOpen, setIsAiOpen] = useState(false);
+  const [currentCode, setCurrentCode] = useState("");
+  const [currentLanguage, setCurrentLanguage] = useState("java");
+  const [activeTab, setActiveTab] = useState<"dsa" | "placement" | "companies">("dsa");
 
   const categoryCounts = useMemo(() => getCategoryCounts(), []);
+
+  // AI panel horizontal resize
+  useEffect(() => {
+    const onMove = (e: MouseEvent) => {
+      if (!isResizingPanel) return;
+      const newWidth = window.innerWidth - e.clientX - (sidebarOpen ? 320 : 0);
+      if (newWidth >= 300 && newWidth <= 800) setAiPanelWidth(newWidth);
+    };
+    const onUp = () => setIsResizingPanel(false);
+    window.addEventListener("mousemove", onMove);
+    window.addEventListener("mouseup", onUp);
+    return () => {
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("mouseup", onUp);
+    };
+  }, [isResizingPanel, sidebarOpen]);
 
   const handleLogout = async () => {
     setDropdownOpen(false);
@@ -208,304 +198,316 @@ export default function Dashboard() {
     navigate("/login", { replace: true });
   };
 
-  const goTo = (path: string) => navigate(path);
+  const goTo = (path: string) => {
+    setSidebarOpen(false);
+    navigate(path);
+  };
 
   if (!user) {
     return (
-      <div
-        style={{
-          height: "100vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontSize: "14px",
-          color: "#64748b",
-          background: "#0d0d1a",
-        }}
-      >
+      <div className="h-screen flex items-center justify-center text-sm text-muted-foreground">
         Loading...
       </div>
     );
   }
 
-  const currentSection = SECTIONS.find((s) => s.id === activeSection)!;
-  const visibleCats = currentSection.cats.filter((c) => (categoryCounts[c] ?? 0) > 0);
+  // Determine which categories to show based on active tab
+  const visibleCats =
+    activeTab === "dsa"
+      ? DSA_CATEGORIES.filter((c) => (categoryCounts[c] ?? 0) > 0)
+      : activeTab === "placement"
+      ? PLACEMENT_CATEGORIES.filter((c) => (categoryCounts[c] ?? 0) > 0)
+      : [];
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "#0d0d1a",
-        display: "flex",
-        flexDirection: "column",
-        fontFamily: "'Inter', sans-serif",
-      }}
-    >
-      {/* ════════════════ HEADER ════════════════ */}
-      <header
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "12px 28px",
-          background: "rgba(13,13,26,0.92)",
-          backdropFilter: "blur(12px)",
-          borderBottom: "1px solid rgba(255,255,255,0.06)",
-          position: "sticky",
-          top: 0,
-          zIndex: 30,
-        }}
-      >
-        {/* Logo */}
-        <span
-          style={{
-            fontSize: "20px",
-            fontWeight: 800,
-            color: "#f1f5f9",
-            letterSpacing: "-0.5px",
-          }}
-        >
-          Code<span style={{ color: "#6366f1" }}>Quest</span>
-        </span>
+    <div className="h-screen bg-background flex flex-col overflow-hidden">
 
-        {/* User dropdown trigger */}
-        <div style={{ position: "relative" }}>
+      {/* ══════════════ HEADER ══════════════ */}
+      <header className="flex justify-between items-center px-4 py-2.5 bg-card border-b border-border shrink-0">
+        <button
+          onClick={() => setSidebarOpen((p) => !p)}
+          className="p-2 rounded-md hover:bg-muted transition-colors"
+          aria-label="Toggle sidebar"
+        >
+          {sidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
+
+        <div className="relative">
           <button
             onClick={() => setDropdownOpen((p) => !p)}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "8px",
-              padding: "7px 14px",
-              background: "rgba(99,102,241,0.15)",
-              border: "1px solid rgba(99,102,241,0.35)",
-              borderRadius: "8px",
-              color: "#a5b4fc",
-              fontSize: "14px",
-              fontWeight: 500,
-              cursor: "pointer",
-            }}
+            className="flex items-center gap-2 px-3 py-1.5 bg-primary text-primary-foreground rounded-md text-sm"
           >
-            <User style={{ width: 16, height: 16 }} />
-            <span
-              style={{
-                maxWidth: "140px",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-                whiteSpace: "nowrap",
-              }}
-            >
-              {user.email}
-            </span>
-            <ChevronDown style={{ width: 16, height: 16, flexShrink: 0 }} />
+            <User className="h-4 w-4" />
+            <span className="max-w-[120px] truncate">{user.email}</span>
+            <ChevronDown className="h-4 w-4 shrink-0" />
           </button>
 
-          {/* Dropdown menu */}
           {dropdownOpen && (
-            <div
-              style={{
-                position: "absolute",
-                right: 0,
-                marginTop: "8px",
-                width: "220px",
-                background: "#1c1c2e",
-                border: "1px solid rgba(255,255,255,0.08)",
-                borderRadius: "12px",
-                boxShadow: "0 20px 60px rgba(0,0,0,0.55)",
-                zIndex: 50,
-                overflow: "hidden",
-              }}
-            >
-              <div
-                style={{
-                  padding: "10px 14px",
-                  fontSize: "12px",
-                  color: "#475569",
-                  borderBottom: "1px solid rgba(255,255,255,0.06)",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                {user.email}
-              </div>
-
+            <div className="absolute right-0 mt-2 w-56 bg-card border border-border rounded-lg shadow-lg z-50">
+              <div className="p-3 text-xs text-muted-foreground border-b truncate">{user.email}</div>
               <button
                 onClick={() => { setDropdownOpen(false); goTo("/problems"); }}
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  padding: "10px 14px",
-                  fontSize: "14px",
-                  color: "#e2e8f0",
-                  background: "transparent",
-                  border: "none",
-                  cursor: "pointer",
-                  textAlign: "left",
-                }}
-                onMouseEnter={(e) =>
-                  ((e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.05)")
-                }
-                onMouseLeave={(e) =>
-                  ((e.currentTarget as HTMLButtonElement).style.background = "transparent")
-                }
+                className="w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-muted transition-colors"
               >
-                <BookOpen style={{ width: 16, height: 16, color: "#6366f1" }} />
-                All Problems
+                <BookOpen className="h-4 w-4" /> All Problems
               </button>
-
               <button
                 onClick={handleLogout}
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  padding: "10px 14px",
-                  fontSize: "14px",
-                  color: "#f87171",
-                  background: "transparent",
-                  border: "none",
-                  cursor: "pointer",
-                  textAlign: "left",
-                }}
-                onMouseEnter={(e) =>
-                  ((e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.05)")
-                }
-                onMouseLeave={(e) =>
-                  ((e.currentTarget as HTMLButtonElement).style.background = "transparent")
-                }
+                className="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-500 hover:bg-muted transition-colors"
               >
-                <LogOut style={{ width: 16, height: 16 }} />
-                Logout
+                <LogOut className="h-4 w-4" /> Logout
               </button>
             </div>
           )}
         </div>
       </header>
 
-      {/* ════════════════ HERO ════════════════ */}
-      <div
-        style={{
-          textAlign: "center",
-          paddingTop: "52px",
-          paddingBottom: "8px",
-          paddingLeft: "16px",
-          paddingRight: "16px",
-        }}
-      >
-        <p
-          style={{
-            fontSize: "11px",
-            fontWeight: 700,
-            letterSpacing: "3px",
-            textTransform: "uppercase",
-            color: "#6366f1",
-            margin: "0 0 10px",
-          }}
-        >
-          Practice Platform
-        </p>
-        <h1
-          style={{
-            fontSize: "clamp(22px, 4vw, 34px)",
-            fontWeight: 800,
-            color: "#f1f5f9",
-            margin: "0 0 10px",
-            letterSpacing: "-0.5px",
-          }}
-        >
-          Turn practice into progress
-        </h1>
-        <p style={{ fontSize: "14px", color: "#475569", margin: 0 }}>
-          {problems.length} problems across {Object.keys(categoryCounts).length} topics
-        </p>
-      </div>
+      {/* ══════════════ BODY ══════════════ */}
+      <div className="flex flex-1 overflow-hidden">
 
-      {/* ════════════════ SECTION TABS ════════════════ */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "12px",
-          padding: "28px 16px 20px",
-        }}
-      >
-        {SECTIONS.map((s) => {
-          const Icon = s.icon;
-          const active = s.id === activeSection;
-          return (
-            <button
-              key={s.id}
-              onClick={() => setActiveSection(s.id)}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                padding: "10px 24px",
-                borderRadius: "999px",
-                fontSize: "14px",
-                fontWeight: 600,
-                cursor: "pointer",
-                border: "none",
-                transition: "all 0.2s ease",
-                background: active
-                  ? "linear-gradient(135deg, #6366f1, #8b5cf6)"
-                  : "rgba(255,255,255,0.05)",
-                color: active ? "#fff" : "#94a3b8",
-                boxShadow: active ? "0 4px 20px rgba(99,102,241,0.4)" : "none",
-              }}
-            >
-              <Icon style={{ width: 16, height: 16 }} />
-              {s.label}
-            </button>
-          );
-        })}
-      </div>
-
-      {/* ════════════════ CARDS GRID ════════════════ */}
-      <main
-        style={{
-          flex: 1,
-          maxWidth: "980px",
-          width: "100%",
-          margin: "0 auto",
-          padding: "0 20px 56px",
-          boxSizing: "border-box",
-        }}
-      >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(420px, 1fr))",
-            gap: "16px",
-          }}
-        >
-          {visibleCats.map((cat) => (
-            <TopicCard
-              key={cat}
-              category={cat}
-              count={categoryCounts[cat] ?? 0}
-              onClick={() => goTo(`/problems?category=${encodeURIComponent(cat)}`)}
-            />
-          ))}
-        </div>
-
-        {visibleCats.length === 0 && (
-          <div
+        {/* ══════════════ SIDEBAR ══════════════ */}
+        {sidebarOpen && (
+          <aside
             style={{
-              textAlign: "center",
-              paddingTop: "80px",
-              fontSize: "14px",
-              color: "#334155",
+              width: "320px",
+              flexShrink: 0,
+              background: "#0d0d1a",
+              borderRight: "1px solid rgba(255,255,255,0.07)",
+              display: "flex",
+              flexDirection: "column",
+              overflowY: "auto",
+              zIndex: 40,
             }}
           >
-            No topics available yet.
-          </div>
+            {/* Sidebar header */}
+            <div
+              style={{
+                padding: "14px 14px 10px",
+                borderBottom: "1px solid rgba(255,255,255,0.06)",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 700,
+                  letterSpacing: "2.5px",
+                  textTransform: "uppercase",
+                  color: "#6366f1",
+                  margin: "0 0 2px",
+                }}
+              >
+                Practice Platform
+              </p>
+              <h2
+                style={{
+                  fontSize: "15px",
+                  fontWeight: 800,
+                  color: "#f1f5f9",
+                  margin: "0 0 10px",
+                }}
+              >
+                Turn practice into progress
+              </h2>
+
+              {/* Tab pills */}
+              <div style={{ display: "flex", gap: "6px" }}>
+                {(
+                  [
+                    { id: "dsa",       label: "DSA",       icon: Brain },
+                    { id: "placement", label: "Placement", icon: GraduationCap },
+                    { id: "companies", label: "Companies", icon: Building2 },
+                  ] as const
+                ).map(({ id, label, icon: Icon }) => {
+                  const active = activeTab === id;
+                  return (
+                    <button
+                      key={id}
+                      onClick={() => setActiveTab(id)}
+                      style={{
+                        flex: 1,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: "4px",
+                        padding: "5px 0",
+                        borderRadius: "8px",
+                        fontSize: "11px",
+                        fontWeight: 600,
+                        cursor: "pointer",
+                        border: "none",
+                        background: active
+                          ? "linear-gradient(135deg,#6366f1,#8b5cf6)"
+                          : "rgba(255,255,255,0.05)",
+                        color: active ? "#fff" : "#64748b",
+                        boxShadow: active ? "0 2px 12px rgba(99,102,241,0.4)" : "none",
+                        transition: "all 0.15s",
+                      }}
+                    >
+                      <Icon style={{ width: 12, height: 12 }} />
+                      {label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Card grid */}
+            <div style={{ padding: "12px", flex: 1 }}>
+              {activeTab !== "companies" ? (
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "1fr 1fr",
+                    gap: "8px",
+                  }}
+                >
+                  {visibleCats.map((cat) => (
+                    <SidebarTopicCard
+                      key={cat}
+                      category={cat}
+                      count={categoryCounts[cat] ?? 0}
+                      onClick={() => goTo(`/problems?category=${encodeURIComponent(cat)}`)}
+                    />
+                  ))}
+                </div>
+              ) : (
+                /* Companies tab — 2-col grid */
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "1fr 1fr",
+                    gap: "8px",
+                  }}
+                >
+                  {COMPANIES.map((company) => (
+                    <button
+                      key={company}
+                      onClick={() => goTo(`/problems?company=${encodeURIComponent(company)}`)}
+                      style={{
+                        background: "#18182b",
+                        border: "1px solid rgba(255,255,255,0.07)",
+                        borderRadius: "12px",
+                        padding: "12px 10px",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        gap: "6px",
+                        cursor: "pointer",
+                        transition: "background 0.15s",
+                      }}
+                      onMouseEnter={(e) =>
+                        ((e.currentTarget as HTMLButtonElement).style.background = "#22223a")
+                      }
+                      onMouseLeave={(e) =>
+                        ((e.currentTarget as HTMLButtonElement).style.background = "#18182b")
+                      }
+                    >
+                      <Building2 style={{ width: 20, height: 20, color: "#6366f1" }} />
+                      <span
+                        style={{
+                          fontSize: "11px",
+                          fontWeight: 600,
+                          color: "#e2e8f0",
+                          textAlign: "center",
+                        }}
+                      >
+                        {company}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Sidebar footer nav */}
+            <div
+              style={{
+                padding: "10px 14px 14px",
+                borderTop: "1px solid rgba(255,255,255,0.06)",
+                display: "flex",
+                flexDirection: "column",
+                gap: "4px",
+              }}
+            >
+              <button
+                onClick={() => goTo("/dashboard")}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  padding: "8px 10px",
+                  borderRadius: "8px",
+                  background: "transparent",
+                  border: "none",
+                  color: "#94a3b8",
+                  fontSize: "13px",
+                  cursor: "pointer",
+                  textAlign: "left",
+                  width: "100%",
+                }}
+                onMouseEnter={(e) =>
+                  ((e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.05)")
+                }
+                onMouseLeave={(e) =>
+                  ((e.currentTarget as HTMLButtonElement).style.background = "transparent")
+                }
+              >
+                <Home style={{ width: 14, height: 14 }} /> Home
+              </button>
+              <button
+                onClick={() => goTo("/problems")}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  padding: "8px 10px",
+                  borderRadius: "8px",
+                  background: "transparent",
+                  border: "none",
+                  color: "#94a3b8",
+                  fontSize: "13px",
+                  cursor: "pointer",
+                  textAlign: "left",
+                  width: "100%",
+                }}
+                onMouseEnter={(e) =>
+                  ((e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.05)")
+                }
+                onMouseLeave={(e) =>
+                  ((e.currentTarget as HTMLButtonElement).style.background = "transparent")
+                }
+              >
+                <BookOpen style={{ width: 14, height: 14 }} /> All Problems
+              </button>
+            </div>
+          </aside>
         )}
-      </main>
+
+        {/* ══════════════ COMPILER + AI — unchanged ══════════════ */}
+        <div className="flex flex-1 overflow-hidden">
+          <div className="flex-1 overflow-hidden">
+            <CodeCompiler
+              onCodeChange={(code, lang) => { setCurrentCode(code); setCurrentLanguage(lang); }}
+              onToggleAI={() => setIsAiOpen((p) => !p)}
+              userEmail={user.email}
+            />
+          </div>
+
+          {isAiOpen && (
+            <div
+              className="w-1.5 bg-border hover:bg-primary cursor-col-resize shrink-0 transition-colors"
+              onMouseDown={(e) => { e.preventDefault(); setIsResizingPanel(true); }}
+            />
+          )}
+
+          {isAiOpen && (
+            <div className="shrink-0 border-l border-border overflow-hidden" style={{ width: aiPanelWidth }}>
+              <AIChatPanel isOpen={isAiOpen} onClose={() => setIsAiOpen(false)} />
+            </div>
+          )}
+        </div>
+
+      </div>
     </div>
   );
 }
