@@ -47,8 +47,6 @@ export default function Dashboard() {
     navigate("/login", { replace: true });
   };
 
-  // ✅ KEY FIX: use navigate() instead of <Link> so clicking nav items
-  // never unmounts the auth context or triggers the login-page logout effect
   const goTo = (path: string) => {
     setSidebarOpen(false);
     navigate(path);
@@ -77,6 +75,17 @@ export default function Dashboard() {
     { label: "Patterns",            icon: Award     },
     { label: "Numbers",             icon: TrendingUp},
     { label: "DSA",                 icon: Cpu       },
+  ];
+
+  // ✅ These match the exact category values in your problems dataset
+  const placementTopics = [
+    { label: "Aptitude",           icon: TrendingUp     },
+    { label: "Logical Reasoning",  icon: Brain          },
+    { label: "Technical",          icon: Code2          },
+    { label: "DBMS",               icon: Database       },
+    { label: "Operating Systems",  icon: Cpu            },
+    { label: "Computer Networks",  icon: Network        },
+    { label: "OOP",                icon: BookOpen       },
   ];
 
   return (
@@ -172,14 +181,18 @@ export default function Dashboard() {
                   <span className="flex items-center gap-2"><GraduationCap className="h-4 w-4" /> Placement Prep</span>
                   <ChevronRight className={`h-4 w-4 transition-transform ${placementOpen ? "rotate-90" : ""}`} />
                 </button>
+                {/* ✅ Now navigates to ?category= just like DSA Topics */}
                 {placementOpen && (
                   <div className="ml-6 mt-1 space-y-0.5 text-muted-foreground">
-                    <button onClick={() => goTo("/aptitude")} className="w-full flex items-center gap-2 px-3 py-1.5 rounded-md hover:bg-muted hover:text-foreground transition-colors text-left text-xs">
-                      <TrendingUp className="h-3.5 w-3.5" /> Aptitude
-                    </button>
-                    <button onClick={() => goTo("/mock")} className="w-full flex items-center gap-2 px-3 py-1.5 rounded-md hover:bg-muted hover:text-foreground transition-colors text-left text-xs">
-                      <BookOpen className="h-3.5 w-3.5" /> Mock Tests
-                    </button>
+                    {placementTopics.map(({ label, icon: Icon }) => (
+                      <button
+                        key={label}
+                        onClick={() => goTo(`/problems?category=${encodeURIComponent(label)}`)}
+                        className="w-full flex items-center gap-2 px-3 py-1.5 rounded-md hover:bg-muted hover:text-foreground transition-colors text-left text-xs"
+                      >
+                        <Icon className="h-3.5 w-3.5 shrink-0" /> {label}
+                      </button>
+                    ))}
                   </div>
                 )}
               </div>
