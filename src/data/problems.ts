@@ -19574,7 +19574,5490 @@ export const problems: Problem[] = [
     }
 }`
     }
-  }
+  },
+// ADD THESE ENTRIES INSIDE THE problems array in problems.ts
+// Paste them before the closing ]; of the problems array
+
+  {
+    "id": 816,
+    "title": "Find HCF of 36 and 48",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Find the Highest Common Factor (HCF) of two given numbers 36 and 48.",
+    "input_format": "Two integers: 36 and 48",
+    "output_format": "HCF of the two numbers",
+    "constraints": "Numbers are positive integers less than 10^6",
+    "sample_input": "36 48",
+    "sample_output": "12",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 817,
+    "title": "Find LCM of 12 and 18",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Find the Least Common Multiple (LCM) of two given numbers.",
+    "input_format": "Two integers: 12 and 18",
+    "output_format": "LCM of the two numbers",
+    "constraints": "Numbers are positive integers less than 10^4",
+    "sample_input": "12 18",
+    "sample_output": "36",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 818,
+    "title": "Is the number prime?",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Given a number N, determine whether it is prime or not.",
+    "input_format": "A single integer N",
+    "output_format": "YES if prime, NO otherwise",
+    "constraints": "2 <= N <= 10^6",
+    "sample_input": "17",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 819,
+    "title": "Sum of digits",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Wipro"],
+    "description": "Find the sum of all digits of a given number.",
+    "input_format": "A single integer N",
+    "output_format": "Sum of its digits",
+    "constraints": "1 <= N <= 10^9",
+    "sample_input": "1234",
+    "sample_output": "10",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 820,
+    "title": "Reverse a number",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Accenture"],
+    "description": "Reverse the digits of a given integer.",
+    "input_format": "A single integer N",
+    "output_format": "The reversed number",
+    "constraints": "1 <= N <= 10^9",
+    "sample_input": "12345",
+    "sample_output": "54321",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 821,
+    "title": "Count digits",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Count the number of digits in a given integer.",
+    "input_format": "A single integer N",
+    "output_format": "Number of digits",
+    "constraints": "1 <= N <= 10^18",
+    "sample_input": "987654",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 822,
+    "title": "Power of two check",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Amazon", "TCS"],
+    "description": "Check if a given number is a power of 2.",
+    "input_format": "A single integer N",
+    "output_format": "YES or NO",
+    "constraints": "1 <= N <= 10^9",
+    "sample_input": "16",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 823,
+    "title": "Factorial of N",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "Infosys"],
+    "description": "Compute the factorial of a given number N.",
+    "input_format": "A single integer N",
+    "output_format": "N! (factorial of N)",
+    "constraints": "0 <= N <= 20",
+    "sample_input": "5",
+    "sample_output": "120",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 824,
+    "title": "Fibonacci Nth term",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "CTS"],
+    "description": "Find the Nth term in the Fibonacci sequence (0-indexed).",
+    "input_format": "A single integer N",
+    "output_format": "Nth Fibonacci number",
+    "constraints": "0 <= N <= 30",
+    "sample_input": "7",
+    "sample_output": "13",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 825,
+    "title": "Armstrong number check",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "HCL"],
+    "description": "Check if a number is an Armstrong number (sum of cubes of digits equals number).",
+    "input_format": "A single integer N",
+    "output_format": "YES or NO",
+    "constraints": "1 <= N <= 10^4",
+    "sample_input": "153",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 826,
+    "title": "Perfect number check",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "TCS"],
+    "description": "A perfect number equals the sum of its proper divisors. Check if given number is perfect.",
+    "input_format": "A single integer N",
+    "output_format": "YES or NO",
+    "constraints": "1 <= N <= 10^5",
+    "sample_input": "28",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 827,
+    "title": "Palindrome number",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Accenture", "CTS"],
+    "description": "Check if a given number reads the same forwards and backwards.",
+    "input_format": "A single integer N",
+    "output_format": "YES or NO",
+    "constraints": "1 <= N <= 10^9",
+    "sample_input": "121",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 828,
+    "title": "GCD of array",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Find the GCD of all elements in an array.",
+    "input_format": "First line: N (size). Second line: N integers",
+    "output_format": "GCD of all elements",
+    "constraints": "1 <= N <= 100, elements <= 10^6",
+    "sample_input": "4\n12 18 24 36",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 829,
+    "title": "LCM of array",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "HCL"],
+    "description": "Find the LCM of all elements in an array.",
+    "input_format": "First line: N. Second line: N integers",
+    "output_format": "LCM of all elements",
+    "constraints": "1 <= N <= 15, elements <= 100",
+    "sample_input": "3\n4 6 8",
+    "sample_output": "24",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 830,
+    "title": "Count primes up to N",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "TCS"],
+    "description": "Count the number of prime numbers less than or equal to N.",
+    "input_format": "A single integer N",
+    "output_format": "Count of primes <= N",
+    "constraints": "1 <= N <= 10^6",
+    "sample_input": "20",
+    "sample_output": "8",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 831,
+    "title": "Nth prime number",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "CTS"],
+    "description": "Find the Nth prime number (1-indexed).",
+    "input_format": "A single integer N",
+    "output_format": "Nth prime",
+    "constraints": "1 <= N <= 1000",
+    "sample_input": "5",
+    "sample_output": "11",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 832,
+    "title": "Sum of primes up to N",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "TCS"],
+    "description": "Find the sum of all prime numbers up to N.",
+    "input_format": "A single integer N",
+    "output_format": "Sum of primes",
+    "constraints": "1 <= N <= 10^5",
+    "sample_input": "10",
+    "sample_output": "17",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 833,
+    "title": "Digital root",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["HCL", "Accenture"],
+    "description": "Repeatedly sum digits until single digit (digital root).",
+    "input_format": "A single integer N",
+    "output_format": "Digital root of N",
+    "constraints": "1 <= N <= 10^9",
+    "sample_input": "9875",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 834,
+    "title": "Smallest prime factor",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Find the smallest prime factor of a given number.",
+    "input_format": "A single integer N",
+    "output_format": "Smallest prime factor",
+    "constraints": "2 <= N <= 10^6",
+    "sample_input": "36",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 835,
+    "title": "Number of divisors",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Count the total number of divisors of N.",
+    "input_format": "A single integer N",
+    "output_format": "Total divisors of N",
+    "constraints": "1 <= N <= 10^6",
+    "sample_input": "12",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 836,
+    "title": "Simple percentage",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Find what percentage X is of Y.",
+    "input_format": "Two integers X and Y",
+    "output_format": "Percentage (integer, floor)",
+    "constraints": "1 <= X <= Y <= 10^6",
+    "sample_input": "25 200",
+    "sample_output": "12",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 837,
+    "title": "Percentage increase",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "HCL"],
+    "description": "Find the percentage increase from old value to new value.",
+    "input_format": "Two integers: old new",
+    "output_format": "Percentage increase (integer)",
+    "constraints": "1 <= old < new <= 10^6",
+    "sample_input": "80 100",
+    "sample_output": "25",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 838,
+    "title": "Percentage decrease",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "Accenture"],
+    "description": "Find the percentage decrease from old value to new value.",
+    "input_format": "Two integers: old new",
+    "output_format": "Percentage decrease (integer)",
+    "constraints": "1 <= new < old <= 10^6",
+    "sample_input": "100 80",
+    "sample_output": "20",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 839,
+    "title": "Value after percentage increase",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Given original value and percentage, find value after increase.",
+    "input_format": "Two integers: value percent",
+    "output_format": "Result after increase",
+    "constraints": "1 <= value <= 10^5, 1 <= percent <= 100",
+    "sample_input": "200 25",
+    "sample_output": "250",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 840,
+    "title": "Value after percentage decrease",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "HCL"],
+    "description": "Given original value and percentage, find value after decrease.",
+    "input_format": "Two integers: value percent",
+    "output_format": "Result after decrease",
+    "constraints": "1 <= value <= 10^5, 1 <= percent <= 100",
+    "sample_input": "200 25",
+    "sample_output": "150",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 841,
+    "title": "Successive percentage",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Amazon"],
+    "description": "Two successive discounts of p% and q% are applied. Find effective single discount percentage.",
+    "input_format": "Two integers p q",
+    "output_format": "Effective discount percentage (integer floor)",
+    "constraints": "1 <= p,q <= 99",
+    "sample_input": "20 10",
+    "sample_output": "28",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 842,
+    "title": "Profit and Loss percentage",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Find profit or loss percentage given cost price and selling price.",
+    "input_format": "Two integers: CP SP",
+    "output_format": "PROFIT X or LOSS X where X is percentage",
+    "constraints": "1 <= CP,SP <= 10^6",
+    "sample_input": "100 120",
+    "sample_output": "PROFIT 20",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 843,
+    "title": "Selling price from profit%",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Given cost price and profit percentage, find selling price.",
+    "input_format": "Two integers: CP profit_percent",
+    "output_format": "Selling Price",
+    "constraints": "1 <= CP <= 10^5, 1 <= profit_percent <= 500",
+    "sample_input": "100 20",
+    "sample_output": "120",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 844,
+    "title": "Cost price from loss%",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["HCL", "Accenture"],
+    "description": "Given selling price and loss percentage, find cost price.",
+    "input_format": "Two integers: SP loss_percent",
+    "output_format": "Cost Price",
+    "constraints": "1 <= SP <= 10^5, 1 <= loss_percent <= 99",
+    "sample_input": "90 10",
+    "sample_output": "100",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 845,
+    "title": "Marked price discount",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Given marked price and discount percentage, find selling price.",
+    "input_format": "Two integers: MP discount_percent",
+    "output_format": "Selling Price",
+    "constraints": "1 <= MP <= 10^5, 1 <= discount_percent <= 99",
+    "sample_input": "500 20",
+    "sample_output": "400",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 846,
+    "title": "Simplify ratio",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Simplify a given ratio A:B to its lowest terms.",
+    "input_format": "Two integers A and B",
+    "output_format": "Simplified ratio as 'X:Y'",
+    "constraints": "1 <= A,B <= 10^6",
+    "sample_input": "24 36",
+    "sample_output": "2:3",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 847,
+    "title": "Fourth proportional",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Find the fourth proportional to A, B, C (A:B = C:?)",
+    "input_format": "Three integers A B C",
+    "output_format": "Fourth proportional",
+    "constraints": "1 <= A,B,C <= 10^4",
+    "sample_input": "2 3 4",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 848,
+    "title": "Mean proportional",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Find the mean proportional between A and B (sqrt(A*B)).",
+    "input_format": "Two integers A B",
+    "output_format": "Mean proportional (integer)",
+    "constraints": "1 <= A,B <= 10^4, A*B is perfect square",
+    "sample_input": "4 16",
+    "sample_output": "8",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 849,
+    "title": "Ratio division",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Divide a total amount in ratio A:B. Print A's share.",
+    "input_format": "Three integers: total A B",
+    "output_format": "A's share (integer)",
+    "constraints": "A+B divides total evenly",
+    "sample_input": "100 2 3",
+    "sample_output": "40",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 850,
+    "title": "Three-way ratio division",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Divide total in ratio A:B:C. Print all three shares.",
+    "input_format": "Four integers: total A B C",
+    "output_format": "Three shares space separated",
+    "constraints": "Sum divides total evenly",
+    "sample_input": "120 1 2 3",
+    "sample_output": "20 40 60",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 851,
+    "title": "Compare ratios",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Compare two ratios A:B and C:D. Print GREATER, LESS, or EQUAL.",
+    "input_format": "Four integers A B C D",
+    "output_format": "GREATER LESS or EQUAL (first ratio vs second)",
+    "constraints": "1 <= A,B,C,D <= 10^4",
+    "sample_input": "3 4 5 7",
+    "sample_output": "GREATER",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 852,
+    "title": "Partnership profit share",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Two partners invest P1 for T1 months and P2 for T2 months. Total profit is P. Find first partner's share.",
+    "input_format": "Five integers: P1 T1 P2 T2 P",
+    "output_format": "First partner's profit share",
+    "constraints": "All values >= 1",
+    "sample_input": "3000 12 4000 10 7000",
+    "sample_output": "3000",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 853,
+    "title": "Mixture ratio",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "Amazon"],
+    "description": "A mixture contains milk and water in ratio A:B. How much water to add to C litres to make ratio A:D?",
+    "input_format": "Four integers A B C D",
+    "output_format": "Litres of water to add",
+    "constraints": "Valid ratio inputs",
+    "sample_input": "3 1 40 3",
+    "sample_output": "40",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 854,
+    "title": "Speed Distance Time",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Given distance D km and speed S km/h, find time taken in hours.",
+    "input_format": "Two integers D S",
+    "output_format": "Time in hours (integer)",
+    "constraints": "D is divisible by S",
+    "sample_input": "120 60",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 855,
+    "title": "Relative speed same direction",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Two trains move in same direction at speeds A and B. Find relative speed.",
+    "input_format": "Two integers A B",
+    "output_format": "Relative speed (absolute difference)",
+    "constraints": "1 <= A,B <= 500",
+    "sample_input": "60 40",
+    "sample_output": "20",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 856,
+    "title": "Relative speed opposite direction",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Two trains move in opposite directions at speeds A and B. Find relative speed.",
+    "input_format": "Two integers A B",
+    "output_format": "Sum of speeds",
+    "constraints": "1 <= A,B <= 500",
+    "sample_input": "60 40",
+    "sample_output": "100",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 857,
+    "title": "Train crossing pole",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "A train of length L metres runs at S km/h. Find time to cross a pole in seconds.",
+    "input_format": "Two integers L S",
+    "output_format": "Time in seconds (integer)",
+    "constraints": "L and S give integer result",
+    "sample_input": "100 36",
+    "sample_output": "10",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 858,
+    "title": "Train crossing platform",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Train length L1, platform length L2, speed S km/h. Find time to cross in seconds.",
+    "input_format": "Three integers L1 L2 S",
+    "output_format": "Time in seconds (integer)",
+    "constraints": "Result is integer",
+    "sample_input": "200 300 90",
+    "sample_output": "20",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 859,
+    "title": "Average speed",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "CTS"],
+    "description": "A person travels D1 km at S1 km/h and D2 km at S2 km/h. Find average speed.",
+    "input_format": "Four integers D1 S1 D2 S2",
+    "output_format": "Average speed (integer km/h)",
+    "constraints": "Result is integer",
+    "sample_input": "60 30 60 60",
+    "sample_output": "40",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 860,
+    "title": "Boats and streams downstream",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "HCL"],
+    "description": "Boat speed in still water is B km/h, stream speed is S km/h. Find downstream speed.",
+    "input_format": "Two integers B S",
+    "output_format": "Downstream speed",
+    "constraints": "1 <= S < B <= 100",
+    "sample_input": "10 3",
+    "sample_output": "13",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 861,
+    "title": "Boats and streams upstream",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Boat speed in still water is B km/h, stream speed is S km/h. Find upstream speed.",
+    "input_format": "Two integers B S",
+    "output_format": "Upstream speed",
+    "constraints": "1 <= S < B <= 100",
+    "sample_input": "10 3",
+    "sample_output": "7",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 862,
+    "title": "Time to meet",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Accenture"],
+    "description": "Two people start from same point in opposite directions at speeds A and B km/h. Total distance D. When do they meet?",
+    "input_format": "Three integers A B D",
+    "output_format": "Time in hours (integer)",
+    "constraints": "D divisible by (A+B)",
+    "sample_input": "60 40 200",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 863,
+    "title": "Circular track meeting",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "Amazon"],
+    "description": "Two runners on circular track of length L. Speeds A and B. Same direction. Time to meet again?",
+    "input_format": "Three integers L A B",
+    "output_format": "Time in seconds (integer)",
+    "constraints": "L divisible by |A-B|",
+    "sample_input": "300 10 4",
+    "sample_output": "50",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 864,
+    "title": "Work done in days",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "A can do work in A days, B in B days. Together in how many days?",
+    "input_format": "Two integers A B",
+    "output_format": "Days (integer, floor)",
+    "constraints": "Result is integer",
+    "sample_input": "6 12",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 865,
+    "title": "Work with efficiency",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "A is twice as efficient as B. Together they finish in D days. How long does A alone take?",
+    "input_format": "One integer D",
+    "output_format": "Days A alone takes",
+    "constraints": "1 <= D <= 100",
+    "sample_input": "10",
+    "sample_output": "15",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 866,
+    "title": "Pipes filling tank",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Pipe A fills tank in A hours, pipe B in B hours. Together in how many hours?",
+    "input_format": "Two integers A B",
+    "output_format": "Hours (integer)",
+    "constraints": "Result is integer",
+    "sample_input": "4 12",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 867,
+    "title": "Pipe filling and emptying",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Inlet fills in A hours, outlet empties in B hours (B > A). Both open — in how many hours does tank fill?",
+    "input_format": "Two integers A B",
+    "output_format": "Hours to fill (integer)",
+    "constraints": "B > A, result is integer",
+    "sample_input": "3 6",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 868,
+    "title": "Work left after N days",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "A does work in X days, B in Y days. A works alone for D days then B joins. Total days to finish?",
+    "input_format": "Three integers X Y D",
+    "output_format": "Total days (integer)",
+    "constraints": "Valid integer result",
+    "sample_input": "12 6 4",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 869,
+    "title": "Wages distribution",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["CTS", "HCL"],
+    "description": "A and B together earn W rupees in D days. A alone earns E per day. Find B's daily earning.",
+    "input_format": "Three integers W D E",
+    "output_format": "B's daily earning",
+    "constraints": "Valid integer result",
+    "sample_input": "400 10 30",
+    "sample_output": "10",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 870,
+    "title": "Three workers",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "A, B, C can do work in X, Y, Z days. Working together, how many days to finish?",
+    "input_format": "Three integers X Y Z",
+    "output_format": "Days (integer, floor)",
+    "constraints": "Valid integer result",
+    "sample_input": "2 3 6",
+    "sample_output": "1",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 871,
+    "title": "Alternate day work",
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "TCS"],
+    "description": "A and B work alternately, A starting first. A finishes in X days, B in Y days. Total days to finish?",
+    "input_format": "Two integers X Y",
+    "output_format": "Total days",
+    "constraints": "1 <= X,Y <= 50",
+    "sample_input": "6 12",
+    "sample_output": "8",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 872,
+    "title": "Simple interest",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Calculate simple interest given Principal P, Rate R%, Time T years.",
+    "input_format": "Three integers P R T",
+    "output_format": "Simple Interest amount",
+    "constraints": "1 <= P <= 10^6, 1<=R<=100, 1<=T<=50",
+    "sample_input": "1000 5 2",
+    "sample_output": "100",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 873,
+    "title": "Amount after SI",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Find total amount after simple interest.",
+    "input_format": "Three integers P R T",
+    "output_format": "Total Amount (P + SI)",
+    "constraints": "1 <= P <= 10^6",
+    "sample_input": "1000 5 2",
+    "sample_output": "1100",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 874,
+    "title": "Compound interest annual",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Calculate compound interest compounded annually. CI = P*(1+R/100)^T - P.",
+    "input_format": "Three integers P R T",
+    "output_format": "CI (integer, floor)",
+    "constraints": "P<=10^5, R<=20, T<=5",
+    "sample_input": "1000 10 2",
+    "sample_output": "210",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 875,
+    "title": "Amount after CI",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "Amazon"],
+    "description": "Find total amount after compound interest (annually).",
+    "input_format": "Three integers P R T",
+    "output_format": "Amount (integer, floor)",
+    "constraints": "P<=10^5, R<=20, T<=5",
+    "sample_input": "1000 10 2",
+    "sample_output": "1210",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 876,
+    "title": "SI find rate",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "TCS"],
+    "description": "Given P, SI, and T, find the rate of interest per annum.",
+    "input_format": "Three integers P SI T",
+    "output_format": "Rate (integer %)",
+    "constraints": "Values give integer rate",
+    "sample_input": "1000 200 4",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 877,
+    "title": "SI find time",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Given P, SI, and R, find the time in years.",
+    "input_format": "Three integers P SI R",
+    "output_format": "Time in years (integer)",
+    "constraints": "Values give integer time",
+    "sample_input": "1000 200 5",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 878,
+    "title": "Difference CI and SI",
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Find the difference between CI and SI for 2 years with principal P and rate R%.",
+    "input_format": "Two integers P R",
+    "output_format": "CI - SI (integer, floor)",
+    "constraints": "P<=10^5, R<=20",
+    "sample_input": "1000 10",
+    "sample_output": "10",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 879,
+    "title": "CI half yearly",
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Wipro"],
+    "description": "CI compounded half-yearly. Rate R% per annum, principal P, time T years.",
+    "input_format": "Three integers P R T",
+    "output_format": "Amount (integer, floor)",
+    "constraints": "T<=4, R even",
+    "sample_input": "1000 10 1",
+    "sample_output": "1102",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 880,
+    "title": "Average of N numbers",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Find the average of N numbers.",
+    "input_format": "First line N, second line N integers",
+    "output_format": "Average (integer, floor)",
+    "constraints": "1<=N<=100",
+    "sample_input": "5\n10 20 30 40 50",
+    "sample_output": "30",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 881,
+    "title": "Weighted average",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Find weighted average given values and their weights.",
+    "input_format": "First line N. Then N pairs: value weight",
+    "output_format": "Weighted average (integer, floor)",
+    "constraints": "1<=N<=20",
+    "sample_input": "3\n10 2 20 3 30 5",
+    "sample_output": "23",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 882,
+    "title": "Average after removing element",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Average of N numbers is A. If one element X is removed, find new average.",
+    "input_format": "Three integers N A X",
+    "output_format": "New average (integer, floor)",
+    "constraints": "N>=2, N*A-X divisible by N-1",
+    "sample_input": "5 20 30",
+    "sample_output": "17",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 883,
+    "title": "New average after adding",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Average of N numbers is A. A new number X is added. Find new average.",
+    "input_format": "Three integers N A X",
+    "output_format": "New average (integer, floor)",
+    "constraints": "N>=1",
+    "sample_input": "4 20 40",
+    "sample_output": "24",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 884,
+    "title": "Average speed problem",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "A person travels from A to B at speed S1 and returns at S2. Find average speed.",
+    "input_format": "Two integers S1 S2",
+    "output_format": "Average speed (integer, floor)",
+    "constraints": "S1,S2>=1",
+    "sample_input": "60 40",
+    "sample_output": "48",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 885,
+    "title": "Average marks",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Class of N students has average marks M. If top scorer T is excluded, average drops by D. Find T's marks.",
+    "input_format": "Three integers N M D",
+    "output_format": "Top scorer's marks",
+    "constraints": "Valid integer result",
+    "sample_input": "10 75 5",
+    "sample_output": "120",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 886,
+    "title": "Moving average",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Given N numbers, output average of every consecutive 3 numbers (floor).",
+    "input_format": "First line N, second line N integers",
+    "output_format": "Space-separated floor averages",
+    "constraints": "N>=3",
+    "sample_input": "6\n1 2 3 4 5 6",
+    "sample_output": "2 3 4",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 887,
+    "title": "nCr calculation",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Amazon"],
+    "description": "Calculate nCr (combinations).",
+    "input_format": "Two integers n r",
+    "output_format": "nCr value",
+    "constraints": "0<=r<=n<=20",
+    "sample_input": "5 2",
+    "sample_output": "10",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 888,
+    "title": "nPr calculation",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "Infosys"],
+    "description": "Calculate nPr (permutations).",
+    "input_format": "Two integers n r",
+    "output_format": "nPr value",
+    "constraints": "0<=r<=n<=12",
+    "sample_input": "5 2",
+    "sample_output": "20",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 889,
+    "title": "Arrangements in a row",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "CTS"],
+    "description": "In how many ways can N distinct people sit in a row?",
+    "input_format": "One integer N",
+    "output_format": "N! (factorial)",
+    "constraints": "1<=N<=12",
+    "sample_input": "5",
+    "sample_output": "120",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 890,
+    "title": "Circular arrangements",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["HCL", "Infosys"],
+    "description": "In how many ways can N distinct people sit around a circular table?",
+    "input_format": "One integer N",
+    "output_format": "(N-1)!",
+    "constraints": "2<=N<=12",
+    "sample_input": "5",
+    "sample_output": "24",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 891,
+    "title": "Arrangements with constraint",
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "company_tags": ["TCS", "Amazon"],
+    "description": "N people, M must always sit together. Arrangements in a row?",
+    "input_format": "Two integers N M",
+    "output_format": "Number of arrangements",
+    "constraints": "2<=M<=N<=10",
+    "sample_input": "5 2",
+    "sample_output": "48",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 892,
+    "title": "Selecting committee",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "TCS"],
+    "description": "From N men and M women, select a committee of P people with at least 1 woman.",
+    "input_format": "Three integers N M P",
+    "output_format": "Number of ways",
+    "constraints": "N,M>=1, P<=N+M",
+    "sample_input": "3 2 3",
+    "sample_output": "9",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 893,
+    "title": "Dice outcomes",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Two dice thrown. How many outcomes have sum equal to S?",
+    "input_format": "One integer S",
+    "output_format": "Count of outcomes",
+    "constraints": "2<=S<=12",
+    "sample_input": "7",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 894,
+    "title": "Coin toss probability",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "N fair coins tossed. Probability of exactly K heads? Output as fraction P/Q in lowest terms.",
+    "input_format": "Two integers N K",
+    "output_format": "Fraction P/Q",
+    "constraints": "0<=K<=N<=10",
+    "sample_input": "3 2",
+    "sample_output": "3/8",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 895,
+    "title": "Cards probability",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "From a deck of 52 cards, find probability of drawing a card of given suit. Output as fraction.",
+    "input_format": "One string: HEART/DIAMOND/CLUB/SPADE",
+    "output_format": "Fraction P/Q in lowest terms",
+    "constraints": "Valid suit name",
+    "sample_input": "HEART",
+    "sample_output": "1/4",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 896,
+    "title": "Word arrangements",
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "TCS"],
+    "description": "How many distinct arrangements of the letters of a given word are possible?",
+    "input_format": "One word (uppercase, no spaces)",
+    "output_format": "Count of distinct arrangements",
+    "constraints": "Length <= 10",
+    "sample_input": "MISSISSIPPI",
+    "sample_output": "34650",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 897,
+    "title": "Age after N years",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Present age of A is X. Find A's age after N years.",
+    "input_format": "Two integers X N",
+    "output_format": "Age after N years",
+    "constraints": "X,N>=0",
+    "sample_input": "25 5",
+    "sample_output": "30",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 898,
+    "title": "Age ratio problem",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Ratio of A's age to B's age is P:Q. After N years ratio becomes R:S. Find present ages.",
+    "input_format": "Six integers P Q R S N",
+    "output_format": "A's age and B's age space-separated",
+    "constraints": "Valid integer solution",
+    "sample_input": "3 4 5 6 8",
+    "sample_output": "16 20",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 899,
+    "title": "Father son age",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Father is F years old, son is S years old. After how many years will father be twice son's age?",
+    "input_format": "Two integers F S",
+    "output_format": "Years (integer)",
+    "constraints": "F > 2*S initially may vary",
+    "sample_input": "40 10",
+    "sample_output": "20",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 900,
+    "title": "Average age change",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Average age of N people is A. One person of age X leaves and person of age Y joins. New average?",
+    "input_format": "Four integers N A X Y",
+    "output_format": "New average (integer, floor)",
+    "constraints": "Valid inputs",
+    "sample_input": "10 30 50 20",
+    "sample_output": "29",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 901,
+    "title": "Age before N years",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Present age is A. What was the age N years ago?",
+    "input_format": "Two integers A N",
+    "output_format": "Age N years ago",
+    "constraints": "A>N",
+    "sample_input": "30 5",
+    "sample_output": "25",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 902,
+    "title": "Angle between hands",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Find the angle between the hour and minute hand at given time H:M.",
+    "input_format": "Two integers H M",
+    "output_format": "Angle in degrees (smaller angle, integer)",
+    "constraints": "0<=H<=11, 0<=M<=59",
+    "sample_input": "3 30",
+    "sample_output": "75",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 903,
+    "title": "Times hands coincide",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "How many times do clock hands coincide between 12:00 and 12:00 (24 hours)?",
+    "input_format": "No input (use 24)",
+    "output_format": "Count",
+    "constraints": "Always 22",
+    "sample_input": "0",
+    "sample_output": "22",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 904,
+    "title": "Clock gains time",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "A clock gains G minutes every H hours. If set correctly at 12:00 noon, what time does it show after T hours?",
+    "input_format": "Three integers G H T",
+    "output_format": "Time in HH:MM format",
+    "constraints": "Valid integer result",
+    "sample_input": "2 24 48",
+    "sample_output": "12:04",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 905,
+    "title": "Minutes to next coincidence",
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "TCS"],
+    "description": "At 3:00, after how many minutes will the hands be together?",
+    "input_format": "No input",
+    "output_format": "Minutes (as fraction M/11, output numerator)",
+    "constraints": "Always 180/11",
+    "sample_input": "0",
+    "sample_output": "180",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 906,
+    "title": "Day of week",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Given a date D/M/Y, find what day of the week it is.",
+    "input_format": "Three integers D M Y",
+    "output_format": "Day name (MONDAY etc.)",
+    "constraints": "1<=D<=31, valid date, Y>=1900",
+    "sample_input": "1 1 2024",
+    "sample_output": "MONDAY",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 907,
+    "title": "Odd days in century",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "How many odd days in N complete years? (Use standard odd-days method)",
+    "input_format": "One integer N (0,100,200,400 only for this problem)",
+    "output_format": "Odd days",
+    "constraints": "N in {0,100,200,400}",
+    "sample_input": "100",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 908,
+    "title": "Leap year check",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Check if a given year is a leap year.",
+    "input_format": "One integer Y",
+    "output_format": "YES or NO",
+    "constraints": "1<=Y<=9999",
+    "sample_input": "2000",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 909,
+    "title": "Days between dates",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Find number of days between two dates D1/M1/Y1 and D2/M2/Y2.",
+    "input_format": "Six integers D1 M1 Y1 D2 M2 Y2",
+    "output_format": "Number of days",
+    "constraints": "Valid dates, same year for simplicity",
+    "sample_input": "1 1 2024 31 12 2024",
+    "sample_output": "365",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 910,
+    "title": "Area of rectangle",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Find area of rectangle with length L and breadth B.",
+    "input_format": "Two integers L B",
+    "output_format": "Area",
+    "constraints": "1<=L,B<=10^4",
+    "sample_input": "12 5",
+    "sample_output": "60",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 911,
+    "title": "Perimeter of rectangle",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "CTS"],
+    "description": "Find perimeter of rectangle with length L and breadth B.",
+    "input_format": "Two integers L B",
+    "output_format": "Perimeter",
+    "constraints": "1<=L,B<=10^4",
+    "sample_input": "12 5",
+    "sample_output": "34",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 912,
+    "title": "Area of circle",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Find area of circle with radius R. Use pi=22/7. Output integer floor.",
+    "input_format": "One integer R",
+    "output_format": "Area (integer, floor)",
+    "constraints": "1<=R<=1000",
+    "sample_input": "7",
+    "sample_output": "154",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 913,
+    "title": "Circumference of circle",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "Accenture"],
+    "description": "Find circumference of circle with radius R. Use pi=22/7. Output integer floor.",
+    "input_format": "One integer R",
+    "output_format": "Circumference (integer, floor)",
+    "constraints": "1<=R<=1000",
+    "sample_input": "7",
+    "sample_output": "44",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 914,
+    "title": "Area of triangle",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Find area of triangle with base B and height H.",
+    "input_format": "Two integers B H",
+    "output_format": "Area (integer, floor if odd)",
+    "constraints": "1<=B,H<=10^4",
+    "sample_input": "10 6",
+    "sample_output": "30",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 915,
+    "title": "Volume of cuboid",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Find volume of cuboid with L, B, H.",
+    "input_format": "Three integers L B H",
+    "output_format": "Volume",
+    "constraints": "1<=L,B,H<=100",
+    "sample_input": "4 5 6",
+    "sample_output": "120",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 916,
+    "title": "Volume of cylinder",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Find volume of cylinder with radius R and height H. Use pi=22/7, floor result.",
+    "input_format": "Two integers R H",
+    "output_format": "Volume (integer, floor)",
+    "constraints": "1<=R,H<=100",
+    "sample_input": "7 10",
+    "sample_output": "1540",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 917,
+    "title": "Surface area of cube",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Amazon"],
+    "description": "Find total surface area of cube with side S.",
+    "input_format": "One integer S",
+    "output_format": "Surface area",
+    "constraints": "1<=S<=100",
+    "sample_input": "5",
+    "sample_output": "150",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 918,
+    "title": "Diagonal of rectangle",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "CTS"],
+    "description": "Find diagonal of rectangle with L and B. Output integer if perfect square, else floor.",
+    "input_format": "Two integers L B",
+    "output_format": "Diagonal (integer, floor)",
+    "constraints": "1<=L,B<=100",
+    "sample_input": "3 4",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 919,
+    "title": "Area of trapezium",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "HCL"],
+    "description": "Find area of trapezium: 0.5*(a+b)*h where a,b are parallel sides.",
+    "input_format": "Three integers a b h",
+    "output_format": "Area (integer, floor)",
+    "constraints": "1<=a,b,h<=100",
+    "sample_input": "6 4 5",
+    "sample_output": "25",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 920,
+    "title": "Alligation rule",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Find ratio to mix two ingredients at prices P1 and P2 to get mean price M.",
+    "input_format": "Three integers P1 P2 M",
+    "output_format": "Ratio as X:Y (P2-M : M-P1)",
+    "constraints": "P1<M<P2",
+    "sample_input": "20 30 25",
+    "sample_output": "1:1",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 921,
+    "title": "Mixture replacement",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Vessel has M litres of liquid. X litres removed and replaced with water, done N times. Final amount of original liquid?",
+    "input_format": "Three integers M X N",
+    "output_format": "Final quantity (integer, floor)",
+    "constraints": "Valid inputs",
+    "sample_input": "100 10 3",
+    "sample_output": "72",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 922,
+    "title": "Milk water ratio after mixing",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Container A has a:b milk:water. Container B has c:d milk:water. Equal volumes mixed. Final milk:water ratio?",
+    "input_format": "Four integers a b c d",
+    "output_format": "Ratio as X:Y simplified",
+    "constraints": "Valid inputs",
+    "sample_input": "3 1 1 1",
+    "sample_output": "1:1",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 923,
+    "title": "Number to words",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Convert a single digit number to its English word.",
+    "input_format": "One integer N (0-9)",
+    "output_format": "Word in uppercase",
+    "constraints": "0<=N<=9",
+    "sample_input": "5",
+    "sample_output": "FIVE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 924,
+    "title": "Binary to decimal",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Convert a binary number (given as string) to decimal.",
+    "input_format": "A binary string",
+    "output_format": "Decimal value",
+    "constraints": "Length <= 20",
+    "sample_input": "1010",
+    "sample_output": "10",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 925,
+    "title": "Decimal to binary",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Convert a decimal number to binary string.",
+    "input_format": "One integer N",
+    "output_format": "Binary string",
+    "constraints": "1<=N<=10^6",
+    "sample_input": "10",
+    "sample_output": "1010",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 926,
+    "title": "Octal to decimal",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Convert an octal number to decimal.",
+    "input_format": "One integer (octal)",
+    "output_format": "Decimal value",
+    "constraints": "Valid octal <= 10^6",
+    "sample_input": "17",
+    "sample_output": "15",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 927,
+    "title": "Hexadecimal to decimal",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Convert a hexadecimal string to decimal.",
+    "input_format": "One hex string (uppercase)",
+    "output_format": "Decimal value",
+    "constraints": "Valid hex",
+    "sample_input": "1F",
+    "sample_output": "31",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 928,
+    "title": "Next in AP",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Given first three terms of an AP, find the next term.",
+    "input_format": "Three integers",
+    "output_format": "Next term",
+    "constraints": "Valid AP",
+    "sample_input": "2 5 8",
+    "sample_output": "11",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 929,
+    "title": "Next in GP",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Given first three terms of a GP, find the next term.",
+    "input_format": "Three integers",
+    "output_format": "Next term",
+    "constraints": "Valid GP",
+    "sample_input": "2 6 18",
+    "sample_output": "54",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 930,
+    "title": "Sum of AP",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Sum of AP with first term A, common difference D, N terms.",
+    "input_format": "Three integers A D N",
+    "output_format": "Sum of N terms",
+    "constraints": "1<=N<=100",
+    "sample_input": "1 2 5",
+    "sample_output": "25",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 931,
+    "title": "Sum of GP",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "Amazon"],
+    "description": "Sum of GP with first term A, ratio R, N terms.",
+    "input_format": "Three integers A R N",
+    "output_format": "Sum (integer)",
+    "constraints": "1<=N<=10, R<=5",
+    "sample_input": "1 2 5",
+    "sample_output": "31",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 932,
+    "title": "Missing number in series",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Find the missing number: given N-1 numbers from 1 to N, find the missing one.",
+    "input_format": "First line N. Second line N-1 integers",
+    "output_format": "Missing number",
+    "constraints": "1<=N<=10^6",
+    "sample_input": "5\n1 2 4 5",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 933,
+    "title": "Odd one out in series",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Given a series of 5 numbers where 4 follow a pattern and 1 is wrong, find the wrong one.",
+    "input_format": "Five integers",
+    "output_format": "The wrong number",
+    "constraints": "Series has one outlier",
+    "sample_input": "2 4 8 15 32",
+    "sample_output": "15",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 934,
+    "title": "Linear equation solve",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Solve Ax + B = C for x.",
+    "input_format": "Three integers A B C",
+    "output_format": "Value of x (integer)",
+    "constraints": "A!=0, (C-B) divisible by A",
+    "sample_input": "3 2 11",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 935,
+    "title": "Quadratic roots",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Given Ax^2 + Bx + C = 0, find roots. Print REAL or COMPLEX.",
+    "input_format": "Three integers A B C",
+    "output_format": "REAL or COMPLEX",
+    "constraints": "A!=0",
+    "sample_input": "1 -5 6",
+    "sample_output": "REAL",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 936,
+    "title": "Two equations",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Solve: A1x+B1y=C1 and A2x+B2y=C2. Find x and y.",
+    "input_format": "Six integers A1 B1 C1 A2 B2 C2",
+    "output_format": "x and y space-separated (integers)",
+    "constraints": "Unique integer solution",
+    "sample_input": "1 1 5 2 -1 1",
+    "sample_output": "2 3",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 937,
+    "title": "Inequality solve",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Solve Ax + B > C. Find smallest integer x satisfying this.",
+    "input_format": "Three integers A B C",
+    "output_format": "Smallest integer x",
+    "constraints": "A>0",
+    "sample_input": "2 3 7",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 938,
+    "title": "Pipes A B C",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Pipes A, B, C can fill tank in X, Y, Z hours. All open together, tank fills in?",
+    "input_format": "Three integers X Y Z",
+    "output_format": "Hours (integer, floor)",
+    "constraints": "Valid integer result",
+    "sample_input": "6 8 24",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 939,
+    "title": "Boats meet middle",
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "TCS"],
+    "description": "Two boats start from opposite ends of river D km wide. Speeds A and B km/h. Where do they first meet from side A?",
+    "input_format": "Three integers D A B",
+    "output_format": "Distance from A (integer, floor)",
+    "constraints": "Valid integer",
+    "sample_input": "100 20 30",
+    "sample_output": "40",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 940,
+    "title": "Number of handshakes",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "CTS"],
+    "description": "N people in a room each shake hands with everyone else exactly once. Total handshakes?",
+    "input_format": "One integer N",
+    "output_format": "Total handshakes = N*(N-1)/2",
+    "constraints": "2<=N<=1000",
+    "sample_input": "5",
+    "sample_output": "10",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 941,
+    "title": "Staircase steps",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "A person can climb 1 or 2 stairs at a time. Ways to reach Nth stair?",
+    "input_format": "One integer N",
+    "output_format": "Number of ways",
+    "constraints": "1<=N<=30",
+    "sample_input": "5",
+    "sample_output": "8",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 942,
+    "title": "Probability of drawing ball",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "Infosys"],
+    "description": "Bag has R red, G green, B blue balls. Probability of picking red? Output as fraction.",
+    "input_format": "Three integers R G B",
+    "output_format": "Fraction P/Q in lowest terms",
+    "constraints": "R+G+B>0",
+    "sample_input": "3 4 3",
+    "sample_output": "3/10",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 943,
+    "title": "Compound ratio",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "CTS"],
+    "description": "Find compound ratio of A:B and C:D (= AC:BD simplified).",
+    "input_format": "Four integers A B C D",
+    "output_format": "Simplified ratio X:Y",
+    "constraints": "Valid integers",
+    "sample_input": "2 3 4 5",
+    "sample_output": "8:15",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 944,
+    "title": "Population growth",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "HCL"],
+    "description": "Population P grows at R% per year. Population after T years?",
+    "input_format": "Three integers P R T",
+    "output_format": "Population (integer, floor)",
+    "constraints": "P<=10^6, R<=10, T<=10",
+    "sample_input": "1000 10 2",
+    "sample_output": "1210",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 945,
+    "title": "Depreciation",
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Value V depreciates at R% per year. Value after T years?",
+    "input_format": "Three integers V R T",
+    "output_format": "Value (integer, floor)",
+    "constraints": "V<=10^6, R<=20, T<=5",
+    "sample_input": "10000 10 2",
+    "sample_output": "8100",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 946,
+    "title": "Ratio to percentage",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "Accenture"],
+    "description": "Convert ratio A:B to percentage share of A (floor).",
+    "input_format": "Two integers A B",
+    "output_format": "Percentage of A (integer, floor)",
+    "constraints": "A+B>0",
+    "sample_input": "1 4",
+    "sample_output": "20",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 947,
+    "title": "Tax calculation",
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Income I, Tax rate R%. Find tax payable.",
+    "input_format": "Two integers I R",
+    "output_format": "Tax amount (integer, floor)",
+    "constraints": "I,R>=1",
+    "sample_input": "50000 20",
+    "sample_output": "10000",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 948,
+    "title": "Letter series next",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Find the next letter in the series: A C E G ?",
+    "input_format": "A single letter series as space-separated letters",
+    "output_format": "Next letter",
+    "constraints": "Valid series",
+    "sample_input": "A C E G",
+    "sample_output": "I",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 949,
+    "title": "Number series next",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Find next number: 1 4 9 16 25 ?",
+    "input_format": "Space-separated numbers",
+    "output_format": "Next number",
+    "constraints": "Valid series",
+    "sample_input": "1 4 9 16 25",
+    "sample_output": "36",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 950,
+    "title": "Alphanumeric series",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Find next: A1 B2 C3 D4 ?",
+    "input_format": "Space-separated alphanumeric terms",
+    "output_format": "Next term",
+    "constraints": "Valid series",
+    "sample_input": "A1 B2 C3 D4",
+    "sample_output": "E5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 951,
+    "title": "Missing in series",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Find the missing number: 2 4 _ 16 32",
+    "input_format": "Five terms with one blank as 0",
+    "output_format": "Missing number",
+    "constraints": "Valid series",
+    "sample_input": "2 4 0 16 32",
+    "sample_output": "8",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 952,
+    "title": "Alternate series",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Two series interleaved: 1 2 3 4 5 6 7 8 _ What comes next?",
+    "input_format": "Space-separated series",
+    "output_format": "Next number",
+    "constraints": "Interleaved pattern",
+    "sample_input": "1 2 3 4 5 6 7 8",
+    "sample_output": "9",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 953,
+    "title": "Difference series",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Differences: 1 2 4 7 11 16 ?",
+    "input_format": "Space-separated numbers",
+    "output_format": "Next number",
+    "constraints": "Differences increase by 1",
+    "sample_input": "1 2 4 7 11 16",
+    "sample_output": "22",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 954,
+    "title": "Multiply series",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Series: 3 6 12 24 48 ?",
+    "input_format": "Space-separated numbers",
+    "output_format": "Next number",
+    "constraints": "Each term doubled",
+    "sample_input": "3 6 12 24 48",
+    "sample_output": "96",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 955,
+    "title": "Square series",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Series: 1 4 9 16 25 36 ?",
+    "input_format": "Space-separated numbers",
+    "output_format": "Next number",
+    "constraints": "Squares",
+    "sample_input": "1 4 9 16 25 36",
+    "sample_output": "49",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 956,
+    "title": "Cube series",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Series: 1 8 27 64 125 ?",
+    "input_format": "Space-separated numbers",
+    "output_format": "Next number",
+    "constraints": "Cubes",
+    "sample_input": "1 8 27 64 125",
+    "sample_output": "216",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 957,
+    "title": "Mixed operation series",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "Amazon"],
+    "description": "Series: 2 3 5 9 17 33 ?",
+    "input_format": "Space-separated numbers",
+    "output_format": "Next number",
+    "constraints": "Double previous minus something",
+    "sample_input": "2 3 5 9 17 33",
+    "sample_output": "65",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 958,
+    "title": "Caesar cipher decode",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "If APPLE is coded as DSSOH (shift+3), decode given word.",
+    "input_format": "A coded word (uppercase)",
+    "output_format": "Decoded word (uppercase)",
+    "constraints": "Shift is always 3",
+    "sample_input": "KHOOR",
+    "sample_output": "HELLO",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 959,
+    "title": "Reverse word code",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "If coding reverses each word, decode: OLLEH DLROW",
+    "input_format": "Space-separated coded words",
+    "output_format": "Original words space-separated",
+    "constraints": "Each word reversed",
+    "sample_input": "OLLEH DLROW",
+    "sample_output": "HELLO WORLD",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 960,
+    "title": "Letter shift by position",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Each letter shifted by its 1-indexed position. A(+1)=B, P(+2)=R... Encode given word.",
+    "input_format": "A word (uppercase)",
+    "output_format": "Encoded word",
+    "constraints": "Standard alphabet shift",
+    "sample_input": "ACE",
+    "sample_output": "BEI",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 961,
+    "title": "Number to letter code",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "A=1, B=2...Z=26. Decode space-separated numbers to word.",
+    "input_format": "Space-separated integers",
+    "output_format": "Decoded word (uppercase)",
+    "constraints": "1<=each<=26",
+    "sample_input": "8 5 12 12 15",
+    "sample_output": "HELLO",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 962,
+    "title": "Letter to number code",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Encode a word: replace each letter with its position (A=1, B=2...). Space-separated.",
+    "input_format": "A word (uppercase)",
+    "output_format": "Space-separated numbers",
+    "constraints": "Valid word",
+    "sample_input": "JAVA",
+    "sample_output": "10 1 22 1",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 963,
+    "title": "Mirror alphabet",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Mirror alphabet: A=Z, B=Y... Encode given word.",
+    "input_format": "A word (uppercase)",
+    "output_format": "Encoded word",
+    "constraints": "A<->Z, B<->Y etc.",
+    "sample_input": "HELLO",
+    "sample_output": "SVOOL",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 964,
+    "title": "Even letters only",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Extract only letters at even positions (1-indexed: 2,4,6...) from word.",
+    "input_format": "A word (uppercase)",
+    "output_format": "Even-position letters",
+    "constraints": "Length>=2",
+    "sample_input": "ABCDEF",
+    "sample_output": "BDF",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 965,
+    "title": "Skip one letter",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "If A is coded as C (skip one), B as D... encode given word.",
+    "input_format": "A word (uppercase)",
+    "output_format": "Encoded word",
+    "constraints": "Skip 2 letters",
+    "sample_input": "HELLO",
+    "sample_output": "JGNNQ",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 966,
+    "title": "Interleave two words",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Interleave letters of two words: AB + CD = ACBD. Given result, find original two words of equal length.",
+    "input_format": "One interleaved word (uppercase, even length)",
+    "output_format": "Two words space-separated",
+    "constraints": "Equal length halves",
+    "sample_input": "ACBD",
+    "sample_output": "AB CD",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 967,
+    "title": "Number code pattern",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "Amazon"],
+    "description": "If 123 = 6 (sum of digits), 456 = 15... what is 789?",
+    "input_format": "One 3-digit number",
+    "output_format": "Sum of its digits",
+    "constraints": "Digit sum pattern",
+    "sample_input": "789",
+    "sample_output": "24",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 968,
+    "title": "Parent child",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "A is B's father. B is C's son. What is A to C?",
+    "input_format": "Index 1",
+    "output_format": "GRANDFATHER",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "GRANDFATHER",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 969,
+    "title": "Sibling relation",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "A is B's brother. B is C's sister. What is A to C?",
+    "input_format": "Index 1",
+    "output_format": "BROTHER",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "BROTHER",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 970,
+    "title": "Mother's brother",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "What do you call your mother's brother?",
+    "input_format": "Index 1",
+    "output_format": "UNCLE",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "UNCLE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 971,
+    "title": "Father's sister's son",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "What is your father's sister's son to you?",
+    "input_format": "Index 1",
+    "output_format": "COUSIN",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "COUSIN",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 972,
+    "title": "Grandmother relation",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "A's mother is B's grandmother. What is A to B?",
+    "input_format": "Index 1",
+    "output_format": "PARENT",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "PARENT",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 973,
+    "title": "Son's wife",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "What do you call your son's wife?",
+    "input_format": "Index 1",
+    "output_format": "DAUGHTER-IN-LAW",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "DAUGHTER-IN-LAW",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 974,
+    "title": "Pointing relation",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "A says pointing to B: He is the son of my father's only son. Who is B to A?",
+    "input_format": "Index 1",
+    "output_format": "SON",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "SON",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 975,
+    "title": "Sister's husband",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "What do you call your sister's husband?",
+    "input_format": "Index 1",
+    "output_format": "BROTHER-IN-LAW",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "BROTHER-IN-LAW",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 976,
+    "title": "Final direction",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Person walks North 5km, turns right 3km, turns right 5km. Which direction facing?",
+    "input_format": "Index 1",
+    "output_format": "WEST",
+    "constraints": "Fixed problem",
+    "sample_input": "1",
+    "sample_output": "WEST",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 977,
+    "title": "Distance from start",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Person walks East 3km, North 4km. Straight line distance from start?",
+    "input_format": "Index 1",
+    "output_format": "5 km",
+    "constraints": "Pythagorean triple",
+    "sample_input": "1",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 978,
+    "title": "Opposite direction",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Facing South, turn left 90 degrees. Now facing?",
+    "input_format": "Index 1",
+    "output_format": "EAST",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "EAST",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 979,
+    "title": "Shadow direction",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Morning (sun in East). Person faces North. Shadow falls in which direction?",
+    "input_format": "Index 1",
+    "output_format": "WEST",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "WEST",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 980,
+    "title": "Sunset shadow",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Evening (sun in West). Person faces South. Shadow falls in which direction?",
+    "input_format": "Index 1",
+    "output_format": "EAST",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "EAST",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 981,
+    "title": "Four turns",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Start facing North. Turn right, right, left. Final direction?",
+    "input_format": "Index 1",
+    "output_format": "EAST",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "EAST",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 982,
+    "title": "Compass bearing",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Which direction is opposite to North-West?",
+    "input_format": "Index 1",
+    "output_format": "SOUTH-EAST",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "SOUTH-EAST",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 983,
+    "title": "Return direction",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Walked West to reach B from A. To return from B to A, walk in which direction?",
+    "input_format": "Index 1",
+    "output_format": "EAST",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "EAST",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 984,
+    "title": "Rank from top",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "In a class of N students, A ranks R from top. What is A's rank from bottom?",
+    "input_format": "Two integers N R",
+    "output_format": "Rank from bottom = N-R+1",
+    "constraints": "N>=R>=1",
+    "sample_input": "40 10",
+    "sample_output": "31",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 985,
+    "title": "Rank from bottom",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Total N students. Rank from bottom is B. Rank from top?",
+    "input_format": "Two integers N B",
+    "output_format": "Rank from top = N-B+1",
+    "constraints": "N>=B>=1",
+    "sample_input": "50 15",
+    "sample_output": "36",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 986,
+    "title": "Position between two",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "HCL"],
+    "description": "A is R1 from top, B is R2 from bottom in a row of N. How many are between them?",
+    "input_format": "Three integers N R1 R2",
+    "output_format": "People between them",
+    "constraints": "Valid positions",
+    "sample_input": "10 3 4",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 987,
+    "title": "Tallest in row",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Given N heights, output rank (from tallest) of each person.",
+    "input_format": "First line N, second line N heights",
+    "output_format": "Space-separated ranks",
+    "constraints": "N<=20",
+    "sample_input": "5\n170 165 180 175 160",
+    "sample_output": "3 4 1 2 5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 988,
+    "title": "Minimum rank",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Given N scores, find minimum possible rank if ties share the same rank.",
+    "input_format": "First line N, second line N scores, third line target score X",
+    "output_format": "Minimum rank of person with score X",
+    "constraints": "N<=20",
+    "sample_input": "5\n85 90 85 70 90\n85",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 989,
+    "title": "All A are B",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Premises: All cats are animals. All animals are living. Conclusion: All cats are living?",
+    "input_format": "Index 1",
+    "output_format": "TRUE",
+    "constraints": "Valid syllogism",
+    "sample_input": "1",
+    "sample_output": "TRUE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 990,
+    "title": "Some A are B",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Premises: Some dogs are pets. All pets are friendly. Conclusion: Some dogs are friendly?",
+    "input_format": "Index 1",
+    "output_format": "TRUE",
+    "constraints": "Valid syllogism",
+    "sample_input": "1",
+    "sample_output": "TRUE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 991,
+    "title": "No A are B",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Premises: No cat is a dog. All dogs bark. Conclusion: No cat barks?",
+    "input_format": "Index 1",
+    "output_format": "FALSE",
+    "constraints": "Invalid conclusion",
+    "sample_input": "1",
+    "sample_output": "FALSE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 992,
+    "title": "Some not",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Premises: Some students are smart. Some smart people are rich. Conclusion: Some students are rich?",
+    "input_format": "Index 1",
+    "output_format": "FALSE",
+    "constraints": "Not necessarily true",
+    "sample_input": "1",
+    "sample_output": "FALSE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 993,
+    "title": "Universal affirmative",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "All roses are flowers. Some flowers fade. Some roses fade?",
+    "input_format": "Index 1",
+    "output_format": "FALSE",
+    "constraints": "Not necessarily true",
+    "sample_input": "1",
+    "sample_output": "FALSE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 994,
+    "title": "Seating arrangement circle",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "5 people A B C D E sit in circle. A is between B and C. D is to immediate right of C. Who is to immediate right of A?",
+    "input_format": "Index 1",
+    "output_format": "B",
+    "constraints": "Fixed puzzle",
+    "sample_input": "1",
+    "sample_output": "B",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 995,
+    "title": "Who is tallest",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "A>B, C>A, D<B, E>C. Who is tallest?",
+    "input_format": "Index 1",
+    "output_format": "E",
+    "constraints": "Fixed puzzle",
+    "sample_input": "1",
+    "sample_output": "E",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 996,
+    "title": "Who is shortest",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "A>B, C>A, D<B, E>C. Who is shortest?",
+    "input_format": "Index 1",
+    "output_format": "D",
+    "constraints": "Fixed puzzle",
+    "sample_input": "1",
+    "sample_output": "D",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 997,
+    "title": "Box stacking",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Box A on top of B. B on top of C. D is below C. Which box is at bottom?",
+    "input_format": "Index 1",
+    "output_format": "D",
+    "constraints": "Fixed puzzle",
+    "sample_input": "1",
+    "sample_output": "D",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 998,
+    "title": "Floor puzzle",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "6-floor building. A lives above B. B lives above C. C is on floor 2. A is on floor?",
+    "input_format": "Index 1",
+    "output_format": "4",
+    "constraints": "Variable — use 4",
+    "sample_input": "1",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 999,
+    "title": "Age ordering",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Ram is older than Shyam. Shyam is older than Mohan. Who is youngest?",
+    "input_format": "Index 1",
+    "output_format": "MOHAN",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "MOHAN",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1000,
+    "title": "Weight ordering",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "P > Q > R. Q > S. Who is heaviest?",
+    "input_format": "Index 1",
+    "output_format": "P",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "P",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1001,
+    "title": "Between in order",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "A B C D E stand in line. C is between A and E. B is between A and C. Who is second from left?",
+    "input_format": "Index 1",
+    "output_format": "B",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "B",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1002,
+    "title": "Odd number out",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Find the odd one out: 2 3 5 7 9 11",
+    "input_format": "Space-separated numbers",
+    "output_format": "The odd one out",
+    "constraints": "One not prime",
+    "sample_input": "2 3 5 7 9 11",
+    "sample_output": "9",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1003,
+    "title": "Odd shape out",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Odd one out: CIRCLE SQUARE TRIANGLE CUBE RECTANGLE",
+    "input_format": "Space-separated words",
+    "output_format": "The odd one out",
+    "constraints": "3D vs 2D",
+    "sample_input": "CIRCLE SQUARE TRIANGLE CUBE RECTANGLE",
+    "sample_output": "CUBE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1004,
+    "title": "Odd fruit out",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Odd one out: APPLE MANGO CARROT BANANA GRAPE",
+    "input_format": "Space-separated words",
+    "output_format": "The odd one out",
+    "constraints": "Vegetable among fruits",
+    "sample_input": "APPLE MANGO CARROT BANANA GRAPE",
+    "sample_output": "CARROT",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1005,
+    "title": "Odd mammal out",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Odd one out: DOG CAT SNAKE LION TIGER",
+    "input_format": "Space-separated words",
+    "output_format": "The odd one out",
+    "constraints": "Reptile among mammals",
+    "sample_input": "DOG CAT SNAKE LION TIGER",
+    "sample_output": "SNAKE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1006,
+    "title": "Odd number pattern",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Odd one out: 6 10 15 21 28",
+    "input_format": "Space-separated numbers",
+    "output_format": "The odd one out",
+    "constraints": "One not triangular",
+    "sample_input": "6 10 15 21 28",
+    "sample_output": "10",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1007,
+    "title": "Odd instrument out",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Odd one out: GUITAR VIOLIN FLUTE DRUMS SITAR",
+    "input_format": "Space-separated words",
+    "output_format": "The odd one out",
+    "constraints": "Wind instrument",
+    "sample_input": "GUITAR VIOLIN FLUTE DRUMS SITAR",
+    "sample_output": "FLUTE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1008,
+    "title": "Odd planet out",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Odd one out: MARS VENUS MOON EARTH SATURN",
+    "input_format": "Space-separated words",
+    "output_format": "The odd one out",
+    "constraints": "Not a planet",
+    "sample_input": "MARS VENUS MOON EARTH SATURN",
+    "sample_output": "MOON",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1009,
+    "title": "Word analogy",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Doctor : Hospital :: Teacher : ?",
+    "input_format": "Index 1",
+    "output_format": "SCHOOL",
+    "constraints": "Fixed analogy",
+    "sample_input": "1",
+    "sample_output": "SCHOOL",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1010,
+    "title": "Tool analogy",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Pen : Write :: Knife : ?",
+    "input_format": "Index 1",
+    "output_format": "CUT",
+    "constraints": "Fixed analogy",
+    "sample_input": "1",
+    "sample_output": "CUT",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1011,
+    "title": "Animal sound analogy",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Dog : Bark :: Cat : ?",
+    "input_format": "Index 1",
+    "output_format": "MEOW",
+    "constraints": "Fixed analogy",
+    "sample_input": "1",
+    "sample_output": "MEOW",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1012,
+    "title": "Young one analogy",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Cow : Calf :: Horse : ?",
+    "input_format": "Index 1",
+    "output_format": "FOAL",
+    "constraints": "Fixed analogy",
+    "sample_input": "1",
+    "sample_output": "FOAL",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1013,
+    "title": "Capital analogy",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "India : Delhi :: Japan : ?",
+    "input_format": "Index 1",
+    "output_format": "TOKYO",
+    "constraints": "Fixed analogy",
+    "sample_input": "1",
+    "sample_output": "TOKYO",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1014,
+    "title": "Number analogy",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "4 : 16 :: 5 : ?",
+    "input_format": "Index 1",
+    "output_format": "25",
+    "constraints": "Squares",
+    "sample_input": "1",
+    "sample_output": "25",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1015,
+    "title": "Cube analogy",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "2 : 8 :: 3 : ?",
+    "input_format": "Index 1",
+    "output_format": "27",
+    "constraints": "Cubes",
+    "sample_input": "1",
+    "sample_output": "27",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1016,
+    "title": "Opposite analogy",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Hot : Cold :: Day : ?",
+    "input_format": "Index 1",
+    "output_format": "NIGHT",
+    "constraints": "Opposites",
+    "sample_input": "1",
+    "sample_output": "NIGHT",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1017,
+    "title": "Part to whole",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Page : Book :: Brick : ?",
+    "input_format": "Index 1",
+    "output_format": "WALL",
+    "constraints": "Fixed analogy",
+    "sample_input": "1",
+    "sample_output": "WALL",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1018,
+    "title": "Worker place",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Amazon"],
+    "description": "Farmer : Field :: Soldier : ?",
+    "input_format": "Index 1",
+    "output_format": "BATTLEFIELD",
+    "constraints": "Fixed analogy",
+    "sample_input": "1",
+    "sample_output": "BATTLEFIELD",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1019,
+    "title": "2x2 matrix pattern",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Matrix: 1 2 / 3 ? Pattern: each row sum equals 5. Find ?.",
+    "input_format": "Index 1",
+    "output_format": "2",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1020,
+    "title": "3x3 magic square check",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Given a 3x3 matrix, check if it is a magic square (all rows, cols, diagonals equal sum).",
+    "input_format": "9 integers (row by row)",
+    "output_format": "YES or NO",
+    "constraints": "Valid 3x3 matrix",
+    "sample_input": "2 7 6 9 5 1 4 3 8",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1021,
+    "title": "Row sum pattern",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Each row of matrix sums to same value. Row1: 3 5 7, Row2: 4 ? 8. Find ?.",
+    "input_format": "Index 1",
+    "output_format": "3",
+    "constraints": "Sum pattern",
+    "sample_input": "1",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1022,
+    "title": "Diagonal sum",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Find sum of primary diagonal of NxN matrix.",
+    "input_format": "First line N, then N*N integers row by row",
+    "output_format": "Sum of primary diagonal",
+    "constraints": "1<=N<=10",
+    "sample_input": "3\n1 2 3 4 5 6 7 8 9",
+    "sample_output": "15",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1023,
+    "title": "Rotate matrix 90",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Rotate a 2x2 matrix 90 degrees clockwise. Print result row by row.",
+    "input_format": "4 integers (2x2 row by row)",
+    "output_format": "4 integers (rotated, row by row)",
+    "constraints": "2x2 only",
+    "sample_input": "1 2 3 4",
+    "sample_output": "3 1 4 2",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1024,
+    "title": "Time forward",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Current time is H:M. What time is it after X minutes?",
+    "input_format": "Three integers H M X",
+    "output_format": "Time as HH:MM",
+    "constraints": "0<=H<=23, 0<=M<=59, X>=0",
+    "sample_input": "10 45 30",
+    "sample_output": "11:15",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1025,
+    "title": "Time backward",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Current time is H:M. What was the time X minutes ago?",
+    "input_format": "Three integers H M X",
+    "output_format": "Time as HH:MM",
+    "constraints": "0<=H<=23, 0<=M<=59",
+    "sample_input": "10 15 30",
+    "sample_output": "9:45",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1026,
+    "title": "Hours between times",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "From H1:M1 to H2:M2, how many minutes?",
+    "input_format": "Four integers H1 M1 H2 M2",
+    "output_format": "Minutes difference",
+    "constraints": "H2>H1 or same hour M2>M1",
+    "sample_input": "9 30 11 00",
+    "sample_output": "90",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1027,
+    "title": "Fast clock",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Clock shows 10:00 but is 15 minutes fast. Actual time?",
+    "input_format": "Index 1",
+    "output_format": "9:45",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "9:45",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1028,
+    "title": "Slow clock",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Clock shows 3:00 but is 20 minutes slow. Actual time?",
+    "input_format": "Index 1",
+    "output_format": "3:20",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "3:20",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1029,
+    "title": "Day after N days",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "If today is MONDAY and N=10, what day is it after N days?",
+    "input_format": "Two inputs: day name and N",
+    "output_format": "Day name",
+    "constraints": "Valid day and N>=0",
+    "sample_input": "MONDAY 10",
+    "sample_output": "THURSDAY",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1030,
+    "title": "Day before N days",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "If today is FRIDAY and N=3, what day was it N days ago?",
+    "input_format": "Two inputs: day name and N",
+    "output_format": "Day name",
+    "constraints": "Valid",
+    "sample_input": "FRIDAY 3",
+    "sample_output": "TUESDAY",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1031,
+    "title": "Day of week for date",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Given 1 Jan 2024 is Monday, what day is 1 Feb 2024? (2024 is leap year)",
+    "input_format": "Index 1",
+    "output_format": "THURSDAY",
+    "constraints": "Jan has 31 days, 31 mod 7 = 3",
+    "sample_input": "1",
+    "sample_output": "THURSDAY",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1032,
+    "title": "Week number",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Day D of a month falls on Wednesday. What day is D+7?",
+    "input_format": "Index 1",
+    "output_format": "WEDNESDAY",
+    "constraints": "Same day +7",
+    "sample_input": "1",
+    "sample_output": "WEDNESDAY",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1033,
+    "title": "Months with 31 days",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "How many months in a year have exactly 31 days?",
+    "input_format": "Index 1",
+    "output_format": "7",
+    "constraints": "Fixed fact",
+    "sample_input": "1",
+    "sample_output": "7",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1034,
+    "title": "Leap year days",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "How many days are in a leap year?",
+    "input_format": "Index 1",
+    "output_format": "366",
+    "constraints": "Fixed fact",
+    "sample_input": "1",
+    "sample_output": "366",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1035,
+    "title": "Century leap year",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Is the year 1900 a leap year?",
+    "input_format": "Index 1",
+    "output_format": "NO",
+    "constraints": "Divisible by 100 but not 400",
+    "sample_input": "1",
+    "sample_output": "NO",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1036,
+    "title": "If-then logic",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "If all cats are black and Tom is a cat, is Tom black?",
+    "input_format": "Index 1",
+    "output_format": "YES",
+    "constraints": "Modus ponens",
+    "sample_input": "1",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1037,
+    "title": "Negation logic",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "If it rains, the ground is wet. The ground is not wet. Did it rain?",
+    "input_format": "Index 1",
+    "output_format": "NO",
+    "constraints": "Modus tollens",
+    "sample_input": "1",
+    "sample_output": "NO",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1038,
+    "title": "Contrapositive",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "HCL"],
+    "description": "If P then Q is true. Q is false. What about P?",
+    "input_format": "Index 1",
+    "output_format": "FALSE",
+    "constraints": "Contrapositive",
+    "sample_input": "1",
+    "sample_output": "FALSE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1039,
+    "title": "And logic",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "A=TRUE, B=FALSE. A AND B?",
+    "input_format": "Index 1",
+    "output_format": "FALSE",
+    "constraints": "Boolean AND",
+    "sample_input": "1",
+    "sample_output": "FALSE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1040,
+    "title": "Or logic",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "A=TRUE, B=FALSE. A OR B?",
+    "input_format": "Index 1",
+    "output_format": "TRUE",
+    "constraints": "Boolean OR",
+    "sample_input": "1",
+    "sample_output": "TRUE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1041,
+    "title": "XOR logic",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "A=TRUE, B=TRUE. A XOR B?",
+    "input_format": "Index 1",
+    "output_format": "FALSE",
+    "constraints": "Boolean XOR",
+    "sample_input": "1",
+    "sample_output": "FALSE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1042,
+    "title": "NOT logic",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "A=FALSE. NOT A?",
+    "input_format": "Index 1",
+    "output_format": "TRUE",
+    "constraints": "Boolean NOT",
+    "sample_input": "1",
+    "sample_output": "TRUE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1043,
+    "title": "NAND logic",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "A=TRUE, B=TRUE. A NAND B?",
+    "input_format": "Index 1",
+    "output_format": "FALSE",
+    "constraints": "NAND gate",
+    "sample_input": "1",
+    "sample_output": "FALSE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1044,
+    "title": "Odd or even",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Given N, output ODD or EVEN.",
+    "input_format": "One integer N",
+    "output_format": "ODD or EVEN",
+    "constraints": "Any integer",
+    "sample_input": "7",
+    "sample_output": "ODD",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1045,
+    "title": "Positive negative zero",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Given N, output POSITIVE, NEGATIVE, or ZERO.",
+    "input_format": "One integer N",
+    "output_format": "Result",
+    "constraints": "Any integer",
+    "sample_input": "-5",
+    "sample_output": "NEGATIVE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1046,
+    "title": "Divisible by 3",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Is N divisible by 3?",
+    "input_format": "One integer N",
+    "output_format": "YES or NO",
+    "constraints": "1<=N<=10^9",
+    "sample_input": "123",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1047,
+    "title": "Divisible by both 3 and 5",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Is N divisible by both 3 and 5?",
+    "input_format": "One integer N",
+    "output_format": "YES or NO",
+    "constraints": "1<=N<=10^9",
+    "sample_input": "15",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1048,
+    "title": "Multiple of 7",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Is N a multiple of 7?",
+    "input_format": "One integer N",
+    "output_format": "YES or NO",
+    "constraints": "1<=N<=10^6",
+    "sample_input": "49",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1049,
+    "title": "Sum odd or even",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Sum of first N natural numbers — is it odd or even?",
+    "input_format": "One integer N",
+    "output_format": "ODD or EVEN",
+    "constraints": "1<=N<=10^6",
+    "sample_input": "3",
+    "sample_output": "ODD",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1050,
+    "title": "Product sign",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Given N integers, is their product positive, negative, or zero?",
+    "input_format": "First line N, second line N integers",
+    "output_format": "POSITIVE, NEGATIVE, or ZERO",
+    "constraints": "N<=20",
+    "sample_input": "4\n2 -3 4 -1",
+    "sample_output": "POSITIVE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1051,
+    "title": "Largest of three",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Find the largest of three given integers.",
+    "input_format": "Three integers",
+    "output_format": "Largest integer",
+    "constraints": "Any integers",
+    "sample_input": "5 3 8",
+    "sample_output": "8",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1052,
+    "title": "Middle of three",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Find the middle value of three distinct integers.",
+    "input_format": "Three integers",
+    "output_format": "Middle value",
+    "constraints": "Distinct integers",
+    "sample_input": "5 3 8",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1053,
+    "title": "Count positives",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Amazon"],
+    "description": "Count positive numbers in an array.",
+    "input_format": "First line N, second line N integers",
+    "output_format": "Count of positives",
+    "constraints": "N<=100",
+    "sample_input": "5\n-1 2 -3 4 5",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1054,
+    "title": "Synonym",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Synonym of HAPPY?",
+    "input_format": "Index 1",
+    "output_format": "JOYFUL",
+    "constraints": "Vocabulary",
+    "sample_input": "1",
+    "sample_output": "JOYFUL",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1055,
+    "title": "Antonym",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Antonym of BRAVE?",
+    "input_format": "Index 1",
+    "output_format": "COWARDLY",
+    "constraints": "Vocabulary",
+    "sample_input": "1",
+    "sample_output": "COWARDLY",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1056,
+    "title": "Odd word out meaning",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Odd one out by meaning: JOY HAPPINESS SORROW DELIGHT",
+    "input_format": "Space-separated words",
+    "output_format": "The odd word",
+    "constraints": "Negative emotion",
+    "sample_input": "JOY HAPPINESS SORROW DELIGHT",
+    "sample_output": "SORROW",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1057,
+    "title": "Complete the proverb",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Complete: All that glitters is not _",
+    "input_format": "Index 1",
+    "output_format": "GOLD",
+    "constraints": "Famous proverb",
+    "sample_input": "1",
+    "sample_output": "GOLD",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1058,
+    "title": "Fill in blank",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "A __ of lions is called a pride.",
+    "input_format": "Index 1",
+    "output_format": "GROUP",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "GROUP",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1059,
+    "title": "Collective noun",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Collective noun for fish?",
+    "input_format": "Index 1",
+    "output_format": "SCHOOL",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "SCHOOL",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1060,
+    "title": "Plural of mouse",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Plural of MOUSE?",
+    "input_format": "Index 1",
+    "output_format": "MICE",
+    "constraints": "Irregular plural",
+    "sample_input": "1",
+    "sample_output": "MICE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1061,
+    "title": "Feminine of actor",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Feminine of ACTOR?",
+    "input_format": "Index 1",
+    "output_format": "ACTRESS",
+    "constraints": "Fixed",
+    "sample_input": "1",
+    "sample_output": "ACTRESS",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1062,
+    "title": "Implicit assumption",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Statement: Please do not use lift in case of fire. Assumption: Lift is available in building. Valid?",
+    "input_format": "Index 1",
+    "output_format": "YES",
+    "constraints": "Implicit",
+    "sample_input": "1",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1063,
+    "title": "Cause and effect",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "There was heavy rain. Streets were flooded. Which is cause?",
+    "input_format": "Index 1",
+    "output_format": "HEAVY RAIN",
+    "constraints": "Cause-effect",
+    "sample_input": "1",
+    "sample_output": "HEAVY RAIN",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1064,
+    "title": "Conclusion valid",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Statement: Most students passed. Conclusion: Some students failed. Valid?",
+    "input_format": "Index 1",
+    "output_format": "YES",
+    "constraints": "Most implies some failed",
+    "sample_input": "1",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1065,
+    "title": "Strong argument",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Should voting age be 18? Argument: Young people are responsible citizens. Strong?",
+    "input_format": "Index 1",
+    "output_format": "YES",
+    "constraints": "Reasonable argument",
+    "sample_input": "1",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1066,
+    "title": "Course of action",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Problem: Roads are damaged. Action: Repair roads immediately. Appropriate?",
+    "input_format": "Index 1",
+    "output_format": "YES",
+    "constraints": "Direct solution",
+    "sample_input": "1",
+    "sample_output": "YES",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1067,
+    "title": "Handshake formula",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "N people meet and each shakes hands with all others once. Total handshakes?",
+    "input_format": "One integer N",
+    "output_format": "N*(N-1)/2",
+    "constraints": "N>=2",
+    "sample_input": "6",
+    "sample_output": "15",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1068,
+    "title": "Matches in knockout",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "In a knockout tournament with N teams, how many matches?",
+    "input_format": "One integer N",
+    "output_format": "N-1",
+    "constraints": "N>=2",
+    "sample_input": "16",
+    "sample_output": "15",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1069,
+    "title": "Diagonals of polygon",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Number of diagonals of an N-sided polygon = N*(N-3)/2.",
+    "input_format": "One integer N",
+    "output_format": "Number of diagonals",
+    "constraints": "N>=4",
+    "sample_input": "6",
+    "sample_output": "9",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1070,
+    "title": "Regions in circle",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "N chords divide circle into max how many regions? Formula: (N^2+N+2)/2",
+    "input_format": "One integer N",
+    "output_format": "Max regions",
+    "constraints": "N>=0",
+    "sample_input": "4",
+    "sample_output": "11",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1071,
+    "title": "Handshake in circle",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "N people sit in circle, each shakes with immediate neighbours only. Total handshakes?",
+    "input_format": "One integer N",
+    "output_format": "N handshakes",
+    "constraints": "N>=3",
+    "sample_input": "5",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1072,
+    "title": "Squares on chessboard",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["CTS", "HCL"],
+    "description": "How many squares of all sizes on 8x8 chessboard?",
+    "input_format": "Index 1",
+    "output_format": "204",
+    "constraints": "Sum 1^2+2^2+...+8^2",
+    "sample_input": "1",
+    "sample_output": "204",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1073,
+    "title": "Rectangles on chessboard",
+    "category": "Logical Reasoning",
+    "difficulty": "Hard",
+    "company_tags": ["TCS", "Amazon"],
+    "description": "How many rectangles of all sizes on 8x8 chessboard?",
+    "input_format": "Index 1",
+    "output_format": "1296",
+    "constraints": "C(9,2)*C(9,2)",
+    "sample_input": "1",
+    "sample_output": "1296",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1074,
+    "title": "Triangles in figure",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["Wipro", "Infosys"],
+    "description": "How many triangles in a figure with N=3 triangles pointing up and down in a row?",
+    "input_format": "One integer N",
+    "output_format": "Count (N=3 gives 13)",
+    "constraints": "N=3",
+    "sample_input": "3",
+    "sample_output": "13",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1075,
+    "title": "Coin puzzle",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "CTS"],
+    "description": "Make 5 rows with 4 coins each. Minimum coins needed?",
+    "input_format": "Index 1",
+    "output_format": "10",
+    "constraints": "Star arrangement",
+    "sample_input": "1",
+    "sample_output": "10",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1076,
+    "title": "Water jug problem",
+    "category": "Logical Reasoning",
+    "difficulty": "Medium",
+    "company_tags": ["HCL", "Infosys"],
+    "description": "You have 3L and 5L jugs. Measure exactly 4L. How many steps minimum?",
+    "input_format": "Index 1",
+    "output_format": "6",
+    "constraints": "Classic puzzle",
+    "sample_input": "1",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1077,
+    "title": "Double and add one",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Machine rule: output = 2*input + 1. Input is 7. Output?",
+    "input_format": "One integer input",
+    "output_format": "Output",
+    "constraints": "Any integer",
+    "sample_input": "7",
+    "sample_output": "15",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1078,
+    "title": "Square and subtract",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Machine rule: output = input^2 - 1. Input is 5. Output?",
+    "input_format": "One integer input",
+    "output_format": "Output",
+    "constraints": "Any integer",
+    "sample_input": "5",
+    "sample_output": "24",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1079,
+    "title": "Reverse and add",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "Machine rule: reverse the number then add original. Input=12. Output?",
+    "input_format": "One integer input",
+    "output_format": "Output",
+    "constraints": "1<=input<=999",
+    "sample_input": "12",
+    "sample_output": "33",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1080,
+    "title": "Sum of squares",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Machine: sum of squares of digits. Input=13. Output?",
+    "input_format": "One integer input",
+    "output_format": "Sum of squares of digits",
+    "constraints": "1<=input<=999",
+    "sample_input": "13",
+    "sample_output": "10",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1081,
+    "title": "Digit product",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Machine: product of digits. Input=234. Output?",
+    "input_format": "One integer input",
+    "output_format": "Product of digits",
+    "constraints": "1<=input<=9999",
+    "sample_input": "234",
+    "sample_output": "24",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1082,
+    "title": "True false basic",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "All squares are rectangles. True or False?",
+    "input_format": "Index 1",
+    "output_format": "TRUE",
+    "constraints": "Geometry fact",
+    "sample_input": "1",
+    "sample_output": "TRUE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1083,
+    "title": "Triangle angles",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "Sum of angles of a triangle is 180 degrees. True or False?",
+    "input_format": "Index 1",
+    "output_format": "TRUE",
+    "constraints": "Geometry fact",
+    "sample_input": "1",
+    "sample_output": "TRUE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1084,
+    "title": "Prime definition",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "HCL"],
+    "description": "1 is a prime number. True or False?",
+    "input_format": "Index 1",
+    "output_format": "FALSE",
+    "constraints": "1 is not prime",
+    "sample_input": "1",
+    "sample_output": "FALSE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1085,
+    "title": "Even prime",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "2 is the only even prime number. True or False?",
+    "input_format": "Index 1",
+    "output_format": "TRUE",
+    "constraints": "Math fact",
+    "sample_input": "1",
+    "sample_output": "TRUE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1086,
+    "title": "Zero is even",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Zero is an even number. True or False?",
+    "input_format": "Index 1",
+    "output_format": "TRUE",
+    "constraints": "Math fact",
+    "sample_input": "1",
+    "sample_output": "TRUE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1087,
+    "title": "Negative prime",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["CTS", "HCL"],
+    "description": "Negative numbers can be prime. True or False?",
+    "input_format": "Index 1",
+    "output_format": "FALSE",
+    "constraints": "Primes are positive",
+    "sample_input": "1",
+    "sample_output": "FALSE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1088,
+    "title": "Square root 2",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Square root of 2 is rational. True or False?",
+    "input_format": "Index 1",
+    "output_format": "FALSE",
+    "constraints": "Irrational number",
+    "sample_input": "1",
+    "sample_output": "FALSE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1089,
+    "title": "Divisibility rule 9",
+    "category": "Logical Reasoning",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "CTS"],
+    "description": "A number is divisible by 9 if sum of its digits is divisible by 9. True or False?",
+    "input_format": "Index 1",
+    "output_format": "TRUE",
+    "constraints": "Divisibility rule",
+    "sample_input": "1",
+    "sample_output": "TRUE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
 ];
 
 export const getCategories = () => [...new Set(problems.map(p => p.category))];
