@@ -27188,7 +27188,705 @@ public class Main {
     }
 }`
     }
-  }
+  },
+  {
+    "id": 1190,
+    "title": "Alphabet Pattern – Right Triangle (A B C…)",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Print a right-angled triangle of alphabets where each row i contains alphabets A through the i-th letter.",
+    "input_format": "n=5",
+    "output_format": "A\nAB\nABC\nABCD\nABCDE",
+    "constraints": "5 rows. Use nested loops.",
+    "sample_input": "n=5",
+    "sample_output": "A\nAB\nABC\nABCD\nABCDE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Row i: print letters A to (char)('A'+i-1)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1191,
+    "title": "Alphabet Pattern – Repeated Letter Per Row",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Print a pattern where each row i contains the i-th letter repeated i times: row 1 has A, row 2 has BB, row 3 has CCC, and so on for 5 rows.",
+    "input_format": "n=5",
+    "output_format": "A\nBB\nCCC\nDDDD\nEEEEE",
+    "constraints": "5 rows.",
+    "sample_input": "n=5",
+    "sample_output": "A\nBB\nCCC\nDDDD\nEEEEE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Row i: print letter (char)('A'+i-1) repeated i times
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1192,
+    "title": "Alphabet Pattern – Pyramid of Letters",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Cognizant"],
+    "description": "Print a centred pyramid using alphabets. Row 1 has A at the tip, each row uses the next letter and is centred with leading spaces. 5 rows total.",
+    "input_format": "n=5",
+    "output_format": "    A\n   BBB\n  CCCCC\n DDDDDDD\nEEEEEEEEE",
+    "constraints": "5 rows. Centre-align using spaces.",
+    "sample_input": "n=5",
+    "sample_output": "    A\n   BBB\n  CCCCC\n DDDDDDD\nEEEEEEEEE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Row i: print (n-i) spaces, then (2*i-1) copies of (char)('A'+i-1)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1193,
+    "title": "Alphabet Pattern – Diamond of Letters",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Amazon"],
+    "description": "Print a diamond shape made of alphabets. Upper half is a pyramid expanding from A to E; lower half mirrors it back to A.",
+    "input_format": "n=5",
+    "output_format": "    A\n   BBB\n  CCCCC\n DDDDDDD\nEEEEEEEEE\n DDDDDDD\n  CCCCC\n   BBB\n    A",
+    "constraints": "n=5. 9 rows total.",
+    "sample_input": "n=5",
+    "sample_output": "    A\n   BBB\n  CCCCC\n DDDDDDD\nEEEEEEEEE\n DDDDDDD\n  CCCCC\n   BBB\n    A",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Print upper pyramid then lower inverted pyramid
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1194,
+    "title": "Alphabet Pattern – Hollow Rectangle Border",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Wipro"],
+    "description": "Print a hollow rectangle of size 4 rows x 8 columns. The top and bottom rows are filled with letters A-H; left and right borders use the row letter; inside is spaces.",
+    "input_format": "rows=4, cols=8",
+    "output_format": "ABCDEFGH\nA      H\nA      H\nABCDEFGH",
+    "constraints": "4 rows, 8 columns. Border only.",
+    "sample_input": "rows=4, cols=8",
+    "sample_output": "ABCDEFGH\nA      H\nA      H\nABCDEFGH",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int rows = 4, cols = 8;
+        // Top/bottom: print letters A to (char)('A'+cols-1)
+        // Middle rows: first letter, spaces, last letter
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1195,
+    "title": "Alphabet Pattern – Zigzag Letters",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["Google", "Microsoft"],
+    "description": "Print 3 rows x 9 columns of a zigzag wave using letters A-I. Row 0 fills positions 0,2,4,6,8; row 1 fills 1,3,5,7; row 2 fills 2,4,6. Empty positions are spaces.",
+    "input_format": "No input required.",
+    "output_format": "A * * * * * * * I\n* B * D * F * H *\n* * C * E * G * *",
+    "constraints": "3 rows, 9 cols.",
+    "sample_input": "",
+    "sample_output": "A * * * * * * * I\n* B * D * F * H *\n* * C * E * G * *",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        char[][] grid = new char[3][9];
+        // Fill spaces first, then place letters on zigzag diagonals
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1196,
+    "title": "Alphabet Pattern – Reverse Right Triangle",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Accenture"],
+    "description": "Print a right triangle of alphabets in reverse: row 1 has ABCDE, row 2 has ABCD, down to row 5 with just A.",
+    "input_format": "n=5",
+    "output_format": "ABCDE\nABCD\nABC\nAB\nA",
+    "constraints": "5 rows decreasing.",
+    "sample_input": "n=5",
+    "sample_output": "ABCDE\nABCD\nABC\nAB\nA",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Row i (1 to n): print letters A to (char)('A'+(n-i))
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1197,
+    "title": "Alphabet Pattern – Diagonal Letter Staircase",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "Cognizant"],
+    "description": "Print a staircase where row i has (i-1) leading spaces followed by the i-th letter (A, B, C...) for 6 rows.",
+    "input_format": "n=6",
+    "output_format": "A\n B\n  C\n   D\n    E\n     F",
+    "constraints": "6 rows. One letter per row, shifted right by one each row.",
+    "sample_input": "n=6",
+    "sample_output": "A\n B\n  C\n   D\n    E\n     F",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 6;
+        // Row i: print (i-1) spaces then (char)('A'+i-1)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1198,
+    "title": "Alphabet Pattern – Sandglass of Letters",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Flipkart"],
+    "description": "Print a sandglass (inverted pyramid on top, pyramid on bottom) using alphabets. Top row starts with EEEEEEEEE and shrinks to A, then expands back to EEEEEEEEE.",
+    "input_format": "n=5",
+    "output_format": "EEEEEEEEE\n DDDDDDD\n  CCCCC\n   BBB\n    A\n   BBB\n  CCCCC\n DDDDDDD\nEEEEEEEEE",
+    "constraints": "n=5. 9 rows total.",
+    "sample_input": "n=5",
+    "sample_output": "EEEEEEEEE\n DDDDDDD\n  CCCCC\n   BBB\n    A\n   BBB\n  CCCCC\n DDDDDDD\nEEEEEEEEE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Inverted pyramid (row i: i spaces, 2*(n-i)-1 letters) then pyramid
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1199,
+    "title": "Alphabet Pattern – Continuous Letters Triangle",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Print a triangle where letters are filled continuously row by row: row 1 gets A, row 2 gets BC, row 3 gets DEF, row 4 gets GHIJ, row 5 gets KLMNO.",
+    "input_format": "n=5",
+    "output_format": "A\nBC\nDEF\nGHIJ\nKLMNO",
+    "constraints": "5 rows. Letters are continuous A through O.",
+    "sample_input": "n=5",
+    "sample_output": "A\nBC\nDEF\nGHIJ\nKLMNO",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        char ch = 'A';
+        int n = 5;
+        // For each row i print i letters sequentially, incrementing ch each time
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1200,
+    "title": "Alphabet Pattern – Right-Aligned Triangle",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "HCL"],
+    "description": "Print a right-aligned triangle of alphabets. Row 1 has 4 leading spaces then A, row 5 has no leading spaces and prints ABCDE.",
+    "input_format": "n=5",
+    "output_format": "    A\n   AB\n  ABC\n ABCD\nABCDE",
+    "constraints": "5 rows. Right-align using leading spaces.",
+    "sample_input": "n=5",
+    "sample_output": "    A\n   AB\n  ABC\n ABCD\nABCDE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Row i: print (n-i) spaces then letters A to (char)('A'+i-1)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1201,
+    "title": "Alphabet Pattern – V Shape Letters",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Google"],
+    "description": "Print a V-shape pattern using 5 rows. Each row has two letters at symmetric positions converging toward the centre bottom. Last row has only one letter at the tip.",
+    "input_format": "n=5",
+    "output_format": "A       A\n B     B\n  C   C\n   D D\n    E",
+    "constraints": "n=5. Two letters per row except the last.",
+    "sample_input": "n=5",
+    "sample_output": "A       A\n B     B\n  C   C\n   D D\n    E",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Row i: (i-1) leading spaces, letter, inner gap of 2*(n-i)-1 spaces, letter (skip second letter on last row)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1202,
+    "title": "Alphabet Pattern – X Shape Letters",
+    "category": "Patterns",
+    "difficulty": "Hard",
+    "company_tags": ["Google", "Microsoft"],
+    "description": "Print an X pattern in a 5x5 grid. Only positions on the main diagonal (j==i) and anti-diagonal (j==n-1-i) are filled with the row's letter; all other positions are spaces.",
+    "input_format": "n=5",
+    "output_format": "A   E\n B C \n  C  \n D B \nE   A",
+    "constraints": "5x5 grid. Main diagonal + anti-diagonal only.",
+    "sample_input": "n=5",
+    "sample_output": "A   E\n B C \n  C  \n D B \nE   A",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // For cell (i,j): print (char)('A'+i) if j==i or j==n-1-i, else space
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1203,
+    "title": "Alphabet Pattern – Butterfly Letters",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Print a butterfly pattern using alphabets. Upper half: row i prints i letters (A to i-th), inner spaces, then i letters again. Lower half mirrors it. n=5, 9 rows total.",
+    "input_format": "n=5",
+    "output_format": "A        A\nAB      AB\nABC    ABC\nABCD  ABCD\nABCDEABCDE\nABCD  ABCD\nABC    ABC\nAB      AB\nA        A",
+    "constraints": "n=5. 9 rows total.",
+    "sample_input": "n=5",
+    "sample_output": "A        A\nAB      AB\nABC    ABC\nABCD  ABCD\nABCDEABCDE\nABCD  ABCD\nABC    ABC\nAB      AB\nA        A",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Upper half (i=1 to n): i letters, 2*(n-i) spaces, i letters
+        // Lower half mirrors upper half
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1204,
+    "title": "Alphabet Pattern – Square Border Letters",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "Cognizant"],
+    "description": "Print a 4x4 hollow square where corners are A, top/bottom edge letters are B, left/right edge letters are C, and inside is spaces.",
+    "input_format": "n=4",
+    "output_format": "ABBA\nC  C\nC  C\nABBA",
+    "constraints": "4x4 grid. A corners, B top/bottom, C sides.",
+    "sample_input": "n=4",
+    "sample_output": "ABBA\nC  C\nC  C\nABBA",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 4;
+        // Corners (0,0),(0,n-1),(n-1,0),(n-1,n-1) = A
+        // Top/bottom non-corner = B, left/right non-corner = C, inside = space
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1205,
+    "title": "Alphabet Pattern – Inverted V (Caret) Shape",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Adobe"],
+    "description": "Print an inverted V (caret) using alphabets. Row 1 has 4 spaces then A at the tip; each subsequent row places the next letter one step left and one step right symmetrically until row 5.",
+    "input_format": "n=5",
+    "output_format": "    A\n   B B\n  C   C\n D     D\nE       E",
+    "constraints": "5 rows. Symmetric spread.",
+    "sample_input": "n=5",
+    "sample_output": "    A\n   B B\n  C   C\n D     D\nE       E",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Row i: (n-i) spaces, letter, (2*i-3) inner spaces, letter (skip second for row 1)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1206,
+    "title": "Alphabet Pattern – Spiral Letters",
+    "category": "Patterns",
+    "difficulty": "Hard",
+    "company_tags": ["Google", "Amazon", "Microsoft"],
+    "description": "Fill a 4x4 matrix with letters A-P in spiral order (clockwise from top-left) and print the matrix row by row with spaces between letters.",
+    "input_format": "No input required.",
+    "output_format": "A B C D\nL M N E\nK P O F\nJ I H G",
+    "constraints": "4x4 matrix. Spiral clockwise from (0,0).",
+    "sample_input": "",
+    "sample_output": "A B C D\nL M N E\nK P O F\nJ I H G",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 4;
+        char[][] mat = new char[n][n];
+        char ch = 'A';
+        // Fill mat in spiral order using top, right, bottom, left boundaries
+        // Then print each row
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1207,
+    "title": "Alphabet Pattern – Palindrome Rows",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Flipkart"],
+    "description": "Print 5 rows where each row is a palindrome. Row 1: A, Row 2: ABA, Row 3: ABCBA, Row 4: ABCDCBA, Row 5: ABCDEDCBA.",
+    "input_format": "n=5",
+    "output_format": "A\nABA\nABCBA\nABCDCBA\nABCDEDCBA",
+    "constraints": "5 rows. Each row is a palindrome of length 2*i-1.",
+    "sample_input": "n=5",
+    "sample_output": "A\nABA\nABCBA\nABCDCBA\nABCDEDCBA",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Row i: print A to (char)('A'+i-1) then back to A (mirror)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1208,
+    "title": "Alphabet Pattern – Column-wise Letters",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "HCL"],
+    "description": "Print a 5x5 grid where each column j contains the letter at position j (A in col 0, B in col 1, …, E in col 4) repeated in every row.",
+    "input_format": "n=5",
+    "output_format": "ABCDE\nABCDE\nABCDE\nABCDE\nABCDE",
+    "constraints": "5x5. Letter depends only on column index.",
+    "sample_input": "n=5",
+    "sample_output": "ABCDE\nABCDE\nABCDE\nABCDE\nABCDE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // For cell (i,j): print (char)('A'+j)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1209,
+    "title": "Alphabet Pattern – Checkerboard AB",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "TCS"],
+    "description": "Print a 5x5 checkerboard alternating A and B. If (i+j) is even print A, else print B.",
+    "input_format": "n=5",
+    "output_format": "ABABA\nBABAB\nABABA\nBABAB\nABABA",
+    "constraints": "5x5. Alternate A and B based on (i+j)%2.",
+    "sample_input": "n=5",
+    "sample_output": "ABABA\nBABAB\nABABA\nBABAB\nABABA",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Cell (i,j): (i+j)%2==0 ? 'A' : 'B'
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1210,
+    "title": "Alphabet Pattern – Row Letter Triangle",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["Accenture", "TCS"],
+    "description": "Print a right triangle where all characters in row i are the i-th letter: row 1 prints A once, row 2 prints BB, row 3 prints CCC, up to row 5.",
+    "input_format": "n=5",
+    "output_format": "A\nBB\nCCC\nDDDD\nEEEEE",
+    "constraints": "5 rows.",
+    "sample_input": "n=5",
+    "sample_output": "A\nBB\nCCC\nDDDD\nEEEEE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        for (int i = 1; i <= n; i++) {
+            // print (char)('A'+i-1) repeated i times, then newline
+            System.out.println("  ");
+        }
+    }
+}`
+    }
+  },
+  {
+    "id": 1211,
+    "title": "Alphabet Pattern – K Shape Letters",
+    "category": "Patterns",
+    "difficulty": "Hard",
+    "company_tags": ["Google", "Morgan Stanley"],
+    "description": "Print the letter K shape in a 7-row grid. Column 0 of every row is always filled. The two diagonal arms branch from the middle row (row 3) outward.",
+    "input_format": "No input required.",
+    "output_format": "A   E\nA  D\nA C\nAB\nA C\nA  D\nA   E",
+    "constraints": "7 rows. Column 0 always A; diagonal arm letter depends on distance from middle.",
+    "sample_input": "",
+    "sample_output": "A   E\nA  D\nA C\nAB\nA C\nA  D\nA   E",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int rows = 7;
+        int mid = rows / 2;
+        // For each row: print 'A', then spaces, then arm letter at position |i-mid|
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1212,
+    "title": "Alphabet Pattern – Decreasing Letter Triangle",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Print a right triangle where row i contains letters from the i-th letter down to A: row 1 prints A, row 2 prints BA, row 3 prints CBA, and so on for 5 rows.",
+    "input_format": "n=5",
+    "output_format": "A\nBA\nCBA\nDCBA\nEDCBA",
+    "constraints": "5 rows. Each row prints letters in reverse from (A+i-1) down to A.",
+    "sample_input": "n=5",
+    "sample_output": "A\nBA\nCBA\nDCBA\nEDCBA",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Row i: print from (char)('A'+i-1) down to 'A'
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1213,
+    "title": "Alphabet Pattern – Wave Pattern",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Infosys"],
+    "description": "Print a 3-column wave pattern with 5 rows. Column 0 and 2 go A-B-C-D-E (forward); column 1 goes E-D-C-B-A (backward). Separate columns with a space.",
+    "input_format": "n=5",
+    "output_format": "A E A\nB D B\nC C C\nD B D\nE A E",
+    "constraints": "5 rows, 3 columns. Col 0 and 2 forward, col 1 backward.",
+    "sample_input": "n=5",
+    "sample_output": "A E A\nB D B\nC C C\nD B D\nE A E",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Row i: col0=(char)('A'+i), col1=(char)('A'+(n-1-i)), col2=(char)('A'+i)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1214,
+    "title": "Alphabet Pattern – Cross (+) Shape",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["Google", "Adobe"],
+    "description": "Print a cross (+) shape in a 5x5 grid. The middle row (row 2) is filled with letters A-E; the middle column (col 2) is filled with letters A-E. All other positions are spaces.",
+    "input_format": "n=5",
+    "output_format": "  C  \n  C  \nABCDE\n  C  \n  C  ",
+    "constraints": "5x5. Middle row index = n/2, middle col index = n/2.",
+    "sample_input": "n=5",
+    "sample_output": "  C  \n  C  \nABCDE\n  C  \n  C  ",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        int mid = n / 2;
+        // Cell (i,j): if i==mid print (char)('A'+j), else if j==mid print (char)('A'+i), else space
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1215,
+    "title": "Alphabet Pattern – Snake (Boustrophedon)",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["Microsoft", "Amazon"],
+    "description": "Fill a 4x4 matrix with letters A-P in boustrophedon (snake) order: left-to-right on even rows, right-to-left on odd rows. Print the matrix with spaces between letters.",
+    "input_format": "No input required.",
+    "output_format": "A B C D\nH G F E\nI J K L\nP O N M",
+    "constraints": "4x4. Even rows L to R, odd rows R to L.",
+    "sample_input": "",
+    "sample_output": "A B C D\nH G F E\nI J K L\nP O N M",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 4;
+        char[][] mat = new char[n][n];
+        char ch = 'A';
+        // Even rows fill left to right, odd rows fill right to left, then print
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1216,
+    "title": "Alphabet Pattern – Z Shape Letters",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Morgan Stanley"],
+    "description": "Print the letter Z in a 5x5 grid. Top row and bottom row are fully filled with letters A-E. The diagonal from top-right to bottom-left has one letter per row.",
+    "input_format": "n=5",
+    "output_format": "ABCDE\n   D \n  C  \n B   \nABCDE",
+    "constraints": "5x5 grid. Z outline only.",
+    "sample_input": "n=5",
+    "sample_output": "ABCDE\n   D \n  C  \n B   \nABCDE",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Row 0, Row n-1: print all letters A to E
+        // Middle rows i: only position (n-1-i) gets letter (char)('A'+(n-1-i))
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1217,
+    "title": "Alphabet Pattern – Mirrored Decreasing Triangle",
+    "category": "Patterns",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "Accenture"],
+    "description": "Print a right triangle where row i contains i letters starting from the i-th letter down to A in reverse. Row 1: A, Row 2: BA, Row 3: CBA, Row 4: DCBA, Row 5: EDCBA.",
+    "input_format": "n=5",
+    "output_format": "A\nBA\nCBA\nDCBA\nEDCBA",
+    "constraints": "5 rows.",
+    "sample_input": "n=5",
+    "sample_output": "A\nBA\nCBA\nDCBA\nEDCBA",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Row i: loop j from i down to 1, print (char)('A'+j-1)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1218,
+    "title": "Alphabet Pattern – Hollow Diamond Letters",
+    "category": "Patterns",
+    "difficulty": "Hard",
+    "company_tags": ["Amazon", "Google", "Microsoft"],
+    "description": "Print a hollow diamond of alphabets with n=5. Only the outline of the diamond is printed using the row's letter; the interior is filled with spaces.",
+    "input_format": "n=5",
+    "output_format": "    A\n   B B\n  C   C\n D     D\nE       E\n D     D\n  C   C\n   B B\n    A",
+    "constraints": "n=5. Hollow outline only. 9 rows.",
+    "sample_input": "n=5",
+    "sample_output": "    A\n   B B\n  C   C\n D     D\nE       E\n D     D\n  C   C\n   B B\n    A",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Upper half row i (1 to n): (n-i) spaces, letter, (2*i-3) spaces, letter (omit second for i==1)
+        // Lower half mirrors upper half
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1219,
+    "title": "Alphabet Pattern – Number-Letter Combo Triangle",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Print a triangle where each cell shows the row number followed by the column letter. Row 1: 1A. Row 2: 2A 2B. Row 3: 3A 3B 3C. Row 4: 4A 4B 4C 4D.",
+    "input_format": "n=4",
+    "output_format": "1A\n2A 2B\n3A 3B 3C\n4A 4B 4C 4D",
+    "constraints": "4 rows. Format per cell: rowNumber + colLetter.",
+    "sample_input": "n=4",
+    "sample_output": "1A\n2A 2B\n3A 3B 3C\n4A 4B 4C 4D",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 4;
+        // Row i, col j: print i + "" + (char)('A'+j-1), separated by spaces
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1220,
+    "title": "Alphabet Pattern – Left Arrow Letters",
+    "category": "Patterns",
+    "difficulty": "Medium",
+    "company_tags": ["Adobe", "Flipkart"],
+    "description": "Print a left-pointing arrow shape using 9 rows. The middle row (row 5) is longest: ABCDE. Rows above and below shrink by one letter each time, right-aligned.",
+    "input_format": "n=5",
+    "output_format": "    E\n   DE\n  CDE\n BCDE\nABCDE\n BCDE\n  CDE\n   DE\n    E",
+    "constraints": "n=5. 9 rows total. Symmetric above and below middle.",
+    "sample_input": "n=5",
+    "sample_output": "    E\n   DE\n  CDE\n BCDE\nABCDE\n BCDE\n  CDE\n   DE\n    E",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        // Distance from middle d = |row - (n-1)|
+        // Row at distance d: print d spaces then letters from (char)('A'+d) to (char)('A'+n-1)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
 ];
 
 export const getCategories = () => [...new Set(problems.map(p => p.category))];
