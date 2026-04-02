@@ -1,7 +1,7 @@
 // src/components/AIChatPanel.tsx
 import { useState, useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
-import { X, Bot, Send } from "lucide-react";
+import { X, Bot, Send, Code2 } from "lucide-react";
 import { askAI } from "@/api/ai";
 
 interface Message {
@@ -12,18 +12,23 @@ interface Message {
 interface AIChatPanelProps {
   isOpen: boolean;
   onClose: () => void;
-  content?: string;
-  title?: string;
+  code?: string;
+  problemTitle?: string;
   isLoading?: boolean;
 }
 
-export default function AIChatPanel({ isOpen, onClose, content, title, isLoading: externalLoading }: AIChatPanelProps) {
+export default function AIChatPanel({
+  isOpen,
+  onClose,
+  code,
+  problemTitle,
+}: AIChatPanelProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [attachCode, setAttachCode] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
 
-  // Auto-scroll to latest message
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, isLoading]);
@@ -33,9 +38,11 @@ export default function AIChatPanel({ isOpen, onClose, content, title, isLoading
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
 
-    const userMessage: Message = { role: "user", content: input.trim() };
+    const userText = attachCode && code
+      ? `Context — problem: "${problemTitle ?? "unknown"}"\n\`\`\`java\n${code}\n\`\`\`\n\n${input.trim()}`
+      : input.trim();
 
-    // Snapshot history BEFORE adding new user message (what AI should see as context)
+    const userMessage: Message = { role: "user", content: input.trim() };
     const historyBeforeThisMessage = [...messages];
 
     setMessages((prev) => [...prev, userMessage]);
@@ -43,18 +50,13 @@ export default function AIChatPanel({ isOpen, onClose, content, title, isLoading
     setIsLoading(true);
 
     try {
-      // Pass full prior history so AI retains conversation context
-      const response = await askAI(userMessage.content, historyBeforeThisMessage);
-      const assistantMessage: Message = { role: "assistant", content: response };
-      setMessages((prev) => [...prev, assistantMessage]);
+      const response = await askAI(userText, historyBeforeThisMessage);
+      setMessages((prev) => [...prev, { role: "assistant", content: response }]);
     } catch (error) {
       console.error("AI chat error:", error);
       setMessages((prev) => [
         ...prev,
-        {
-          role: "assistant",
-          content: "Sorry, I couldn't get a response. Please try again.",
-        },
+        { role: "assistant", content: "Sorry, I couldn't get a response. Please try again." },
       ]);
     } finally {
       setIsLoading(false);
@@ -71,7 +73,7 @@ export default function AIChatPanel({ isOpen, onClose, content, title, isLoading
   return (
     <div className="border-l border-border bg-card flex flex-col h-full w-full">
 
-      {/* ── HEADER ── */}
+      {/* HEADER */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-border shrink-0">
         <div className="flex items-center gap-2">
           <Bot className="h-4 w-4 text-accent" />
@@ -86,13 +88,20 @@ export default function AIChatPanel({ isOpen, onClose, content, title, isLoading
         </button>
       </div>
 
-      {/* ── MESSAGES ── */}
+      {/* MESSAGES */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.length === 0 && (
-          <div className="text-center text-muted-foreground text-sm mt-8">
+          <div className="text-center text-muted-foreground text-sm mt-8 px-2">
             <Bot className="h-8 w-8 mx-auto mb-2 opacity-50" />
-            <p>Ask me anything about your code!</p>
-            <p className="text-xs mt-1">Errors, suggestions, explanations...</p>
+            <p className="font-medium text-foreground">Ask me anything!</p>
+            <p className="text-xs mt-2 leading-relaxed">
+              DSA concepts, Java syntax, time complexity, algorithms — anything you want to learn or understand.
+            </p>
+            {code && (
+              <p className="text-xs mt-3 text-accent">
+                💡 Toggle "Attach code" below to include your editor code in questions.
+              </p>
+            )}
           </div>
         )}
 
@@ -129,17 +138,38 @@ export default function AIChatPanel({ isOpen, onClose, content, title, isLoading
           </div>
         )}
 
-        {/* Scroll anchor */}
         <div ref={bottomRef} />
       </div>
 
-      {/* ── INPUT ── */}
+      {/* CODE ATTACH TOGGLE */}
+      {code && (
+        <div className="px-3 py-2 border-t border-border bg-surface flex items-center gap-2 shrink-0">
+          <button
+            onClick={() => setAttachCode((v) => !v)}
+            className={`flex items-center gap-1.5 text-xs px-2 py-1 rounded transition-colors ${
+              attachCode
+                ? "bg-accent text-accent-foreground"
+                : "bg-muted text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            <Code2 className="h-3 w-3" />
+            {attachCode ? "Code attached ✓" : "Attach code"}
+          </button>
+          <span className="text-xs text-muted-foreground">
+            {attachCode
+              ? "Your editor code will be sent with your next message."
+              : "Send your current code as context."}
+          </span>
+        </div>
+      )}
+
+      {/* INPUT */}
       <div className="border-t border-border p-3 flex gap-2 shrink-0">
         <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Ask about your code... (Enter to send)"
+          placeholder="Ask anything... (Enter to send)"
           className="flex-1 bg-background border border-border rounded-md px-3 py-2 text-sm resize-none h-10 max-h-32 focus:outline-none focus:ring-1 focus:ring-primary"
           rows={1}
         />

@@ -356,9 +356,9 @@ export default function ProblemView() {
         onClose={() =>
           setAiPanel((prev) => ({ ...prev, open: false }))
         }
-        content={aiPanel.content}
-        title={aiPanel.title}
-        isLoading={aiPanel.loading}
+        code={code}
+        problemTitle={problem.title}
+        
       />
     </div>
   );
