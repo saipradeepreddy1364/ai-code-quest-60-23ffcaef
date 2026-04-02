@@ -58,14 +58,9 @@ export async function runCode(code: string, languageId: number, stdin: string = 
     
   } catch (error) {
     console.error('❌ Error:', error);
-    return {
-      stdout: '',
-      stderr: error instanceof Error ? error.message : 'Failed to connect to compiler service',
-      compile_output: null,
-      status: { id: 4, description: 'Connection Error' },
-      time: '0.00',
-      memory: 0,
-    };
+    // ✅ throw the error so handleRun catch block handles it cleanly
+    // instead of returning a fake result that bypasses parseJavaError
+    throw new Error(error instanceof Error ? error.message : 'Failed to connect to compiler service');
   }
 }
 
