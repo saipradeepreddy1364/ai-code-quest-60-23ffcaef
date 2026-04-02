@@ -366,15 +366,23 @@ export default function ProblemView() {
         </div>
       </div>
 
-      <AIChatPanel
-        isOpen={chatOpen || aiPanel.open}
-        onClose={() => {
-          setChatOpen(false);
-          setAiPanel((prev) => ({ ...prev, open: false }));
-        }}
-        code={code}
-        problemTitle={problem.title}
-      />
+      {/* AI Chat Panel — third column, only visible when open */}
+      {(chatOpen || aiPanel.open) && (
+        <div className="w-80 border-l border-border flex flex-col shrink-0">
+          <AIChatPanel
+            isOpen={true}
+            onClose={() => {
+              setChatOpen(false);
+              setAiPanel((prev) => ({ ...prev, open: false }));
+            }}
+            code={code}
+            problemTitle={problem.title}
+            aiPanelTitle={aiPanel.open ? aiPanel.title : undefined}
+            aiPanelContent={aiPanel.open ? aiPanel.content : undefined}
+            aiPanelLoading={aiPanel.open ? aiPanel.loading : undefined}
+          />
+        </div>
+      )}
     </div>
   );
 }

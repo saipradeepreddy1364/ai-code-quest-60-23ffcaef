@@ -14,7 +14,10 @@ interface AIChatPanelProps {
   onClose: () => void;
   code?: string;
   problemTitle?: string;
-  isLoading?: boolean;
+  /** When set, shows a one-off AI result (Debug / Optimize / Review) at the top */
+  aiPanelTitle?: string;
+  aiPanelContent?: string;
+  aiPanelLoading?: boolean;
 }
 
 export default function AIChatPanel({
@@ -22,6 +25,9 @@ export default function AIChatPanel({
   onClose,
   code,
   problemTitle,
+  aiPanelTitle,
+  aiPanelContent,
+  aiPanelLoading,
 }: AIChatPanelProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -87,6 +93,24 @@ export default function AIChatPanel({
           <X className="h-4 w-4" />
         </button>
       </div>
+
+      {/* AI PANEL RESULT (Debug / Optimize / Review) */}
+      {(aiPanelTitle || aiPanelLoading) && (
+        <div className="border-b border-border bg-muted/40 px-4 py-3 shrink-0">
+          <p className="text-xs font-semibold text-accent mb-1">{aiPanelTitle}</p>
+          {aiPanelLoading ? (
+            <div className="flex items-center gap-1.5 py-1">
+              <div className="w-2 h-2 rounded-full bg-accent animate-bounce" style={{ animationDelay: "0ms" }} />
+              <div className="w-2 h-2 rounded-full bg-accent animate-bounce" style={{ animationDelay: "150ms" }} />
+              <div className="w-2 h-2 rounded-full bg-accent animate-bounce" style={{ animationDelay: "300ms" }} />
+            </div>
+          ) : (
+            <div className="prose prose-sm prose-invert max-w-none text-sm">
+              <ReactMarkdown>{aiPanelContent ?? ""}</ReactMarkdown>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* MESSAGES */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
