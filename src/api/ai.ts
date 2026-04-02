@@ -1,3 +1,5 @@
+// src/api/ai.ts
+
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 async function callClaude(messages: Array<{ role: string; content: string }>, systemPrompt: string) {
@@ -39,9 +41,18 @@ export async function reviewCode(code: string, problemDescription: string, langu
   );
 }
 
-export async function askAI(prompt: string) {
+// ✅ Now accepts full conversation history so the AI retains context across messages
+export async function askAI(
+  prompt: string,
+  history: Array<{ role: "user" | "assistant"; content: string }> = []
+) {
+  const messages = [
+    ...history,
+    { role: "user", content: prompt },
+  ];
+
   return callClaude(
-    [{ role: "user", content: prompt }],
+    messages,
     "You are a helpful coding assistant. Help with programming questions, errors, and suggestions."
   );
 }
