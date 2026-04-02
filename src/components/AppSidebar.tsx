@@ -6,7 +6,7 @@ import {
   Database, Cpu, Network, Code, Brain, 
   Building2, GraduationCap, BookOpen,
   Home, BarChart3, Save, Layers,
-  PieChart, Award, LogOut
+  PieChart, Award, LogOut, FlaskConical
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import UserPerformance from './UserPerformance';
@@ -37,7 +37,18 @@ const getCompanyCounts = () => {
   return counts;
 };
 
-// Dynamically generate categories from actual problems
+// These category names exist in the dataset and belong to the Placement section
+const PLACEMENT_CATEGORY_NAMES = new Set([
+  'Aptitude',
+  'Logical Reasoning',
+  'Technical',
+  'DBMS',
+  'Operating Systems',
+  'Computer Networks',
+  'OOP',
+]);
+
+// Dynamically generate DSA categories (excludes placement ones)
 const generateCategories = () => {
   const categoryCounts = getCategoryCounts();
   const iconMap: Record<string, any> = {
@@ -63,6 +74,7 @@ const generateCategories = () => {
   };
   
   return Object.entries(categoryCounts)
+    .filter(([name]) => !PLACEMENT_CATEGORY_NAMES.has(name))
     .map(([name, count]) => ({
       name,
       count,
@@ -71,15 +83,39 @@ const generateCategories = () => {
     .sort((a, b) => b.count - a.count);
 };
 
-// Placement categories with actual counts from problems
-const placementCategories = [
-  { name: 'Aptitude', count: 34, icon: Brain },
-  { name: 'Logical Reasoning', count: 34, icon: Brain },
-  { name: 'Technical', count: 50, icon: Code },
-  { name: 'DBMS', count: 34, icon: Database },
-  { name: 'Operating Systems', count: 34, icon: Cpu },
-  { name: 'Computer Networks', count: 34, icon: Network },
-  { name: 'OOP', count: 34, icon: Code },
+// Dynamically generate placement categories from the actual dataset
+const generatePlacementCategories = () => {
+  const categoryCounts = getCategoryCounts();
+  const iconMap: Record<string, any> = {
+    'Aptitude': Brain,
+    'Logical Reasoning': Brain,
+    'Technical': Code,
+    'DBMS': Database,
+    'Operating Systems': Cpu,
+    'Computer Networks': Network,
+    'OOP': Code,
+  };
+
+  return Object.entries(categoryCounts)
+    .filter(([name]) => PLACEMENT_CATEGORY_NAMES.has(name))
+    .map(([name, count]) => ({
+      name,
+      count,
+      icon: iconMap[name] || Code
+    }))
+    .sort((a, b) => b.count - a.count);
+};
+
+// Free mock test links for popular companies
+const mockTests = [
+  { name: 'TCS NQT',      url: 'https://www.indiabix.com/online-test/tcs-placement-papers/' },
+  { name: 'Infosys',      url: 'https://www.indiabix.com/online-test/infosys-placement-papers/' },
+  { name: 'Wipro',        url: 'https://www.indiabix.com/online-test/wipro-placement-papers/' },
+  { name: 'Accenture',    url: 'https://www.indiabix.com/online-test/accenture-placement-papers/' },
+  { name: 'Cognizant',    url: 'https://www.indiabix.com/online-test/cognizant-placement-papers/' },
+  { name: 'Amazon',       url: 'https://www.hackerrank.com/domains/algorithms' },
+  { name: 'Microsoft',    url: 'https://www.hackerrank.com/microsoft-codesprint' },
+  { name: 'Google',       url: 'https://foobar.withgoogle.com/' },
 ];
 
 export default function AppSidebar({ open, onClose }: AppSidebarProps) {
@@ -89,6 +125,7 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
   const [dsaOpen, setDsaOpen] = useState(true);
   const [placementOpen, setPlacementOpen] = useState(true);
   const [companyOpen, setCompanyOpen] = useState(true);
+  const [mockOpen, setMockOpen] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedPlacement, setSelectedPlacement] = useState<string | null>(null);
   const [selectedCompany, setSelectedCompany] = useState<string | null>(null);
@@ -96,6 +133,7 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
 
   // Dynamically generate categories and companies
   const categories = useMemo(() => generateCategories(), []);
+  const placementCategories = useMemo(() => generatePlacementCategories(), []);
   const companies = useMemo(() => {
     const companyCounts = getCompanyCounts();
     const iconMap: Record<string, any> = {
@@ -140,9 +178,10 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
     onClose();
   };
 
+  // ✅ Placement navigates using ?category= since placement names ARE real categories in the dataset
   const handlePlacementClick = (category: string) => {
     setSelectedPlacement(category === selectedPlacement ? null : category);
-    navigate(`/problems?placement=${encodeURIComponent(category)}`);
+    navigate(`/problems?category=${encodeURIComponent(category)}`);
     onClose();
   };
 
@@ -355,6 +394,41 @@ export default function AppSidebar({ open, onClose }: AppSidebarProps) {
               </div>
             )}
           </div>
+
+          {/* Free Mock Tests Section */}
+          <div className="border border-border rounded-lg">
+            <button
+              onClick={() => setMockOpen(!mockOpen)}
+              className="w-full flex items-center justify-between p-3 bg-surface-hover rounded-t-lg"
+            >
+              <div className="flex items-center gap-2">
+                <FlaskConical className="h-4 w-4 text-primary" />
+                <span className="font-medium text-foreground">Free Mock Tests</span>
+              </div>
+              {mockOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+            </button>
+
+            {mockOpen && (
+              <div className="p-2 space-y-1 max-h-60 overflow-y-auto">
+                {mockTests.map((test) => (
+                  <a
+                    key={test.name}
+                    href={test.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between w-full px-2 py-2 rounded-md text-sm text-foreground hover:bg-surface-hover transition-colors"
+                  >
+                    <div className="flex items-center gap-2">
+                      <FlaskConical className="h-4 w-4 text-primary" />
+                      <span>{test.name}</span>
+                    </div>
+                    <span className="text-xs text-muted-foreground">↗</span>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+
         </div>
       </aside>
     </>
