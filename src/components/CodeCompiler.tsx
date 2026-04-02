@@ -2,6 +2,7 @@
 import { useRef, useState, useEffect } from "react";
 import CodeEditor from "./CodeEditor";
 import { runCode, languageIds } from "@/api/compiler";
+import { parseJavaError } from "@/utils/parseJavaError";
 import { toast } from "sonner";
 import { Bot, Play, Loader2, Save, RotateCcw } from "lucide-react";
 
@@ -71,15 +72,17 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
       const elapsed = (performance.now() - start) / 1000;
       setExecutionTime(elapsed);
 
-      if (result.stderr || result.compile_output) {
-        setError(result.stderr || result.compile_output);
+      const rawError = result.stderr || result.compile_output || "";
+      if (rawError && rawError.trim() !== "") {
+        // ✅ parse raw Java error into friendly message
+        setError(parseJavaError(rawError));
         setActiveTab("errors");
       } else {
         setOutput(result.stdout || "No Output");
         setActiveTab("terminal");
       }
     } catch {
-      setError("Server Error");
+      setError("⚠️ Could not connect to the compiler. Make sure the backend is running.");
       setActiveTab("errors");
     } finally {
       setIsRunning(false);
@@ -241,7 +244,13 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
 
               {/* Output section */}
               <div className="text-green-400 mb-1 font-semibold">Output</div>
-              <pre className="text-foreground whitespace-pre-wrap">{output}</pre>
+              {/* ✅ select-text allows user to highlight and copy output */}
+              <pre
+                className="text-foreground whitespace-pre-wrap select-text cursor-text"
+                style={{ userSelect: "text", WebkitUserSelect: "text" }}
+              >
+                {output}
+              </pre>
 
               {/* Execution time shown below output */}
               {executionTime !== null && (
@@ -252,7 +261,13 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
             </>
           )}
           {activeTab === "errors" && (
-            <pre className="text-red-400 whitespace-pre-wrap">{error || "No errors."}</pre>
+            /* ✅ select-text allows user to highlight and copy error messages */
+            <pre
+              className="text-red-400 whitespace-pre-wrap select-text cursor-text"
+              style={{ userSelect: "text", WebkitUserSelect: "text" }}
+            >
+              {error || "No errors."}
+            </pre>
           )}
         </div>
       </div>
