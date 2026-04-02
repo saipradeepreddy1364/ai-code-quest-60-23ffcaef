@@ -187,12 +187,6 @@ export default function Problems() {
             ))}
           </tbody>
         </table>
-
-        {filtered.length > 50 && (
-          <div className="px-4 py-3 text-sm text-muted-foreground bg-surface text-center">
-            Showing 50 of {filtered.length} problems. Use filters to narrow results.
-          </div>
-        )}
       </div>
     </div>
   );
