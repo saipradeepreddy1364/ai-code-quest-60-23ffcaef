@@ -9,6 +9,7 @@ import { debugCode, optimizeCode, reviewCode } from "@/api/ai";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { parseJavaError } from "@/utils/parseJavaError"; // ✅ import the parser
 
 export default function ProblemView() {
   const { id } = useParams<{ id: string }>();
@@ -21,6 +22,7 @@ export default function ProblemView() {
   const [code, setCode] = useState(problem?.starter_code?.java || "");
   const [stdin, setStdin] = useState("");
   const [output, setOutput] = useState("");
+  const [outputType, setOutputType] = useState<"success" | "error" | "">("");  // ✅ track output type
   const [isRunning, setIsRunning] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [aiPanel, setAiPanel] = useState<{
@@ -68,16 +70,24 @@ export default function ProblemView() {
   const handleRun = async () => {
     setIsRunning(true);
     setOutput("");
+    setOutputType("");
     try {
       const result = await runCode(code, languageIds["java"], stdin);
-      setOutput(
-        result.compile_output ||
-          result.stderr ||
-          result.stdout ||
-          "No output"
-      );
+
+      const rawError = result.compile_output || result.stderr || "";
+      const rawSuccess = result.stdout || "";
+
+      if (rawError) {
+        // ✅ Parse the error into a friendly message
+        setOutput(parseJavaError(rawError));
+        setOutputType("error");
+      } else {
+        setOutput(rawSuccess || "No output");
+        setOutputType("success");
+      }
     } catch {
-      setOutput("Error running code. Check your API configuration.");
+      setOutput("⚠️ Error connecting to the code runner. Check your API configuration.");
+      setOutputType("error");
     }
     setIsRunning(false);
   };
@@ -323,8 +333,17 @@ export default function ProblemView() {
               />
             </div>
 
-            <div className="flex-1 p-3">
-              <pre className="text-xs font-mono whitespace-pre-wrap h-full overflow-y-auto">
+            {/* ✅ Output panel — red for errors, green for success */}
+            <div className="flex-1 p-3 overflow-y-auto">
+              <pre
+                className={`text-xs font-mono whitespace-pre-wrap h-full ${
+                  outputType === "error"
+                    ? "text-red-400"
+                    : outputType === "success"
+                    ? "text-green-400"
+                    : "text-muted-foreground"
+                }`}
+              >
                 {output || "Run your code to see output here."}
               </pre>
             </div>
