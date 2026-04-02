@@ -15,9 +15,13 @@ export default function Login() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const forceLogoutAndClear = async () => {
-      try {
-        await supabase.auth.signOut();
+    // ✅ Only clear session if user lands on /login directly via browser URL
+    // or after an explicit logout — NOT on every component mount.
+    // We check if there's no active session before clearing anything.
+    const clearOnlyIfNoSession = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        // No active session — safe to clear stale storage
         localStorage.clear();
         sessionStorage.clear();
         document.cookie.split(";").forEach((c) => {
@@ -26,11 +30,13 @@ export default function Login() {
             .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
         });
         console.log("✅ Session cleared - Login page ready");
-      } catch (error) {
-        console.error("Error during logout:", error);
+      } else {
+        // ✅ User has a valid session — redirect away from login immediately
+        console.log("✅ Already logged in - redirecting to dashboard");
+        navigate("/dashboard", { replace: true });
       }
     };
-    forceLogoutAndClear();
+    clearOnlyIfNoSession();
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -99,11 +105,9 @@ export default function Login() {
                   className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
                   placeholder="••••••••"
                   required
-                  // Force browser to render dots/text in black
                   style={{
                     color: "#111827",
                     WebkitTextSecurity: showPassword ? "none" : undefined,
-                    // Larger, bolder dots via letter-spacing when masked
                     letterSpacing: showPassword ? "normal" : "0.15em",
                     fontFamily: showPassword ? "inherit" : "Verdana, sans-serif",
                   } as React.CSSProperties}
