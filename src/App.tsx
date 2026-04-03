@@ -19,7 +19,7 @@ function App() {
           v7_relativeSplatPath: true,
         }}
       >
-        <Toaster position="top-right" richColors closeButton theme="light" duration={2000} />
+        <Toaster position="top-right" richColors closeButton theme="light" duration={500}/>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
