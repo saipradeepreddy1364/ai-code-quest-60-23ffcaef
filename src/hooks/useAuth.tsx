@@ -5,14 +5,14 @@ import { supabase } from '@/integrations/supabase/client';
 
 export function useAuth() {
   const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState(true); // ✅ FIX ADDED
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // ✅ Get initial session
     supabase.auth.getSession().then(({ data: { session } }) => {
       console.log('Session:', session);
       setUser(session?.user ?? null);
-      setLoading(false); // ✅ now valid
+      setLoading(false);
     });
 
     // ✅ Listen for auth changes
@@ -20,7 +20,7 @@ export function useAuth() {
       (_event, session) => {
         console.log('Auth event:', _event, session);
         setUser(session?.user ?? null);
-        setLoading(false); // ✅ now valid
+        // ✅ REMOVED setLoading(false) from here — this was causing repeated firing
       }
     );
 
@@ -78,7 +78,7 @@ export function useAuth() {
 
   return {
     user,
-    loading, // ✅ FIX RETURNED
+    loading,
     signUp,
     signIn,
     signOut,
