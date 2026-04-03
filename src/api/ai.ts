@@ -6,10 +6,8 @@ function buildGeminiBody(
   messages: Array<{ role: string; content: string }>,
   systemPrompt: string
 ) {
-  // Filter empty messages
   const filtered = messages.filter((m) => m.content?.trim());
 
-  // Merge consecutive same-role messages
   const merged: Array<{ role: string; content: string }> = [];
   for (const msg of filtered) {
     const last = merged[merged.length - 1];
@@ -20,7 +18,6 @@ function buildGeminiBody(
     }
   }
 
-  // Must start with user message
   while (merged.length > 0 && merged[0].role !== "user") {
     merged.shift();
   }
@@ -31,11 +28,15 @@ function buildGeminiBody(
     parts: [{ text: msg.content }],
   }));
 
+  // Inject system prompt as first user message + model ack
+  const contentsWithSystem = [
+    { role: "user", parts: [{ text: systemPrompt }] },
+    { role: "model", parts: [{ text: "Understood. I will follow these instructions." }] },
+    ...contents,
+  ];
+
   return {
-    system_instruction: {
-      parts: [{ text: systemPrompt }],
-    },
-    contents,
+    contents: contentsWithSystem,
     generationConfig: {
       maxOutputTokens: 1024,
       temperature: 0.7,
@@ -62,8 +63,6 @@ async function callGemini(
   }
 
   const data = await response.json();
-
-  // Gemini response format
   return data.candidates?.[0]?.content?.parts?.[0]?.text ?? "No response received.";
 }
 
