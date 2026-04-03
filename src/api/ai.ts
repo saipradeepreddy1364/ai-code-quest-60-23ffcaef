@@ -2,13 +2,14 @@
 
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
-// Ensures messages alternate user/assistant and have no empty content.
-// The Claude API returns 400 if these rules are violated.
-function sanitizeMessages(messages: Array<{ role: string; content: string }>) {
-  // 1. Remove messages with empty/whitespace-only content
+function buildGeminiBody(
+  messages: Array<{ role: string; content: string }>,
+  systemPrompt: string
+) {
+  // Filter empty messages
   const filtered = messages.filter((m) => m.content?.trim());
 
-  // 2. Merge consecutive same-role messages (Claude requires strict alternation)
+  // Merge consecutive same-role messages
   const merged: Array<{ role: string; content: string }> = [];
   for (const msg of filtered) {
     const last = merged[merged.length - 1];
@@ -19,26 +20,34 @@ function sanitizeMessages(messages: Array<{ role: string; content: string }>) {
     }
   }
 
-  // 3. Must start with a user message
+  // Must start with user message
   while (merged.length > 0 && merged[0].role !== "user") {
     merged.shift();
   }
 
-  return merged;
+  // Convert to Gemini format
+  const contents = merged.map((msg) => ({
+    role: msg.role === "assistant" ? "model" : "user",
+    parts: [{ text: msg.content }],
+  }));
+
+  return {
+    system_instruction: {
+      parts: [{ text: systemPrompt }],
+    },
+    contents,
+    generationConfig: {
+      maxOutputTokens: 1024,
+      temperature: 0.7,
+    },
+  };
 }
 
-async function callClaude(
+async function callGemini(
   messages: Array<{ role: string; content: string }>,
   systemPrompt: string
 ) {
-  const sanitized = sanitizeMessages(messages);
-
-  const body = {
-    model: "claude-haiku-4-5-20251001",
-    max_tokens: 1024,
-    system: systemPrompt,
-    messages: sanitized,
-  };
+  const body = buildGeminiBody(messages, systemPrompt);
 
   const response = await fetch(`${BACKEND_URL}/api/ai/chat`, {
     method: "POST",
@@ -47,33 +56,61 @@ async function callClaude(
   });
 
   if (!response.ok) {
-    // Log the real server error so it's visible in the console
     const errorText = await response.text();
     console.error(`Backend error (${response.status}):`, errorText);
     throw new Error(`API error: ${response.status} — ${errorText}`);
   }
 
   const data = await response.json();
-  return data.content[0].text;
+
+  // Gemini response format
+  return data.candidates?.[0]?.content?.parts?.[0]?.text ?? "No response received.";
 }
 
-export async function debugCode(code: string, problemDescription: string, language: string) {
-  return callClaude(
-    [{ role: "user", content: `Problem: ${problemDescription}\n\nLanguage: ${language}\n\nCode:\n${code}\n\nFind bugs and provide corrected code.` }],
+export async function debugCode(
+  code: string,
+  problemDescription: string,
+  language: string
+) {
+  return callGemini(
+    [
+      {
+        role: "user",
+        content: `Problem: ${problemDescription}\n\nLanguage: ${language}\n\nCode:\n${code}\n\nFind bugs and provide corrected code.`,
+      },
+    ],
     "You are an expert code debugger. Find bugs and provide clear fixes."
   );
 }
 
-export async function optimizeCode(code: string, problemDescription: string, language: string) {
-  return callClaude(
-    [{ role: "user", content: `Problem: ${problemDescription}\n\nLanguage: ${language}\n\nCode:\n${code}\n\nSuggest optimizations.` }],
+export async function optimizeCode(
+  code: string,
+  problemDescription: string,
+  language: string
+) {
+  return callGemini(
+    [
+      {
+        role: "user",
+        content: `Problem: ${problemDescription}\n\nLanguage: ${language}\n\nCode:\n${code}\n\nSuggest optimizations.`,
+      },
+    ],
     "You are an expert at code optimization. Suggest improvements for performance and readability."
   );
 }
 
-export async function reviewCode(code: string, problemDescription: string, language: string) {
-  return callClaude(
-    [{ role: "user", content: `Problem: ${problemDescription}\n\nLanguage: ${language}\n\nCode:\n${code}\n\nReview this code.` }],
+export async function reviewCode(
+  code: string,
+  problemDescription: string,
+  language: string
+) {
+  return callGemini(
+    [
+      {
+        role: "user",
+        content: `Problem: ${problemDescription}\n\nLanguage: ${language}\n\nCode:\n${code}\n\nReview this code.`,
+      },
+    ],
     "You are an expert code reviewer. Provide constructive feedback."
   );
 }
@@ -87,7 +124,7 @@ export async function askAI(
     { role: "user", content: prompt },
   ];
 
-  return callClaude(
+  return callGemini(
     messages,
     "You are a helpful coding assistant. Help with programming questions, errors, and suggestions."
   );
