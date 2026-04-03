@@ -15,28 +15,11 @@ export default function Login() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // ✅ Only clear session if user lands on /login directly via browser URL
-    // or after an explicit logout — NOT on every component mount.
-    // We check if there's no active session before clearing anything.
-    const clearOnlyIfNoSession = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (!session) {
-        // No active session — safe to clear stale storage
-        localStorage.clear();
-        sessionStorage.clear();
-        document.cookie.split(";").forEach((c) => {
-          document.cookie = c
-            .replace(/^ +/, "")
-            .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
-        });
-        console.log("✅ Session cleared - Login page ready");
-      } else {
-        // ✅ User has a valid session — redirect away from login immediately
-        console.log("✅ Already logged in - redirecting to dashboard");
-        navigate("/dashboard", { replace: true });
-      }
+    const clearSession = async () => {
+      await supabase.auth.signOut();
+      console.log("✅ Session cleared - Login page ready");
     };
-    clearOnlyIfNoSession();
+    clearSession();
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
