@@ -56,7 +56,7 @@ export default function AIChatPanel({
     setIsLoading(true);
 
     try {
-      const response = await askAI(userText, historyBeforeThisMessage);
+      const response = await askAI(userText);
       setMessages((prev) => [...prev, { role: "assistant", content: response }]);
     } catch (error) {
       console.error("AI chat error:", error);

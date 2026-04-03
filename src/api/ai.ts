@@ -53,6 +53,8 @@ async function callGemini(
   const response = await fetch(`${BACKEND_URL}/api/ai/chat`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
+
+    // ✅ FIX: Ensure backend receives valid JSON string
     body: JSON.stringify(body),
   });
 
@@ -63,6 +65,13 @@ async function callGemini(
   }
 
   const data = await response.json();
+
+  // ✅ FIX: Safe parsing (handles empty / unexpected responses)
+  if (!data || !data.candidates || data.candidates.length === 0) {
+    console.warn("Invalid Gemini response:", data);
+    return "No response received.";
+  }
+
   return data.candidates?.[0]?.content?.parts?.[0]?.text ?? "No response received.";
 }
 
