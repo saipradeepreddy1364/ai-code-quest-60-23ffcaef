@@ -174,9 +174,19 @@ export default function Dashboard() {
   const [isAiOpen, setIsAiOpen] = useState(false);
   const [currentCode, setCurrentCode] = useState("");
   const [currentLanguage, setCurrentLanguage] = useState("java");
+  // ✅ Track the latest error string from CodeCompiler so we can pass it
+  //    to AIChatPanel as the `errors` prop.
+  const [currentErrors, setCurrentErrors] = useState("");
   const [activeTab, setActiveTab] = useState<"dsa" | "placement" | "companies">("dsa");
 
   const categoryCounts = useMemo(() => getCategoryCounts(), []);
+
+  const visibleCats =
+    activeTab === "dsa"
+      ? DSA_CATEGORIES
+      : activeTab === "placement"
+      ? PLACEMENT_CATEGORIES
+      : [];
 
   // AI panel horizontal resize
   useEffect(() => {
@@ -208,109 +218,121 @@ export default function Dashboard() {
   if (!user) {
     return (
       <div className="h-screen flex items-center justify-center text-sm text-muted-foreground">
-        Loading...
+        Loading…
       </div>
     );
   }
 
-  const visibleCats =
-    activeTab === "dsa"
-      ? DSA_CATEGORIES.filter((c) => (categoryCounts[c] ?? 0) > 0)
-      : activeTab === "placement"
-      ? PLACEMENT_CATEGORIES.filter((c) => (categoryCounts[c] ?? 0) > 0)
-      : [];
-
   return (
-    <div className="h-screen bg-background flex flex-col overflow-hidden">
+    <div className="h-screen flex flex-col overflow-hidden bg-background text-foreground">
 
-      {/* ══════════════ HEADER ══════════════ */}
-      <header className="flex justify-between items-center px-4 py-2.5 bg-card border-b border-border shrink-0" style={{ zIndex: 50, position: "relative" }}>
-        <button
-          onClick={() => setMenuOpen((p) => !p)}
-          className="p-2 rounded-md hover:bg-muted transition-colors"
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+      {/* ══════════════ TOP NAV ══════════════ */}
+      <header className="flex items-center justify-between px-4 py-2 border-b border-border bg-card shrink-0 z-10">
 
+        {/* Left: hamburger + logo */}
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => setMenuOpen((v) => !v)}
+            className="p-1.5 rounded hover:bg-muted transition-colors"
+          >
+            {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+          <span className="font-bold text-base tracking-tight">DevPrep</span>
+        </div>
+
+        {/* Right: user dropdown */}
         <div className="relative">
           <button
-            onClick={() => setDropdownOpen((p) => !p)}
-            className="flex items-center gap-2 px-3 py-1.5 bg-primary text-primary-foreground rounded-md text-sm"
+            onClick={() => setDropdownOpen((v) => !v)}
+            className="flex items-center gap-2 px-3 py-1.5 rounded-md hover:bg-muted transition-colors text-sm"
           >
-            <User className="h-4 w-4" />
-            <span className="max-w-[120px] truncate">{user.email}</span>
-            <ChevronDown className="h-4 w-4 shrink-0" />
+            <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+              <User className="h-3.5 w-3.5 text-primary" />
+            </div>
+            <span className="hidden sm:inline max-w-[160px] truncate">
+              {user.email}
+            </span>
+            <ChevronDown className="h-3.5 w-3.5 text-muted-foreground" />
           </button>
 
           {dropdownOpen && (
-            <div className="absolute right-0 mt-2 w-56 bg-card border border-border rounded-lg shadow-lg z-50">
-              <div className="p-3 text-xs text-muted-foreground border-b truncate">{user.email}</div>
+            <div className="absolute right-0 mt-1 w-48 bg-card border border-border rounded-lg shadow-lg py-1 z-50">
               <button
-                onClick={() => { setDropdownOpen(false); goTo("/problems"); }}
-                className="w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-muted transition-colors"
+                onClick={() => { setDropdownOpen(false); goTo("/"); }}
+                className="flex items-center gap-2 w-full px-3 py-2 text-sm hover:bg-muted transition-colors"
               >
-                <BookOpen className="h-4 w-4" /> All Problems
+                <Home className="h-4 w-4" /> Home
               </button>
               <button
-                onClick={handleLogout}
-                className="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-500 hover:bg-muted transition-colors"
+                onClick={() => { setDropdownOpen(false); goTo("/problems"); }}
+                className="flex items-center gap-2 w-full px-3 py-2 text-sm hover:bg-muted transition-colors"
               >
-                <LogOut className="h-4 w-4" /> Logout
+                <BookOpen className="h-4 w-4" /> Problems
+              </button>
+              <div className="border-t border-border my-1" />
+              <button
+                onClick={handleLogout}
+                className="flex items-center gap-2 w-full px-3 py-2 text-sm text-red-400 hover:bg-muted transition-colors"
+              >
+                <LogOut className="h-4 w-4" /> Sign out
               </button>
             </div>
           )}
         </div>
       </header>
 
-      {/* ══════════════ FULL-SCREEN MENU OVERLAY ══════════════ */}
+      {/* ══════════════ SLIDE-IN MENU ══════════════ */}
+      {menuOpen && (
+        <div className="absolute top-[49px] left-0 w-64 h-[calc(100vh-49px)] bg-card border-r border-border z-40 flex flex-col py-4 gap-1 px-3 shadow-xl">
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-2 mb-1">
+            Navigate
+          </p>
+          {[
+            { label: "Dashboard", icon: Home, path: "/" },
+            { label: "Problems",  icon: BookOpen, path: "/problems" },
+          ].map(({ label, icon: Icon, path }) => (
+            <button
+              key={path}
+              onClick={() => goTo(path)}
+              className="flex items-center gap-2.5 px-3 py-2 rounded-md text-sm hover:bg-muted transition-colors text-foreground"
+            >
+              <Icon className="h-4 w-4 text-muted-foreground" />
+              {label}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* ══════════════ HERO PANEL (topic grid) — overlays the compiler ══════════════ */}
       {menuOpen && (
         <div
+          className="fixed inset-0 z-30"
+          style={{ top: 49 }}
+          onClick={() => setMenuOpen(false)}
+        />
+      )}
+
+      {/* Topic browser — shown as an overlay/sidebar when accessed via nav */}
+      {activeTab && (
+        <div
+          className="absolute left-64 right-0 z-20 bg-background flex flex-col"
           style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
+            top: 49,
             bottom: 0,
-            background: "#0d0d1a",
-            zIndex: 40,
-            display: "flex",
-            flexDirection: "column",
-            overflow: "hidden",
+            display: menuOpen ? "flex" : "none",
           }}
         >
-          {/* Overlay header — mirrors main header */}
+          {/* Hero header */}
           <div
             style={{
               display: "flex",
-              justifyContent: "space-between",
               alignItems: "center",
-              padding: "10px 16px",
-              borderBottom: "1px solid rgba(255,255,255,0.07)",
+              justifyContent: "space-between",
+              padding: "16px 24px 8px",
               flexShrink: 0,
             }}
           >
-            {/* Close button */}
-            <button
-              onClick={() => setMenuOpen(false)}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: 36,
-                height: 36,
-                borderRadius: "8px",
-                background: "rgba(255,255,255,0.05)",
-                border: "none",
-                cursor: "pointer",
-                color: "#94a3b8",
-              }}
-            >
-              <X style={{ width: 18, height: 18 }} />
-            </button>
-
-            {/* Title + subtitle */}
-            <div style={{ textAlign: "center" }}>
+            <div>
               <p
                 style={{
                   fontSize: "11px",
@@ -493,8 +515,13 @@ export default function Dashboard() {
         <div className="flex flex-1 overflow-hidden">
           <div className="flex-1 overflow-hidden">
             <CodeCompiler
-              onCodeChange={(code, lang) => { setCurrentCode(code); setCurrentLanguage(lang); }}
+              onCodeChange={(code, lang) => {
+                setCurrentCode(code);
+                setCurrentLanguage(lang);
+              }}
               onToggleAI={() => setIsAiOpen((p) => !p)}
+              // ✅ Receive error updates from CodeCompiler and store in state
+              onErrorChange={(err) => setCurrentErrors(err)}
               userEmail={user.email}
             />
           </div>
@@ -502,17 +529,25 @@ export default function Dashboard() {
           {isAiOpen && (
             <div
               className="w-1.5 bg-border hover:bg-primary cursor-col-resize shrink-0 transition-colors"
-              onMouseDown={(e) => { e.preventDefault(); setIsResizingPanel(true); }}
+              onMouseDown={(e) => {
+                e.preventDefault();
+                setIsResizingPanel(true);
+              }}
             />
           )}
 
           {isAiOpen && (
-            <div className="shrink-0 border-l border-border overflow-hidden" style={{ width: aiPanelWidth }}>
+            <div
+              className="shrink-0 border-l border-border overflow-hidden"
+              style={{ width: aiPanelWidth }}
+            >
               <AIChatPanel
-  isOpen={isAiOpen}
-  onClose={() => setIsAiOpen(false)}
-  code={currentCode}
-/>
+                isOpen={isAiOpen}
+                onClose={() => setIsAiOpen(false)}
+                code={currentCode}
+                // ✅ Pass the latest errors from the compiler's error tab
+                errors={currentErrors}
+              />
             </div>
           )}
         </div>

@@ -1,3 +1,4 @@
+// src/pages/ProblemView.tsx
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Play, Upload, Save, Bug, Zap, Eye, MessageSquare } from "lucide-react";
@@ -9,20 +10,21 @@ import { debugCode, optimizeCode, reviewCode } from "@/api/ai";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { parseJavaError } from "@/utils/parseJavaError"; // ✅ import the parser
+import { parseJavaError } from "@/utils/parseJavaError";
 
 export default function ProblemView() {
   const { id } = useParams<{ id: string }>();
   const problem = getProblemById(Number(id));
   const { user } = useAuth();
 
-  // ✅ Only Java
+  // Only Java
   const language = "java";
 
   const [code, setCode] = useState(problem?.starter_code?.java || "");
   const [stdin, setStdin] = useState("");
   const [output, setOutput] = useState("");
-  const [outputType, setOutputType] = useState<"success" | "error" | "">("");  // ✅ track output type
+  // ✅ outputType tracks whether the last run produced a success or error result
+  const [outputType, setOutputType] = useState<"success" | "error" | "">("");
   const [isRunning, setIsRunning] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
@@ -38,7 +40,7 @@ export default function ProblemView() {
     loading: false,
   });
 
-  // ✅ Load saved code when problem opens
+  // Load saved code when problem opens
   useEffect(() => {
     const fetchSavedCode = async () => {
       if (!user || !problem) return;
@@ -79,7 +81,7 @@ export default function ProblemView() {
       const rawSuccess = result.stdout || "";
 
       if (rawError) {
-        // ✅ Parse the error into a friendly message
+        // Parse the error into a friendly message
         setOutput(parseJavaError(rawError));
         setOutputType("error");
       } else {
@@ -153,6 +155,9 @@ export default function ProblemView() {
       loading: true,
     });
 
+    // Open the AI panel automatically when an action is triggered
+    setChatOpen(true);
+
     try {
       const fns = {
         debug: debugCode,
@@ -176,9 +181,14 @@ export default function ProblemView() {
     }
   };
 
+  // ✅ Derive the errors string to pass to AIChatPanel:
+  //    Only pass the output as errors when the last run produced an error result.
+  const errorsForChat = outputType === "error" ? output : "";
+
   return (
     <div className="flex h-[calc(100vh-3rem)]">
-      {/* Left panel */}
+
+      {/* ── Left panel: problem description ── */}
       <div className="w-2/5 border-r border-border overflow-y-auto p-6 scrollbar-thin">
         <h1 className="text-xl font-semibold text-foreground mb-1">
           {problem.title}
@@ -249,14 +259,14 @@ export default function ProblemView() {
         </div>
       </div>
 
-      {/* Right panel */}
+      {/* ── Right panel: editor + toolbar + output ── */}
       <div className="flex-1 flex flex-col min-w-0">
+
         {/* Toolbar */}
         <div className="flex items-center justify-between px-4 py-2 border-b border-border bg-surface flex-wrap gap-2">
-
-          {/* ✅ Removed language dropdown */}
-
           <div className="flex items-center gap-2 flex-wrap">
+
+            {/* Run */}
             <button
               onClick={handleRun}
               disabled={isRunning}
@@ -270,6 +280,7 @@ export default function ProblemView() {
               {isRunning ? "Running" : "Run"}
             </button>
 
+            {/* Submit */}
             <button
               onClick={handleSubmit}
               disabled={isSubmitting}
@@ -279,6 +290,7 @@ export default function ProblemView() {
               Submit
             </button>
 
+            {/* Save */}
             <button
               onClick={handleSave}
               className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-secondary rounded"
@@ -289,6 +301,7 @@ export default function ProblemView() {
 
             <div className="w-px h-6 bg-border" />
 
+            {/* AI Chat toggle */}
             <button
               onClick={() => setChatOpen((v) => !v)}
               className={`flex items-center gap-1.5 px-3 py-1.5 text-sm rounded transition-colors ${
@@ -303,25 +316,28 @@ export default function ProblemView() {
 
             <div className="w-px h-6 bg-border" />
 
+            {/* Debug */}
             <button
               onClick={() => handleAI("debug")}
-              className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-muted rounded"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-muted rounded hover:bg-muted/80 transition-colors"
             >
               <Bug className="h-3.5 w-3.5" />
               Debug
             </button>
 
+            {/* Optimize */}
             <button
               onClick={() => handleAI("optimize")}
-              className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-muted rounded"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-muted rounded hover:bg-muted/80 transition-colors"
             >
               <Zap className="h-3.5 w-3.5" />
               Optimize
             </button>
 
+            {/* Review */}
             <button
               onClick={() => handleAI("review")}
-              className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-muted rounded"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-muted rounded hover:bg-muted/80 transition-colors"
             >
               <Eye className="h-3.5 w-3.5" />
               Review
@@ -329,16 +345,19 @@ export default function ProblemView() {
           </div>
         </div>
 
+        {/* Code editor */}
         <div className="flex-1 min-h-0">
           <CodeEditor language="java" value={code} onChange={setCode} />
         </div>
 
+        {/* Output section */}
         <div className="h-48 border-t border-border flex flex-col">
           <div className="px-4 py-2 border-b border-border bg-surface">
             <span className="text-xs font-medium uppercase">Output</span>
           </div>
 
           <div className="flex flex-1">
+            {/* stdin input */}
             <div className="w-1/3 border-r border-border p-3">
               <textarea
                 value={stdin}
@@ -351,13 +370,14 @@ export default function ProblemView() {
             {/* ✅ Output panel — red for errors, green for success */}
             <div className="flex-1 p-3 overflow-y-auto">
               <pre
-                className={`text-xs font-mono whitespace-pre-wrap h-full ${
+                className={`text-xs font-mono whitespace-pre-wrap h-full select-text cursor-text ${
                   outputType === "error"
                     ? "text-red-400"
                     : outputType === "success"
                     ? "text-green-400"
                     : "text-muted-foreground"
                 }`}
+                style={{ userSelect: "text", WebkitUserSelect: "text" }}
               >
                 {output || "Run your code to see output here."}
               </pre>
@@ -366,7 +386,7 @@ export default function ProblemView() {
         </div>
       </div>
 
-      {/* AI Chat Panel — third column, only visible when open */}
+      {/* ── AI Chat Panel — third column, visible when chatOpen or aiPanel.open ── */}
       {(chatOpen || aiPanel.open) && (
         <div className="w-80 border-l border-border flex flex-col shrink-0">
           <AIChatPanel
@@ -377,7 +397,8 @@ export default function ProblemView() {
             }}
             code={code}
             problemTitle={problem.title}
-            errors={outputType === "error" ? output : ""}
+            // ✅ Only pass error output when the last run actually produced an error
+            errors={errorsForChat}
             aiPanelTitle={aiPanel.open ? aiPanel.title : undefined}
             aiPanelContent={aiPanel.open ? aiPanel.content : undefined}
             aiPanelLoading={aiPanel.open ? aiPanel.loading : undefined}

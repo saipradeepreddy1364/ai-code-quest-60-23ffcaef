@@ -9,6 +9,7 @@ import { Bot, Play, Loader2, Save, RotateCcw } from "lucide-react";
 type CodeCompilerProps = {
   onCodeChange?: (code: string, lang: string) => void;
   onToggleAI?: () => void;
+  onErrorChange?: (error: string) => void;
   userEmail?: string;
 };
 
@@ -18,7 +19,12 @@ const defaultCode = `public class Main {
     }
 }`;
 
-export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: CodeCompilerProps) {
+export default function CodeCompiler({
+  onCodeChange,
+  onToggleAI,
+  onErrorChange,
+  userEmail,
+}: CodeCompilerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const isResizingRef = useRef(false);
   const abortRef = useRef<AbortController | null>(null);
@@ -34,6 +40,12 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
   const [inputChanged, setInputChanged] = useState(false);
   const [bottomHeight, setBottomHeight] = useState(200);
 
+  // Notify parent whenever the error state changes so Dashboard can pass it
+  // down to AIChatPanel as the `errors` prop.
+  useEffect(() => {
+    onErrorChange?.(error);
+  }, [error]);
+
   // Terminal resize via ref (stable listener, no stale closure)
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -44,7 +56,9 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
         setBottomHeight(newHeight);
       }
     };
-    const handleMouseUp = () => { isResizingRef.current = false; };
+    const handleMouseUp = () => {
+      isResizingRef.current = false;
+    };
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("mouseup", handleMouseUp);
     return () => {
@@ -74,15 +88,18 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
 
       const rawError = result.stderr || result.compile_output || "";
       if (rawError && rawError.trim() !== "") {
-        // ✅ parse raw Java error into friendly message
-        setError(parseJavaError(rawError));
+        // Parse raw Java error into a friendly message
+        const parsedError = parseJavaError(rawError);
+        setError(parsedError);
         setActiveTab("errors");
       } else {
         setOutput(result.stdout || "No Output");
         setActiveTab("terminal");
       }
     } catch {
-      setError("⚠️ Could not connect to the compiler. Make sure the backend is running.");
+      const fallbackError =
+        "⚠️ Could not connect to the compiler. Make sure the backend is running.";
+      setError(fallbackError);
       setActiveTab("errors");
     } finally {
       setIsRunning(false);
@@ -103,14 +120,20 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
   };
 
   const handleSave = async () => {
-    if (!code.trim()) { toast.error("Nothing to save!"); return; }
+    if (!code.trim()) {
+      toast.error("Nothing to save!");
+      return;
+    }
     setIsSaving(true);
     try {
-        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/codes/save`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userEmail, code, language: "java" }),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/api/codes/save`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userEmail, code, language: "java" }),
+        }
+      );
       if (!response.ok) throw new Error("Save failed");
       toast.success("Code saved successfully!");
     } catch {
@@ -165,7 +188,11 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
             title="Run code"
             className="flex items-center justify-center w-8 h-8 rounded-md text-green-500 hover:bg-green-500/10 transition-colors disabled:opacity-50"
           >
-            {isRunning ? <Loader2 className="h-5 w-5 animate-spin" /> : <Play className="h-5 w-5" />}
+            {isRunning ? (
+              <Loader2 className="h-5 w-5 animate-spin" />
+            ) : (
+              <Play className="h-5 w-5" />
+            )}
           </button>
         </div>
       </div>
@@ -185,7 +212,10 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
       {/* RESIZE HANDLE */}
       <div
         className="h-1.5 bg-border hover:bg-primary/60 cursor-row-resize shrink-0 transition-colors"
-        onMouseDown={(e) => { e.preventDefault(); isResizingRef.current = true; }}
+        onMouseDown={(e) => {
+          e.preventDefault();
+          isResizingRef.current = true;
+        }}
       />
 
       {/* TERMINAL PANEL */}
@@ -244,7 +274,7 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
 
               {/* Output section */}
               <div className="text-green-400 mb-1 font-semibold">Output</div>
-              {/* ✅ select-text allows user to highlight and copy output */}
+              {/* select-text allows user to highlight and copy output */}
               <pre
                 className="text-foreground whitespace-pre-wrap select-text cursor-text"
                 style={{ userSelect: "text", WebkitUserSelect: "text" }}
@@ -260,8 +290,9 @@ export default function CodeCompiler({ onCodeChange, onToggleAI, userEmail }: Co
               )}
             </>
           )}
+
           {activeTab === "errors" && (
-            /* ✅ select-text allows user to highlight and copy error messages */
+            /* select-text allows user to highlight and copy error messages */
             <pre
               className="text-red-400 whitespace-pre-wrap select-text cursor-text"
               style={{ userSelect: "text", WebkitUserSelect: "text" }}

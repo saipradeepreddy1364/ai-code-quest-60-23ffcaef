@@ -15,7 +15,6 @@ interface AIChatPanelProps {
   code?: string;
   problemTitle?: string;
   errors?: string;
-  /** When set, shows a one-off AI result (Debug / Optimize / Review) at the top */
   aiPanelTitle?: string;
   aiPanelContent?: string;
   aiPanelLoading?: boolean;
@@ -44,20 +43,51 @@ export default function AIChatPanel({
 
   if (!isOpen) return null;
 
+  // ✅ Send is enabled if:
+  //    - Not currently loading AND
+  //    - At least one of: user typed a message, code is attached, errors are attached
+  const canSend =
+    !isLoading &&
+    (input.trim().length > 0 || attachCode || attachErrors);
+
   const handleSend = async () => {
-    if (!input.trim() || isLoading) return;
+    if (!canSend) return;
 
     let userText = input.trim();
 
+    // If no text but attachments exist, generate a sensible default prompt
+    if (!userText && attachCode && !attachErrors) {
+      userText = "Please review my code and suggest improvements.";
+    } else if (!userText && !attachCode && attachErrors) {
+      userText = "Please help me fix these errors.";
+    } else if (!userText && attachCode && attachErrors) {
+      userText = "Please help me fix the errors in my code.";
+    }
+
+    // Prepend code context if attached
     if (attachCode && code) {
       userText = `Context — problem: "${problemTitle ?? "unknown"}"\n\`\`\`java\n${code}\n\`\`\`\n\n${userText}`;
     }
 
+    // Append errors context if attached
     if (attachErrors && errors) {
       userText = `${userText}\n\nErrors from output:\n\`\`\`\n${errors}\n\`\`\``;
     }
 
-    const userMessage: Message = { role: "user", content: input.trim() };
+    // The display message shown in the chat bubble (human-readable, no raw context)
+    const displayContent =
+      input.trim() ||
+      (attachCode && attachErrors
+        ? "Help me fix the errors in my code."
+        : attachCode
+        ? "Review my code and suggest improvements."
+        : "Help me fix these errors.");
+
+    const userMessage: Message = {
+      role: "user",
+      content: displayContent,
+    };
+
     const historyBeforeThisMessage = [...messages];
 
     setMessages((prev) => [...prev, userMessage]);
@@ -66,12 +96,18 @@ export default function AIChatPanel({
 
     try {
       const response = await askAI(userText, historyBeforeThisMessage);
-      setMessages((prev) => [...prev, { role: "assistant", content: response }]);
+      setMessages((prev) => [
+        ...prev,
+        { role: "assistant", content: response },
+      ]);
     } catch (error) {
       console.error("AI chat error:", error);
       setMessages((prev) => [
         ...prev,
-        { role: "assistant", content: "Sorry, I couldn't get a response. Please try again." },
+        {
+          role: "assistant",
+          content: "Sorry, I couldn't get a response. Please try again.",
+        },
       ]);
     } finally {
       setIsLoading(false);
@@ -128,11 +164,11 @@ export default function AIChatPanel({
             <Bot className="h-8 w-8 mx-auto mb-2 opacity-50" />
             <p className="font-medium text-foreground">Ask me anything!</p>
             <p className="text-xs mt-2 leading-relaxed">
-              DSA concepts, Java syntax, time complexity, algorithms — anything you want to learn or understand.
+              DSA, algorithms, Java, aptitude, CS concepts — anything you want to learn.
             </p>
-            {code && (
+            {(code || errors) && (
               <p className="text-xs mt-3 text-accent">
-                💡 Toggle "Attach code" or "Attach errors" below to include context.
+                💡 Use the attach buttons below to include your code or errors.
               </p>
             )}
           </div>
@@ -174,53 +210,55 @@ export default function AIChatPanel({
         <div ref={bottomRef} />
       </div>
 
-      {/* ATTACH BUTTONS */}
-      <div className="px-3 py-2 border-t border-border bg-surface flex flex-col gap-2 shrink-0">
+      {/* ATTACH BUTTONS — always show if code or errors are available */}
+      {(code || errors) && (
+        <div className="px-3 py-2 border-t border-border bg-muted/20 flex flex-col gap-1.5 shrink-0">
+          <p className="text-xs text-muted-foreground font-medium mb-0.5">Attach context:</p>
 
-        {/* Attach Code */}
-        {code && (
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setAttachCode((v) => !v)}
-              className={`flex items-center gap-1.5 text-xs px-2 py-1 rounded transition-colors ${
-                attachCode
-                  ? "bg-accent text-accent-foreground"
-                  : "bg-muted text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              <Code2 className="h-3 w-3" />
-              {attachCode ? "Code attached ✓" : "Attach code"}
-            </button>
-            <span className="text-xs text-muted-foreground">
-              {attachCode
-                ? "Editor code will be sent with your message."
-                : "Send your current code as context."}
-            </span>
-          </div>
-        )}
+          <div className="flex gap-2 flex-wrap">
+            {/* Attach Code */}
+            {code && (
+              <button
+                onClick={() => setAttachCode((v) => !v)}
+                className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-all ${
+                  attachCode
+                    ? "bg-blue-500/20 border-blue-500 text-blue-400"
+                    : "bg-muted border-border text-muted-foreground hover:text-foreground hover:border-muted-foreground"
+                }`}
+              >
+                <Code2 className="h-3 w-3" />
+                {attachCode ? "Code ✓" : "Attach Code"}
+              </button>
+            )}
 
-        {/* Attach Errors */}
-        {errors && (
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setAttachErrors((v) => !v)}
-              className={`flex items-center gap-1.5 text-xs px-2 py-1 rounded transition-colors ${
-                attachErrors
-                  ? "bg-red-500 text-white"
-                  : "bg-muted text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              <AlertTriangle className="h-3 w-3" />
-              {attachErrors ? "Errors attached ✓" : "Attach errors"}
-            </button>
-            <span className="text-xs text-muted-foreground">
-              {attachErrors
-                ? "Errors will be sent with your message."
-                : "Send output errors as context."}
-            </span>
+            {/* Attach Errors */}
+            {errors && (
+              <button
+                onClick={() => setAttachErrors((v) => !v)}
+                className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-all ${
+                  attachErrors
+                    ? "bg-red-500/20 border-red-500 text-red-400"
+                    : "bg-muted border-border text-muted-foreground hover:text-foreground hover:border-muted-foreground"
+                }`}
+              >
+                <AlertTriangle className="h-3 w-3" />
+                {attachErrors ? "Errors ✓" : "Attach Errors"}
+              </button>
+            )}
           </div>
-        )}
-      </div>
+
+          {/* Status hint — only show when something is attached */}
+          {(attachCode || attachErrors) && (
+            <p className="text-xs text-muted-foreground mt-0.5">
+              {attachCode && attachErrors
+                ? "Code + errors will be sent. You can send without typing."
+                : attachCode
+                ? "Code will be sent. You can send without typing."
+                : "Errors will be sent. You can send without typing."}
+            </p>
+          )}
+        </div>
+      )}
 
       {/* INPUT */}
       <div className="border-t border-border p-3 flex gap-2 shrink-0">
@@ -228,17 +266,25 @@ export default function AIChatPanel({
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Ask anything... (Enter to send)"
+          placeholder={
+            attachCode || attachErrors
+              ? "Ask something or just press Send..."
+              : "Ask anything... (Enter to send)"
+          }
           className="flex-1 bg-background border border-border rounded-md px-3 py-2 text-sm resize-none h-10 max-h-32 focus:outline-none focus:ring-1 focus:ring-primary"
           rows={1}
         />
         <button
           onClick={handleSend}
-          disabled={isLoading || !input.trim()}
-          className="bg-primary hover:opacity-90 disabled:opacity-50 rounded-md px-3 py-2 transition-opacity"
+          disabled={!canSend}
+          className={`rounded-md px-3 py-2 transition-all ${
+            canSend
+              ? "bg-primary hover:opacity-90 text-primary-foreground"
+              : "bg-muted text-muted-foreground cursor-not-allowed opacity-50"
+          }`}
           aria-label="Send message"
         >
-          <Send className="h-4 w-4 text-primary-foreground" />
+          <Send className="h-4 w-4" />
         </button>
       </div>
     </div>
