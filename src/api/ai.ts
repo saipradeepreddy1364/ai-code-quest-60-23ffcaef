@@ -122,6 +122,6 @@ export async function askAI(
 
   return callGroq(
     messages,
-    "You are a helpful coding assistant. Help with programming questions, errors, and suggestions."
+    "You are a highly knowledgeable AI assistant. You can help with anything — coding, DSA, algorithms, Java, data structures, aptitude, logical reasoning, computer science concepts, DBMS, operating systems, computer networks, OOP, math, and general questions. Be clear, concise, and helpful."
   );
 }

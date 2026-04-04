@@ -508,7 +508,11 @@ export default function Dashboard() {
 
           {isAiOpen && (
             <div className="shrink-0 border-l border-border overflow-hidden" style={{ width: aiPanelWidth }}>
-              <AIChatPanel isOpen={isAiOpen} onClose={() => setIsAiOpen(false)} />
+              <AIChatPanel
+  isOpen={isAiOpen}
+  onClose={() => setIsAiOpen(false)}
+  code={currentCode}
+/>
             </div>
           )}
         </div>
