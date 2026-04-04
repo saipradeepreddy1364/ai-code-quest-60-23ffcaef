@@ -76,7 +76,7 @@ export default function ProblemView() {
     fetchSavedCode();
   }, [user, problem?.id]);
 
-  // ── Resizable bottom terminal panel ───────────────────────────────────────
+  // ── Resizable panels ───────────────────────────────────────────────────────
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (isResizingBottomRef.current && containerRef.current) {
@@ -442,18 +442,25 @@ export default function ProblemView() {
         </div>
 
         {/* ── Editor + AI chat side by side ── */}
-        <div className="flex flex-1 overflow-hidden min-h-0">
+        {/* min-h-0 is critical here: without it, flex children ignore the
+            parent's constrained height and overflow instead of scrolling    */}
+        <div className="flex flex-1 min-h-0">
 
           {/* Code editor */}
           <div className="flex-1 overflow-hidden min-w-0">
             <CodeEditor language="java" value={code} onChange={setCode} />
           </div>
 
-          {/* AI Chat Panel */}
+          {/* AI Chat Panel
+              h-full ensures AIChatPanel knows its exact height bounds so its
+              internal message list can scroll. overflow-hidden on the wrapper
+              prevents the panel itself from bloating the layout.            */}
           {(chatOpen || aiPanel.open) && (
             <>
               <div className="w-1.5 bg-border hover:bg-primary/60 cursor-col-resize shrink-0 transition-colors" />
-              <div className="w-80 border-l border-border flex flex-col shrink-0 overflow-hidden">
+              <div
+                className="w-80 border-l border-border flex flex-col shrink-0 h-full overflow-hidden"
+              >
                 <AIChatPanel
                   isOpen={true}
                   onClose={() => {
