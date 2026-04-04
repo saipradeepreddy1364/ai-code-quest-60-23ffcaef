@@ -65,6 +65,95 @@ const PLACEMENT_CATEGORIES = [
   "Operating Systems", "Computer Networks", "OOP",
 ];
 
+// ─── Real SVG logos for each company ────────────────────────────────────────
+const CompanyLogos: Record<string, React.FC<{ size?: number }>> = {
+  Google: ({ size = 36 }) => (
+    <svg width={size} height={size} viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+      <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+      <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+      <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+      <path fill="none" d="M0 0h48v48H0z"/>
+    </svg>
+  ),
+
+  Amazon: ({ size = 36 }) => (
+    <svg width={size} height={size} viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#FF9900" d="M29.8 37.4c-7.2 5.3-17.6 8.1-26.6 4.3-.6-.3-.1-.7.5-.5 7.6 4.4 17.6 3.8 24.9-.5.6-.4 1.2.3.2.7z"/>
+      <path fill="#FF9900" d="M32.2 34.7c-.9-1.1-5.8-.5-8-.3-.7.1-.8-.5-.2-.9 3.9-2.7 10.3-1.9 11.1-.9.7.9-.2 7.3-3.9 10.3-.6.5-1.1.2-.8-.4.8-2.1 2.7-6.7 1.8-7.8z"/>
+      <path fill="#232F3E" d="M28.7 8.2V5.9c0-.4.3-.6.6-.6h10.9c.4 0 .6.3.6.6v2c0 .3-.3.8-.8 1.4l-5.6 8c2.1-.1 4.3.3 6.2 1.3.4.2.5.6.5.9v2.4c0 .4-.4.8-.8.6-3.4-1.8-8-2-11.8.1-.4.2-.8-.2-.8-.6v-2.3c0-.4 0-1 .4-1.6l6.5-9.3h-5.6c-.3 0-.6-.3-.6-.6v.2zM12.2 21.4h-3.4c-.3 0-.6-.3-.6-.6V6c0-.4.3-.6.7-.6h3.2c.3 0 .6.3.6.6v1.9h.1c.8-2 2.4-2.9 4.4-2.9 2.1 0 3.4.9 4.3 2.9.8-2 2.7-2.9 4.7-2.9 1.4 0 3 .6 3.9 1.9 1.1 1.5.9 3.6.9 5.5v11c0 .4-.3.6-.7.6h-3.4c-.3 0-.6-.3-.6-.6V13.6c0-.7.1-2.6-.1-3.3-.3-1.2-1-1.5-2-1.5-.8 0-1.7.6-2 1.4-.3.8-.3 2.2-.3 3.4v7.1c0 .4-.3.6-.7.6h-3.4c-.3 0-.6-.3-.6-.6V13.6c0-2.3.4-5.6-2.1-5.6-2.6 0-2.5 3.3-2.5 5.6v7.2c0 .4-.3.6-.7.6H12.2zM48 12.9c0 5.6-3.2 8.9-7.9 8.9-4.5 0-7.2-3.7-7.2-8.2C32.9 8.9 36 5 40.4 5 44.9 5 48 8.7 48 12.9zm-7.9 5.5c1.1 0 2.1-.8 2.4-2 .3-1.2.3-2.4.3-3.7 0-2.9-.3-6.3-2.8-6.3-2.6 0-2.7 3.4-2.7 6.3 0 2.9.1 5.7 2.8 5.7zM4.6 21.4H1.2c-.3 0-.6-.3-.6-.6V6c0-.4.3-.6.7-.6h3.2c.3 0 .5.3.6.6v2.2h.1C6 5.9 7.3 5 9 5c1.8 0 2.9.6 3.8 2.2.8-1.6 2.2-2.2 4-2.2 1.2 0 2.5.5 3.3 1.6C21 8 21 9.8 21 11.1v9.7c0 .4-.3.6-.7.6h-3.4c-.3 0-.6-.3-.6-.6V12.5c0-.7.1-3-.1-3.7-.3-1.1-.9-1.4-1.9-1.4-.8 0-1.6.5-1.9 1.3-.3.8-.3 2.2-.3 3.3v8.8c0 .4-.3.6-.7.6H9c-.3 0-.6-.3-.6-.6v-8.2c0-2.3.4-5.6-2.1-5.6-2.6 0-2.5 3.3-2.5 5.6v8.2c0 .4-.3.6-.7.6H4.6z"/>
+    </svg>
+  ),
+
+  Microsoft: ({ size = 36 }) => (
+    <svg width={size} height={size} viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#FF5722" d="M6 6h17v17H6z"/>
+      <path fill="#4CAF50" d="M25 6h17v17H25z"/>
+      <path fill="#FFC107" d="M25 25h17v17H25z"/>
+      <path fill="#03A9F4" d="M6 25h17v17H6z"/>
+    </svg>
+  ),
+
+  Meta: ({ size = 36 }) => (
+    <svg width={size} height={size} viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="meta-grad-a" x1="14.68" y1="30.27" x2="14.68" y2="15.08" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#0062e0"/>
+          <stop offset="1" stopColor="#19afff"/>
+        </linearGradient>
+        <linearGradient id="meta-grad-b" x1="33.32" y1="30.27" x2="33.32" y2="15.08" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#0062e0"/>
+          <stop offset="1" stopColor="#19afff"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#meta-grad-a)" d="M6 22.5C6 18 9.1 15 13 15c2.4 0 4.3 1 6.1 3.3L24 24l-4.9 5.7C17.3 32 15.4 33 13 33 9.1 33 6 30 6 25.5v-3z"/>
+      <path fill="url(#meta-grad-b)" d="M42 22.5C42 18 38.9 15 35 15c-2.4 0-4.3 1-6.1 3.3L24 24l4.9 5.7C30.7 32 32.6 33 35 33c3.9 0 7-3 7-7.5v-3z"/>
+      <path fill="#1877f2" d="M18.1 18.3C20 15.9 22 14 24 14s4 1.9 5.9 4.3L35.5 26l-5.6 6.5c-1.8 2.1-3.7 3.5-5.9 3.5s-4.1-1.4-5.9-3.5L12.5 26l5.6-7.7z"/>
+    </svg>
+  ),
+
+  Flipkart: ({ size = 36 }) => (
+    <svg width={size} height={size} viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <rect width="48" height="48" rx="8" fill="#F7F7F7"/>
+      <text x="5" y="33" fontFamily="Arial Black, sans-serif" fontWeight="900" fontSize="22" fill="#2874F0">fk</text>
+      <polygon points="38,14 44,20 38,26 38,22 32,22 32,18 38,18" fill="#FFD700"/>
+    </svg>
+  ),
+
+  Oracle: ({ size = 36 }) => (
+    <svg width={size} height={size} viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="24" cy="24" rx="18" ry="12" fill="none" stroke="#F80000" strokeWidth="5"/>
+    </svg>
+  ),
+
+  Adobe: ({ size = 36 }) => (
+    <svg width={size} height={size} viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="0,48 16,0 32,48" fill="#FF0000"/>
+      <polygon points="18,48 34,0 48,48" fill="#FF0000"/>
+      <rect x="10" y="30" width="28" height="5" fill="#FF0000"/>
+    </svg>
+  ),
+
+  "Goldman Sachs": ({ size = 36 }) => (
+    <svg width={size} height={size} viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <rect width="48" height="48" rx="4" fill="#FFFFFF"/>
+      <text x="4" y="28" fontFamily="Georgia, serif" fontWeight="700" fontSize="11" fill="#003366" letterSpacing="-0.5">GS</text>
+    </svg>
+  ),
+};
+
+// ─── Company card background/accent per brand ────────────────────────────────
+const COMPANY_META: Record<string, { bg: string; border: string; logoBg: string }> = {
+  "Google":         { bg: "#1c1c2e", border: "rgba(234,67,53,0.25)",   logoBg: "#fff"    },
+  "Amazon":         { bg: "#1c1c2e", border: "rgba(255,153,0,0.25)",   logoBg: "#232F3E" },
+  "Microsoft":      { bg: "#1c1c2e", border: "rgba(0,120,212,0.25)",   logoBg: "#fff"    },
+  "Meta":           { bg: "#1c1c2e", border: "rgba(24,119,242,0.25)",  logoBg: "#fff"    },
+  "Flipkart":       { bg: "#1c1c2e", border: "rgba(40,116,240,0.25)",  logoBg: "#fff"    },
+  "Oracle":         { bg: "#1c1c2e", border: "rgba(248,0,0,0.25)",     logoBg: "#fff"    },
+  "Adobe":          { bg: "#1c1c2e", border: "rgba(255,0,0,0.25)",     logoBg: "#1a1a1a" },
+  "Goldman Sachs":  { bg: "#1c1c2e", border: "rgba(0,51,102,0.4)",     logoBg: "#fff"    },
+};
+
 const COMPANIES = [
   "Google", "Amazon", "Microsoft", "Meta", "Flipkart",
   "Oracle", "Adobe", "Goldman Sachs",
@@ -160,6 +249,72 @@ function TopicCard({ category, count, onClick }: TopicCardProps) {
   );
 }
 
+// ─── CompanyCard ─────────────────────────────────────────────────────────────
+interface CompanyCardProps {
+  company: string;
+  onClick: () => void;
+}
+
+function CompanyCard({ company, onClick }: CompanyCardProps) {
+  const [hovered, setHovered] = useState(false);
+  const meta = COMPANY_META[company] ?? { bg: "#1c1c2e", border: "rgba(255,255,255,0.07)", logoBg: "#1e1b4b" };
+  const Logo = CompanyLogos[company];
+
+  return (
+    <button
+      onClick={(e) => { e.stopPropagation(); onClick(); }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        background: hovered ? "#22223a" : meta.bg,
+        border: `1px solid ${hovered ? meta.border.replace("0.25", "0.55").replace("0.4", "0.7") : meta.border}`,
+        borderRadius: "16px",
+        padding: "20px 14px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: "12px",
+        cursor: "pointer",
+        transition: "all 0.15s ease",
+        transform: hovered ? "translateY(-3px)" : "translateY(0)",
+        boxShadow: hovered ? "0 8px 32px rgba(0,0,0,0.5)" : "none",
+      }}
+    >
+      <div
+        style={{
+          width: 56,
+          height: 56,
+          borderRadius: "14px",
+          background: meta.logoBg,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexShrink: 0,
+          boxShadow: "0 2px 12px rgba(0,0,0,0.3)",
+          overflow: "hidden",
+        }}
+      >
+        {Logo ? (
+          <Logo size={38} />
+        ) : (
+          <Building2 style={{ width: 24, height: 24, color: "#818cf8" }} />
+        )}
+      </div>
+      <span
+        style={{
+          fontSize: "13px",
+          fontWeight: 700,
+          color: "#e2e8f0",
+          textAlign: "center",
+          lineHeight: 1.3,
+        }}
+      >
+        {company}
+      </span>
+    </button>
+  );
+}
+
 // ─── Dashboard ───────────────────────────────────────────────────────────────
 export default function Dashboard() {
   const { user, signOut } = useAuth();
@@ -222,7 +377,7 @@ export default function Dashboard() {
         className="flex justify-between items-center px-4 py-2.5 bg-card border-b border-border shrink-0"
         style={{ zIndex: 50, position: "relative" }}
       >
-        {/* ✅ Hamburger only — no label beside it */}
+        {/* Hamburger only — no label beside it */}
         <button
           onClick={() => setMenuOpen((p) => !p)}
           className="p-2 rounded-md hover:bg-muted transition-colors"
@@ -249,7 +404,7 @@ export default function Dashboard() {
                 {user.email}
               </div>
 
-              {/* ✅ Change Password */}
+              {/* Change Password */}
               <button
                 onClick={() => {
                   setDropdownOpen(false);
@@ -263,7 +418,7 @@ export default function Dashboard() {
 
               <div className="border-t border-border" />
 
-              {/* ✅ Sign Out — no Home, no All Problems */}
+              {/* Sign Out */}
               <button
                 onClick={handleLogout}
                 className="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-500 hover:bg-muted transition-colors"
@@ -348,7 +503,7 @@ export default function Dashboard() {
               </h2>
             </div>
 
-            {/* ✅ All Problems — stopPropagation + direct navigate to prevent any bubbling issues */}
+            {/* All Problems button */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -462,49 +617,14 @@ export default function Dashboard() {
                 }}
               >
                 {COMPANIES.map((company) => (
-                  <button
+                  <CompanyCard
                     key={company}
-                    onClick={(e) => {
-                      e.stopPropagation();
+                    company={company}
+                    onClick={() => {
                       setMenuOpen(false);
                       navigate(`/problems?company=${encodeURIComponent(company)}`);
                     }}
-                    style={{
-                      background: "#1c1c2e",
-                      border: "1px solid rgba(255,255,255,0.07)",
-                      borderRadius: "16px",
-                      padding: "20px 14px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      gap: "10px",
-                      cursor: "pointer",
-                      transition: "background 0.15s",
-                    }}
-                    onMouseEnter={(e) =>
-                      ((e.currentTarget as HTMLButtonElement).style.background = "#22223a")
-                    }
-                    onMouseLeave={(e) =>
-                      ((e.currentTarget as HTMLButtonElement).style.background = "#1c1c2e")
-                    }
-                  >
-                    <div
-                      style={{
-                        width: 48,
-                        height: 48,
-                        borderRadius: "12px",
-                        background: "#1e1b4b",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <Building2 style={{ width: 24, height: 24, color: "#818cf8" }} />
-                    </div>
-                    <span style={{ fontSize: "13px", fontWeight: 700, color: "#e2e8f0", textAlign: "center" }}>
-                      {company}
-                    </span>
-                  </button>
+                  />
                 ))}
               </div>
             )}
