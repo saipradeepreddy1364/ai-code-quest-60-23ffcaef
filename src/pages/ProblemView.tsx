@@ -23,11 +23,11 @@ export default function ProblemView() {
   const [code, setCode] = useState(problem?.starter_code?.java || "");
   const [stdin, setStdin] = useState("");
   const [output, setOutput] = useState("");
-  // ✅ outputType tracks whether the last run produced a success or error result
   const [outputType, setOutputType] = useState<"success" | "error" | "">("");
   const [isRunning, setIsRunning] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
+  const [runCount, setRunCount] = useState(0); // ← tracks compiler runs
   const [aiPanel, setAiPanel] = useState<{
     open: boolean;
     title: string;
@@ -47,7 +47,7 @@ export default function ProblemView() {
 
       const { data, error } = await supabase
         .from("saved_codes")
-        .select("code")
+        .select("code, compiler_runs")
         .eq("user_id", user.id)
         .eq("problem_id", problem.id)
         .eq("language", language)
@@ -60,6 +60,9 @@ export default function ProblemView() {
 
       if (data?.code) {
         setCode(data.code);
+      }
+      if (data?.compiler_runs) {
+        setRunCount(data.compiler_runs);
       }
     };
 
@@ -81,7 +84,6 @@ export default function ProblemView() {
       const rawSuccess = result.stdout || "";
 
       if (rawError) {
-        // Parse the error into a friendly message
         setOutput(parseJavaError(rawError));
         setOutputType("error");
       } else {
@@ -93,6 +95,7 @@ export default function ProblemView() {
       setOutputType("error");
     }
     setIsRunning(false);
+    setRunCount((c) => c + 1); // ← increment run count every time Run is clicked
   };
 
   const handleSubmit = async () => {
@@ -127,9 +130,14 @@ export default function ProblemView() {
       const { error } = await supabase.from("saved_codes").upsert(
         {
           user_id: user.id,
+          user_email: user.email,           // ← fill user_email
           problem_id: problem.id,
+          title: problem.title,             // ← fill title
+          category: problem.category,       // ← fill category
           code,
           language,
+          compiler_runs: runCount,          // ← fill compiler_runs
+          saved_at: new Date().toISOString(), // ← fill saved_at
         },
         { onConflict: "user_id,problem_id,language" }
       );
@@ -155,7 +163,6 @@ export default function ProblemView() {
       loading: true,
     });
 
-    // Open the AI panel automatically when an action is triggered
     setChatOpen(true);
 
     try {
@@ -181,8 +188,6 @@ export default function ProblemView() {
     }
   };
 
-  // ✅ Derive the errors string to pass to AIChatPanel:
-  //    Only pass the output as errors when the last run produced an error result.
   const errorsForChat = outputType === "error" ? output : "";
 
   return (
@@ -343,6 +348,14 @@ export default function ProblemView() {
               Review
             </button>
           </div>
+
+          {/* Run counter badge */}
+          {runCount > 0 && (
+            <div className="flex items-center gap-1.5 text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
+              <Play className="h-3 w-3" />
+              {runCount} run{runCount !== 1 ? "s" : ""}
+            </div>
+          )}
         </div>
 
         {/* Code editor */}
@@ -367,7 +380,7 @@ export default function ProblemView() {
               />
             </div>
 
-            {/* ✅ Output panel — red for errors, green for success */}
+            {/* Output panel */}
             <div className="flex-1 p-3 overflow-y-auto">
               <pre
                 className={`text-xs font-mono whitespace-pre-wrap h-full select-text cursor-text ${
@@ -386,7 +399,7 @@ export default function ProblemView() {
         </div>
       </div>
 
-      {/* ── AI Chat Panel — third column, visible when chatOpen or aiPanel.open ── */}
+      {/* ── AI Chat Panel ── */}
       {(chatOpen || aiPanel.open) && (
         <div className="w-80 border-l border-border flex flex-col shrink-0">
           <AIChatPanel
@@ -397,7 +410,6 @@ export default function ProblemView() {
             }}
             code={code}
             problemTitle={problem.title}
-            // ✅ Only pass error output when the last run actually produced an error
             errors={errorsForChat}
             aiPanelTitle={aiPanel.open ? aiPanel.title : undefined}
             aiPanelContent={aiPanel.open ? aiPanel.content : undefined}
