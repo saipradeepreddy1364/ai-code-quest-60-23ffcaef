@@ -2,10 +2,10 @@
 import { useState, useEffect, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import {
-  User, ChevronDown, Menu, X, Home, BookOpen,
+  User, ChevronDown, Menu, X, BookOpen,
   Building2, GraduationCap, Brain, Cpu, Network, Database,
   LogOut, Binary, Square, Sparkles,
-  Terminal, Grid3x3, Hash, Triangle, Code
+  Terminal, Grid3x3, Hash, Triangle, Code, KeyRound,
 } from "lucide-react";
 import { useAuth } from "../hooks/useAuth";
 import CodeCompiler from "../components/CodeCompiler";
@@ -70,7 +70,7 @@ const COMPANIES = [
   "Oracle", "Adobe", "Goldman Sachs",
 ];
 
-// ─── TopicCard (full-size, matches screenshot) ───────────────────────────────
+// ─── TopicCard ───────────────────────────────────────────────────────────────
 interface TopicCardProps {
   category: string;
   count: number;
@@ -101,7 +101,6 @@ function TopicCard({ category, count, onClick }: TopicCardProps) {
         boxShadow: hovered ? "0 8px 32px rgba(0,0,0,0.45)" : "none",
       }}
     >
-      {/* Left: title + count + button */}
       <div style={{ display: "flex", flexDirection: "column", gap: "3px", flex: 1, minWidth: 0 }}>
         <span
           style={{
@@ -141,7 +140,6 @@ function TopicCard({ category, count, onClick }: TopicCardProps) {
         </button>
       </div>
 
-      {/* Right: icon box */}
       <div
         style={{
           width: 64,
@@ -174,8 +172,6 @@ export default function Dashboard() {
   const [isAiOpen, setIsAiOpen] = useState(false);
   const [currentCode, setCurrentCode] = useState("");
   const [currentLanguage, setCurrentLanguage] = useState("java");
-  // ✅ Track the latest error string from CodeCompiler so we can pass it
-  //    to AIChatPanel as the `errors` prop.
   const [currentErrors, setCurrentErrors] = useState("");
   const [activeTab, setActiveTab] = useState<"dsa" | "placement" | "companies">("dsa");
 
@@ -210,129 +206,124 @@ export default function Dashboard() {
     navigate("/login", { replace: true });
   };
 
-  const goTo = (path: string) => {
-    setMenuOpen(false);
-    navigate(path);
-  };
-
   if (!user) {
     return (
       <div className="h-screen flex items-center justify-center text-sm text-muted-foreground">
-        Loading…
+        Loading...
       </div>
     );
   }
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden bg-background text-foreground">
+    <div className="h-screen bg-background flex flex-col overflow-hidden">
 
-      {/* ══════════════ TOP NAV ══════════════ */}
-      <header className="flex items-center justify-between px-4 py-2 border-b border-border bg-card shrink-0 z-10">
+      {/* ══════════════ HEADER ══════════════ */}
+      <header
+        className="flex justify-between items-center px-4 py-2.5 bg-card border-b border-border shrink-0"
+        style={{ zIndex: 50, position: "relative" }}
+      >
+        {/* ✅ Hamburger only — no label beside it */}
+        <button
+          onClick={() => setMenuOpen((p) => !p)}
+          className="p-2 rounded-md hover:bg-muted transition-colors"
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
 
-        {/* Left: hamburger + logo */}
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => setMenuOpen((v) => !v)}
-            className="p-1.5 rounded hover:bg-muted transition-colors"
-          >
-            {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
-          <span className="font-bold text-base tracking-tight">DevPrep</span>
-        </div>
-
-        {/* Right: user dropdown */}
+        {/* User dropdown */}
         <div className="relative">
           <button
-            onClick={() => setDropdownOpen((v) => !v)}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-md hover:bg-muted transition-colors text-sm"
+            onClick={() => setDropdownOpen((p) => !p)}
+            className="flex items-center gap-2 px-3 py-1.5 bg-primary text-primary-foreground rounded-md text-sm"
           >
-            <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
-              <User className="h-3.5 w-3.5 text-primary" />
-            </div>
-            <span className="hidden sm:inline max-w-[160px] truncate">
-              {user.email}
-            </span>
-            <ChevronDown className="h-3.5 w-3.5 text-muted-foreground" />
+            <User className="h-4 w-4" />
+            <span className="max-w-[120px] truncate">{user.email}</span>
+            <ChevronDown className="h-4 w-4 shrink-0" />
           </button>
 
           {dropdownOpen && (
-            <div className="absolute right-0 mt-1 w-48 bg-card border border-border rounded-lg shadow-lg py-1 z-50">
+            <div className="absolute right-0 mt-2 w-56 bg-card border border-border rounded-lg shadow-lg z-50 overflow-hidden">
+              {/* Email label — informational only */}
+              <div className="px-3 py-2.5 text-xs text-muted-foreground border-b border-border truncate">
+                {user.email}
+              </div>
+
+              {/* ✅ Change Password */}
               <button
-                onClick={() => { setDropdownOpen(false); goTo("/"); }}
-                className="flex items-center gap-2 w-full px-3 py-2 text-sm hover:bg-muted transition-colors"
+                onClick={() => {
+                  setDropdownOpen(false);
+                  navigate("/change-password");
+                }}
+                className="w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-muted transition-colors"
               >
-                <Home className="h-4 w-4" /> Home
+                <KeyRound className="h-4 w-4 text-muted-foreground" />
+                Change Password
               </button>
-              <button
-                onClick={() => { setDropdownOpen(false); goTo("/problems"); }}
-                className="flex items-center gap-2 w-full px-3 py-2 text-sm hover:bg-muted transition-colors"
-              >
-                <BookOpen className="h-4 w-4" /> Problems
-              </button>
-              <div className="border-t border-border my-1" />
+
+              <div className="border-t border-border" />
+
+              {/* ✅ Sign Out — no Home, no All Problems */}
               <button
                 onClick={handleLogout}
-                className="flex items-center gap-2 w-full px-3 py-2 text-sm text-red-400 hover:bg-muted transition-colors"
+                className="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-500 hover:bg-muted transition-colors"
               >
-                <LogOut className="h-4 w-4" /> Sign out
+                <LogOut className="h-4 w-4" />
+                Sign Out
               </button>
             </div>
           )}
         </div>
       </header>
 
-      {/* ══════════════ SLIDE-IN MENU ══════════════ */}
-      {menuOpen && (
-        <div className="absolute top-[49px] left-0 w-64 h-[calc(100vh-49px)] bg-card border-r border-border z-40 flex flex-col py-4 gap-1 px-3 shadow-xl">
-          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-2 mb-1">
-            Navigate
-          </p>
-          {[
-            { label: "Dashboard", icon: Home, path: "/" },
-            { label: "Problems",  icon: BookOpen, path: "/problems" },
-          ].map(({ label, icon: Icon, path }) => (
-            <button
-              key={path}
-              onClick={() => goTo(path)}
-              className="flex items-center gap-2.5 px-3 py-2 rounded-md text-sm hover:bg-muted transition-colors text-foreground"
-            >
-              <Icon className="h-4 w-4 text-muted-foreground" />
-              {label}
-            </button>
-          ))}
-        </div>
-      )}
-
-      {/* ══════════════ HERO PANEL (topic grid) — overlays the compiler ══════════════ */}
+      {/* ══════════════ FULL-SCREEN MENU OVERLAY ══════════════ */}
       {menuOpen && (
         <div
-          className="fixed inset-0 z-30"
-          style={{ top: 49 }}
-          onClick={() => setMenuOpen(false)}
-        />
-      )}
-
-      {/* Topic browser — shown as an overlay/sidebar when accessed via nav */}
-      {activeTab && (
-        <div
-          className="absolute left-64 right-0 z-20 bg-background flex flex-col"
           style={{
-            top: 49,
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
             bottom: 0,
-            display: menuOpen ? "flex" : "none",
+            background: "#0d0d1a",
+            zIndex: 40,
+            display: "flex",
+            flexDirection: "column",
+            overflow: "hidden",
           }}
         >
-          {/* Hero header */}
+          {/* Overlay header */}
           <div
             style={{
               display: "flex",
-              alignItems: "center",
               justifyContent: "space-between",
-              padding: "16px 24px 8px",
+              alignItems: "center",
+              padding: "10px 16px",
+              borderBottom: "1px solid rgba(255,255,255,0.07)",
               flexShrink: 0,
             }}
           >
-            <div>
+            {/* Close button */}
+            <button
+              onClick={() => setMenuOpen(false)}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: 36,
+                height: 36,
+                borderRadius: "8px",
+                background: "rgba(255,255,255,0.05)",
+                border: "none",
+                cursor: "pointer",
+                color: "#94a3b8",
+              }}
+            >
+              <X style={{ width: 18, height: 18 }} />
+            </button>
+
+            {/* Title */}
+            <div style={{ textAlign: "center" }}>
               <p
                 style={{
                   fontSize: "11px",
@@ -357,9 +348,13 @@ export default function Dashboard() {
               </h2>
             </div>
 
-            {/* All Problems shortcut */}
+            {/* ✅ All Problems — stopPropagation + direct navigate to prevent any bubbling issues */}
             <button
-              onClick={() => goTo("/problems")}
+              onClick={(e) => {
+                e.stopPropagation();
+                setMenuOpen(false);
+                navigate("/problems");
+              }}
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -449,7 +444,10 @@ export default function Dashboard() {
                     key={cat}
                     category={cat}
                     count={categoryCounts[cat] ?? 0}
-                    onClick={() => goTo(`/problems?category=${encodeURIComponent(cat)}`)}
+                    onClick={() => {
+                      setMenuOpen(false);
+                      navigate(`/problems?category=${encodeURIComponent(cat)}`);
+                    }}
                   />
                 ))}
               </div>
@@ -466,7 +464,11 @@ export default function Dashboard() {
                 {COMPANIES.map((company) => (
                   <button
                     key={company}
-                    onClick={() => goTo(`/problems?company=${encodeURIComponent(company)}`)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setMenuOpen(false);
+                      navigate(`/problems?company=${encodeURIComponent(company)}`);
+                    }}
                     style={{
                       background: "#1c1c2e",
                       border: "1px solid rgba(255,255,255,0.07)",
@@ -510,7 +512,7 @@ export default function Dashboard() {
         </div>
       )}
 
-      {/* ══════════════ BODY — compiler + AI, always mounted ══════════════ */}
+      {/* ══════════════ BODY — compiler + AI ══════════════ */}
       <div className="flex flex-1 overflow-hidden">
         <div className="flex flex-1 overflow-hidden">
           <div className="flex-1 overflow-hidden">
@@ -520,7 +522,6 @@ export default function Dashboard() {
                 setCurrentLanguage(lang);
               }}
               onToggleAI={() => setIsAiOpen((p) => !p)}
-              // ✅ Receive error updates from CodeCompiler and store in state
               onErrorChange={(err) => setCurrentErrors(err)}
               userEmail={user.email}
             />
@@ -545,7 +546,6 @@ export default function Dashboard() {
                 isOpen={isAiOpen}
                 onClose={() => setIsAiOpen(false)}
                 code={currentCode}
-                // ✅ Pass the latest errors from the compiler's error tab
                 errors={currentErrors}
               />
             </div>
