@@ -2,9 +2,8 @@
 
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
-function buildGeminiBody(
+function sanitizeMessages(
   messages: Array<{ role: string; content: string }>,
-  systemPrompt: string
 ) {
   const filtered = messages.filter((m) => m.content?.trim());
 
@@ -22,40 +21,24 @@ function buildGeminiBody(
     merged.shift();
   }
 
-  // Convert to Gemini format
-  const contents = merged.map((msg) => ({
-    role: msg.role === "assistant" ? "model" : "user",
-    parts: [{ text: msg.content }],
-  }));
-
-  // Inject system prompt as first user message + model ack
-  const contentsWithSystem = [
-    { role: "user", parts: [{ text: systemPrompt }] },
-    { role: "model", parts: [{ text: "Understood. I will follow these instructions." }] },
-    ...contents,
-  ];
-
-  return {
-    contents: contentsWithSystem,
-    generationConfig: {
-      maxOutputTokens: 1024,
-      temperature: 0.7,
-    },
-  };
+  return merged;
 }
 
-async function callGemini(
+async function callClaude(
   messages: Array<{ role: string; content: string }>,
   systemPrompt: string
 ) {
-  const body = buildGeminiBody(messages, systemPrompt);
+  const sanitized = sanitizeMessages(messages);
 
   const response = await fetch(`${BACKEND_URL}/api/ai/chat`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-
-    // ✅ FIX: Backend receives valid JSON string
-    body: JSON.stringify(body),
+    body: JSON.stringify({
+      model: "claude-haiku-4-5-20251001",
+      max_tokens: 1024,
+      system: systemPrompt,
+      messages: sanitized,
+    }),
   });
 
   if (!response.ok) {
@@ -67,12 +50,12 @@ async function callGemini(
   const data = await response.json();
 
   // ✅ FIX: Safe parsing (handles empty / unexpected responses)
-  if (!data || !data.candidates || data.candidates.length === 0) {
-    console.warn("Invalid Gemini response:", data);
+  if (!data || !data.content || data.content.length === 0) {
+    console.warn("Invalid Claude response:", data);
     return "No response received.";
   }
 
-  return data.candidates?.[0]?.content?.parts?.[0]?.text ?? "No response received.";
+  return data.content[0].text ?? "No response received.";
 }
 
 export async function debugCode(
@@ -80,7 +63,7 @@ export async function debugCode(
   problemDescription: string,
   language: string
 ) {
-  return callGemini(
+  return callClaude(
     [
       {
         role: "user",
@@ -96,7 +79,7 @@ export async function optimizeCode(
   problemDescription: string,
   language: string
 ) {
-  return callGemini(
+  return callClaude(
     [
       {
         role: "user",
@@ -112,7 +95,7 @@ export async function reviewCode(
   problemDescription: string,
   language: string
 ) {
-  return callGemini(
+  return callClaude(
     [
       {
         role: "user",
@@ -132,7 +115,7 @@ export async function askAI(
     { role: "user", content: prompt },
   ];
 
-  return callGemini(
+  return callClaude(
     messages,
     "You are a helpful coding assistant. Help with programming questions, errors, and suggestions."
   );
