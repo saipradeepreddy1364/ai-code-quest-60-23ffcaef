@@ -4,7 +4,7 @@ import CodeEditor from "./CodeEditor";
 import { runCode, languageIds } from "@/api/compiler";
 import { parseJavaError } from "@/utils/parseJavaError";
 import { toast } from "sonner";
-import { Bot, Play, Loader2, Save, RotateCcw } from "lucide-react";
+import { Bot, Play, Loader2, RotateCcw } from "lucide-react";
 
 type CodeCompilerProps = {
   onCodeChange?: (code: string, lang: string) => void;
@@ -35,7 +35,6 @@ export default function CodeCompiler({
   const [error, setError] = useState("");
   const [activeTab, setActiveTab] = useState<"terminal" | "errors">("terminal");
   const [isRunning, setIsRunning] = useState(false);
-  const [isSaving, setIsSaving] = useState(false);
   const [executionTime, setExecutionTime] = useState<number | null>(null);
   const [inputChanged, setInputChanged] = useState(false);
   const [bottomHeight, setBottomHeight] = useState(200);
@@ -126,30 +125,6 @@ export default function CodeCompiler({
     toast.info("Execution reset. Ready to run again.");
   };
 
-  const handleSave = async () => {
-    if (!code.trim()) {
-      toast.error("Nothing to save!");
-      return;
-    }
-    setIsSaving(true);
-    try {
-      const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/codes/save`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ userEmail, code, language: "java" }),
-        }
-      );
-      if (!response.ok) throw new Error("Save failed");
-      toast.success("Code saved successfully!");
-    } catch {
-      toast.error("Failed to save code.");
-    } finally {
-      setIsSaving(false);
-    }
-  };
-
   return (
     <div ref={containerRef} className="flex flex-col h-full select-none">
 
@@ -158,17 +133,6 @@ export default function CodeCompiler({
         <span className="text-sm font-semibold tracking-wide">Java</span>
 
         <div className="flex items-center gap-2">
-
-          {/* Save */}
-          <button
-            onClick={handleSave}
-            disabled={isSaving}
-            title="Save code"
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium bg-muted hover:bg-muted/80 transition-colors disabled:opacity-50"
-          >
-            <Save className="h-3.5 w-3.5" />
-            {isSaving ? "Saving…" : "Save"}
-          </button>
 
           {/* AI toggle */}
           <button
