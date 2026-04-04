@@ -40,6 +40,13 @@ export default function CodeCompiler({
   const [inputChanged, setInputChanged] = useState(false);
   const [bottomHeight, setBottomHeight] = useState(200);
 
+  // Notify parent of the initial default code on mount so Dashboard always
+  // has the current code even before the user makes any edits.
+  useEffect(() => {
+    onCodeChange?.(defaultCode, "java");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // Notify parent whenever the error state changes so Dashboard can pass it
   // down to AIChatPanel as the `errors` prop.
   useEffect(() => {
