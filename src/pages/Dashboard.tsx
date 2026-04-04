@@ -1,15 +1,17 @@
 // src/pages/Dashboard.tsx
-import { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   User, ChevronDown, Menu, X, BookOpen,
   Building2, GraduationCap, Brain, Cpu, Network, Database,
   LogOut, Binary, Square, Sparkles,
   Terminal, Grid3x3, Hash, Triangle, Code, KeyRound,
+  BarChart2,
 } from "lucide-react";
 import { useAuth } from "../hooks/useAuth";
 import CodeCompiler from "../components/CodeCompiler";
 import AIChatPanel from "../components/AIChatPanel";
+import UserPerformance from "../components/UserPerformance";
 import { problems } from "../data/problems";
 
 // ─── category count helper ───────────────────────────────────────────────────
@@ -22,10 +24,8 @@ const getCategoryCounts = () => {
 };
 
 // ─── icon + colour map ───────────────────────────────────────────────────────
-const TOPIC_META: Record<
-  string,
-  { icon: React.ElementType; iconColor: string; iconBg: string }
-> = {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const TOPIC_META: Record<string, { icon: any; iconColor: string; iconBg: string }> = {
   "Arrays":               { icon: Database,   iconColor: "#60a5fa", iconBg: "#1e3a5f" },
   "Strings":              { icon: Code,       iconColor: "#4ade80", iconBg: "#14532d" },
   "Linked Lists":         { icon: Cpu,        iconColor: "#c084fc", iconBg: "#3b0764" },
@@ -320,15 +320,16 @@ export default function Dashboard() {
   const { user, signOut } = useAuth();
   const navigate = useNavigate();
 
-  const [aiPanelWidth, setAiPanelWidth] = useState(400);
+  const [aiPanelWidth, setAiPanelWidth]       = useState(400);
   const [isResizingPanel, setIsResizingPanel] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [isAiOpen, setIsAiOpen] = useState(false);
-  const [currentCode, setCurrentCode] = useState("");
+  const [dropdownOpen, setDropdownOpen]       = useState(false);
+  const [menuOpen, setMenuOpen]               = useState(false);
+  const [isAiOpen, setIsAiOpen]               = useState(false);
+  const [perfOpen, setPerfOpen]               = useState(false); // ← NEW: performance panel toggle
+  const [currentCode, setCurrentCode]         = useState("");
   const [currentLanguage, setCurrentLanguage] = useState("java");
-  const [currentErrors, setCurrentErrors] = useState("");
-  const [activeTab, setActiveTab] = useState<"dsa" | "placement" | "companies">("dsa");
+  const [currentErrors, setCurrentErrors]     = useState("");
+  const [activeTab, setActiveTab]             = useState<"dsa" | "placement" | "companies">("dsa");
 
   const categoryCounts = useMemo(() => getCategoryCounts(), []);
 
@@ -361,6 +362,11 @@ export default function Dashboard() {
     navigate("/login", { replace: true });
   };
 
+  // ← NEW: read full_name from Supabase auth metadata (set during signup)
+  const fullName    = user?.user_metadata?.full_name as string | undefined;
+  const displayName = fullName?.trim() || user?.email || "User";
+  const initials    = displayName.charAt(0).toUpperCase();
+
   if (!user) {
     return (
       <div className="h-screen flex items-center justify-center text-sm text-muted-foreground">
@@ -386,48 +392,73 @@ export default function Dashboard() {
           {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
 
-        {/* User dropdown */}
-        <div className="relative">
+        {/* Right side: My Stats button + user dropdown */}
+        <div className="flex items-center gap-2">
+
+          {/* ← NEW: My Stats / Performance toggle button */}
           <button
-            onClick={() => setDropdownOpen((p) => !p)}
-            className="flex items-center gap-2 px-3 py-1.5 bg-primary text-primary-foreground rounded-md text-sm"
+            onClick={() => {
+              setPerfOpen((p) => !p);
+              if (isAiOpen) setIsAiOpen(false); // close AI panel when opening stats
+            }}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm transition-colors ${
+              perfOpen
+                ? "bg-primary text-primary-foreground"
+                : "bg-muted text-muted-foreground hover:text-foreground"
+            }`}
+            title="My Performance"
           >
-            <User className="h-4 w-4" />
-            <span className="max-w-[120px] truncate">{user.email}</span>
-            <ChevronDown className="h-4 w-4 shrink-0" />
+            <BarChart2 className="h-4 w-4" />
+            <span className="hidden sm:inline">My Stats</span>
           </button>
 
-          {dropdownOpen && (
-            <div className="absolute right-0 mt-2 w-56 bg-card border border-border rounded-lg shadow-lg z-50 overflow-hidden">
-              {/* Email label — informational only */}
-              <div className="px-3 py-2.5 text-xs text-muted-foreground border-b border-border truncate">
-                {user.email}
+          {/* User dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setDropdownOpen((p) => !p)}
+              className="flex items-center gap-2 px-3 py-1.5 bg-primary text-primary-foreground rounded-md text-sm"
+            >
+              <User className="h-4 w-4" />
+              {/* ← CHANGED: show displayName (full name or email) instead of just email */}
+              <span className="max-w-[120px] truncate">{displayName}</span>
+              <ChevronDown className="h-4 w-4 shrink-0" />
+            </button>
+
+            {dropdownOpen && (
+              <div className="absolute right-0 mt-2 w-56 bg-card border border-border rounded-lg shadow-lg z-50 overflow-hidden">
+                {/* ← CHANGED: show full name + email in dropdown header */}
+                <div className="px-3 py-2.5 border-b border-border">
+                  {fullName && (
+                    <p className="text-xs font-semibold text-foreground truncate">{fullName}</p>
+                  )}
+                  <p className="text-xs text-muted-foreground truncate">{user.email}</p>
+                </div>
+
+                {/* Change Password */}
+                <button
+                  onClick={() => {
+                    setDropdownOpen(false);
+                    navigate("/change-password");
+                  }}
+                  className="w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-muted transition-colors"
+                >
+                  <KeyRound className="h-4 w-4 text-muted-foreground" />
+                  Change Password
+                </button>
+
+                <div className="border-t border-border" />
+
+                {/* Sign Out */}
+                <button
+                  onClick={handleLogout}
+                  className="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-500 hover:bg-muted transition-colors"
+                >
+                  <LogOut className="h-4 w-4" />
+                  Sign Out
+                </button>
               </div>
-
-              {/* Change Password */}
-              <button
-                onClick={() => {
-                  setDropdownOpen(false);
-                  navigate("/change-password");
-                }}
-                className="w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-muted transition-colors"
-              >
-                <KeyRound className="h-4 w-4 text-muted-foreground" />
-                Change Password
-              </button>
-
-              <div className="border-t border-border" />
-
-              {/* Sign Out */}
-              <button
-                onClick={handleLogout}
-                className="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-500 hover:bg-muted transition-colors"
-              >
-                <LogOut className="h-4 w-4" />
-                Sign Out
-              </button>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </header>
 
@@ -632,7 +663,7 @@ export default function Dashboard() {
         </div>
       )}
 
-      {/* ══════════════ BODY — compiler + AI ══════════════ */}
+      {/* ══════════════ BODY — compiler + AI + Performance ══════════════ */}
       <div className="flex flex-1 overflow-hidden">
         <div className="flex flex-1 overflow-hidden">
           <div className="flex-1 overflow-hidden">
@@ -641,7 +672,10 @@ export default function Dashboard() {
                 setCurrentCode(code);
                 setCurrentLanguage(lang);
               }}
-              onToggleAI={() => setIsAiOpen((p) => !p)}
+              onToggleAI={() => {
+                setIsAiOpen((p) => !p);
+                if (perfOpen) setPerfOpen(false); // close perf panel when opening AI
+              }}
               onErrorChange={(err) => setCurrentErrors(err)}
               userEmail={user.email}
             />
@@ -670,6 +704,34 @@ export default function Dashboard() {
               />
             </div>
           )}
+
+          {/* ← NEW: UserPerformance panel — slides in from the right */}
+          {perfOpen && (
+            <div
+              className="shrink-0 border-l border-border overflow-y-auto bg-background"
+              style={{ width: 360 }}
+            >
+              {/* Panel header */}
+              <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-card sticky top-0 z-10">
+                <div className="flex items-center gap-2">
+                  <BarChart2 className="h-4 w-4 text-primary" />
+                  <span className="text-sm font-semibold text-foreground">My Performance</span>
+                </div>
+                <button
+                  onClick={() => setPerfOpen(false)}
+                  className="p-1 rounded hover:bg-muted transition-colors text-muted-foreground"
+                >
+                  <X className="h-4 w-4" />
+                </button>
+              </div>
+
+              {/* UserPerformance component renders all stats + charts */}
+              <div className="p-4">
+                <UserPerformance />
+              </div>
+            </div>
+          )}
+
         </div>
       </div>
 

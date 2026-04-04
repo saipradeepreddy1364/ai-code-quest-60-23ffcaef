@@ -3,12 +3,14 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserPlus } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
+import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
 export default function Signup() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [fullName, setFullName]   = useState("");
+  const [email, setEmail]         = useState("");
+  const [password, setPassword]   = useState("");
+  const [loading, setLoading]     = useState(false);
   const [needsConfirmation, setNeedsConfirmation] = useState(false);
   const { signUp } = useAuth();
   const navigate = useNavigate();
@@ -16,23 +18,41 @@ export default function Signup() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    
+
     try {
       const { data, error } = await signUp(email, password);
-      
+
       if (error) {
-        if (error.message.includes('email to confirm')) {
+        if (error.message.includes("email to confirm")) {
           setNeedsConfirmation(true);
-          toast.success('Please check your email to confirm your account');
+          toast.success("Please check your email to confirm your account");
         } else {
           toast.error(error.message);
         }
-      } else {
-        toast.success('Account created! You can now login.');
-        navigate('/login');
+        return;
       }
-    } catch (err) {
-      toast.error('An unexpected error occurred');
+
+      // Save full name into user metadata + profiles table if user was created
+      if (data?.user) {
+        // Update auth metadata with full_name
+        await supabase.auth.updateUser({
+          data: { full_name: fullName.trim() },
+        });
+
+        // Also upsert into a profiles table if it exists (safe — won't crash if table absent)
+        try {
+          await supabase
+            .from("profiles")
+            .upsert({ id: data.user.id, full_name: fullName.trim(), email });
+        } catch {
+          // silently ignore if profiles table doesn't exist
+        }
+      }
+
+      toast.success("Account created! You can now login.");
+      navigate("/login");
+    } catch {
+      toast.error("An unexpected error occurred");
     } finally {
       setLoading(false);
     }
@@ -44,11 +64,11 @@ export default function Signup() {
         <div className="w-full max-w-md bg-card border border-border rounded-lg p-8 text-center">
           <h2 className="text-2xl font-semibold text-foreground mb-2">Check Your Email</h2>
           <p className="text-muted-foreground mb-6">
-            We've sent a confirmation link to <strong>{email}</strong>. 
+            We've sent a confirmation link to <strong>{email}</strong>.
             Please check your email and click the link to confirm your account.
           </p>
           <button
-            onClick={() => navigate('/login')}
+            onClick={() => navigate("/login")}
             className="px-6 py-2 bg-primary text-primary-foreground rounded-md hover:opacity-90"
           >
             Go to Login
@@ -58,7 +78,6 @@ export default function Signup() {
     );
   }
 
-  // Rest of your signup form...
   return (
     <div className="min-h-[calc(100vh-3rem)] flex items-center justify-center">
       <div className="w-full max-w-sm">
@@ -68,6 +87,21 @@ export default function Signup() {
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
+
+          {/* Full Name */}
+          <div>
+            <label className="text-sm text-muted-foreground block mb-1">Full Name</label>
+            <input
+              type="text"
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
+              placeholder="John Doe"
+              className="w-full bg-surface border border-border rounded-md px-3 py-2 text-sm text-foreground focus:outline-none focus:ring-1 focus:ring-primary"
+              required
+            />
+          </div>
+
+          {/* Email */}
           <div>
             <label className="text-sm text-muted-foreground block mb-1">Email</label>
             <input
@@ -78,6 +112,8 @@ export default function Signup() {
               required
             />
           </div>
+
+          {/* Password */}
           <div>
             <label className="text-sm text-muted-foreground block mb-1">Password</label>
             <input
@@ -89,6 +125,7 @@ export default function Signup() {
               minLength={6}
             />
           </div>
+
           <button
             type="submit"
             disabled={loading}
