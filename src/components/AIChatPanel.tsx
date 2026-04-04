@@ -1,7 +1,7 @@
 // src/components/AIChatPanel.tsx
 import { useState, useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
-import { X, Bot, Send, Code2 } from "lucide-react";
+import { X, Bot, Send, Code2, AlertTriangle } from "lucide-react";
 import { askAI } from "@/api/ai";
 
 interface Message {
@@ -14,6 +14,7 @@ interface AIChatPanelProps {
   onClose: () => void;
   code?: string;
   problemTitle?: string;
+  errors?: string;
   /** When set, shows a one-off AI result (Debug / Optimize / Review) at the top */
   aiPanelTitle?: string;
   aiPanelContent?: string;
@@ -25,6 +26,7 @@ export default function AIChatPanel({
   onClose,
   code,
   problemTitle,
+  errors,
   aiPanelTitle,
   aiPanelContent,
   aiPanelLoading,
@@ -33,6 +35,7 @@ export default function AIChatPanel({
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [attachCode, setAttachCode] = useState(false);
+  const [attachErrors, setAttachErrors] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -44,9 +47,15 @@ export default function AIChatPanel({
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
 
-    const userText = attachCode && code
-      ? `Context — problem: "${problemTitle ?? "unknown"}"\n\`\`\`java\n${code}\n\`\`\`\n\n${input.trim()}`
-      : input.trim();
+    let userText = input.trim();
+
+    if (attachCode && code) {
+      userText = `Context — problem: "${problemTitle ?? "unknown"}"\n\`\`\`java\n${code}\n\`\`\`\n\n${userText}`;
+    }
+
+    if (attachErrors && errors) {
+      userText = `${userText}\n\nErrors from output:\n\`\`\`\n${errors}\n\`\`\``;
+    }
 
     const userMessage: Message = { role: "user", content: input.trim() };
     const historyBeforeThisMessage = [...messages];
@@ -56,7 +65,7 @@ export default function AIChatPanel({
     setIsLoading(true);
 
     try {
-      const response = await askAI(userText);
+      const response = await askAI(userText, historyBeforeThisMessage);
       setMessages((prev) => [...prev, { role: "assistant", content: response }]);
     } catch (error) {
       console.error("AI chat error:", error);
@@ -123,7 +132,7 @@ export default function AIChatPanel({
             </p>
             {code && (
               <p className="text-xs mt-3 text-accent">
-                💡 Toggle "Attach code" below to include your editor code in questions.
+                💡 Toggle "Attach code" or "Attach errors" below to include context.
               </p>
             )}
           </div>
@@ -165,27 +174,53 @@ export default function AIChatPanel({
         <div ref={bottomRef} />
       </div>
 
-      {/* CODE ATTACH TOGGLE */}
-      {code && (
-        <div className="px-3 py-2 border-t border-border bg-surface flex items-center gap-2 shrink-0">
-          <button
-            onClick={() => setAttachCode((v) => !v)}
-            className={`flex items-center gap-1.5 text-xs px-2 py-1 rounded transition-colors ${
-              attachCode
-                ? "bg-accent text-accent-foreground"
-                : "bg-muted text-muted-foreground hover:text-foreground"
-            }`}
-          >
-            <Code2 className="h-3 w-3" />
-            {attachCode ? "Code attached ✓" : "Attach code"}
-          </button>
-          <span className="text-xs text-muted-foreground">
-            {attachCode
-              ? "Your editor code will be sent with your next message."
-              : "Send your current code as context."}
-          </span>
-        </div>
-      )}
+      {/* ATTACH BUTTONS */}
+      <div className="px-3 py-2 border-t border-border bg-surface flex flex-col gap-2 shrink-0">
+
+        {/* Attach Code */}
+        {code && (
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setAttachCode((v) => !v)}
+              className={`flex items-center gap-1.5 text-xs px-2 py-1 rounded transition-colors ${
+                attachCode
+                  ? "bg-accent text-accent-foreground"
+                  : "bg-muted text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              <Code2 className="h-3 w-3" />
+              {attachCode ? "Code attached ✓" : "Attach code"}
+            </button>
+            <span className="text-xs text-muted-foreground">
+              {attachCode
+                ? "Editor code will be sent with your message."
+                : "Send your current code as context."}
+            </span>
+          </div>
+        )}
+
+        {/* Attach Errors */}
+        {errors && (
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setAttachErrors((v) => !v)}
+              className={`flex items-center gap-1.5 text-xs px-2 py-1 rounded transition-colors ${
+                attachErrors
+                  ? "bg-red-500 text-white"
+                  : "bg-muted text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              <AlertTriangle className="h-3 w-3" />
+              {attachErrors ? "Errors attached ✓" : "Attach errors"}
+            </button>
+            <span className="text-xs text-muted-foreground">
+              {attachErrors
+                ? "Errors will be sent with your message."
+                : "Send output errors as context."}
+            </span>
+          </div>
+        )}
+      </div>
 
       {/* INPUT */}
       <div className="border-t border-border p-3 flex gap-2 shrink-0">

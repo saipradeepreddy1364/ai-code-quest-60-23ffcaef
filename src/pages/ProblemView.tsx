@@ -377,6 +377,7 @@ export default function ProblemView() {
             }}
             code={code}
             problemTitle={problem.title}
+            errors={outputType === "error" ? output : ""}
             aiPanelTitle={aiPanel.open ? aiPanel.title : undefined}
             aiPanelContent={aiPanel.open ? aiPanel.content : undefined}
             aiPanelLoading={aiPanel.open ? aiPanel.loading : undefined}
