@@ -3,7 +3,7 @@
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 function sanitizeMessages(
-  messages: Array<{ role: string; content: string }>,
+  messages: Array<{ role: string; content: string }>
 ) {
   const filtered = messages.filter((m) => m.content?.trim());
 
@@ -24,20 +24,25 @@ function sanitizeMessages(
   return merged;
 }
 
-async function callClaude(
+async function callGroq(
   messages: Array<{ role: string; content: string }>,
   systemPrompt: string
 ) {
   const sanitized = sanitizeMessages(messages);
 
+  // Groq uses OpenAI format — system prompt goes as first message
+  const allMessages = [
+    { role: "system", content: systemPrompt },
+    ...sanitized,
+  ];
+
   const response = await fetch(`${BACKEND_URL}/api/ai/chat`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      model: "claude-haiku-4-5-20251001",
+      model: "llama3-8b-8192",
       max_tokens: 1024,
-      system: systemPrompt,
-      messages: sanitized,
+      messages: allMessages,
     }),
   });
 
@@ -49,13 +54,13 @@ async function callClaude(
 
   const data = await response.json();
 
-  // ✅ FIX: Safe parsing (handles empty / unexpected responses)
-  if (!data || !data.content || data.content.length === 0) {
-    console.warn("Invalid Claude response:", data);
+  // ✅ Safe parsing
+  if (!data || !data.choices || data.choices.length === 0) {
+    console.warn("Invalid Groq response:", data);
     return "No response received.";
   }
 
-  return data.content[0].text ?? "No response received.";
+  return data.choices[0].message.content ?? "No response received.";
 }
 
 export async function debugCode(
@@ -63,7 +68,7 @@ export async function debugCode(
   problemDescription: string,
   language: string
 ) {
-  return callClaude(
+  return callGroq(
     [
       {
         role: "user",
@@ -79,7 +84,7 @@ export async function optimizeCode(
   problemDescription: string,
   language: string
 ) {
-  return callClaude(
+  return callGroq(
     [
       {
         role: "user",
@@ -95,7 +100,7 @@ export async function reviewCode(
   problemDescription: string,
   language: string
 ) {
-  return callClaude(
+  return callGroq(
     [
       {
         role: "user",
@@ -115,7 +120,7 @@ export async function askAI(
     { role: "user", content: prompt },
   ];
 
-  return callClaude(
+  return callGroq(
     messages,
     "You are a helpful coding assistant. Help with programming questions, errors, and suggestions."
   );
