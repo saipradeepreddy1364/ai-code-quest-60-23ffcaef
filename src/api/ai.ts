@@ -54,7 +54,7 @@ async function callGemini(
     method: "POST",
     headers: { "Content-Type": "application/json" },
 
-    // ✅ FIX: Ensure backend receives valid JSON string
+    // ✅ FIX: Backend receives valid JSON string
     body: JSON.stringify(body),
   });
 
