@@ -565,12 +565,6 @@ export default function ProblemView() {
               Errors
             </button>
 
-            {/* Execution time badge in tab bar — mirrors CodeCompiler style */}
-            {executionTime !== null && (
-              <span className="ml-auto mr-3 text-xs text-green-500 font-mono">
-                ⏱ {executionTime.toFixed(3)}s
-              </span>
-            )}
           </div>
 
           <div className="flex-1 p-3 font-mono text-xs overflow-auto">
@@ -625,6 +619,13 @@ export default function ProblemView() {
                     </span>
                   )}
                 </pre>
+
+                {/* Execution time shown below output — same as CodeCompiler */}
+                {executionTime !== null && (
+                  <div className="mt-2 text-green-500 text-xs">
+                    ⏱ Time taken: {executionTime.toFixed(3)}s
+                  </div>
+                )}
               </>
             )}
 
