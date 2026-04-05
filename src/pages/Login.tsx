@@ -41,7 +41,6 @@ export default function Login() {
   };
 
   return (
-    /* Outer wrapper — fixed, full viewport, nothing else */
     <div
       style={{
         position: "fixed",
@@ -69,12 +68,7 @@ export default function Login() {
         }}
       />
 
-      {/*
-        Card wrapper — ZERO styling.
-        No background. No border. No shadow. No blur. No color.
-        It is purely a layout box to center the form content.
-        The SVG's own glowing window is the only visible "container".
-      */}
+      {/* Card — fully transparent, no border, no shadow */}
       <div
         style={{
           position: "relative",
@@ -108,25 +102,10 @@ export default function Login() {
           >
             <LogIn style={{ width: "26px", height: "26px", color: "white" }} />
           </div>
-          <h1
-            style={{
-              fontSize: "22px",
-              fontWeight: 700,
-              color: "white",
-              margin: 0,
-              lineHeight: 1.2,
-            }}
-          >
+          <h1 style={{ fontSize: "22px", fontWeight: 700, color: "white", margin: 0, lineHeight: 1.2 }}>
             Welcome Back
           </h1>
-          <p
-            style={{
-              color: "#a5b4fc",
-              marginTop: "6px",
-              fontSize: "14px",
-              marginBottom: 0,
-            }}
-          >
+          <p style={{ color: "#a5b4fc", marginTop: "6px", fontSize: "14px", marginBottom: 0 }}>
             Sign in to continue coding
           </p>
         </div>
@@ -138,27 +117,19 @@ export default function Login() {
         >
           {/* Email */}
           <div>
-            <label
-              style={{
-                display: "block",
-                fontSize: "12px",
-                fontWeight: 500,
-                color: "#c7d2fe",
-                marginBottom: "8px",
-              }}
-            >
+            <label style={{ display: "block", fontSize: "12px", fontWeight: 500, color: "#c7d2fe", marginBottom: "8px" }}>
               Email Address
             </label>
             <div style={{ position: "relative" }}>
               <Mail
                 style={{
                   position: "absolute",
-                  left: "0px",
+                  left: "11px",
                   top: "50%",
                   transform: "translateY(-50%)",
                   width: "15px",
                   height: "15px",
-                  color: "#818cf8",
+                  color: "#4f46e5",
                   pointerEvents: "none",
                 }}
               />
@@ -170,56 +141,48 @@ export default function Login() {
                 required
                 style={{
                   width: "100%",
-                  paddingLeft: "22px",
+                  paddingLeft: "34px",
                   paddingRight: "12px",
-                  paddingTop: "8px",
-                  paddingBottom: "8px",
-                  background: "transparent",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid rgba(99,102,241,0.4)",
-                  borderRadius: 0,
-                  color: "white",
+                  paddingTop: "10px",
+                  paddingBottom: "10px",
+                  background: "rgba(255, 255, 255, 0.92)",  /* white-ish so black text is readable */
+                  border: "1.5px solid rgba(99, 102, 241, 0.5)",  /* indigo border */
+                  borderRadius: "8px",
+                  color: "#111827",               /* black text */
                   fontSize: "13px",
                   outline: "none",
                   boxSizing: "border-box",
-                  transition: "border-color 0.2s",
-                  WebkitBoxShadow: "0 0 0px 1000px transparent inset",
-                  WebkitTextFillColor: "white",
+                  transition: "border-color 0.2s, box-shadow 0.2s",
+                  WebkitBoxShadow: "0 0 0px 1000px rgba(255,255,255,0.92) inset",  /* kills autofill bg */
+                  WebkitTextFillColor: "#111827",
                 }}
-                onFocus={(e) =>
-                  (e.target.style.borderBottomColor = "rgba(99,102,241,1)")
-                }
-                onBlur={(e) =>
-                  (e.target.style.borderBottomColor = "rgba(99,102,241,0.4)")
-                }
+                onFocus={(e) => {
+                  e.target.style.borderColor = "rgba(99,102,241,1)";
+                  e.target.style.boxShadow = "0 0 0 3px rgba(99,102,241,0.15)";
+                }}
+                onBlur={(e) => {
+                  e.target.style.borderColor = "rgba(99,102,241,0.5)";
+                  e.target.style.boxShadow = "none";
+                }}
               />
             </div>
           </div>
 
           {/* Password */}
           <div>
-            <label
-              style={{
-                display: "block",
-                fontSize: "12px",
-                fontWeight: 500,
-                color: "#c7d2fe",
-                marginBottom: "8px",
-              }}
-            >
+            <label style={{ display: "block", fontSize: "12px", fontWeight: 500, color: "#c7d2fe", marginBottom: "8px" }}>
               Password
             </label>
             <div style={{ position: "relative" }}>
               <Lock
                 style={{
                   position: "absolute",
-                  left: "0px",
+                  left: "11px",
                   top: "50%",
                   transform: "translateY(-50%)",
                   width: "15px",
                   height: "15px",
-                  color: "#818cf8",
+                  color: "#4f46e5",
                   pointerEvents: "none",
                 }}
               />
@@ -231,31 +194,31 @@ export default function Login() {
                 required
                 style={{
                   width: "100%",
-                  paddingLeft: "22px",
-                  paddingRight: "36px",
-                  paddingTop: "8px",
-                  paddingBottom: "8px",
-                  background: "transparent",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid rgba(99,102,241,0.4)",
-                  borderRadius: 0,
-                  color: "white",
+                  paddingLeft: "34px",
+                  paddingRight: "40px",
+                  paddingTop: "10px",
+                  paddingBottom: "10px",
+                  background: "rgba(255, 255, 255, 0.92)",  /* white-ish so black text is readable */
+                  border: "1.5px solid rgba(99, 102, 241, 0.5)",  /* indigo border */
+                  borderRadius: "8px",
+                  color: "#111827",               /* black text */
                   fontSize: "13px",
                   outline: "none",
                   boxSizing: "border-box",
-                  transition: "border-color 0.2s",
-                  WebkitBoxShadow: "0 0 0px 1000px transparent inset",
-                  WebkitTextFillColor: "white",
+                  transition: "border-color 0.2s, box-shadow 0.2s",
+                  WebkitBoxShadow: "0 0 0px 1000px rgba(255,255,255,0.92) inset",  /* kills autofill bg */
+                  WebkitTextFillColor: "#111827",
                   letterSpacing: showPassword ? "normal" : "0.15em",
                   fontFamily: showPassword ? "inherit" : "Verdana, sans-serif",
                 }}
-                onFocus={(e) =>
-                  (e.target.style.borderBottomColor = "rgba(99,102,241,1)")
-                }
-                onBlur={(e) =>
-                  (e.target.style.borderBottomColor = "rgba(99,102,241,0.4)")
-                }
+                onFocus={(e) => {
+                  e.target.style.borderColor = "rgba(99,102,241,1)";
+                  e.target.style.boxShadow = "0 0 0 3px rgba(99,102,241,0.15)";
+                }}
+                onBlur={(e) => {
+                  e.target.style.borderColor = "rgba(99,102,241,0.5)";
+                  e.target.style.boxShadow = "none";
+                }}
               />
               <button
                 type="button"
@@ -264,13 +227,13 @@ export default function Login() {
                 aria-label={showPassword ? "Hide password" : "Show password"}
                 style={{
                   position: "absolute",
-                  right: "0px",
+                  right: "10px",
                   top: "50%",
                   transform: "translateY(-50%)",
                   background: "none",
                   border: "none",
                   cursor: "pointer",
-                  color: "#818cf8",
+                  color: "#4f46e5",
                   padding: 0,
                   display: "flex",
                   alignItems: "center",
@@ -309,24 +272,11 @@ export default function Login() {
           </button>
         </form>
 
-        <p
-          style={{
-            textAlign: "center",
-            marginTop: "20px",
-            color: "#a5b4fc",
-            fontSize: "13px",
-            marginBottom: 0,
-          }}
-        >
+        <p style={{ textAlign: "center", marginTop: "20px", color: "#a5b4fc", fontSize: "13px", marginBottom: 0 }}>
           Don't have an account?{" "}
           <Link
             to="/signup"
-            style={{
-              color: "white",
-              fontWeight: 600,
-              textDecoration: "underline",
-              textUnderlineOffset: "3px",
-            }}
+            style={{ color: "white", fontWeight: 600, textDecoration: "underline", textUnderlineOffset: "3px" }}
           >
             Sign up
           </Link>
