@@ -42,174 +42,112 @@ export default function Login() {
 
   return (
     <div
-      className="relative overflow-hidden"
-      style={{ width: "100vw", height: "100vh" }}
+      className="min-h-screen flex items-center justify-center overflow-hidden relative"
     >
-      {/* Full-screen SVG — stretched with objectFit:fill so % coords map 1:1 */}
+      {/* ── Full-screen background image ── */}
       <img
         src="/tech_login_background_v2.svg"
         aria-hidden="true"
-        style={{
-          position: "absolute",
-          inset: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "fill",
-        }}
+        className="absolute inset-0 w-full h-full"
+        style={{ objectFit: "cover", objectPosition: "center" }}
       />
 
-      {/*
-        SVG cutout: x=455 y=195 w=490 h=510 rx=22  inside viewBox 1400×900
-        left   = 455/1400 = 32.5%
-        top    = 195/900  = 21.667%
-        width  = 490/1400 = 35%
-        height = 510/900  = 56.667%
-      */}
-      <div
-        style={{
-          position: "absolute",
-          left: "32.5%",
-          top: "21.667%",
-          width: "35%",
-          height: "56.667%",
-          borderRadius: "22px",
-          boxSizing: "border-box",
-          overflow: "hidden",           // NO scrollbar ever
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "0",
-          background: "transparent",   // SVG cutout is already the "window"
-          border: "none",              // SVG already draws the glowing border
-        }}
-      >
-        {/* Inner content — sized to fit snugly */}
-        <div style={{ width: "100%", padding: "4% 8%", boxSizing: "border-box" }}>
-
+      {/* ── Login card — merged/blended look ── */}
+      <div className="relative z-10 w-full max-w-md mx-4">
+        <div
+          style={{
+            background: "rgba(5, 7, 20, 0.45)",   // matches SVG bg #050714 almost exactly
+            backdropFilter: "blur(0px)",            // NO blur = seamless merge, not glassy
+            border: "1px solid rgba(99, 102, 241, 0.2)",  // very faint indigo — just enough to define edges
+            borderRadius: "18px",
+            padding: "36px 32px",
+            boxShadow: "0 0 60px rgba(99, 102, 241, 0.08), inset 0 0 40px rgba(5,7,20,0.6)",
+          }}
+        >
           {/* Logo and Title */}
-          <div style={{ textAlign: "center", marginBottom: "3%" }}>
+          <div className="text-center mb-7">
             <div
+              className="inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-4"
               style={{
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "clamp(40px, 5vw, 56px)",
-                height: "clamp(40px, 5vw, 56px)",
                 background: "linear-gradient(135deg, #3b82f6, #6366f1)",
-                borderRadius: "12px",
-                marginBottom: "2%",
-                boxShadow: "0 0 20px rgba(99,102,241,0.5)",
+                boxShadow: "0 0 28px rgba(99,102,241,0.45)",
               }}
             >
-              <LogIn style={{ width: "clamp(18px, 2vw, 26px)", height: "clamp(18px, 2vw, 26px)", color: "white" }} />
+              <LogIn className="h-7 w-7 text-white" />
             </div>
-            <h1
-              style={{
-                fontSize: "clamp(15px, 1.8vw, 22px)",
-                fontWeight: 700,
-                color: "white",
-                margin: 0,
-                lineHeight: 1.2,
-              }}
-            >
-              Welcome Back
-            </h1>
-            <p style={{ color: "#a5b4fc", marginTop: "2%", fontSize: "clamp(10px, 1vw, 13px)", marginBottom: 0 }}>
+            <h1 className="text-2xl font-bold text-white">Welcome Back</h1>
+            <p className="mt-1 text-sm" style={{ color: "#a5b4fc" }}>
               Sign in to continue coding
             </p>
           </div>
 
-          {/* Form */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "clamp(8px, 1.8vh, 14px)" }}>
+          <form onSubmit={handleSubmit} className="space-y-5">
 
             {/* Email */}
             <div>
-              <label style={{ display: "block", fontSize: "clamp(9px, 0.8vw, 12px)", fontWeight: 500, color: "#c7d2fe", marginBottom: "4px" }}>
+              <label className="block text-xs font-medium mb-1.5" style={{ color: "#c7d2fe" }}>
                 Email Address
               </label>
-              <div style={{ position: "relative" }}>
-                <Mail style={{ position: "absolute", left: "9px", top: "50%", transform: "translateY(-50%)", width: "14px", height: "14px", color: "#818cf8", flexShrink: 0 }} />
+              <div className="relative">
+                <Mail
+                  className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4"
+                  style={{ color: "#818cf8" }}
+                />
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="you@example.com"
                   required
+                  className="w-full pl-9 pr-4 py-2.5 rounded-lg text-sm text-white placeholder-indigo-400 outline-none transition-all"
                   style={{
-                    width: "100%",
-                    paddingLeft: "30px",
-                    paddingRight: "10px",
-                    paddingTop: "clamp(6px, 0.9vh, 9px)",
-                    paddingBottom: "clamp(6px, 0.9vh, 9px)",
-                    background: "rgba(255,255,255,0.06)",
-                    border: "1px solid rgba(99,102,241,0.35)",
-                    borderRadius: "7px",
-                    color: "white",
-                    fontSize: "clamp(10px, 0.85vw, 13px)",
-                    outline: "none",
-                    boxSizing: "border-box",
+                    background: "rgba(255,255,255,0.04)",
+                    border: "1px solid rgba(99,102,241,0.25)",
                   }}
-                  onFocus={(e) => (e.target.style.borderColor = "rgba(99,102,241,0.9)")}
-                  onBlur={(e) => (e.target.style.borderColor = "rgba(99,102,241,0.35)")}
+                  onFocus={(e) => (e.target.style.borderColor = "rgba(99,102,241,0.7)")}
+                  onBlur={(e) => (e.target.style.borderColor = "rgba(99,102,241,0.25)")}
                 />
               </div>
             </div>
 
             {/* Password */}
             <div>
-              <label style={{ display: "block", fontSize: "clamp(9px, 0.8vw, 12px)", fontWeight: 500, color: "#c7d2fe", marginBottom: "4px" }}>
+              <label className="block text-xs font-medium mb-1.5" style={{ color: "#c7d2fe" }}>
                 Password
               </label>
-              <div style={{ position: "relative" }}>
-                <Lock style={{ position: "absolute", left: "9px", top: "50%", transform: "translateY(-50%)", width: "14px", height: "14px", color: "#818cf8" }} />
+              <div className="relative">
+                <Lock
+                  className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4"
+                  style={{ color: "#818cf8" }}
+                />
                 <input
                   type={showPassword ? "text" : "password"}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
                   required
+                  className="w-full pl-9 pr-10 py-2.5 rounded-lg text-sm text-white placeholder-indigo-400 outline-none transition-all"
                   style={{
-                    width: "100%",
-                    paddingLeft: "30px",
-                    paddingRight: "36px",
-                    paddingTop: "clamp(6px, 0.9vh, 9px)",
-                    paddingBottom: "clamp(6px, 0.9vh, 9px)",
-                    background: "rgba(255,255,255,0.06)",
-                    border: "1px solid rgba(99,102,241,0.35)",
-                    borderRadius: "7px",
-                    color: "white",
-                    fontSize: "clamp(10px, 0.85vw, 13px)",
-                    outline: "none",
-                    boxSizing: "border-box",
+                    background: "rgba(255,255,255,0.04)",
+                    border: "1px solid rgba(99,102,241,0.25)",
                     letterSpacing: showPassword ? "normal" : "0.15em",
                     fontFamily: showPassword ? "inherit" : "Verdana, sans-serif",
+                    color: "#ffffff",
                   }}
-                  onFocus={(e) => (e.target.style.borderColor = "rgba(99,102,241,0.9)")}
-                  onBlur={(e) => (e.target.style.borderColor = "rgba(99,102,241,0.35)")}
+                  onFocus={(e) => (e.target.style.borderColor = "rgba(99,102,241,0.7)")}
+                  onBlur={(e) => (e.target.style.borderColor = "rgba(99,102,241,0.25)")}
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword((prev) => !prev)}
-                  aria-label={showPassword ? "Hide password" : "Show password"}
                   tabIndex={-1}
-                  style={{
-                    position: "absolute",
-                    right: "9px",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    background: "none",
-                    border: "none",
-                    cursor: "pointer",
-                    color: "#818cf8",
-                    padding: 0,
-                    display: "flex",
-                    alignItems: "center",
-                  }}
+                  aria-label={showPassword ? "Hide password" : "Show password"}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors"
+                  style={{ color: "#818cf8", background: "none", border: "none", cursor: "pointer", display: "flex" }}
                 >
                   {showPassword
-                    ? <EyeOff style={{ width: "14px", height: "14px" }} />
-                    : <Eye style={{ width: "14px", height: "14px" }} />}
+                    ? <EyeOff className="h-4 w-4" />
+                    : <Eye className="h-4 w-4" />}
                 </button>
               </div>
             </div>
@@ -218,34 +156,22 @@ export default function Login() {
             <button
               type="submit"
               disabled={loading}
-              onClick={handleSubmit}
+              className="w-full py-2.5 rounded-lg font-semibold text-sm text-white transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               style={{
-                width: "100%",
-                padding: "clamp(7px, 1vh, 11px)",
-                background: loading
-                  ? "rgba(99,102,241,0.4)"
-                  : "linear-gradient(135deg, #3b82f6, #6366f1)",
-                color: "white",
-                border: "none",
-                borderRadius: "7px",
-                fontWeight: 600,
-                fontSize: "clamp(11px, 0.95vw, 14px)",
-                cursor: loading ? "not-allowed" : "pointer",
-                opacity: loading ? 0.7 : 1,
-                transition: "all 0.2s",
-                boxShadow: "0 4px 15px rgba(99,102,241,0.35)",
-                marginTop: "2px",
+                background: "linear-gradient(135deg, #3b82f6, #6366f1)",
+                boxShadow: "0 4px 20px rgba(99,102,241,0.35)",
+                marginTop: "4px",
               }}
             >
               {loading ? "Signing in…" : "Sign In"}
             </button>
-          </div>
+          </form>
 
-          <p style={{ textAlign: "center", marginTop: "3%", color: "#a5b4fc", fontSize: "clamp(10px, 0.85vw, 12px)", marginBottom: 0 }}>
+          <p className="text-center mt-5 text-xs" style={{ color: "#a5b4fc" }}>
             Don't have an account?{" "}
             <Link
               to="/signup"
-              style={{ color: "white", fontWeight: 600, textDecoration: "underline", textUnderlineOffset: "3px" }}
+              className="font-semibold underline underline-offset-2 text-white hover:text-indigo-300 transition-colors"
             >
               Sign up
             </Link>
