@@ -41,41 +41,46 @@ export default function Login() {
   };
 
   return (
-    <div
-      className="min-h-screen flex items-center justify-center"
-      style={{
-        backgroundImage: "url('/tech_login_background_v2.svg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="w-full max-w-md px-4">
-        <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-8">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+      {/* ── Full-screen SVG background ── */}
+      <img
+        src="/tech_login_background_v2.svg"
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full"
+        style={{ objectFit: "cover", objectPosition: "center" }}
+      />
+
+      {/* ── Dark overlay so the card stays readable ── */}
+      <div className="absolute inset-0 bg-black/30" />
+
+      {/* ── Login card ── */}
+      <div className="relative z-10 w-full max-w-md px-4">
+        <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl p-8">
 
           {/* Logo and Title */}
           <div className="text-center mb-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl mb-4">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl mb-4 shadow-lg">
               <LogIn className="h-8 w-8 text-white" />
             </div>
-            <h1 className="text-2xl font-bold text-gray-900">Welcome Back</h1>
-            <p className="text-gray-600 mt-1">Sign in to continue coding</p>
+            <h1 className="text-2xl font-bold text-white">Welcome Back</h1>
+            <p className="text-indigo-200 mt-1">Sign in to continue coding</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
 
             {/* Email */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-indigo-100 mb-2">
                 Email Address
               </label>
               <div className="relative">
-                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-indigo-300" />
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 bg-white"
+                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent text-white placeholder-indigo-300 backdrop-blur-sm"
                   placeholder="you@example.com"
                   required
                 />
@@ -84,30 +89,29 @@ export default function Login() {
 
             {/* Password */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-indigo-100 mb-2">
                 Password
               </label>
               <div className="relative">
-                <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-indigo-300" />
                 <input
                   type={showPassword ? "text" : "password"}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 bg-white"
+                  className="w-full pl-10 pr-12 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent text-white placeholder-indigo-300 backdrop-blur-sm"
                   placeholder="••••••••"
                   required
                   style={{
-                    color: "#111827",
+                    color: "#ffffff",
                     WebkitTextSecurity: showPassword ? "none" : undefined,
                     letterSpacing: showPassword ? "normal" : "0.15em",
                     fontFamily: showPassword ? "inherit" : "Verdana, sans-serif",
                   } as React.CSSProperties}
                 />
-                {/* Show / Hide toggle */}
                 <button
                   type="button"
                   onClick={() => setShowPassword((prev) => !prev)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-700 transition-colors focus:outline-none"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-indigo-300 hover:text-white transition-colors focus:outline-none"
                   aria-label={showPassword ? "Hide password" : "Show password"}
                   tabIndex={-1}
                 >
@@ -123,17 +127,17 @@ export default function Login() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-medium hover:from-blue-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
             >
               {loading ? "Signing in…" : "Sign In"}
             </button>
           </form>
 
-          <p className="text-center mt-6 text-gray-600">
+          <p className="text-center mt-6 text-indigo-200">
             Don't have an account?{" "}
             <Link
               to="/signup"
-              className="text-blue-600 hover:text-blue-800 font-medium"
+              className="text-white hover:text-indigo-200 font-medium underline underline-offset-2"
             >
               Sign up
             </Link>
