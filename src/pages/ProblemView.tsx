@@ -50,17 +50,15 @@ export default function ProblemView() {
   const [activeTab, setActiveTab]         = useState<"terminal" | "errors">("terminal");
   const [isRunning, setIsRunning]         = useState(false);
   const [isSubmitting, setIsSubmitting]   = useState(false);
-  const [isSaving, setIsSaving]           = useState(false);
   const [executionTime, setExecutionTime] = useState<number | null>(null);
   const [inputChanged, setInputChanged]   = useState(false);
   const [runCount, setRunCount]           = useState(0);
   const [bottomHeight, setBottomHeight]   = useState(220);
   const [leftWidth, setLeftWidth]         = useState(40); // percent
   const [chatOpen, setChatOpen]           = useState(false);
-  // True when a successful (no-error) compile detected that stdin is required
-  // but the user hasn't provided any yet — prompts them to fill the input box.
+  // True when the compiler detected stdin is needed but none was provided yet
   const [needsInput, setNeedsInput]       = useState(false);
-  // Shows a small "Auto-saved" indicator in the toolbar for 2 s after each run save
+  // Flashes "Auto-saved" in the toolbar for 2 s after every successful run-save
   const [autoSaved, setAutoSaved]         = useState(false);
   const [aiPanel, setAiPanel]             = useState<{
     open: boolean;
@@ -141,8 +139,8 @@ export default function ProblemView() {
   }
 
   // ── Auto-save helper ───────────────────────────────────────────────────────
-  // Called silently after every run (no toast). Uses the same Supabase upsert
-  // as handleSave so both paths always stay in sync on the same row.
+  // Fires silently after every run (no toast). Uses an upsert so it always
+  // writes to the same row regardless of whether one already exists.
   const autoSaveCode = async (latestCode: string, latestRunCount: number) => {
     if (!user) return;
     try {
@@ -213,10 +211,10 @@ export default function ProblemView() {
       setActiveTab("errors");
     } finally {
       setIsRunning(false);
-      // Increment run count, then auto-save with the updated count.
-      // We use the functional updater so we always get the latest count value,
-      // and pass `code` from the outer closure which reflects the latest editor
-      // content because setCode is called synchronously on every keystroke.
+      // Increment run count and auto-save with the new count.
+      // Functional updater guarantees we read the latest count;
+      // `code` from the closure is always current because setCode is
+      // called synchronously on every editor keystroke.
       setRunCount((prev) => {
         const newCount = prev + 1;
         autoSaveCode(code, newCount);
@@ -257,37 +255,6 @@ export default function ProblemView() {
       toast.error("Failed to submit");
     }
     setIsSubmitting(false);
-  };
-
-  const handleSave = async () => {
-    if (!user) {
-      toast.error("Login to save code");
-      return;
-    }
-    setIsSaving(true);
-    try {
-      const { error: saveError } = await supabase.from("saved_codes").upsert(
-        {
-          user_id: user.id,
-          user_email: user.email,
-          problem_id: problem.id,
-          title: problem.title,
-          category: problem.category,
-          code,
-          language,
-          compiler_runs: runCount,
-          saved_at: new Date().toISOString(),
-        },
-        { onConflict: "user_id,problem_id,language" }
-      );
-      if (saveError) throw saveError;
-      toast.success("Code saved!");
-    } catch (err) {
-      console.error("Save error:", err);
-      toast.error("Failed to save");
-    } finally {
-      setIsSaving(false);
-    }
   };
 
   const handleAI = async (type: "debug" | "optimize" | "review") => {
@@ -443,17 +410,6 @@ export default function ProblemView() {
             >
               <Upload className="h-3.5 w-3.5" />
               {isSubmitting ? "Submitting…" : "Submit"}
-            </button>
-
-            {/* Save */}
-            <button
-              onClick={handleSave}
-              disabled={isSaving}
-              title="Save code"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold bg-muted hover:bg-muted/80 transition-colors disabled:opacity-50"
-            >
-              <Save className="h-3.5 w-3.5" />
-              {isSaving ? "Saving…" : "Save"}
             </button>
 
             {/* Refresh */}
