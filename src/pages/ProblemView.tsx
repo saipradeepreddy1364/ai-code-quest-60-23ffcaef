@@ -12,6 +12,21 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { parseJavaError } from "@/utils/parseJavaError";
 
+/**
+ * Returns true if the Java source code contains any standard input reading
+ * constructs — Scanner, BufferedReader, System.in, Console, or DataInputStream.
+ * Used to decide whether to prompt the user to provide stdin before running.
+ */
+function codeNeedsInput(src: string): boolean {
+  return (
+    /Scanner\s*\(/.test(src) ||
+    /BufferedReader\s*\(/.test(src) ||
+    /System\.in/.test(src) ||
+    /Console\s*\(/.test(src) ||
+    /DataInputStream\s*\(/.test(src)
+  );
+}
+
 export default function ProblemView() {
   const { id } = useParams<{ id: string }>();
   const problem = getProblemById(Number(id));
@@ -24,6 +39,8 @@ export default function ProblemView() {
   const containerRef        = useRef<HTMLDivElement>(null);
   const isResizingBottomRef = useRef(false);
   const isResizingLeftRef   = useRef(false);
+  // Ref for the stdin textarea so we can auto-focus when input is required
+  const inputRef            = useRef<HTMLTextAreaElement>(null);
 
   // ── State ──────────────────────────────────────────────────────────────────
   const [code, setCode]               = useState(problem?.starter_code?.java || "");
@@ -40,6 +57,9 @@ export default function ProblemView() {
   const [bottomHeight, setBottomHeight]   = useState(220);
   const [leftWidth, setLeftWidth]     = useState(40); // percent
   const [chatOpen, setChatOpen]       = useState(false);
+  // True when a successful (no-error) compile detected that stdin is required
+  // but the user hasn't provided any yet — prompts them to fill the input box.
+  const [needsInput, setNeedsInput]   = useState(false);
   const [aiPanel, setAiPanel]         = useState<{
     open: boolean;
     title: string;
@@ -75,6 +95,14 @@ export default function ProblemView() {
 
     fetchSavedCode();
   }, [user, problem?.id]);
+
+  // When needsInput becomes true, switch to the terminal tab and focus stdin
+  useEffect(() => {
+    if (needsInput) {
+      setActiveTab("terminal");
+      setTimeout(() => inputRef.current?.focus(), 50);
+    }
+  }, [needsInput]);
 
   // ── Resizable panels ───────────────────────────────────────────────────────
   useEffect(() => {
@@ -113,7 +141,16 @@ export default function ProblemView() {
   // ── Handlers ──────────────────────────────────────────────────────────────
 
   const handleRun = async () => {
+    // If the code needs input and the user hasn't provided any yet,
+    // prompt them to fill in the stdin textarea instead of running immediately.
+    if (codeNeedsInput(code) && !stdin.trim()) {
+      setNeedsInput(true);
+      toast.info("This program reads input — please enter your input below and click Run again.");
+      return;
+    }
+
     setIsRunning(true);
+    setNeedsInput(false);
     setOutput("");
     setError("");
     setExecutionTime(null);
@@ -129,9 +166,11 @@ export default function ProblemView() {
       const rawSuccess = result.stdout || "";
 
       if (rawError && rawError.trim() !== "") {
+        // Always route errors to the Errors tab — never show them in Terminal
         setError(parseJavaError(rawError));
         setActiveTab("errors");
       } else {
+        // Successful run — show output in Terminal tab only
         setOutput(rawSuccess || "No output");
         setActiveTab("terminal");
       }
@@ -150,6 +189,7 @@ export default function ProblemView() {
     setError("");
     setExecutionTime(null);
     setInputChanged(false);
+    setNeedsInput(false);
     setActiveTab("terminal");
     toast.info("Execution reset. Ready to run again.");
   };
@@ -448,7 +488,16 @@ export default function ProblemView() {
 
           {/* Code editor */}
           <div className="flex-1 overflow-hidden min-w-0">
-            <CodeEditor language="java" value={code} onChange={setCode} />
+            <CodeEditor
+              language="java"
+              value={code}
+              onChange={(val) => {
+                setCode(val);
+                // Clear the needsInput prompt whenever the user edits code so
+                // a fresh run-check happens on the next click.
+                setNeedsInput(false);
+              }}
+            />
           </div>
 
           {/* AI Chat Panel
@@ -516,7 +565,7 @@ export default function ProblemView() {
               Errors
             </button>
 
-            {/* Execution time badge in tab bar */}
+            {/* Execution time badge in tab bar — mirrors CodeCompiler style */}
             {executionTime !== null && (
               <span className="ml-auto mr-3 text-xs text-green-500 font-mono">
                 ⏱ {executionTime.toFixed(3)}s
@@ -528,16 +577,30 @@ export default function ProblemView() {
 
             {activeTab === "terminal" && (
               <>
+                {/* Prompt banner when stdin is required but not yet provided */}
+                {needsInput && (
+                  <p className="text-yellow-300 text-xs font-semibold mb-2 animate-pulse">
+                    ⚠ This program reads from stdin — enter your input below, then click Run.
+                  </p>
+                )}
+
                 {/* Input section */}
                 <div className="text-green-400 mb-1 font-semibold">Enter Input</div>
                 <textarea
+                  ref={inputRef}
                   value={stdin}
                   onChange={(e) => {
                     setStdin(e.target.value);
+                    // Clear the needsInput prompt as soon as the user starts typing
+                    if (needsInput) setNeedsInput(false);
                     if (output || error) setInputChanged(true);
                   }}
                   placeholder="Type your stdin here…"
-                  className="w-full bg-black/60 text-white p-2 mb-1 rounded border border-border resize-none text-xs"
+                  className={`w-full bg-black/60 text-white p-2 mb-1 rounded border resize-none text-xs transition-colors ${
+                    needsInput
+                      ? "border-yellow-400 ring-1 ring-yellow-400/50"
+                      : "border-border"
+                  }`}
                   rows={3}
                 />
 
