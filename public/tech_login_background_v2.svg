@@ -308,7 +308,6 @@
 
 </g>
 
-<!-- subtle ring around login area -->
-<rect x="455" y="195" width="490" height="510" rx="22" fill="none" stroke="#6366f1" stroke-opacity="0.1" stroke-width="2" style="fill:none;stroke:rgb(99, 102, 241);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
 
 </svg>
