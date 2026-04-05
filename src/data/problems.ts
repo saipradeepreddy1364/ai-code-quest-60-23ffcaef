@@ -27887,6 +27887,449 @@ public class Main {
 }`
     }
   },
+  {
+    "id": 1221,
+    "title": "Check Armstrong Number",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Infosys"],
+    "description": "Given a number n, determine whether it is an Armstrong number. A number is an Armstrong number if the sum of its digits each raised to the power of the number of digits equals the number itself. For example, 153 = 1³ + 5³ + 3³.",
+    "input_format": "n = 153",
+    "output_format": "true",
+    "constraints": "1 ≤ n ≤ 10^6",
+    "sample_input": "n = 153",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 153;
+        // Count digits, then sum each digit^digitCount, compare to n
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1222,
+    "title": "Reverse a Number",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["Wipro", "Accenture"],
+    "description": "Given an integer n, reverse its digits and return the result. If the reversed number overflows 32-bit integer range, return 0.",
+    "input_format": "n = 12345",
+    "output_format": "54321",
+    "constraints": "-2^31 ≤ n ≤ 2^31 - 1",
+    "sample_input": "n = 12345",
+    "sample_output": "54321",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 12345;
+        // Extract digits using % 10 and build reversed number
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1223,
+    "title": "Count Digits in a Number",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Cognizant"],
+    "description": "Given a positive integer n, count the number of digits in it without converting it to a string.",
+    "input_format": "n = 98765",
+    "output_format": "5",
+    "constraints": "1 ≤ n ≤ 10^9",
+    "sample_input": "n = 98765",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 98765;
+        // Divide by 10 repeatedly until n becomes 0; count iterations
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1224,
+    "title": "Sum of Digits",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "HCL"],
+    "description": "Given a non-negative integer n, find the sum of all its digits.",
+    "input_format": "n = 4567",
+    "output_format": "22",
+    "constraints": "0 ≤ n ≤ 10^9",
+    "sample_input": "n = 4567",
+    "sample_output": "22",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 4567;
+        // Add n % 10 to sum, then n = n / 10, repeat until n == 0
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1225,
+    "title": "Check Palindrome Number",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["Amazon", "Flipkart"],
+    "description": "Given an integer n, return true if it reads the same forwards and backwards (palindrome). Negative numbers are never palindromes.",
+    "input_format": "n = 121",
+    "output_format": "true",
+    "constraints": "-2^31 ≤ n ≤ 2^31 - 1",
+    "sample_input": "n = 121",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 121;
+        // Reverse the number and check if it equals original
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1226,
+    "title": "Find GCD and LCM",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro"],
+    "description": "Given two positive integers a and b, compute their Greatest Common Divisor (GCD) using the Euclidean algorithm, then compute their Least Common Multiple (LCM) as (a*b)/GCD.",
+    "input_format": "a = 12, b = 18",
+    "output_format": "GCD = 6, LCM = 36",
+    "constraints": "1 ≤ a, b ≤ 10^6",
+    "sample_input": "a = 12, b = 18",
+    "sample_output": "GCD = 6, LCM = 36",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int a = 12, b = 18;
+        // gcd(a, b) = gcd(b, a % b) recursively; lcm = a / gcd * b
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1227,
+    "title": "Check Prime Number",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["Google", "Microsoft"],
+    "description": "Given a positive integer n, determine whether it is a prime number. A prime has exactly two divisors: 1 and itself.",
+    "input_format": "n = 29",
+    "output_format": "true",
+    "constraints": "1 ≤ n ≤ 10^6",
+    "sample_input": "n = 29",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 29;
+        // Check divisibility from 2 to sqrt(n)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1228,
+    "title": "Prime Factors of a Number",
+    "category": "Numbers",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Adobe"],
+    "description": "Given a positive integer n, print all its prime factors in ascending order. For example, 12 = 2 × 2 × 3.",
+    "input_format": "n = 360",
+    "output_format": "2 2 2 3 3 5",
+    "constraints": "2 ≤ n ≤ 10^7",
+    "sample_input": "n = 360",
+    "sample_output": "2 2 2 3 3 5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 360;
+        // Divide by 2 while divisible, then check odd factors up to sqrt(n)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1229,
+    "title": "Power of a Number (Fast Exponentiation)",
+    "category": "Numbers",
+    "difficulty": "Medium",
+    "company_tags": ["Google", "Morgan Stanley"],
+    "description": "Given base b and exponent e, compute b^e using fast exponentiation (binary exponentiation) in O(log e) time.",
+    "input_format": "b = 2, e = 10",
+    "output_format": "1024",
+    "constraints": "0 ≤ b ≤ 10^4, 0 ≤ e ≤ 10^4",
+    "sample_input": "b = 2, e = 10",
+    "sample_output": "1024",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        long b = 2, e = 10;
+        // result = 1; while e > 0: if e is odd result *= b; b *= b; e >>= 1
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1230,
+    "title": "Count Set Bits in a Number",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["Microsoft", "Samsung"],
+    "description": "Given a non-negative integer n, count the number of 1-bits (set bits) in its binary representation.",
+    "input_format": "n = 13",
+    "output_format": "3",
+    "constraints": "0 ≤ n ≤ 10^9",
+    "sample_input": "n = 13",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 13; // binary: 1101
+        // Use n & (n-1) trick or Integer.bitCount(n)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1231,
+    "title": "Fibonacci Number (Iterative)",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Cognizant", "Wipro"],
+    "description": "Given n, return the n-th Fibonacci number using an iterative approach. F(0)=0, F(1)=1, F(n)=F(n-1)+F(n-2).",
+    "input_format": "n = 10",
+    "output_format": "55",
+    "constraints": "0 ≤ n ≤ 50",
+    "sample_input": "n = 10",
+    "sample_output": "55",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 10;
+        // Use two variables prev and curr, iterate n times
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1232,
+    "title": "Digital Root",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["Infosys", "HCL"],
+    "description": "The digital root of a number is the single digit obtained by repeatedly summing its digits. For example, digital_root(493) = 4+9+3 = 16 → 1+6 = 7.",
+    "input_format": "n = 493",
+    "output_format": "7",
+    "constraints": "1 ≤ n ≤ 10^9",
+    "sample_input": "n = 493",
+    "sample_output": "7",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 493;
+        // Formula: if n == 0 return 0; else return 1 + (n - 1) % 9
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1233,
+    "title": "Check Perfect Number",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["Accenture", "Capgemini"],
+    "description": "A perfect number equals the sum of its proper divisors (excluding itself). For example, 28 = 1+2+4+7+14. Given n, return true if it is a perfect number.",
+    "input_format": "n = 28",
+    "output_format": "true",
+    "constraints": "1 ≤ n ≤ 10^6",
+    "sample_input": "n = 28",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 28;
+        // Sum divisors from 1 to sqrt(n), add both i and n/i if i != n/i
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1234,
+    "title": "Number of Trailing Zeros in Factorial",
+    "category": "Numbers",
+    "difficulty": "Medium",
+    "company_tags": ["Amazon", "Goldman Sachs"],
+    "description": "Given n, find the number of trailing zeros in n! (n factorial). Trailing zeros are produced by pairs of 2 and 5 in the prime factorisation.",
+    "input_format": "n = 25",
+    "output_format": "6",
+    "constraints": "0 ≤ n ≤ 10^4",
+    "sample_input": "n = 25",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 25;
+        // count = n/5 + n/25 + n/125 + ... until n/5^k == 0
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1235,
+    "title": "Sieve of Eratosthenes",
+    "category": "Numbers",
+    "difficulty": "Medium",
+    "company_tags": ["Google", "Microsoft", "Oracle"],
+    "description": "Print all prime numbers up to n using the Sieve of Eratosthenes algorithm. Mark multiples of each prime starting from 2 as composite.",
+    "input_format": "n = 30",
+    "output_format": "2 3 5 7 11 13 17 19 23 29",
+    "constraints": "2 ≤ n ≤ 10^6",
+    "sample_input": "n = 30",
+    "sample_output": "2 3 5 7 11 13 17 19 23 29",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 30;
+        boolean[] isComposite = new boolean[n + 1];
+        // Mark isComposite[i*j] = true for i from 2 to sqrt(n)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1236,
+    "title": "Convert Decimal to Binary",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro", "Infosys"],
+    "description": "Given a non-negative integer n in decimal, convert it to its binary representation and print it as a string (no leading zeros, except '0' for input 0).",
+    "input_format": "n = 45",
+    "output_format": "101101",
+    "constraints": "0 ≤ n ≤ 10^9",
+    "sample_input": "n = 45",
+    "sample_output": "101101",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 45;
+        // Divide by 2 repeatedly; collect remainders in reverse
+        // Or use Integer.toBinaryString(n)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1237,
+    "title": "Sum of First N Natural Numbers",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["Capgemini", "HCL"],
+    "description": "Given n, compute the sum of the first n natural numbers (1 + 2 + … + n) using the formula n*(n+1)/2 and verify it matches the iterative sum.",
+    "input_format": "n = 100",
+    "output_format": "5050",
+    "constraints": "1 ≤ n ≤ 10^6",
+    "sample_input": "n = 100",
+    "sample_output": "5050",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        long n = 100;
+        // Use formula: n * (n + 1) / 2
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1238,
+    "title": "Find All Divisors of a Number",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["Accenture", "Cognizant"],
+    "description": "Given a positive integer n, print all its divisors in sorted order. Use the square-root trick to find pairs in O(√n) time.",
+    "input_format": "n = 36",
+    "output_format": "1 2 3 4 6 9 12 18 36",
+    "constraints": "1 ≤ n ≤ 10^6",
+    "sample_input": "n = 36",
+    "sample_output": "1 2 3 4 6 9 12 18 36",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 36;
+        // Collect divisors i and n/i for i from 1 to sqrt(n), sort and print
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1239,
+    "title": "Missing Number in Range 1 to N",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["Amazon", "Flipkart", "Adobe"],
+    "description": "Given an array containing n-1 distinct integers in the range [1, n], find the one missing number using the sum formula: expected = n*(n+1)/2 minus the actual sum of the array.",
+    "input_format": "nums = [1,2,4,6,3,7,8], n = 8",
+    "output_format": "5",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "nums = [1,2,4,6,3,7,8], n = 8",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int[] nums = {1,2,4,6,3,7,8};
+        int n = 8;
+        // missing = n*(n+1)/2 - sum(nums)
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1240,
+    "title": "Count Numbers Divisible by Both 3 and 5",
+    "category": "Numbers",
+    "difficulty": "Easy",
+    "company_tags": ["TCS", "Wipro", "Cognizant"],
+    "description": "Given a range [1, n], count how many integers in that range are divisible by both 3 and 5 (i.e., divisible by 15).",
+    "input_format": "n = 100",
+    "output_format": "6",
+    "constraints": "1 ≤ n ≤ 10^7",
+    "sample_input": "n = 100",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main {
+    public static void main(String[] args) {
+        int n = 100;
+        // count = n / 15
+        System.out.println("  ");
+    }
+}`
+    }
+  },
 ];
 
 export const getCategories = () => [...new Set(problems.map(p => p.category))];
