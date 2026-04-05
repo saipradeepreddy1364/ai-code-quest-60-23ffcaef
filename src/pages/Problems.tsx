@@ -16,6 +16,7 @@ export default function Problems() {
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [selectedCompany, setSelectedCompany] = useState<string>("");
   const [showFilters, setShowFilters] = useState(false);
+  const [expandedRow, setExpandedRow] = useState<number | null>(null);
 
   const categories = getCategories();
   const companyList = getCompanies();
@@ -157,9 +158,13 @@ export default function Problems() {
                   {p.difficulty}
                 </td>
 
-                <td className="px-4 py-3">
+                <td
+                  className="px-4 py-3 cursor-pointer select-none"
+                  onClick={() => setExpandedRow(expandedRow === p.id ? null : p.id)}
+                  title="Click to see all companies"
+                >
                   <div className="flex flex-wrap gap-1">
-                    {p.company_tags.slice(0, 2).map((t) => (
+                    {(expandedRow === p.id ? p.company_tags : p.company_tags.slice(0, 2)).map((t) => (
                       <span
                         key={t}
                         className="text-xs px-1.5 py-0.5 bg-secondary rounded text-muted-foreground"
@@ -167,9 +172,9 @@ export default function Problems() {
                         {t}
                       </span>
                     ))}
-                    {p.company_tags.length > 2 && (
-                      <span className="text-xs text-muted-foreground">
-                        +{p.company_tags.length - 2}
+                    {expandedRow !== p.id && p.company_tags.length > 2 && (
+                      <span className="text-xs px-1.5 py-0.5 bg-primary/20 rounded text-primary font-medium">
+                        +{p.company_tags.length - 2} more
                       </span>
                     )}
                   </div>
