@@ -43,24 +43,26 @@ export default function ProblemView() {
   const inputRef            = useRef<HTMLTextAreaElement>(null);
 
   // ── State ──────────────────────────────────────────────────────────────────
-  const [code, setCode]               = useState(problem?.starter_code?.java || "");
-  const [stdin, setStdin]             = useState("");
-  const [output, setOutput]           = useState("");
-  const [error, setError]             = useState("");
-  const [activeTab, setActiveTab]     = useState<"terminal" | "errors">("terminal");
-  const [isRunning, setIsRunning]     = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSaving, setIsSaving]       = useState(false);
+  const [code, setCode]                   = useState(problem?.starter_code?.java || "");
+  const [stdin, setStdin]                 = useState("");
+  const [output, setOutput]               = useState("");
+  const [error, setError]                 = useState("");
+  const [activeTab, setActiveTab]         = useState<"terminal" | "errors">("terminal");
+  const [isRunning, setIsRunning]         = useState(false);
+  const [isSubmitting, setIsSubmitting]   = useState(false);
+  const [isSaving, setIsSaving]           = useState(false);
   const [executionTime, setExecutionTime] = useState<number | null>(null);
   const [inputChanged, setInputChanged]   = useState(false);
-  const [runCount, setRunCount]       = useState(0);
+  const [runCount, setRunCount]           = useState(0);
   const [bottomHeight, setBottomHeight]   = useState(220);
-  const [leftWidth, setLeftWidth]     = useState(40); // percent
-  const [chatOpen, setChatOpen]       = useState(false);
+  const [leftWidth, setLeftWidth]         = useState(40); // percent
+  const [chatOpen, setChatOpen]           = useState(false);
   // True when a successful (no-error) compile detected that stdin is required
   // but the user hasn't provided any yet — prompts them to fill the input box.
-  const [needsInput, setNeedsInput]   = useState(false);
-  const [aiPanel, setAiPanel]         = useState<{
+  const [needsInput, setNeedsInput]       = useState(false);
+  // Shows a small "Auto-saved" indicator in the toolbar for 2 s after each run save
+  const [autoSaved, setAutoSaved]         = useState(false);
+  const [aiPanel, setAiPanel]             = useState<{
     open: boolean;
     title: string;
     content: string;
@@ -138,6 +140,38 @@ export default function ProblemView() {
     return <div className="p-6 text-muted-foreground">Problem not found.</div>;
   }
 
+  // ── Auto-save helper ───────────────────────────────────────────────────────
+  // Called silently after every run (no toast). Uses the same Supabase upsert
+  // as handleSave so both paths always stay in sync on the same row.
+  const autoSaveCode = async (latestCode: string, latestRunCount: number) => {
+    if (!user) return;
+    try {
+      const { error: saveError } = await supabase.from("saved_codes").upsert(
+        {
+          user_id: user.id,
+          user_email: user.email,
+          problem_id: problem.id,
+          title: problem.title,
+          category: problem.category,
+          code: latestCode,
+          language,
+          compiler_runs: latestRunCount,
+          saved_at: new Date().toISOString(),
+        },
+        { onConflict: "user_id,problem_id,language" }
+      );
+      if (saveError) {
+        console.error("Auto-save error:", saveError);
+        return;
+      }
+      // Flash the "Auto-saved" badge in the toolbar for 2 seconds
+      setAutoSaved(true);
+      setTimeout(() => setAutoSaved(false), 2000);
+    } catch (err) {
+      console.error("Auto-save failed:", err);
+    }
+  };
+
   // ── Handlers ──────────────────────────────────────────────────────────────
 
   const handleRun = async () => {
@@ -179,7 +213,15 @@ export default function ProblemView() {
       setActiveTab("errors");
     } finally {
       setIsRunning(false);
-      setRunCount((c) => c + 1);
+      // Increment run count, then auto-save with the updated count.
+      // We use the functional updater so we always get the latest count value,
+      // and pass `code` from the outer closure which reflects the latest editor
+      // content because setCode is called synchronously on every keystroke.
+      setRunCount((prev) => {
+        const newCount = prev + 1;
+        autoSaveCode(code, newCount);
+        return newCount;
+      });
     }
   };
 
@@ -472,13 +514,25 @@ export default function ProblemView() {
             </button>
           </div>
 
-          {/* Run counter badge */}
-          {runCount > 0 && (
-            <div className="flex items-center gap-1 text-xs text-muted-foreground bg-muted px-2 py-1 rounded-full">
-              <Play className="h-3 w-3" />
-              {runCount} run{runCount !== 1 ? "s" : ""}
-            </div>
-          )}
+          {/* Right side of toolbar: auto-saved flash + run counter badge */}
+          <div className="flex items-center gap-2">
+
+            {/* Auto-saved flash indicator — visible for 2 s after each run */}
+            {autoSaved && (
+              <span className="flex items-center gap-1 text-xs text-green-400 font-medium animate-pulse">
+                <Save className="h-3 w-3" />
+                Auto-saved
+              </span>
+            )}
+
+            {/* Run counter badge */}
+            {runCount > 0 && (
+              <div className="flex items-center gap-1 text-xs text-muted-foreground bg-muted px-2 py-1 rounded-full">
+                <Play className="h-3 w-3" />
+                {runCount} run{runCount !== 1 ? "s" : ""}
+              </div>
+            )}
+          </div>
         </div>
 
         {/* ── Editor + AI chat side by side ── */}
@@ -564,7 +618,6 @@ export default function ProblemView() {
             >
               Errors
             </button>
-
           </div>
 
           <div className="flex-1 p-3 font-mono text-xs overflow-auto">
