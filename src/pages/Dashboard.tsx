@@ -572,7 +572,7 @@ export default function Dashboard() {
           >
             {(
               [
-                { id: "dsa",       label: "DSA Topics",     icon: Brain },
+                { id: "dsa",       label: "All Topics",     icon: Brain },
                 { id: "placement", label: "Placement Prep", icon: GraduationCap },
                 { id: "companies", label: "Companies",      icon: Building2 },
               ] as const
