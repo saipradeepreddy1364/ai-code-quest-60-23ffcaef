@@ -40,23 +40,6 @@ export default function Login() {
     }
   };
 
-  const inputStyle: React.CSSProperties = {
-    width: "100%",
-    paddingTop: "10px",
-    paddingBottom: "10px",
-    paddingRight: "12px",
-    paddingLeft: "34px",
-    background: "rgba(255, 255, 255, 0.05)",  // very subtle dark tint — blends with bg
-    border: "1px solid rgba(99, 102, 241, 0.2)", // barely visible soft indigo line
-    borderRadius: "8px",
-    color: "white",
-    fontSize: "13px",
-    outline: "none",
-    boxSizing: "border-box",
-    transition: "border-color 0.2s",
-    WebkitAppearance: "none",
-  };
-
   return (
     <div
       style={{
@@ -68,7 +51,7 @@ export default function Login() {
         overflow: "hidden",
       }}
     >
-      {/* Full-screen background */}
+      {/* ── Full-screen SVG background ── */}
       <img
         src="/tech_login_background_v2.svg"
         aria-hidden="true"
@@ -83,7 +66,7 @@ export default function Login() {
         }}
       />
 
-      {/* Card — transparent, no border, no shadow */}
+      {/* ── Login card: NO background, NO border, NO shadow — fully merged ── */}
       <div
         style={{
           position: "relative",
@@ -93,6 +76,7 @@ export default function Login() {
           background: "transparent",
           border: "none",
           boxShadow: "none",
+          outline: "none",
         }}
       >
         {/* Logo and Title */}
@@ -112,10 +96,25 @@ export default function Login() {
           >
             <LogIn style={{ width: "26px", height: "26px", color: "white" }} />
           </div>
-          <h1 style={{ fontSize: "22px", fontWeight: 700, color: "white", margin: 0 }}>
+          <h1
+            style={{
+              fontSize: "22px",
+              fontWeight: 700,
+              color: "white",
+              margin: 0,
+              lineHeight: 1.2,
+            }}
+          >
             Welcome Back
           </h1>
-          <p style={{ color: "#a5b4fc", marginTop: "6px", fontSize: "14px" }}>
+          <p
+            style={{
+              color: "#a5b4fc",
+              marginTop: "6px",
+              fontSize: "14px",
+              marginBottom: 0,
+            }}
+          >
             Sign in to continue coding
           </p>
         </div>
@@ -127,31 +126,88 @@ export default function Login() {
         >
           {/* Email */}
           <div>
-            <label style={{ display: "block", fontSize: "12px", fontWeight: 500, color: "#c7d2fe", marginBottom: "6px" }}>
+            <label
+              style={{
+                display: "block",
+                fontSize: "12px",
+                fontWeight: 500,
+                color: "#c7d2fe",
+                marginBottom: "6px",
+              }}
+            >
               Email Address
             </label>
             <div style={{ position: "relative" }}>
-              <Mail style={{ position: "absolute", left: "11px", top: "50%", transform: "translateY(-50%)", width: "15px", height: "15px", color: "#818cf8" }} />
+              <Mail
+                style={{
+                  position: "absolute",
+                  left: "11px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  width: "15px",
+                  height: "15px",
+                  color: "#818cf8",
+                  pointerEvents: "none",
+                }}
+              />
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
                 required
-                style={inputStyle}
-                onFocus={(e) => (e.target.style.borderColor = "rgba(99,102,241,0.7)")}
-                onBlur={(e) => (e.target.style.borderColor = "rgba(99,102,241,0.2)")}
+                style={{
+                  width: "100%",
+                  paddingLeft: "34px",
+                  paddingRight: "12px",
+                  paddingTop: "10px",
+                  paddingBottom: "10px",
+                  background: "transparent",
+                  border: "none",
+                  borderBottom: "1px solid rgba(99,102,241,0.35)",
+                  borderRadius: 0,
+                  color: "white",
+                  fontSize: "13px",
+                  outline: "none",
+                  boxSizing: "border-box",
+                  transition: "border-color 0.2s",
+                }}
+                onFocus={(e) =>
+                  (e.target.style.borderBottomColor = "rgba(99,102,241,0.9)")
+                }
+                onBlur={(e) =>
+                  (e.target.style.borderBottomColor = "rgba(99,102,241,0.35)")
+                }
               />
             </div>
           </div>
 
           {/* Password */}
           <div>
-            <label style={{ display: "block", fontSize: "12px", fontWeight: 500, color: "#c7d2fe", marginBottom: "6px" }}>
+            <label
+              style={{
+                display: "block",
+                fontSize: "12px",
+                fontWeight: 500,
+                color: "#c7d2fe",
+                marginBottom: "6px",
+              }}
+            >
               Password
             </label>
             <div style={{ position: "relative" }}>
-              <Lock style={{ position: "absolute", left: "11px", top: "50%", transform: "translateY(-50%)", width: "15px", height: "15px", color: "#818cf8" }} />
+              <Lock
+                style={{
+                  position: "absolute",
+                  left: "11px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  width: "15px",
+                  height: "15px",
+                  color: "#818cf8",
+                  pointerEvents: "none",
+                }}
+              />
               <input
                 type={showPassword ? "text" : "password"}
                 value={password}
@@ -159,22 +215,54 @@ export default function Login() {
                 placeholder="••••••••"
                 required
                 style={{
-                  ...inputStyle,
+                  width: "100%",
+                  paddingLeft: "34px",
                   paddingRight: "40px",
+                  paddingTop: "10px",
+                  paddingBottom: "10px",
+                  background: "transparent",
+                  border: "none",
+                  borderBottom: "1px solid rgba(99,102,241,0.35)",
+                  borderRadius: 0,
+                  color: "white",
+                  fontSize: "13px",
+                  outline: "none",
+                  boxSizing: "border-box",
+                  transition: "border-color 0.2s",
                   letterSpacing: showPassword ? "normal" : "0.15em",
                   fontFamily: showPassword ? "inherit" : "Verdana, sans-serif",
                 }}
-                onFocus={(e) => (e.target.style.borderColor = "rgba(99,102,241,0.7)")}
-                onBlur={(e) => (e.target.style.borderColor = "rgba(99,102,241,0.2)")}
+                onFocus={(e) =>
+                  (e.target.style.borderBottomColor = "rgba(99,102,241,0.9)")
+                }
+                onBlur={(e) =>
+                  (e.target.style.borderBottomColor = "rgba(99,102,241,0.35)")
+                }
               />
               <button
                 type="button"
                 onClick={() => setShowPassword((prev) => !prev)}
                 tabIndex={-1}
                 aria-label={showPassword ? "Hide password" : "Show password"}
-                style={{ position: "absolute", right: "10px", top: "50%", transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", color: "#818cf8", padding: 0, display: "flex", alignItems: "center" }}
+                style={{
+                  position: "absolute",
+                  right: "4px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  color: "#818cf8",
+                  padding: 0,
+                  display: "flex",
+                  alignItems: "center",
+                }}
               >
-                {showPassword ? <EyeOff style={{ width: "15px", height: "15px" }} /> : <Eye style={{ width: "15px", height: "15px" }} />}
+                {showPassword ? (
+                  <EyeOff style={{ width: "15px", height: "15px" }} />
+                ) : (
+                  <Eye style={{ width: "15px", height: "15px" }} />
+                )}
               </button>
             </div>
           </div>
@@ -196,16 +284,32 @@ export default function Login() {
               opacity: loading ? 0.6 : 1,
               transition: "opacity 0.2s",
               boxShadow: "0 4px 20px rgba(99,102,241,0.4)",
-              marginTop: "2px",
+              marginTop: "8px",
             }}
           >
             {loading ? "Signing in…" : "Sign In"}
           </button>
         </form>
 
-        <p style={{ textAlign: "center", marginTop: "20px", color: "#a5b4fc", fontSize: "13px" }}>
+        <p
+          style={{
+            textAlign: "center",
+            marginTop: "20px",
+            color: "#a5b4fc",
+            fontSize: "13px",
+            marginBottom: 0,
+          }}
+        >
           Don't have an account?{" "}
-          <Link to="/signup" style={{ color: "white", fontWeight: 600, textDecoration: "underline", textUnderlineOffset: "3px" }}>
+          <Link
+            to="/signup"
+            style={{
+              color: "white",
+              fontWeight: 600,
+              textDecoration: "underline",
+              textUnderlineOffset: "3px",
+            }}
+          >
             Sign up
           </Link>
         </p>
