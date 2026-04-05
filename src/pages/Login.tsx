@@ -41,6 +41,7 @@ export default function Login() {
   };
 
   return (
+    /* Outer wrapper — fixed, full viewport, nothing else */
     <div
       style={{
         position: "fixed",
@@ -49,9 +50,11 @@ export default function Login() {
         alignItems: "center",
         justifyContent: "center",
         overflow: "hidden",
+        margin: 0,
+        padding: 0,
       }}
     >
-      {/* ── Full-screen SVG background ── */}
+      {/* SVG fills every pixel of the screen */}
       <img
         src="/tech_login_background_v2.svg"
         aria-hidden="true"
@@ -66,15 +69,24 @@ export default function Login() {
         }}
       />
 
-      {/* ── Login card: NO background, NO border, NO shadow — fully merged ── */}
+      {/*
+        Card wrapper — ZERO styling.
+        No background. No border. No shadow. No blur. No color.
+        It is purely a layout box to center the form content.
+        The SVG's own glowing window is the only visible "container".
+      */}
       <div
         style={{
           position: "relative",
           zIndex: 10,
           width: "min(420px, 88vw)",
           padding: "36px 32px",
-          background: "transparent",
+          background: "none",
+          backgroundColor: "transparent",
+          backdropFilter: "none",
+          WebkitBackdropFilter: "none",
           border: "none",
+          borderRadius: 0,
           boxShadow: "none",
           outline: "none",
         }}
@@ -122,7 +134,7 @@ export default function Login() {
         {/* Form */}
         <form
           onSubmit={handleSubmit}
-          style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          style={{ display: "flex", flexDirection: "column", gap: "20px" }}
         >
           {/* Email */}
           <div>
@@ -132,7 +144,7 @@ export default function Login() {
                 fontSize: "12px",
                 fontWeight: 500,
                 color: "#c7d2fe",
-                marginBottom: "6px",
+                marginBottom: "8px",
               }}
             >
               Email Address
@@ -141,7 +153,7 @@ export default function Login() {
               <Mail
                 style={{
                   position: "absolute",
-                  left: "11px",
+                  left: "0px",
                   top: "50%",
                   transform: "translateY(-50%)",
                   width: "15px",
@@ -158,25 +170,28 @@ export default function Login() {
                 required
                 style={{
                   width: "100%",
-                  paddingLeft: "34px",
+                  paddingLeft: "22px",
                   paddingRight: "12px",
-                  paddingTop: "10px",
-                  paddingBottom: "10px",
+                  paddingTop: "8px",
+                  paddingBottom: "8px",
                   background: "transparent",
+                  backgroundColor: "transparent",
                   border: "none",
-                  borderBottom: "1px solid rgba(99,102,241,0.35)",
+                  borderBottom: "1px solid rgba(99,102,241,0.4)",
                   borderRadius: 0,
                   color: "white",
                   fontSize: "13px",
                   outline: "none",
                   boxSizing: "border-box",
                   transition: "border-color 0.2s",
+                  WebkitBoxShadow: "0 0 0px 1000px transparent inset",
+                  WebkitTextFillColor: "white",
                 }}
                 onFocus={(e) =>
-                  (e.target.style.borderBottomColor = "rgba(99,102,241,0.9)")
+                  (e.target.style.borderBottomColor = "rgba(99,102,241,1)")
                 }
                 onBlur={(e) =>
-                  (e.target.style.borderBottomColor = "rgba(99,102,241,0.35)")
+                  (e.target.style.borderBottomColor = "rgba(99,102,241,0.4)")
                 }
               />
             </div>
@@ -190,7 +205,7 @@ export default function Login() {
                 fontSize: "12px",
                 fontWeight: 500,
                 color: "#c7d2fe",
-                marginBottom: "6px",
+                marginBottom: "8px",
               }}
             >
               Password
@@ -199,7 +214,7 @@ export default function Login() {
               <Lock
                 style={{
                   position: "absolute",
-                  left: "11px",
+                  left: "0px",
                   top: "50%",
                   transform: "translateY(-50%)",
                   width: "15px",
@@ -216,27 +231,30 @@ export default function Login() {
                 required
                 style={{
                   width: "100%",
-                  paddingLeft: "34px",
-                  paddingRight: "40px",
-                  paddingTop: "10px",
-                  paddingBottom: "10px",
+                  paddingLeft: "22px",
+                  paddingRight: "36px",
+                  paddingTop: "8px",
+                  paddingBottom: "8px",
                   background: "transparent",
+                  backgroundColor: "transparent",
                   border: "none",
-                  borderBottom: "1px solid rgba(99,102,241,0.35)",
+                  borderBottom: "1px solid rgba(99,102,241,0.4)",
                   borderRadius: 0,
                   color: "white",
                   fontSize: "13px",
                   outline: "none",
                   boxSizing: "border-box",
                   transition: "border-color 0.2s",
+                  WebkitBoxShadow: "0 0 0px 1000px transparent inset",
+                  WebkitTextFillColor: "white",
                   letterSpacing: showPassword ? "normal" : "0.15em",
                   fontFamily: showPassword ? "inherit" : "Verdana, sans-serif",
                 }}
                 onFocus={(e) =>
-                  (e.target.style.borderBottomColor = "rgba(99,102,241,0.9)")
+                  (e.target.style.borderBottomColor = "rgba(99,102,241,1)")
                 }
                 onBlur={(e) =>
-                  (e.target.style.borderBottomColor = "rgba(99,102,241,0.35)")
+                  (e.target.style.borderBottomColor = "rgba(99,102,241,0.4)")
                 }
               />
               <button
@@ -246,7 +264,7 @@ export default function Login() {
                 aria-label={showPassword ? "Hide password" : "Show password"}
                 style={{
                   position: "absolute",
-                  right: "4px",
+                  right: "0px",
                   top: "50%",
                   transform: "translateY(-50%)",
                   background: "none",
@@ -284,7 +302,7 @@ export default function Login() {
               opacity: loading ? 0.6 : 1,
               transition: "opacity 0.2s",
               boxShadow: "0 4px 20px rgba(99,102,241,0.4)",
-              marginTop: "8px",
+              marginTop: "4px",
             }}
           >
             {loading ? "Signing in…" : "Sign In"}
