@@ -5,7 +5,7 @@
  *    using a direct cast to satisfy the TypeScript compiler.
  * 2. Added the /api suffix which is standard for Spring Boot controllers.
  */
-const API_BASE_URL = ((import.meta as any).env?.VITE_API_BASE_URL || 'https://backend-u94c.onrender.com').replace(/\/$/, '');
+const API_BASE_URL = ((import.meta as any).env?.VITE_API_BASE_URL || 'https://backend-4k4j.onrender.com').replace(/\/$/, '');
 
 interface CompilerResponse {
   stdout?: string;
