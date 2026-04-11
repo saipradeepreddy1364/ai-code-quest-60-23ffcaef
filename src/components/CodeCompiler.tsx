@@ -36,8 +36,8 @@ export default function CodeCompiler({
   userEmail,
 }: CodeCompilerProps) {
   const containerRef      = useRef<HTMLDivElement>(null);
-  const isResizingHRef    = useRef(false); // horizontal split (editor ↔ right panel)
-  const isResizingVRef    = useRef(false); // vertical split (input ↔ output)
+  const isResizingHRef    = useRef(false);
+  const isResizingVRef    = useRef(false);
   const abortRef          = useRef<AbortController | null>(null);
   const inputRef          = useRef<HTMLTextAreaElement>(null);
 
@@ -50,13 +50,9 @@ export default function CodeCompiler({
   const [inputChanged, setInputChanged]   = useState(false);
   const [needsInput, setNeedsInput]       = useState(false);
 
-  // ── Layout state ────────────────────────────────────────────────────────────
-  // editorWidthPct: percentage of total width given to the code editor (left half)
-  // inputHeightPct: percentage of right-panel height given to the input section
   const [editorWidthPct, setEditorWidthPct] = useState(60);
   const [inputHeightPct, setInputHeightPct] = useState(40);
 
-  // Notify parent of initial code
   useEffect(() => {
     onCodeChange?.(defaultCode, "java");
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -70,21 +66,18 @@ export default function CodeCompiler({
     }
   }, [needsInput]);
 
-  // ── Mouse-move handler for BOTH resize bars ──────────────────────────────
+  // ── Resize mouse handlers ────────────────────────────────────────────────
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!containerRef.current) return;
       const rect = containerRef.current.getBoundingClientRect();
 
       if (isResizingHRef.current) {
-        // Horizontal: editor width as % of total container width
         const pct = ((e.clientX - rect.left) / rect.width) * 100;
         if (pct > 20 && pct < 80) setEditorWidthPct(pct);
       }
 
       if (isResizingVRef.current) {
-        // Vertical: input height as % of right-panel height
-        // right panel starts at editorWidthPct% of total width
         const rightPanelTop = rect.top;
         const rightPanelH   = rect.height;
         const pct = ((e.clientY - rightPanelTop) / rightPanelH) * 100;
@@ -149,10 +142,13 @@ export default function CodeCompiler({
   };
 
   return (
+    // FIX: Removed `select-none` from the container — it was causing Monaco editor
+    // to jump the cursor to the last line on certain keystrokes.
+    // Resize handles still use `userSelect: "none"` inline to prevent text
+    // selection while dragging, without affecting the editor.
     <div
       ref={containerRef}
-      className="flex h-full select-none overflow-hidden"
-      style={{ cursor: isResizingHRef.current ? "col-resize" : "default" }}
+      className="flex h-full overflow-hidden"
     >
       {/* ══════════════ LEFT — Code Editor ══════════════ */}
       <div
@@ -188,7 +184,7 @@ export default function CodeCompiler({
           </div>
         </div>
 
-        {/* Monaco editor fills remaining height */}
+        {/* Monaco editor */}
         <div className="flex-1 overflow-hidden">
           <CodeEditor
             language="java"
@@ -205,20 +201,20 @@ export default function CodeCompiler({
       {/* ══════════════ HORIZONTAL RESIZE HANDLE ══════════════ */}
       <div
         className="w-1.5 bg-border hover:bg-primary/60 cursor-col-resize shrink-0 transition-colors"
+        style={{ userSelect: "none" }}
         onMouseDown={(e) => { e.preventDefault(); isResizingHRef.current = true; }}
       />
 
-      {/* ══════════════ RIGHT — Input (top) + Output (bottom) ══════════════ */}
+      {/* ══════════════ RIGHT — Input + Output ══════════════ */}
       <div
         className="flex flex-col h-full overflow-hidden bg-card"
         style={{ flex: 1, minWidth: 0 }}
       >
-        {/* ── TOP: Input section ── */}
+        {/* ── Input section ── */}
         <div
           className="flex flex-col overflow-hidden border-b border-border"
           style={{ height: `${inputHeightPct}%`, minHeight: 0 }}
         >
-          {/* Input header */}
           <div className="flex items-center justify-between px-3 py-2 border-b bg-card shrink-0">
             <span className="text-xs font-semibold text-green-400">Input (stdin)</span>
             {needsInput && (
@@ -228,7 +224,6 @@ export default function CodeCompiler({
             )}
           </div>
 
-          {/* Input textarea */}
           <div className="flex-1 overflow-hidden p-2">
             <textarea
               ref={inputRef}
@@ -257,15 +252,15 @@ export default function CodeCompiler({
         {/* ══════════════ VERTICAL RESIZE HANDLE ══════════════ */}
         <div
           className="h-1.5 bg-border hover:bg-primary/60 cursor-row-resize shrink-0 transition-colors"
+          style={{ userSelect: "none" }}
           onMouseDown={(e) => { e.preventDefault(); isResizingVRef.current = true; }}
         />
 
-        {/* ── BOTTOM: Output / Errors section ── */}
+        {/* ── Output section ── */}
         <div
           className="flex flex-col overflow-hidden"
           style={{ flex: 1, minHeight: 0 }}
         >
-          {/* Output header */}
           <div className="flex items-center justify-between px-3 py-2 border-b bg-card shrink-0">
             <span className="text-xs font-semibold text-blue-400">Output</span>
             {executionTime !== null && (
@@ -275,7 +270,6 @@ export default function CodeCompiler({
             )}
           </div>
 
-          {/* Output content */}
           <div className="flex-1 overflow-auto p-3 font-mono text-xs">
             {isRunning ? (
               <div className="flex items-center gap-2 text-muted-foreground">
