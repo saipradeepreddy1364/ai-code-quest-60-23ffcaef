@@ -681,29 +681,12 @@ export default function Dashboard() {
             />
           </div>
 
-          {isAiOpen && (
-            <div
-              className="w-1.5 bg-border hover:bg-primary cursor-col-resize shrink-0 transition-colors"
-              onMouseDown={(e) => {
-                e.preventDefault();
-                setIsResizingPanel(true);
-              }}
-            />
-          )}
-
-          {isAiOpen && (
-            <div
-              className="shrink-0 border-l border-border overflow-hidden"
-              style={{ width: aiPanelWidth }}
-            >
-              <AIChatPanel
-                isOpen={isAiOpen}
-                onClose={() => setIsAiOpen(false)}
-                code={currentCode}
-                errors={currentErrors}
-              />
-            </div>
-          )}
+          <AIChatPanel
+            isOpen={isAiOpen}
+            onClose={() => setIsAiOpen(false)}
+            code={currentCode}
+            errors={currentErrors}
+          />
 
           {/* ← NEW: UserPerformance panel — slides in from the right */}
           {perfOpen && (
