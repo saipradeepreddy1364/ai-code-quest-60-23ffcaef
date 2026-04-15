@@ -189,7 +189,7 @@ export default function CodeCompiler({
             <button
               onClick={handleRun}
               disabled={isRunning}
-              title="Run code"
+              title="Run code (Ctrl+Enter)"
               className="flex items-center justify-center w-8 h-8 rounded-md text-green-500 hover:bg-green-500/10 transition-colors disabled:opacity-50"
             >
               {isRunning ? <Loader2 className="h-5 w-5 animate-spin" /> : <Play className="h-5 w-5" />}
