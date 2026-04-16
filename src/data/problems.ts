@@ -29775,9 +29775,4112 @@ export const problems: Problem[] = [
     }
 }`
     }
+  },
+  {
+    "id": 1241,
+    "title": "Reverse a String #1241",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Reverse the characters of a given string and return the result.",
+    "input_format": "s = \"hello\"",
+    "output_format": "\"olleh\"",
+    "constraints": "1 ≤ s.length ≤ 10^5",
+    "sample_input": "s = \"hello\"",
+    "sample_output": "\"olleh\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1242,
+    "title": "Check Palindrome String #1242",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Given a string, determine if it reads the same forwards and backwards (ignore case and non-alphanumeric).",
+    "input_format": "s = \"racecar\"",
+    "output_format": "true",
+    "constraints": "1 ≤ s.length ≤ 10^5",
+    "sample_input": "s = \"racecar\"",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1243,
+    "title": "Anagram Check #1243",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Google", "Adobe"
+    ],
+    "description": "Given two strings s and t, return true if t is an anagram of s.",
+    "input_format": "s = \"anagram\", t = \"nagaram\"",
+    "output_format": "true",
+    "constraints": "1 ≤ s.length ≤ 5×10^4",
+    "sample_input": "s = \"anagram\", t = \"nagaram\"",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1244,
+    "title": "Count Vowels and Consonants #1244",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Infosys", "TCS"
+    ],
+    "description": "Count the number of vowels and consonants in a given string.",
+    "input_format": "s = \"Hello World\"",
+    "output_format": "Vowels: 3, Consonants: 7",
+    "constraints": "1 ≤ s.length ≤ 10^4",
+    "sample_input": "s = \"Hello World\"",
+    "sample_output": "Vowels: 3, Consonants: 7",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1245,
+    "title": "First Non-Repeating Character #1245",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Flipkart"
+    ],
+    "description": "Find the first character in a string that does not repeat.",
+    "input_format": "s = \"leetcode\"",
+    "output_format": "'l'",
+    "constraints": "1 ≤ s.length ≤ 10^5",
+    "sample_input": "s = \"leetcode\"",
+    "sample_output": "'l'",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1246,
+    "title": "String Compression #1246",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Microsoft", "Apple"
+    ],
+    "description": "Compress a string so that 'aaabbc' becomes 'a3b2c1'.",
+    "input_format": "s = \"aaabbc\"",
+    "output_format": "\"a3b2c1\"",
+    "constraints": "1 ≤ s.length ≤ 10^4",
+    "sample_input": "s = \"aaabbc\"",
+    "sample_output": "\"a3b2c1\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1247,
+    "title": "Roman to Integer #1247",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Bloomberg"
+    ],
+    "description": "Convert a Roman numeral string to its integer value.",
+    "input_format": "s = \"XIV\"",
+    "output_format": "14",
+    "constraints": "1 ≤ s.length ≤ 15",
+    "sample_input": "s = \"XIV\"",
+    "sample_output": "14",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1248,
+    "title": "Integer to Roman #1248",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Bloomberg"
+    ],
+    "description": "Convert an integer to its Roman numeral representation.",
+    "input_format": "num = 1994",
+    "output_format": "\"MCMXCIV\"",
+    "constraints": "1 ≤ num ≤ 3999",
+    "sample_input": "num = 1994",
+    "sample_output": "\"MCMXCIV\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1249,
+    "title": "Valid Anagram Groups #1249",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Uber"
+    ],
+    "description": "Group a list of strings such that anagrams are in the same group.",
+    "input_format": "strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+    "output_format": "[[\"eat\",\"tea\",\"ate\"],[\"tan\",\"nat\"],[\"bat\"]]",
+    "constraints": "1 ≤ strs.length ≤ 10^4",
+    "sample_input": "strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+    "sample_output": "[[\"eat\",\"tea\",\"ate\"],[\"tan\",\"nat\"],[\"bat\"]]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1250,
+    "title": "Longest Palindromic Substring #1250",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Find the longest palindromic substring in a given string.",
+    "input_format": "s = \"babad\"",
+    "output_format": "\"bab\"",
+    "constraints": "1 ≤ s.length ≤ 1000",
+    "sample_input": "s = \"babad\"",
+    "sample_output": "\"bab\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1251,
+    "title": "Count and Say #1251",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Generate the nth term of the Count-and-Say sequence.",
+    "input_format": "n = 4",
+    "output_format": "\"1211\"",
+    "constraints": "1 ≤ n ≤ 30",
+    "sample_input": "n = 4",
+    "sample_output": "\"1211\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1252,
+    "title": "Valid Parenthesis String #1252",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Given a string with '(', ')' and '*' (wildcard), check if it is valid.",
+    "input_format": "s = \"(*))\"",
+    "output_format": "true",
+    "constraints": "1 ≤ s.length ≤ 100",
+    "sample_input": "s = \"(*))\"",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1253,
+    "title": "Zigzag Conversion #1253",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Airbnb"
+    ],
+    "description": "Convert a string to zigzag pattern on a given number of rows and read row by row.",
+    "input_format": "s = \"PAYPALISHIRING\", numRows = 3",
+    "output_format": "\"PAHNAPLSIIGYIR\"",
+    "constraints": "1 ≤ s.length ≤ 1000",
+    "sample_input": "s = \"PAYPALISHIRING\", numRows = 3",
+    "sample_output": "\"PAHNAPLSIIGYIR\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1254,
+    "title": "Word Frequency Count #1254",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Adobe", "SAP"
+    ],
+    "description": "Count the frequency of each word in a given sentence.",
+    "input_format": "s = \"the sky is blue the sky\"",
+    "output_format": "{the:2, sky:2, is:1, blue:1}",
+    "constraints": "1 ≤ s.length ≤ 10^4",
+    "sample_input": "s = \"the sky is blue the sky\"",
+    "sample_output": "{the:2,sky:2,is:1,blue:1}",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1255,
+    "title": "String Rotation Check #1255",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Microsoft", "Google"
+    ],
+    "description": "Check if one string is a rotation of another (e.g. 'abcde' and 'cdeab').",
+    "input_format": "s1 = \"abcde\", s2 = \"cdeab\"",
+    "output_format": "true",
+    "constraints": "1 ≤ s.length ≤ 10^4",
+    "sample_input": "s1 = \"abcde\", s2 = \"cdeab\"",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1256,
+    "title": "Remove Duplicates from String #1256",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Zoho", "Wipro"
+    ],
+    "description": "Remove all duplicate characters from a string, keeping the first occurrence.",
+    "input_format": "s = \"programming\"",
+    "output_format": "\"progamin\"",
+    "constraints": "1 ≤ s.length ≤ 10^4",
+    "sample_input": "s = \"programming\"",
+    "sample_output": "\"progamin\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1257,
+    "title": "Decode String #1257",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Decode an encoded string where k[encoded_string] means encoded_string repeated k times.",
+    "input_format": "s = \"3[a]2[bc]\"",
+    "output_format": "\"aaabcbc\"",
+    "constraints": "1 ≤ s.length ≤ 30",
+    "sample_input": "s = \"3[a]2[bc]\"",
+    "sample_output": "\"aaabcbc\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1258,
+    "title": "Minimum Window Substring II #1258",
+    "category": "Strings",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Facebook", "LinkedIn"
+    ],
+    "description": "Given strings s and t, find the minimum window in s containing all characters of t (with duplicates).",
+    "input_format": "s = \"ADOBECODEBANC\", t = \"ABC\"",
+    "output_format": "\"BANC\"",
+    "constraints": "1 ≤ s.length ≤ 10^5",
+    "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
+    "sample_output": "\"BANC\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1259,
+    "title": "Longest Common Prefix #1259",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Find the longest common prefix string among an array of strings.",
+    "input_format": "strs = [\"flower\",\"flow\",\"flight\"]",
+    "output_format": "\"fl\"",
+    "constraints": "1 ≤ strs.length ≤ 200",
+    "sample_input": "strs = [\"flower\",\"flow\",\"flight\"]",
+    "sample_output": "\"fl\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1260,
+    "title": "Reverse Words in a String #1260",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Microsoft", "Bloomberg"
+    ],
+    "description": "Reverse the order of words in a string, removing extra spaces.",
+    "input_format": "s = \"the sky is blue\"",
+    "output_format": "\"blue is sky the\"",
+    "constraints": "1 ≤ s.length ≤ 10^4",
+    "sample_input": "s = \"the sky is blue\"",
+    "sample_output": "\"blue is sky the\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1261,
+    "title": "Multiply Strings #1261",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Facebook", "Amazon"
+    ],
+    "description": "Given two non-negative integers as strings, return their product as a string without converting to integer.",
+    "input_format": "num1 = \"123\", num2 = \"456\"",
+    "output_format": "\"56088\"",
+    "constraints": "1 ≤ num1.length, num2.length ≤ 200",
+    "sample_input": "num1 = \"123\", num2 = \"456\"",
+    "sample_output": "\"56088\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1262,
+    "title": "Find All Occurrences of Pattern #1262",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Adobe", "Oracle"
+    ],
+    "description": "Find all starting indices of pattern in text using KMP or sliding window.",
+    "input_format": "text = \"aabcaab\", pattern = \"aab\"",
+    "output_format": "[0, 4]",
+    "constraints": "1 ≤ pattern.length ≤ text.length ≤ 10^5",
+    "sample_input": "text = \"aabcaab\", pattern = \"aab\"",
+    "sample_output": "[0, 4]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1263,
+    "title": "Is Subsequence #1263",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Google", "Spotify"
+    ],
+    "description": "Check if string s is a subsequence of string t.",
+    "input_format": "s = \"ace\", t = \"abcde\"",
+    "output_format": "true",
+    "constraints": "0 ≤ s.length ≤ 100",
+    "sample_input": "s = \"ace\", t = \"abcde\"",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1264,
+    "title": "Sentence Palindrome #1264",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "company_tags": [
+      "TCS", "Cognizant"
+    ],
+    "description": "Ignoring spaces and punctuation, check if a sentence reads the same forwards and backwards.",
+    "input_format": "s = \"A man a plan a canal Panama\"",
+    "output_format": "true",
+    "constraints": "1 ≤ s.length ≤ 2×10^5",
+    "sample_input": "s = \"A man a plan a canal Panama\"",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1265,
+    "title": "Interleaving Strings #1265",
+    "category": "Strings",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Given strings s1, s2, s3, check if s3 is formed by an interleaving of s1 and s2.",
+    "input_format": "s1 = \"aab\", s2 = \"axy\", s3 = \"aaxaby\"",
+    "output_format": "true",
+    "constraints": "0 ≤ s1.length, s2.length ≤ 100",
+    "sample_input": "s1 = \"aab\", s2 = \"axy\", s3 = \"aaxaby\"",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1266,
+    "title": "Binary Search – Recursive #1266",
+    "category": "Binary Search",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Implement recursive binary search to find target in a sorted array.",
+    "input_format": "arr = [1,3,5,7,9,11], target = 5",
+    "output_format": "2",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "arr = [1,3,5,7,9,11], target = 5",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1267,
+    "title": "Search in Rotated Sorted Array #1267",
+    "category": "Binary Search",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Search for a target in a rotated sorted array in O(log n) time.",
+    "input_format": "nums = [4,5,6,7,0,1,2], target = 0",
+    "output_format": "4",
+    "constraints": "1 ≤ n ≤ 5000",
+    "sample_input": "nums = [4,5,6,7,0,1,2], target = 0",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1268,
+    "title": "Find Minimum in Rotated Array #1268",
+    "category": "Binary Search",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Find the minimum element in a rotated sorted array using binary search.",
+    "input_format": "nums = [3,4,5,1,2]",
+    "output_format": "1",
+    "constraints": "1 ≤ n ≤ 5000",
+    "sample_input": "nums = [3,4,5,1,2]",
+    "sample_output": "1",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1269,
+    "title": "Find Peak Element #1269",
+    "category": "Binary Search",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Adobe"
+    ],
+    "description": "A peak element is greater than its neighbours. Find any peak in O(log n).",
+    "input_format": "nums = [1,2,3,1]",
+    "output_format": "2",
+    "constraints": "1 ≤ n ≤ 500",
+    "sample_input": "nums = [1,2,3,1]",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1270,
+    "title": "Square Root – Binary Search #1270",
+    "category": "Binary Search",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Uber"
+    ],
+    "description": "Find the integer square root of n (floor) using binary search.",
+    "input_format": "x = 8",
+    "output_format": "2",
+    "constraints": "0 ≤ x ≤ 2^31−1",
+    "sample_input": "x = 8",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1271,
+    "title": "First Bad Version #1271",
+    "category": "Binary Search",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Facebook", "Google"
+    ],
+    "description": "Given n versions and an isBadVersion API, find the first bad version using binary search.",
+    "input_format": "n = 5, bad = 4",
+    "output_format": "4",
+    "constraints": "1 ≤ bad ≤ n ≤ 2^31−1",
+    "sample_input": "n = 5, bad = 4",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1272,
+    "title": "Count Occurrences in Sorted Array #1272",
+    "category": "Binary Search",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Microsoft", "Oracle"
+    ],
+    "description": "Count how many times a target value appears in a sorted array using binary search.",
+    "input_format": "arr = [1,2,2,2,3,4], target = 2",
+    "output_format": "3",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "arr = [1,2,2,2,3,4], target = 2",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1273,
+    "title": "Search a 2D Matrix #1273",
+    "category": "Binary Search",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Search for a target in an m×n matrix where rows and columns are sorted.",
+    "input_format": "matrix = [[1,3,5],[7,10,11],[11,16,20]], target = 10",
+    "output_format": "true",
+    "constraints": "1 ≤ m,n ≤ 100",
+    "sample_input": "matrix = [[1,3,5],[7,10,11],[11,16,20]], target = 10",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1274,
+    "title": "Kth Smallest in Sorted Matrix #1274",
+    "category": "Binary Search",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Apple"
+    ],
+    "description": "Find the kth smallest element in an n×n matrix with sorted rows and columns.",
+    "input_format": "matrix = [[1,5,9],[10,11,13],[12,13,15]], k = 8",
+    "output_format": "13",
+    "constraints": "1 ≤ n ≤ 300",
+    "sample_input": "matrix = [[1,5,9],[10,11,13],[12,13,15]], k = 8",
+    "sample_output": "13",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1275,
+    "title": "Capacity to Ship Packages #1275",
+    "category": "Binary Search",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Facebook"
+    ],
+    "description": "Find the minimum capacity of a ship to deliver all packages within D days.",
+    "input_format": "weights=[1,2,3,4,5,6,7,8,9,10], D=5",
+    "output_format": "15",
+    "constraints": "1 ≤ D ≤ weights.length ≤ 500",
+    "sample_input": "weights=[1,2,3,4,5,6,7,8,9,10], D=5",
+    "sample_output": "15",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1276,
+    "title": "Median of Two Sorted Arrays #1276",
+    "category": "Binary Search",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Find the median of two sorted arrays in O(log(m+n)) time.",
+    "input_format": "nums1 = [1,3], nums2 = [2]",
+    "output_format": "2.0",
+    "constraints": "0 ≤ m,n ≤ 1000",
+    "sample_input": "nums1 = [1,3], nums2 = [2]",
+    "sample_output": "2.0",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1277,
+    "title": "Aggressive Cows – Maximum Min Distance #1277",
+    "category": "Binary Search",
+    "difficulty": "Hard",
+    "company_tags": [
+      "CodeForces", "Flipkart"
+    ],
+    "description": "Place C cows in N stalls to maximise the minimum distance between any two cows.",
+    "input_format": "stalls = [1,2,4,8,9], C = 3",
+    "output_format": "3",
+    "constraints": "2 ≤ C ≤ N ≤ 10^5",
+    "sample_input": "stalls = [1,2,4,8,9], C = 3",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1278,
+    "title": "Allocate Minimum Pages #1278",
+    "category": "Binary Search",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Amazon", "Flipkart"
+    ],
+    "description": "Allocate books to M students minimising the maximum pages any student reads.",
+    "input_format": "pages = [12,34,67,90], M = 2",
+    "output_format": "113",
+    "constraints": "1 ≤ M ≤ n ≤ 10^5",
+    "sample_input": "pages = [12,34,67,90], M = 2",
+    "sample_output": "113",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1279,
+    "title": "Find Smallest Letter Greater Than Target #1279",
+    "category": "Binary Search",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Microsoft", "Google"
+    ],
+    "description": "In a sorted circular character array, find the smallest character greater than target.",
+    "input_format": "letters = ['c','f','j'], target = 'a'",
+    "output_format": "'c'",
+    "constraints": "2 ≤ letters.length ≤ 10^4",
+    "sample_input": "letters = ['c','f','j'], target = 'a'",
+    "sample_output": "'c'",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1280,
+    "title": "Binary Search on Answer – Minimum Cost #1280",
+    "category": "Binary Search",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Uber"
+    ],
+    "description": "Use binary search on the answer space to minimise cost in a resource allocation problem.",
+    "input_format": "costs = [1,2,3,4,5], budget = 8",
+    "output_format": "3",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "costs = [1,2,3,4,5], budget = 8",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1281,
+    "title": "Ceiling in Sorted Array #1281",
+    "category": "Binary Search",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Oracle"
+    ],
+    "description": "Find the smallest element in a sorted array that is >= target.",
+    "input_format": "arr = [1,3,5,7,9], target = 4",
+    "output_format": "5",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "arr = [1,3,5,7,9], target = 4",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1282,
+    "title": "Floor in Sorted Array #1282",
+    "category": "Binary Search",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "SAP"
+    ],
+    "description": "Find the largest element in a sorted array that is <= target.",
+    "input_format": "arr = [1,3,5,7,9], target = 6",
+    "output_format": "5",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "arr = [1,3,5,7,9], target = 6",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1283,
+    "title": "Exponential Search #1283",
+    "category": "Binary Search",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Flipkart"
+    ],
+    "description": "Use exponential search to find a target in an unbounded sorted array.",
+    "input_format": "arr = [1,3,5,7,9,11,13,15,17,19], target = 13",
+    "output_format": "6",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "arr = [1,3,5,7,9,11,13,15,17,19], target = 13",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1284,
+    "title": "Bitonic Array Maximum #1284",
+    "category": "Binary Search",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Adobe"
+    ],
+    "description": "Find the maximum element in a bitonic (first increasing then decreasing) array.",
+    "input_format": "arr = [1,3,8,12,7,4,2]",
+    "output_format": "12",
+    "constraints": "3 ≤ n ≤ 10^5",
+    "sample_input": "arr = [1,3,8,12,7,4,2]",
+    "sample_output": "12",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1285,
+    "title": "Number of Times Array is Rotated #1285",
+    "category": "Binary Search",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Microsoft", "Wipro"
+    ],
+    "description": "Find how many times a sorted array has been rotated using binary search.",
+    "input_format": "arr = [15,18,2,3,6,12]",
+    "output_format": "2",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "arr = [15,18,2,3,6,12]",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1286,
+    "title": "Search Insert Position #1286",
+    "category": "Binary Search",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Google", "LeetCode"
+    ],
+    "description": "Given a sorted array, find the index to insert target so the array remains sorted.",
+    "input_format": "nums = [1,3,5,6], target = 5",
+    "output_format": "2",
+    "constraints": "1 ≤ n ≤ 10^4",
+    "sample_input": "nums = [1,3,5,6], target = 5",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1287,
+    "title": "Missing Number in Sorted Sequence #1287",
+    "category": "Binary Search",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Zoho"
+    ],
+    "description": "Find the one missing integer in a sorted sequence from 1 to n+1 using binary search.",
+    "input_format": "arr = [1,2,3,5,6,7,8]",
+    "output_format": "4",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "arr = [1,2,3,5,6,7,8]",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1288,
+    "title": "Smallest Divisor Given Threshold #1288",
+    "category": "Binary Search",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Find the smallest divisor such that the sum of ceil(num/divisor) for all nums is <= threshold.",
+    "input_format": "nums = [1,2,5,9], threshold = 6",
+    "output_format": "5",
+    "constraints": "1 ≤ nums.length ≤ 5×10^4",
+    "sample_input": "nums = [1,2,5,9], threshold = 6",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1289,
+    "title": "Kth Missing Positive Number #1289",
+    "category": "Binary Search",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Facebook", "Microsoft"
+    ],
+    "description": "Find the kth missing positive integer from a sorted array of positive integers.",
+    "input_format": "arr = [2,3,4,7,11], k = 5",
+    "output_format": "9",
+    "constraints": "1 ≤ k ≤ 1000",
+    "sample_input": "arr = [2,3,4,7,11], k = 5",
+    "sample_output": "9",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1290,
+    "title": "Split Array Largest Sum #1290",
+    "category": "Binary Search",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Facebook", "Google"
+    ],
+    "description": "Split an array into m non-empty subarrays to minimise the largest subarray sum.",
+    "input_format": "nums = [7,2,5,10,8], m = 2",
+    "output_format": "18",
+    "constraints": "1 ≤ m ≤ nums.length ≤ 1000",
+    "sample_input": "nums = [7,2,5,10,8], m = 2",
+    "sample_output": "18",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1291,
+    "title": "Queue Implementation Using Array #1291",
+    "category": "Queues",
+    "difficulty": "Easy",
+    "company_tags": [
+      "TCS", "Infosys"
+    ],
+    "description": "Implement a Queue using an array with enqueue, dequeue, front, isEmpty operations.",
+    "input_format": "enqueue(1); enqueue(2); front(); dequeue(); isEmpty()",
+    "output_format": "1; 1; false",
+    "constraints": "capacity ≤ 10^4",
+    "sample_input": "enqueue(1); enqueue(2); front();",
+    "sample_output": "1",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1292,
+    "title": "Circular Queue Implementation #1292",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Microsoft", "Amazon"
+    ],
+    "description": "Implement a circular queue with enqueue, dequeue, isFull, and isEmpty operations.",
+    "input_format": "CircularQueue(3); enqueue(1); enqueue(2); enqueue(3); enqueue(4)",
+    "output_format": "Queue Full",
+    "constraints": "1 ≤ capacity ≤ 10^4",
+    "sample_input": "CircularQueue(3); enqueue(1); enqueue(2); enqueue(3);",
+    "sample_output": "Enqueued",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1293,
+    "title": "Deque – Double Ended Queue #1293",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Implement a Deque supporting insertFront, insertRear, deleteFront, deleteRear.",
+    "input_format": "insertRear(5); insertFront(3); deleteFront(); getRear()",
+    "output_format": "3; 5",
+    "constraints": "1 ≤ capacity ≤ 10^4",
+    "sample_input": "insertRear(5); insertFront(3); deleteFront();",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1294,
+    "title": "Sliding Window Maximum #1294",
+    "category": "Queues",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find the maximum value in every sliding window of size k using a deque.",
+    "input_format": "nums = [1,3,-1,-3,5,3,6,7], k = 3",
+    "output_format": "[3,3,5,5,6,7]",
+    "constraints": "1 ≤ k ≤ n ≤ 10^5",
+    "sample_input": "nums = [1,3,-1,-3,5,3,6,7], k = 3",
+    "sample_output": "[3,3,5,5,6,7]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1295,
+    "title": "First Negative in Every Window #1295",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Flipkart"
+    ],
+    "description": "Find the first negative integer in every window of size k. Print 0 if none exists.",
+    "input_format": "arr = [-8,2,-6,5,-1], k = 2",
+    "output_format": "[-8,-6,-6,-1]",
+    "constraints": "1 ≤ k ≤ n ≤ 10^5",
+    "sample_input": "arr = [-8,2,-6,5,-1], k = 2",
+    "sample_output": "[-8,-6,-6,-1]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1296,
+    "title": "BFS using Queue #1296",
+    "category": "Queues",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Perform BFS traversal of a graph starting from vertex 0 using a queue.",
+    "input_format": "V=4, adj=[[1,2],[0,3],[0],[1]]",
+    "output_format": "0 1 2 3",
+    "constraints": "1 ≤ V ≤ 10^4",
+    "sample_input": "V=4, adj=[[1,2],[0,3],[0],[1]]",
+    "sample_output": "0 1 2 3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1297,
+    "title": "Level Order Traversal Using Queue #1297",
+    "category": "Queues",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Traverse a binary tree level by level using a queue.",
+    "input_format": "root = [3,9,20,null,null,15,7]",
+    "output_format": "[[3],[9,20],[15,7]]",
+    "constraints": "0 ≤ n ≤ 2000",
+    "sample_input": "root = [3,9,20,null,null,15,7]",
+    "sample_output": "[[3],[9,20],[15,7]]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1298,
+    "title": "Generate Binary Numbers 1 to N #1298",
+    "category": "Queues",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Microsoft", "Google"
+    ],
+    "description": "Generate binary representations of 1 to N using a queue.",
+    "input_format": "N = 5",
+    "output_format": "[\"1\",\"10\",\"11\",\"100\",\"101\"]",
+    "constraints": "1 ≤ N ≤ 10^4",
+    "sample_input": "N = 5",
+    "sample_output": "[\"1\",\"10\",\"11\",\"100\",\"101\"]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1299,
+    "title": "Interleave First and Second Half of Queue #1299",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Adobe"
+    ],
+    "description": "Interleave the first and second halves of a queue (of even size).",
+    "input_format": "Queue: [1,2,3,4,5,6]",
+    "output_format": "[1,4,2,5,3,6]",
+    "constraints": "2 ≤ n ≤ 10^4 (even)",
+    "sample_input": "Queue: [1,2,3,4,5,6]",
+    "sample_output": "[1,4,2,5,3,6]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1300,
+    "title": "Reverse First K Elements of Queue #1300",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Flipkart"
+    ],
+    "description": "Reverse the first k elements of a queue, leaving the rest in original order.",
+    "input_format": "Queue: [1,2,3,4,5], k = 3",
+    "output_format": "[3,2,1,4,5]",
+    "constraints": "1 ≤ k ≤ n ≤ 10^5",
+    "sample_input": "Queue: [1,2,3,4,5], k = 3",
+    "sample_output": "[3,2,1,4,5]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1301,
+    "title": "Queue Reversal Using Stack #1301",
+    "category": "Queues",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Google", "Zoho"
+    ],
+    "description": "Reverse all elements of a queue using a stack.",
+    "input_format": "Queue: [1,2,3,4,5]",
+    "output_format": "[5,4,3,2,1]",
+    "constraints": "1 ≤ n ≤ 10^4",
+    "sample_input": "Queue: [1,2,3,4,5]",
+    "sample_output": "[5,4,3,2,1]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1302,
+    "title": "LRU Cache Using Queue and HashMap #1302",
+    "category": "Queues",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Implement LRU cache using a deque (as queue) and a HashMap for O(1) get and put.",
+    "input_format": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
+    "output_format": "-1",
+    "constraints": "1 ≤ capacity ≤ 3000",
+    "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
+    "sample_output": "-1",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1303,
+    "title": "Stack Using Single Queue #1303",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Microsoft", "Google"
+    ],
+    "description": "Implement a stack using only one queue with push O(n) and pop O(1).",
+    "input_format": "push(1); push(2); push(3); pop(); top()",
+    "output_format": "3; 2",
+    "constraints": "1 ≤ ops ≤ 10^4",
+    "sample_input": "push(1); push(2); push(3); pop();",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1304,
+    "title": "Rotting Oranges – Multi-Source BFS #1304",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Given a grid of fresh (1) and rotten (2) oranges, find minimum minutes until all rot (BFS from all rotten cells).",
+    "input_format": "grid = [[2,1,1],[1,1,0],[0,1,1]]",
+    "output_format": "4",
+    "constraints": "1 ≤ m,n ≤ 10",
+    "sample_input": "grid",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1305,
+    "title": "Shortest Path in Binary Matrix #1305",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Facebook", "Amazon"
+    ],
+    "description": "Find the length of the shortest path from top-left to bottom-right in a binary matrix (0=open, 1=blocked).",
+    "input_format": "grid = [[0,0,0],[1,1,0],[1,1,0]]",
+    "output_format": "4",
+    "constraints": "1 ≤ n ≤ 100",
+    "sample_input": "grid = [[0,0,0],[1,1,0],[1,1,0]]",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1306,
+    "title": "Jump Game – BFS Approach #1306",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Microsoft", "Uber"
+    ],
+    "description": "Find the minimum number of jumps to reach the last index using BFS.",
+    "input_format": "nums = [2,3,1,1,4]",
+    "output_format": "2",
+    "constraints": "1 ≤ nums.length ≤ 10^4",
+    "sample_input": "nums = [2,3,1,1,4]",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1307,
+    "title": "Number of Nodes at K Distance from Root #1307",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Adobe"
+    ],
+    "description": "Find all nodes at exactly K levels below the root using BFS.",
+    "input_format": "root = [1,2,3,4,5], K = 2",
+    "output_format": "[4,5,3]",
+    "constraints": "0 ≤ K ≤ n ≤ 500",
+    "sample_input": "root = [1,2,3,4,5], K = 2",
+    "sample_output": "[4,5,3]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1308,
+    "title": "Minimum Steps to Reach Target on Chessboard #1308",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Find the minimum steps a knight needs to reach target position on an N×N chessboard using BFS.",
+    "input_format": "N=8, knightPos=[1,1], targetPos=[5,5]",
+    "output_format": "4",
+    "constraints": "1 ≤ N ≤ 1000",
+    "sample_input": "N=8, knightPos=[1,1], targetPos=[5,5]",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1309,
+    "title": "Task Scheduler #1309",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Facebook", "Amazon"
+    ],
+    "description": "Given tasks and cooldown n, find the minimum time to finish all tasks.",
+    "input_format": "tasks = ['A','A','A','B','B','B'], n = 2",
+    "output_format": "8",
+    "constraints": "1 ≤ tasks.length ≤ 10^4",
+    "sample_input": "tasks = ['A','A','A','B','B','B'], n = 2",
+    "sample_output": "8",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1310,
+    "title": "Connect Ropes with Minimum Cost #1310",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Connect N ropes with minimum cost using a priority queue (min-heap).",
+    "input_format": "ropes = [4,3,2,6]",
+    "output_format": "29",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "ropes = [4,3,2,6]",
+    "sample_output": "29",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1311,
+    "title": "Implement K Queues in an Array #1311",
+    "category": "Queues",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Microsoft"
+    ],
+    "description": "Implement k queues in a single array of size n efficiently.",
+    "input_format": "k=3, n=9; enqueue(1,0); enqueue(2,1); enqueue(3,2); dequeue(0)",
+    "output_format": "1",
+    "constraints": "1 ≤ k ≤ n",
+    "sample_input": "k=3, n=9; enqueue(1,0); dequeue(0)",
+    "sample_output": "1",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1312,
+    "title": "Snake and Ladder – Minimum Dice Throws #1312",
+    "category": "Queues",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Paytm"
+    ],
+    "description": "Find minimum dice throws to win a snake and ladder game using BFS.",
+    "input_format": "moves[-1 for no snake/ladder, target cell otherwise], n=30",
+    "output_format": "3",
+    "constraints": "1 ≤ n ≤ 100",
+    "sample_input": "Board size 30",
+    "sample_output": "Minimum throws",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1313,
+    "title": "Palindrome Check Using Queue and Stack #1313",
+    "category": "Queues",
+    "difficulty": "Easy",
+    "company_tags": [
+      "TCS", "Wipro"
+    ],
+    "description": "Check if a string is a palindrome using a queue and a stack simultaneously.",
+    "input_format": "s = \"racecar\"",
+    "output_format": "true",
+    "constraints": "1 ≤ s.length ≤ 10^4",
+    "sample_input": "s = \"racecar\"",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1314,
+    "title": "Maximum in Sliding Window – Deque #1314",
+    "category": "Queues",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Use a monotonic deque to compute the maximum for each window of size k in O(n).",
+    "input_format": "arr = [2,7,3,1,5,2,6,2], k = 4",
+    "output_format": "[7,7,5,6,6]",
+    "constraints": "1 ≤ k ≤ n ≤ 10^5",
+    "sample_input": "arr = [2,7,3,1,5,2,6,2], k = 4",
+    "sample_output": "[7,7,5,6,6]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1315,
+    "title": "Fractional Knapsack #1315",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Maximise value in a knapsack allowing fractions of items (greedy by value/weight ratio).",
+    "input_format": "weights=[10,20,30], values=[60,100,120], W=50",
+    "output_format": "240.0",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "weights=[10,20,30], values=[60,100,120], W=50",
+    "sample_output": "240.0",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1316,
+    "title": "Job Sequencing Problem #1316",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Microsoft", "Amazon"
+    ],
+    "description": "Schedule jobs with deadlines to maximise total profit (each job takes 1 unit of time).",
+    "input_format": "jobs=[(1,2,100),(2,1,19),(3,2,27),(4,1,25),(5,3,15)]",
+    "output_format": "[1,3,5] profit=142",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "jobs=[(1,2,100),(2,1,19),(3,2,27),(4,1,25),(5,3,15)]",
+    "sample_output": "142",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1317,
+    "title": "Minimum Number of Platforms #1317",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find the minimum platforms needed at a railway station given arrival and departure times.",
+    "input_format": "arrival=[900,940,950,1100,1500,1800], departure=[910,1200,1120,1130,1900,2000]",
+    "output_format": "3",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "arrival=[900,940,950,1100,1500,1800], departure=[910,1200,1120,1130,1900,2000]",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1318,
+    "title": "Jump Game I #1318",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Given an array of jump lengths, determine if you can reach the last index.",
+    "input_format": "nums = [2,3,1,1,4]",
+    "output_format": "true",
+    "constraints": "1 ≤ n ≤ 10^4",
+    "sample_input": "nums = [2,3,1,1,4]",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1319,
+    "title": "Jump Game II – Minimum Jumps #1319",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find the minimum number of jumps to reach the last index.",
+    "input_format": "nums = [2,3,1,1,4]",
+    "output_format": "2",
+    "constraints": "1 ≤ n ≤ 10^4",
+    "sample_input": "nums = [2,3,1,1,4]",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1320,
+    "title": "Gas Station – Circular Tour #1320",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find the starting gas station from which you can complete a circular tour.",
+    "input_format": "gas=[1,2,3,4,5], cost=[3,4,5,1,2]",
+    "output_format": "3",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "gas=[1,2,3,4,5], cost=[3,4,5,1,2]",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1321,
+    "title": "Lemonade Change #1321",
+    "category": "Greedy",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Facebook"
+    ],
+    "description": "Determine if you can give correct change to every customer paying $5, $10, or $20.",
+    "input_format": "bills=[5,5,5,10,20]",
+    "output_format": "true",
+    "constraints": "1 ≤ bills.length ≤ 10^5",
+    "sample_input": "bills=[5,5,5,10,20]",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1322,
+    "title": "Assign Cookies to Children #1322",
+    "category": "Greedy",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Assign cookies to maximise the number of content children (each child has a greed factor).",
+    "input_format": "g=[1,2,3], s=[1,1]",
+    "output_format": "1",
+    "constraints": "1 ≤ g.length, s.length ≤ 2×10^4",
+    "sample_input": "g=[1,2,3], s=[1,1]",
+    "sample_output": "1",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1323,
+    "title": "Minimum Cost to Connect Sticks #1323",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Uber"
+    ],
+    "description": "Find minimum cost to connect all sticks into one (cost = sum of two sticks combined).",
+    "input_format": "sticks = [2,4,3]",
+    "output_format": "14",
+    "constraints": "1 ≤ n ≤ 10^4",
+    "sample_input": "sticks = [2,4,3]",
+    "sample_output": "14",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1324,
+    "title": "Candy Distribution #1324",
+    "category": "Greedy",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Distribute minimum candies to children so that higher-rated neighbours get more.",
+    "input_format": "ratings = [1,0,2]",
+    "output_format": "5",
+    "constraints": "1 ≤ n ≤ 2×10^4",
+    "sample_input": "ratings = [1,0,2]",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1325,
+    "title": "Best Time to Buy and Sell Stock II #1325",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Facebook"
+    ],
+    "description": "Buy and sell stock multiple times to maximise profit (greedy: buy every valley, sell every peak).",
+    "input_format": "prices = [7,1,5,3,6,4]",
+    "output_format": "7",
+    "constraints": "1 ≤ n ≤ 3×10^4",
+    "sample_input": "prices = [7,1,5,3,6,4]",
+    "sample_output": "7",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1326,
+    "title": "Minimum Number of Arrows to Burst Balloons #1326",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Facebook", "Google"
+    ],
+    "description": "Find minimum arrows needed to burst all balloons arranged on a number line.",
+    "input_format": "points = [[10,16],[2,8],[1,6],[7,12]]",
+    "output_format": "2",
+    "constraints": "1 ≤ points.length ≤ 10^4",
+    "sample_input": "points = [[10,16],[2,8],[1,6],[7,12]]",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1327,
+    "title": "Non-overlapping Intervals #1327",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Remove the minimum number of intervals so that the rest do not overlap.",
+    "input_format": "intervals = [[1,2],[2,3],[3,4],[1,3]]",
+    "output_format": "1",
+    "constraints": "1 ≤ n ≤ 2×10^4",
+    "sample_input": "intervals = [[1,2],[2,3],[3,4],[1,3]]",
+    "sample_output": "1",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1328,
+    "title": "Partition Labels #1328",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Facebook"
+    ],
+    "description": "Partition a string into maximum parts so each character appears in at most one part.",
+    "input_format": "s = \"ababcbacadefegdehijhklij\"",
+    "output_format": "[9,7,8]",
+    "constraints": "1 ≤ s.length ≤ 500",
+    "sample_input": "s = \"ababcbacadefegdehijhklij\"",
+    "sample_output": "[9,7,8]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1329,
+    "title": "Largest Number Formed from Array #1329",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Arrange integers to form the largest possible number.",
+    "input_format": "nums = [3,30,34,5,9]",
+    "output_format": "\"9534330\"",
+    "constraints": "1 ≤ n ≤ 100",
+    "sample_input": "nums = [3,30,34,5,9]",
+    "sample_output": "\"9534330\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1330,
+    "title": "Minimum Spanning Tree – Kruskal #1330",
+    "category": "Greedy",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Find the minimum spanning tree of a weighted graph using Kruskal's greedy algorithm.",
+    "input_format": "V=4, edges=[(0,1,10),(0,2,6),(0,3,5),(1,3,15),(2,3,4)]",
+    "output_format": "MST weight=19",
+    "constraints": "1 ≤ V ≤ 10^4",
+    "sample_input": "V=4, edges=[(0,1,10),(0,2,6),(0,3,5),(1,3,15),(2,3,4)]",
+    "sample_output": "19",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1331,
+    "title": "Minimum Spanning Tree – Prim's #1331",
+    "category": "Greedy",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Microsoft"
+    ],
+    "description": "Build a minimum spanning tree using Prim's greedy algorithm.",
+    "input_format": "V=5, adj=[[0,2,0,6,0],[2,0,3,8,5],[0,3,0,0,7],[6,8,0,0,9],[0,5,7,9,0]]",
+    "output_format": "MST weight=16",
+    "constraints": "1 ≤ V ≤ 10^4",
+    "sample_input": "V=5, adj matrix",
+    "sample_output": "16",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1332,
+    "title": "Huffman Encoding #1332",
+    "category": "Greedy",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Build a Huffman tree and generate prefix codes for each character.",
+    "input_format": "chars=['a','b','c','d','e','f'], freq=[5,9,12,13,16,45]",
+    "output_format": "f=0, c=100, d=101, a=1100, b=1101, e=111",
+    "constraints": "1 ≤ n ≤ 100",
+    "sample_input": "chars and frequencies",
+    "sample_output": "Huffman codes",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1333,
+    "title": "Minimum Coins for Change – Greedy #1333",
+    "category": "Greedy",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "TCS"
+    ],
+    "description": "Use a greedy approach (largest coins first) to give change for a given amount.",
+    "input_format": "coins=[1,5,10,25], amount=41",
+    "output_format": "4 coins (25+10+5+1)",
+    "constraints": "1 ≤ amount ≤ 10^4",
+    "sample_input": "coins=[1,5,10,25], amount=41",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1334,
+    "title": "Two City Scheduling #1334",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Send exactly n/2 people to city A and n/2 to city B with minimum total cost.",
+    "input_format": "costs = [[10,20],[30,200],[400,50],[30,20]]",
+    "output_format": "110",
+    "constraints": "2 ≤ costs.length ≤ 100",
+    "sample_input": "costs = [[10,20],[30,200],[400,50],[30,20]]",
+    "sample_output": "110",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1335,
+    "title": "Maximum Units on a Truck #1335",
+    "category": "Greedy",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Facebook"
+    ],
+    "description": "Load a truck with max units by greedily picking boxes with highest units per box first.",
+    "input_format": "boxTypes=[[1,3],[2,2],[3,1]], truckSize=4",
+    "output_format": "8",
+    "constraints": "1 ≤ boxTypes.length ≤ 1000",
+    "sample_input": "boxTypes=[[1,3],[2,2],[3,1]], truckSize=4",
+    "sample_output": "8",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1336,
+    "title": "Minimum Number of Coins (Greedy) #1336",
+    "category": "Greedy",
+    "difficulty": "Easy",
+    "company_tags": [
+      "TCS", "Infosys"
+    ],
+    "description": "Find the minimum number of coins from denominations [1,2,5,10,20,50,100,500] to make amount.",
+    "input_format": "amount = 93",
+    "output_format": "5 coins (50+20+20+2+1)",
+    "constraints": "1 ≤ amount ≤ 10^6",
+    "sample_input": "amount = 93",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1337,
+    "title": "Car Fleet #1337",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find how many car fleets arrive at the destination together.",
+    "input_format": "target=12, position=[10,8,0,5,3], speed=[2,4,1,1,3]",
+    "output_format": "3",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "target=12, position=[10,8,0,5,3], speed=[2,4,1,1,3]",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1338,
+    "title": "Reorganize String #1338",
+    "category": "Greedy",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Rearrange string characters so no two adjacent characters are the same.",
+    "input_format": "s = \"aab\"",
+    "output_format": "\"aba\"",
+    "constraints": "1 ≤ s.length ≤ 500",
+    "sample_input": "s = \"aab\"",
+    "sample_output": "\"aba\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1339,
+    "title": "Subsets – Power Set #1339",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Generate all possible subsets (power set) of a given array of unique integers.",
+    "input_format": "nums = [1,2,3]",
+    "output_format": "[[],[1],[2],[3],[1,2],[1,3],[2,3],[1,2,3]]",
+    "constraints": "1 ≤ n ≤ 10",
+    "sample_input": "nums = [1,2,3]",
+    "sample_output": "8 subsets",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1340,
+    "title": "Subsets with Duplicates #1340",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Generate all unique subsets from an array that may contain duplicates.",
+    "input_format": "nums = [1,2,2]",
+    "output_format": "[[],[1],[1,2],[1,2,2],[2],[2,2]]",
+    "constraints": "1 ≤ n ≤ 10",
+    "sample_input": "nums = [1,2,2]",
+    "sample_output": "6 subsets",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1341,
+    "title": "Permutations of an Array #1341",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Generate all permutations of a given array of distinct integers.",
+    "input_format": "nums = [1,2,3]",
+    "output_format": "[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]",
+    "constraints": "1 ≤ n ≤ 8",
+    "sample_input": "nums = [1,2,3]",
+    "sample_output": "6 permutations",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1342,
+    "title": "Permutations with Duplicates #1342",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Adobe"
+    ],
+    "description": "Generate all unique permutations from an array that may contain duplicates.",
+    "input_format": "nums = [1,1,2]",
+    "output_format": "[[1,1,2],[1,2,1],[2,1,1]]",
+    "constraints": "1 ≤ n ≤ 8",
+    "sample_input": "nums = [1,1,2]",
+    "sample_output": "3 unique permutations",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1343,
+    "title": "Combination Sum I #1343",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find all combinations of candidates that sum to target (reuse allowed).",
+    "input_format": "candidates=[2,3,6,7], target=7",
+    "output_format": "[[2,2,3],[7]]",
+    "constraints": "1 ≤ candidates.length ≤ 30",
+    "sample_input": "candidates=[2,3,6,7], target=7",
+    "sample_output": "[[2,2,3],[7]]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1344,
+    "title": "Combination Sum II #1344",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Find all unique combinations from candidates that sum to target (each used once).",
+    "input_format": "candidates=[10,1,2,7,6,1,5], target=8",
+    "output_format": "[[1,1,6],[1,2,5],[1,7],[2,6]]",
+    "constraints": "1 ≤ candidates.length ≤ 100",
+    "sample_input": "candidates=[10,1,2,7,6,1,5], target=8",
+    "sample_output": "[[1,1,6],[1,2,5],[1,7],[2,6]]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1345,
+    "title": "Sudoku Solver #1345",
+    "category": "Backtracking",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Fill a 9×9 Sudoku board using backtracking.",
+    "input_format": "Partially filled 9×9 board",
+    "output_format": "Completed valid board",
+    "constraints": "Standard 9×9",
+    "sample_input": "9×9 board with blanks",
+    "sample_output": "Solved board",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1346,
+    "title": "Word Search in Grid #1346",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Given a 2D grid of characters, check if a word exists by moving to adjacent cells.",
+    "input_format": "board=[[A,B,C,E],[S,F,C,S],[A,D,E,E]], word=\"ABCCED\"",
+    "output_format": "true",
+    "constraints": "1 ≤ m,n ≤ 6",
+    "sample_input": "board and word=\"ABCCED\"",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1347,
+    "title": "Palindrome Partitioning #1347",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Partition a string such that every substring of the partition is a palindrome.",
+    "input_format": "s = \"aab\"",
+    "output_format": "[[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]",
+    "constraints": "1 ≤ s.length ≤ 16",
+    "sample_input": "s = \"aab\"",
+    "sample_output": "[[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1348,
+    "title": "Letter Combinations of Phone Number #1348",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Return all possible letter combinations a phone number digit string could represent.",
+    "input_format": "digits = \"23\"",
+    "output_format": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]",
+    "constraints": "0 ≤ digits.length ≤ 4",
+    "sample_input": "digits = \"23\"",
+    "sample_output": "9 combinations",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1349,
+    "title": "Generate Valid Parentheses #1349",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Generate all combinations of well-formed parentheses for n pairs.",
+    "input_format": "n = 3",
+    "output_format": "[\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]",
+    "constraints": "1 ≤ n ≤ 8",
+    "sample_input": "n = 3",
+    "sample_output": "5 combinations",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1350,
+    "title": "Restore IP Addresses #1350",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Given a string of digits, return all valid IP address combinations.",
+    "input_format": "s = \"25525511135\"",
+    "output_format": "[\"255.255.11.135\",\"255.255.111.35\"]",
+    "constraints": "1 ≤ s.length ≤ 20",
+    "sample_input": "s = \"25525511135\"",
+    "sample_output": "[\"255.255.11.135\",\"255.255.111.35\"]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1351,
+    "title": "Expression Add Operators #1351",
+    "category": "Backtracking",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Add +, -, * between digits of a number string so the expression evaluates to target.",
+    "input_format": "num = \"123\", target = 6",
+    "output_format": "[\"1+2+3\",\"1*2*3\"]",
+    "constraints": "1 ≤ num.length ≤ 10",
+    "sample_input": "num = \"123\", target = 6",
+    "sample_output": "[\"1+2+3\",\"1*2*3\"]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1352,
+    "title": "Rat in a Maze #1352",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Flipkart"
+    ],
+    "description": "Find all paths for a rat to travel from top-left to bottom-right in a binary maze.",
+    "input_format": "maze=[[1,0,0,0],[1,1,0,1],[0,1,0,0],[0,1,1,1]]",
+    "output_format": "[DDRDRR, DRDDRR]",
+    "constraints": "1 ≤ n ≤ 5",
+    "sample_input": "4×4 maze",
+    "sample_output": "Path strings",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1353,
+    "title": "Knight's Tour #1353",
+    "category": "Backtracking",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Microsoft"
+    ],
+    "description": "Find a knight's tour on an N×N chessboard visiting every cell exactly once.",
+    "input_format": "N = 5",
+    "output_format": "Valid tour matrix",
+    "constraints": "5 ≤ N ≤ 8",
+    "sample_input": "N = 5",
+    "sample_output": "Tour matrix",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1354,
+    "title": "Cryptarithmetic Puzzle #1354",
+    "category": "Backtracking",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Solve SEND + MORE = MONEY by assigning digits 0-9 to each letter.",
+    "input_format": "SEND + MORE = MONEY",
+    "output_format": "S=9,E=5,N=6,D=7,M=1,O=0,R=8,Y=2",
+    "constraints": "classic puzzle",
+    "sample_input": "SEND + MORE = MONEY",
+    "sample_output": "S=9,E=5,N=6,D=7",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1355,
+    "title": "Coloring Graph with M Colors #1355",
+    "category": "Backtracking",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Adobe"
+    ],
+    "description": "Determine if a graph can be colored with M colors such that no two adjacent vertices share a color.",
+    "input_format": "V=4, edges=[[0,1],[0,2],[0,3],[1,2]], M=3",
+    "output_format": "true",
+    "constraints": "1 ≤ V ≤ 20",
+    "sample_input": "V=4, M=3",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1356,
+    "title": "Hamiltonian Path #1356",
+    "category": "Backtracking",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Find a Hamiltonian path (visits every vertex exactly once) in a given graph.",
+    "input_format": "V=5, edges=[[0,1],[0,3],[1,2],[1,3],[2,4],[3,4]]",
+    "output_format": "[0,1,2,4,3]",
+    "constraints": "1 ≤ V ≤ 15",
+    "sample_input": "V=5, edges",
+    "sample_output": "[0,1,2,4,3]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1357,
+    "title": "Tug of War #1357",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Divide an array into two halves with minimum difference in sums.",
+    "input_format": "arr = [23,45,−34,12,0,98,−99,4,189,−45]",
+    "output_format": "Two halves with min difference",
+    "constraints": "1 ≤ n ≤ 20",
+    "sample_input": "arr = [23,45,-34,12,0,98,-99,4,189,-45]",
+    "sample_output": "Min difference",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1358,
+    "title": "Word Break – Backtracking #1358",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Segment a string into words from a dictionary using backtracking.",
+    "input_format": "s = \"leetcode\", wordDict = [\"leet\",\"code\"]",
+    "output_format": "true",
+    "constraints": "1 ≤ s.length ≤ 300",
+    "sample_input": "s = \"leetcode\", wordDict = [\"leet\",\"code\"]",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1359,
+    "title": "Partition Equal Subset Sum #1359",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Determine if an array can be partitioned into two subsets with equal sum.",
+    "input_format": "nums = [1,5,11,5]",
+    "output_format": "true",
+    "constraints": "1 ≤ n ≤ 200",
+    "sample_input": "nums = [1,5,11,5]",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1360,
+    "title": "Maximum Length String by Deleting #1360",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Adobe"
+    ],
+    "description": "Find the longest string achievable by deleting some characters, such that it is a subsequence of another.",
+    "input_format": "s1 = \"abpcplea\", s2 = \"ace\"",
+    "output_format": "\"ace\"",
+    "constraints": "1 ≤ s.length ≤ 1000",
+    "sample_input": "s1 = \"abpcplea\", s2 = \"ace\"",
+    "sample_output": "\"ace\"",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1361,
+    "title": "Minimum Path Sum – Backtracking #1361",
+    "category": "Backtracking",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find the path from top-left to bottom-right with minimum sum using backtracking.",
+    "input_format": "grid = [[1,3,1],[1,5,1],[4,2,1]]",
+    "output_format": "7",
+    "constraints": "1 ≤ m,n ≤ 200",
+    "sample_input": "grid = [[1,3,1],[1,5,1],[4,2,1]]",
+    "sample_output": "7",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1362,
+    "title": "Count All Paths in Grid #1362",
+    "category": "Backtracking",
+    "difficulty": "Easy",
+    "company_tags": [
+      "TCS", "Infosys"
+    ],
+    "description": "Count all paths from top-left to bottom-right moving only right or down.",
+    "input_format": "m=3, n=3",
+    "output_format": "6",
+    "constraints": "1 ≤ m,n ≤ 10",
+    "sample_input": "m=3, n=3",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1363,
+    "title": "Two Sum – Sorted Array #1363",
+    "category": "Two Pointers",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find two indices in a sorted array that add up to target using two pointers.",
+    "input_format": "numbers = [2,7,11,15], target = 9",
+    "output_format": "[1,2]",
+    "constraints": "2 ≤ n ≤ 3×10^4",
+    "sample_input": "numbers = [2,7,11,15], target = 9",
+    "sample_output": "[1,2]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1364,
+    "title": "Remove Duplicates from Sorted Array #1364",
+    "category": "Two Pointers",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Remove duplicates in-place from a sorted array and return the new length.",
+    "input_format": "nums = [1,1,2,3,3]",
+    "output_format": "3",
+    "constraints": "1 ≤ n ≤ 3×10^4",
+    "sample_input": "nums = [1,1,2,3,3]",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1365,
+    "title": "Move Zeros to End #1365",
+    "category": "Two Pointers",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Facebook", "Amazon"
+    ],
+    "description": "Move all zeros to the end of an array without changing relative order of non-zero elements.",
+    "input_format": "nums = [0,1,0,3,12]",
+    "output_format": "[1,3,12,0,0]",
+    "constraints": "1 ≤ n ≤ 10^4",
+    "sample_input": "nums = [0,1,0,3,12]",
+    "sample_output": "[1,3,12,0,0]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1366,
+    "title": "Trapping Rainwater #1366",
+    "category": "Two Pointers",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Calculate total units of rainwater trapped between bars of given heights.",
+    "input_format": "height = [0,1,0,2,1,0,1,3,2,1,2,1]",
+    "output_format": "6",
+    "constraints": "1 ≤ n ≤ 2×10^4",
+    "sample_input": "height = [0,1,0,2,1,0,1,3,2,1,2,1]",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1367,
+    "title": "Pair with Target Sum – Sorted #1367",
+    "category": "Two Pointers",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find if any pair in a sorted array sums to target using two pointers.",
+    "input_format": "arr = [1,2,4,7,11,15], target = 9",
+    "output_format": "true (2+7)",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "arr = [1,2,4,7,11,15], target = 9",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1368,
+    "title": "Remove Element In-Place #1368",
+    "category": "Two Pointers",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Remove all occurrences of val in-place and return new array length.",
+    "input_format": "nums = [3,2,2,3], val = 3",
+    "output_format": "2",
+    "constraints": "0 ≤ n ≤ 100",
+    "sample_input": "nums = [3,2,2,3], val = 3",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1369,
+    "title": "Sort Colors – Dutch National Flag #1369",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Sort an array of 0s, 1s, and 2s in-place using three pointers (Dutch National Flag).",
+    "input_format": "nums = [2,0,2,1,1,0]",
+    "output_format": "[0,0,1,1,2,2]",
+    "constraints": "1 ≤ n ≤ 300",
+    "sample_input": "nums = [2,0,2,1,1,0]",
+    "sample_output": "[0,0,1,1,2,2]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1370,
+    "title": "Merge Sorted Arrays In-Place #1370",
+    "category": "Two Pointers",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Merge nums2 into nums1 in-place so the result is sorted (nums1 has extra space).",
+    "input_format": "nums1=[1,2,3,0,0,0], m=3, nums2=[2,5,6], n=3",
+    "output_format": "[1,2,2,3,5,6]",
+    "constraints": "0 ≤ m,n ≤ 200",
+    "sample_input": "nums1=[1,2,3,0,0,0], nums2=[2,5,6]",
+    "sample_output": "[1,2,2,3,5,6]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1371,
+    "title": "Maximum Sum of Two Non-overlapping Subarrays #1371",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Facebook", "Amazon"
+    ],
+    "description": "Find the maximum sum of two non-overlapping subarrays of lengths L and M.",
+    "input_format": "nums = [0,6,5,2,2,5,1,9,4], L=1, M=2",
+    "output_format": "20",
+    "constraints": "1 ≤ L+M ≤ n ≤ 1000",
+    "sample_input": "nums = [0,6,5,2,2,5,1,9,4], L=1, M=2",
+    "sample_output": "20",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1372,
+    "title": "Longest Mountain in Array #1372",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find the length of the longest mountain subarray (increases then decreases).",
+    "input_format": "arr = [2,1,4,7,3,2,5]",
+    "output_format": "5",
+    "constraints": "3 ≤ n ≤ 10^4",
+    "sample_input": "arr = [2,1,4,7,3,2,5]",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1373,
+    "title": "Palindrome Linked List – Two Pointers #1373",
+    "category": "Two Pointers",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Check if a singly linked list is a palindrome using slow-fast pointers and reverse.",
+    "input_format": "head = [1,2,2,1]",
+    "output_format": "true",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "head = [1,2,2,1]",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1374,
+    "title": "Intersection of Two Arrays #1374",
+    "category": "Two Pointers",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find the intersection of two sorted arrays using two pointers.",
+    "input_format": "nums1=[1,2,2,1], nums2=[2,2]",
+    "output_format": "[2]",
+    "constraints": "1 ≤ n ≤ 1000",
+    "sample_input": "nums1=[1,2,2,1], nums2=[2,2]",
+    "sample_output": "[2]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1375,
+    "title": "Minimum Difference Between Largest and Smallest in Three Moves #1375",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Find the minimum difference between max and min after changing at most 3 elements.",
+    "input_format": "nums = [5,3,2,4]",
+    "output_format": "0",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "nums = [5,3,2,4]",
+    "sample_output": "0",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1376,
+    "title": "Count Pairs with Given Sum #1376",
+    "category": "Two Pointers",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Flipkart"
+    ],
+    "description": "Count the number of pairs in a sorted array that sum to a given value.",
+    "input_format": "arr = [1,3,2,2,4], target = 4",
+    "output_format": "2",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "arr = [1,3,2,2,4], target = 4",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1377,
+    "title": "Boats to Save People #1377",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find minimum boats needed to carry people where each boat carries at most 2 (within weight limit).",
+    "input_format": "people=[1,2], limit=3",
+    "output_format": "1",
+    "constraints": "1 ≤ people.length ≤ 5×10^4",
+    "sample_input": "people=[1,2], limit=3",
+    "sample_output": "1",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1378,
+    "title": "Longest Subarray with Sum K #1378",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Adobe"
+    ],
+    "description": "Find the length of the longest subarray with sum equal to k (non-negative values).",
+    "input_format": "arr=[1,2,3,1,1,1,1,3,3], k=6",
+    "output_format": "5",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "arr=[1,2,3,1,1,1,1,3,3], k=6",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1379,
+    "title": "Max Consecutive Ones III #1379",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Find the maximum consecutive ones if you can flip at most k zeros.",
+    "input_format": "nums=[1,1,1,0,0,0,1,1,1,1,0], k=2",
+    "output_format": "6",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "nums=[1,1,1,0,0,0,1,1,1,1,0], k=2",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1380,
+    "title": "Minimum Size Subarray Sum #1380",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find minimum length contiguous subarray with sum ≥ target.",
+    "input_format": "target=7, nums=[2,3,1,2,4,3]",
+    "output_format": "2",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "target=7, nums=[2,3,1,2,4,3]",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1381,
+    "title": "4Sum – Two Pointer #1381",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find all unique quadruplets that sum to target using sorting and two pointers.",
+    "input_format": "nums=[1,0,-1,0,-2,2], target=0",
+    "output_format": "[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]",
+    "constraints": "1 ≤ n ≤ 200",
+    "sample_input": "nums=[1,0,-1,0,-2,2], target=0",
+    "sample_output": "3 quadruplets",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1382,
+    "title": "Squaring a Sorted Array #1382",
+    "category": "Two Pointers",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Return the sorted squares of a sorted array using two pointers.",
+    "input_format": "nums=[-4,-1,0,3,10]",
+    "output_format": "[0,1,9,16,100]",
+    "constraints": "1 ≤ n ≤ 10^4",
+    "sample_input": "nums=[-4,-1,0,3,10]",
+    "sample_output": "[0,1,9,16,100]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1383,
+    "title": "Find the Duplicate Number #1383",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Microsoft"
+    ],
+    "description": "Find the duplicate in an array of n+1 integers in range [1,n] using Floyd's cycle detection.",
+    "input_format": "nums=[1,3,4,2,2]",
+    "output_format": "2",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "nums=[1,3,4,2,2]",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1384,
+    "title": "Triplet Sum Closest to Target #1384",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Find the triplet in an array whose sum is closest to a given target.",
+    "input_format": "nums=[-1,2,1,-4], target=1",
+    "output_format": "2",
+    "constraints": "3 ≤ n ≤ 1000",
+    "sample_input": "nums=[-1,2,1,-4], target=1",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1385,
+    "title": "Longest Repeating Character Replacement #1385",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Find the longest substring with the same character after at most k replacements.",
+    "input_format": "s=\"AABABBA\", k=1",
+    "output_format": "4",
+    "constraints": "1 ≤ s.length ≤ 10^5",
+    "sample_input": "s=\"AABABBA\", k=1",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1386,
+    "title": "Fruit Into Baskets #1386",
+    "category": "Two Pointers",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Find the maximum number of fruits you can pick (at most 2 types) using sliding window.",
+    "input_format": "fruits=[1,2,1,2,3]",
+    "output_format": "4",
+    "constraints": "1 ≤ fruits.length ≤ 10^5",
+    "sample_input": "fruits=[1,2,1,2,3]",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1387,
+    "title": "Single Number #1387",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Every element appears twice except one. Find that element using XOR.",
+    "input_format": "nums=[2,2,1]",
+    "output_format": "1",
+    "constraints": "1 ≤ n ≤ 3×10^4",
+    "sample_input": "nums=[2,2,1]",
+    "sample_output": "1",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1388,
+    "title": "Single Number II #1388",
+    "category": "Bit Manipulation",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Microsoft"
+    ],
+    "description": "Every element appears three times except one. Find that element.",
+    "input_format": "nums=[2,2,3,2]",
+    "output_format": "3",
+    "constraints": "1 ≤ n ≤ 3×10^4",
+    "sample_input": "nums=[2,2,3,2]",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1389,
+    "title": "Missing Number – XOR #1389",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Find the missing number in [0,n] using XOR of indices and values.",
+    "input_format": "nums=[3,0,1]",
+    "output_format": "2",
+    "constraints": "1 ≤ n ≤ 10^4",
+    "sample_input": "nums=[3,0,1]",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1390,
+    "title": "Power of Two – Bit Trick #1390",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Adobe"
+    ],
+    "description": "Check if n is a power of 2 using the bit trick: n>0 && (n & (n-1)) == 0.",
+    "input_format": "n=16",
+    "output_format": "true",
+    "constraints": "−2^31 ≤ n ≤ 2^31−1",
+    "sample_input": "n=16",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1391,
+    "title": "Power of Four #1391",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Check if an integer is a power of four using bit manipulation.",
+    "input_format": "n=16",
+    "output_format": "true",
+    "constraints": "−2^31 ≤ n ≤ 2^31−1",
+    "sample_input": "n=16",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1392,
+    "title": "Reverse Bits #1392",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Apple", "Amazon"
+    ],
+    "description": "Reverse the bits of a 32-bit unsigned integer.",
+    "input_format": "n=00000010100101000001111010011100",
+    "output_format": "964176192",
+    "constraints": "32-bit unsigned",
+    "sample_input": "n=43261596",
+    "sample_output": "964176192",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1393,
+    "title": "Number of 1 Bits #1393",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Apple", "Microsoft"
+    ],
+    "description": "Count the number of '1' bits (Hamming weight) in a 32-bit integer.",
+    "input_format": "n=11",
+    "output_format": "3",
+    "constraints": "32-bit unsigned",
+    "sample_input": "n=11",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1394,
+    "title": "Hamming Distance #1394",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Facebook", "Google"
+    ],
+    "description": "Find the Hamming distance (number of positions where bits differ) between two integers.",
+    "input_format": "x=1, y=4",
+    "output_format": "2",
+    "constraints": "0 ≤ x,y ≤ 2^31−1",
+    "sample_input": "x=1, y=4",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1395,
+    "title": "Sum of Two Integers Without + #1395",
+    "category": "Bit Manipulation",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Facebook", "Amazon"
+    ],
+    "description": "Add two integers without using + or − using bit manipulation.",
+    "input_format": "a=2, b=3",
+    "output_format": "5",
+    "constraints": "−1000 ≤ a,b ≤ 1000",
+    "sample_input": "a=2, b=3",
+    "sample_output": "5",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1396,
+    "title": "Find Two Non-Repeating Numbers #1396",
+    "category": "Bit Manipulation",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "In an array where all elements appear twice except two, find those two unique numbers.",
+    "input_format": "nums=[1,2,3,2,1,4]",
+    "output_format": "[3,4]",
+    "constraints": "2 ≤ n ≤ 3×10^4",
+    "sample_input": "nums=[1,2,3,2,1,4]",
+    "sample_output": "[3,4]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1397,
+    "title": "Subsets Using Bit Masking #1397",
+    "category": "Bit Manipulation",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Facebook"
+    ],
+    "description": "Generate all subsets of an array using bit masking (iterate over all 2^n masks).",
+    "input_format": "nums=[1,2,3]",
+    "output_format": "[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]",
+    "constraints": "1 ≤ n ≤ 20",
+    "sample_input": "nums=[1,2,3]",
+    "sample_output": "8 subsets",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1398,
+    "title": "Maximum XOR of Two Numbers #1398",
+    "category": "Bit Manipulation",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Find the maximum XOR of any two numbers in an array using a Trie.",
+    "input_format": "nums=[3,10,5,25,2,8]",
+    "output_format": "28",
+    "constraints": "1 ≤ n ≤ 2×10^5",
+    "sample_input": "nums=[3,10,5,25,2,8]",
+    "sample_output": "28",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1399,
+    "title": "Counting Bits #1399",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Return an array where ans[i] is the number of 1-bits in i, for i in [0,n].",
+    "input_format": "n=5",
+    "output_format": "[0,1,1,2,1,2]",
+    "constraints": "0 ≤ n ≤ 10^5",
+    "sample_input": "n=5",
+    "sample_output": "[0,1,1,2,1,2]",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1400,
+    "title": "XOR of All Subarray XORs #1400",
+    "category": "Bit Manipulation",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Flipkart"
+    ],
+    "description": "Compute the XOR of XOR-values of all subarrays.",
+    "input_format": "arr=[1,2,3]",
+    "output_format": "1 XOR 2 XOR 3 XOR (1^2) XOR (2^3) XOR (1^2^3) = 0",
+    "constraints": "1 ≤ n ≤ 10^5",
+    "sample_input": "arr=[1,2,3]",
+    "sample_output": "0",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1401,
+    "title": "Toggle K-th Bit #1401",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "TCS", "Wipro"
+    ],
+    "description": "Toggle (flip) the k-th bit (1-indexed from right) of a given integer.",
+    "input_format": "n=5 (101), k=2",
+    "output_format": "7 (111)",
+    "constraints": "1 ≤ k ≤ 32",
+    "sample_input": "n=5, k=2",
+    "sample_output": "7",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1402,
+    "title": "Check if Kth Bit is Set #1402",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Infosys", "Zoho"
+    ],
+    "description": "Determine whether the k-th bit (1-indexed from right) of n is set.",
+    "input_format": "n=12 (1100), k=2",
+    "output_format": "true",
+    "constraints": "1 ≤ k ≤ 32",
+    "sample_input": "n=12, k=2",
+    "sample_output": "true",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1403,
+    "title": "Clear All Bits from MSB to i #1403",
+    "category": "Bit Manipulation",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Amazon", "Adobe"
+    ],
+    "description": "Clear all bits from the most significant bit down to bit i (inclusive).",
+    "input_format": "n=0b11101101, i=4",
+    "output_format": "0b00001101 = 13",
+    "constraints": "1 ≤ i ≤ 32",
+    "sample_input": "n=237, i=4",
+    "sample_output": "13",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1404,
+    "title": "Binary to Gray Code #1404",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Convert a binary number to its Gray code representation (consecutive codes differ by 1 bit).",
+    "input_format": "n=4 (100)",
+    "output_format": "Gray = 110 = 6",
+    "constraints": "0 ≤ n ≤ 2^31",
+    "sample_input": "n=4",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1405,
+    "title": "Divide Two Integers Without Division #1405",
+    "category": "Bit Manipulation",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Facebook", "Amazon"
+    ],
+    "description": "Divide two integers without using multiplication, division, or mod operators.",
+    "input_format": "dividend=10, divisor=3",
+    "output_format": "3",
+    "constraints": "−2^31 ≤ dividend, divisor ≤ 2^31−1",
+    "sample_input": "dividend=10, divisor=3",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1406,
+    "title": "Bitwise AND of Number Range #1406",
+    "category": "Bit Manipulation",
+    "difficulty": "Medium",
+    "company_tags": [
+      "Microsoft", "Google"
+    ],
+    "description": "Find the bitwise AND of all numbers in range [m,n].",
+    "input_format": "m=5, n=7",
+    "output_format": "4",
+    "constraints": "0 ≤ m ≤ n ≤ 2^31−1",
+    "sample_input": "m=5, n=7",
+    "sample_output": "4",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1407,
+    "title": "Largest Power of 2 ≤ N #1407",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "TCS"
+    ],
+    "description": "Find the largest power of 2 less than or equal to n.",
+    "input_format": "n=10",
+    "output_format": "8",
+    "constraints": "1 ≤ n ≤ 10^9",
+    "sample_input": "n=10",
+    "sample_output": "8",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1408,
+    "title": "Number of Flips to Make Two Numbers Equal #1408",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Google"
+    ],
+    "description": "Count bit flips needed to convert integer A to integer B.",
+    "input_format": "A=29 (11101), B=15 (01111)",
+    "output_format": "2",
+    "constraints": "0 ≤ A,B ≤ 2^31",
+    "sample_input": "A=29, B=15",
+    "sample_output": "2",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1409,
+    "title": "Find Position of Rightmost Set Bit #1409",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Infosys", "Wipro"
+    ],
+    "description": "Find the position (1-indexed from right) of the rightmost set bit in n.",
+    "input_format": "n=12 (1100)",
+    "output_format": "3",
+    "constraints": "1 ≤ n ≤ 10^9",
+    "sample_input": "n=12",
+    "sample_output": "3",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1410,
+    "title": "Swap All Odd and Even Bits #1410",
+    "category": "Bit Manipulation",
+    "difficulty": "Easy",
+    "company_tags": [
+      "Amazon", "Adobe"
+    ],
+    "description": "Swap all odd bits with even bits of a 32-bit unsigned integer.",
+    "input_format": "n=23 (10111)",
+    "output_format": "43 (101011)",
+    "constraints": "0 ≤ n ≤ 2^32",
+    "sample_input": "n=23",
+    "sample_output": "43",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
+  },
+  {
+    "id": 1411,
+    "title": "Next Higher Number with Same Number of Set Bits #1411",
+    "category": "Bit Manipulation",
+    "difficulty": "Hard",
+    "company_tags": [
+      "Google", "Amazon"
+    ],
+    "description": "Find the next greater integer with the same number of 1-bits as n.",
+    "input_format": "n=5 (101)",
+    "output_format": "6 (110)",
+    "constraints": "1 ≤ n ≤ 2^31",
+    "sample_input": "n=5",
+    "sample_output": "6",
+    "starter_code": {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("  ");
+    }
+}`
+    }
   }
 ];
-// Add these functions to your problems.ts file
 
 export function getCategories(): string[] {
   const categories = new Set<string>();
