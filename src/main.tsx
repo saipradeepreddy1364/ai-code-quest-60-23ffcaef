@@ -37,7 +37,4 @@ keepBackendAlive();
 // Repeat on intervals
 setInterval(keepSupabaseAlive, 4 * 24 * 60 * 60 * 1000);  // every 4 days
 setInterval(keepBackendAlive, 10 * 60 * 1000);              // every 10 minutes
-
-// ────────────────────────────────────────────────────────────────────────────
-
 createRoot(document.getElementById("root")!).render(<App />);
