@@ -364,36 +364,6 @@ export default function ProblemView() {
             </button>
 
             <div className="w-px h-5 bg-border mx-1" />
-
-            {/* Debug */}
-            <button
-              onClick={() => handleAI("debug")}
-              title="AI Debug"
-              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-semibold bg-muted text-muted-foreground hover:text-red-400 hover:bg-red-400/10 transition-colors"
-            >
-              <Bug className="h-3.5 w-3.5" />
-              Debug
-            </button>
-
-            {/* Optimize */}
-            <button
-              onClick={() => handleAI("optimize")}
-              title="AI Optimize"
-              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-semibold bg-muted text-muted-foreground hover:text-yellow-400 hover:bg-yellow-400/10 transition-colors"
-            >
-              <Zap className="h-3.5 w-3.5" />
-              Optimize
-            </button>
-
-            {/* Review */}
-            <button
-              onClick={() => handleAI("review")}
-              title="AI Review"
-              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-semibold bg-muted text-muted-foreground hover:text-blue-400 hover:bg-blue-400/10 transition-colors"
-            >
-              <Eye className="h-3.5 w-3.5" />
-              Review
-            </button>
           </div>
 
           {/* Right side: auto-saved + run counter */}
