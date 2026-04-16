@@ -1,11 +1,12 @@
 // src/components/CodeEditor.tsx
-import Editor from "@monaco-editor/react";
+import Editor, { OnMount } from "@monaco-editor/react";
 
 interface CodeEditorProps {
   language: string;
   value: string;
   onChange: (value: string) => void;
   readOnly?: boolean;
+  onCtrlEnter?: () => void;
 }
 
 const languageMap: Record<string, string> = {
@@ -20,7 +21,21 @@ export default function CodeEditor({
   value,
   onChange,
   readOnly = false,
+  onCtrlEnter,
 }: CodeEditorProps) {
+  // ── Register Ctrl+Enter inside Monaco so it fires even when the
+  //    editor has focus and would otherwise swallow the keyboard event. ──
+  const handleMount: OnMount = (editor, monaco) => {
+    if (onCtrlEnter) {
+      editor.addCommand(
+        monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter,
+        () => {
+          onCtrlEnter();
+        }
+      );
+    }
+  };
+
   return (
     <Editor
       height="100%"
@@ -28,6 +43,7 @@ export default function CodeEditor({
       value={value}
       onChange={(v) => onChange(v || "")}
       theme="vs-dark"
+      onMount={handleMount}
       options={{
         fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
         fontSize: 14,

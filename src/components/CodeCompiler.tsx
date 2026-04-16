@@ -1,5 +1,5 @@
 // src/components/CodeCompiler.tsx
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import CodeEditor from "./CodeEditor";
 import { runCode, languageIds } from "@/api/compiler";
 import { parseJavaError } from "@/utils/parseJavaError";
@@ -41,6 +41,10 @@ export default function CodeCompiler({
   const abortRef          = useRef<AbortController | null>(null);
   const inputRef          = useRef<HTMLTextAreaElement>(null);
 
+  // Keep a stable ref to the latest handleRun so Monaco's addCommand
+  // closure always calls the up-to-date version without needing re-mount.
+  const handleRunRef = useRef<() => void>(() => {});
+
   const [code, setCode]                   = useState(defaultCode);
   const [input, setInput]                 = useState("");
   const [output, setOutput]               = useState("");
@@ -58,7 +62,7 @@ export default function CodeCompiler({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => { onErrorChange?.(error); }, [error]);
+  useEffect(() => { onErrorChange?.(error); }, [error, onErrorChange]);
 
   useEffect(() => {
     if (needsInput) {
@@ -66,50 +70,10 @@ export default function CodeCompiler({
     }
   }, [needsInput]);
 
-  // ── Ctrl+Enter to run ────────────────────────────────────────────────────
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.ctrlKey && e.key === "Enter") {
-        e.preventDefault();
-        handleRun();
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [code, input, isRunning, needsInput]);
-
-  // ── Resize mouse handlers ────────────────────────────────────────────────
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!containerRef.current) return;
-      const rect = containerRef.current.getBoundingClientRect();
-
-      if (isResizingHRef.current) {
-        const pct = ((e.clientX - rect.left) / rect.width) * 100;
-        if (pct > 20 && pct < 80) setEditorWidthPct(pct);
-      }
-
-      if (isResizingVRef.current) {
-        const rightPanelTop = rect.top;
-        const rightPanelH   = rect.height;
-        const pct = ((e.clientY - rightPanelTop) / rightPanelH) * 100;
-        if (pct > 15 && pct < 85) setInputHeightPct(pct);
-      }
-    };
-    const handleMouseUp = () => {
-      isResizingHRef.current = false;
-      isResizingVRef.current = false;
-    };
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("mouseup",  handleMouseUp);
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mouseup",  handleMouseUp);
-    };
-  }, []);
-
-  const handleRun = async () => {
+  // ── Core run logic ───────────────────────────────────────────────────────
+  // Wrapped in useCallback so it's stable for the window listener dep-array,
+  // but also synced into handleRunRef for Monaco's internal command closure.
+  const handleRun = useCallback(async () => {
     if (!code.trim()) return;
     if (codeNeedsInput(code) && !input.trim()) {
       setNeedsInput(true);
@@ -140,7 +104,59 @@ export default function CodeCompiler({
     } finally {
       setIsRunning(false);
     }
-  };
+  }, [code, input]);
+
+  // Keep the ref in sync so Monaco's internal command always has the latest.
+  useEffect(() => {
+    handleRunRef.current = handleRun;
+  }, [handleRun]);
+
+  // ── Ctrl+Enter for areas OUTSIDE Monaco (toolbar, output, etc.) ──────────
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // If the event target is inside the Monaco editor iframe/div, Monaco's
+      // own addCommand already handles it — skip to avoid double invocation.
+      const monacoEl = document.querySelector(".monaco-editor");
+      if (monacoEl && monacoEl.contains(e.target as Node)) return;
+
+      if (e.ctrlKey && e.key === "Enter") {
+        e.preventDefault();
+        handleRunRef.current();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  // ── Resize mouse handlers ────────────────────────────────────────────────
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!containerRef.current) return;
+      const rect = containerRef.current.getBoundingClientRect();
+
+      if (isResizingHRef.current) {
+        const pct = ((e.clientX - rect.left) / rect.width) * 100;
+        if (pct > 20 && pct < 80) setEditorWidthPct(pct);
+      }
+
+      if (isResizingVRef.current) {
+        const rightPanelTop = rect.top;
+        const rightPanelH   = rect.height;
+        const pct = ((e.clientY - rightPanelTop) / rightPanelH) * 100;
+        if (pct > 15 && pct < 85) setInputHeightPct(pct);
+      }
+    };
+    const handleMouseUp = () => {
+      isResizingHRef.current = false;
+      isResizingVRef.current = false;
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseup",  handleMouseUp);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseup",  handleMouseUp);
+    };
+  }, []);
 
   const handleRefresh = () => {
     abortRef.current?.abort();
@@ -207,6 +223,9 @@ export default function CodeCompiler({
               setNeedsInput(false);
               onCodeChange?.(val, "java");
             }}
+            // Pass a stable wrapper so Monaco's internal command always
+            // invokes the latest handleRun via the ref.
+            onCtrlEnter={() => handleRunRef.current()}
           />
         </div>
       </div>
