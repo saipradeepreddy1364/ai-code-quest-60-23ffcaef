@@ -27296,4 +27296,27 @@ export const problems: Problem[] = [
 }`
     }
   }
+  // Add these functions to your problems.ts file
+
+export function getCategories(): string[] {
+  const categories = new Set<string>();
+  problems.forEach(problem => {
+    categories.add(problem.category);
+  });
+  return Array.from(categories).sort();
+}
+
+export function getCompanies(): string[] {
+  const companies = new Set<string>();
+  problems.forEach(problem => {
+    problem.company_tags.forEach(tag => {
+      companies.add(tag);
+    });
+  });
+  return Array.from(companies).sort();
+}
+
+export function getProblemById(id: number): Problem | undefined {
+  return problems.find(problem => problem.id === id);
+}
 ];
