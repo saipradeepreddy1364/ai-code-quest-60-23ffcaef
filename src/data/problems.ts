@@ -27296,7 +27296,8 @@ export const problems: Problem[] = [
 }`
     }
   }
-  // Add these functions to your problems.ts file
+];
+// Add these functions to your problems.ts file
 
 export function getCategories(): string[] {
   const categories = new Set<string>();
@@ -27319,4 +27320,3 @@ export function getCompanies(): string[] {
 export function getProblemById(id: number): Problem | undefined {
   return problems.find(problem => problem.id === id);
 }
-];
