@@ -13,8 +13,10 @@ type CodeCompilerProps = {
   userEmail?: string;
 };
 
-const defaultCode = `public class Main {
-    public static void main(String[] args) {
+const defaultCode = `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("Hello, World");
     }
 }`;
