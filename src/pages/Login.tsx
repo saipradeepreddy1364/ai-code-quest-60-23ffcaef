@@ -55,7 +55,7 @@ export default function Login() {
     >
       {/* SVG fills every pixel of the screen */}
       <img
-        src="/tech_login_background_v2.svg"
+        src="/tech_login_background_v2.png"
         aria-hidden="true"
         style={{
           position: "absolute",
