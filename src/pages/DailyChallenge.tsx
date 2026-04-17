@@ -1,22 +1,30 @@
 // src/pages/DailyChallenge.tsx
-
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Flame,
   ArrowRight,
   User,
   LogOut,
   ChevronDown,
+  ChevronLeft,
   Menu,
-  X
+  X,
 } from "lucide-react";
-import { getDailyChallenge } from "@/data/problems";
+import { problems } from "@/data/problems";
 import { useAuth } from "../hooks/useAuth";
+
+// Pick a stable daily problem based on the current date
+const today = new Date();
+const dailyIndex =
+  (today.getFullYear() * 366 + today.getMonth() * 31 + today.getDate()) %
+  problems.length;
+const getDailyChallenge = () => problems[dailyIndex];
 
 export default function DailyChallenge() {
   const problem = getDailyChallenge();
   const { user, signOut } = useAuth();
+  const navigate = useNavigate();
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -36,25 +44,33 @@ export default function DailyChallenge() {
   return (
     <div className="min-h-screen bg-background">
 
-      {/* ✅ HEADER (Dashboard style) */}
+      {/* ── HEADER ── */}
       <div className="flex justify-between items-center mb-6 p-4 bg-card border border-border rounded-lg">
-        
-        {/* LEFT → MENU BUTTON */}
-        <button
-          onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="flex items-center gap-2 px-3 py-2 bg-surface hover:bg-surface-hover rounded-lg transition-colors"
-        >
-          <Menu className="h-5 w-5" />
-          <ChevronDown className={`h-4 w-4 ${sidebarOpen ? "rotate-180" : ""}`} />
-        </button>
 
-        {/* RIGHT → USER INFO (NO DROPDOWN) */}
+        {/* LEFT → BACK ARROW + MENU BUTTON */}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => navigate(-1)}
+            className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+            title="Go back"
+          >
+            <ChevronLeft className="h-5 w-5" />
+          </button>
+          <button
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+            className="flex items-center gap-2 px-3 py-2 bg-surface hover:bg-surface-hover rounded-lg transition-colors"
+          >
+            <Menu className="h-5 w-5" />
+            <ChevronDown className={`h-4 w-4 ${sidebarOpen ? "rotate-180" : ""}`} />
+          </button>
+        </div>
+
+        {/* RIGHT → USER INFO */}
         <div className="flex items-center gap-3 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg shadow-md">
           <div className="h-8 w-8 bg-white/20 rounded-full flex items-center justify-center">
             <User className="h-4 w-4" />
           </div>
           <span className="text-sm font-medium">{user?.email}</span>
-
           <button
             onClick={handleLogout}
             className="ml-2 hover:bg-white/20 p-1 rounded"
@@ -65,7 +81,7 @@ export default function DailyChallenge() {
         </div>
       </div>
 
-      {/* ✅ SIDEBAR */}
+      {/* ── SIDEBAR ── */}
       <div
         className={`fixed left-0 top-0 h-full w-72 bg-card border-r transform ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
@@ -96,17 +112,15 @@ export default function DailyChallenge() {
         />
       )}
 
-      {/* ✅ MAIN CONTENT */}
+      {/* ── MAIN CONTENT ── */}
       <div className={`p-6 transition-all ${sidebarOpen ? "ml-72" : ""}`}>
         <div className="max-w-3xl mx-auto">
 
-          {/* TITLE */}
           <div className="flex items-center gap-2 mb-6">
             <Flame className="h-6 w-6 text-primary" />
             <h1 className="text-2xl font-semibold">Daily Challenge</h1>
           </div>
 
-          {/* PROBLEM CARD */}
           <div className="bg-card border rounded-md p-6">
             <h2 className="text-xl font-medium mb-2">{problem.title}</h2>
 
@@ -121,7 +135,6 @@ export default function DailyChallenge() {
                 <p className="text-xs mb-2">Input</p>
                 <pre className="text-xs">{problem.sample_input}</pre>
               </div>
-
               <div className="bg-surface p-3 border rounded">
                 <p className="text-xs mb-2">Output</p>
                 <pre className="text-xs">{problem.sample_output}</pre>

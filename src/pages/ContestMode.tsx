@@ -1,9 +1,10 @@
-import { useState, useEffect, useCallback } from "react";
-import { Link } from "react-router-dom";
-import { Trophy, Clock, ArrowRight } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Trophy, Clock, ArrowRight, ChevronLeft } from "lucide-react";
 import { problems } from "@/data/problems";
 
 export default function ContestMode() {
+  const navigate = useNavigate();
   const [isActive, setIsActive] = useState(false);
   const [timeLeft, setTimeLeft] = useState(3600); // 1 hour
   const [contestProblems] = useState(() => {
@@ -25,6 +26,17 @@ export default function ContestMode() {
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
+      {/* ── Back navigation ── */}
+      <div className="flex items-center gap-1.5 mb-5">
+        <button
+          onClick={() => navigate(-1)}
+          className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+          title="Go back"
+        >
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+      </div>
+
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center gap-2">
           <Trophy className="h-6 w-6 text-primary" />

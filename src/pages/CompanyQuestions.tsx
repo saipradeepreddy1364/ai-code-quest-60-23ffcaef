@@ -1,9 +1,10 @@
 import { useState, useMemo } from "react";
-import { Link } from "react-router-dom";
-import { Building2, Search } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
+import { Building2, Search, ChevronLeft } from "lucide-react";
 import { problems, getCompanies } from "@/data/problems";
 
 export default function CompanyQuestions() {
+  const navigate = useNavigate();
   const [search, setSearch] = useState("");
   const companies = getCompanies();
 
@@ -14,6 +15,17 @@ export default function CompanyQuestions() {
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
+      {/* ── Back navigation ── */}
+      <div className="flex items-center gap-1.5 mb-5">
+        <button
+          onClick={() => navigate(-1)}
+          className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+          title="Go back"
+        >
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+      </div>
+
       <div className="flex items-center gap-2 mb-6">
         <Building2 className="h-6 w-6 text-primary" />
         <h1 className="text-2xl font-semibold text-foreground">Company Questions</h1>

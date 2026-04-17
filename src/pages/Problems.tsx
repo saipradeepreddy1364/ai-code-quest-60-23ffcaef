@@ -1,10 +1,11 @@
 import { useState, useMemo, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { Search, Filter } from "lucide-react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Search, Filter, ChevronLeft } from "lucide-react";
 import { problems, getCategories, getCompanies } from "@/data/problems";
 
 export default function Problems() {
   const location = useLocation();
+  const navigate = useNavigate();
   const queryParams = new URLSearchParams(location.search);
 
   const urlCategory = queryParams.get("category");
@@ -21,12 +22,9 @@ export default function Problems() {
   const categories = getCategories();
   const companyList = getCompanies();
 
-  // ✅ Sync URL → filters
   useEffect(() => {
     if (urlCategory) setSelectedCategory(urlCategory);
     if (urlCompany) setSelectedCompany(urlCompany);
-
-    // Optional: auto open filters when coming from sidebar
     if (urlCategory || urlCompany) {
       setShowFilters(true);
     }
@@ -44,6 +42,17 @@ export default function Problems() {
 
   return (
     <div className="p-6 max-w-6xl mx-auto">
+      {/* ── Back navigation ── */}
+      <div className="flex items-center gap-1.5 mb-5">
+        <button
+          onClick={() => navigate(-1)}
+          className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+          title="Go back"
+        >
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+      </div>
+
       <h1 className="text-2xl font-semibold text-foreground mb-6">Problems</h1>
 
       {/* Search and filters */}

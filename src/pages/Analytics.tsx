@@ -1,5 +1,6 @@
 // src/pages/Analytics.tsx
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell,
@@ -7,7 +8,7 @@ import {
 import { problems, getCategories } from "@/data/problems";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
-import { Loader2, BookOpen, Code2, BarChart2, CheckCircle2 } from "lucide-react";
+import { Loader2, BookOpen, Code2, BarChart2, CheckCircle2, ChevronLeft } from "lucide-react";
 
 const DIFF_COLORS: Record<string, string> = {
   Easy:   "hsl(200, 100%, 50%)",
@@ -52,6 +53,7 @@ const renderCustomLabel = ({
 
 export default function Analytics() {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const [stats, setStats] = useState<StatsData | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -60,7 +62,6 @@ export default function Analytics() {
       if (!user?.id) return;
       setLoading(true);
       try {
-        // Fetch saved codes directly from Supabase
         const { data: savedData, error: savedError } = await supabase
           .from("saved_codes")
           .select("category, language, compiler_runs")
@@ -68,7 +69,6 @@ export default function Analytics() {
 
         if (savedError) throw savedError;
 
-        // Fetch solved problems count
         const { data: solvedData, error: solvedError } = await supabase
           .from("user_progress")
           .select("problem_id")
@@ -146,12 +146,22 @@ export default function Analytics() {
 
   return (
     <div className="p-6 max-w-6xl mx-auto">
+      {/* ── Back navigation ── */}
+      <div className="flex items-center gap-1.5 mb-5">
+        <button
+          onClick={() => navigate(-1)}
+          className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+          title="Go back"
+        >
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+      </div>
+
       <h1 className="text-2xl font-semibold text-foreground mb-6">Analytics</h1>
 
       {/* ── Summary cards ── */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
 
-        {/* Problems Saved */}
         <div className="bg-card border border-border rounded-lg p-5">
           <div className="flex items-center gap-2 mb-2">
             <Code2 className="h-4 w-4 text-primary" />
@@ -163,7 +173,6 @@ export default function Analytics() {
           <div className="text-xs text-muted-foreground mt-1">out of {problems.length} available</div>
         </div>
 
-        {/* Problems Solved */}
         <div className="bg-card border border-border rounded-lg p-5">
           <div className="flex items-center gap-2 mb-2">
             <CheckCircle2 className="h-4 w-4 text-green-500" />
@@ -175,7 +184,6 @@ export default function Analytics() {
           <div className="text-xs text-muted-foreground mt-1">submitted successfully</div>
         </div>
 
-        {/* Categories Covered */}
         <div className="bg-card border border-border rounded-lg p-5">
           <div className="flex items-center gap-2 mb-2">
             <BookOpen className="h-4 w-4 text-primary" />
@@ -187,7 +195,6 @@ export default function Analytics() {
           <div className="text-xs text-muted-foreground mt-1">out of {categories.length} total</div>
         </div>
 
-        {/* Total Problems on Platform */}
         <div className="bg-card border border-border rounded-lg p-5">
           <div className="flex items-center gap-2 mb-2">
             <BarChart2 className="h-4 w-4 text-primary" />
@@ -222,7 +229,6 @@ export default function Analytics() {
       {/* ── Charts row 1 ── */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 
-        {/* User: saved by category pie */}
         <div className="bg-card border border-border rounded-lg p-6">
           <h2 className="text-base font-semibold text-foreground mb-1">Your Saves by Category</h2>
           <p className="text-xs text-muted-foreground mb-4">Count of problems saved per category</p>
@@ -266,7 +272,6 @@ export default function Analytics() {
           )}
         </div>
 
-        {/* Platform: difficulty distribution */}
         <div className="bg-card border border-border rounded-lg p-6">
           <h2 className="text-base font-semibold text-foreground mb-4">Platform Difficulty Distribution</h2>
           <ResponsiveContainer width="100%" height={220}>
@@ -297,7 +302,6 @@ export default function Analytics() {
       {/* ── Charts row 2 ── */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 
-        {/* Platform: total problems per category bar */}
         <div className="bg-card border border-border rounded-lg p-6">
           <h2 className="text-base font-semibold text-foreground mb-4">Problems by Category (Platform)</h2>
           <ResponsiveContainer width="100%" height={280}>
@@ -310,7 +314,6 @@ export default function Analytics() {
           </ResponsiveContainer>
         </div>
 
-        {/* User: saved by category bar */}
         <div className="bg-card border border-border rounded-lg p-6">
           <h2 className="text-base font-semibold text-foreground mb-4">Your Saves by Category (Bar)</h2>
           {loading && (

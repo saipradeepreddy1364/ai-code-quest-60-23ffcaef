@@ -18,7 +18,10 @@ export default function Problems() {
   const [showFilters, setShowFilters] = useState(false);
   const [expandedRow, setExpandedRow] = useState<number | null>(null);
 
-  const categories = getCategories();
+  // Only show categories that have at least 1 problem — removes empty "DSA" blocks
+  const categories = getCategories().filter(
+    (cat) => problems.filter((p) => p.category === cat).length > 0
+  );
   const companyList = getCompanies();
 
   // Sync URL → filters
@@ -41,12 +44,12 @@ export default function Problems() {
   return (
     <div className="p-6 max-w-6xl mx-auto">
 
-      {/* ── Back navigation + breadcrumb ── */}
+      {/* ── Back navigation ── */}
       <div className="flex items-center gap-1.5 mb-5">
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate(-1)}
           className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
-          title="Back to Dashboard"
+          title="Back"
         >
           <ChevronLeft className="h-5 w-5" />
         </button>

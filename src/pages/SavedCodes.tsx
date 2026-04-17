@@ -1,6 +1,7 @@
 // src/pages/SavedCodes.tsx
 import { useState, useEffect } from "react";
-import { Save, Trash2, Copy, Code2 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { Save, Trash2, Copy, Code2, ChevronLeft } from "lucide-react";
 import { useAuth } from "../hooks/useAuth";
 import { toast } from "sonner";
 
@@ -14,6 +15,7 @@ interface SavedCode {
 
 export default function SavedCodes() {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const [savedCodes, setSavedCodes] = useState<SavedCode[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -63,6 +65,17 @@ export default function SavedCodes() {
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
+      {/* ── Back navigation ── */}
+      <div className="flex items-center gap-1.5 mb-5">
+        <button
+          onClick={() => navigate(-1)}
+          className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+          title="Go back"
+        >
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+      </div>
+
       <div className="flex items-center gap-2 mb-6">
         <Save className="h-6 w-6 text-primary" />
         <h1 className="text-2xl font-semibold text-foreground">Saved Codes</h1>

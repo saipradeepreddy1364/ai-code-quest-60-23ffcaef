@@ -333,12 +333,13 @@ export default function Dashboard() {
 
   const categoryCounts = useMemo(() => getCategoryCounts(), []);
 
-  const visibleCats =
+  const visibleCats = (
     activeTab === "dsa"
       ? DSA_CATEGORIES
       : activeTab === "placement"
       ? PLACEMENT_CATEGORIES
-      : [];
+      : []
+  ).filter((cat) => (categoryCounts[cat] ?? 0) > 0);
 
   // AI panel horizontal resize
   useEffect(() => {

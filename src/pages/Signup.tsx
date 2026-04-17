@@ -1,7 +1,7 @@
 // src/pages/Signup.tsx
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { UserPlus } from "lucide-react";
+import { UserPlus, ChevronLeft } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
@@ -32,14 +32,11 @@ export default function Signup() {
         return;
       }
 
-      // Save full name into user metadata + profiles table if user was created
       if (data?.user) {
-        // Update auth metadata with full_name
         await supabase.auth.updateUser({
           data: { full_name: fullName.trim() },
         });
 
-        // Also upsert into a profiles table if it exists (safe — won't crash if table absent)
         try {
           await supabase
             .from("profiles")
@@ -81,6 +78,17 @@ export default function Signup() {
   return (
     <div className="min-h-[calc(100vh-3rem)] flex items-center justify-center">
       <div className="w-full max-w-sm">
+        {/* ── Back navigation ── */}
+        <div className="mb-4">
+          <button
+            onClick={() => navigate(-1)}
+            className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+            title="Go back"
+          >
+            <ChevronLeft className="h-5 w-5" />
+          </button>
+        </div>
+
         <div className="flex items-center gap-2 mb-8 justify-center">
           <UserPlus className="h-5 w-5 text-primary" />
           <h1 className="text-xl font-semibold text-foreground">Sign Up</h1>
