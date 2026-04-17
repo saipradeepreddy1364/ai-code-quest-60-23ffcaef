@@ -10,7 +10,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import {
   Loader2, BookOpen, Code2, BarChart2, CheckCircle2,
-  ChevronLeft, Save, Copy, Trash2, Clock,
+  ChevronLeft, Save, Copy, Trash2, Clock, X, ChevronDown, ChevronUp,
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -30,10 +30,19 @@ const CAT_PIE_COLORS = [
 const CAT_COLOR = "hsl(263, 70%, 65%)";
 
 // ─── types ───────────────────────────────────────────────────────────────────
+interface SupabaseSavedCode {
+  problem_id: number;
+  title: string;
+  category: string;
+  code: string;
+  language: string;
+  saved_at: string;
+  compiler_runs: number;
+}
+
 interface StatsData {
   total: number;
   byCategory: Record<string, number>;
-  compilerRuns: number;
   solvedCount: number;
 }
 
@@ -83,7 +92,12 @@ export default function Analytics() {
 
   // --- overview state ---
   const [stats, setStats] = useState<StatsData | null>(null);
+  const [allSavedCodes, setAllSavedCodes] = useState<SupabaseSavedCode[]>([]);
   const [loading, setLoading] = useState(true);
+
+  // --- drill-down state ---
+  const [selectedCategoryDrill, setSelectedCategoryDrill] = useState<string | null>(null);
+  const [expandedProblemId, setExpandedProblemId] = useState<number | null>(null);
 
   // --- saved codes state ---
   const [savedCodes, setSavedCodes] = useState<SavedCode[]>([]);
@@ -91,15 +105,17 @@ export default function Analytics() {
   const [savedFetched, setSavedFetched] = useState(false);
 
   // ── fetch overview stats ──────────────────────────────────────────────────
+  // Uses user_email (always stored) instead of user_id to avoid RLS issues
+  // when the custom auth system doesn't create a Supabase auth session.
   useEffect(() => {
     const fetchStats = async () => {
-      if (!user?.id) return;
+      if (!user?.email) return;
       setLoading(true);
       try {
         const { data: savedData, error: savedError } = await supabase
           .from("saved_codes")
-          .select("category, language, compiler_runs")
-          .eq("user_id", user.id);
+          .select("problem_id, title, category, code, language, saved_at, compiler_runs")
+          .eq("user_email", user.email);
 
         if (savedError) throw savedError;
 
@@ -109,20 +125,20 @@ export default function Analytics() {
           .eq("user_id", user.id)
           .eq("status", "solved");
 
-        if (solvedError) throw solvedError;
+        // Don't throw on solvedError — just use 0 if that table is inaccessible
+        if (solvedError) console.warn("user_progress fetch error:", solvedError);
 
         const byCategory: Record<string, number> = {};
-        let totalRuns = 0;
-
         (savedData ?? []).forEach((row) => {
-          if (row.category) byCategory[row.category] = (byCategory[row.category] ?? 0) + 1;
-          totalRuns += row.compiler_runs ?? 0;
+          if (row.category) {
+            byCategory[row.category] = (byCategory[row.category] ?? 0) + 1;
+          }
         });
 
+        setAllSavedCodes((savedData ?? []) as SupabaseSavedCode[]);
         setStats({
           total: savedData?.length ?? 0,
           byCategory,
-          compilerRuns: totalRuns,
           solvedCount: solvedData?.length ?? 0,
         });
       } catch (err) {
@@ -132,9 +148,9 @@ export default function Analytics() {
       }
     };
     fetchStats();
-  }, [user?.id]);
+  }, [user?.email]);
 
-  // ── fetch saved codes (lazy — only when tab opened) ───────────────────────
+  // ── fetch saved codes tab (lazy) ──────────────────────────────────────────
   useEffect(() => {
     if (activeTab !== "saved" || savedFetched || !user?.email) return;
 
@@ -146,8 +162,9 @@ export default function Analytics() {
         );
         if (!res.ok) throw new Error("Failed to fetch saved codes");
         const data: SavedCode[] = await res.json();
-        // Sort newest first
-        setSavedCodes(data.sort((a, b) => new Date(b.savedAt).getTime() - new Date(a.savedAt).getTime()));
+        setSavedCodes(
+          data.sort((a, b) => new Date(b.savedAt).getTime() - new Date(a.savedAt).getTime())
+        );
         setSavedFetched(true);
       } catch {
         toast.error("Failed to load saved codes");
@@ -176,6 +193,17 @@ export default function Analytics() {
     toast.success("Code copied to clipboard!");
   };
 
+  // ── handle category click from charts ────────────────────────────────────
+  const handleCategoryClick = (categoryName: string) => {
+    if (selectedCategoryDrill === categoryName) {
+      setSelectedCategoryDrill(null);
+      setExpandedProblemId(null);
+    } else {
+      setSelectedCategoryDrill(categoryName);
+      setExpandedProblemId(null);
+    }
+  };
+
   // ── derived chart data ────────────────────────────────────────────────────
   const categories = getCategories();
   const totalSaved = stats?.total ?? 0;
@@ -201,6 +229,11 @@ export default function Analytics() {
     { name: "Medium", value: problems.filter((p) => p.difficulty === "Medium").length },
     { name: "Hard",   value: problems.filter((p) => p.difficulty === "Hard").length },
   ];
+
+  // ── drill-down data ───────────────────────────────────────────────────────
+  const drillCodes = selectedCategoryDrill
+    ? allSavedCodes.filter((c) => c.category === selectedCategoryDrill)
+    : [];
 
   // ─────────────────────────────────────────────────────────────────────────
   return (
@@ -312,9 +345,12 @@ export default function Analytics() {
 
           {/* ── Charts row 1 ── */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            {/* Your Saves by Category — PIE (clickable) */}
             <div className="bg-card border border-border rounded-lg p-6">
               <h2 className="text-base font-semibold text-foreground mb-1">Your Saves by Category</h2>
-              <p className="text-xs text-muted-foreground mb-4">Count of problems saved per category</p>
+              <p className="text-xs text-muted-foreground mb-4">
+                Click a slice to see the problems you saved in that category
+              </p>
               {loading && (
                 <div className="flex items-center justify-center h-52 text-muted-foreground gap-2 text-sm">
                   <Loader2 className="h-4 w-4 animate-spin" /> Loading…
@@ -330,38 +366,73 @@ export default function Analytics() {
                 <>
                   <ResponsiveContainer width="100%" height={220}>
                     <PieChart>
-                      <Pie data={categorySolvedPieData} cx="50%" cy="50%"
-                        innerRadius={40} outerRadius={90} paddingAngle={2}
-                        dataKey="value" labelLine={false} label={renderCustomLabel}>
+                      <Pie
+                        data={categorySolvedPieData}
+                        cx="50%" cy="50%"
+                        innerRadius={40} outerRadius={90}
+                        paddingAngle={2}
+                        dataKey="value"
+                        labelLine={false}
+                        label={renderCustomLabel}
+                        onClick={(data) => handleCategoryClick(data.name)}
+                        style={{ cursor: "pointer" }}
+                      >
                         {categorySolvedPieData.map((d, i) => (
-                          <Cell key={`cat-cell-${i}`} fill={d.color} />
+                          <Cell
+                            key={`cat-cell-${i}`}
+                            fill={d.color}
+                            opacity={
+                              selectedCategoryDrill && selectedCategoryDrill !== d.name
+                                ? 0.35
+                                : 1
+                            }
+                            stroke={selectedCategoryDrill === d.name ? "#fff" : "none"}
+                            strokeWidth={selectedCategoryDrill === d.name ? 2 : 0}
+                          />
                         ))}
                       </Pie>
-                      <Tooltip contentStyle={tooltipStyle}
-                        formatter={(value: number, name: string) => [`${value} saved`, name]} />
+                      <Tooltip
+                        contentStyle={tooltipStyle}
+                        formatter={(value: number, name: string) => [`${value} saved`, name]}
+                      />
                     </PieChart>
                   </ResponsiveContainer>
                   <div className="flex flex-wrap justify-center gap-x-4 gap-y-1.5 mt-3">
                     {categorySolvedPieData.map((d) => (
-                      <div key={d.name} className="flex items-center gap-1.5">
+                      <button
+                        key={d.name}
+                        onClick={() => handleCategoryClick(d.name)}
+                        className={`flex items-center gap-1.5 rounded px-1 py-0.5 transition-colors ${
+                          selectedCategoryDrill === d.name
+                            ? "bg-white/10 ring-1 ring-white/20"
+                            : "hover:bg-white/5"
+                        }`}
+                      >
                         <div className="w-2.5 h-2.5 rounded-sm shrink-0" style={{ backgroundColor: d.color }} />
                         <span className="text-xs text-muted-foreground">
                           {d.name}: <span className="font-semibold text-foreground">{d.value}</span>
                         </span>
-                      </div>
+                      </button>
                     ))}
                   </div>
                 </>
               )}
             </div>
 
+            {/* Platform Difficulty Distribution — PIE */}
             <div className="bg-card border border-border rounded-lg p-6">
               <h2 className="text-base font-semibold text-foreground mb-4">Platform Difficulty Distribution</h2>
               <ResponsiveContainer width="100%" height={220}>
                 <PieChart>
-                  <Pie data={diffData} cx="50%" cy="50%"
-                    innerRadius={55} outerRadius={90} paddingAngle={3}
-                    dataKey="value" labelLine={false} label={renderCustomLabel}>
+                  <Pie
+                    data={diffData}
+                    cx="50%" cy="50%"
+                    innerRadius={55} outerRadius={90}
+                    paddingAngle={3}
+                    dataKey="value"
+                    labelLine={false}
+                    label={renderCustomLabel}
+                  >
                     {diffData.map((d) => (
                       <Cell key={d.name} fill={DIFF_COLORS[d.name]} />
                     ))}
@@ -384,6 +455,7 @@ export default function Analytics() {
 
           {/* ── Charts row 2 ── */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            {/* Problems by Category Platform — BAR */}
             <div className="bg-card border border-border rounded-lg p-6">
               <h2 className="text-base font-semibold text-foreground mb-4">Problems by Category (Platform)</h2>
               <ResponsiveContainer width="100%" height={280}>
@@ -396,8 +468,12 @@ export default function Analytics() {
               </ResponsiveContainer>
             </div>
 
+            {/* Your Saves by Category — BAR (clickable) */}
             <div className="bg-card border border-border rounded-lg p-6">
-              <h2 className="text-base font-semibold text-foreground mb-4">Your Saves by Category (Bar)</h2>
+              <h2 className="text-base font-semibold text-foreground mb-1">Your Saves by Category (Bar)</h2>
+              <p className="text-xs text-muted-foreground mb-4">
+                Click a bar to see the problems you saved in that category
+              </p>
               {loading && (
                 <div className="flex items-center justify-center h-52 text-muted-foreground gap-2 text-sm">
                   <Loader2 className="h-4 w-4 animate-spin" /> Loading…
@@ -411,17 +487,168 @@ export default function Analytics() {
               )}
               {!loading && totalSaved > 0 && (
                 <ResponsiveContainer width="100%" height={280}>
-                  <BarChart data={categoryData.filter((c) => c.solved > 0)} layout="vertical" margin={{ left: 90 }}>
+                  <BarChart
+                    data={categoryData.filter((c) => c.solved > 0)}
+                    layout="vertical"
+                    margin={{ left: 90 }}
+                  >
                     <XAxis type="number" tick={{ fill: "hsl(0,0%,55%)", fontSize: 10 }} />
                     <YAxis type="category" dataKey="name" tick={{ fill: "hsl(0,0%,55%)", fontSize: 10 }} width={90} />
                     <Tooltip contentStyle={tooltipStyle} />
-                    <Bar dataKey="solved" fill={CAT_COLOR} radius={[0, 4, 4, 0]} name="Saved" />
+                    <Bar
+                      dataKey="solved"
+                      radius={[0, 4, 4, 0]}
+                      name="Saved"
+                      cursor="pointer"
+                      onClick={(data) => handleCategoryClick(data.fullName)}
+                    >
+                      {categoryData.filter((c) => c.solved > 0).map((entry) => (
+                        <Cell
+                          key={entry.fullName}
+                          fill={CAT_COLOR}
+                          opacity={
+                            selectedCategoryDrill && selectedCategoryDrill !== entry.fullName
+                              ? 0.3
+                              : 1
+                          }
+                        />
+                      ))}
+                    </Bar>
                   </BarChart>
                 </ResponsiveContainer>
               )}
             </div>
           </div>
 
+          {/* ══════════ CATEGORY DRILL-DOWN PANEL ══════════ */}
+          {selectedCategoryDrill && (
+            <div className="bg-card border border-border rounded-lg overflow-hidden mb-6">
+              {/* Panel header */}
+              <div className="flex items-center justify-between px-5 py-4 bg-surface border-b border-border">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-5 rounded-full bg-primary" />
+                  <h2 className="text-base font-semibold text-foreground">
+                    {selectedCategoryDrill}
+                  </h2>
+                  <span className="text-xs px-2 py-0.5 bg-primary/15 text-primary rounded-full font-medium">
+                    {drillCodes.length} saved
+                  </span>
+                </div>
+                <button
+                  onClick={() => {
+                    setSelectedCategoryDrill(null);
+                    setExpandedProblemId(null);
+                  }}
+                  className="p-1.5 rounded-md hover:bg-muted text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <X className="h-4 w-4" />
+                </button>
+              </div>
+
+              {drillCodes.length === 0 ? (
+                <div className="flex flex-col items-center justify-center py-12 text-muted-foreground text-sm gap-2">
+                  <BookOpen className="h-8 w-8 opacity-25" />
+                  No saved problems in this category yet.
+                </div>
+              ) : (
+                <div className="divide-y divide-border">
+                  {drillCodes.map((item) => {
+                    const isExpanded = expandedProblemId === item.problem_id;
+                    return (
+                      <div key={item.problem_id}>
+                        {/* Problem row */}
+                        <div className="flex items-center justify-between px-5 py-3 hover:bg-surface/50 transition-colors">
+                          <div className="flex items-center gap-3 flex-1 min-w-0">
+                            {/* Problem ID */}
+                            <span className="text-xs font-mono text-muted-foreground w-8 shrink-0">
+                              #{item.problem_id}
+                            </span>
+
+                            {/* Title — links to problem */}
+                            <button
+                              onClick={() => navigate(`/problem/${item.problem_id}`)}
+                              className="text-sm text-foreground hover:text-primary transition-colors font-medium truncate text-left"
+                            >
+                              {item.title}
+                            </button>
+
+                            {/* Language badge */}
+                            <span className="text-xs px-2 py-0.5 bg-primary/10 text-primary rounded-full font-medium capitalize shrink-0">
+                              {item.language}
+                            </span>
+
+                            {/* Compiler runs */}
+                            {item.compiler_runs > 0 && (
+                              <span className="text-xs text-muted-foreground shrink-0">
+                                {item.compiler_runs} run{item.compiler_runs !== 1 ? "s" : ""}
+                              </span>
+                            )}
+                          </div>
+
+                          <div className="flex items-center gap-3 ml-4 shrink-0">
+                            {/* Saved date */}
+                            <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                              <Clock className="h-3 w-3" />
+                              {new Date(item.saved_at).toLocaleDateString(undefined, {
+                                day: "numeric", month: "short", year: "numeric",
+                              })}
+                            </div>
+
+                            {/* Copy code */}
+                            <button
+                              onClick={() => handleCopy(item.code)}
+                              className="flex items-center gap-1 px-2 py-1 text-xs bg-secondary rounded-md hover:bg-surface-hover transition-colors"
+                            >
+                              <Copy className="h-3 w-3" /> Copy
+                            </button>
+
+                            {/* Expand/collapse code */}
+                            <button
+                              onClick={() =>
+                                setExpandedProblemId(isExpanded ? null : item.problem_id)
+                              }
+                              className="flex items-center gap-1 px-2 py-1 text-xs bg-primary/10 text-primary rounded-md hover:bg-primary/20 transition-colors"
+                            >
+                              {isExpanded ? (
+                                <>
+                                  <ChevronUp className="h-3 w-3" /> Hide Code
+                                </>
+                              ) : (
+                                <>
+                                  <ChevronDown className="h-3 w-3" /> View Code
+                                </>
+                              )}
+                            </button>
+                          </div>
+                        </div>
+
+                        {/* Expanded code panel */}
+                        {isExpanded && (
+                          <div className="border-t border-border bg-background">
+                            <div className="flex items-center justify-between px-5 py-2 bg-surface/50 border-b border-border">
+                              <span className="text-xs font-medium text-muted-foreground">
+                                Your saved code for{" "}
+                                <span className="text-foreground">{item.title}</span>
+                              </span>
+                              <button
+                                onClick={() => navigate(`/problem/${item.problem_id}`)}
+                                className="text-xs text-primary hover:underline"
+                              >
+                                Open Problem →
+                              </button>
+                            </div>
+                            <pre className="p-4 text-xs font-mono text-foreground overflow-x-auto max-h-72 leading-relaxed">
+                              {item.code}
+                            </pre>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          )}
         </>
       )}
 
@@ -436,6 +663,10 @@ export default function Analytics() {
             )}
           </div>
 
+          <p className="text-xs text-muted-foreground mb-5">
+            These are codes saved from the standalone compiler on the Dashboard. Problem-specific saves appear in the Overview tab.
+          </p>
+
           {savedLoading && (
             <div className="flex items-center justify-center py-20 text-muted-foreground gap-2 text-sm">
               <Loader2 className="h-5 w-5 animate-spin" /> Loading your saved codes…
@@ -447,7 +678,7 @@ export default function Analytics() {
               <Save className="h-10 w-10 text-muted-foreground mx-auto mb-3 opacity-30" />
               <p className="text-muted-foreground text-sm">No saved codes yet.</p>
               <p className="text-xs text-muted-foreground mt-1">
-                Use the Save button in the compiler to save your code here.
+                Use the Save button in the compiler on the Dashboard to save code here.
               </p>
             </div>
           )}
@@ -455,24 +686,16 @@ export default function Analytics() {
           {!savedLoading && savedCodes.length > 0 && (
             <div className="space-y-4">
               {savedCodes.map((saved, idx) => (
-                <div
-                  key={saved.id}
-                  className="bg-card border border-border rounded-lg overflow-hidden"
-                >
+                <div key={saved.id} className="bg-card border border-border rounded-lg overflow-hidden">
                   {/* ── card header ── */}
                   <div className="flex items-center justify-between px-4 py-3 bg-surface border-b border-border">
                     <div className="flex items-center gap-3">
-                      {/* index badge */}
                       <span className="text-xs font-mono text-muted-foreground w-5 text-right">
                         #{idx + 1}
                       </span>
-
-                      {/* language badge */}
                       <span className="text-xs px-2 py-0.5 bg-primary/15 text-primary rounded-full font-semibold capitalize">
                         {saved.language}
                       </span>
-
-                      {/* timestamp */}
                       <div className="flex items-center gap-1 text-xs text-muted-foreground">
                         <Clock className="h-3 w-3" />
                         {new Date(saved.savedAt).toLocaleString(undefined, {
@@ -481,8 +704,6 @@ export default function Analytics() {
                         })}
                       </div>
                     </div>
-
-                    {/* actions */}
                     <div className="flex items-center gap-2">
                       <button
                         onClick={() => handleCopy(saved.code)}
@@ -498,7 +719,6 @@ export default function Analytics() {
                       </button>
                     </div>
                   </div>
-
                   {/* ── code preview ── */}
                   <pre className="p-4 text-xs font-mono text-foreground overflow-x-auto max-h-52 bg-background leading-relaxed">
                     {saved.code}
