@@ -31,8 +31,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -53,8 +55,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -75,8 +79,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,1,5,6,4], k = 2",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -97,8 +103,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[4,5]]",
     "sample_output": "[[1,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -119,8 +127,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-2,1,-3,4,-1,2,1,-5,4]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -141,8 +151,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcabcbb\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -163,8 +175,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"()[]{}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -185,8 +199,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,1,1,2,2,3], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -207,8 +223,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -229,8 +247,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -251,8 +271,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -273,8 +295,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -295,8 +319,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[()]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -317,8 +343,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -339,8 +367,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,8,6,2,5,4,8,3,7]",
     "sample_output": "49",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -361,8 +391,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [4,3,2,1,4]",
     "sample_output": "16",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -383,8 +415,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [4,2,6,1,3,5,7]",
     "sample_output": "[1,2,3,4,5,6,7]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -405,8 +439,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [3,1,4,null,2]",
     "sample_output": "[1,2,3,4]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -427,8 +463,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -449,8 +487,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -471,8 +511,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -493,8 +535,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[7,4,1],[8,5,2],[9,6,3]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -515,8 +559,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aa\", t = \"aa\"",
     "sample_output": "\"aa\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -537,8 +583,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,1]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -559,8 +607,10 @@ export const problems: Problem[] = [
     "sample_input": "root = []",
     "sample_output": "[]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -581,8 +631,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2],[3,4]]",
     "sample_output": "[[4,3],[2,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -603,8 +655,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5]",
     "sample_output": "[5,4,3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -625,8 +679,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[0,2],[3,5]]",
     "sample_output": "[[0,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -647,8 +703,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -669,8 +727,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,3,4,5]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -691,8 +751,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -713,8 +775,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,5,6,9], amount = 11",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -735,8 +799,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [2], amount = 3",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -757,8 +823,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -779,8 +847,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,8,6,2,5,4,8,3,7]",
     "sample_output": "49",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -801,8 +871,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[3,6,9],[2,5,8],[1,4,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -823,8 +895,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,3,1,2,4,5,5,6], k = 4",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -845,8 +919,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[6,9]], newInterval = [2,5]",
     "sample_output": "[[1,5],[6,9]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -867,8 +943,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,-1,-4,-2]",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -889,8 +967,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"0\"],[\"0\",\"1\",\"0\"],[\"0\",\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -911,8 +991,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -933,8 +1015,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcdef\"",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -955,8 +1039,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"pwwkew\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -977,8 +1063,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -999,8 +1087,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,2,3,3,3], k = 1",
     "sample_output": "[3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1021,8 +1111,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(3); put(1,1); put(2,2); put(3,3); get(1); put(4,4); get(2)",
     "sample_output": "[null,null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1043,8 +1135,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 10",
     "sample_output": "89",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1065,8 +1159,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,4,3,90], target = 0",
     "sample_output": "[0,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1087,8 +1183,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"([)]\"",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1109,8 +1207,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1131,8 +1231,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(1); put(2,1); get(2); put(3,2); get(2); get(3)",
     "sample_output": "[null,null,1,null,-1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1153,8 +1255,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1175,8 +1279,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,4], target = 6",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1197,8 +1303,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); put(1,10); get(1)",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1219,8 +1327,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [4,4,4,5,5,6], k = 2",
     "sample_output": "[4,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1241,8 +1351,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 6",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1263,8 +1375,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1285,8 +1399,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2], pos = -1",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1307,8 +1423,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [4,3,2,1,4]",
     "sample_output": "16",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1329,8 +1447,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"bbbbb\"",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1351,8 +1471,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1373,8 +1495,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3]",
     "sample_output": "[3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1395,8 +1519,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"()[]{}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1417,8 +1543,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"red\", endWord = \"tax\", wordList = [\"ted\",\"tex\",\"red\",\"tax\",\"tad\",\"den\",\"rex\",\"pee\"]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1439,8 +1567,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1461,8 +1591,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,3], target = 6",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1483,8 +1615,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"1\"],[\"0\",\"1\",\"0\"],[\"1\",\"0\",\"1\"]]",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1505,8 +1639,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [4,2,6,1,3,5,7]",
     "sample_output": "[1,2,3,4,5,6,7]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1527,8 +1663,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1549,8 +1687,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(3); put(1,1); put(2,2); put(3,3); get(1); put(4,4); get(2)",
     "sample_output": "[null,null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1571,8 +1711,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], left = 2, right = 4",
     "sample_output": "[1,4,3,2,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1593,8 +1735,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"cabwefgewcwaefgcf\", t = \"cae\"",
     "sample_output": "\"cwae\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1615,8 +1759,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1637,8 +1783,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(1); put(2,1); get(2); put(3,2); get(2); get(3)",
     "sample_output": "[null,null,1,null,-1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1659,8 +1807,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[()]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1681,8 +1831,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); put(1,10); get(1)",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1703,8 +1855,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [3,1,4,null,2]",
     "sample_output": "[1,2,3,4]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1725,8 +1879,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,1]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1747,8 +1903,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[5,1],[2,3]]",
     "sample_output": "[[2,5],[3,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1769,8 +1927,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"a\", t = \"aa\"",
     "sample_output": "\"\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1791,8 +1951,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,6,5,4,3,2,1], k = 3",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1813,8 +1975,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1835,8 +1999,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,10,4,3,20,15], k = 3",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1857,8 +2023,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1879,8 +2047,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1901,8 +2071,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"red\", endWord = \"tax\", wordList = [\"ted\",\"tex\",\"red\",\"tax\",\"tad\",\"den\",\"rex\",\"pee\"]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1923,8 +2095,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,-2,3,4,-1,2]",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1945,8 +2119,10 @@ export const problems: Problem[] = [
     "sample_input": "root = []",
     "sample_output": "[]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1967,8 +2143,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], k = 2",
     "sample_output": "[2,1,4,3,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -1989,8 +2167,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2011,8 +2191,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcabcbb\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2033,8 +2215,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2055,8 +2239,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5]",
     "sample_output": "[5,4,3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2077,8 +2263,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3]",
     "sample_output": "[3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2099,8 +2287,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2121,8 +2311,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,1,5,6,4], k = 2",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2143,8 +2335,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"0\"],[\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2165,8 +2359,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2187,8 +2383,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,4,3,90], target = 0",
     "sample_output": "[0,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2209,8 +2407,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[7,4,1],[8,5,2],[9,6,3]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2231,8 +2431,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"0\",\"1\",\"0\",\"1\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2253,8 +2455,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(3); put(1,1); put(2,2); put(3,3); get(1); put(4,4); get(2)",
     "sample_output": "[null,null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2275,8 +2479,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2297,8 +2503,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 5",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2319,8 +2527,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aa\", t = \"aa\"",
     "sample_output": "\"aa\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2341,8 +2551,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2],[3,4]]",
     "sample_output": "[[4,3],[2,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2363,8 +2575,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"0\"],[\"0\",\"1\",\"0\"],[\"0\",\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2385,8 +2599,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
     "sample_output": "[0,1,2,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2407,8 +2623,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"cabwefgewcwaefgcf\", t = \"cae\"",
     "sample_output": "\"cwae\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2429,8 +2647,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"([)]\"",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2451,8 +2671,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(1); put(2,1); get(2); put(3,2); get(2); get(3)",
     "sample_output": "[null,null,1,null,-1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2473,8 +2695,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "Node at index 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2495,8 +2719,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,1,2,1], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2517,8 +2743,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,4], target = 6",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2539,8 +2767,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"1\"],[\"0\",\"1\",\"0\"],[\"1\",\"0\",\"1\"]]",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2561,8 +2791,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcdef\"",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2583,8 +2815,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,3,4,5]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2605,8 +2839,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], left = 2, right = 4",
     "sample_output": "[1,4,3,2,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2627,8 +2863,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,5,6,9], amount = 11",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2649,8 +2887,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,1,1,2,2,3], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2671,8 +2911,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,2,3]",
     "sample_output": "[6,0,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2693,8 +2935,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 10",
     "sample_output": "89",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2715,8 +2959,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [2], amount = 3",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2737,8 +2983,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1], pos = 0",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2759,8 +3007,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); put(1,10); get(1)",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2781,8 +3031,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], k = 2",
     "sample_output": "[2,1,4,3,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2803,8 +3055,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2825,8 +3079,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"pwwkew\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2847,8 +3103,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,4,5]",
     "sample_output": "[60,40,30,24]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2869,8 +3127,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 6",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2891,8 +3151,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5]",
     "sample_output": "[5,4,3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2913,8 +3175,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,8,6,2,5,4,8,3,7]",
     "sample_output": "49",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2935,8 +3199,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[3,6,9],[2,5,8],[1,4,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2957,8 +3223,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -2979,8 +3247,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[5,1],[2,3]]",
     "sample_output": "[[2,5],[3,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3001,8 +3271,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 5",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3023,8 +3295,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,3], target = 6",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3045,8 +3319,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3067,8 +3343,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 3, prerequisites = [[0,1],[0,2],[1,2]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3089,8 +3367,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[4,5]]",
     "sample_output": "[[1,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3111,8 +3391,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3133,8 +3415,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,4,3,90], target = 0",
     "sample_output": "[0,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3155,8 +3439,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [4,2,6,1,3,5,7]",
     "sample_output": "[1,2,3,4,5,6,7]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3177,8 +3463,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3199,8 +3487,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"a\", t = \"aa\"",
     "sample_output": "\"\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3221,8 +3511,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[7,4,1],[8,5,2],[9,6,3]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3243,8 +3535,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2],[3,4]]",
     "sample_output": "[[4,3],[2,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3265,8 +3559,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,3,1,2,4,5,5,6], k = 4",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3287,8 +3583,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3309,8 +3607,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3331,8 +3631,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,2,3,3,3], k = 1",
     "sample_output": "[3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3353,8 +3655,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[3,6,9],[2,5,8],[1,4,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3375,8 +3679,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[0,2],[3,5]]",
     "sample_output": "[[0,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3397,8 +3703,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3419,8 +3727,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [4,3,2,1,4]",
     "sample_output": "16",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3441,8 +3751,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,5,6,9], amount = 11",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3463,8 +3775,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [3,1,4,null,2]",
     "sample_output": "[1,2,3,4]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3485,8 +3799,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 10",
     "sample_output": "89",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3507,8 +3823,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 6",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3529,8 +3847,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,4], target = 6",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3551,8 +3871,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3573,8 +3895,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"red\", endWord = \"tax\", wordList = [\"ted\",\"tex\",\"red\",\"tax\",\"tad\",\"den\",\"rex\",\"pee\"]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3595,8 +3919,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3617,8 +3943,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [4,4,4,5,5,6], k = 2",
     "sample_output": "[4,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3639,8 +3967,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3661,8 +3991,10 @@ export const problems: Problem[] = [
     "sample_input": "root = []",
     "sample_output": "[]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3683,8 +4015,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"()[]{}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3705,8 +4039,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"bbbbb\"",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3727,8 +4063,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [2], amount = 3",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3749,8 +4087,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aa\", t = \"aa\"",
     "sample_output": "\"aa\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3771,8 +4111,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3793,8 +4135,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"0\"],[\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3815,8 +4159,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3837,8 +4183,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,2,3]",
     "sample_output": "[6,0,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3859,8 +4207,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[()]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3881,8 +4231,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"cabwefgewcwaefgcf\", t = \"cae\"",
     "sample_output": "\"cwae\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3903,8 +4255,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,1,2,1], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3925,8 +4279,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3947,8 +4303,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 5",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3969,8 +4327,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(3); put(1,1); put(2,2); put(3,3); get(1); put(4,4); get(2)",
     "sample_output": "[null,null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -3991,8 +4351,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3]",
     "sample_output": "[3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4013,8 +4375,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,4,5]",
     "sample_output": "[60,40,30,24]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4035,8 +4399,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,1]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4057,8 +4423,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4079,8 +4447,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[6,9]], newInterval = [2,5]",
     "sample_output": "[[1,5],[6,9]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4101,8 +4471,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4123,8 +4495,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,3,4,5]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4145,8 +4519,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"([)]\"",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4167,8 +4543,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcabcbb\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4189,8 +4567,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"a\", t = \"aa\"",
     "sample_output": "\"\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4211,8 +4591,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4233,8 +4615,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4255,8 +4639,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,1,1,2,2,3], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4277,8 +4663,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4299,8 +4687,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,5,6,9], amount = 11",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4321,8 +4711,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], left = 2, right = 4",
     "sample_output": "[1,4,3,2,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4343,8 +4735,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], k = 2",
     "sample_output": "[2,1,4,3,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4365,8 +4759,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [5,4,-1,7,8]",
     "sample_output": "23",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4387,8 +4783,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [4,2,6,1,3,5,7]",
     "sample_output": "[1,2,3,4,5,6,7]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4409,8 +4807,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
     "sample_output": "[0,1,2,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4431,8 +4831,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"0\",\"1\",\"0\",\"1\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4453,8 +4855,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [3,1,4,null,2]",
     "sample_output": "[1,2,3,4]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4475,8 +4879,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5]",
     "sample_output": "[5,4,3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4497,8 +4903,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4519,8 +4927,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4541,8 +4951,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4563,8 +4975,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4585,8 +4999,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,3], target = 6",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4607,8 +5023,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4629,8 +5047,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"()[]{}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4651,8 +5071,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,2,3,3,3], k = 1",
     "sample_output": "[3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4673,8 +5095,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(1); put(2,1); get(2); put(3,2); get(2); get(3)",
     "sample_output": "[null,null,1,null,-1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4695,8 +5119,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); put(1,10); get(1)",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4717,8 +5143,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[()]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4739,8 +5167,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,6,5,4,3,2,1], k = 3",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4761,8 +5191,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4783,8 +5215,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2], pos = -1",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4805,8 +5239,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,10,4,3,20,15], k = 3",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4827,8 +5263,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"red\", endWord = \"tax\", wordList = [\"ted\",\"tex\",\"red\",\"tax\",\"tad\",\"den\",\"rex\",\"pee\"]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4849,8 +5287,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4871,8 +5311,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "Node at index 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4893,8 +5335,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-2,1,-3,4,-1,2,1,-5,4]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4915,8 +5359,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,-1,-4,-2]",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4937,8 +5383,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[4,5]]",
     "sample_output": "[[1,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4959,8 +5407,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[0,2],[3,5]]",
     "sample_output": "[[0,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -4981,8 +5431,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5003,8 +5455,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [2], amount = 3",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5025,8 +5479,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[6,9]], newInterval = [2,5]",
     "sample_output": "[[1,5],[6,9]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5047,8 +5503,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1], pos = 0",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5069,8 +5527,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"([)]\"",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5091,8 +5551,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,1,5,6,4], k = 2",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5113,8 +5575,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 3, prerequisites = [[0,1],[0,2],[1,2]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5135,8 +5599,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [4,4,4,5,5,6], k = 2",
     "sample_output": "[4,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5157,8 +5623,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,8,6,2,5,4,8,3,7]",
     "sample_output": "49",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5179,8 +5647,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,3,1,2,4,5,5,6], k = 4",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5201,8 +5671,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,2,3]",
     "sample_output": "[6,0,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5223,8 +5695,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcdef\"",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5245,8 +5719,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,-2,3,4,-1,2]",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5267,8 +5743,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [5,4,-1,7,8]",
     "sample_output": "23",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5289,8 +5767,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5311,8 +5791,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"pwwkew\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5333,8 +5815,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,1,2,1], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5355,8 +5839,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(3); put(1,1); put(2,2); put(3,3); get(1); put(4,4); get(2)",
     "sample_output": "[null,null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5377,8 +5863,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5399,8 +5887,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[4,5]]",
     "sample_output": "[[1,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5421,8 +5911,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3]",
     "sample_output": "[3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5443,8 +5935,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,4,3,90], target = 0",
     "sample_output": "[0,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5465,8 +5959,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5487,8 +5983,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5509,8 +6007,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[0,2],[3,5]]",
     "sample_output": "[[0,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5531,8 +6031,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 5",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5553,8 +6055,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"0\"],[\"0\",\"1\",\"0\"],[\"0\",\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5575,8 +6079,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], left = 2, right = 4",
     "sample_output": "[1,4,3,2,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5597,8 +6103,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,4], target = 6",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5619,8 +6127,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[6,9]], newInterval = [2,5]",
     "sample_output": "[[1,5],[6,9]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5641,8 +6151,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [4,3,2,1,4]",
     "sample_output": "16",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5663,8 +6175,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5685,8 +6199,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-2,1,-3,4,-1,2,1,-5,4]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5707,8 +6223,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,5,6,9], amount = 11",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5729,8 +6247,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(1); put(2,1); get(2); put(3,2); get(2); get(3)",
     "sample_output": "[null,null,1,null,-1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5751,8 +6271,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[5,1],[2,3]]",
     "sample_output": "[[2,5],[3,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5773,8 +6295,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[7,4,1],[8,5,2],[9,6,3]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5795,8 +6319,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 10",
     "sample_output": "89",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5817,8 +6343,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 6",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5839,8 +6367,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,-1,-4,-2]",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5861,8 +6391,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,6,5,4,3,2,1], k = 3",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5883,8 +6415,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,10,4,3,20,15], k = 3",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5905,8 +6439,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); put(1,10); get(1)",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5927,8 +6463,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5949,8 +6487,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5971,8 +6511,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aa\", t = \"aa\"",
     "sample_output": "\"aa\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -5993,8 +6535,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,1]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6015,8 +6559,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6037,8 +6583,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"bbbbb\"",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6059,8 +6607,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [2], amount = 3",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6081,8 +6631,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2],[3,4]]",
     "sample_output": "[[4,3],[2,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6103,8 +6655,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6125,8 +6679,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6147,8 +6703,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,3], target = 6",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6169,8 +6727,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6191,8 +6751,10 @@ export const problems: Problem[] = [
     "sample_input": "root = []",
     "sample_output": "[]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6213,8 +6775,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"red\", endWord = \"tax\", wordList = [\"ted\",\"tex\",\"red\",\"tax\",\"tad\",\"den\",\"rex\",\"pee\"]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6235,8 +6799,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcabcbb\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6257,8 +6823,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], k = 2",
     "sample_output": "[2,1,4,3,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6279,8 +6847,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2], pos = -1",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6301,8 +6871,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6323,8 +6895,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[3,6,9],[2,5,8],[1,4,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6345,8 +6919,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "Node at index 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6367,8 +6943,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 10",
     "sample_output": "89",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6389,8 +6967,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,1,1,2,2,3], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6411,8 +6991,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6433,8 +7015,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6455,8 +7039,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1], pos = 0",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6477,8 +7063,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6499,8 +7087,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5]",
     "sample_output": "[5,4,3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6521,8 +7111,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [4,2,6,1,3,5,7]",
     "sample_output": "[1,2,3,4,5,6,7]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6543,8 +7135,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6565,8 +7159,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,-2,3,4,-1,2]",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6587,8 +7183,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 6",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6609,8 +7207,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,4,5]",
     "sample_output": "[60,40,30,24]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6631,8 +7231,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6653,8 +7255,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6675,8 +7279,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,1,5,6,4], k = 2",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6697,8 +7303,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,4,3,90], target = 0",
     "sample_output": "[0,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6719,8 +7327,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[5,1],[2,3]]",
     "sample_output": "[[2,5],[3,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6741,8 +7351,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[4,5]]",
     "sample_output": "[[1,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6763,8 +7375,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6785,8 +7399,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3]",
     "sample_output": "[3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6807,8 +7423,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6829,8 +7447,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,3,4,5]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6851,8 +7471,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"()[]{}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6873,8 +7495,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2], pos = -1",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6895,8 +7519,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[0,2],[3,5]]",
     "sample_output": "[[0,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6917,8 +7543,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[6,9]], newInterval = [2,5]",
     "sample_output": "[[1,5],[6,9]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6939,8 +7567,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
     "sample_output": "[0,1,2,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6961,8 +7591,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcdef\"",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -6983,8 +7615,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 10",
     "sample_output": "89",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7005,8 +7639,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 5",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7027,8 +7663,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"1\"],[\"0\",\"1\",\"0\"],[\"1\",\"0\",\"1\"]]",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7049,8 +7687,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"cabwefgewcwaefgcf\", t = \"cae\"",
     "sample_output": "\"cwae\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7071,8 +7711,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,4], target = 6",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7093,8 +7735,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], left = 2, right = 4",
     "sample_output": "[1,4,3,2,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7115,8 +7759,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,2,3,3,3], k = 1",
     "sample_output": "[3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7137,8 +7783,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], k = 2",
     "sample_output": "[2,1,4,3,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7159,8 +7807,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[()]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7181,8 +7831,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"([)]\"",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7203,8 +7855,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 6",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7225,8 +7879,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"pwwkew\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7247,8 +7903,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(3); put(1,1); put(2,2); put(3,3); get(1); put(4,4); get(2)",
     "sample_output": "[null,null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7269,8 +7927,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 3, prerequisites = [[0,1],[0,2],[1,2]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7291,8 +7951,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7313,8 +7975,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7335,8 +7999,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,3], target = 6",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7357,8 +8023,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "Node at index 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7379,8 +8047,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [4,4,4,5,5,6], k = 2",
     "sample_output": "[4,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7401,8 +8071,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"0\"],[\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7423,8 +8095,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1], pos = 0",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7445,8 +8119,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,3,1,2,4,5,5,6], k = 4",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7467,8 +8143,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7489,8 +8167,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,6,5,4,3,2,1], k = 3",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7511,8 +8191,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,1,2,1], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7533,8 +8215,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7555,8 +8239,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7577,8 +8263,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"bbbbb\"",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7599,8 +8287,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,10,4,3,20,15], k = 3",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7621,8 +8311,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(1); put(2,1); get(2); put(3,2); get(2); get(3)",
     "sample_output": "[null,null,1,null,-1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7643,8 +8335,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,8,6,2,5,4,8,3,7]",
     "sample_output": "49",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7665,8 +8359,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2], pos = -1",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7687,8 +8383,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"()[]{}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7709,8 +8407,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7731,8 +8431,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[()]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7753,8 +8455,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"a\", t = \"aa\"",
     "sample_output": "\"\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7775,8 +8479,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcabcbb\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7797,8 +8503,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "Node at index 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7819,8 +8527,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [3,1,4,null,2]",
     "sample_output": "[1,2,3,4]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7841,8 +8551,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7863,8 +8575,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"red\", endWord = \"tax\", wordList = [\"ted\",\"tex\",\"red\",\"tax\",\"tad\",\"den\",\"rex\",\"pee\"]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7885,8 +8599,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"([)]\"",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7907,8 +8623,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1], pos = 0",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7929,8 +8647,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,2,3]",
     "sample_output": "[6,0,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7951,8 +8671,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,5,6,9], amount = 11",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7973,8 +8695,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [2], amount = 3",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -7995,8 +8719,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [4,3,2,1,4]",
     "sample_output": "16",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8017,8 +8743,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8039,8 +8767,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"0\",\"1\",\"0\",\"1\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8061,8 +8791,10 @@ export const problems: Problem[] = [
     "sample_input": "root = []",
     "sample_output": "[]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8083,8 +8815,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8105,8 +8839,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,4,5]",
     "sample_output": "[60,40,30,24]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8127,8 +8863,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8149,8 +8887,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8171,8 +8911,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[7,4,1],[8,5,2],[9,6,3]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8193,8 +8935,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2], pos = -1",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8215,8 +8959,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); put(1,10); get(1)",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8237,8 +8983,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5]",
     "sample_output": "[5,4,3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8259,8 +9007,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8281,8 +9031,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 5",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8303,8 +9055,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8325,8 +9079,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8347,8 +9103,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8369,8 +9127,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aa\", t = \"aa\"",
     "sample_output": "\"aa\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8391,8 +9151,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8413,8 +9175,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,2,3]",
     "sample_output": "[6,0,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8435,8 +9199,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8457,8 +9223,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "Node at index 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8479,8 +9247,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,5,6,9], amount = 11",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8501,8 +9271,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8523,8 +9295,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcdef\"",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8545,8 +9319,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"0\"],[\"0\",\"1\",\"0\"],[\"0\",\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8567,8 +9343,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,1,1,2,2,3], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8589,8 +9367,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8611,8 +9391,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(3); put(1,1); put(2,2); put(3,3); get(1); put(4,4); get(2)",
     "sample_output": "[null,null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8633,8 +9415,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"1\"],[\"0\",\"1\",\"0\"],[\"1\",\"0\",\"1\"]]",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8655,8 +9439,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1], pos = 0",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8677,8 +9463,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
     "sample_output": "[0,1,2,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8699,8 +9487,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"0\"],[\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8721,8 +9511,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 3, prerequisites = [[0,1],[0,2],[1,2]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8743,8 +9535,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(1); put(2,1); get(2); put(3,2); get(2); get(3)",
     "sample_output": "[null,null,1,null,-1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8765,8 +9559,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [2], amount = 3",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8787,8 +9583,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,1,5,6,4], k = 2",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8809,8 +9607,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2],[3,4]]",
     "sample_output": "[[4,3],[2,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8831,8 +9631,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3]",
     "sample_output": "[3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8853,8 +9655,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"cabwefgewcwaefgcf\", t = \"cae\"",
     "sample_output": "\"cwae\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8875,8 +9679,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8897,8 +9703,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"a\", t = \"aa\"",
     "sample_output": "\"\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8919,8 +9727,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"()[]{}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8941,8 +9751,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[3,6,9],[2,5,8],[1,4,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8963,8 +9775,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,4,3,90], target = 0",
     "sample_output": "[0,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -8985,8 +9799,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,1]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9007,8 +9823,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"pwwkew\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9029,8 +9847,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,3,1,2,4,5,5,6], k = 4",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9051,8 +9871,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[()]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9073,8 +9895,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"red\", endWord = \"tax\", wordList = [\"ted\",\"tex\",\"red\",\"tax\",\"tad\",\"den\",\"rex\",\"pee\"]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9095,8 +9919,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"0\",\"1\",\"0\",\"1\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9117,8 +9943,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9139,8 +9967,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9161,8 +9991,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9183,8 +10015,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); put(1,10); get(1)",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9205,8 +10039,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[5,1],[2,3]]",
     "sample_output": "[[2,5],[3,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9227,8 +10063,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"bbbbb\"",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9249,8 +10087,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[7,4,1],[8,5,2],[9,6,3]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9271,8 +10111,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9293,8 +10135,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,2,3,3,3], k = 1",
     "sample_output": "[3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9315,8 +10159,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9337,8 +10183,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aa\", t = \"aa\"",
     "sample_output": "\"aa\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9359,8 +10207,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [4,4,4,5,5,6], k = 2",
     "sample_output": "[4,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9381,8 +10231,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9403,8 +10255,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2],[3,4]]",
     "sample_output": "[[4,3],[2,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9425,8 +10279,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9447,8 +10303,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,3,4,5]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9469,8 +10327,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 10",
     "sample_output": "89",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9491,8 +10351,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"cabwefgewcwaefgcf\", t = \"cae\"",
     "sample_output": "\"cwae\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9513,8 +10375,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9535,8 +10399,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[3,6,9],[2,5,8],[1,4,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9557,8 +10423,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"0\"],[\"0\",\"1\",\"0\"],[\"0\",\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9579,8 +10447,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2], pos = -1",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9601,8 +10471,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"a\", t = \"aa\"",
     "sample_output": "\"\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9623,8 +10495,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9645,8 +10519,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [4,2,6,1,3,5,7]",
     "sample_output": "[1,2,3,4,5,6,7]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9667,8 +10543,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,6,5,4,3,2,1], k = 3",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9689,8 +10567,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
     "sample_output": "[0,1,2,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9711,8 +10591,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 3, prerequisites = [[0,1],[0,2],[1,2]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9733,8 +10615,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9755,8 +10639,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,4], target = 6",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9777,8 +10663,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"red\", endWord = \"tax\", wordList = [\"ted\",\"tex\",\"red\",\"tax\",\"tad\",\"den\",\"rex\",\"pee\"]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9799,8 +10687,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 6",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9821,8 +10711,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "Node at index 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9843,8 +10735,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[5,1],[2,3]]",
     "sample_output": "[[2,5],[3,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9865,8 +10759,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9887,8 +10783,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1], pos = 0",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9909,8 +10807,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], left = 2, right = 4",
     "sample_output": "[1,4,3,2,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9931,8 +10831,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9953,8 +10855,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9975,8 +10879,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,8,6,2,5,4,8,3,7]",
     "sample_output": "49",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -9997,8 +10903,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [5,4,-1,7,8]",
     "sample_output": "23",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10019,8 +10927,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10041,8 +10951,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"1\"],[\"0\",\"1\",\"0\"],[\"1\",\"0\",\"1\"]]",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10063,8 +10975,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-2,1,-3,4,-1,2,1,-5,4]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10085,8 +10999,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,4,5]",
     "sample_output": "[60,40,30,24]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10107,8 +11023,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [3,1,4,null,2]",
     "sample_output": "[1,2,3,4]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10129,8 +11047,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
     "sample_output": "[0,1,2,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10151,8 +11071,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10173,8 +11095,10 @@ export const problems: Problem[] = [
     "sample_input": "root = []",
     "sample_output": "[]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10195,8 +11119,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10217,8 +11143,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10239,8 +11167,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10261,8 +11191,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10283,8 +11215,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(3); put(1,1); put(2,2); put(3,3); get(1); put(4,4); get(2)",
     "sample_output": "[null,null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10305,8 +11239,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 5",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10327,8 +11263,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,10,4,3,20,15], k = 3",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10349,8 +11287,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 10",
     "sample_output": "89",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10371,8 +11311,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,1,5,6,4], k = 2",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10393,8 +11335,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10415,8 +11359,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 3, prerequisites = [[0,1],[0,2],[1,2]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10437,8 +11383,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,1,2,1], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10459,8 +11407,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcabcbb\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10481,8 +11431,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcdef\"",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10503,8 +11455,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(1); put(2,1); get(2); put(3,2); get(2); get(3)",
     "sample_output": "[null,null,1,null,-1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10525,8 +11479,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,-1,-4,-2]",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10547,8 +11503,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 6",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10569,8 +11527,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,2,3]",
     "sample_output": "[6,0,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10591,8 +11551,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); put(1,10); get(1)",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10613,8 +11575,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,1,1,2,2,3], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10635,8 +11599,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10657,8 +11623,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10679,8 +11647,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10701,8 +11671,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[4,5]]",
     "sample_output": "[[1,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10723,8 +11695,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10745,8 +11719,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,4,5]",
     "sample_output": "[60,40,30,24]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10767,8 +11743,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,2,3,3,3], k = 1",
     "sample_output": "[3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10789,8 +11767,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [4,4,4,5,5,6], k = 2",
     "sample_output": "[4,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10811,8 +11791,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10833,8 +11815,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,1,2,1], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10855,8 +11839,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,-2,3,4,-1,2]",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10877,8 +11863,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,1,1,2,2,3], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10899,8 +11887,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10921,8 +11911,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(3); put(1,1); put(2,2); put(3,3); get(1); put(4,4); get(2)",
     "sample_output": "[null,null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10943,8 +11935,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[7,4,1],[8,5,2],[9,6,3]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10965,8 +11959,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [4,2,6,1,3,5,7]",
     "sample_output": "[1,2,3,4,5,6,7]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -10987,8 +11983,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11009,8 +12007,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,2,3,3,3], k = 1",
     "sample_output": "[3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11031,8 +12031,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2], pos = -1",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11053,8 +12055,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11075,8 +12079,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,5,6,9], amount = 11",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11097,8 +12103,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11119,8 +12127,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11141,8 +12151,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aa\", t = \"aa\"",
     "sample_output": "\"aa\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11163,8 +12175,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 10",
     "sample_output": "89",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11185,8 +12199,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [3,1,4,null,2]",
     "sample_output": "[1,2,3,4]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11207,8 +12223,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[0,2],[3,5]]",
     "sample_output": "[[0,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11229,8 +12247,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,3], target = 6",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11251,8 +12271,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"([)]\"",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11273,8 +12295,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [5,4,-1,7,8]",
     "sample_output": "23",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11295,8 +12319,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2],[3,4]]",
     "sample_output": "[[4,3],[2,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11317,8 +12343,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 6",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11339,8 +12367,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11361,8 +12391,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
     "sample_output": "[0,1,2,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11383,8 +12415,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11405,8 +12439,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,2,3]",
     "sample_output": "[6,0,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11427,8 +12463,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-2,1,-3,4,-1,2,1,-5,4]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11449,8 +12487,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(1); put(2,1); get(2); put(3,2); get(2); get(3)",
     "sample_output": "[null,null,1,null,-1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11471,8 +12511,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [4,4,4,5,5,6], k = 2",
     "sample_output": "[4,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11493,8 +12535,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[3,6,9],[2,5,8],[1,4,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11515,8 +12559,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "Node at index 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11537,8 +12583,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], k = 2",
     "sample_output": "[2,1,4,3,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11559,8 +12607,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"()[]{}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11581,8 +12631,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1], pos = 0",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11603,8 +12655,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[5,1],[2,3]]",
     "sample_output": "[[2,5],[3,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11625,8 +12679,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[7,4,1],[8,5,2],[9,6,3]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11647,8 +12703,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [2], amount = 3",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11669,8 +12727,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); put(1,10); get(1)",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11691,8 +12751,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"0\"],[\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11713,8 +12775,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,4,5]",
     "sample_output": "[60,40,30,24]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11735,8 +12799,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [4,3,2,1,4]",
     "sample_output": "16",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11757,8 +12823,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,3,1,2,4,5,5,6], k = 4",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11779,8 +12847,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[()]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11801,8 +12871,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11823,8 +12895,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"pwwkew\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11845,8 +12919,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11867,8 +12943,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"([)]\"",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11889,8 +12967,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11911,8 +12991,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,1]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11933,8 +13015,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"cabwefgewcwaefgcf\", t = \"cae\"",
     "sample_output": "\"cwae\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11955,8 +13039,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11977,8 +13063,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"bbbbb\"",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -11999,8 +13087,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 10",
     "sample_output": "89",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12021,8 +13111,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,3,4,5]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12043,8 +13135,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[6,9]], newInterval = [2,5]",
     "sample_output": "[[1,5],[6,9]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12065,8 +13159,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12087,8 +13183,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcabcbb\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12109,8 +13207,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,-1,-4,-2]",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12131,8 +13231,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"a\", t = \"aa\"",
     "sample_output": "\"\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12153,8 +13255,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(3); put(1,1); put(2,2); put(3,3); get(1); put(4,4); get(2)",
     "sample_output": "[null,null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12175,8 +13279,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12197,8 +13303,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"0\",\"1\",\"0\",\"1\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12219,8 +13327,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12241,8 +13351,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 3, prerequisites = [[0,1],[0,2],[1,2]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12263,8 +13375,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12285,8 +13399,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,6,5,4,3,2,1], k = 3",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12307,8 +13423,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"()[]{}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12329,8 +13447,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12351,8 +13471,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcdef\"",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12373,8 +13495,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12395,8 +13519,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,2,3]",
     "sample_output": "[6,0,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12417,8 +13543,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,8,6,2,5,4,8,3,7]",
     "sample_output": "49",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12439,8 +13567,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,4,5]",
     "sample_output": "[60,40,30,24]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12461,8 +13591,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[()]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12483,8 +13615,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12505,8 +13639,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"pwwkew\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12527,8 +13663,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5]",
     "sample_output": "[5,4,3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12549,8 +13687,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,1,2,1], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12571,8 +13711,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12593,8 +13735,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"red\", endWord = \"tax\", wordList = [\"ted\",\"tex\",\"red\",\"tax\",\"tad\",\"den\",\"rex\",\"pee\"]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12615,8 +13759,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,1,1,2,2,3], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12637,8 +13783,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12659,8 +13807,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12681,8 +13831,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 6",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12703,8 +13855,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"bbbbb\"",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12725,8 +13879,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,2,3,3,3], k = 1",
     "sample_output": "[3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12747,8 +13903,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12769,8 +13927,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2],[3,4]]",
     "sample_output": "[[4,3],[2,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12791,8 +13951,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[3,6,9],[2,5,8],[1,4,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12813,8 +13975,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12835,8 +13999,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,4,3,90], target = 0",
     "sample_output": "[0,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12857,8 +14023,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
     "sample_output": "[0,1,2,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12879,8 +14047,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 3, prerequisites = [[0,1],[0,2],[1,2]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12901,8 +14071,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,2,3]",
     "sample_output": "[6,0,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12923,8 +14095,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12945,8 +14119,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,-2,3,4,-1,2]",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12967,8 +14143,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -12989,8 +14167,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2], pos = -1",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13011,8 +14191,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13033,8 +14215,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,10,4,3,20,15], k = 3",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13055,8 +14239,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13077,8 +14263,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aa\", t = \"aa\"",
     "sample_output": "\"aa\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13099,8 +14287,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[4,5]]",
     "sample_output": "[[1,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13121,8 +14311,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
     "sample_output": "[0,1,2,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13143,8 +14335,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3]",
     "sample_output": "[3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13165,8 +14359,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], left = 2, right = 4",
     "sample_output": "[1,4,3,2,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13187,8 +14383,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"cabwefgewcwaefgcf\", t = \"cae\"",
     "sample_output": "\"cwae\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13209,8 +14407,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], k = 2",
     "sample_output": "[2,1,4,3,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13231,8 +14431,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcabcbb\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13253,8 +14455,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [4,4,4,5,5,6], k = 2",
     "sample_output": "[4,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13275,8 +14479,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "Node at index 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13297,8 +14503,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,4], target = 6",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13319,8 +14527,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5]",
     "sample_output": "[5,4,3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13341,8 +14551,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[0,2],[3,5]]",
     "sample_output": "[[0,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13363,8 +14575,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 3, prerequisites = [[0,1],[0,2],[1,2]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13385,8 +14599,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,4,5]",
     "sample_output": "[60,40,30,24]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13407,8 +14623,10 @@ export const problems: Problem[] = [
     "sample_input": "root = []",
     "sample_output": "[]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13429,8 +14647,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13451,8 +14671,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [4,3,2,1,4]",
     "sample_output": "16",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13473,8 +14695,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"a\", t = \"aa\"",
     "sample_output": "\"\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13495,8 +14719,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13517,8 +14743,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1], pos = 0",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13539,8 +14767,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"red\", endWord = \"tax\", wordList = [\"ted\",\"tex\",\"red\",\"tax\",\"tad\",\"den\",\"rex\",\"pee\"]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13561,8 +14791,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13583,8 +14815,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aa\", t = \"aa\"",
     "sample_output": "\"aa\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13605,8 +14839,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(1); put(2,1); get(2); put(3,2); get(2); get(3)",
     "sample_output": "[null,null,1,null,-1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13627,8 +14863,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"0\"],[\"0\",\"1\",\"0\"],[\"0\",\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13649,8 +14887,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13671,8 +14911,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); put(1,10); get(1)",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13693,8 +14935,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcdef\"",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13715,8 +14959,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13737,8 +14983,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,3], target = 6",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13759,8 +15007,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[5,1],[2,3]]",
     "sample_output": "[[2,5],[3,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13781,8 +15031,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"([)]\"",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13803,8 +15055,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[7,4,1],[8,5,2],[9,6,3]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13825,8 +15079,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[6,9]], newInterval = [2,5]",
     "sample_output": "[[1,5],[6,9]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13847,8 +15103,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13869,8 +15127,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13891,8 +15151,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13913,8 +15175,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,2,3]",
     "sample_output": "[6,0,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13935,8 +15199,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3]",
     "sample_output": "[3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13957,8 +15223,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"()[]{}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -13979,8 +15247,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,1,5,6,4], k = 2",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14001,8 +15271,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14023,8 +15295,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14045,8 +15319,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], left = 2, right = 4",
     "sample_output": "[1,4,3,2,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14067,8 +15343,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2],[3,4]]",
     "sample_output": "[[4,3],[2,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14089,8 +15367,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14111,8 +15391,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [4,2,6,1,3,5,7]",
     "sample_output": "[1,2,3,4,5,6,7]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14133,8 +15415,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,1]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14155,8 +15439,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2], pos = -1",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14177,8 +15463,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[3,6,9],[2,5,8],[1,4,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14199,8 +15487,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"cabwefgewcwaefgcf\", t = \"cae\"",
     "sample_output": "\"cwae\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14221,8 +15511,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [3,1,4,null,2]",
     "sample_output": "[1,2,3,4]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14243,8 +15535,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[()]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14265,8 +15559,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"([)]\"",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14287,8 +15583,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,4,3,90], target = 0",
     "sample_output": "[0,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14309,8 +15607,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,1,2,1], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14331,8 +15631,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"red\", endWord = \"tax\", wordList = [\"ted\",\"tex\",\"red\",\"tax\",\"tad\",\"den\",\"rex\",\"pee\"]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14353,8 +15655,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14375,8 +15679,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14397,8 +15703,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,4,5]",
     "sample_output": "[60,40,30,24]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14419,8 +15727,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,3,1,2,4,5,5,6], k = 4",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14441,8 +15751,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,1,1,2,2,3], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14463,8 +15775,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14485,8 +15799,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 5",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14507,8 +15823,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14529,8 +15847,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14551,8 +15871,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
     "sample_output": "[0,1,2,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14573,8 +15895,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"a\", t = \"aa\"",
     "sample_output": "\"\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14595,8 +15919,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14617,8 +15943,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,3,4,5]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14639,8 +15967,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14661,8 +15991,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"1\"],[\"0\",\"1\",\"0\"],[\"1\",\"0\",\"1\"]]",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14683,8 +16015,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"0\"],[\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14705,8 +16039,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aa\", t = \"aa\"",
     "sample_output": "\"aa\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14727,8 +16063,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"0\",\"1\",\"0\",\"1\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14749,8 +16087,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[5,1],[2,3]]",
     "sample_output": "[[2,5],[3,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14771,8 +16111,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"0\"],[\"0\",\"1\",\"0\"],[\"0\",\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14793,8 +16135,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"pwwkew\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14815,8 +16159,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[7,4,1],[8,5,2],[9,6,3]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14837,8 +16183,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14859,8 +16207,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"bbbbb\"",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14881,8 +16231,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[4,5]]",
     "sample_output": "[[1,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14903,8 +16255,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,5,6,9], amount = 11",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14925,8 +16279,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [5,4,-1,7,8]",
     "sample_output": "23",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14947,8 +16303,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(3); put(1,1); put(2,2); put(3,3); get(1); put(4,4); get(2)",
     "sample_output": "[null,null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14969,8 +16327,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 10",
     "sample_output": "89",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -14991,8 +16351,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,8,6,2,5,4,8,3,7]",
     "sample_output": "49",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15013,8 +16375,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2],[3,4]]",
     "sample_output": "[[4,3],[2,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15035,8 +16399,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], k = 2",
     "sample_output": "[2,1,4,3,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15057,8 +16423,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[0,2],[3,5]]",
     "sample_output": "[[0,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15079,8 +16447,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15101,8 +16471,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "Node at index 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15123,8 +16495,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1], pos = 0",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15145,8 +16519,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-2,1,-3,4,-1,2,1,-5,4]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15167,8 +16543,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15189,8 +16567,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [4,3,2,1,4]",
     "sample_output": "16",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15211,8 +16591,10 @@ export const problems: Problem[] = [
     "sample_input": "root = []",
     "sample_output": "[]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15233,8 +16615,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,1]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15255,8 +16639,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"cabwefgewcwaefgcf\", t = \"cae\"",
     "sample_output": "\"cwae\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15277,8 +16663,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcabcbb\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15299,8 +16687,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15321,8 +16711,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,4], target = 6",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15343,8 +16735,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[3,6,9],[2,5,8],[1,4,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15365,8 +16759,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15387,8 +16783,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,3,4,5]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15409,8 +16807,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,-1,-4,-2]",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15431,8 +16831,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15453,8 +16855,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[5,1],[2,3]]",
     "sample_output": "[[2,5],[3,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15475,8 +16879,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,8,6,2,5,4,8,3,7]",
     "sample_output": "49",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15497,8 +16903,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,3], target = 6",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15519,8 +16927,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [4,2,6,1,3,5,7]",
     "sample_output": "[1,2,3,4,5,6,7]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15541,8 +16951,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,-2,3,4,-1,2]",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15563,8 +16975,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2], pos = -1",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15585,8 +16999,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "Node at index 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15607,8 +17023,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 3, prerequisites = [[0,1],[0,2],[1,2]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15629,8 +17047,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,7,11,15], target = 9",
     "sample_output": "[0,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15651,8 +17071,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [3,1,4,null,2]",
     "sample_output": "[1,2,3,4]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15673,8 +17095,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"a\", t = \"aa\"",
     "sample_output": "\"\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15695,8 +17119,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,2,3,3,3], k = 1",
     "sample_output": "[3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15717,8 +17143,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,2,3]",
     "sample_output": "[6,0,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15739,8 +17167,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1], pos = 0",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15761,8 +17191,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [2], amount = 3",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15783,8 +17215,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,6,5,4,3,2,1], k = 3",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15805,8 +17239,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(1); put(2,1); get(2); put(3,2); get(2); get(3)",
     "sample_output": "[null,null,1,null,-1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15827,8 +17263,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15849,8 +17287,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"()[]{}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15871,8 +17311,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[()]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15893,8 +17335,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[6,9]], newInterval = [2,5]",
     "sample_output": "[[1,5],[6,9]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15915,8 +17359,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [4,4,4,5,5,6], k = 2",
     "sample_output": "[4,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15937,8 +17383,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5]",
     "sample_output": "[5,4,3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15959,8 +17407,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -15981,8 +17431,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16003,8 +17455,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcdef\"",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16025,8 +17479,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"([)]\"",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16047,8 +17503,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16069,8 +17527,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,4,5]",
     "sample_output": "[60,40,30,24]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16091,8 +17551,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,1,2,1], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16113,8 +17575,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"1\",\"1\"],[\"0\",\"1\",\"0\"],[\"1\",\"0\",\"1\"]]",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16135,8 +17599,10 @@ export const problems: Problem[] = [
     "sample_input": "root = []",
     "sample_output": "[]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16157,8 +17623,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 5",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16179,8 +17647,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,5,6,9], amount = 11",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16201,8 +17671,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[7,4,1],[8,5,2],[9,6,3]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16223,8 +17695,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3]",
     "sample_output": "[3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16245,8 +17719,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16267,8 +17743,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"red\", endWord = \"tax\", wordList = [\"ted\",\"tex\",\"red\",\"tax\",\"tad\",\"den\",\"rex\",\"pee\"]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16289,8 +17767,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,4]",
     "sample_output": "[24,12,8,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16311,8 +17791,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], left = 2, right = 4",
     "sample_output": "[1,4,3,2,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16333,8 +17815,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,1,1,2,2,3], k = 2",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16355,8 +17839,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [4,3,2,1,4]",
     "sample_output": "16",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16377,8 +17863,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16399,8 +17887,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,1]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16421,8 +17911,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); put(1,10); get(1)",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16443,8 +17935,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aa\", t = \"aa\"",
     "sample_output": "\"aa\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16465,8 +17959,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [5,4,-1,7,8]",
     "sample_output": "23",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16487,8 +17983,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16509,8 +18007,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(3); put(1,1); put(2,2); put(3,3); get(1); put(4,4); get(2)",
     "sample_output": "[null,null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16531,8 +18031,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"cabwefgewcwaefgcf\", t = \"cae\"",
     "sample_output": "\"cwae\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16553,8 +18055,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-2,1,-3,4,-1,2,1,-5,4]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16575,8 +18079,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [4,2,6,1,3,5,7]",
     "sample_output": "[1,2,3,4,5,6,7]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16597,8 +18103,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16619,8 +18127,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2],[3,4]]",
     "sample_output": "[[4,3],[2,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16641,8 +18151,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(1); put(2,1); get(2); put(3,2); get(2); get(3)",
     "sample_output": "[null,null,1,null,-1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16663,8 +18175,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,-1,-4,-2]",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16685,8 +18199,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 6",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16707,8 +18223,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16729,8 +18247,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,3,4,5]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16751,8 +18271,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,-2,3,4,-1,2]",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16773,8 +18295,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"{[]}\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16795,8 +18319,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16817,8 +18343,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [5,4,-1,7,8]",
     "sample_output": "23",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16839,8 +18367,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
     "sample_output": "[[1,6],[8,10],[15,18]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16861,8 +18391,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[4,5]]",
     "sample_output": "[[1,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16883,8 +18415,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,10,4,3,20,15], k = 3",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16905,8 +18439,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-2,1,-3,4,-1,2,1,-5,4]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16927,8 +18463,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"pwwkew\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16949,8 +18487,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0]]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16971,8 +18511,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,8,6,2,5,4,8,3,7]",
     "sample_output": "49",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -16993,8 +18535,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"a\", t = \"aa\"",
     "sample_output": "\"\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17015,8 +18559,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [4,3,2,1,4]",
     "sample_output": "16",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17037,8 +18583,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17059,8 +18607,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17081,8 +18631,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
     "sample_output": "[[3,6,9],[2,5,8],[1,4,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17103,8 +18655,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [2], amount = 3",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17125,8 +18679,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,2,3,3,3], k = 1",
     "sample_output": "[3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17147,8 +18703,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [3,1,4,null,2]",
     "sample_output": "[1,2,3,4]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17169,8 +18727,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,4],[0,2],[3,5]]",
     "sample_output": "[[0,5]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17191,8 +18751,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17213,8 +18775,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aa\", t = \"aa\"",
     "sample_output": "\"aa\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17235,8 +18799,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); put(1,10); get(1)",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17257,8 +18823,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "[null,null,null,1,null,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17279,8 +18847,10 @@ export const problems: Problem[] = [
     "sample_input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
     "sample_output": "[0,1,2,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17301,8 +18871,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[5,1],[2,3]]",
     "sample_output": "[[2,5],[3,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17323,8 +18895,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 10",
     "sample_output": "89",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17345,8 +18919,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [1,2,1]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17367,8 +18943,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"1\",\"0\"],[\"0\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17389,8 +18967,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,2,3]",
     "sample_output": "[6,0,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17411,8 +18991,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"bbbbb\"",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17433,8 +19015,10 @@ export const problems: Problem[] = [
     "sample_input": "beginWord = \"abc\", endWord = \"abd\", wordList = [\"abd\",\"acd\"]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17455,8 +19039,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"cabwefgewcwaefgcf\", t = \"cae\"",
     "sample_output": "\"cwae\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17477,8 +19063,10 @@ export const problems: Problem[] = [
     "sample_input": "coins = [1,2,5], amount = 11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17499,8 +19087,10 @@ export const problems: Problem[] = [
     "sample_input": "root = []",
     "sample_output": "[]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17521,8 +19111,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5], k = 2",
     "sample_output": "[2,1,4,3,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17543,8 +19135,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"abcabcbb\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17565,8 +19159,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,4,5]",
     "sample_output": "[60,40,30,24]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17587,8 +19183,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [4,4,4,5,5,6], k = 2",
     "sample_output": "[4,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17609,8 +19207,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2], pos = -1",
     "sample_output": "false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17631,8 +19231,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "*\r\n**\r\n***\r\n****\r\n*****",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17653,8 +19255,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "*********\r\n *******\r\n  *****\r\n   ***\r\n    *",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17675,8 +19279,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 4",
     "sample_output": "   *\r\n  ***\r\n *****\r\n*******\r\n *****\r\n  ***\r\n   *",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17697,8 +19303,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "1\r\n2 3\r\n4 5 6\r\n7 8 9 10\r\n11 12 13 14 15",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17719,8 +19327,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "    1\r\n   1 1\r\n  1 2 1\r\n 1 3 3 1\r\n1 4 6 4 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17741,8 +19351,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 17",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17763,8 +19375,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 153",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17785,8 +19399,10 @@ export const problems: Problem[] = [
     "sample_input": "x = 121",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17807,8 +19423,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 7",
     "sample_output": "0 1 1 2 3 5 8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17829,8 +19447,10 @@ export const problems: Problem[] = [
     "sample_input": "n=5",
     "sample_output": "120",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17851,8 +19471,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,4,3,90], target = 0",
     "sample_output": "[0,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17873,8 +19495,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,3,4,5]",
     "sample_output": "[5,4,3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17895,8 +19519,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-3,-1,-4,-2]",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17917,8 +19543,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,null,2,3]",
     "sample_output": "[1,3,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17939,8 +19567,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[\"0\",\"1\",\"0\",\"1\",\"1\"]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17961,8 +19591,10 @@ export const problems: Problem[] = [
     "sample_input": "36 48",
     "sample_output": "12",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -17983,8 +19615,10 @@ export const problems: Problem[] = [
     "sample_input": "12 18",
     "sample_output": "36",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18005,8 +19639,10 @@ export const problems: Problem[] = [
     "sample_input": "17",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18027,8 +19663,10 @@ export const problems: Problem[] = [
     "sample_input": "1234",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18049,8 +19687,10 @@ export const problems: Problem[] = [
     "sample_input": "12345",
     "sample_output": "54321",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18071,8 +19711,10 @@ export const problems: Problem[] = [
     "sample_input": "987654",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18093,8 +19735,10 @@ export const problems: Problem[] = [
     "sample_input": "16",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18115,8 +19759,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "120",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18137,8 +19783,10 @@ export const problems: Problem[] = [
     "sample_input": "7",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18159,8 +19807,10 @@ export const problems: Problem[] = [
     "sample_input": "153",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18181,8 +19831,10 @@ export const problems: Problem[] = [
     "sample_input": "28",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18203,8 +19855,10 @@ export const problems: Problem[] = [
     "sample_input": "121",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18225,8 +19879,10 @@ export const problems: Problem[] = [
     "sample_input": "4\\n12 18 24 36",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18247,8 +19903,10 @@ export const problems: Problem[] = [
     "sample_input": "3\\n4 6 8",
     "sample_output": "24",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18269,8 +19927,10 @@ export const problems: Problem[] = [
     "sample_input": "20",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18291,8 +19951,10 @@ export const problems: Problem[] = [
     "sample_input": "5",
     "sample_output": "11",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18313,8 +19975,10 @@ export const problems: Problem[] = [
     "sample_input": "10",
     "sample_output": "17",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18335,8 +19999,10 @@ export const problems: Problem[] = [
     "sample_input": "9875",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18357,8 +20023,10 @@ export const problems: Problem[] = [
     "sample_input": "36",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18379,8 +20047,10 @@ export const problems: Problem[] = [
     "sample_input": "12",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18401,8 +20071,10 @@ export const problems: Problem[] = [
     "sample_input": "25 200",
     "sample_output": "12",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18423,8 +20095,10 @@ export const problems: Problem[] = [
     "sample_input": "80 100",
     "sample_output": "25",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18445,8 +20119,10 @@ export const problems: Problem[] = [
     "sample_input": "100 80",
     "sample_output": "20",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18467,8 +20143,10 @@ export const problems: Problem[] = [
     "sample_input": "200 25",
     "sample_output": "250",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18489,8 +20167,10 @@ export const problems: Problem[] = [
     "sample_input": "200 25",
     "sample_output": "150",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18511,8 +20191,10 @@ export const problems: Problem[] = [
     "sample_input": "20 10",
     "sample_output": "28",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18533,8 +20215,10 @@ export const problems: Problem[] = [
     "sample_input": "CP=400, SP=500",
     "sample_output": "25%",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18555,8 +20239,10 @@ export const problems: Problem[] = [
     "sample_input": "100 20",
     "sample_output": "120",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18577,8 +20263,10 @@ export const problems: Problem[] = [
     "sample_input": "90 10",
     "sample_output": "100",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18599,8 +20287,10 @@ export const problems: Problem[] = [
     "sample_input": "500 20",
     "sample_output": "400",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18621,8 +20311,10 @@ export const problems: Problem[] = [
     "sample_input": "24 36",
     "sample_output": "2:3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18643,8 +20335,10 @@ export const problems: Problem[] = [
     "sample_input": "2 3 4",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18665,8 +20359,10 @@ export const problems: Problem[] = [
     "sample_input": "4 16",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18687,8 +20383,10 @@ export const problems: Problem[] = [
     "sample_input": "100 2 3",
     "sample_output": "40",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18709,8 +20407,10 @@ export const problems: Problem[] = [
     "sample_input": "120 1 2 3",
     "sample_output": "20 40 60",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18731,8 +20431,10 @@ export const problems: Problem[] = [
     "sample_input": "3 4 5 7",
     "sample_output": "GREATER",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18753,8 +20455,10 @@ export const problems: Problem[] = [
     "sample_input": "3000 12 4000 10 7000",
     "sample_output": "3000",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18775,8 +20479,10 @@ export const problems: Problem[] = [
     "sample_input": "3 1 40 3",
     "sample_output": "40",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18797,8 +20503,10 @@ export const problems: Problem[] = [
     "sample_input": "D=240, T=4",
     "sample_output": "Speed=60 km/h",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18819,8 +20527,10 @@ export const problems: Problem[] = [
     "sample_input": "60 40",
     "sample_output": "20",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18841,8 +20551,10 @@ export const problems: Problem[] = [
     "sample_input": "60 40",
     "sample_output": "100",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18863,8 +20575,10 @@ export const problems: Problem[] = [
     "sample_input": "100 36",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18885,8 +20599,10 @@ export const problems: Problem[] = [
     "sample_input": "200 300 90",
     "sample_output": "20",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18907,8 +20623,10 @@ export const problems: Problem[] = [
     "sample_input": "60 30 60 60",
     "sample_output": "40",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18929,8 +20647,10 @@ export const problems: Problem[] = [
     "sample_input": "10 3",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18951,8 +20671,10 @@ export const problems: Problem[] = [
     "sample_input": "10 3",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18973,8 +20695,10 @@ export const problems: Problem[] = [
     "sample_input": "60 40 200",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -18995,8 +20719,10 @@ export const problems: Problem[] = [
     "sample_input": "300 10 4",
     "sample_output": "50",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19017,8 +20743,10 @@ export const problems: Problem[] = [
     "sample_input": "A=10, B=15",
     "sample_output": "6 days",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19039,8 +20767,10 @@ export const problems: Problem[] = [
     "sample_input": "10",
     "sample_output": "15",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19061,8 +20791,10 @@ export const problems: Problem[] = [
     "sample_input": "A=6, B=8",
     "sample_output": "24/7 ≈ 3.43 hrs",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19083,8 +20815,10 @@ export const problems: Problem[] = [
     "sample_input": "3 6",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19105,8 +20839,10 @@ export const problems: Problem[] = [
     "sample_input": "12 6 4",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19127,8 +20863,10 @@ export const problems: Problem[] = [
     "sample_input": "400 10 30",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19149,8 +20887,10 @@ export const problems: Problem[] = [
     "sample_input": "2 3 6",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19171,8 +20911,10 @@ export const problems: Problem[] = [
     "sample_input": "6 12",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19193,8 +20935,10 @@ export const problems: Problem[] = [
     "sample_input": "P=5000, R=8, T=3",
     "sample_output": "SI = 1200",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19215,8 +20959,10 @@ export const problems: Problem[] = [
     "sample_input": "1000 5 2",
     "sample_output": "1100",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19237,8 +20983,10 @@ export const problems: Problem[] = [
     "sample_input": "P=10000, R=10, T=2",
     "sample_output": "CI = 2100",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19259,8 +21007,10 @@ export const problems: Problem[] = [
     "sample_input": "1000 10 2",
     "sample_output": "1210",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19281,8 +21031,10 @@ export const problems: Problem[] = [
     "sample_input": "1000 200 4",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19303,8 +21055,10 @@ export const problems: Problem[] = [
     "sample_input": "1000 200 5",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19325,8 +21079,10 @@ export const problems: Problem[] = [
     "sample_input": "1000 10",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19347,8 +21103,10 @@ export const problems: Problem[] = [
     "sample_input": "1000 10 1",
     "sample_output": "1102",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19369,8 +21127,10 @@ export const problems: Problem[] = [
     "sample_input": "5\\n10 20 30 40 50",
     "sample_output": "30",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19391,8 +21151,10 @@ export const problems: Problem[] = [
     "sample_input": "3\\n10 2 20 3 30 5",
     "sample_output": "23",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19413,8 +21175,10 @@ export const problems: Problem[] = [
     "sample_input": "5 20 30",
     "sample_output": "17",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19435,8 +21199,10 @@ export const problems: Problem[] = [
     "sample_input": "4 20 40",
     "sample_output": "24",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19457,8 +21223,10 @@ export const problems: Problem[] = [
     "sample_input": "60 40",
     "sample_output": "48",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19479,8 +21247,10 @@ export const problems: Problem[] = [
     "sample_input": "75, 82, 90, 68, 85",
     "sample_output": "80",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19501,8 +21271,10 @@ export const problems: Problem[] = [
     "sample_input": "6\\n1 2 3 4 5 6",
     "sample_output": "2 3 4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19523,8 +21295,10 @@ export const problems: Problem[] = [
     "sample_input": "5 2",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19545,8 +21319,10 @@ export const problems: Problem[] = [
     "sample_input": "5 2",
     "sample_output": "20",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19567,8 +21343,10 @@ export const problems: Problem[] = [
     "sample_input": "5",
     "sample_output": "120",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19589,8 +21367,10 @@ export const problems: Problem[] = [
     "sample_input": "5",
     "sample_output": "24",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19611,8 +21391,10 @@ export const problems: Problem[] = [
     "sample_input": "5 2",
     "sample_output": "48",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19633,8 +21415,10 @@ export const problems: Problem[] = [
     "sample_input": "3 2 3",
     "sample_output": "9",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19655,8 +21439,10 @@ export const problems: Problem[] = [
     "sample_input": "7",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19677,8 +21463,10 @@ export const problems: Problem[] = [
     "sample_input": "3 2",
     "sample_output": "3/8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19699,8 +21487,10 @@ export const problems: Problem[] = [
     "sample_input": "HEART",
     "sample_output": "1/4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19721,8 +21511,10 @@ export const problems: Problem[] = [
     "sample_input": "MISSISSIPPI",
     "sample_output": "34650",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19743,8 +21535,10 @@ export const problems: Problem[] = [
     "sample_input": "25 5",
     "sample_output": "30",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19765,8 +21559,10 @@ export const problems: Problem[] = [
     "sample_input": "3 4 5 6 8",
     "sample_output": "16 20",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19787,8 +21583,10 @@ export const problems: Problem[] = [
     "sample_input": "40 10",
     "sample_output": "20",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19809,8 +21607,10 @@ export const problems: Problem[] = [
     "sample_input": "10 30 50 20",
     "sample_output": "29",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19831,8 +21631,10 @@ export const problems: Problem[] = [
     "sample_input": "30 5",
     "sample_output": "25",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19853,8 +21655,10 @@ export const problems: Problem[] = [
     "sample_input": "3 30",
     "sample_output": "75",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19875,8 +21679,10 @@ export const problems: Problem[] = [
     "sample_input": "0",
     "sample_output": "22",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19897,8 +21703,10 @@ export const problems: Problem[] = [
     "sample_input": "2 24 48",
     "sample_output": "12:04",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19919,8 +21727,10 @@ export const problems: Problem[] = [
     "sample_input": "0",
     "sample_output": "180",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19941,8 +21751,10 @@ export const problems: Problem[] = [
     "sample_input": "1 1 2024",
     "sample_output": "MONDAY",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19963,8 +21775,10 @@ export const problems: Problem[] = [
     "sample_input": "100",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -19985,8 +21799,10 @@ export const problems: Problem[] = [
     "sample_input": "2000",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20007,8 +21823,10 @@ export const problems: Problem[] = [
     "sample_input": "1 1 2024 31 12 2024",
     "sample_output": "365",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20029,8 +21847,10 @@ export const problems: Problem[] = [
     "sample_input": "12 5",
     "sample_output": "60",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20051,8 +21871,10 @@ export const problems: Problem[] = [
     "sample_input": "12 5",
     "sample_output": "34",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20073,8 +21895,10 @@ export const problems: Problem[] = [
     "sample_input": "7",
     "sample_output": "154",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20095,8 +21919,10 @@ export const problems: Problem[] = [
     "sample_input": "7",
     "sample_output": "44",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20117,8 +21943,10 @@ export const problems: Problem[] = [
     "sample_input": "10 6",
     "sample_output": "30",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20139,8 +21967,10 @@ export const problems: Problem[] = [
     "sample_input": "4 5 6",
     "sample_output": "120",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20161,8 +21991,10 @@ export const problems: Problem[] = [
     "sample_input": "7 10",
     "sample_output": "1540",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20183,8 +22015,10 @@ export const problems: Problem[] = [
     "sample_input": "5",
     "sample_output": "150",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20205,8 +22039,10 @@ export const problems: Problem[] = [
     "sample_input": "3 4",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20227,8 +22063,10 @@ export const problems: Problem[] = [
     "sample_input": "6 4 5",
     "sample_output": "25",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20249,8 +22087,10 @@ export const problems: Problem[] = [
     "sample_input": "20 30 25",
     "sample_output": "1:1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20271,8 +22111,10 @@ export const problems: Problem[] = [
     "sample_input": "100 10 3",
     "sample_output": "72",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20293,8 +22135,10 @@ export const problems: Problem[] = [
     "sample_input": "3 1 1 1",
     "sample_output": "1:1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20315,8 +22159,10 @@ export const problems: Problem[] = [
     "sample_input": "5",
     "sample_output": "FIVE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20337,8 +22183,10 @@ export const problems: Problem[] = [
     "sample_input": "1010",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20359,8 +22207,10 @@ export const problems: Problem[] = [
     "sample_input": "10",
     "sample_output": "1010",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20381,8 +22231,10 @@ export const problems: Problem[] = [
     "sample_input": "17",
     "sample_output": "15",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20403,8 +22255,10 @@ export const problems: Problem[] = [
     "sample_input": "1F",
     "sample_output": "31",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20425,8 +22279,10 @@ export const problems: Problem[] = [
     "sample_input": "2 5 8",
     "sample_output": "11",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20447,8 +22303,10 @@ export const problems: Problem[] = [
     "sample_input": "2 6 18",
     "sample_output": "54",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20469,8 +22327,10 @@ export const problems: Problem[] = [
     "sample_input": "1 2 5",
     "sample_output": "25",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20491,8 +22351,10 @@ export const problems: Problem[] = [
     "sample_input": "1 2 5",
     "sample_output": "31",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20513,8 +22375,10 @@ export const problems: Problem[] = [
     "sample_input": "5\\n1 2 4 5",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20535,8 +22399,10 @@ export const problems: Problem[] = [
     "sample_input": "2 4 8 15 32",
     "sample_output": "15",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20557,8 +22423,10 @@ export const problems: Problem[] = [
     "sample_input": "3 2 11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20579,8 +22447,10 @@ export const problems: Problem[] = [
     "sample_input": "1 -5 6",
     "sample_output": "REAL",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20601,8 +22471,10 @@ export const problems: Problem[] = [
     "sample_input": "1 1 5 2 -1 1",
     "sample_output": "2 3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20623,8 +22495,10 @@ export const problems: Problem[] = [
     "sample_input": "2 3 7",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20645,8 +22519,10 @@ export const problems: Problem[] = [
     "sample_input": "6 8 24",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20667,8 +22543,10 @@ export const problems: Problem[] = [
     "sample_input": "100 20 30",
     "sample_output": "40",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20689,8 +22567,10 @@ export const problems: Problem[] = [
     "sample_input": "5",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20711,8 +22591,10 @@ export const problems: Problem[] = [
     "sample_input": "5",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20733,8 +22615,10 @@ export const problems: Problem[] = [
     "sample_input": "Red=5, Blue=3",
     "sample_output": "5/8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20755,8 +22639,10 @@ export const problems: Problem[] = [
     "sample_input": "2 3 4 5",
     "sample_output": "8:15",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20777,8 +22663,10 @@ export const problems: Problem[] = [
     "sample_input": "1000 10 2",
     "sample_output": "1210",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20799,8 +22687,10 @@ export const problems: Problem[] = [
     "sample_input": "10000 10 2",
     "sample_output": "8100",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20821,8 +22711,10 @@ export const problems: Problem[] = [
     "sample_input": "1 4",
     "sample_output": "20",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20843,8 +22735,10 @@ export const problems: Problem[] = [
     "sample_input": "50000 20",
     "sample_output": "10000",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20865,8 +22759,10 @@ export const problems: Problem[] = [
     "sample_input": "A C E G",
     "sample_output": "I",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20887,8 +22783,10 @@ export const problems: Problem[] = [
     "sample_input": "2, 5, 8, 11, ?",
     "sample_output": "14",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20909,8 +22807,10 @@ export const problems: Problem[] = [
     "sample_input": "A1 B2 C3 D4",
     "sample_output": "E5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20931,8 +22831,10 @@ export const problems: Problem[] = [
     "sample_input": "2 4 0 16 32",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20953,8 +22855,10 @@ export const problems: Problem[] = [
     "sample_input": "1 2 3 4 5 6 7 8",
     "sample_output": "9",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20975,8 +22879,10 @@ export const problems: Problem[] = [
     "sample_input": "1 2 4 7 11 16",
     "sample_output": "22",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -20997,8 +22903,10 @@ export const problems: Problem[] = [
     "sample_input": "3 6 12 24 48",
     "sample_output": "96",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21019,8 +22927,10 @@ export const problems: Problem[] = [
     "sample_input": "1 4 9 16 25 36",
     "sample_output": "49",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21041,8 +22951,10 @@ export const problems: Problem[] = [
     "sample_input": "1 8 27 64 125",
     "sample_output": "216",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21063,8 +22975,10 @@ export const problems: Problem[] = [
     "sample_input": "2 3 5 9 17 33",
     "sample_output": "65",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21085,8 +22999,10 @@ export const problems: Problem[] = [
     "sample_input": "KHOOR",
     "sample_output": "HELLO",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21107,8 +23023,10 @@ export const problems: Problem[] = [
     "sample_input": "OLLEH DLROW",
     "sample_output": "HELLO WORLD",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21129,8 +23047,10 @@ export const problems: Problem[] = [
     "sample_input": "ACE",
     "sample_output": "BEI",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21151,8 +23071,10 @@ export const problems: Problem[] = [
     "sample_input": "8 5 12 12 15",
     "sample_output": "HELLO",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21173,8 +23095,10 @@ export const problems: Problem[] = [
     "sample_input": "JAVA",
     "sample_output": "10 1 22 1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21195,8 +23119,10 @@ export const problems: Problem[] = [
     "sample_input": "HELLO",
     "sample_output": "SVOOL",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21217,8 +23143,10 @@ export const problems: Problem[] = [
     "sample_input": "ABCDEF",
     "sample_output": "BDF",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21239,8 +23167,10 @@ export const problems: Problem[] = [
     "sample_input": "HELLO",
     "sample_output": "JGNNQ",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21261,8 +23191,10 @@ export const problems: Problem[] = [
     "sample_input": "ACBD",
     "sample_output": "AB CD",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21283,8 +23215,10 @@ export const problems: Problem[] = [
     "sample_input": "789",
     "sample_output": "24",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21305,8 +23239,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "GRANDFATHER",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21327,8 +23263,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "BROTHER",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21349,8 +23287,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "UNCLE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21371,8 +23311,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "COUSIN",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21393,8 +23335,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "PARENT",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21415,8 +23359,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "DAUGHTER-IN-LAW",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21437,8 +23383,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "SON",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21459,8 +23407,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "BROTHER-IN-LAW",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21481,8 +23431,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "WEST",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21503,8 +23455,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21525,8 +23479,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "EAST",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21547,8 +23503,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "WEST",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21569,8 +23527,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "EAST",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21591,8 +23551,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "EAST",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21613,8 +23575,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "SOUTH-EAST",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21635,8 +23599,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "EAST",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21657,8 +23623,10 @@ export const problems: Problem[] = [
     "sample_input": "40 10",
     "sample_output": "31",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21679,8 +23647,10 @@ export const problems: Problem[] = [
     "sample_input": "50 15",
     "sample_output": "36",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21701,8 +23671,10 @@ export const problems: Problem[] = [
     "sample_input": "10 3 4",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21723,8 +23695,10 @@ export const problems: Problem[] = [
     "sample_input": "5\\n170 165 180 175 160",
     "sample_output": "3 4 1 2 5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21745,8 +23719,10 @@ export const problems: Problem[] = [
     "sample_input": "5\\n85 90 85 70 90\\n85",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21767,8 +23743,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "TRUE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21789,8 +23767,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "TRUE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21811,8 +23791,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "FALSE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21833,8 +23815,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "FALSE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21855,8 +23839,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "FALSE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21877,8 +23863,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "B",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21899,8 +23887,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "E",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21921,8 +23911,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "D",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21943,8 +23935,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "D",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21965,8 +23959,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -21987,8 +23983,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "MOHAN",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22009,8 +24007,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "P",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22031,8 +24031,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "B",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22053,8 +24055,10 @@ export const problems: Problem[] = [
     "sample_input": "2 3 5 7 9 11",
     "sample_output": "9",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22075,8 +24079,10 @@ export const problems: Problem[] = [
     "sample_input": "CIRCLE SQUARE TRIANGLE CUBE RECTANGLE",
     "sample_output": "CUBE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22097,8 +24103,10 @@ export const problems: Problem[] = [
     "sample_input": "APPLE MANGO CARROT BANANA GRAPE",
     "sample_output": "CARROT",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22119,8 +24127,10 @@ export const problems: Problem[] = [
     "sample_input": "DOG CAT SNAKE LION TIGER",
     "sample_output": "SNAKE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22141,8 +24151,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "1\r\n1 3\r\n1 3 5\r\n1 3 5 7\r\n1 3 5 7 9",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22163,8 +24175,10 @@ export const problems: Problem[] = [
     "sample_input": "GUITAR VIOLIN FLUTE DRUMS SITAR",
     "sample_output": "FLUTE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22185,8 +24199,10 @@ export const problems: Problem[] = [
     "sample_input": "MARS VENUS MOON EARTH SATURN",
     "sample_output": "MOON",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22207,8 +24223,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "SCHOOL",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22229,8 +24247,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "CUT",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22251,8 +24271,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "MEOW",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22273,8 +24295,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "FOAL",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22295,8 +24319,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "TOKYO",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22317,8 +24343,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "25",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22339,8 +24367,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "27",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22361,8 +24391,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "NIGHT",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22383,8 +24415,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "WALL",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22405,8 +24439,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "BATTLEFIELD",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22427,8 +24463,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 2",
     "sample_output": "1 2\r\n3 4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22449,8 +24487,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 3",
     "sample_output": "2 7 6\r\n9 5 1\r\n4 3 8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22471,8 +24511,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "1\r\n2 2\r\n3 3 3\r\n4 4 4 4\r\n5 5 5 5 5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22493,8 +24535,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 4",
     "sample_output": "2 3 4 5\r\n3 4 5 6\r\n4 5 6 7\r\n5 6 7 8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22515,8 +24559,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 3",
     "sample_output": "7 4 1\r\n8 5 2\r\n9 6 3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22537,8 +24583,10 @@ export const problems: Problem[] = [
     "sample_input": "10 45 30",
     "sample_output": "11:15",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22559,8 +24607,10 @@ export const problems: Problem[] = [
     "sample_input": "10 15 30",
     "sample_output": "9:45",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22581,8 +24631,10 @@ export const problems: Problem[] = [
     "sample_input": "9 30 11 00",
     "sample_output": "90",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22603,8 +24655,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "9:45",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22625,8 +24679,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "3:20",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22647,8 +24703,10 @@ export const problems: Problem[] = [
     "sample_input": "MONDAY 10",
     "sample_output": "THURSDAY",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22669,8 +24727,10 @@ export const problems: Problem[] = [
     "sample_input": "FRIDAY 3",
     "sample_output": "TUESDAY",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22691,8 +24751,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "THURSDAY",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22713,8 +24775,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "WEDNESDAY",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22735,8 +24799,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22757,8 +24823,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "366",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22779,8 +24847,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "NO",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22801,8 +24871,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22823,8 +24895,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "NO",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22845,8 +24919,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "FALSE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22867,8 +24943,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "FALSE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22889,8 +24967,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "TRUE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22911,8 +24991,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "FALSE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22933,8 +25015,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "TRUE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22955,8 +25039,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "FALSE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22977,8 +25063,10 @@ export const problems: Problem[] = [
     "sample_input": "7",
     "sample_output": "ODD",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -22999,8 +25087,10 @@ export const problems: Problem[] = [
     "sample_input": "-5",
     "sample_output": "NEGATIVE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23021,8 +25111,10 @@ export const problems: Problem[] = [
     "sample_input": "123",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23043,8 +25135,10 @@ export const problems: Problem[] = [
     "sample_input": "15",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23065,8 +25159,10 @@ export const problems: Problem[] = [
     "sample_input": "49",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23087,8 +25183,10 @@ export const problems: Problem[] = [
     "sample_input": "3",
     "sample_output": "ODD",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23109,8 +25207,10 @@ export const problems: Problem[] = [
     "sample_input": "4\\n2 -3 4 -1",
     "sample_output": "POSITIVE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23131,8 +25231,10 @@ export const problems: Problem[] = [
     "sample_input": "5 3 8",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23153,8 +25255,10 @@ export const problems: Problem[] = [
     "sample_input": "5 3 8",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23175,8 +25279,10 @@ export const problems: Problem[] = [
     "sample_input": "5\\n-1 2 -3 4 5",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23197,8 +25303,10 @@ export const problems: Problem[] = [
     "sample_input": "HAPPY",
     "sample_output": "Joyful",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23219,8 +25327,10 @@ export const problems: Problem[] = [
     "sample_input": "BRAVE",
     "sample_output": "Cowardly",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23241,8 +25351,10 @@ export const problems: Problem[] = [
     "sample_input": "JOY HAPPINESS SORROW DELIGHT",
     "sample_output": "SORROW",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23263,8 +25375,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "GOLD",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23285,8 +25399,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "GROUP",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23307,8 +25423,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "SCHOOL",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23329,8 +25447,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "MICE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23351,8 +25471,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "ACTRESS",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23373,8 +25495,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23395,8 +25519,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "HEAVY RAIN",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23417,8 +25543,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23439,8 +25567,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23461,8 +25591,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "YES",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23483,8 +25615,10 @@ export const problems: Problem[] = [
     "sample_input": "6",
     "sample_output": "15",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23505,8 +25639,10 @@ export const problems: Problem[] = [
     "sample_input": "16",
     "sample_output": "15",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23527,8 +25663,10 @@ export const problems: Problem[] = [
     "sample_input": "6",
     "sample_output": "9",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23549,8 +25687,10 @@ export const problems: Problem[] = [
     "sample_input": "4",
     "sample_output": "11",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23571,8 +25711,10 @@ export const problems: Problem[] = [
     "sample_input": "5",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23593,8 +25735,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "204",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23615,8 +25759,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "1296",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23637,8 +25783,10 @@ export const problems: Problem[] = [
     "sample_input": "3",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23659,8 +25807,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23681,8 +25831,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23703,8 +25855,10 @@ export const problems: Problem[] = [
     "sample_input": "7",
     "sample_output": "15",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23725,8 +25879,10 @@ export const problems: Problem[] = [
     "sample_input": "5",
     "sample_output": "24",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23747,8 +25903,10 @@ export const problems: Problem[] = [
     "sample_input": "12",
     "sample_output": "33",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23769,8 +25927,10 @@ export const problems: Problem[] = [
     "sample_input": "13",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23791,8 +25951,10 @@ export const problems: Problem[] = [
     "sample_input": "234",
     "sample_output": "24",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23813,8 +25975,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "TRUE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23835,8 +25999,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "TRUE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23857,8 +26023,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "FALSE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23879,8 +26047,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "TRUE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23901,8 +26071,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "TRUE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23923,8 +26095,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "FALSE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23945,8 +26119,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "FALSE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23967,8 +26143,10 @@ export const problems: Problem[] = [
     "sample_input": "1",
     "sample_output": "TRUE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -23989,8 +26167,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "15",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24011,8 +26191,10 @@ export const problems: Problem[] = [
     "sample_input": "Dog d = new Dog(); d.speak();",
     "sample_output": "Woof",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24033,8 +26215,10 @@ export const problems: Problem[] = [
     "sample_input": "calc.add(1,2); calc.add(1.5,2.5);",
     "sample_output": "3; 4.0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24055,8 +26239,10 @@ export const problems: Problem[] = [
     "sample_input": "BankAccount acc = new BankAccount(1000); acc.deposit(500); acc.getBalance();",
     "sample_output": "1500",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24077,8 +26263,10 @@ export const problems: Problem[] = [
     "sample_input": "new Circle(5).area();",
     "sample_output": "78.54",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24099,8 +26287,10 @@ export const problems: Problem[] = [
     "sample_input": "Duck d = new Duck(); d.fly(); d.swim();",
     "sample_output": "Flying; Swimming",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24121,8 +26311,10 @@ export const problems: Problem[] = [
     "sample_input": "new Person(\"Alice\", 30);",
     "sample_output": "Person created",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24143,8 +26335,10 @@ export const problems: Problem[] = [
     "sample_input": "new Counter(); new Counter(); Counter.getCount();",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24165,8 +26359,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Car drives\\nBike rides",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24187,8 +26383,10 @@ export const problems: Problem[] = [
     "sample_input": "divide(10, 0);",
     "sample_output": "ArithmeticException caught",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24209,8 +26407,10 @@ export const problems: Problem[] = [
     "sample_input": "p.x = 5;",
     "sample_output": "Compilation error",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24231,8 +26431,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Title: Clean Code, Author: Robert Martin, Price: 499",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24253,8 +26455,10 @@ export const problems: Problem[] = [
     "sample_input": "new Point(1,2).equals(new Point(1,2));",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24275,8 +26479,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Engine started\\nCar is running",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24297,8 +26503,10 @@ export const problems: Problem[] = [
     "sample_input": "Singleton.getInstance() == Singleton.getInstance();",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24319,8 +26527,10 @@ export const problems: Problem[] = [
     "sample_input": "list.iterator().next();",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24341,8 +26551,10 @@ export const problems: Problem[] = [
     "sample_input": "box.set(42); box.get();",
     "sample_output": "42",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24363,8 +26575,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Bob\\nAlice\\nCharlie",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24385,8 +26599,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Task running\\nMain thread done",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24407,8 +26623,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Hello from B",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24429,8 +26647,10 @@ export const problems: Problem[] = [
     "sample_input": "Employee table",
     "sample_output": "Filtered rows",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24451,8 +26671,10 @@ export const problems: Problem[] = [
     "sample_input": "Employee & Department tables",
     "sample_output": "Joined result",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24473,8 +26695,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "SELECT Region, SUM(Amount) FROM Sales GROUP BY Region HAVING SUM(Amount)>100000;\\nNorth 150000\\nSouth 120000",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24495,8 +26719,10 @@ export const problems: Problem[] = [
     "sample_input": "Employee table with salaries",
     "sample_output": "Second highest salary",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24517,8 +26743,10 @@ export const problems: Problem[] = [
     "sample_input": "Table with multi-valued column",
     "sample_output": "1NF violation identified",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24539,8 +26767,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "CREATE TABLE Department(DeptID INT PRIMARY KEY, DeptName VARCHAR(50));\\nCREATE TABLE Employee(EmpID INT PRIMARY KEY, Name VARCHAR(50), DeptID INT, FOREIGN KEY(DeptID) REFERENCES Department(DeptID));\\nINSERT INTO Department VALUES(1,'Engineering');\\nINSERT INTO Employee VALUES(101,'Alice',1);",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24561,8 +26791,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Atomicity: All operations in a transaction succeed or all are rolled back.\\nConsistency: Database remains in a valid state before and after transaction.\\nIsolation: Concurrent transactions do not interfere with each other.\\nDurability: Committed transactions are permanently saved even after failure.",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24583,8 +26815,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "DELETE | Yes | No | Slow\\nTRUNCATE | No | No | Fast\\nDROP | No | Yes | Fast",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24605,8 +26839,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "CREATE INDEX idx_email ON Users(Email);\\nSELECT * FROM Users WHERE Email='alice@example.com';\\nReason: Index allows B-tree lookup instead of full table scan.",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24627,8 +26863,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "INNER JOIN: SELECT S.Name, R.Marks FROM Students S INNER JOIN Results R ON S.SID=R.SID;\\nLEFT JOIN: SELECT S.Name, R.Marks FROM Students S LEFT JOIN Results R ON S.SID=R.SID;\\nAlice 85\\nBob 90\\nCarol null",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24649,8 +26887,10 @@ export const problems: Problem[] = [
     "sample_input": "CALL giveHike('Engineering');",
     "sample_output": "10% hike applied",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24671,8 +26911,10 @@ export const problems: Problem[] = [
     "sample_input": "University scenario",
     "sample_output": "ER model",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24693,8 +26935,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "CREATE VIEW HighEarners AS SELECT * FROM Employees WHERE Salary>80000;\\nSELECT * FROM HighEarners;\\n102 Bob 95000 Engineering",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24715,8 +26959,10 @@ export const problems: Problem[] = [
     "sample_input": "Transfer transaction",
     "sample_output": "Commit or rollback",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24737,8 +26983,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "2NF violation: StudentName depends only on StudentID (partial dependency).\\n3NF violation: InstructorName depends on InstructorID (transitive dependency).\\n3NF Tables: Student(StudentID,StudentName), Course(CourseID,CourseName,InstructorID), Instructor(InstructorID,InstructorName), Enrollment(StudentID,CourseID)",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24759,8 +27007,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "T1 holds lock on A, waits for B.\\nT2 holds lock on B, waits for A.\\nDeadlock: circular wait.\\nPrevention 1: Wait-Die scheme - older transaction waits, younger rolls back.\\nPrevention 2: Wound-Wait scheme - older transaction wounds (aborts) younger.",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24781,8 +27031,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "CREATE TRIGGER SalaryAudit AFTER UPDATE ON Employees FOR EACH ROW BEGIN INSERT INTO AuditLog(EmpID,OldSalary,NewSalary,ChangedAt) VALUES(OLD.EmpID,OLD.Salary,NEW.Salary,NOW()); END;",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24803,8 +27055,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Super keys: {EmpID}, {Email}, {Phone}, {EmpID,Email}, {EmpID,Phone}, {Email,Phone}, etc.\\nCandidate keys: {EmpID}, {Email}, {Phone}\\nPrimary key: EmpID (chosen because it is numeric, shorter, and auto-incrementable)",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24825,8 +27079,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Schema: SQL=Fixed, NoSQL=Dynamic\\nScalability: SQL=Vertical, NoSQL=Horizontal\\nTransactions: SQL=ACID compliant, NoSQL=Eventual consistency\\nBest Use Case: SQL=Banking/ERP, NoSQL=Social media/IoT",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24847,8 +27103,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "SELECT COUNT(Amount) FROM Sales; => 5\\nSELECT SUM(Amount) FROM Sales; => 47500\\nSELECT AVG(Amount) FROM Sales; => 9500\\nSELECT MIN(Amount) FROM Sales; => 3000\\nSELECT MAX(Amount) FROM Sales; => 18000",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24869,8 +27127,10 @@ export const problems: Problem[] = [
     "sample_input": "fork() vs new Thread()",
     "sample_output": "Different memory model",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24891,8 +27151,10 @@ export const problems: Problem[] = [
     "sample_input": "burst=[5,3,8], arrival=[0,0,0]",
     "sample_output": "AWT = 5.33",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24913,8 +27175,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Order: P2 P4 P1 P3\\nP2: WT=0\\nP4: WT=2\\nP1: WT=5\\nP3: WT=11\\nAvg WT: 4.5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24935,8 +27199,10 @@ export const problems: Problem[] = [
     "sample_input": "burst=[10,5,8], quantum=2",
     "sample_output": "AWT = 12.67",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24957,8 +27223,10 @@ export const problems: Problem[] = [
     "sample_input": "allocation=[[0,1,0],[2,0,0],[3,0,2]], max=[[7,5,3],[3,2,2],[9,0,2]], available=[3,3,2]",
     "sample_output": "Safe",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -24979,8 +27247,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "1: [1] FAULT\\n3: [1,3] FAULT\\n0: [1,3,0] FAULT\\n3: [1,3,0] HIT\\n5: [5,3,0] FAULT\\n6: [5,6,0] FAULT\\n3: [5,6,3] FAULT\\nTotal Page Faults: 6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25001,8 +27271,10 @@ export const problems: Problem[] = [
     "sample_input": "pages=[7,0,1,2,0,3,0,4,2,3,0,3,2], frames=4",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25023,8 +27295,10 @@ export const problems: Problem[] = [
     "sample_input": "buffer_size=3",
     "sample_output": "Synchronised",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25045,8 +27319,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Process 1 (212KB) -> Block 2 (500KB)\\nProcess 2 (417KB) -> Block 5 (600KB)\\nProcess 3 (112KB) -> Block 2 (288KB remaining)\\nProcess 4 (426KB) -> Not Allocated",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25067,8 +27343,10 @@ export const problems: Problem[] = [
     "sample_input": "requests=[98,183,37,122,14,124,65,67], head=53",
     "sample_output": "236",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25089,8 +27367,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Ownership: Mutex=Owned by thread, Semaphore=No ownership\\nCount: Mutex=Binary(0/1), Semaphore=Any non-negative integer\\nUse case: Mutex=Mutual exclusion, Semaphore=Signaling/resource counting\\nRelease by: Mutex=Same thread only, Semaphore=Any thread",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25111,8 +27391,10 @@ export const problems: Problem[] = [
     "sample_input": "VA = 0x5234, page_size = 4096",
     "sample_output": "page=5, offset=0x234",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25133,8 +27415,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Without sync: 1873\\nWith sync: 2000",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25155,8 +27439,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Process Control: fork(), exit()\\nFile Management: open(), read(), write()\\nDevice Management: ioctl(), read()\\nInformation Maintenance: getpid(), alarm()\\nCommunication: pipe(), shmget()",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25177,8 +27463,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Division: Paging=Fixed-size pages, Segmentation=Variable-size segments\\nSize: Paging=Fixed, Segmentation=Variable\\nFragmentation: Paging=Internal, Segmentation=External\\nUser visibility: Paging=Transparent, Segmentation=Visible to programmer",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25199,8 +27487,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "1. CPU saves P1 state (PC, registers) into P1's PCB\\n2. Scheduler selects P2\\n3. CPU loads P2 state from P2's PCB\\n4. P2 resumes execution from where it left off\\n5. P1 state is safely stored for later resumption",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25221,8 +27511,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Thrashing: CPU spends more time swapping pages than executing processes.\\nCause: Too many processes competing for limited frames.\\nEffect: CPU utilisation drops drastically despite high activity.\\nSolution 1: Working Set Model - allocate frames based on working set size.\\nSolution 2: Page Fault Frequency - reduce multiprogramming when PFF is high.",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25243,8 +27535,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "inode fields:\\n1. File type (regular, directory, symlink)\\n2. Permissions (rwxrwxrwx)\\n3. Link count (hard links)\\n4. Owner UID and GID\\n5. File size in bytes\\n6. Timestamps (access, modify, change)\\n7. Direct block pointers (12)\\n8. Indirect, double-indirect, triple-indirect pointers",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25265,8 +27559,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Size: Monolithic=Large kernel, Microkernel=Small kernel\\nServices in kernel: Monolithic=All (FS, drivers, IPC), Microkernel=Minimal (IPC, scheduling)\\nPerformance: Monolithic=Faster (no context switch), Microkernel=Slower (message passing)\\nReliability: Monolithic=Less (crash affects all), Microkernel=More (isolated)\\nExamples: Monolithic=Linux, Microkernel=Minix/QNX",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25287,8 +27583,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Starvation: A low-priority process never gets CPU because high-priority processes keep arriving.\\nScenario: In priority scheduling, P_low(priority=10) waits while P_high(priority=1) processes keep entering.\\nAging fix: Gradually increase the priority of waiting processes over time.\\nExample: After waiting 5 units, priority 10 becomes 9, then 8, eventually gets scheduled.",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25309,8 +27607,10 @@ export const problems: Problem[] = [
     "sample_input": "OSI model",
     "sample_output": "7 layers with protocols",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25331,8 +27631,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Connection: TCP=Connection-oriented, UDP=Connectionless\\nReliability: TCP=Reliable (ACK), UDP=Unreliable\\nSpeed: TCP=Slower, UDP=Faster\\nOrder: TCP=In-order delivery, UDP=No ordering\\nUse case: TCP=HTTP/Email/FTP, UDP=Video streaming/DNS/Gaming",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25353,8 +27655,10 @@ export const problems: Problem[] = [
     "sample_input": "192.168.1.0/26",
     "sample_output": "Network, Broadcast, Hosts",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25375,8 +27679,10 @@ export const problems: Problem[] = [
     "sample_input": "TCP connection setup",
     "sample_output": "3 steps",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25397,8 +27703,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "1. Browser checks local cache.\\n2. OS checks hosts file.\\n3. Query sent to Recursive Resolver (ISP).\\n4. Resolver queries Root DNS server -> .com TLD server.\\n5. TLD server returns authoritative NS for example.com.\\n6. Authoritative NS returns IP: 93.184.216.34.\\n7. Resolver caches and returns IP to browser.\\n8. Browser connects to 93.184.216.34.",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25419,8 +27727,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "GET: Retrieve resource – GET /users/1\\nPOST: Create resource – POST /users\\nPUT: Replace resource – PUT /users/1\\nPATCH: Partial update – PATCH /users/1\\nDELETE: Remove resource – DELETE /users/1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25441,8 +27751,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Address length: IPv4=32-bit, IPv6=128-bit\\nTotal addresses: IPv4=~4.3 billion, IPv6=~340 undecillion\\nHeader size: IPv4=20 bytes min, IPv6=40 bytes fixed\\nNAT needed: IPv4=Yes, IPv6=No\\nExample: IPv4=192.168.1.1, IPv6=2001:0db8::1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25463,8 +27775,10 @@ export const problems: Problem[] = [
     "sample_input": "V=5, edges=[[0,1,4],[0,2,1],[2,1,2],[1,3,1],[2,3,5]], src=0",
     "sample_output": "[0,3,1,4,∞]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25485,8 +27799,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "1. Host A wants to send to 192.168.1.10 but doesn't know MAC.\\n2. A broadcasts ARP request: Who has 192.168.1.10?\\n3. All devices receive; only 192.168.1.10 (Host B) replies.\\n4. B sends ARP reply with its MAC: AA:BB:CC:DD:EE:FF.\\n5. A caches IP-MAC mapping in ARP table.\\n6. A sends data frame directly to MAC AA:BB:CC:DD:EE:FF.",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25507,8 +27823,10 @@ export const problems: Problem[] = [
     "sample_input": "Window=4",
     "sample_output": "4 in-flight frames",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25529,8 +27847,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "1. Client Hello: TLS version, cipher suites, random value.\\n2. Server Hello: Chosen cipher, server certificate, random value.\\n3. Client verifies certificate with CA.\\n4. Key exchange: Client and server derive session key.\\n5. Client Finished: Encrypted with session key.\\n6. Server Finished: Encrypted with session key.\\n7. Secure channel established for HTTP data.",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25551,8 +27871,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "1. Device 192.168.1.5 sends packet to 8.8.8.8.\\n2. Router (public IP: 203.0.113.1) intercepts packet.\\n3. Router replaces source 192.168.1.5 with 203.0.113.1 in NAT table.\\n4. Packet sent to 8.8.8.8 with source 203.0.113.1.\\n5. Reply arrives at 203.0.113.1.\\n6. Router looks up NAT table, forwards to 192.168.1.5.",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25573,8 +27895,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Data: 1101011011\\nDivisor: 10011 (degree 4)\\nAppend 4 zeros: 11010110110000\\nXOR division steps yield remainder: 1110\\nTransmitted: 11010110111110",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25595,8 +27919,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "1. Discover: Client broadcasts DHCPDISCOVER on 255.255.255.255.\\n2. Offer: Server responds with DHCPOFFER (IP: 192.168.1.100, lease 24h).\\n3. Request: Client broadcasts DHCPREQUEST to accept the offer.\\n4. Acknowledge: Server sends DHCPACK confirming the IP assignment.",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25617,8 +27943,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Slow Start: cwnd doubles every RTT from 1 MSS until ssthresh.\\nCongestion Avoidance: cwnd increases by 1 MSS per RTT after ssthresh.\\nFast Retransmit: Retransmit lost segment on 3 duplicate ACKs without waiting for timeout.\\nFast Recovery: Set ssthresh=cwnd/2, cwnd=ssthresh, skip slow start.",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25639,8 +27967,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "OSI Layer: Hub=Layer 1, Switch=Layer 2, Router=Layer 3\\nAddressing: Hub=None, Switch=MAC, Router=IP\\nCollision Domain: Hub=One shared, Switch=Per port, Router=Per interface\\nUse case: Hub=Legacy LAN, Switch=LAN segmentation, Router=Inter-network routing",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25661,8 +27991,10 @@ export const problems: Problem[] = [
     "sample_input": "Firewall types",
     "sample_output": "3 types compared",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25683,8 +28015,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "p=3, q=11\\nn=33\\nφ(n)=20\\ne=3 (gcd(3,20)=1)\\nd=7 (3*7 mod 20=1)\\nPublic key: (3,33), Private key: (7,33)\\nEncrypt M=4: C=4^3 mod 33=31\\nDecrypt C=31: M=31^7 mod 33=4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25705,8 +28039,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Bus: Simple+cheap | Single cable failure breaks network\\nStar: Easy fault isolation | Central hub failure breaks all\\nRing: Predictable performance | One node failure breaks ring\\nMesh: High redundancy | Expensive cabling\\nHybrid: Flexible | Complex to manage",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25727,8 +28063,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "1. Alice's email client sends email to Gmail SMTP server (port 587).\\n2. Gmail SMTP queries DNS MX record for yahoo.com -> mail.yahoo.com.\\n3. Gmail SMTP connects to Yahoo SMTP (port 25) and transfers email.\\n4. Yahoo stores email in Bob's mailbox.\\n5. Bob's client connects via IMAP/POP3 to retrieve email.\\n6. Bob reads the email.",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25749,8 +28087,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "Single loop: O(n)\\nNested loop: O(n^2)\\nBinary search: O(log n)\\nRecursive Fibonacci: O(2^n)\\nMerge sort: O(n log n)",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25771,8 +28111,10 @@ export const problems: Problem[] = [
     "sample_input": "push(1); push(2); peek(); pop(); isEmpty()",
     "sample_output": "2; 2; false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25793,8 +28135,10 @@ export const problems: Problem[] = [
     "sample_input": "enqueue(1); enqueue(2); dequeue(); enqueue(3); dequeue()",
     "sample_output": "1; 2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25815,8 +28159,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [1,3,5,7,9,11], target = 7",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25837,8 +28183,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [5,3,8,1,2,9]",
     "sample_output": "[1,2,3,5,8,9]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25859,8 +28207,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [3,2,0,-4], pos = 1",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25881,8 +28231,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [1,2,2,3,3,3]",
     "sample_output": "{1:1, 2:2, 3:3}",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25903,8 +28255,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [3,9,20,null,null,15,7]",
     "sample_output": "[[3],[9,20],[15,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25925,8 +28279,10 @@ export const problems: Problem[] = [
     "sample_input": "weights=[1,3,4,5], values=[1,4,5,7], W=7",
     "sample_output": "9",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25947,8 +28303,10 @@ export const problems: Problem[] = [
     "sample_input": "V=5, E=[[0,1],[0,2],[1,3],[2,4]]",
     "sample_output": "0 1 2 3 4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25969,8 +28327,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 3",
     "sample_output": "7 moves",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -25991,8 +28351,10 @@ export const problems: Problem[] = [
     "sample_input": "text1 = \"abcde\", text2 = \"ace\"",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26013,8 +28375,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26035,8 +28399,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,1,5,6,4], k = 2",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26057,8 +28423,10 @@ export const problems: Problem[] = [
     "sample_input": "insert(\"apple\"); search(\"apple\"); search(\"app\")",
     "sample_output": "true; false",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26079,8 +28447,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [-1,0,1,2,-1,-4]",
     "sample_output": "[[-1,-1,2],[-1,0,1]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26101,8 +28471,10 @@ export const problems: Problem[] = [
     "sample_input": "start=[1,3,0,5,8,5], end=[2,4,6,7,9,9]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26123,8 +28495,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [2,1,5,1,3,2], k = 3",
     "sample_output": "9",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26145,8 +28519,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 4",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26167,8 +28543,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "NewsChannel received: Stock market hits all-time high\\nNewsApp received: Stock market hits all-time high",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26189,8 +28567,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "A\r\nAB\r\nABC\r\nABCD\r\nABCDE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26211,8 +28591,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "A\r\nBB\r\nCCC\r\nDDDD\r\nEEEEE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26233,8 +28615,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "    A\r\n   BBB\r\n  CCCCC\r\n DDDDDDD\r\nEEEEEEEEE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26255,8 +28639,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "    A\r\n   BBB\r\n  CCCCC\r\n DDDDDDD\r\nEEEEEEEEE\r\n DDDDDDD\r\n  CCCCC\r\n   BBB\r\n    A",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26277,8 +28663,10 @@ export const problems: Problem[] = [
     "sample_input": "R = 4, C = 8",
     "sample_output": "ABCDEFGH\r\nA      H\r\nA      H\r\nABCDEFGH",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26299,8 +28687,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "A   C   E   G   I\r\n  B   D   F   H\r\n    C   E   G",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26321,8 +28711,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "ABCDE\r\nABCD\r\nABC\r\nAB\r\nA",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26343,8 +28735,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 6",
     "sample_output": "A\r\n B\r\n  C\r\n   D\r\n    E\r\n     F",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26365,8 +28759,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "EEEEEEEEE\r\n DDDDDDD\r\n  CCCCC\r\n   BBB\r\n    A\r\n   BBB\r\n  CCCCC\r\n DDDDDDD\r\nEEEEEEEEE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26387,8 +28783,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "A\r\nBC\r\nDEF\r\nGHIJ\r\nKLMNO",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26409,8 +28807,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "    A\r\n   AB\r\n  ABC\r\n ABCD\r\nABCDE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26431,8 +28831,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "A       A\r\n B     B\r\n  C   C\r\n   D D\r\n    E",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26453,8 +28855,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "A   E\r\n B C \r\n  C  \r\n D B \r\nE   A",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26475,8 +28879,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "A        A\r\nAB      AB\r\nABC    ABC\r\nABCD  ABCD\r\nABCDEABCDE\r\nABCD  ABCD\r\nABC    ABC\r\nAB      AB\r\nA        A",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26497,8 +28903,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 4",
     "sample_output": "ABBA\r\nC  C\r\nC  C\r\nABBA",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26519,8 +28927,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "    A\r\n   B B\r\n  C   C\r\n D     D\r\nE       E",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26541,8 +28951,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "A B C D\r\nL M N E\r\nK P O F\r\nJ I H G",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26563,8 +28975,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "A\r\nABA\r\nABCBA\r\nABCDCBA\r\nABCDEDCBA",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26585,8 +28999,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "ABCDE\r\nABCDE\r\nABCDE\r\nABCDE\r\nABCDE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26607,8 +29023,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "ABABA\r\nBABAB\r\nABABA\r\nBABAB\r\nABABA",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26629,8 +29047,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "A\r\nBB\r\nCCC\r\nDDDD\r\nEEEEE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26651,8 +29071,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "A   E\r\nA  D \r\nA C  \r\nAB   \r\nA C  \r\nA  D \r\nA   E",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26673,8 +29095,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "A\r\nBA\r\nCBA\r\nDCBA\r\nEDCBA",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26695,8 +29119,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "A E A\r\nB D B\r\nC C C\r\nD B D\r\nE A E",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26717,8 +29143,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "  C  \r\n  C  \r\nABCDE\r\n  C  \r\n  C  ",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26739,8 +29167,10 @@ export const problems: Problem[] = [
     "sample_input": "",
     "sample_output": "A B C D\r\nH G F E\r\nI J K L\r\nP O N M",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26761,8 +29191,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "ABCDE\r\n   D \r\n  C  \r\n B   \r\nABCDE",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26783,8 +29215,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "A\r\nBA\r\nCBA\r\nDCBA\r\nEDCBA",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26805,8 +29239,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "    A\r\n   B B\r\n  C   C\r\n D     D\r\nE       E\r\n D     D\r\n  C   C\r\n   B B\r\n    A",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26827,8 +29263,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 4",
     "sample_output": "1A\r\n2A 2B\r\n3A 3B 3C\r\n4A 4B 4C 4D",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26849,8 +29287,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "    E\r\n   DE\r\n  CDE\r\n BCDE\r\nABCDE\r\n BCDE\r\n  CDE\r\n   DE\r\n    E",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26871,8 +29311,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 153",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26893,8 +29335,10 @@ export const problems: Problem[] = [
     "sample_input": "x = 123",
     "sample_output": "321",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26915,8 +29359,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 12345",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26937,8 +29383,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 1234",
     "sample_output": "10",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26959,8 +29407,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 121",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -26981,8 +29431,10 @@ export const problems: Problem[] = [
     "sample_input": "A = 12, B = 18",
     "sample_output": "GCD = 6, LCM = 36",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27003,8 +29455,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 29",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27025,8 +29479,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 360",
     "sample_output": "2 2 2 3 3 5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27047,8 +29503,10 @@ export const problems: Problem[] = [
     "sample_input": "x = 2.0, n = 10",
     "sample_output": "1024.00000",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27069,8 +29527,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 13",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27091,8 +29551,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 7",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27113,8 +29575,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 9875",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27135,8 +29599,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 28",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27157,8 +29623,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 25",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27179,8 +29647,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 30",
     "sample_output": "2 3 5 7 11 13 17 19 23 29",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27201,8 +29671,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 45",
     "sample_output": "101101",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27223,8 +29695,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 100",
     "sample_output": "5050",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27245,8 +29719,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 36",
     "sample_output": "1 2 3 4 6 9 12 18 36",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27267,8 +29743,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,4,6,3,7,8], n = 7",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27289,8 +29767,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 100",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27311,8 +29791,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"hello\"",
     "sample_output": "\"olleh\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27333,8 +29815,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"racecar\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27355,8 +29839,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"anagram\", t = \"nagaram\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27377,8 +29863,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"Hello World\"",
     "sample_output": "Vowels: 3, Consonants: 7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27399,8 +29887,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"leetcode\"",
     "sample_output": "'l'",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27421,8 +29911,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aaabbc\"",
     "sample_output": "\"a3b2c1\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27443,8 +29935,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"XIV\"",
     "sample_output": "14",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27465,8 +29959,10 @@ export const problems: Problem[] = [
     "sample_input": "num = 1994",
     "sample_output": "\"MCMXCIV\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27487,8 +29983,10 @@ export const problems: Problem[] = [
     "sample_input": "strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
     "sample_output": "[[\"eat\",\"tea\",\"ate\"],[\"tan\",\"nat\"],[\"bat\"]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27509,8 +30007,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"babad\"",
     "sample_output": "\"bab\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27531,8 +30031,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 4",
     "sample_output": "\"1211\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27553,8 +30055,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"(*))\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27575,8 +30079,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"PAYPALISHIRING\", numRows = 3",
     "sample_output": "\"PAHNAPLSIIGYIR\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27597,8 +30103,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"the sky is blue the sky\"",
     "sample_output": "{the:2,sky:2,is:1,blue:1}",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27619,8 +30127,10 @@ export const problems: Problem[] = [
     "sample_input": "s1 = \"abcde\", s2 = \"cdeab\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27641,8 +30151,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"programming\"",
     "sample_output": "\"progamin\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27663,8 +30175,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"3[a]2[bc]\"",
     "sample_output": "\"aaabcbc\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27685,8 +30199,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
     "sample_output": "\"BANC\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27707,8 +30223,10 @@ export const problems: Problem[] = [
     "sample_input": "strs = [\"flower\",\"flow\",\"flight\"]",
     "sample_output": "\"fl\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27729,8 +30247,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"the sky is blue\"",
     "sample_output": "\"blue is sky the\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27751,8 +30271,10 @@ export const problems: Problem[] = [
     "sample_input": "num1 = \"123\", num2 = \"456\"",
     "sample_output": "\"56088\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27773,8 +30295,10 @@ export const problems: Problem[] = [
     "sample_input": "text = \"aabcaab\", pattern = \"aab\"",
     "sample_output": "[0, 4]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27795,8 +30319,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ace\", t = \"abcde\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27817,8 +30343,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"A man a plan a canal Panama\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27839,8 +30367,10 @@ export const problems: Problem[] = [
     "sample_input": "s1 = \"aab\", s2 = \"axy\", s3 = \"aaxaby\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27861,8 +30391,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [1,3,5,7,9,11], target = 5",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27883,8 +30415,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [4,5,6,7,0,1,2], target = 0",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27905,8 +30439,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,4,5,1,2]",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27927,8 +30463,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3,1]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27949,8 +30487,10 @@ export const problems: Problem[] = [
     "sample_input": "x = 8",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27971,8 +30511,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 5, bad = 4",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -27993,8 +30535,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [1,2,2,2,3,4], target = 2",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28015,8 +30559,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,3,5],[7,10,11],[11,16,20]], target = 10",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28037,8 +30583,10 @@ export const problems: Problem[] = [
     "sample_input": "matrix = [[1,5,9],[10,11,13],[12,13,15]], k = 8",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28059,8 +30607,10 @@ export const problems: Problem[] = [
     "sample_input": "weights=[1,2,3,4,5,6,7,8,9,10], D=5",
     "sample_output": "15",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28081,8 +30631,10 @@ export const problems: Problem[] = [
     "sample_input": "nums1 = [1,3], nums2 = [2]",
     "sample_output": "2.0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28103,8 +30655,10 @@ export const problems: Problem[] = [
     "sample_input": "stalls = [1,2,4,8,9], C = 3",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28125,8 +30679,10 @@ export const problems: Problem[] = [
     "sample_input": "pages = [12,34,67,90], M = 2",
     "sample_output": "113",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28147,8 +30703,10 @@ export const problems: Problem[] = [
     "sample_input": "letters = ['c','f','j'], target = 'a'",
     "sample_output": "'c'",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28169,8 +30727,10 @@ export const problems: Problem[] = [
     "sample_input": "costs = [1,2,3,4,5], budget = 8",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28191,8 +30751,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [1,3,5,7,9], target = 4",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28213,8 +30775,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [1,3,5,7,9], target = 6",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28235,8 +30799,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [1,3,5,7,9,11,13,15,17,19], target = 13",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28257,8 +30823,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [1,3,8,12,7,4,2]",
     "sample_output": "12",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28279,8 +30847,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [15,18,2,3,6,12]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28301,8 +30871,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,3,5,6], target = 5",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28323,8 +30895,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [1,2,3,5,6,7,8]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28345,8 +30919,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,5,9], threshold = 6",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28367,8 +30943,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [2,3,4,7,11], k = 5",
     "sample_output": "9",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28389,8 +30967,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [7,2,5,10,8], m = 2",
     "sample_output": "18",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28411,8 +30991,10 @@ export const problems: Problem[] = [
     "sample_input": "enqueue(1); enqueue(2); front();",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28433,8 +31015,10 @@ export const problems: Problem[] = [
     "sample_input": "CircularQueue(3); enqueue(1); enqueue(2); enqueue(3);",
     "sample_output": "Enqueued",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28455,8 +31039,10 @@ export const problems: Problem[] = [
     "sample_input": "insertRear(5); insertFront(3); deleteFront();",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28477,8 +31063,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,3,-1,-3,5,3,6,7], k = 3",
     "sample_output": "[3,3,5,5,6,7]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28499,8 +31087,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [-8,2,-6,5,-1], k = 2",
     "sample_output": "[-8,-6,-6,-1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28521,8 +31111,10 @@ export const problems: Problem[] = [
     "sample_input": "V=4, adj=[[1,2],[0,3],[0],[1]]",
     "sample_output": "0 1 2 3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28543,8 +31135,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [3,9,20,null,null,15,7]",
     "sample_output": "[[3],[9,20],[15,7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28565,8 +31159,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "[\"1\",\"10\",\"11\",\"100\",\"101\"]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28587,8 +31183,10 @@ export const problems: Problem[] = [
     "sample_input": "Queue: [1,2,3,4,5,6]",
     "sample_output": "[1,4,2,5,3,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28609,8 +31207,10 @@ export const problems: Problem[] = [
     "sample_input": "Queue: [1,2,3,4,5], k = 3",
     "sample_output": "[3,2,1,4,5]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28631,8 +31231,10 @@ export const problems: Problem[] = [
     "sample_input": "Queue: [1,2,3,4,5]",
     "sample_output": "[5,4,3,2,1]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28653,8 +31255,10 @@ export const problems: Problem[] = [
     "sample_input": "LRUCache(2); put(1,1); put(2,2); get(1); put(3,3); get(2)",
     "sample_output": "-1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28675,8 +31279,10 @@ export const problems: Problem[] = [
     "sample_input": "push(1); push(2); push(3); pop();",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28697,8 +31303,10 @@ export const problems: Problem[] = [
     "sample_input": "grid",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28719,8 +31327,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[0,0,0],[1,1,0],[1,1,0]]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28741,8 +31351,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,1,1,4]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28763,8 +31375,10 @@ export const problems: Problem[] = [
     "sample_input": "root = [1,2,3,4,5], K = 2",
     "sample_output": "[4,5,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28785,8 +31399,10 @@ export const problems: Problem[] = [
     "sample_input": "N=8, knightPos=[1,1], targetPos=[5,5]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28807,8 +31423,10 @@ export const problems: Problem[] = [
     "sample_input": "tasks = ['A','A','A','B','B','B'], n = 2",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28829,8 +31447,10 @@ export const problems: Problem[] = [
     "sample_input": "ropes = [4,3,2,6]",
     "sample_output": "29",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28851,8 +31471,10 @@ export const problems: Problem[] = [
     "sample_input": "k=3, n=9; enqueue(1,0); dequeue(0)",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28873,8 +31495,10 @@ export const problems: Problem[] = [
     "sample_input": "Board size 30",
     "sample_output": "Minimum throws",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28895,8 +31519,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"racecar\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28917,8 +31543,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [2,7,3,1,5,2,6,2], k = 4",
     "sample_output": "[7,7,5,6,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28939,8 +31567,10 @@ export const problems: Problem[] = [
     "sample_input": "weights=[10,20,30], values=[60,100,120], W=50",
     "sample_output": "240.0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28961,8 +31591,10 @@ export const problems: Problem[] = [
     "sample_input": "jobs=[(1,2,100),(2,1,19),(3,2,27),(4,1,25),(5,3,15)]",
     "sample_output": "142",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -28983,8 +31615,10 @@ export const problems: Problem[] = [
     "sample_input": "arrival=[900,940,950,1100,1500,1800], departure=[910,1200,1120,1130,1900,2000]",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29005,8 +31639,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,1,1,4]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29027,8 +31663,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,3,1,1,4]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29049,8 +31687,10 @@ export const problems: Problem[] = [
     "sample_input": "gas=[1,2,3,4,5], cost=[3,4,5,1,2]",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29071,8 +31711,10 @@ export const problems: Problem[] = [
     "sample_input": "bills=[5,5,5,10,20]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29093,8 +31735,10 @@ export const problems: Problem[] = [
     "sample_input": "g=[1,2,3], s=[1,1]",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29115,8 +31759,10 @@ export const problems: Problem[] = [
     "sample_input": "sticks = [2,4,3]",
     "sample_output": "14",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29137,8 +31783,10 @@ export const problems: Problem[] = [
     "sample_input": "ratings = [1,0,2]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29159,8 +31807,10 @@ export const problems: Problem[] = [
     "sample_input": "prices = [7,1,5,3,6,4]",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29181,8 +31831,10 @@ export const problems: Problem[] = [
     "sample_input": "points = [[10,16],[2,8],[1,6],[7,12]]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29203,8 +31855,10 @@ export const problems: Problem[] = [
     "sample_input": "intervals = [[1,2],[2,3],[3,4],[1,3]]",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29225,8 +31879,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"ababcbacadefegdehijhklij\"",
     "sample_output": "[9,7,8]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29247,8 +31903,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,30,34,5,9]",
     "sample_output": "\"9534330\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29269,8 +31927,10 @@ export const problems: Problem[] = [
     "sample_input": "V=4, edges=[(0,1,10),(0,2,6),(0,3,5),(1,3,15),(2,3,4)]",
     "sample_output": "19",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29291,8 +31951,10 @@ export const problems: Problem[] = [
     "sample_input": "V=5, adj matrix",
     "sample_output": "16",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29313,8 +31975,10 @@ export const problems: Problem[] = [
     "sample_input": "chars and frequencies",
     "sample_output": "Huffman codes",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29335,8 +31999,10 @@ export const problems: Problem[] = [
     "sample_input": "coins=[1,5,10,25], amount=41",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29357,8 +32023,10 @@ export const problems: Problem[] = [
     "sample_input": "costs = [[10,20],[30,200],[400,50],[30,20]]",
     "sample_output": "110",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29379,8 +32047,10 @@ export const problems: Problem[] = [
     "sample_input": "boxTypes=[[1,3],[2,2],[3,1]], truckSize=4",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29401,8 +32071,10 @@ export const problems: Problem[] = [
     "sample_input": "amount = 93",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29423,8 +32095,10 @@ export const problems: Problem[] = [
     "sample_input": "target=12, position=[10,8,0,5,3], speed=[2,4,1,1,3]",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29445,8 +32119,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aab\"",
     "sample_output": "\"aba\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29467,8 +32143,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3]",
     "sample_output": "8 subsets",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29489,8 +32167,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,2]",
     "sample_output": "6 subsets",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29511,8 +32191,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,2,3]",
     "sample_output": "6 permutations",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29533,8 +32215,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,1,2]",
     "sample_output": "3 unique permutations",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29555,8 +32239,10 @@ export const problems: Problem[] = [
     "sample_input": "candidates=[2,3,6,7], target=7",
     "sample_output": "[[2,2,3],[7]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29577,8 +32263,10 @@ export const problems: Problem[] = [
     "sample_input": "candidates=[10,1,2,7,6,1,5], target=8",
     "sample_output": "[[1,1,6],[1,2,5],[1,7],[2,6]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29599,8 +32287,10 @@ export const problems: Problem[] = [
     "sample_input": "9×9 board with blanks",
     "sample_output": "Solved board",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29621,8 +32311,10 @@ export const problems: Problem[] = [
     "sample_input": "board and word=\"ABCCED\"",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29643,8 +32335,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"aab\"",
     "sample_output": "[[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29665,8 +32359,10 @@ export const problems: Problem[] = [
     "sample_input": "digits = \"23\"",
     "sample_output": "9 combinations",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29687,8 +32383,10 @@ export const problems: Problem[] = [
     "sample_input": "n = 3",
     "sample_output": "5 combinations",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29709,8 +32407,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"25525511135\"",
     "sample_output": "[\"255.255.11.135\",\"255.255.111.35\"]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29731,8 +32431,10 @@ export const problems: Problem[] = [
     "sample_input": "num = \"123\", target = 6",
     "sample_output": "[\"1+2+3\",\"1*2*3\"]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29753,8 +32455,10 @@ export const problems: Problem[] = [
     "sample_input": "4×4 maze",
     "sample_output": "Path strings",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29775,8 +32479,10 @@ export const problems: Problem[] = [
     "sample_input": "N = 5",
     "sample_output": "Tour matrix",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29797,8 +32503,10 @@ export const problems: Problem[] = [
     "sample_input": "SEND + MORE = MONEY",
     "sample_output": "S=9,E=5,N=6,D=7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29819,8 +32527,10 @@ export const problems: Problem[] = [
     "sample_input": "V=4, M=3",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29841,8 +32551,10 @@ export const problems: Problem[] = [
     "sample_input": "V=5, edges",
     "sample_output": "[0,1,2,4,3]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29863,8 +32575,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [23,45,-34,12,0,98,-99,4,189,-45]",
     "sample_output": "Min difference",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29885,8 +32599,10 @@ export const problems: Problem[] = [
     "sample_input": "s = \"leetcode\", wordDict = [\"leet\",\"code\"]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29907,8 +32623,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,5,11,5]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29929,8 +32647,10 @@ export const problems: Problem[] = [
     "sample_input": "s1 = \"abpcplea\", s2 = \"ace\"",
     "sample_output": "\"ace\"",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29951,8 +32671,10 @@ export const problems: Problem[] = [
     "sample_input": "grid = [[1,3,1],[1,5,1],[4,2,1]]",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29973,8 +32695,10 @@ export const problems: Problem[] = [
     "sample_input": "m=3, n=3",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -29995,8 +32719,10 @@ export const problems: Problem[] = [
     "sample_input": "numbers = [2,7,11,15], target = 9",
     "sample_output": "[1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30017,8 +32743,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [1,1,2,3,3]",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30039,8 +32767,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,1,0,3,12]",
     "sample_output": "[1,3,12,0,0]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30061,8 +32791,10 @@ export const problems: Problem[] = [
     "sample_input": "height = [0,1,0,2,1,0,1,3,2,1,2,1]",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30083,8 +32815,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [1,2,4,7,11,15], target = 9",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30105,8 +32839,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [3,2,2,3], val = 3",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30127,8 +32863,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [2,0,2,1,1,0]",
     "sample_output": "[0,0,1,1,2,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30149,8 +32887,10 @@ export const problems: Problem[] = [
     "sample_input": "nums1=[1,2,3,0,0,0], nums2=[2,5,6]",
     "sample_output": "[1,2,2,3,5,6]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30171,8 +32911,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [0,6,5,2,2,5,1,9,4], L=1, M=2",
     "sample_output": "20",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30193,8 +32935,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [2,1,4,7,3,2,5]",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30215,8 +32959,10 @@ export const problems: Problem[] = [
     "sample_input": "head = [1,2,2,1]",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30237,8 +32983,10 @@ export const problems: Problem[] = [
     "sample_input": "nums1=[1,2,2,1], nums2=[2,2]",
     "sample_output": "[2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30259,8 +33007,10 @@ export const problems: Problem[] = [
     "sample_input": "nums = [5,3,2,4]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30281,8 +33031,10 @@ export const problems: Problem[] = [
     "sample_input": "arr = [1,3,2,2,4], target = 4",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30303,8 +33055,10 @@ export const problems: Problem[] = [
     "sample_input": "people=[1,2], limit=3",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30325,8 +33079,10 @@ export const problems: Problem[] = [
     "sample_input": "arr=[1,2,3,1,1,1,1,3,3], k=6",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30347,8 +33103,10 @@ export const problems: Problem[] = [
     "sample_input": "nums=[1,1,1,0,0,0,1,1,1,1,0], k=2",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30369,8 +33127,10 @@ export const problems: Problem[] = [
     "sample_input": "target=7, nums=[2,3,1,2,4,3]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30391,8 +33151,10 @@ export const problems: Problem[] = [
     "sample_input": "nums=[1,0,-1,0,-2,2], target=0",
     "sample_output": "3 quadruplets",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30413,8 +33175,10 @@ export const problems: Problem[] = [
     "sample_input": "nums=[-4,-1,0,3,10]",
     "sample_output": "[0,1,9,16,100]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30435,8 +33199,10 @@ export const problems: Problem[] = [
     "sample_input": "nums=[1,3,4,2,2]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30457,8 +33223,10 @@ export const problems: Problem[] = [
     "sample_input": "nums=[-1,2,1,-4], target=1",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30479,8 +33247,10 @@ export const problems: Problem[] = [
     "sample_input": "s=\"AABABBA\", k=1",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30501,8 +33271,10 @@ export const problems: Problem[] = [
     "sample_input": "fruits=[1,2,1,2,3]",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30523,8 +33295,10 @@ export const problems: Problem[] = [
     "sample_input": "nums=[2,2,1]",
     "sample_output": "1",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30545,8 +33319,10 @@ export const problems: Problem[] = [
     "sample_input": "nums=[2,2,3,2]",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30567,8 +33343,10 @@ export const problems: Problem[] = [
     "sample_input": "nums=[3,0,1]",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30589,8 +33367,10 @@ export const problems: Problem[] = [
     "sample_input": "n=16",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30611,8 +33391,10 @@ export const problems: Problem[] = [
     "sample_input": "n=16",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30633,8 +33415,10 @@ export const problems: Problem[] = [
     "sample_input": "n=43261596",
     "sample_output": "964176192",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30655,8 +33439,10 @@ export const problems: Problem[] = [
     "sample_input": "n=11",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30677,8 +33463,10 @@ export const problems: Problem[] = [
     "sample_input": "x=1, y=4",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30699,8 +33487,10 @@ export const problems: Problem[] = [
     "sample_input": "a=2, b=3",
     "sample_output": "5",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30721,8 +33511,10 @@ export const problems: Problem[] = [
     "sample_input": "nums=[1,2,3,2,1,4]",
     "sample_output": "[3,4]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30743,8 +33535,10 @@ export const problems: Problem[] = [
     "sample_input": "nums=[1,2,3]",
     "sample_output": "8 subsets",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30765,8 +33559,10 @@ export const problems: Problem[] = [
     "sample_input": "nums=[3,10,5,25,2,8]",
     "sample_output": "28",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30787,8 +33583,10 @@ export const problems: Problem[] = [
     "sample_input": "n=5",
     "sample_output": "[0,1,1,2,1,2]",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30809,8 +33607,10 @@ export const problems: Problem[] = [
     "sample_input": "arr=[1,2,3]",
     "sample_output": "0",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30831,8 +33631,10 @@ export const problems: Problem[] = [
     "sample_input": "n=5, k=2",
     "sample_output": "7",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30853,8 +33655,10 @@ export const problems: Problem[] = [
     "sample_input": "n=12, k=2",
     "sample_output": "true",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30875,8 +33679,10 @@ export const problems: Problem[] = [
     "sample_input": "n=237, i=4",
     "sample_output": "13",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30897,8 +33703,10 @@ export const problems: Problem[] = [
     "sample_input": "n=4",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30919,8 +33727,10 @@ export const problems: Problem[] = [
     "sample_input": "dividend=10, divisor=3",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30941,8 +33751,10 @@ export const problems: Problem[] = [
     "sample_input": "m=5, n=7",
     "sample_output": "4",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30963,8 +33775,10 @@ export const problems: Problem[] = [
     "sample_input": "n=10",
     "sample_output": "8",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -30985,8 +33799,10 @@ export const problems: Problem[] = [
     "sample_input": "A=29, B=15",
     "sample_output": "2",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -31007,8 +33823,10 @@ export const problems: Problem[] = [
     "sample_input": "n=12",
     "sample_output": "3",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -31029,8 +33847,10 @@ export const problems: Problem[] = [
     "sample_input": "n=23",
     "sample_output": "43",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
@@ -31051,8 +33871,10 @@ export const problems: Problem[] = [
     "sample_input": "n=5",
     "sample_output": "6",
     "starter_code": {
-      "java": `public class Main {
-    public static void main(String[] args) {
+      "java": `public class Main 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("  ");
     }
 }`
