@@ -17626,18 +17626,10 @@ export const problems: Problem[] = [
     ],
     "description": "Print a right-angled triangle of stars with N rows. Row i has i stars.",
     "input_format": "N = 5",
-    "output_format": "*
-**
-***
-****
-*****",
+    "output_format": "*\r\n**\r\n***\r\n****\r\n*****",
     "constraints": "1 ≤ N ≤ 20",
     "sample_input": "N = 5",
-    "sample_output": "*
-**
-***
-****
-*****",
+    "sample_output": "*\r\n**\r\n***\r\n****\r\n*****",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -17656,18 +17648,10 @@ export const problems: Problem[] = [
     ],
     "description": "Print an inverted pyramid of stars with N rows. Row 1 has the most stars, last row has 1 star centred.",
     "input_format": "N = 5",
-    "output_format": "*********
- *******
-  *****
-   ***
-    *",
+    "output_format": "*********\r\n *******\r\n  *****\r\n   ***\r\n    *",
     "constraints": "1 ≤ N ≤ 20",
     "sample_input": "N = 5",
-    "sample_output": "*********
- *******
-  *****
-   ***
-    *",
+    "sample_output": "*********\r\n *******\r\n  *****\r\n   ***\r\n    *",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -17686,22 +17670,10 @@ export const problems: Problem[] = [
     ],
     "description": "Print a diamond of stars. Upper half is a pyramid (N rows), lower half is an inverted pyramid (N-1 rows).",
     "input_format": "N = 4",
-    "output_format": "   *
-  ***
- *****
-*******
- *****
-  ***
-   *",
+    "output_format": "   *\r\n  ***\r\n *****\r\n*******\r\n *****\r\n  ***\r\n   *",
     "constraints": "1 ≤ N ≤ 20",
     "sample_input": "N = 4",
-    "sample_output": "   *
-  ***
- *****
-*******
- *****
-  ***
-   *",
+    "sample_output": "   *\r\n  ***\r\n *****\r\n*******\r\n *****\r\n  ***\r\n   *",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -17720,18 +17692,10 @@ export const problems: Problem[] = [
     ],
     "description": "Print Floyd's Triangle with N rows. Each row i contains i consecutive natural numbers continuing from the previous row.",
     "input_format": "N = 5",
-    "output_format": "1
-2 3
-4 5 6
-7 8 9 10
-11 12 13 14 15",
+    "output_format": "1\r\n2 3\r\n4 5 6\r\n7 8 9 10\r\n11 12 13 14 15",
     "constraints": "1 ≤ N ≤ 20",
     "sample_input": "N = 5",
-    "sample_output": "1
-2 3
-4 5 6
-7 8 9 10
-11 12 13 14 15",
+    "sample_output": "1\r\n2 3\r\n4 5 6\r\n7 8 9 10\r\n11 12 13 14 15",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -17750,18 +17714,10 @@ export const problems: Problem[] = [
     ],
     "description": "Print the first N rows of Pascal's Triangle where each element is the sum of the two elements above it.",
     "input_format": "N = 5",
-    "output_format": "    1
-   1 1
-  1 2 1
- 1 3 3 1
-1 4 6 4 1",
+    "output_format": "    1\r\n   1 1\r\n  1 2 1\r\n 1 3 3 1\r\n1 4 6 4 1",
     "constraints": "1 ≤ N ≤ 15",
     "sample_input": "N = 5",
-    "sample_output": "    1
-   1 1
-  1 2 1
- 1 3 3 1
-1 4 6 4 1",
+    "sample_output": "    1\r\n   1 1\r\n  1 2 1\r\n 1 3 3 1\r\n1 4 6 4 1",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -22180,18 +22136,10 @@ export const problems: Problem[] = [
     ],
     "description": "Print a right triangle where row i contains the first i odd numbers.",
     "input_format": "N = 5",
-    "output_format": "1
-1 3
-1 3 5
-1 3 5 7
-1 3 5 7 9",
+    "output_format": "1\r\n1 3\r\n1 3 5\r\n1 3 5 7\r\n1 3 5 7 9",
     "constraints": "1 ≤ N ≤ 20",
     "sample_input": "N = 5",
-    "sample_output": "1
-1 3
-1 3 5
-1 3 5 7
-1 3 5 7 9",
+    "sample_output": "1\r\n1 3\r\n1 3 5\r\n1 3 5 7\r\n1 3 5 7 9",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -22474,12 +22422,10 @@ export const problems: Problem[] = [
     ],
     "description": "Print a 2x2 matrix filled with numbers 1 to 4 in row-major order.",
     "input_format": "N = 2",
-    "output_format": "1 2
-3 4",
+    "output_format": "1 2\r\n3 4",
     "constraints": "N = 2",
     "sample_input": "N = 2",
-    "sample_output": "1 2
-3 4",
+    "sample_output": "1 2\r\n3 4",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -22498,14 +22444,10 @@ export const problems: Problem[] = [
     ],
     "description": "Print the classic 3x3 magic square where every row, column, and diagonal sums to 15.",
     "input_format": "N = 3",
-    "output_format": "2 7 6
-9 5 1
-4 3 8",
+    "output_format": "2 7 6\r\n9 5 1\r\n4 3 8",
     "constraints": "N = 3",
     "sample_input": "N = 3",
-    "sample_output": "2 7 6
-9 5 1
-4 3 8",
+    "sample_output": "2 7 6\r\n9 5 1\r\n4 3 8",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -22524,18 +22466,10 @@ export const problems: Problem[] = [
     ],
     "description": "Print N rows where row i contains i copies of the number i.",
     "input_format": "N = 5",
-    "output_format": "1
-2 2
-3 3 3
-4 4 4 4
-5 5 5 5 5",
+    "output_format": "1\r\n2 2\r\n3 3 3\r\n4 4 4 4\r\n5 5 5 5 5",
     "constraints": "1 ≤ N ≤ 20",
     "sample_input": "N = 5",
-    "sample_output": "1
-2 2
-3 3 3
-4 4 4 4
-5 5 5 5 5",
+    "sample_output": "1\r\n2 2\r\n3 3 3\r\n4 4 4 4\r\n5 5 5 5 5",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -22554,16 +22488,10 @@ export const problems: Problem[] = [
     ],
     "description": "Print an N×N matrix where the value at position (i,j) equals i+j+1 (1-indexed).",
     "input_format": "N = 4",
-    "output_format": "2 3 4 5
-3 4 5 6
-4 5 6 7
-5 6 7 8",
+    "output_format": "2 3 4 5\r\n3 4 5 6\r\n4 5 6 7\r\n5 6 7 8",
     "constraints": "1 ≤ N ≤ 10",
     "sample_input": "N = 4",
-    "sample_output": "2 3 4 5
-3 4 5 6
-4 5 6 7
-5 6 7 8",
+    "sample_output": "2 3 4 5\r\n3 4 5 6\r\n4 5 6 7\r\n5 6 7 8",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -22582,14 +22510,10 @@ export const problems: Problem[] = [
     ],
     "description": "Print the result of rotating an N×N identity-numbered matrix 90 degrees clockwise.",
     "input_format": "N = 3",
-    "output_format": "7 4 1
-8 5 2
-9 6 3",
+    "output_format": "7 4 1\r\n8 5 2\r\n9 6 3",
     "constraints": "1 ≤ N ≤ 10",
     "sample_input": "N = 3",
-    "sample_output": "7 4 1
-8 5 2
-9 6 3",
+    "sample_output": "7 4 1\r\n8 5 2\r\n9 6 3",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26260,18 +26184,10 @@ export const problems: Problem[] = [
     ],
     "description": "Print a right-angled triangle of alphabets where row i contains letters A through the i-th letter.",
     "input_format": "N = 5",
-    "output_format": "A
-AB
-ABC
-ABCD
-ABCDE",
+    "output_format": "A\r\nAB\r\nABC\r\nABCD\r\nABCDE",
     "constraints": "1 ≤ N ≤ 26",
     "sample_input": "N = 5",
-    "sample_output": "A
-AB
-ABC
-ABCD
-ABCDE",
+    "sample_output": "A\r\nAB\r\nABC\r\nABCD\r\nABCDE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26290,18 +26206,10 @@ ABCDE",
     ],
     "description": "Print a pattern where row i contains the i-th letter (A=1) repeated i times.",
     "input_format": "N = 5",
-    "output_format": "A
-BB
-CCC
-DDDD
-EEEEE",
+    "output_format": "A\r\nBB\r\nCCC\r\nDDDD\r\nEEEEE",
     "constraints": "1 ≤ N ≤ 26",
     "sample_input": "N = 5",
-    "sample_output": "A
-BB
-CCC
-DDDD
-EEEEE",
+    "sample_output": "A\r\nBB\r\nCCC\r\nDDDD\r\nEEEEE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26320,18 +26228,10 @@ EEEEE",
     ],
     "description": "Print a centred pyramid using alphabets. Row i has (2i-1) copies of the i-th letter, centred with spaces.",
     "input_format": "N = 5",
-    "output_format": "    A
-   BBB
-  CCCCC
- DDDDDDD
-EEEEEEEEE",
+    "output_format": "    A\r\n   BBB\r\n  CCCCC\r\n DDDDDDD\r\nEEEEEEEEE",
     "constraints": "1 ≤ N ≤ 13",
     "sample_input": "N = 5",
-    "sample_output": "    A
-   BBB
-  CCCCC
- DDDDDDD
-EEEEEEEEE",
+    "sample_output": "    A\r\n   BBB\r\n  CCCCC\r\n DDDDDDD\r\nEEEEEEEEE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26350,26 +26250,10 @@ EEEEEEEEE",
     ],
     "description": "Print a diamond of alphabets. Upper half expands from A to the N-th letter; lower half mirrors back to A.",
     "input_format": "N = 5",
-    "output_format": "    A
-   BBB
-  CCCCC
- DDDDDDD
-EEEEEEEEE
- DDDDDDD
-  CCCCC
-   BBB
-    A",
+    "output_format": "    A\r\n   BBB\r\n  CCCCC\r\n DDDDDDD\r\nEEEEEEEEE\r\n DDDDDDD\r\n  CCCCC\r\n   BBB\r\n    A",
     "constraints": "1 ≤ N ≤ 13",
     "sample_input": "N = 5",
-    "sample_output": "    A
-   BBB
-  CCCCC
- DDDDDDD
-EEEEEEEEE
- DDDDDDD
-  CCCCC
-   BBB
-    A",
+    "sample_output": "    A\r\n   BBB\r\n  CCCCC\r\n DDDDDDD\r\nEEEEEEEEE\r\n DDDDDDD\r\n  CCCCC\r\n   BBB\r\n    A",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26388,16 +26272,10 @@ EEEEEEEEE
     ],
     "description": "Print a hollow rectangle of R rows and C columns. Top and bottom rows are filled; only the first and last columns are printed for middle rows.",
     "input_format": "R = 4, C = 8",
-    "output_format": "ABCDEFGH
-A      H
-A      H
-ABCDEFGH",
+    "output_format": "ABCDEFGH\r\nA      H\r\nA      H\r\nABCDEFGH",
     "constraints": "2 ≤ R ≤ 10, 2 ≤ C ≤ 26",
     "sample_input": "R = 4, C = 8",
-    "sample_output": "ABCDEFGH
-A      H
-A      H
-ABCDEFGH",
+    "sample_output": "ABCDEFGH\r\nA      H\r\nA      H\r\nABCDEFGH",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26416,14 +26294,10 @@ ABCDEFGH",
     ],
     "description": "Print a 3-row zigzag of N letters. Row 0 holds odd-indexed letters, row 1 holds even-indexed, row 2 mirrors row 0.",
     "input_format": "N = 9",
-    "output_format": "A   C   E   G   I
-  B   D   F   H
-    C   E   G",
+    "output_format": "A   C   E   G   I\r\n  B   D   F   H\r\n    C   E   G",
     "constraints": "1 ≤ N ≤ 26",
     "sample_input": "",
-    "sample_output": "A   C   E   G   I
-  B   D   F   H
-    C   E   G",
+    "sample_output": "A   C   E   G   I\r\n  B   D   F   H\r\n    C   E   G",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26442,18 +26316,10 @@ ABCDEFGH",
     ],
     "description": "Print a decreasing right triangle: row 1 has N letters (A to N-th), row 2 has N-1 letters, down to row N with just A.",
     "input_format": "N = 5",
-    "output_format": "ABCDE
-ABCD
-ABC
-AB
-A",
+    "output_format": "ABCDE\r\nABCD\r\nABC\r\nAB\r\nA",
     "constraints": "1 ≤ N ≤ 26",
     "sample_input": "N = 5",
-    "sample_output": "ABCDE
-ABCD
-ABC
-AB
-A",
+    "sample_output": "ABCDE\r\nABCD\r\nABC\r\nAB\r\nA",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26472,20 +26338,10 @@ A",
     ],
     "description": "Print a staircase where row i has (i-1) leading spaces followed by the i-th letter (A, B, C...).",
     "input_format": "N = 6",
-    "output_format": "A
- B
-  C
-   D
-    E
-     F",
+    "output_format": "A\r\n B\r\n  C\r\n   D\r\n    E\r\n     F",
     "constraints": "1 ≤ N ≤ 26",
     "sample_input": "N = 6",
-    "sample_output": "A
- B
-  C
-   D
-    E
-     F",
+    "sample_output": "A\r\n B\r\n  C\r\n   D\r\n    E\r\n     F",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26504,26 +26360,10 @@ A",
     ],
     "description": "Print a sandglass: top half is an inverted pyramid from the N-th letter down to A; bottom half mirrors back up.",
     "input_format": "N = 5",
-    "output_format": "EEEEEEEEE
- DDDDDDD
-  CCCCC
-   BBB
-    A
-   BBB
-  CCCCC
- DDDDDDD
-EEEEEEEEE",
+    "output_format": "EEEEEEEEE\r\n DDDDDDD\r\n  CCCCC\r\n   BBB\r\n    A\r\n   BBB\r\n  CCCCC\r\n DDDDDDD\r\nEEEEEEEEE",
     "constraints": "1 ≤ N ≤ 13",
     "sample_input": "N = 5",
-    "sample_output": "EEEEEEEEE
- DDDDDDD
-  CCCCC
-   BBB
-    A
-   BBB
-  CCCCC
- DDDDDDD
-EEEEEEEEE",
+    "sample_output": "EEEEEEEEE\r\n DDDDDDD\r\n  CCCCC\r\n   BBB\r\n    A\r\n   BBB\r\n  CCCCC\r\n DDDDDDD\r\nEEEEEEEEE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26542,18 +26382,10 @@ EEEEEEEEE",
     ],
     "description": "Print a triangle where letters are filled continuously row by row: row 1 gets A, row 2 gets BC, row 3 gets DEF, and so on.",
     "input_format": "N = 5",
-    "output_format": "A
-BC
-DEF
-GHIJ
-KLMNO",
+    "output_format": "A\r\nBC\r\nDEF\r\nGHIJ\r\nKLMNO",
     "constraints": "1 ≤ N ≤ 10",
     "sample_input": "N = 5",
-    "sample_output": "A
-BC
-DEF
-GHIJ
-KLMNO",
+    "sample_output": "A\r\nBC\r\nDEF\r\nGHIJ\r\nKLMNO",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26572,18 +26404,10 @@ KLMNO",
     ],
     "description": "Print a right-aligned triangle of alphabets. Row i has (N-i) leading spaces followed by letters A through the i-th letter.",
     "input_format": "N = 5",
-    "output_format": "    A
-   AB
-  ABC
- ABCD
-ABCDE",
+    "output_format": "    A\r\n   AB\r\n  ABC\r\n ABCD\r\nABCDE",
     "constraints": "1 ≤ N ≤ 26",
     "sample_input": "N = 5",
-    "sample_output": "    A
-   AB
-  ABC
- ABCD
-ABCDE",
+    "sample_output": "    A\r\n   AB\r\n  ABC\r\n ABCD\r\nABCDE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26602,18 +26426,10 @@ ABCDE",
     ],
     "description": "Print a V-shape using N rows. Each row has two letters at symmetric positions; the last row has a single letter at the tip.",
     "input_format": "N = 5",
-    "output_format": "A       A
- B     B
-  C   C
-   D D
-    E",
+    "output_format": "A       A\r\n B     B\r\n  C   C\r\n   D D\r\n    E",
     "constraints": "1 ≤ N ≤ 13",
     "sample_input": "N = 5",
-    "sample_output": "A       A
- B     B
-  C   C
-   D D
-    E",
+    "sample_output": "A       A\r\n B     B\r\n  C   C\r\n   D D\r\n    E",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26632,18 +26448,10 @@ ABCDE",
     ],
     "description": "Print an X pattern in an N×N grid. Only the main diagonal and anti-diagonal positions are filled; all others are spaces.",
     "input_format": "N = 5",
-    "output_format": "A   E
- B C 
-  C  
- D B 
-E   A",
+    "output_format": "A   E\r\n B C \r\n  C  \r\n D B \r\nE   A",
     "constraints": "1 ≤ N ≤ 13 (odd)",
     "sample_input": "N = 5",
-    "sample_output": "A   E
- B C 
-  C  
- D B 
-E   A",
+    "sample_output": "A   E\r\n B C \r\n  C  \r\n D B \r\nE   A",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26662,26 +26470,10 @@ E   A",
     ],
     "description": "Print a butterfly of alphabets. Upper half: row i prints i letters, inner spaces, then i letters again. Lower half mirrors it.",
     "input_format": "N = 5",
-    "output_format": "A        A
-AB      AB
-ABC    ABC
-ABCD  ABCD
-ABCDEABCDE
-ABCD  ABCD
-ABC    ABC
-AB      AB
-A        A",
+    "output_format": "A        A\r\nAB      AB\r\nABC    ABC\r\nABCD  ABCD\r\nABCDEABCDE\r\nABCD  ABCD\r\nABC    ABC\r\nAB      AB\r\nA        A",
     "constraints": "1 ≤ N ≤ 13",
     "sample_input": "N = 5",
-    "sample_output": "A        A
-AB      AB
-ABC    ABC
-ABCD  ABCD
-ABCDEABCDE
-ABCD  ABCD
-ABC    ABC
-AB      AB
-A        A",
+    "sample_output": "A        A\r\nAB      AB\r\nABC    ABC\r\nABCD  ABCD\r\nABCDEABCDE\r\nABCD  ABCD\r\nABC    ABC\r\nAB      AB\r\nA        A",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26700,16 +26492,10 @@ A        A",
     ],
     "description": "Print a hollow square of N×N where corners are A, top/bottom edges are B, and left/right borders are C. Inside is spaces.",
     "input_format": "N = 4",
-    "output_format": "ABBA
-C  C
-C  C
-ABBA",
+    "output_format": "ABBA\r\nC  C\r\nC  C\r\nABBA",
     "constraints": "2 ≤ N ≤ 13",
     "sample_input": "N = 4",
-    "sample_output": "ABBA
-C  C
-C  C
-ABBA",
+    "sample_output": "ABBA\r\nC  C\r\nC  C\r\nABBA",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26728,18 +26514,10 @@ ABBA",
     ],
     "description": "Print an inverted V (caret ^) using N rows. Row 1 has the letter A at the tip (centred); each row below places the next letter one step left and one step right.",
     "input_format": "N = 5",
-    "output_format": "    A
-   B B
-  C   C
- D     D
-E       E",
+    "output_format": "    A\r\n   B B\r\n  C   C\r\n D     D\r\nE       E",
     "constraints": "1 ≤ N ≤ 13",
     "sample_input": "N = 5",
-    "sample_output": "    A
-   B B
-  C   C
- D     D
-E       E",
+    "sample_output": "    A\r\n   B B\r\n  C   C\r\n D     D\r\nE       E",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26758,16 +26536,10 @@ E       E",
     ],
     "description": "Fill an N×N matrix with letters A onwards in clockwise spiral order, then print row by row.",
     "input_format": "N = 4",
-    "output_format": "A B C D
-L M N E
-K P O F
-J I H G",
+    "output_format": "A B C D\r\nL M N E\r\nK P O F\r\nJ I H G",
     "constraints": "1 ≤ N ≤ 6",
     "sample_input": "",
-    "sample_output": "A B C D
-L M N E
-K P O F
-J I H G",
+    "sample_output": "A B C D\r\nL M N E\r\nK P O F\r\nJ I H G",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26786,18 +26558,10 @@ J I H G",
     ],
     "description": "Print N rows where each row i is a palindrome: A, ABA, ABCBA, ABCDCBA, ...",
     "input_format": "N = 5",
-    "output_format": "A
-ABA
-ABCBA
-ABCDCBA
-ABCDEDCBA",
+    "output_format": "A\r\nABA\r\nABCBA\r\nABCDCBA\r\nABCDEDCBA",
     "constraints": "1 ≤ N ≤ 13",
     "sample_input": "N = 5",
-    "sample_output": "A
-ABA
-ABCBA
-ABCDCBA
-ABCDEDCBA",
+    "sample_output": "A\r\nABA\r\nABCBA\r\nABCDCBA\r\nABCDEDCBA",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26816,18 +26580,10 @@ ABCDEDCBA",
     ],
     "description": "Print an N×N grid where each column j contains the (j+1)-th letter of the alphabet repeated in every row.",
     "input_format": "N = 5",
-    "output_format": "ABCDE
-ABCDE
-ABCDE
-ABCDE
-ABCDE",
+    "output_format": "ABCDE\r\nABCDE\r\nABCDE\r\nABCDE\r\nABCDE",
     "constraints": "1 ≤ N ≤ 26",
     "sample_input": "N = 5",
-    "sample_output": "ABCDE
-ABCDE
-ABCDE
-ABCDE
-ABCDE",
+    "sample_output": "ABCDE\r\nABCDE\r\nABCDE\r\nABCDE\r\nABCDE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26846,18 +26602,10 @@ ABCDE",
     ],
     "description": "Print an N×N checkerboard alternating A and B. Print A if (row+col) is even, B otherwise.",
     "input_format": "N = 5",
-    "output_format": "ABABA
-BABAB
-ABABA
-BABAB
-ABABA",
+    "output_format": "ABABA\r\nBABAB\r\nABABA\r\nBABAB\r\nABABA",
     "constraints": "1 ≤ N ≤ 20",
     "sample_input": "N = 5",
-    "sample_output": "ABABA
-BABAB
-ABABA
-BABAB
-ABABA",
+    "sample_output": "ABABA\r\nBABAB\r\nABABA\r\nBABAB\r\nABABA",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26876,18 +26624,10 @@ ABABA",
     ],
     "description": "Print a right triangle where all characters in row i are the i-th letter: row 1 is A once, row 2 is BB, row 3 is CCC, and so on.",
     "input_format": "N = 5",
-    "output_format": "A
-BB
-CCC
-DDDD
-EEEEE",
+    "output_format": "A\r\nBB\r\nCCC\r\nDDDD\r\nEEEEE",
     "constraints": "1 ≤ N ≤ 26",
     "sample_input": "N = 5",
-    "sample_output": "A
-BB
-CCC
-DDDD
-EEEEE",
+    "sample_output": "A\r\nBB\r\nCCC\r\nDDDD\r\nEEEEE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26906,22 +26646,10 @@ EEEEE",
     ],
     "description": "Print the letter K in a 7-row grid. Column 0 of every row is filled with A. Two diagonal arms branch from the middle row outward.",
     "input_format": "N = 7",
-    "output_format": "A   E
-A  D 
-A C  
-AB   
-A C  
-A  D 
-A   E",
+    "output_format": "A   E\r\nA  D \r\nA C  \r\nAB   \r\nA C  \r\nA  D \r\nA   E",
     "constraints": "N = 7",
     "sample_input": "",
-    "sample_output": "A   E
-A  D 
-A C  
-AB   
-A C  
-A  D 
-A   E",
+    "sample_output": "A   E\r\nA  D \r\nA C  \r\nAB   \r\nA C  \r\nA  D \r\nA   E",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26940,18 +26668,10 @@ A   E",
     ],
     "description": "Print a right triangle where row i contains letters from the i-th letter down to A: row 1 prints A, row 2 prints BA, row 3 prints CBA, and so on.",
     "input_format": "N = 5",
-    "output_format": "A
-BA
-CBA
-DCBA
-EDCBA",
+    "output_format": "A\r\nBA\r\nCBA\r\nDCBA\r\nEDCBA",
     "constraints": "1 ≤ N ≤ 26",
     "sample_input": "N = 5",
-    "sample_output": "A
-BA
-CBA
-DCBA
-EDCBA",
+    "sample_output": "A\r\nBA\r\nCBA\r\nDCBA\r\nEDCBA",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26970,18 +26690,10 @@ EDCBA",
     ],
     "description": "Print a 3-column wave with N rows. Column 0 and 2 go A→E (forward); column 1 goes E→A (backward). Columns separated by a space.",
     "input_format": "N = 5",
-    "output_format": "A E A
-B D B
-C C C
-D B D
-E A E",
+    "output_format": "A E A\r\nB D B\r\nC C C\r\nD B D\r\nE A E",
     "constraints": "1 ≤ N ≤ 26",
     "sample_input": "N = 5",
-    "sample_output": "A E A
-B D B
-C C C
-D B D
-E A E",
+    "sample_output": "A E A\r\nB D B\r\nC C C\r\nD B D\r\nE A E",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -27000,18 +26712,10 @@ E A E",
     ],
     "description": "Print a cross (+) in an N×N grid. The middle row and middle column are filled with letters A onwards; all other positions are spaces.",
     "input_format": "N = 5",
-    "output_format": "  C  
-  C  
-ABCDE
-  C  
-  C  ",
+    "output_format": "  C  \r\n  C  \r\nABCDE\r\n  C  \r\n  C  ",
     "constraints": "1 ≤ N ≤ 13 (odd)",
     "sample_input": "N = 5",
-    "sample_output": "  C  
-  C  
-ABCDE
-  C  
-  C  ",
+    "sample_output": "  C  \r\n  C  \r\nABCDE\r\n  C  \r\n  C  ",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -27030,16 +26734,10 @@ ABCDE
     ],
     "description": "Fill an N×N matrix with letters in snake order: left-to-right on even rows, right-to-left on odd rows. Print the matrix.",
     "input_format": "N = 4",
-    "output_format": "A B C D
-H G F E
-I J K L
-P O N M",
+    "output_format": "A B C D\r\nH G F E\r\nI J K L\r\nP O N M",
     "constraints": "1 ≤ N ≤ 6",
     "sample_input": "",
-    "sample_output": "A B C D
-H G F E
-I J K L
-P O N M",
+    "sample_output": "A B C D\r\nH G F E\r\nI J K L\r\nP O N M",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -27058,18 +26756,10 @@ P O N M",
     ],
     "description": "Print the letter Z in an N×N grid. Top row and bottom row are fully filled; a diagonal goes from top-right to bottom-left.",
     "input_format": "N = 5",
-    "output_format": "ABCDE
-   D 
-  C  
- B   
-ABCDE",
+    "output_format": "ABCDE\r\n   D \r\n  C  \r\n B   \r\nABCDE",
     "constraints": "1 ≤ N ≤ 13",
     "sample_input": "N = 5",
-    "sample_output": "ABCDE
-   D 
-  C  
- B   
-ABCDE",
+    "sample_output": "ABCDE\r\n   D \r\n  C  \r\n B   \r\nABCDE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -27088,18 +26778,10 @@ ABCDE",
     ],
     "description": "Print a right triangle where row i contains i letters starting from the i-th letter down to A: row 1 prints A, row 2 prints BA, row 3 prints CBA.",
     "input_format": "N = 5",
-    "output_format": "A
-BA
-CBA
-DCBA
-EDCBA",
+    "output_format": "A\r\nBA\r\nCBA\r\nDCBA\r\nEDCBA",
     "constraints": "1 ≤ N ≤ 26",
     "sample_input": "N = 5",
-    "sample_output": "A
-BA
-CBA
-DCBA
-EDCBA",
+    "sample_output": "A\r\nBA\r\nCBA\r\nDCBA\r\nEDCBA",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -27118,26 +26800,10 @@ EDCBA",
     ],
     "description": "Print a hollow diamond outline of alphabets. Only the border of the diamond is printed; the interior is spaces.",
     "input_format": "N = 5",
-    "output_format": "    A
-   B B
-  C   C
- D     D
-E       E
- D     D
-  C   C
-   B B
-    A",
+    "output_format": "    A\r\n   B B\r\n  C   C\r\n D     D\r\nE       E\r\n D     D\r\n  C   C\r\n   B B\r\n    A",
     "constraints": "1 ≤ N ≤ 13",
     "sample_input": "N = 5",
-    "sample_output": "    A
-   B B
-  C   C
- D     D
-E       E
- D     D
-  C   C
-   B B
-    A",
+    "sample_output": "    A\r\n   B B\r\n  C   C\r\n D     D\r\nE       E\r\n D     D\r\n  C   C\r\n   B B\r\n    A",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -27156,16 +26822,10 @@ E       E
     ],
     "description": "Print a triangle where each cell shows the row number followed by the column letter: row 1 prints 1A, row 2 prints 2A 2B, etc.",
     "input_format": "N = 4",
-    "output_format": "1A
-2A 2B
-3A 3B 3C
-4A 4B 4C 4D",
+    "output_format": "1A\r\n2A 2B\r\n3A 3B 3C\r\n4A 4B 4C 4D",
     "constraints": "1 ≤ N ≤ 26",
     "sample_input": "N = 4",
-    "sample_output": "1A
-2A 2B
-3A 3B 3C
-4A 4B 4C 4D",
+    "sample_output": "1A\r\n2A 2B\r\n3A 3B 3C\r\n4A 4B 4C 4D",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -27184,26 +26844,10 @@ E       E
     ],
     "description": "Print a left-pointing arrow. The middle row is the longest (letters A to N); rows above and below shrink by one letter, right-aligned.",
     "input_format": "N = 5",
-    "output_format": "    E
-   DE
-  CDE
- BCDE
-ABCDE
- BCDE
-  CDE
-   DE
-    E",
+    "output_format": "    E\r\n   DE\r\n  CDE\r\n BCDE\r\nABCDE\r\n BCDE\r\n  CDE\r\n   DE\r\n    E",
     "constraints": "1 ≤ N ≤ 13",
     "sample_input": "N = 5",
-    "sample_output": "    E
-   DE
-  CDE
- BCDE
-ABCDE
- BCDE
-  CDE
-   DE
-    E",
+    "sample_output": "    E\r\n   DE\r\n  CDE\r\n BCDE\r\nABCDE\r\n BCDE\r\n  CDE\r\n   DE\r\n    E",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
