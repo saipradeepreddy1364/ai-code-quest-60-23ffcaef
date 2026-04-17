@@ -35,6 +35,8 @@ export default function ProblemView() {
   const isResizingLeftRef   = useRef(false);
   const isResizingAIRef     = useRef(false); // NEW: AI panel resize
   const inputRef            = useRef<HTMLTextAreaElement>(null);
+  // Ref to always have the latest handleRun in the keyboard listener
+  const handleRunRef        = useRef<() => void>(() => {});
 
   // ── State ──────────────────────────────────────────────────────────────────
   const [code, setCode]                   = useState(problem?.starter_code?.java || "");
@@ -84,6 +86,25 @@ export default function ProblemView() {
       setTimeout(() => inputRef.current?.focus(), 50);
     }
   }, [needsInput]);
+
+  // ── Ctrl+Enter → Run (works even when cursor is inside the editor) ─────────
+  // We store handleRun in a ref so the listener never goes stale.
+  useEffect(() => {
+    handleRunRef.current = handleRun;
+  }); // intentionally no dep-array — always stays current
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) {
+        e.preventDefault();
+        e.stopPropagation();
+        handleRunRef.current();
+      }
+    };
+    // useCapture = true so we intercept before Monaco swallows the event
+    window.addEventListener("keydown", onKeyDown, true);
+    return () => window.removeEventListener("keydown", onKeyDown, true);
+  }, []); // runs once — safe because we read via ref
 
   // ── Resizable panels mouse handlers ───────────────────────────────────────
   useEffect(() => {
@@ -322,7 +343,7 @@ export default function ProblemView() {
             <button
               onClick={handleRun}
               disabled={isRunning}
-              title="Run code"
+              title="Run code (Ctrl+Enter)"
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold text-green-500 bg-green-500/10 hover:bg-green-500/20 transition-colors disabled:opacity-50"
             >
               {isRunning ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Play className="h-3.5 w-3.5" />}
