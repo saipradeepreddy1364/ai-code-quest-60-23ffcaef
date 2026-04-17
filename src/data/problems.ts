@@ -17618,18 +17618,26 @@ export const problems: Problem[] = [
   },
   {
     "id": 801,
-    "title": "Star Pyramid Pattern #801",
+    "title": "Star Right Triangle Pattern #801",
     "category": "Patterns",
     "difficulty": "Easy",
     "company_tags": [
       "Apple", "Uber", "Microsoft", "Amazon"
     ],
-    "description": "Print a pyramid of stars with N rows where row i has (2i-1) stars centred.",
-    "input_format": "N = 4",
-    "output_format": "    *\n   ***\n  *****\n *******",
+    "description": "Print a right-angled triangle of stars with N rows. Row i has i stars.",
+    "input_format": "N = 5",
+    "output_format": "*
+**
+***
+****
+*****",
     "constraints": "1 ≤ N ≤ 20",
-    "sample_input": "N = 4",
-    "sample_output": "Pyramid of 4 rows",
+    "sample_input": "N = 5",
+    "sample_output": "*
+**
+***
+****
+*****",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -17646,12 +17654,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Intuit", "Google"
     ],
-    "description": "Print inverted pyramid star pattern",
-    "input_format": "n=4",
-    "output_format": "*******\\\\n *****\\\\n  ***\\\\n   *",
-    "constraints": "1 \\\\u2264 n \\\\u2264 10^5",
-    "sample_input": "n=4",
-    "sample_output": "*******\\\\n *****\\\\n  ***\\\\n   *",
+    "description": "Print an inverted pyramid of stars with N rows. Row 1 has the most stars, last row has 1 star centred.",
+    "input_format": "N = 5",
+    "output_format": "*********
+ *******
+  *****
+   ***
+    *",
+    "constraints": "1 ≤ N ≤ 20",
+    "sample_input": "N = 5",
+    "sample_output": "*********
+ *******
+  *****
+   ***
+    *",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -17668,12 +17684,24 @@ export const problems: Problem[] = [
     "company_tags": [
       "Morgan Stanley", "Amazon", "Intuit"
     ],
-    "description": "Print a diamond pattern using stars",
-    "input_format": "n=3",
-    "output_format": "  *\\\\n ***\\\\n*****\\\\n ***\\\\n  *",
-    "constraints": "1 \\\\u2264 n \\\\u2264 10^5",
-    "sample_input": "n=3",
-    "sample_output": "  *\\\\n ***\\\\n*****\\\\n ***\\\\n  *",
+    "description": "Print a diamond of stars. Upper half is a pyramid (N rows), lower half is an inverted pyramid (N-1 rows).",
+    "input_format": "N = 4",
+    "output_format": "   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *",
+    "constraints": "1 ≤ N ≤ 20",
+    "sample_input": "N = 4",
+    "sample_output": "   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -17690,12 +17718,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Walmart", "Google", "Intuit", "Netflix"
     ],
-    "description": "Print Floyd's triangle",
-    "input_format": "n=4",
-    "output_format": "1\\\\n2 3\\\\n4 5 6\\\\n7 8 9 10",
-    "constraints": "1 \\\\u2264 n \\\\u2264 10^5",
-    "sample_input": "n=4",
-    "sample_output": "1\\\\n2 3\\\\n4 5 6\\\\n7 8 9 10",
+    "description": "Print Floyd's Triangle with N rows. Each row i contains i consecutive natural numbers continuing from the previous row.",
+    "input_format": "N = 5",
+    "output_format": "1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15",
+    "constraints": "1 ≤ N ≤ 20",
+    "sample_input": "N = 5",
+    "sample_output": "1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -17712,12 +17748,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Intuit", "Oracle"
     ],
-    "description": "Print the first N rows of Pascal's Triangle where each element equals the sum of the two elements above it.",
+    "description": "Print the first N rows of Pascal's Triangle where each element is the sum of the two elements above it.",
     "input_format": "N = 5",
-    "output_format": "1\n1 1\n1 2 1\n1 3 3 1\n1 4 6 4 1",
+    "output_format": "    1
+   1 1
+  1 2 1
+ 1 3 3 1
+1 4 6 4 1",
     "constraints": "1 ≤ N ≤ 15",
     "sample_input": "N = 5",
-    "sample_output": "5 rows of Pascal's Triangle",
+    "sample_output": "    1
+   1 1
+  1 2 1
+ 1 3 3 1
+1 4 6 4 1",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -22128,18 +22172,26 @@ export const problems: Problem[] = [
   },
   {
     "id": 1006,
-    "title": "Odd number pattern #1006",
+    "title": "Odd Number Triangle Pattern #1006",
     "category": "Logical Reasoning",
     "difficulty": "Medium",
     "company_tags": [
       "TCS", "Wipro"
     ],
-    "description": "Odd one out: 6 10 15 21 28",
-    "input_format": "Space-separated numbers",
-    "output_format": "The odd one out",
-    "constraints": "One not triangular",
-    "sample_input": "6 10 15 21 28",
-    "sample_output": "10",
+    "description": "Print a right triangle where row i contains the first i odd numbers.",
+    "input_format": "N = 5",
+    "output_format": "1
+1 3
+1 3 5
+1 3 5 7
+1 3 5 7 9",
+    "constraints": "1 ≤ N ≤ 20",
+    "sample_input": "N = 5",
+    "sample_output": "1
+1 3
+1 3 5
+1 3 5 7
+1 3 5 7 9",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -22414,18 +22466,20 @@ export const problems: Problem[] = [
   },
   {
     "id": 1019,
-    "title": "2x2 matrix pattern #1019",
+    "title": "2x2 Matrix Pattern #1019",
     "category": "Logical Reasoning",
     "difficulty": "Easy",
     "company_tags": [
       "TCS", "Infosys"
     ],
-    "description": "Matrix: 1 2 / 3 ? Pattern: each row sum equals 5. Find ?.",
-    "input_format": "Index 1",
-    "output_format": "2",
-    "constraints": "Fixed",
-    "sample_input": "1",
-    "sample_output": "2",
+    "description": "Print a 2x2 matrix filled with numbers 1 to 4 in row-major order.",
+    "input_format": "N = 2",
+    "output_format": "1 2
+3 4",
+    "constraints": "N = 2",
+    "sample_input": "N = 2",
+    "sample_output": "1 2
+3 4",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -22436,18 +22490,22 @@ export const problems: Problem[] = [
   },
   {
     "id": 1020,
-    "title": "3x3 magic square check #1020",
+    "title": "3x3 Magic Square #1020",
     "category": "Logical Reasoning",
     "difficulty": "Medium",
     "company_tags": [
       "Wipro", "CTS"
     ],
-    "description": "Given a 3x3 matrix, check if it is a magic square (all rows, cols, diagonals equal sum).",
-    "input_format": "9 integers (row by row)",
-    "output_format": "YES or NO",
-    "constraints": "Valid 3x3 matrix",
-    "sample_input": "2 7 6 9 5 1 4 3 8",
-    "sample_output": "YES",
+    "description": "Print the classic 3x3 magic square where every row, column, and diagonal sums to 15.",
+    "input_format": "N = 3",
+    "output_format": "2 7 6
+9 5 1
+4 3 8",
+    "constraints": "N = 3",
+    "sample_input": "N = 3",
+    "sample_output": "2 7 6
+9 5 1
+4 3 8",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -22458,18 +22516,26 @@ export const problems: Problem[] = [
   },
   {
     "id": 1021,
-    "title": "Row sum pattern #1021",
+    "title": "Row Sum Number Pattern #1021",
     "category": "Logical Reasoning",
     "difficulty": "Easy",
     "company_tags": [
       "TCS", "HCL"
     ],
-    "description": "Each row of matrix sums to same value. Row1: 3 5 7, Row2: 4 ? 8. Find ?.",
-    "input_format": "Index 1",
-    "output_format": "3",
-    "constraints": "Sum pattern",
-    "sample_input": "1",
-    "sample_output": "3",
+    "description": "Print N rows where row i contains i copies of the number i.",
+    "input_format": "N = 5",
+    "output_format": "1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5",
+    "constraints": "1 ≤ N ≤ 20",
+    "sample_input": "N = 5",
+    "sample_output": "1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -22480,18 +22546,24 @@ export const problems: Problem[] = [
   },
   {
     "id": 1022,
-    "title": "Diagonal sum #1022",
+    "title": "Diagonal Sum Pattern #1022",
     "category": "Logical Reasoning",
     "difficulty": "Easy",
     "company_tags": [
       "Infosys", "Accenture"
     ],
-    "description": "Find sum of primary diagonal of NxN matrix.",
-    "input_format": "First line N, then N*N integers row by row",
-    "output_format": "Sum of primary diagonal",
-    "constraints": "1<=N<=10",
-    "sample_input": "3\\n1 2 3 4 5 6 7 8 9",
-    "sample_output": "15",
+    "description": "Print an N×N matrix where the value at position (i,j) equals i+j+1 (1-indexed).",
+    "input_format": "N = 4",
+    "output_format": "2 3 4 5
+3 4 5 6
+4 5 6 7
+5 6 7 8",
+    "constraints": "1 ≤ N ≤ 10",
+    "sample_input": "N = 4",
+    "sample_output": "2 3 4 5
+3 4 5 6
+4 5 6 7
+5 6 7 8",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -22502,18 +22574,22 @@ export const problems: Problem[] = [
   },
   {
     "id": 1023,
-    "title": "Rotate matrix 90 #1023",
+    "title": "Rotate Matrix 90° Pattern #1023",
     "category": "Logical Reasoning",
     "difficulty": "Medium",
     "company_tags": [
       "TCS", "Wipro"
     ],
-    "description": "Rotate a 2x2 matrix 90 degrees clockwise. Print result row by row.",
-    "input_format": "4 integers (2x2 row by row)",
-    "output_format": "4 integers (rotated, row by row)",
-    "constraints": "2x2 only",
-    "sample_input": "1 2 3 4",
-    "sample_output": "3 1 4 2",
+    "description": "Print the result of rotating an N×N identity-numbered matrix 90 degrees clockwise.",
+    "input_format": "N = 3",
+    "output_format": "7 4 1
+8 5 2
+9 6 3",
+    "constraints": "1 ≤ N ≤ 10",
+    "sample_input": "N = 3",
+    "sample_output": "7 4 1
+8 5 2
+9 6 3",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26176,18 +26252,26 @@ export const problems: Problem[] = [
   },
   {
     "id": 1190,
-    "title": "Alphabet Pattern – Right Triangle (A B C…) #1190",
+    "title": "Alphabet Pattern – Right Triangle #1190",
     "category": "Patterns",
     "difficulty": "Easy",
     "company_tags": [
       "TCS", "Infosys"
     ],
-    "description": "Print a right-angled triangle of alphabets where each row i contains alphabets A through the i-th letter.",
-    "input_format": "n=5",
-    "output_format": "A\\nAB\\nABC\\nABCD\\nABCDE",
-    "constraints": "5 rows. Use nested loops.",
-    "sample_input": "n=5",
-    "sample_output": "A\\nAB\\nABC\\nABCD\\nABCDE",
+    "description": "Print a right-angled triangle of alphabets where row i contains letters A through the i-th letter.",
+    "input_format": "N = 5",
+    "output_format": "A
+AB
+ABC
+ABCD
+ABCDE",
+    "constraints": "1 ≤ N ≤ 26",
+    "sample_input": "N = 5",
+    "sample_output": "A
+AB
+ABC
+ABCD
+ABCDE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26204,12 +26288,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "TCS", "Wipro"
     ],
-    "description": "Print a pattern where each row i contains the i-th letter repeated i times: row 1 has A, row 2 has BB, row 3 has CCC, and so on for 5 rows.",
-    "input_format": "n=5",
-    "output_format": "A\\nBB\\nCCC\\nDDDD\\nEEEEE",
-    "constraints": "5 rows.",
-    "sample_input": "n=5",
-    "sample_output": "A\\nBB\\nCCC\\nDDDD\\nEEEEE",
+    "description": "Print a pattern where row i contains the i-th letter (A=1) repeated i times.",
+    "input_format": "N = 5",
+    "output_format": "A
+BB
+CCC
+DDDD
+EEEEE",
+    "constraints": "1 ≤ N ≤ 26",
+    "sample_input": "N = 5",
+    "sample_output": "A
+BB
+CCC
+DDDD
+EEEEE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26226,12 +26318,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Infosys", "Cognizant"
     ],
-    "description": "Print a centred pyramid using alphabets. Row 1 has A at the tip, each row uses the next letter and is centred with leading spaces. 5 rows total.",
-    "input_format": "n=5",
-    "output_format": "    A\\n   BBB\\n  CCCCC\\n DDDDDDD\\nEEEEEEEEE",
-    "constraints": "5 rows. Centre-align using spaces.",
-    "sample_input": "n=5",
-    "sample_output": "    A\\n   BBB\\n  CCCCC\\n DDDDDDD\\nEEEEEEEEE",
+    "description": "Print a centred pyramid using alphabets. Row i has (2i-1) copies of the i-th letter, centred with spaces.",
+    "input_format": "N = 5",
+    "output_format": "    A
+   BBB
+  CCCCC
+ DDDDDDD
+EEEEEEEEE",
+    "constraints": "1 ≤ N ≤ 13",
+    "sample_input": "N = 5",
+    "sample_output": "    A
+   BBB
+  CCCCC
+ DDDDDDD
+EEEEEEEEE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26248,12 +26348,28 @@ export const problems: Problem[] = [
     "company_tags": [
       "TCS", "Amazon"
     ],
-    "description": "Print a diamond shape made of alphabets. Upper half is a pyramid expanding from A to E; lower half mirrors it back to A.",
-    "input_format": "n=5",
-    "output_format": "    A\\n   BBB\\n  CCCCC\\n DDDDDDD\\nEEEEEEEEE\\n DDDDDDD\\n  CCCCC\\n   BBB\\n    A",
-    "constraints": "n=5. 9 rows total.",
-    "sample_input": "n=5",
-    "sample_output": "    A\\n   BBB\\n  CCCCC\\n DDDDDDD\\nEEEEEEEEE\\n DDDDDDD\\n  CCCCC\\n   BBB\\n    A",
+    "description": "Print a diamond of alphabets. Upper half expands from A to the N-th letter; lower half mirrors back to A.",
+    "input_format": "N = 5",
+    "output_format": "    A
+   BBB
+  CCCCC
+ DDDDDDD
+EEEEEEEEE
+ DDDDDDD
+  CCCCC
+   BBB
+    A",
+    "constraints": "1 ≤ N ≤ 13",
+    "sample_input": "N = 5",
+    "sample_output": "    A
+   BBB
+  CCCCC
+ DDDDDDD
+EEEEEEEEE
+ DDDDDDD
+  CCCCC
+   BBB
+    A",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26270,12 +26386,18 @@ export const problems: Problem[] = [
     "company_tags": [
       "Infosys", "Wipro"
     ],
-    "description": "Print a hollow rectangle of size 4 rows x 8 columns. The top and bottom rows are filled with letters A-H; left and right borders use the row letter; inside is spaces.",
-    "input_format": "rows=4, cols=8",
-    "output_format": "ABCDEFGH\\nA      H\\nA      H\\nABCDEFGH",
-    "constraints": "4 rows, 8 columns. Border only.",
-    "sample_input": "rows=4, cols=8",
-    "sample_output": "ABCDEFGH\\nA      H\\nA      H\\nABCDEFGH",
+    "description": "Print a hollow rectangle of R rows and C columns. Top and bottom rows are filled; only the first and last columns are printed for middle rows.",
+    "input_format": "R = 4, C = 8",
+    "output_format": "ABCDEFGH
+A      H
+A      H
+ABCDEFGH",
+    "constraints": "2 ≤ R ≤ 10, 2 ≤ C ≤ 26",
+    "sample_input": "R = 4, C = 8",
+    "sample_output": "ABCDEFGH
+A      H
+A      H
+ABCDEFGH",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26292,12 +26414,16 @@ export const problems: Problem[] = [
     "company_tags": [
       "Google", "Microsoft"
     ],
-    "description": "Print 3 rows x 9 columns of a zigzag wave using letters A-I. Row 0 fills positions 0,2,4,6,8; row 1 fills 1,3,5,7; row 2 fills 2,4,6. Empty positions are spaces.",
-    "input_format": "No input required.",
-    "output_format": "A * * * * * * * I\\n* B * D * F * H *\\n* * C * E * G * *",
-    "constraints": "3 rows, 9 cols.",
+    "description": "Print a 3-row zigzag of N letters. Row 0 holds odd-indexed letters, row 1 holds even-indexed, row 2 mirrors row 0.",
+    "input_format": "N = 9",
+    "output_format": "A   C   E   G   I
+  B   D   F   H
+    C   E   G",
+    "constraints": "1 ≤ N ≤ 26",
     "sample_input": "",
-    "sample_output": "A * * * * * * * I\\n* B * D * F * H *\\n* * C * E * G * *",
+    "sample_output": "A   C   E   G   I
+  B   D   F   H
+    C   E   G",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26314,12 +26440,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "TCS", "Accenture"
     ],
-    "description": "Print a right triangle of alphabets in reverse: row 1 has ABCDE, row 2 has ABCD, down to row 5 with just A.",
-    "input_format": "n=5",
-    "output_format": "ABCDE\\nABCD\\nABC\\nAB\\nA",
-    "constraints": "5 rows decreasing.",
-    "sample_input": "n=5",
-    "sample_output": "ABCDE\\nABCD\\nABC\\nAB\\nA",
+    "description": "Print a decreasing right triangle: row 1 has N letters (A to N-th), row 2 has N-1 letters, down to row N with just A.",
+    "input_format": "N = 5",
+    "output_format": "ABCDE
+ABCD
+ABC
+AB
+A",
+    "constraints": "1 ≤ N ≤ 26",
+    "sample_input": "N = 5",
+    "sample_output": "ABCDE
+ABCD
+ABC
+AB
+A",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26336,12 +26470,22 @@ export const problems: Problem[] = [
     "company_tags": [
       "Wipro", "Cognizant"
     ],
-    "description": "Print a staircase where row i has (i-1) leading spaces followed by the i-th letter (A, B, C...) for 6 rows.",
-    "input_format": "n=6",
-    "output_format": "A\\n B\\n  C\\n   D\\n    E\\n     F",
-    "constraints": "6 rows. One letter per row, shifted right by one each row.",
-    "sample_input": "n=6",
-    "sample_output": "A\\n B\\n  C\\n   D\\n    E\\n     F",
+    "description": "Print a staircase where row i has (i-1) leading spaces followed by the i-th letter (A, B, C...).",
+    "input_format": "N = 6",
+    "output_format": "A
+ B
+  C
+   D
+    E
+     F",
+    "constraints": "1 ≤ N ≤ 26",
+    "sample_input": "N = 6",
+    "sample_output": "A
+ B
+  C
+   D
+    E
+     F",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26358,12 +26502,28 @@ export const problems: Problem[] = [
     "company_tags": [
       "Amazon", "Flipkart"
     ],
-    "description": "Print a sandglass (inverted pyramid on top, pyramid on bottom) using alphabets. Top row starts with EEEEEEEEE and shrinks to A, then expands back to EEEEEEEEE.",
-    "input_format": "n=5",
-    "output_format": "EEEEEEEEE\\n DDDDDDD\\n  CCCCC\\n   BBB\\n    A\\n   BBB\\n  CCCCC\\n DDDDDDD\\nEEEEEEEEE",
-    "constraints": "n=5. 9 rows total.",
-    "sample_input": "n=5",
-    "sample_output": "EEEEEEEEE\\n DDDDDDD\\n  CCCCC\\n   BBB\\n    A\\n   BBB\\n  CCCCC\\n DDDDDDD\\nEEEEEEEEE",
+    "description": "Print a sandglass: top half is an inverted pyramid from the N-th letter down to A; bottom half mirrors back up.",
+    "input_format": "N = 5",
+    "output_format": "EEEEEEEEE
+ DDDDDDD
+  CCCCC
+   BBB
+    A
+   BBB
+  CCCCC
+ DDDDDDD
+EEEEEEEEE",
+    "constraints": "1 ≤ N ≤ 13",
+    "sample_input": "N = 5",
+    "sample_output": "EEEEEEEEE
+ DDDDDDD
+  CCCCC
+   BBB
+    A
+   BBB
+  CCCCC
+ DDDDDDD
+EEEEEEEEE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26380,12 +26540,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "TCS", "Infosys"
     ],
-    "description": "Print a triangle where letters are filled continuously row by row: row 1 gets A, row 2 gets BC, row 3 gets DEF, row 4 gets GHIJ, row 5 gets KLMNO.",
-    "input_format": "n=5",
-    "output_format": "A\\nBC\\nDEF\\nGHIJ\\nKLMNO",
-    "constraints": "5 rows. Letters are continuous A through O.",
-    "sample_input": "n=5",
-    "sample_output": "A\\nBC\\nDEF\\nGHIJ\\nKLMNO",
+    "description": "Print a triangle where letters are filled continuously row by row: row 1 gets A, row 2 gets BC, row 3 gets DEF, and so on.",
+    "input_format": "N = 5",
+    "output_format": "A
+BC
+DEF
+GHIJ
+KLMNO",
+    "constraints": "1 ≤ N ≤ 10",
+    "sample_input": "N = 5",
+    "sample_output": "A
+BC
+DEF
+GHIJ
+KLMNO",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26402,12 +26570,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Wipro", "HCL"
     ],
-    "description": "Print a right-aligned triangle of alphabets. Row 1 has 4 leading spaces then A, row 5 has no leading spaces and prints ABCDE.",
-    "input_format": "n=5",
-    "output_format": "    A\\n   AB\\n  ABC\\n ABCD\\nABCDE",
-    "constraints": "5 rows. Right-align using leading spaces.",
-    "sample_input": "n=5",
-    "sample_output": "    A\\n   AB\\n  ABC\\n ABCD\\nABCDE",
+    "description": "Print a right-aligned triangle of alphabets. Row i has (N-i) leading spaces followed by letters A through the i-th letter.",
+    "input_format": "N = 5",
+    "output_format": "    A
+   AB
+  ABC
+ ABCD
+ABCDE",
+    "constraints": "1 ≤ N ≤ 26",
+    "sample_input": "N = 5",
+    "sample_output": "    A
+   AB
+  ABC
+ ABCD
+ABCDE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26424,12 +26600,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Amazon", "Google"
     ],
-    "description": "Print a V-shape pattern using 5 rows. Each row has two letters at symmetric positions converging toward the centre bottom. Last row has only one letter at the tip.",
-    "input_format": "n=5",
-    "output_format": "A       A\\n B     B\\n  C   C\\n   D D\\n    E",
-    "constraints": "n=5. Two letters per row except the last.",
-    "sample_input": "n=5",
-    "sample_output": "A       A\\n B     B\\n  C   C\\n   D D\\n    E",
+    "description": "Print a V-shape using N rows. Each row has two letters at symmetric positions; the last row has a single letter at the tip.",
+    "input_format": "N = 5",
+    "output_format": "A       A
+ B     B
+  C   C
+   D D
+    E",
+    "constraints": "1 ≤ N ≤ 13",
+    "sample_input": "N = 5",
+    "sample_output": "A       A
+ B     B
+  C   C
+   D D
+    E",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26446,12 +26630,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Google", "Microsoft"
     ],
-    "description": "Print an X pattern in a 5x5 grid. Only positions on the main diagonal (j==i) and anti-diagonal (j==n-1-i) are filled with the row's letter; all other positions are spaces.",
-    "input_format": "n=5",
-    "output_format": "A   E\\n B C \\n  C  \\n D B \\nE   A",
-    "constraints": "5x5 grid. Main diagonal + anti-diagonal only.",
-    "sample_input": "n=5",
-    "sample_output": "A   E\\n B C \\n  C  \\n D B \\nE   A",
+    "description": "Print an X pattern in an N×N grid. Only the main diagonal and anti-diagonal positions are filled; all others are spaces.",
+    "input_format": "N = 5",
+    "output_format": "A   E
+ B C 
+  C  
+ D B 
+E   A",
+    "constraints": "1 ≤ N ≤ 13 (odd)",
+    "sample_input": "N = 5",
+    "sample_output": "A   E
+ B C 
+  C  
+ D B 
+E   A",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26468,12 +26660,28 @@ export const problems: Problem[] = [
     "company_tags": [
       "TCS", "Infosys"
     ],
-    "description": "Print a butterfly pattern using alphabets. Upper half: row i prints i letters (A to i-th), inner spaces, then i letters again. Lower half mirrors it. n=5, 9 rows total.",
-    "input_format": "n=5",
-    "output_format": "A        A\\nAB      AB\\nABC    ABC\\nABCD  ABCD\\nABCDEABCDE\\nABCD  ABCD\\nABC    ABC\\nAB      AB\\nA        A",
-    "constraints": "n=5. 9 rows total.",
-    "sample_input": "n=5",
-    "sample_output": "A        A\\nAB      AB\\nABC    ABC\\nABCD  ABCD\\nABCDEABCDE\\nABCD  ABCD\\nABC    ABC\\nAB      AB\\nA        A",
+    "description": "Print a butterfly of alphabets. Upper half: row i prints i letters, inner spaces, then i letters again. Lower half mirrors it.",
+    "input_format": "N = 5",
+    "output_format": "A        A
+AB      AB
+ABC    ABC
+ABCD  ABCD
+ABCDEABCDE
+ABCD  ABCD
+ABC    ABC
+AB      AB
+A        A",
+    "constraints": "1 ≤ N ≤ 13",
+    "sample_input": "N = 5",
+    "sample_output": "A        A
+AB      AB
+ABC    ABC
+ABCD  ABCD
+ABCDEABCDE
+ABCD  ABCD
+ABC    ABC
+AB      AB
+A        A",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26490,12 +26698,18 @@ export const problems: Problem[] = [
     "company_tags": [
       "Wipro", "Cognizant"
     ],
-    "description": "Print a 4x4 hollow square where corners are A, top/bottom edge letters are B, left/right edge letters are C, and inside is spaces.",
-    "input_format": "n=4",
-    "output_format": "ABBA\\nC  C\\nC  C\\nABBA",
-    "constraints": "4x4 grid. A corners, B top/bottom, C sides.",
-    "sample_input": "n=4",
-    "sample_output": "ABBA\\nC  C\\nC  C\\nABBA",
+    "description": "Print a hollow square of N×N where corners are A, top/bottom edges are B, and left/right borders are C. Inside is spaces.",
+    "input_format": "N = 4",
+    "output_format": "ABBA
+C  C
+C  C
+ABBA",
+    "constraints": "2 ≤ N ≤ 13",
+    "sample_input": "N = 4",
+    "sample_output": "ABBA
+C  C
+C  C
+ABBA",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26506,18 +26720,26 @@ export const problems: Problem[] = [
   },
   {
     "id": 1205,
-    "title": "Alphabet Pattern – Inverted V (Caret) Shape #1205",
+    "title": "Alphabet Pattern – Inverted V Shape #1205",
     "category": "Patterns",
     "difficulty": "Medium",
     "company_tags": [
       "Amazon", "Adobe"
     ],
-    "description": "Print an inverted V (caret) using alphabets. Row 1 has 4 spaces then A at the tip; each subsequent row places the next letter one step left and one step right symmetrically until row 5.",
-    "input_format": "n=5",
-    "output_format": "    A\\n   B B\\n  C   C\\n D     D\\nE       E",
-    "constraints": "5 rows. Symmetric spread.",
-    "sample_input": "n=5",
-    "sample_output": "    A\\n   B B\\n  C   C\\n D     D\\nE       E",
+    "description": "Print an inverted V (caret ^) using N rows. Row 1 has the letter A at the tip (centred); each row below places the next letter one step left and one step right.",
+    "input_format": "N = 5",
+    "output_format": "    A
+   B B
+  C   C
+ D     D
+E       E",
+    "constraints": "1 ≤ N ≤ 13",
+    "sample_input": "N = 5",
+    "sample_output": "    A
+   B B
+  C   C
+ D     D
+E       E",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26534,12 +26756,18 @@ export const problems: Problem[] = [
     "company_tags": [
       "Google", "Amazon", "Microsoft"
     ],
-    "description": "Fill a 4x4 matrix with letters A-P in spiral order (clockwise from top-left) and print the matrix row by row with spaces between letters.",
-    "input_format": "No input required.",
-    "output_format": "A B C D\\nL M N E\\nK P O F\\nJ I H G",
-    "constraints": "4x4 matrix. Spiral clockwise from (0,0).",
+    "description": "Fill an N×N matrix with letters A onwards in clockwise spiral order, then print row by row.",
+    "input_format": "N = 4",
+    "output_format": "A B C D
+L M N E
+K P O F
+J I H G",
+    "constraints": "1 ≤ N ≤ 6",
     "sample_input": "",
-    "sample_output": "A B C D\\nL M N E\\nK P O F\\nJ I H G",
+    "sample_output": "A B C D
+L M N E
+K P O F
+J I H G",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26556,12 +26784,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "TCS", "Flipkart"
     ],
-    "description": "Print 5 rows where each row is a palindrome. Row 1: A, Row 2: ABA, Row 3: ABCBA, Row 4: ABCDCBA, Row 5: ABCDEDCBA.",
-    "input_format": "n=5",
-    "output_format": "A\\nABA\\nABCBA\\nABCDCBA\\nABCDEDCBA",
-    "constraints": "5 rows. Each row is a palindrome of length 2*i-1.",
-    "sample_input": "n=5",
-    "sample_output": "A\\nABA\\nABCBA\\nABCDCBA\\nABCDEDCBA",
+    "description": "Print N rows where each row i is a palindrome: A, ABA, ABCBA, ABCDCBA, ...",
+    "input_format": "N = 5",
+    "output_format": "A
+ABA
+ABCBA
+ABCDCBA
+ABCDEDCBA",
+    "constraints": "1 ≤ N ≤ 13",
+    "sample_input": "N = 5",
+    "sample_output": "A
+ABA
+ABCBA
+ABCDCBA
+ABCDEDCBA",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26578,12 +26814,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Infosys", "HCL"
     ],
-    "description": "Print a 5x5 grid where each column j contains the letter at position j (A in col 0, B in col 1, …, E in col 4) repeated in every row.",
-    "input_format": "n=5",
-    "output_format": "ABCDE\\nABCDE\\nABCDE\\nABCDE\\nABCDE",
-    "constraints": "5x5. Letter depends only on column index.",
-    "sample_input": "n=5",
-    "sample_output": "ABCDE\\nABCDE\\nABCDE\\nABCDE\\nABCDE",
+    "description": "Print an N×N grid where each column j contains the (j+1)-th letter of the alphabet repeated in every row.",
+    "input_format": "N = 5",
+    "output_format": "ABCDE
+ABCDE
+ABCDE
+ABCDE
+ABCDE",
+    "constraints": "1 ≤ N ≤ 26",
+    "sample_input": "N = 5",
+    "sample_output": "ABCDE
+ABCDE
+ABCDE
+ABCDE
+ABCDE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26600,12 +26844,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Wipro", "TCS"
     ],
-    "description": "Print a 5x5 checkerboard alternating A and B. If (i+j) is even print A, else print B.",
-    "input_format": "n=5",
-    "output_format": "ABABA\\nBABAB\\nABABA\\nBABAB\\nABABA",
-    "constraints": "5x5. Alternate A and B based on (i+j)%2.",
-    "sample_input": "n=5",
-    "sample_output": "ABABA\\nBABAB\\nABABA\\nBABAB\\nABABA",
+    "description": "Print an N×N checkerboard alternating A and B. Print A if (row+col) is even, B otherwise.",
+    "input_format": "N = 5",
+    "output_format": "ABABA
+BABAB
+ABABA
+BABAB
+ABABA",
+    "constraints": "1 ≤ N ≤ 20",
+    "sample_input": "N = 5",
+    "sample_output": "ABABA
+BABAB
+ABABA
+BABAB
+ABABA",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26622,12 +26874,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Accenture", "TCS"
     ],
-    "description": "Print a right triangle where all characters in row i are the i-th letter: row 1 prints A once, row 2 prints BB, row 3 prints CCC, up to row 5.",
-    "input_format": "n=5",
-    "output_format": "A\\nBB\\nCCC\\nDDDD\\nEEEEE",
-    "constraints": "5 rows.",
-    "sample_input": "n=5",
-    "sample_output": "A\\nBB\\nCCC\\nDDDD\\nEEEEE",
+    "description": "Print a right triangle where all characters in row i are the i-th letter: row 1 is A once, row 2 is BB, row 3 is CCC, and so on.",
+    "input_format": "N = 5",
+    "output_format": "A
+BB
+CCC
+DDDD
+EEEEE",
+    "constraints": "1 ≤ N ≤ 26",
+    "sample_input": "N = 5",
+    "sample_output": "A
+BB
+CCC
+DDDD
+EEEEE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26644,12 +26904,24 @@ export const problems: Problem[] = [
     "company_tags": [
       "Google", "Morgan Stanley"
     ],
-    "description": "Print the letter K shape in a 7-row grid. Column 0 of every row is always filled. The two diagonal arms branch from the middle row (row 3) outward.",
-    "input_format": "No input required.",
-    "output_format": "A   E\\nA  D\\nA C\\nAB\\nA C\\nA  D\\nA   E",
-    "constraints": "7 rows. Column 0 always A; diagonal arm letter depends on distance from middle.",
+    "description": "Print the letter K in a 7-row grid. Column 0 of every row is filled with A. Two diagonal arms branch from the middle row outward.",
+    "input_format": "N = 7",
+    "output_format": "A   E
+A  D 
+A C  
+AB   
+A C  
+A  D 
+A   E",
+    "constraints": "N = 7",
     "sample_input": "",
-    "sample_output": "A   E\\nA  D\\nA C\\nAB\\nA C\\nA  D\\nA   E",
+    "sample_output": "A   E
+A  D 
+A C  
+AB   
+A C  
+A  D 
+A   E",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26666,12 +26938,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "TCS", "Wipro"
     ],
-    "description": "Print a right triangle where row i contains letters from the i-th letter down to A: row 1 prints A, row 2 prints BA, row 3 prints CBA, and so on for 5 rows.",
-    "input_format": "n=5",
-    "output_format": "A\\nBA\\nCBA\\nDCBA\\nEDCBA",
-    "constraints": "5 rows. Each row prints letters in reverse from (A+i-1) down to A.",
-    "sample_input": "n=5",
-    "sample_output": "A\\nBA\\nCBA\\nDCBA\\nEDCBA",
+    "description": "Print a right triangle where row i contains letters from the i-th letter down to A: row 1 prints A, row 2 prints BA, row 3 prints CBA, and so on.",
+    "input_format": "N = 5",
+    "output_format": "A
+BA
+CBA
+DCBA
+EDCBA",
+    "constraints": "1 ≤ N ≤ 26",
+    "sample_input": "N = 5",
+    "sample_output": "A
+BA
+CBA
+DCBA
+EDCBA",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26688,12 +26968,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Amazon", "Infosys"
     ],
-    "description": "Print a 3-column wave pattern with 5 rows. Column 0 and 2 go A-B-C-D-E (forward); column 1 goes E-D-C-B-A (backward). Separate columns with a space.",
-    "input_format": "n=5",
-    "output_format": "A E A\\nB D B\\nC C C\\nD B D\\nE A E",
-    "constraints": "5 rows, 3 columns. Col 0 and 2 forward, col 1 backward.",
-    "sample_input": "n=5",
-    "sample_output": "A E A\\nB D B\\nC C C\\nD B D\\nE A E",
+    "description": "Print a 3-column wave with N rows. Column 0 and 2 go A→E (forward); column 1 goes E→A (backward). Columns separated by a space.",
+    "input_format": "N = 5",
+    "output_format": "A E A
+B D B
+C C C
+D B D
+E A E",
+    "constraints": "1 ≤ N ≤ 26",
+    "sample_input": "N = 5",
+    "sample_output": "A E A
+B D B
+C C C
+D B D
+E A E",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26710,12 +26998,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Google", "Adobe"
     ],
-    "description": "Print a cross (+) shape in a 5x5 grid. The middle row (row 2) is filled with letters A-E; the middle column (col 2) is filled with letters A-E. All other positions are spaces.",
-    "input_format": "n=5",
-    "output_format": "  C  \\n  C  \\nABCDE\\n  C  \\n  C  ",
-    "constraints": "5x5. Middle row index = n/2, middle col index = n/2.",
-    "sample_input": "n=5",
-    "sample_output": "  C  \\n  C  \\nABCDE\\n  C  \\n  C  ",
+    "description": "Print a cross (+) in an N×N grid. The middle row and middle column are filled with letters A onwards; all other positions are spaces.",
+    "input_format": "N = 5",
+    "output_format": "  C  
+  C  
+ABCDE
+  C  
+  C  ",
+    "constraints": "1 ≤ N ≤ 13 (odd)",
+    "sample_input": "N = 5",
+    "sample_output": "  C  
+  C  
+ABCDE
+  C  
+  C  ",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26732,12 +27028,18 @@ export const problems: Problem[] = [
     "company_tags": [
       "Microsoft", "Amazon"
     ],
-    "description": "Fill a 4x4 matrix with letters A-P in boustrophedon (snake) order: left-to-right on even rows, right-to-left on odd rows. Print the matrix with spaces between letters.",
-    "input_format": "No input required.",
-    "output_format": "A B C D\\nH G F E\\nI J K L\\nP O N M",
-    "constraints": "4x4. Even rows L to R, odd rows R to L.",
+    "description": "Fill an N×N matrix with letters in snake order: left-to-right on even rows, right-to-left on odd rows. Print the matrix.",
+    "input_format": "N = 4",
+    "output_format": "A B C D
+H G F E
+I J K L
+P O N M",
+    "constraints": "1 ≤ N ≤ 6",
     "sample_input": "",
-    "sample_output": "A B C D\\nH G F E\\nI J K L\\nP O N M",
+    "sample_output": "A B C D
+H G F E
+I J K L
+P O N M",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26754,12 +27056,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "TCS", "Morgan Stanley"
     ],
-    "description": "Print the letter Z in a 5x5 grid. Top row and bottom row are fully filled with letters A-E. The diagonal from top-right to bottom-left has one letter per row.",
-    "input_format": "n=5",
-    "output_format": "ABCDE\\n   D \\n  C  \\n B   \\nABCDE",
-    "constraints": "5x5 grid. Z outline only.",
-    "sample_input": "n=5",
-    "sample_output": "ABCDE\\n   D \\n  C  \\n B   \\nABCDE",
+    "description": "Print the letter Z in an N×N grid. Top row and bottom row are fully filled; a diagonal goes from top-right to bottom-left.",
+    "input_format": "N = 5",
+    "output_format": "ABCDE
+   D 
+  C  
+ B   
+ABCDE",
+    "constraints": "1 ≤ N ≤ 13",
+    "sample_input": "N = 5",
+    "sample_output": "ABCDE
+   D 
+  C  
+ B   
+ABCDE",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26776,12 +27086,20 @@ export const problems: Problem[] = [
     "company_tags": [
       "Infosys", "Accenture"
     ],
-    "description": "Print a right triangle where row i contains i letters starting from the i-th letter down to A in reverse. Row 1: A, Row 2: BA, Row 3: CBA, Row 4: DCBA, Row 5: EDCBA.",
-    "input_format": "n=5",
-    "output_format": "A\\nBA\\nCBA\\nDCBA\\nEDCBA",
-    "constraints": "5 rows.",
-    "sample_input": "n=5",
-    "sample_output": "A\\nBA\\nCBA\\nDCBA\\nEDCBA",
+    "description": "Print a right triangle where row i contains i letters starting from the i-th letter down to A: row 1 prints A, row 2 prints BA, row 3 prints CBA.",
+    "input_format": "N = 5",
+    "output_format": "A
+BA
+CBA
+DCBA
+EDCBA",
+    "constraints": "1 ≤ N ≤ 26",
+    "sample_input": "N = 5",
+    "sample_output": "A
+BA
+CBA
+DCBA
+EDCBA",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26798,12 +27116,28 @@ export const problems: Problem[] = [
     "company_tags": [
       "Amazon", "Google", "Microsoft"
     ],
-    "description": "Print a hollow diamond of alphabets with n=5. Only the outline of the diamond is printed using the row's letter; the interior is filled with spaces.",
-    "input_format": "n=5",
-    "output_format": "    A\\n   B B\\n  C   C\\n D     D\\nE       E\\n D     D\\n  C   C\\n   B B\\n    A",
-    "constraints": "n=5. Hollow outline only. 9 rows.",
-    "sample_input": "n=5",
-    "sample_output": "    A\\n   B B\\n  C   C\\n D     D\\nE       E\\n D     D\\n  C   C\\n   B B\\n    A",
+    "description": "Print a hollow diamond outline of alphabets. Only the border of the diamond is printed; the interior is spaces.",
+    "input_format": "N = 5",
+    "output_format": "    A
+   B B
+  C   C
+ D     D
+E       E
+ D     D
+  C   C
+   B B
+    A",
+    "constraints": "1 ≤ N ≤ 13",
+    "sample_input": "N = 5",
+    "sample_output": "    A
+   B B
+  C   C
+ D     D
+E       E
+ D     D
+  C   C
+   B B
+    A",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26820,12 +27154,18 @@ export const problems: Problem[] = [
     "company_tags": [
       "TCS", "Wipro"
     ],
-    "description": "Print a triangle where each cell shows the row number followed by the column letter. Row 1: 1A. Row 2: 2A 2B. Row 3: 3A 3B 3C. Row 4: 4A 4B 4C 4D.",
-    "input_format": "n=4",
-    "output_format": "1A\\n2A 2B\\n3A 3B 3C\\n4A 4B 4C 4D",
-    "constraints": "4 rows. Format per cell: rowNumber + colLetter.",
-    "sample_input": "n=4",
-    "sample_output": "1A\\n2A 2B\\n3A 3B 3C\\n4A 4B 4C 4D",
+    "description": "Print a triangle where each cell shows the row number followed by the column letter: row 1 prints 1A, row 2 prints 2A 2B, etc.",
+    "input_format": "N = 4",
+    "output_format": "1A
+2A 2B
+3A 3B 3C
+4A 4B 4C 4D",
+    "constraints": "1 ≤ N ≤ 26",
+    "sample_input": "N = 4",
+    "sample_output": "1A
+2A 2B
+3A 3B 3C
+4A 4B 4C 4D",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
@@ -26842,12 +27182,28 @@ export const problems: Problem[] = [
     "company_tags": [
       "Adobe", "Flipkart"
     ],
-    "description": "Print a left-pointing arrow shape using 9 rows. The middle row (row 5) is longest: ABCDE. Rows above and below shrink by one letter each time, right-aligned.",
-    "input_format": "n=5",
-    "output_format": "    E\\n   DE\\n  CDE\\n BCDE\\nABCDE\\n BCDE\\n  CDE\\n   DE\\n    E",
-    "constraints": "n=5. 9 rows total. Symmetric above and below middle.",
-    "sample_input": "n=5",
-    "sample_output": "    E\\n   DE\\n  CDE\\n BCDE\\nABCDE\\n BCDE\\n  CDE\\n   DE\\n    E",
+    "description": "Print a left-pointing arrow. The middle row is the longest (letters A to N); rows above and below shrink by one letter, right-aligned.",
+    "input_format": "N = 5",
+    "output_format": "    E
+   DE
+  CDE
+ BCDE
+ABCDE
+ BCDE
+  CDE
+   DE
+    E",
+    "constraints": "1 ≤ N ≤ 13",
+    "sample_input": "N = 5",
+    "sample_output": "    E
+   DE
+  CDE
+ BCDE
+ABCDE
+ BCDE
+  CDE
+   DE
+    E",
     "starter_code": {
       "java": `public class Main {
     public static void main(String[] args) {
