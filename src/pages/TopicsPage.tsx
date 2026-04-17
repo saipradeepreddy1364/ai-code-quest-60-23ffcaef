@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Search, Filter, ChevronLeft, LayoutGrid } from "lucide-react";
+import { Search, Filter, ChevronLeft } from "lucide-react";
 import { problems, getCategories, getCompanies } from "@/data/problems";
 
 export default function Problems() {
@@ -41,24 +41,16 @@ export default function Problems() {
   return (
     <div className="p-6 max-w-6xl mx-auto">
 
-      {/* ── Back navigation ── */}
-      <div className="flex items-center gap-2 mb-5">
+      {/* ── Back navigation + breadcrumb ── */}
+      <div className="flex items-center gap-1.5 mb-5">
         <button
-          onClick={() => navigate(-1)}
+          onClick={() => navigate("/")}
           className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
-          title="Go back"
+          title="Back to Dashboard"
         >
           <ChevronLeft className="h-5 w-5" />
         </button>
-        <button
-          onClick={() => navigate("/topics")}
-          className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
-          title="Browse by topic"
-        >
-          <LayoutGrid className="h-4 w-4" />
-          Topics
-        </button>
-        <span className="text-muted-foreground/40 text-sm">/</span>
+        <span className="text-xs text-muted-foreground/50">/</span>
         <span className="text-sm text-foreground font-medium">
           {selectedCategory || selectedCompany
             ? selectedCategory || selectedCompany

@@ -1,7 +1,7 @@
 // src/pages/ProblemView.tsx
 import { useState, useEffect, useRef } from "react";
-import { useParams } from "react-router-dom";
-import { Play, Upload, Save, Bug, Zap, Eye, MessageSquare, Loader2, RotateCcw } from "lucide-react";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { Play, Upload, Save, Bug, Zap, Eye, MessageSquare, Loader2, RotateCcw, ChevronLeft } from "lucide-react";
 import { getProblemById } from "@/data/problems";
 import CodeEditor from "@/components/CodeEditor";
 import AIChatPanel from "@/components/AIChatPanel";
@@ -26,6 +26,8 @@ export default function ProblemView() {
   const { id } = useParams<{ id: string }>();
   const problem = getProblemById(Number(id));
   const { user } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const language = "java";
 
@@ -35,8 +37,6 @@ export default function ProblemView() {
   const isResizingLeftRef   = useRef(false);
   const isResizingAIRef     = useRef(false); // NEW: AI panel resize
   const inputRef            = useRef<HTMLTextAreaElement>(null);
-  // Ref to always have the latest handleRun in the keyboard listener
-  const handleRunRef        = useRef<() => void>(() => {});
 
   // ── State ──────────────────────────────────────────────────────────────────
   const [code, setCode]                   = useState(problem?.starter_code?.java || "");
@@ -86,25 +86,6 @@ export default function ProblemView() {
       setTimeout(() => inputRef.current?.focus(), 50);
     }
   }, [needsInput]);
-
-  // ── Ctrl+Enter → Run (works even when cursor is inside the editor) ─────────
-  // We store handleRun in a ref so the listener never goes stale.
-  useEffect(() => {
-    handleRunRef.current = handleRun;
-  }); // intentionally no dep-array — always stays current
-
-  useEffect(() => {
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) {
-        e.preventDefault();
-        e.stopPropagation();
-        handleRunRef.current();
-      }
-    };
-    // useCapture = true so we intercept before Monaco swallows the event
-    window.addEventListener("keydown", onKeyDown, true);
-    return () => window.removeEventListener("keydown", onKeyDown, true);
-  }, []); // runs once — safe because we read via ref
 
   // ── Resizable panels mouse handlers ───────────────────────────────────────
   useEffect(() => {
@@ -335,6 +316,28 @@ export default function ProblemView() {
       {/* ══ RIGHT PANEL — editor + terminal ══════════════════════════════ */}
       <div className="flex-1 flex flex-col overflow-hidden min-w-0">
 
+        {/* ── Back navigation ── */}
+        <div className="flex items-center gap-1.5 px-3 py-1.5 border-b border-border bg-card shrink-0">
+          <button
+            onClick={() => navigate(-1)}
+            className="flex items-center justify-center w-7 h-7 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+            title="Go back"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+          <span className="text-xs text-muted-foreground/50">/</span>
+          <button
+            onClick={() => navigate("/topics")}
+            className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Topics
+          </button>
+          <span className="text-xs text-muted-foreground/50">/</span>
+          <span className="text-xs text-foreground font-medium truncate max-w-[200px]">
+            {problem.title}
+          </span>
+        </div>
+
         {/* ── Toolbar ── */}
         <div className="flex items-center justify-between px-4 py-2 border-b border-border bg-card shrink-0 flex-wrap gap-2">
           <div className="flex items-center gap-1.5 flex-wrap">
@@ -343,7 +346,7 @@ export default function ProblemView() {
             <button
               onClick={handleRun}
               disabled={isRunning}
-              title="Run code (Ctrl+Enter)"
+              title="Run code"
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold text-green-500 bg-green-500/10 hover:bg-green-500/20 transition-colors disabled:opacity-50"
             >
               {isRunning ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Play className="h-3.5 w-3.5" />}
