@@ -255,7 +255,7 @@ export default function ProblemView() {
     }
   };
 
-  const errorsForChat = error; // always available so Attach Errors button always shows when there's an error
+  const errorsForChat = error; // always pass — not tab-gated
   const aiPanelVisible = chatOpen || aiPanel.open;
 
   // ── Render ─────────────────────────────────────────────────────────────────
