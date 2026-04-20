@@ -1,5 +1,5 @@
 // src/components/UserMenu.tsx
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { LogOut, BookMarked, BarChart2, ChevronDown, KeyRound } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
@@ -8,13 +8,25 @@ export default function UserMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const { user, signOut } = useAuth();
   const navigate = useNavigate();
+  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const openMenu = () => {
+    setIsOpen(true);
+    if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    closeTimerRef.current = setTimeout(() => setIsOpen(false), 4000);
+  };
+
+  const closeMenu = () => {
+    if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    setIsOpen(false);
+  };
 
   if (!user) return null;
 
   const initials = (user.email ?? "U").charAt(0).toUpperCase();
 
   const handleLogout = async () => {
-    setIsOpen(false);
+    closeMenu();
     await signOut();
     navigate("/login", { replace: true });
   };
@@ -23,7 +35,7 @@ export default function UserMenu() {
     <div className="relative">
       {/* Trigger button */}
       <button
-        onClick={() => setIsOpen((p) => !p)}
+        onClick={() => isOpen ? closeMenu() : openMenu()}
         className="flex items-center gap-2 px-2 py-1.5 rounded-md hover:bg-muted transition-colors"
       >
         <div className="h-8 w-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0">
@@ -41,7 +53,7 @@ export default function UserMenu() {
           {/* Click-outside overlay */}
           <div
             className="fixed inset-0 z-10"
-            onClick={() => setIsOpen(false)}
+            onClick={() => closeMenu()}
           />
 
           <div className="absolute right-0 mt-2 w-52 bg-card border border-border rounded-lg shadow-xl z-20 overflow-hidden">
@@ -60,7 +72,7 @@ export default function UserMenu() {
             {/* Saved Codes */}
             <Link
               to="/saved"
-              onClick={() => setIsOpen(false)}
+              onClick={() => closeMenu()}
               className="flex items-center gap-2.5 px-3 py-2.5 text-sm text-foreground hover:bg-muted transition-colors"
             >
               <BookMarked className="h-4 w-4 text-indigo-400" />
@@ -70,7 +82,7 @@ export default function UserMenu() {
             {/* Analytics */}
             <Link
               to="/analytics"
-              onClick={() => setIsOpen(false)}
+              onClick={() => closeMenu()}
               className="flex items-center gap-2.5 px-3 py-2.5 text-sm text-foreground hover:bg-muted transition-colors"
             >
               <BarChart2 className="h-4 w-4 text-green-400" />
@@ -80,7 +92,7 @@ export default function UserMenu() {
             {/* Change Password */}
             <Link
               to="/change-password"
-              onClick={() => setIsOpen(false)}
+              onClick={() => closeMenu()}
               className="flex items-center gap-2.5 px-3 py-2.5 text-sm text-foreground hover:bg-muted transition-colors"
             >
               <KeyRound className="h-4 w-4 text-yellow-400" />
