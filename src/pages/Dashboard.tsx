@@ -325,7 +325,7 @@ export default function Dashboard() {
   const [dropdownOpen, setDropdownOpen]       = useState(false);
   const [menuOpen, setMenuOpen]               = useState(false);
   const [isAiOpen, setIsAiOpen]               = useState(false);
-  const [perfOpen, setPerfOpen]               = useState(false); // ← NEW: performance panel toggle
+  const [perfOpen, setPerfOpen]               = useState(false);
   const [currentCode, setCurrentCode]         = useState("");
   const [currentLanguage, setCurrentLanguage] = useState("java");
   const [currentErrors, setCurrentErrors]     = useState("");
@@ -363,7 +363,6 @@ export default function Dashboard() {
     navigate("/login", { replace: true });
   };
 
-  // ← NEW: read full_name from Supabase auth metadata (set during signup)
   const fullName    = user?.user_metadata?.full_name as string | undefined;
   const displayName = fullName?.trim() || user?.email || "User";
   const initials    = displayName.charAt(0).toUpperCase();
@@ -384,7 +383,7 @@ export default function Dashboard() {
         className="flex justify-between items-center px-4 py-2.5 bg-card border-b border-border shrink-0"
         style={{ zIndex: 50, position: "relative" }}
       >
-        {/* Hamburger only — no label beside it */}
+        {/* Hamburger */}
         <button
           onClick={() => setMenuOpen((p) => !p)}
           className="p-2 rounded-md hover:bg-muted transition-colors"
@@ -396,11 +395,14 @@ export default function Dashboard() {
         {/* Right side: My Stats button + user dropdown */}
         <div className="flex items-center gap-2">
 
-          {/* ← NEW: My Stats / Performance toggle button */}
+          {/* ── FIX: also call setMenuOpen(false) so the overlay doesn't
+               sit on top of the perf panel when My Stats is clicked
+               while the topics overlay is open ── */}
           <button
             onClick={() => {
+              setMenuOpen(false);                        // ← close overlay first
               setPerfOpen((p) => !p);
-              if (isAiOpen) setIsAiOpen(false); // close AI panel when opening stats
+              if (isAiOpen) setIsAiOpen(false);
             }}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm transition-colors ${
               perfOpen
@@ -420,14 +422,12 @@ export default function Dashboard() {
               className="flex items-center gap-2 px-3 py-1.5 bg-primary text-primary-foreground rounded-md text-sm"
             >
               <User className="h-4 w-4" />
-              {/* ← CHANGED: show displayName (full name or email) instead of just email */}
               <span className="max-w-[120px] truncate">{displayName}</span>
               <ChevronDown className="h-4 w-4 shrink-0" />
             </button>
 
             {dropdownOpen && (
               <div className="absolute right-0 mt-2 w-56 bg-card border border-border rounded-lg shadow-lg z-50 overflow-hidden">
-                {/* ← CHANGED: show full name + email in dropdown header */}
                 <div className="px-3 py-2.5 border-b border-border">
                   {fullName && (
                     <p className="text-xs font-semibold text-foreground truncate">{fullName}</p>
@@ -675,7 +675,7 @@ export default function Dashboard() {
               }}
               onToggleAI={() => {
                 setIsAiOpen((p) => !p);
-                if (perfOpen) setPerfOpen(false); // close perf panel when opening AI
+                if (perfOpen) setPerfOpen(false);
               }}
               onErrorChange={(err) => setCurrentErrors(err)}
               userEmail={user.email}
@@ -689,7 +689,7 @@ export default function Dashboard() {
             errors={currentErrors}
           />
 
-          {/* ← NEW: UserPerformance panel — slides in from the right */}
+          {/* UserPerformance panel — slides in from the right */}
           {perfOpen && (
             <div
               className="shrink-0 border-l border-border overflow-y-auto bg-background"
