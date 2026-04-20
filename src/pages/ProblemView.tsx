@@ -37,6 +37,7 @@ export default function ProblemView() {
   const isResizingLeftRef   = useRef(false);
   const isResizingAIRef     = useRef(false);
   const inputRef            = useRef<HTMLTextAreaElement>(null);
+  const handleRunRef        = useRef<() => void>(() => {});
 
   // ── State ──────────────────────────────────────────────────────────────────
   const [code, setCode]                   = useState(problem?.starter_code?.java || "");
@@ -128,6 +129,18 @@ export default function ProblemView() {
     };
   }, []);
 
+  // ── Ctrl+Enter → Run from anywhere ────────────────────────────────────────
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.ctrlKey && e.key === "Enter") {
+        e.preventDefault();
+        handleRunRef.current();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []); // safe: reads handleRunRef.current at call-time, not capture-time
+
   if (!problem) {
     return <div className="p-6 text-muted-foreground">Problem not found.</div>;
   }
@@ -198,6 +211,7 @@ export default function ProblemView() {
       });
     }
   };
+  handleRunRef.current = handleRun; // keep ref pointing to latest closure
 
   const handleRefresh = () => {
     setIsRunning(false);
