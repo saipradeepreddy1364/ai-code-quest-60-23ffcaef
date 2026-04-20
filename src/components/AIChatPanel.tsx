@@ -275,7 +275,7 @@ export default function AIChatPanel({
         <>
           {/* AI PANEL RESULT */}
           {(aiPanelTitle || aiPanelLoading) && (
-            <div className="border-b border-border bg-muted/40 px-4 py-3 shrink-0 overflow-y-auto" style={{ maxHeight: "40%" }}>
+            <div className="border-b border-border bg-muted/40 px-4 py-3 shrink-0">
               <p className="text-xs font-semibold text-accent mb-1">{aiPanelTitle}</p>
               {aiPanelLoading ? (
                 <div className="flex items-center gap-1.5 py-1">
@@ -303,11 +303,6 @@ export default function AIChatPanel({
                 {(code || errors) && (
                   <p className="text-xs mt-3 text-accent">
                     💡 Use the attach buttons below to include your code or errors.
-                  </p>
-                )}
-                {!errors && (
-                  <p className="text-xs mt-1 text-muted-foreground/60">
-                    Run your code first to enable Attach Errors.
                   </p>
                 )}
               </div>
@@ -348,7 +343,7 @@ export default function AIChatPanel({
             <div ref={bottomRef} />
           </div>
 
-          {/* ATTACH BUTTONS */}
+          {/* ATTACH BUTTONS — always visible */}
           <div className="px-3 py-2 border-t border-border bg-muted/20 flex flex-col gap-1.5 shrink-0">
             <p className="text-xs text-muted-foreground font-medium mb-0.5">Attach context:</p>
             <div className="flex gap-2 flex-wrap">
@@ -365,11 +360,10 @@ export default function AIChatPanel({
                   {attachCode ? "Code ✓" : "Attach Code"}
                 </button>
               )}
-              {/* Always visible — disabled when no errors exist yet */}
               <button
-                onClick={() => errors && setAttachErrors((v) => !v)}
+                onClick={() => { if (errors) setAttachErrors((v) => !v); }}
                 disabled={!errors}
-                title={errors ? "Attach errors to chat" : "Run your code first to get errors"}
+                title={errors ? "Attach errors to chat" : "Run code first to get errors"}
                 className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-all ${
                   attachErrors
                     ? "bg-red-500/20 border-red-500 text-red-400"

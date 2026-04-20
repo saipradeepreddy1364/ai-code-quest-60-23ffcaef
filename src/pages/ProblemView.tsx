@@ -255,7 +255,7 @@ export default function ProblemView() {
     }
   };
 
-  const errorsForChat = error; // always pass — not tab-gated
+  const errorsForChat = error;
   const aiPanelVisible = chatOpen || aiPanel.open;
 
   // ── Render ─────────────────────────────────────────────────────────────────
