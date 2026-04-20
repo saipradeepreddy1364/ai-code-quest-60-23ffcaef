@@ -18,6 +18,7 @@ interface AIChatPanelProps {
   aiPanelTitle?: string;
   aiPanelContent?: string;
   aiPanelLoading?: boolean;
+  autoAttachCode?: boolean;
 }
 
 const MIN_W = 320;
@@ -36,6 +37,7 @@ export default function AIChatPanel({
   aiPanelTitle,
   aiPanelContent,
   aiPanelLoading,
+  autoAttachCode,
 }: AIChatPanelProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput]       = useState("");
@@ -43,6 +45,11 @@ export default function AIChatPanel({
   const [attachCode, setAttachCode]     = useState(false);
   const [attachErrors, setAttachErrors] = useState(false);
   const [isMinimised, setIsMinimised]   = useState(false);
+
+  // Auto-enable code attachment when triggered by Debug / Optimize / Review
+  useEffect(() => {
+    if (autoAttachCode) setAttachCode(true);
+  }, [autoAttachCode]);
 
   // ── Position & size ───────────────────────────────────────────────────────
   const [pos,  setPos]  = useState(() => ({

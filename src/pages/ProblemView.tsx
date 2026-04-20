@@ -55,12 +55,14 @@ export default function ProblemView() {
   const [chatOpen, setChatOpen]           = useState(false);
   const [needsInput, setNeedsInput]       = useState(false);
   const [autoSaved, setAutoSaved]         = useState(false);
+  const [hasRun, setHasRun]               = useState(false);
   const [aiPanel, setAiPanel]             = useState<{
     open: boolean;
     title: string;
     content: string;
     loading: boolean;
-  }>({ open: false, title: "", content: "", loading: false });
+    autoAttachCode: boolean;
+  }>({ open: false, title: "", content: "", loading: false, autoAttachCode: false });
 
   // ── Load saved code ────────────────────────────────────────────────────────
   useEffect(() => {
@@ -188,6 +190,7 @@ export default function ProblemView() {
       setActiveTab("errors");
     } finally {
       setIsRunning(false);
+      setHasRun(true);
       setRunCount((prev) => {
         const newCount = prev + 1;
         autoSaveCode(code, newCount);
@@ -224,7 +227,7 @@ export default function ProblemView() {
 
   const handleAI = async (type: "debug" | "optimize" | "review") => {
     const titles = { debug: "AI Debug", optimize: "AI Optimize", review: "AI Review" };
-    setAiPanel({ open: true, title: titles[type], content: "", loading: true });
+    setAiPanel({ open: true, title: titles[type], content: "", loading: true, autoAttachCode: true });
     setChatOpen(true);
     try {
       const fns = { debug: debugCode, optimize: optimizeCode, review: reviewCode };
@@ -376,8 +379,9 @@ export default function ProblemView() {
             {/* Debug */}
             <button
               onClick={() => handleAI("debug")}
-              title="AI Debug"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold text-orange-400 bg-orange-400/10 hover:bg-orange-400/20 transition-colors"
+              disabled={!hasRun}
+              title={hasRun ? "AI Debug" : "Run your code first to enable AI Debug"}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold text-orange-400 bg-orange-400/10 hover:bg-orange-400/20 transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-orange-400/10"
             >
               <Bug className="h-3.5 w-3.5" />
               Debug
@@ -386,8 +390,9 @@ export default function ProblemView() {
             {/* Optimize */}
             <button
               onClick={() => handleAI("optimize")}
-              title="AI Optimize"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold text-yellow-400 bg-yellow-400/10 hover:bg-yellow-400/20 transition-colors"
+              disabled={!hasRun}
+              title={hasRun ? "AI Optimize" : "Run your code first to enable AI Optimize"}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold text-yellow-400 bg-yellow-400/10 hover:bg-yellow-400/20 transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-yellow-400/10"
             >
               <Zap className="h-3.5 w-3.5" />
               Optimize
@@ -396,8 +401,9 @@ export default function ProblemView() {
             {/* Review */}
             <button
               onClick={() => handleAI("review")}
-              title="AI Review"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 transition-colors"
+              disabled={!hasRun}
+              title={hasRun ? "AI Review" : "Run your code first to enable AI Review"}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-indigo-400/10"
             >
               <Eye className="h-3.5 w-3.5" />
               Review
@@ -468,7 +474,7 @@ export default function ProblemView() {
                   isOpen={true}
                   onClose={() => {
                     setChatOpen(false);
-                    setAiPanel((prev) => ({ ...prev, open: false }));
+                    setAiPanel((prev) => ({ ...prev, open: false, autoAttachCode: false }));
                   }}
                   code={code}
                   problemTitle={problem.title}
@@ -476,6 +482,7 @@ export default function ProblemView() {
                   aiPanelTitle={aiPanel.open ? aiPanel.title : undefined}
                   aiPanelContent={aiPanel.open ? aiPanel.content : undefined}
                   aiPanelLoading={aiPanel.open ? aiPanel.loading : undefined}
+                  autoAttachCode={aiPanel.autoAttachCode}
                 />
               </div>
             </>
