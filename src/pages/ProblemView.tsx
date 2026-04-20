@@ -129,18 +129,6 @@ export default function ProblemView() {
     };
   }, []);
 
-  // ── Ctrl+Enter → Run from anywhere ────────────────────────────────────────
-  useEffect(() => {
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (e.ctrlKey && e.key === "Enter") {
-        e.preventDefault();
-        handleRunRef.current();
-      }
-    };
-    window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
-  }, []); // safe: reads handleRunRef.current at call-time, not capture-time
-
   if (!problem) {
     return <div className="p-6 text-muted-foreground">Problem not found.</div>;
   }
@@ -211,7 +199,22 @@ export default function ProblemView() {
       });
     }
   };
-  handleRunRef.current = handleRun; // keep ref pointing to latest closure
+
+  // Always point to the latest handleRun closure
+  handleRunRef.current = handleRun;
+
+  // ── Ctrl+Enter → Run (capture phase fires before Monaco swallows the event)
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.ctrlKey && e.key === "Enter") {
+        e.preventDefault();
+        e.stopPropagation();
+        handleRunRef.current();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown, true); // capture = true
+    return () => window.removeEventListener("keydown", onKeyDown, true);
+  }, []);
 
   const handleRefresh = () => {
     setIsRunning(false);
