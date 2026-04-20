@@ -6,7 +6,7 @@ import {
 } from "recharts";
 import {
   Code2, BookOpen, Loader2, ChevronDown, ChevronUp,
-  Copy, Clock, ExternalLink,
+  Copy, Clock, ExternalLink, Trash2,
 } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
@@ -67,6 +67,24 @@ export default function UserPerformance() {
   const handleCopy = (code: string) => {
     navigator.clipboard.writeText(code);
     toast.success("Code copied!");
+  };
+
+  const handleRemove = async (problemId: number) => {
+    if (!user?.email) return;
+    try {
+      const { error } = await (supabase as any)
+        .from("saved_codes")
+        .delete()
+        .eq("user_email", user.email)
+        .eq("problem_id", problemId);
+      if (error) throw error;
+      setSavedCodes((prev) => prev.filter((r) => r.problem_id !== problemId));
+      if (expandedId === problemId) setExpandedId(null);
+      toast.success("Removed from saved codes.");
+    } catch (err) {
+      console.error("Remove error:", err);
+      toast.error("Failed to remove. Please try again.");
+    }
   };
 
   // ── Derived data ──────────────────────────────────────────────────────────
@@ -199,6 +217,13 @@ export default function UserPerformance() {
                         className="p-1 text-muted-foreground hover:text-primary transition-colors"
                       >
                         <ExternalLink className="h-3 w-3" />
+                      </button>
+                      <button
+                        onClick={() => handleRemove(item.problem_id)}
+                        title="Remove from saved"
+                        className="p-1 text-muted-foreground hover:text-red-400 transition-colors"
+                      >
+                        <Trash2 className="h-3 w-3" />
                       </button>
                       <button
                         onClick={() => setExpandedId(isOpen ? null : item.problem_id)}
