@@ -331,6 +331,12 @@ export default function Dashboard() {
   const [currentErrors, setCurrentErrors]     = useState("");
   const [activeTab, setActiveTab]             = useState<"dsa" | "placement" | "companies">("dsa");
 
+  const handleErrorChange = useCallback((err: string) => setCurrentErrors(err), []);
+  const handleCodeChange  = useCallback((code: string, lang: string) => {
+    setCurrentCode(code);
+    setCurrentLanguage(lang);
+  }, []);
+
   const categoryCounts = useMemo(() => getCategoryCounts(), []);
 
   const visibleCats = (
@@ -669,15 +675,12 @@ export default function Dashboard() {
         <div className="flex flex-1 overflow-hidden">
           <div className="flex-1 overflow-hidden">
             <CodeCompiler
-              onCodeChange={(code, lang) => {
-                setCurrentCode(code);
-                setCurrentLanguage(lang);
-              }}
+              onCodeChange={handleCodeChange}
               onToggleAI={() => {
                 setIsAiOpen((p) => !p);
                 if (perfOpen) setPerfOpen(false);
               }}
-              onErrorChange={useCallback((err: string) => setCurrentErrors(err), [])}
+              onErrorChange={handleErrorChange}
               userEmail={user.email}
             />
           </div>
