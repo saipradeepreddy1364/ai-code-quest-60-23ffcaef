@@ -35,7 +35,7 @@ export default function ProblemView() {
   const containerRef        = useRef<HTMLDivElement>(null);
   const isResizingBottomRef = useRef(false);
   const isResizingLeftRef   = useRef(false);
-  const isResizingAIRef     = useRef(false); // NEW: AI panel resize
+  const isResizingAIRef     = useRef(false);
   const inputRef            = useRef<HTMLTextAreaElement>(null);
 
   // ── State ──────────────────────────────────────────────────────────────────
@@ -50,8 +50,8 @@ export default function ProblemView() {
   const [inputChanged, setInputChanged]   = useState(false);
   const [runCount, setRunCount]           = useState(0);
   const [bottomHeight, setBottomHeight]   = useState(220);
-  const [leftWidth, setLeftWidth]         = useState(40);   // percent of total
-  const [aiPanelWidth, setAiPanelWidth]   = useState(320);  // px — NEW
+  const [leftWidth, setLeftWidth]         = useState(40);
+  const [aiPanelWidth, setAiPanelWidth]   = useState(320);
   const [chatOpen, setChatOpen]           = useState(false);
   const [needsInput, setNeedsInput]       = useState(false);
   const [autoSaved, setAutoSaved]         = useState(false);
@@ -105,7 +105,6 @@ export default function ProblemView() {
           setLeftWidth(newPct);
       }
 
-      // NEW: AI panel resize — drag from its left edge
       if (isResizingAIRef.current) {
         const newWidth = rect.right - e.clientX;
         if (newWidth > 240 && newWidth < 600)
@@ -241,8 +240,6 @@ export default function ProblemView() {
 
   // ── Render ─────────────────────────────────────────────────────────────────
   return (
-    // FIX: Removed `select-none` — it was causing cursor-jump in Monaco editor.
-    // Only resize handles get select-none via inline style.
     <div
       ref={containerRef}
       className="flex h-[calc(100vh-3rem)] overflow-hidden"
@@ -253,6 +250,29 @@ export default function ProblemView() {
         style={{ width: `${leftWidth}%` }}
         className="flex flex-col border-r border-border overflow-hidden shrink-0"
       >
+        {/* ── Back navigation bar ── */}
+        <div className="flex items-center gap-1.5 px-3 py-1.5 border-b border-border bg-card shrink-0">
+          <button
+            onClick={() => navigate(-1)}
+            className="flex items-center justify-center w-7 h-7 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+            title="Go back"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+          <span className="text-xs text-muted-foreground/50">/</span>
+          <button
+            onClick={() => navigate("/problems")}
+            className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Problems
+          </button>
+          <span className="text-xs text-muted-foreground/50">/</span>
+          <span className="text-xs text-foreground font-medium truncate max-w-[160px]">
+            {problem.title}
+          </span>
+        </div>
+
+        {/* ── Problem description (scrollable) ── */}
         <div className="flex-1 overflow-y-auto p-5 scrollbar-thin">
           <h1 className="text-lg font-bold text-foreground mb-1 leading-snug">
             {problem.title}
@@ -316,28 +336,6 @@ export default function ProblemView() {
       {/* ══ RIGHT PANEL — editor + terminal ══════════════════════════════ */}
       <div className="flex-1 flex flex-col overflow-hidden min-w-0">
 
-        {/* ── Back navigation ── */}
-        <div className="flex items-center gap-1.5 px-3 py-1.5 border-b border-border bg-card shrink-0">
-          <button
-            onClick={() => navigate(-1)}
-            className="flex items-center justify-center w-7 h-7 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
-            title="Go back"
-          >
-            <ChevronLeft className="h-4 w-4" />
-          </button>
-          <span className="text-xs text-muted-foreground/50">/</span>
-          <button
-            onClick={() => navigate("/topics")}
-            className="text-xs text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Topics
-          </button>
-          <span className="text-xs text-muted-foreground/50">/</span>
-          <span className="text-xs text-foreground font-medium truncate max-w-[200px]">
-            {problem.title}
-          </span>
-        </div>
-
         {/* ── Toolbar ── */}
         <div className="flex items-center justify-between px-4 py-2 border-b border-border bg-card shrink-0 flex-wrap gap-2">
           <div className="flex items-center gap-1.5 flex-wrap">
@@ -371,6 +369,38 @@ export default function ProblemView() {
               className="flex items-center justify-center w-7 h-7 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
             >
               <RotateCcw className="h-3.5 w-3.5" />
+            </button>
+
+            <div className="w-px h-5 bg-border mx-1" />
+
+            {/* Debug */}
+            <button
+              onClick={() => handleAI("debug")}
+              title="AI Debug"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold text-orange-400 bg-orange-400/10 hover:bg-orange-400/20 transition-colors"
+            >
+              <Bug className="h-3.5 w-3.5" />
+              Debug
+            </button>
+
+            {/* Optimize */}
+            <button
+              onClick={() => handleAI("optimize")}
+              title="AI Optimize"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold text-yellow-400 bg-yellow-400/10 hover:bg-yellow-400/20 transition-colors"
+            >
+              <Zap className="h-3.5 w-3.5" />
+              Optimize
+            </button>
+
+            {/* Review */}
+            <button
+              onClick={() => handleAI("review")}
+              title="AI Review"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 transition-colors"
+            >
+              <Eye className="h-3.5 w-3.5" />
+              Review
             </button>
 
             <div className="w-px h-5 bg-border mx-1" />
@@ -425,7 +455,6 @@ export default function ProblemView() {
           {/* AI panel with resize handle */}
           {aiPanelVisible && (
             <>
-              {/* FIX: AI panel resize handle — drag to resize the AI panel width */}
               <div
                 className="w-1.5 bg-border hover:bg-primary/60 cursor-col-resize shrink-0 transition-colors"
                 style={{ userSelect: "none" }}
