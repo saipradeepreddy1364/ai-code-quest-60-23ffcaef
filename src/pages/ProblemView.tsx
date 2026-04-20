@@ -35,7 +35,6 @@ export default function ProblemView() {
   const containerRef        = useRef<HTMLDivElement>(null);
   const isResizingBottomRef = useRef(false);
   const isResizingLeftRef   = useRef(false);
-  const isResizingAIRef     = useRef(false);
   const inputRef            = useRef<HTMLTextAreaElement>(null);
   const handleRunRef        = useRef<() => void>(() => {});
 
@@ -52,7 +51,6 @@ export default function ProblemView() {
   const [runCount, setRunCount]           = useState(0);
   const [bottomHeight, setBottomHeight]   = useState(220);
   const [leftWidth, setLeftWidth]         = useState(40);
-  const [aiPanelWidth, setAiPanelWidth]   = useState(320);
   const [chatOpen, setChatOpen]           = useState(false);
   const [needsInput, setNeedsInput]       = useState(false);
   const [autoSaved, setAutoSaved]         = useState(false);
@@ -107,18 +105,11 @@ export default function ProblemView() {
         if (newPct > 15 && newPct < 60)
           setLeftWidth(newPct);
       }
-
-      if (isResizingAIRef.current) {
-        const newWidth = rect.right - e.clientX;
-        if (newWidth > 240 && newWidth < 600)
-          setAiPanelWidth(newWidth);
-      }
     };
 
     const handleMouseUp = () => {
       isResizingBottomRef.current = false;
       isResizingLeftRef.current   = false;
-      isResizingAIRef.current     = false;
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -255,7 +246,7 @@ export default function ProblemView() {
     }
   };
 
-  const errorsForChat = error;
+  const errorsForChat = activeTab === "errors" ? error : "";
   const aiPanelVisible = chatOpen || aiPanel.open;
 
   // ── Render ─────────────────────────────────────────────────────────────────
@@ -475,34 +466,22 @@ export default function ProblemView() {
             />
           </div>
 
-          {/* AI panel with resize handle */}
+          {/* AI panel — floating resizable popup, same as Dashboard */}
           {aiPanelVisible && (
-            <>
-              <div
-                className="w-1.5 bg-border hover:bg-primary/60 cursor-col-resize shrink-0 transition-colors"
-                style={{ userSelect: "none" }}
-                onMouseDown={(e) => { e.preventDefault(); isResizingAIRef.current = true; }}
-              />
-              <div
-                className="flex flex-col shrink-0 h-full overflow-hidden border-l border-border"
-                style={{ width: aiPanelWidth }}
-              >
-                <AIChatPanel
-                  isOpen={true}
-                  onClose={() => {
-                    setChatOpen(false);
-                    setAiPanel((prev) => ({ ...prev, open: false, autoAttachCode: false }));
-                  }}
-                  code={code}
-                  problemTitle={problem.title}
-                  errors={errorsForChat}
-                  aiPanelTitle={aiPanel.open ? aiPanel.title : undefined}
-                  aiPanelContent={aiPanel.open ? aiPanel.content : undefined}
-                  aiPanelLoading={aiPanel.open ? aiPanel.loading : undefined}
-                  autoAttachCode={aiPanel.autoAttachCode}
-                />
-              </div>
-            </>
+            <AIChatPanel
+              isOpen={true}
+              onClose={() => {
+                setChatOpen(false);
+                setAiPanel((prev) => ({ ...prev, open: false, autoAttachCode: false }));
+              }}
+              code={code}
+              problemTitle={problem.title}
+              errors={errorsForChat}
+              aiPanelTitle={aiPanel.open ? aiPanel.title : undefined}
+              aiPanelContent={aiPanel.open ? aiPanel.content : undefined}
+              aiPanelLoading={aiPanel.open ? aiPanel.loading : undefined}
+              autoAttachCode={aiPanel.autoAttachCode}
+            />
           )}
         </div>
 
