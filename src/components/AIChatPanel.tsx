@@ -361,15 +361,15 @@ export default function AIChatPanel({
                 </button>
               )}
               <button
-                onClick={() => { if (errors) setAttachErrors((v) => !v); }}
+                onClick={() => setAttachErrors((v) => !v)}
                 disabled={!errors}
-                title={errors ? "Attach errors to chat" : "Run code first to get errors"}
+                title={errors ? "Attach errors to chat" : "Run your code first to generate errors"}
                 className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-all ${
                   attachErrors
                     ? "bg-red-500/20 border-red-500 text-red-400"
                     : errors
                     ? "bg-muted border-border text-muted-foreground hover:text-foreground hover:border-muted-foreground"
-                    : "bg-muted border-border text-muted-foreground/30 cursor-not-allowed"
+                    : "bg-muted/50 border-border/50 text-muted-foreground/30 cursor-not-allowed"
                 }`}
               >
                 <AlertTriangle className="h-3 w-3" />

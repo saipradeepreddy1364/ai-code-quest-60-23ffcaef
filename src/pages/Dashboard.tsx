@@ -1,5 +1,5 @@
 // src/pages/Dashboard.tsx
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   User, ChevronDown, Menu, X, BookOpen,
@@ -677,7 +677,7 @@ export default function Dashboard() {
                 setIsAiOpen((p) => !p);
                 if (perfOpen) setPerfOpen(false);
               }}
-              onErrorChange={(err) => setCurrentErrors(err)}
+              onErrorChange={useCallback((err: string) => setCurrentErrors(err), [])}
               userEmail={user.email}
             />
           </div>

@@ -64,7 +64,10 @@ export default function CodeCompiler({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => { onErrorChange?.(error); }, [error, onErrorChange]);
+  const onErrorChangeRef = useRef(onErrorChange);
+  useEffect(() => { onErrorChangeRef.current = onErrorChange; });
+
+  useEffect(() => { onErrorChangeRef.current?.(error); }, [error]);
 
   useEffect(() => {
     if (needsInput) {
